@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial II.IV - Loops – Programming: Everyday Decision-Making Algorithms</title>
+<title>Tutorial I.III - Making Decisions – Programming: Everyday Decision-Making Algorithms</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -176,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/tutorial-01-comparisons.qmd" class="sidebar-item-text sidebar-link">
+  <a href="../part-01/tutorial-02-comparisons.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">02 - Comparisons</span></a>
   </div>
 </li>
@@ -214,24 +214,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#section-1---for-loops" id="toc-section-1---for-loops" class="nav-link" data-scroll-target="#section-1---for-loops">Section 1 - For Loops</a>
+  <li><a href="#section-1---understanding-if-statements" id="toc-section-1---understanding-if-statements" class="nav-link" data-scroll-target="#section-1---understanding-if-statements">Section 1 - Understanding If Statements</a>
   <ul class="collapse">
-  <li><a href="#exercise-1.1---sum-the-numbers-from-1-to-5" id="toc-exercise-1.1---sum-the-numbers-from-1-to-5" class="nav-link" data-scroll-target="#exercise-1.1---sum-the-numbers-from-1-to-5">Exercise 1.1 - Sum the Numbers from 1 to 5</a></li>
-  <li><a href="#exercise-1.2---sum-only-the-even-numbers-from-1-to-10" id="toc-exercise-1.2---sum-only-the-even-numbers-from-1-to-10" class="nav-link" data-scroll-target="#exercise-1.2---sum-only-the-even-numbers-from-1-to-10">Exercise 1.2 - Sum Only the Even Numbers from 1 to 10</a></li>
-  <li><a href="#exercise-1.3---exit-the-loop-if-the-current-fruit-is-banana" id="toc-exercise-1.3---exit-the-loop-if-the-current-fruit-is-banana" class="nav-link" data-scroll-target="#exercise-1.3---exit-the-loop-if-the-current-fruit-is-banana">Exercise 1.3 - Exit the Loop if the Current Fruit is Banana</a></li>
+  <li><a href="#exercise-1.1---your-first-decision" id="toc-exercise-1.1---your-first-decision" class="nav-link" data-scroll-target="#exercise-1.1---your-first-decision">Exercise 1.1 - Your First Decision</a></li>
   </ul></li>
-  <li><a href="#section-2---while-loops-for-conditional-execution" id="toc-section-2---while-loops-for-conditional-execution" class="nav-link" data-scroll-target="#section-2---while-loops-for-conditional-execution">Section 2 - While Loops for Conditional Execution</a>
+  <li><a href="#section-2---adding-else-statements" id="toc-section-2---adding-else-statements" class="nav-link" data-scroll-target="#section-2---adding-else-statements">Section 2 - Adding Else Statements</a>
   <ul class="collapse">
-  <li><a href="#exercise-2.1---subtract-from-10-in-increments-of-1-until-the-result-is-less-than-3" id="toc-exercise-2.1---subtract-from-10-in-increments-of-1-until-the-result-is-less-than-3" class="nav-link" data-scroll-target="#exercise-2.1---subtract-from-10-in-increments-of-1-until-the-result-is-less-than-3">Exercise 2.1 - Subtract from 10 in Increments of 1 Until the Result is Less Than 3</a></li>
-  <li><a href="#exercise-2.2---find-the-first-multiple-of-7-greater-than-50" id="toc-exercise-2.2---find-the-first-multiple-of-7-greater-than-50" class="nav-link" data-scroll-target="#exercise-2.2---find-the-first-multiple-of-7-greater-than-50">Exercise 2.2 - Find the First Multiple of 7 Greater Than 50</a></li>
+  <li><a href="#exercise-2.1---complete-decision" id="toc-exercise-2.1---complete-decision" class="nav-link" data-scroll-target="#exercise-2.1---complete-decision">Exercise 2.1 - Complete Decision</a></li>
   </ul></li>
-  <li><a href="#section-3---nested-loops" id="toc-section-3---nested-loops" class="nav-link" data-scroll-target="#section-3---nested-loops">Section 3 - Nested Loops</a>
+  <li><a href="#section-3---adding-elif-else-if" id="toc-section-3---adding-elif-else-if" class="nav-link" data-scroll-target="#section-3---adding-elif-else-if">Section 3 - Adding Elif (Else If)</a>
   <ul class="collapse">
-  <li><a href="#exercise-3.1---compute-the-product-of-each-pair-of-elements-from-two-arrays" id="toc-exercise-3.1---compute-the-product-of-each-pair-of-elements-from-two-arrays" class="nav-link" data-scroll-target="#exercise-3.1---compute-the-product-of-each-pair-of-elements-from-two-arrays">Exercise 3.1 - Compute the Product of Each Pair of Elements from Two Arrays</a></li>
+  <li><a href="#exercise-3.1---apartment-categories" id="toc-exercise-3.1---apartment-categories" class="nav-link" data-scroll-target="#exercise-3.1---apartment-categories">Exercise 3.1 - Apartment Categories</a></li>
   </ul></li>
-  <li><a href="#section-4---list-comprehensions" id="toc-section-4---list-comprehensions" class="nav-link" data-scroll-target="#section-4---list-comprehensions">Section 4 - List Comprehensions</a>
+  <li><a href="#section-4---complex-decisions" id="toc-section-4---complex-decisions" class="nav-link" data-scroll-target="#section-4---complex-decisions">Section 4 - Complex Decisions</a>
   <ul class="collapse">
-  <li><a href="#exercise-4.1---create-a-list-of-even-numbers" id="toc-exercise-4.1---create-a-list-of-even-numbers" class="nav-link" data-scroll-target="#exercise-4.1---create-a-list-of-even-numbers">Exercise 4.1 - Create a List of Even Numbers</a></li>
+  <li><a href="#exercise-4.1---real-world-flat-hunting" id="toc-exercise-4.1---real-world-flat-hunting" class="nav-link" data-scroll-target="#exercise-4.1---real-world-flat-hunting">Exercise 4.1 - Real World Flat Hunting</a></li>
+  </ul></li>
+  <li><a href="#section-5---the-37-rule-with-decisions" id="toc-section-5---the-37-rule-with-decisions" class="nav-link" data-scroll-target="#section-5---the-37-rule-with-decisions">Section 5 - The 37% Rule with Decisions</a>
+  <ul class="collapse">
+  <li><a href="#exercise-5.1---implement-the-rule" id="toc-exercise-5.1---implement-the-rule" class="nav-link" data-scroll-target="#exercise-5.1---implement-the-rule">Exercise 5.1 - Implement the Rule</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
@@ -243,8 +244,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part-01/lecture-optimal-stopping.html">01 Optimal Stopping</a></li><li class="breadcrumb-item"><a href="../part-01/tutorial-03-stopping.html">03 - Stopping</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Tutorial II.IV - Loops</h1>
-<p class="subtitle lead">Applied Optimization with Julia</p>
+<h1 class="title">Tutorial I.III - Making Decisions</h1>
+<p class="subtitle lead">Programming: Everyday Decision-Making Algorithms</p>
 </div>
 
 
@@ -263,75 +264,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Imagine you need to do the same task many times - like sending emails to 100 people or counting from 1 to 10. Instead of writing the same code over and over, we use loops! Loops are like having a helpful assistant who can repeat tasks for you.</p>
-<p>Follow the instructions, input your code in the designated areas, and verify your implementations with <span class="citation" data-cites="assert">@assert</span> statements.</p>
+<p>Imagine you’re searching for a new apartment. You view a flat - should you take it or keep looking for something better? This is another classic optimal stopping problem! Just like in dating or hiring, you need to decide when to stop searching.</p>
+<p>In this tutorial, we’ll learn how computers make decisions using <code>if</code> and <code>else</code> statements. These are like the “if this, then that” decisions we make every day!</p>
 </section>
-<section id="section-1---for-loops" class="level1">
-<h1>Section 1 - For Loops</h1>
-<p>A <code>for</code> loop is like giving instructions to that assistant: “For each item in this list, do this task.” For example:</p>
-<p>Iterating over a range (1 to 3):</p>
-<div id="2" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(i) </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>1
-2
-3</code></pre>
+<section id="section-1---understanding-if-statements" class="level1">
+<h1>Section 1 - Understanding If Statements</h1>
+<p>An <code>if</code> statement is like asking a yes/no question and doing something based on the answer. For example:</p>
+<div id="c17f17d7" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Rate the flat from 0-10</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is a good apartment!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<p>This prints <code>1</code>, <code>2</code>, and <code>3</code>.</p>
-<p>Iterating over an array:</p>
-<div id="4" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"cherry"</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(fruit)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>apple
-banana
-cherry</code></pre>
-</div>
-</div>
-<p>This prints each fruit in the <code>fruits</code> array.</p>
-<p>The <code>break</code> statement can be utilized to exit the loop based on a condition. To check some condition, we can use <code>if</code> statements. For example:</p>
-<div id="6" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>loop_number <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    loop_number <span class="op">=</span> x</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(loop_number)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> loop_number <span class="op">==</span> <span class="fl">4</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>1
-2
-3
-4</code></pre>
-</div>
-</div>
-<p>This exits the loop in iteration <code>4</code>, as the condition <code>loop_number == 4</code> is true here.</p>
-<p>We can also chain <code>if</code> statements. For example:</p>
-<div id="8" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>loop_number <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    loop_number <span class="op">=</span> x</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> loop_number <span class="op">&lt;=</span> <span class="fl">2</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(loop_number)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elseif</span> loop_number <span class="op">==</span> <span class="fl">3</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(<span class="st">"We reached 3!"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> </span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>1
-2
-We reached 3!</code></pre>
-</div>
-</div>
-<p>This prints <code>1</code>, then <code>2</code>, then <code>We reached 3!</code>. Afterwards the loop ends, as the <code>break</code> statement kicks in.</p>
+<p>The structure is:</p>
+<ol type="1">
+<li>The word <code>if</code></li>
+<li>A condition that’s either True or False</li>
+<li>A colon <code>:</code></li>
+<li><strong>Indented</strong> code that runs if the condition is True</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -342,40 +293,63 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Think of a <code>for</code> loop like a recipe:</p>
+<p>Think of <code>if</code> statements like everyday decisions:</p>
+<ul>
+<li>IF it’s within budget, view it</li>
+<li>IF the flat is good, apply for it</li>
+<li>IF it has enough rooms, add it to the shortlist</li>
+</ul>
+<p>Computer <code>if</code> statements work exactly the same way! They check a condition and then do something based on that check.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Common Mistakes with If Statements:</p>
 <ol type="1">
-<li>Start with a collection of items (like numbers 1-10 or a shopping list)</li>
-<li>For each item, follow the instructions inside the loop</li>
-<li>When done with one item, move to the next</li>
-<li>Stop when you’ve used all items (or when told to break)</li>
+<li>Forgetting the colon <code>:</code> after the condition</li>
+<li><strong>Incorrect indentation</strong> of the code block</li>
+<li>Using <code>=</code> (assignment) instead of <code>==</code> (comparison)</li>
+<li>Forgetting that the condition must result in <code>True</code> or <code>False</code></li>
 </ol>
 </div>
 </div>
-<section id="exercise-1.1---sum-the-numbers-from-1-to-5" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.1---sum-the-numbers-from-1-to-5">Exercise 1.1 - Sum the Numbers from 1 to 5</h2>
-<p>Sum the numbers from <code>1</code> to <code>5</code> in a loop. The next lines initialize <code>sum_numbers</code> to <code>0</code>. The sum you compute should accumulate in this variable.</p>
-<div id="10" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sum_numbers <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="12" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> sum_numbers <span class="op">==</span> <span class="fl">15</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Sum of numbers from 1 to 5: "</span>, sum_numbers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-1.1---your-first-decision" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.1---your-first-decision">Exercise 1.1 - Your First Decision</h2>
+<p>Create an <code>if</code> statement that prints “Perfect flat!” if the <code>flat_rating</code> is 10.</p>
+<div id="9673eb16" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer yourself - the cell should print "Perfect flat!" if executed correctly</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-1.2---sum-only-the-even-numbers-from-1-to-10" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.2---sum-only-the-even-numbers-from-1-to-10">Exercise 1.2 - Sum Only the Even Numbers from 1 to 10</h2>
-<p>Sum only the even numbers from <code>1</code> to <code>10</code>. Again, we initialize a variable <code>sum_evens</code> to <code>0</code>. The sum you compute should accumulate in this variable.</p>
-<div id="14" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>sum_evens <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="section-2---adding-else-statements" class="level1">
+<h1>Section 2 - Adding Else Statements</h1>
+<p>But what if we want to do something different when the condition is False? That’s where <code>else</code> comes in:</p>
+<div id="cd5eda43" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">4</span>  <span class="co"># Not a great flat!</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep searching!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="16" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> sum_evens <span class="op">==</span> <span class="fl">30</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Sum of even numbers from 1 to 10: "</span>, sum_evens)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>The structure is:</p>
+<ol type="1">
+<li>An <code>if</code> statement with its condition</li>
+<li>Code to run if True</li>
+<li>The word <code>else</code> and a colon <code>:</code></li>
+<li>Indented code to run if False</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -386,228 +360,243 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Hint: You can use the modulo operator <code>%</code> to check if a number is even. The modulo operator returns the remainder of the division of two numbers. If a number is divisible by another number, the remainder is <code>0</code>. The following example checks if <code>4</code> is even: <code>4 % 2 == 0</code>.</p>
-</div>
-</div>
-</section>
-<section id="exercise-1.3---exit-the-loop-if-the-current-fruit-is-banana" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.3---exit-the-loop-if-the-current-fruit-is-banana">Exercise 1.3 - Exit the Loop if the Current Fruit is Banana</h2>
-<p>Iterate over each fruit in the <code>fruits</code> array, store the current fruit in <code>current_fruit</code>, and exit the loop if <code>current_fruit</code> is <code>banana</code>. The next lines initialize the <code>fruits</code> array and <code>current_fruit</code> variable.</p>
-<div id="18" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"cherry"</span>]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>current_fruit <span class="op">=</span> <span class="st">"None"</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="20" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> current_fruit <span class="op">==</span> <span class="st">"banana"</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"The current fruit is: "</span>, current_fruit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-<section id="section-2---while-loops-for-conditional-execution" class="level1">
-<h1>Section 2 - While Loops for Conditional Execution</h1>
-<p>A <code>while</code> loop is like giving instructions to your assistant: “Keep doing this task as long as this condition is true.” They’re particularly useful when the number of iterations is dynamic or unknown in advance. For example:</p>
-<div id="22" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep subtracting 1 until we get below 5</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="fl">10</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> number <span class="op">&gt;=</span> <span class="fl">5</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(<span class="st">"Number is: </span><span class="sc">$</span>number<span class="st">"</span>)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    number <span class="op">=</span> number <span class="op">-</span> <span class="fl">1</span></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Final number: </span><span class="sc">$</span>number<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Number is: 10
-Number is: 9
-Number is: 8
-Number is: 7
-Number is: 6
-Number is: 5
-Final number: 4</code></pre>
-</div>
-</div>
-<p>Real-world examples:</p>
-<div id="24" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep playing game while player has lives</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>lives <span class="op">=</span> <span class="fl">3</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> lives <span class="op">&gt;</span> <span class="fl">0</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(<span class="st">"Playing game... Lives left: </span><span class="sc">$</span>lives<span class="st">"</span>)</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    lives <span class="op">=</span> lives <span class="op">-</span> <span class="fl">1</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Game Over!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Playing game... Lives left: 3
-Playing game... Lives left: 2
-Playing game... Lives left: 1
-Game Over!</code></pre>
-</div>
-</div>
-<div id="26" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep filling water bucket until full</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>current_liters <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>bucket_size <span class="op">=</span> <span class="fl">5</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="cn">true</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(<span class="st">"Adding 1 liter..."</span>)</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    current_liters <span class="op">=</span> current_liters <span class="op">+</span> <span class="fl">1</span></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> current_liters <span class="op">==</span> bucket_size</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Bucket is full!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Adding 1 liter...
-Adding 1 liter...
-Adding 1 liter...
-Adding 1 liter...
-Adding 1 liter...
-Bucket is full!</code></pre>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Think of a <code>while</code> loop like these everyday situations:</p>
+<p>Think of <code>if-else</code> like complete either/or decisions:</p>
 <ul>
-<li>Keep studying WHILE you don’t understand the topic</li>
-<li>Keep adding ingredients WHILE the recipe isn’t complete</li>
-<li>Keep saving money WHILE you don’t have enough</li>
+<li>IF it’s within budget, schedule viewing, ELSE skip it</li>
+<li>IF the location is good, consider it, ELSE keep searching</li>
+<li>IF all criteria are met, apply now, ELSE continue looking</li>
+</ul>
+<p>The <code>else</code> statement is our backup plan!</p>
+</div>
+</div>
+<section id="exercise-2.1---complete-decision" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.1---complete-decision">Exercise 2.1 - Complete Decision</h2>
+<p>Write an if-else statement that sets <code>decision</code> to “Apply now” if <code>flat_rating</code> is at least 7, and “Keep searching” otherwise.</p>
+<div id="d8cd75f7" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>decision <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="c0f59b0b" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> decision <span class="op">==</span> <span class="st">"Keep searching"</span>, <span class="st">"The decision should be 'Keep searching' as the flat rating is less than 7"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Decision: </span><span class="sc">{</span>decision<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Writing Better If-Else Statements:</p>
+<ol type="1">
+<li>Keep your conditions simple and readable</li>
+<li>Use meaningful variable names</li>
+<li>Consider what should happen in both cases</li>
+<li>Test both paths to make sure they work</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="section-3---adding-elif-else-if" class="level1">
+<h1>Section 3 - Adding Elif (Else If)</h1>
+<p>Sometimes we need more than two options. That’s where <code>elif</code> comes in:</p>
+<div id="f517d607" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>:</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Amazing flat - apply immediately!"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Good flat - consider applying"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> flat_rating <span class="op">&gt;=</span> <span class="dv">5</span>:</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Mediocre flat - keep it as backup"</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Poor flat - definitely keep looking"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The structure adds:</p>
+<ul>
+<li>Multiple <code>elif</code> conditions between <code>if</code> and <code>else</code></li>
+<li>Each condition is checked in order</li>
+<li>The first True condition runs its code</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think of <code>elif</code> like multiple-choice decisions:</p>
+<ul>
+<li>IF it’s perfect → apply immediately</li>
+<li>ELIF it’s good → schedule second viewing</li>
+<li>ELIF it’s okay → keep as backup</li>
+<li>ELSE → continue searching</li>
+</ul>
+<p>It’s like a flowchart where only one path can be taken!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Important Elif Rules:</p>
+<ol type="1">
+<li>Order matters! Put more specific conditions first</li>
+<li>Only one block will execute</li>
+<li><code>elif</code> must come after <code>if</code> and before <code>else</code></li>
+<li>You can have as many <code>elif</code> blocks as you need</li>
+</ol>
+</div>
+</div>
+<section id="exercise-3.1---apartment-categories" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3.1---apartment-categories">Exercise 3.1 - Apartment Categories</h2>
+<p>Create a variable <code>flat_category</code> that is:</p>
+<ul>
+<li>“Luxury” if rating is 9 or 10</li>
+<li>“Premium” if rating is 7 or 8</li>
+<li>“Standard” if rating is 5 or 6</li>
+<li>“Basic” for anything lower</li>
+</ul>
+<div id="3e864b99" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>flat_category <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="2715c5b0" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> flat_category <span class="op">==</span> <span class="st">"Premium"</span>, <span class="st">"The flat category should be 'Premium' as the flat rating is 8"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Flat Category: </span><span class="sc">{</span>flat_category<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="section-4---complex-decisions" class="level1">
+<h1>Section 4 - Complex Decisions</h1>
+<p>In real life, we often need to check multiple conditions at once. We can combine conditions using <code>and</code> and <code>or</code>:</p>
+<div id="3fdd4e72" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>weeks_searching <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>max_search_time <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>) <span class="kw">and</span> (weeks_searching <span class="op">&lt;</span> max_search_time):</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Take this flat - it's good enough and we still have time!"</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>) <span class="kw">or</span> (weeks_searching <span class="op">&gt;=</span> max_search_time):</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Take this flat - either it's perfect or we're out of time!"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tips for Complex Conditions:</p>
+<ul>
+<li>Use parentheses to make your logic clear</li>
+<li>Break very complex conditions into smaller parts</li>
+<li>Test edge cases to make sure your logic works</li>
 </ul>
 </div>
 </div>
-<section id="exercise-2.1---subtract-from-10-in-increments-of-1-until-the-result-is-less-than-3" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.1---subtract-from-10-in-increments-of-1-until-the-result-is-less-than-3">Exercise 2.1 - Subtract from 10 in Increments of 1 Until the Result is Less Than 3</h2>
-<p>Subtract from <code>10</code> in increments of <code>1</code> until the result is less than <code>3</code>. The next line initializes <code>current_value</code> to <code>10</code>. The result should be in this variable.</p>
-<div id="28" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>current_value <span class="op">=</span> <span class="fl">10</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-4.1---real-world-flat-hunting" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4.1---real-world-flat-hunting">Exercise 4.1 - Real World Flat Hunting</h2>
+<p>Create a variable <code>should_apply</code> that is True if:</p>
+<ul>
+<li>The flat rating is at least 8, OR</li>
+<li>The flat rating is at least 6 AND we’ve been searching for 3 weeks or more</li>
+</ul>
+<div id="669e68d7" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>weeks_searching <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>should_apply <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="30" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> current_value <span class="op">==</span> <span class="fl">2</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"The first value smaller than 3 is: "</span>, current_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="exercise-2.2---find-the-first-multiple-of-7-greater-than-50" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.2---find-the-first-multiple-of-7-greater-than-50">Exercise 2.2 - Find the First Multiple of 7 Greater Than 50</h2>
-<p>Find the first multiple of <code>7</code> greater than <code>50</code> using an indefinite loop. The next line initializes <code>first_multiple_of_7</code> to <code>0</code>. The first multiple should be in this variable.</p>
-<div id="32" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>first_multiple_of_7 <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="34" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> first_multiple_of_7 <span class="op">==</span> <span class="fl">56</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"First multiple of 7 greater than 50: "</span>, first_multiple_of_7)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>‘while true … end’ constructs an infinite loop. You can exit the loop using a ‘break’ statement if a condition is met.</p>
-</div>
+<div id="92f28695" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> should_apply <span class="op">==</span> <span class="va">True</span>, <span class="st">"The flat rating is 6 and we've been searching for 4 weeks, so we should apply"</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we apply? </span><span class="sc">{</span>should_apply<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss"> and we've been searching for </span><span class="sc">{</span>weeks_searching<span class="sc">}</span><span class="ss"> weeks"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="section-3---nested-loops" class="level1">
-<h1>Section 3 - Nested Loops</h1>
-<p>Nested loops are loops inside other loops. Think of it like organizing your closet: - First loop: Go through each shelf - Second loop: For each shelf, go through each item</p>
-<div id="36" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking sizes and colors of t-shirts</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> [<span class="st">"Small"</span>, <span class="st">"Medium"</span>, <span class="st">"Large"</span>]</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"Red"</span>, <span class="st">"Blue"</span>]</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> size <span class="kw">in</span> sizes</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> color <span class="kw">in</span> colors</span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(<span class="st">"Found </span><span class="sc">$</span>color<span class="st"> t-shirt in size </span><span class="sc">$</span>size<span class="st">"</span>)</span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Found Red t-shirt in size Small
-Found Blue t-shirt in size Small
-Found Red t-shirt in size Medium
-Found Blue t-shirt in size Medium
-Found Red t-shirt in size Large
-Found Blue t-shirt in size Large</code></pre>
+<section id="section-5---the-37-rule-with-decisions" class="level1">
+<h1>Section 5 - The 37% Rule with Decisions</h1>
+<p>Remember the optimal stopping rule? Let’s apply it to apartment hunting:</p>
+<div id="7fe81751" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>flats_seen <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>total_viewings <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>best_rating_so_far <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate if we've passed 37% of viewings</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>threshold_passed <span class="op">=</span> flats_seen <span class="op">&gt;=</span> (total_viewings <span class="op">*</span> <span class="fl">0.37</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> threshold_passed:</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking - still in observation phase"</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> current_rating <span class="op">&gt;</span> best_rating_so_far:</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking - waiting for better than our best"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<section id="exercise-5.1---implement-the-rule" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-5.1---implement-the-rule">Exercise 5.1 - Implement the Rule</h2>
+<p>Adjust the code below to change the variable <code>make_application</code> to True if:</p>
+<ul>
+<li>We’ve seen at least 37% of available flats (use 15 total flats), AND</li>
+<li>The current flat is better than the best we’ve seen so far</li>
+</ul>
+<div id="d45df494" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>flats_seen <span class="op">=</span> <span class="dv">6</span>  <span class="co"># We've seen 6 flats</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>total_viewings <span class="op">=</span> <span class="dv">15</span>  <span class="co"># We plan to view 15 flats in total</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>best_rating_so_far <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>make_application <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="exercise-3.1---compute-the-product-of-each-pair-of-elements-from-two-arrays" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-3.1---compute-the-product-of-each-pair-of-elements-from-two-arrays">Exercise 3.1 - Compute the Product of Each Pair of Elements from Two Arrays</h2>
-<p>Compute the product of <strong>each pair of elements</strong> from two arrays. For example, the product of two numbers <code>a</code> and <code>b</code> is <code>a * b</code>. The next lines initialize <code>numbers1</code>, <code>numbers2</code> arrays, and the <code>products</code> array to store your results.</p>
-<div id="38" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>numbers1 <span class="op">=</span> [<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>]</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>numbers2 <span class="op">=</span> [<span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>]</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>products <span class="op">=</span> []</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="40" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> products <span class="op">==</span> [<span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">8</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">12</span>, <span class="fl">15</span>, <span class="fl">18</span>]</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Products of each pair from two arrays: "</span>, products)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember, you can use push!() to append elements to an array.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="section-4---list-comprehensions" class="level1">
-<h1>Section 4 - List Comprehensions</h1>
-<p>List comprehensions provide a concise way to create lists based on existing lists. They can often replace for loops and are considered more “Julia-like”. Basic syntax:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>[expression for item <span class="kw">in</span> collection if condition]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>For example:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The long way</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>squares <span class="op">=</span> []</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(squares, n<span class="op">^</span><span class="fl">2</span>)</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co"># The short way (list comprehension)</span></span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>squares <span class="op">=</span> [n<span class="op">^</span><span class="fl">2</span> for n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Both create <code>[1, 4, 9, 16, 25]</code>, but the second way is more concise!</p>
-<section id="exercise-4.1---create-a-list-of-even-numbers" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-4.1---create-a-list-of-even-numbers">Exercise 4.1 - Create a List of Even Numbers</h2>
-<p>Create a list of even numbers from 1 to 10 using a list comprehension.</p>
-<div id="42" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="44" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> even_numbers <span class="op">==</span> [<span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">6</span>, <span class="fl">8</span>, <span class="fl">10</span>]</span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Even numbers from 1 to 10: "</span>, even_numbers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2c4fbcc1" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> make_application <span class="op">==</span> <span class="va">True</span>, <span class="st">"The flat rating is 9 and we've been searching for 4 weeks, so we should apply"</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we apply for this flat? </span><span class="sc">{</span>make_application<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>Great work! You’ve successfully navigated through the basics of loops in Julia. You’ve seen for and while loops, tackled iterable structure, and worked on nested loops. Continue to the next file to learn more.</p>
+<p>Great work! You’ve learned how to make decisions in Python using:</p>
+<ul>
+<li>Simple if statements</li>
+<li>if-else statements</li>
+<li>elif for multiple conditions</li>
+<li>Complex decisions with and/or</li>
+<li>Applying these to real-world stopping problems</li>
+</ul>
+<p>Remember, just like in apartment hunting, these tools help us make better decisions in any situation where we need to decide whether to take what we have or keep looking for something better!</p>
+<hr>
 </section>
 <section id="solutions" class="level1">
 <h1>Solutions</h1>
 <p>You will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.</p>
 <p>Remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.</p>
 <p>Later, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.</p>
+<p><em>That’s it for part I! Next week, we’ll apply these skills exploration and exploitation!</em></p>
 
 
 </section>

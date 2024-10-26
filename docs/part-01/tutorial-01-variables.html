@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial II.I - Variables and Types – Programming: Everyday Decision-Making Algorithms</title>
+<title>Tutorial I.I - Variables and Types – Programming: Everyday Decision-Making Algorithms</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -214,24 +214,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#section-1---variables" id="toc-section-1---variables" class="nav-link" data-scroll-target="#section-1---variables">Section 1 - Variables</a>
+  <li><a href="#section-1---variables-tracking-your-dating-life" id="toc-section-1---variables-tracking-your-dating-life" class="nav-link" data-scroll-target="#section-1---variables-tracking-your-dating-life">Section 1 - Variables: Tracking Your Dating Life</a>
   <ul class="collapse">
-  <li><a href="#exercise-1.1---declare-a-variable" id="toc-exercise-1.1---declare-a-variable" class="nav-link" data-scroll-target="#exercise-1.1---declare-a-variable">Exercise 1.1 - Declare a Variable</a></li>
-  <li><a href="#exercise-1.2---declare-a-string-variable" id="toc-exercise-1.2---declare-a-string-variable" class="nav-link" data-scroll-target="#exercise-1.2---declare-a-string-variable">Exercise 1.2 - Declare a String Variable</a></li>
+  <li><a href="#exercise-1.1---first-date-setup" id="toc-exercise-1.1---first-date-setup" class="nav-link" data-scroll-target="#exercise-1.1---first-date-setup">Exercise 1.1 - First Date Setup</a></li>
+  <li><a href="#exercise-1.2---dream-date" id="toc-exercise-1.2---dream-date" class="nav-link" data-scroll-target="#exercise-1.2---dream-date">Exercise 1.2 - Dream Date</a></li>
   </ul></li>
-  <li><a href="#section-2---basic-types" id="toc-section-2---basic-types" class="nav-link" data-scroll-target="#section-2---basic-types">Section 2 - Basic Types</a>
+  <li><a href="#section-2---types-different-kinds-of-dating-data" id="toc-section-2---types-different-kinds-of-dating-data" class="nav-link" data-scroll-target="#section-2---types-different-kinds-of-dating-data">Section 2 - Types: Different Kinds of Dating Data</a>
   <ul class="collapse">
-  <li><a href="#exercise-2.1---create-an-integer-variable" id="toc-exercise-2.1---create-an-integer-variable" class="nav-link" data-scroll-target="#exercise-2.1---create-an-integer-variable">Exercise 2.1 - Create an Integer Variable</a></li>
-  <li><a href="#exercise-2.2---create-a-float-variable" id="toc-exercise-2.2---create-a-float-variable" class="nav-link" data-scroll-target="#exercise-2.2---create-a-float-variable">Exercise 2.2 - Create a Float Variable</a></li>
-  <li><a href="#exercise-2.3---create-a-boolean-variable" id="toc-exercise-2.3---create-a-boolean-variable" class="nav-link" data-scroll-target="#exercise-2.3---create-a-boolean-variable">Exercise 2.3 - Create a Boolean Variable</a></li>
+  <li><a href="#exercise-2.1---dating-score" id="toc-exercise-2.1---dating-score" class="nav-link" data-scroll-target="#exercise-2.1---dating-score">Exercise 2.1 - Dating Score</a></li>
+  <li><a href="#exercise-2.2---dating-history" id="toc-exercise-2.2---dating-history" class="nav-link" data-scroll-target="#exercise-2.2---dating-history">Exercise 2.2 - Dating History</a></li>
   </ul></li>
-  <li><a href="#section-3---type-annotations-and-inference" id="toc-section-3---type-annotations-and-inference" class="nav-link" data-scroll-target="#section-3---type-annotations-and-inference">Section 3 - Type Annotations and Inference</a>
+  <li><a href="#section-3---making-dating-decisions" id="toc-section-3---making-dating-decisions" class="nav-link" data-scroll-target="#section-3---making-dating-decisions">Section 3 - Making Dating Decisions</a>
   <ul class="collapse">
-  <li><a href="#exercise-3.1---type-annotation" id="toc-exercise-3.1---type-annotation" class="nav-link" data-scroll-target="#exercise-3.1---type-annotation">Exercise 3.1 - Type Annotation</a></li>
+  <li><a href="#exercise-3.1---decision-point" id="toc-exercise-3.1---decision-point" class="nav-link" data-scroll-target="#exercise-3.1---decision-point">Exercise 3.1 - Decision Point</a></li>
   </ul></li>
-  <li><a href="#section-4---string-interpolation" id="toc-section-4---string-interpolation" class="nav-link" data-scroll-target="#section-4---string-interpolation">Section 4 - String Interpolation</a>
+  <li><a href="#section-4---dating-profile-output" id="toc-section-4---dating-profile-output" class="nav-link" data-scroll-target="#section-4---dating-profile-output">Section 4 - Dating Profile Output</a>
   <ul class="collapse">
-  <li><a href="#exercise-4.1---string-interpolation" id="toc-exercise-4.1---string-interpolation" class="nav-link" data-scroll-target="#exercise-4.1---string-interpolation">Exercise 4.1 - String Interpolation</a></li>
+  <li><a href="#exercise-4.1---profile-message" id="toc-exercise-4.1---profile-message" class="nav-link" data-scroll-target="#exercise-4.1---profile-message">Exercise 4.1 - Profile Message</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
@@ -243,8 +242,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part-01/lecture-optimal-stopping.html">01 Optimal Stopping</a></li><li class="breadcrumb-item"><a href="../part-01/tutorial-01-variables.html">01 - Variables</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Tutorial II.I - Variables and Types</h1>
-<p class="subtitle lead">Applied Optimization with Julia</p>
+<h1 class="title">Tutorial I.I - Variables and Types</h1>
+<p class="subtitle lead">Programming: Everyday Decision-Making Algorithms</p>
 </div>
 
 
@@ -263,13 +262,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Welcome to this interactive Julia tutorial which introduces the basics of variables and types. Understanding variables and their types is crucial as they are the building blocks of any program. They determine how data is stored, manipulated, and how efficiently your code runs.</p>
-<p>This script is designed to be interactive. Follow the instructions, write your code in the designated code blocks, and then execute the corresponding code. Each exercise is followed by an <code>@assert</code> statement that checks your solution.</p>
-<p>There are two ways to run the code:</p>
+<p>Welcome to this interactive Python tutorial on variables, types, and algorithmic thinking! We’ll explore these concepts through the lens of optimization problems, specifically using the famous “Secretary Problem” as our running example.</p>
+<p>The Secretary Problem asks: “If you need to hire the best candidate, and you can only interview candidates one at a time (with no going back), when should you stop and make an offer?” This is a perfect example of optimal stopping and will help us understand how variables and data types play crucial roles in algorithmic thinking. To make the problem more interesting, we will use the Secretary Problem to help us make better dating decisions! The question is thus: <strong>When should you stop dating and commit to someone?</strong></p>
+<p>Known academically as the “Optimal Stopping Problem” or “The Marriage Problem”, it asks: If you want to find the best possible partner, and you can only date one person at a time (no going back to previous dates!), when should you stop dating and propose?</p>
+<p>Let’s learn how to use Python to help us in order to make better dating decisions!</p>
+</section>
+<section id="section-1---variables-tracking-your-dating-life" class="level1">
+<h1>Section 1 - Variables: Tracking Your Dating Life</h1>
+<p>Just like you keep track of important things in dating (name, phone number, red flags), in Python we use variables to store information:</p>
+<div id="03dd6c10" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>date_name <span class="op">=</span> <span class="st">"Alexander"</span> <span class="co"># Current date's name</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>red_flags <span class="op">=</span> <span class="dv">0</span> <span class="co"># Count of red flags noticed</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>butterflies_felt <span class="op">=</span> <span class="va">True</span> <span class="co"># Do I feel butterflies?</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>compatibility_score <span class="op">=</span> <span class="fl">8.5</span> <span class="co"># On a scale of 1-10, how compatible are we?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Variables in Python are like containers that store information. When we write <code>date_name = "Alexander"</code>, we’re:</p>
 <ol type="1">
-<li><p>The easiest way to run the code is by using VS Code. First, install the Julia and the Jupyter Extension. Then, you can open the downloaded <code>.ipynb</code> files and run the code from there.</p></li>
-<li><p>The second way is by using IJulia. Start Julia, and type <code>using IJulia; notebook()</code> in the Julia prompt. This will open a new browser window where you can run the code. If you have not installed IJulia yet, you can do so by typing <code>]</code> in the Julia prompt to open the package manager, and then installing IJulia by typing <code>add IJulia</code>.</p></li>
+<li>Creating a container called <code>date_name</code></li>
+<li>Putting the value “Alexander” inside it</li>
+<li>Telling Python this is a text value (string)</li>
 </ol>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -280,209 +304,216 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Always replace ‘YOUR CODE BELOW’ with your actual code.</p>
-</div>
-</div>
-</section>
-<section id="section-1---variables" class="level1">
-<h1>Section 1 - Variables</h1>
-<p>Think of variables as labeled containers. Just like you might label a box “Books” to store books, in programming we label our data with variable names. For example:</p>
-<div id="2" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="fl">30</span>        <span class="co"># A box labeled "age" containing the number 30</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>30</code></pre>
-</div>
-</div>
-<div id="4" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Tobias"</span>  <span class="co"># A box labeled "name" containing the text "Tobias"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>"Tobias"</code></pre>
-</div>
-</div>
-<section id="exercise-1.1---declare-a-variable" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.1---declare-a-variable">Exercise 1.1 - Declare a Variable</h2>
-<p>Declare a variable named <code>x</code> and assign it the value <code>1</code>.</p>
-<div id="6" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="8" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> x <span class="op">==</span> <span class="fl">1</span> <span class="st">"Check again, the value of x should be 1. Remember to assign the value directly to x."</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Great, you have correctly assigned the value </span><span class="sc">$</span>x<span class="st"> to the variable 'x'."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="exercise-1.2---declare-a-string-variable" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.2---declare-a-string-variable">Exercise 1.2 - Declare a String Variable</h2>
-<p>Declare a variable named <code>hi</code> and assign it the string <code>"Hello, Optimization!"</code>.</p>
-<div id="10" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="12" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> hi <span class="op">==</span> <span class="st">"Hello, Optimization!"</span> <span class="st">"Make sure the variable 'hi' contains the exact string </span><span class="sc">\"</span><span class="st">Hello, Optimization</span><span class="sc">\"</span><span class="st">!"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Good, the variable 'hi' now states </span><span class="sc">\"$</span>hi<span class="sc">\"</span><span class="st">."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-</section>
-<section id="section-2---basic-types" class="level1">
-<h1>Section 2 - Basic Types</h1>
-<p>Just like real containers come in different types (like boxes for books, refrigerators for food, etc.), variables in Julia have different types depending on what they store:</p>
+<p>Notice how we use meaningful variable names that describe what they contain:</p>
 <ul>
-<li>Integers (Int): Whole numbers like <code>1</code>, <code>42</code>, <code>-10</code></li>
-<li>Floats (Float64): Numbers with decimal points like <code>3.14</code>, <code>-0.5</code></li>
-<li>Booleans (Bool): True/false values like <code>true</code>, <code>false</code></li>
-<li>Strings (String): Text in quotes like <code>"Hello"</code></li>
+<li><code>date_name</code> is better than just <code>name</code></li>
+<li><code>red_flags</code> is clearer than just <code>flags</code></li>
+<li><code>butterflies_felt</code> clearly indicates a yes/no feeling</li>
 </ul>
-<p>You can check what type of “container” a variable is using <code>typeof()</code>. Try this:</p>
-<div id="14" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="fl">25</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(age)     <span class="co"># Will show Int64 (integer type)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>Int64</code></pre>
 </div>
 </div>
-<div id="16" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> <span class="fl">19.99</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(price)   <span class="co"># Will show Float64 (decimal number type)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>Float64</code></pre>
+<section id="exercise-1.1---first-date-setup" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.1---first-date-setup">Exercise 1.1 - First Date Setup</h2>
+<p>Create a variable <code>currently_dating</code> and set it to <code>False</code> (because we’re starting our dating journey).</p>
+<div id="3aa24aa3" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<section id="exercise-2.1---create-an-integer-variable" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.1---create-an-integer-variable">Exercise 2.1 - Create an Integer Variable</h2>
-<p>Create an Integer variable <code>answerUniverse</code> and set it to <code>42</code>.</p>
-<div id="18" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="20" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> answerUniverse <span class="op">==</span> <span class="fl">42</span> <span class="st">"The variable 'answerUniverse' should hold 42."</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Great, the answer to all questions on the universe is </span><span class="sc">$</span>answerUniverse<span class="st"> now."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="2fa34c29" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> currently_dating <span class="op">==</span> <span class="va">False</span>, <span class="st">"Let's start fresh - set currently_dating to False!"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Ready to start dating! We have defined the variable `currently_dating` as boolean."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-2.2---create-a-float-variable" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.2---create-a-float-variable">Exercise 2.2 - Create a Float Variable</h2>
-<p>Create a Float variable <code>money</code> and set it to <code>1.35</code>.</p>
-<div id="22" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-1.2---dream-date" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.2---dream-date">Exercise 1.2 - Dream Date</h2>
+<p>Create a variable <code>dream_date_name</code> with your ideal date’s name (let’s say “Mika”).</p>
+<div id="7fb386bd" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="24" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> money <span class="op">==</span> <span class="fl">1.35</span> <span class="st">"The variable 'money' should hold the Float64 1.35."</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Perfect, the you have stored </span><span class="sc">$</span>money<span class="st"> in the variable 'money'."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="exercise-2.3---create-a-boolean-variable" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.3---create-a-boolean-variable">Exercise 2.3 - Create a Boolean Variable</h2>
-<p>Create a Boolean variable <code>isStudent</code> and set it to <code>true</code>.</p>
-<div id="26" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="28" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> isStudent <span class="op">==</span> <span class="cn">true</span> <span class="st">"The variable 'isStudent' should be set to true."</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Correct, you are a student now."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="294d63ef" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> dream_date_name <span class="op">==</span> <span class="st">"Mika"</span>, <span class="st">"Let's use 'Mika' as our dream date's name"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"We have defined a string variable for our dream date. Now, we are looking for </span><span class="sc">{</span>dream_date_name<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="section-3---type-annotations-and-inference" class="level1">
-<h1>Section 3 - Type Annotations and Inference</h1>
-<p>Sometimes we want to specify exactly what kind of “container” we want to use. In Julia, we can do this using type annotations:</p>
-<div id="30" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>temperature<span class="op">::</span><span class="dt">Float64 </span><span class="op">=</span> <span class="fl">98.6</span>    <span class="co"># Specifically saying we want a decimal number</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>98.6</code></pre>
+<section id="section-2---types-different-kinds-of-dating-data" class="level1">
+<h1>Section 2 - Types: Different Kinds of Dating Data</h1>
+<p>Just like dating involves different types of information, Python has different types for different kinds of data:</p>
+<ul>
+<li>Integers (int): Counting things (number of dates, red flags)</li>
+<li>Floats (float): Ratings and scores (compatibility score)</li>
+<li>Booleans (bool): Yes/no information (are they single?)</li>
+<li>Strings (str): Text (names, favorite food)</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
-<div id="32" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>count<span class="op">::</span><span class="dt">Int64 </span><span class="op">=</span> <span class="fl">100</span>            <span class="co"># Specifically saying we want a whole number</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>100</code></pre>
+<div class="callout-body-container callout-body">
+<p>Why do types matter? Because:</p>
+<ul>
+<li>They determine what operations we can perform (you can’t divide names!)</li>
+<li>They affect how much memory the computer needs</li>
+<li>They help prevent errors in our code</li>
+</ul>
 </div>
 </div>
-<section id="exercise-3.1---type-annotation" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-3.1---type-annotation">Exercise 3.1 - Type Annotation</h2>
-<p>Declare a variable <code>y</code> with an explicit type annotation of <code>Int64</code> and assign it the value <code>5</code>.</p>
-<div id="34" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="0eb6b122" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dates_gone_on <span class="op">=</span> <span class="dv">0</span>  <span class="co"># int: keeping count</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>chemistry_level <span class="op">=</span> <span class="fl">9.5</span>  <span class="co"># float: rating of that spark!</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>is_single <span class="op">=</span> <span class="va">True</span>  <span class="co"># bool: availability</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>favorite_food <span class="op">=</span> <span class="st">"Sushi"</span>  <span class="co"># str: important info!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="36" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> y <span class="op">==</span> <span class="fl">5</span> <span class="op">&amp;&amp;</span> <span class="fu">typeof</span>(y) <span class="op">==</span> <span class="dt">Int64</span> <span class="st">"Make sure 'y' is of type Int64 and has the value 5."</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Great! You've created an Int64 variable 'y' with the value </span><span class="sc">$</span>y<span class="st">."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can check a variable’s type using the <code>type()</code> function.</p>
+</div>
+</div>
+<section id="exercise-2.1---dating-score" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.1---dating-score">Exercise 2.1 - Dating Score</h2>
+<p>Create a float variable <code>minimum_rating</code> and set it to <code>7.0</code> (our standards are high!). Of course, we don’t objectify people and rate their appearance, we rate the compatibility. We just want to find the best possible partner!</p>
+<div id="c1781e8e" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="b3e3de97" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> minimum_rating <span class="op">==</span> <span class="fl">7.0</span> <span class="kw">and</span> <span class="bu">isinstance</span>(minimum_rating, <span class="bu">float</span>), <span class="st">"Set your standards (minimum_rating) to 7.0!"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"We won't settle for less than </span><span class="sc">{</span>minimum_rating<span class="sc">}</span><span class="ss">/10, where the minimum rating is defined as a float!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exercise-2.2---dating-history" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.2---dating-history">Exercise 2.2 - Dating History</h2>
+<p>Create an integer variable <code>past_relationships</code> and set it to <code>0</code>.</p>
+<div id="fa297017" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="ce61ffd3" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> past_relationships <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> <span class="bu">isinstance</span>(past_relationships, <span class="bu">int</span>), <span class="st">"Let's start fresh with 0 past relationships"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Clean slate, although likely not true! We have defined the variable `past_relationships` as an integer and are ready to start dating!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="section-4---string-interpolation" class="level1">
-<h1>Section 4 - String Interpolation</h1>
-<p>String interpolation is like filling in blanks in a sentence. Instead of writing:</p>
-<div id="38" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Tobias"</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="fl">30</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># The hard way:</span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> <span class="st">"My name is "</span> <span class="op">*</span> name <span class="op">*</span> <span class="st">" and I am "</span> <span class="op">*</span> <span class="fu">string</span>(age) <span class="op">*</span> <span class="st">" years old"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>"My name is Tobias and I am 30 years old"</code></pre>
+<section id="section-3---making-dating-decisions" class="level1">
+<h1>Section 3 - Making Dating Decisions</h1>
+<p>In optimal stopping for dating, the math says you should date and reject the first 37% of your dating pool, then commit to the next person who’s better than everyone you’ve met before! Let’s track this:</p>
+<div id="566b6c77" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>dating_pool <span class="op">=</span> <span class="dv">100</span> <span class="co"># The number of people we will date</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>exploration_phase <span class="op">=</span> <span class="bu">int</span>(dating_pool <span class="op">*</span> <span class="fl">0.37</span>)  <span class="co"># The 37% rule</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Date (and reject) the first </span><span class="sc">{</span>exploration_phase<span class="sc">}</span><span class="ss"> people"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Python provides several functions to convert between different types:</p>
+<ul>
+<li><code>int()</code>: Converts to integer
+<ul>
+<li><code>int("37")</code> → <code>37</code></li>
+<li><code>int(37.8)</code> → <code>37</code> (truncates decimal)</li>
+</ul></li>
+<li><code>float()</code>: Converts to float
+<ul>
+<li><code>float("37.5")</code> → <code>37.5</code></li>
+<li><code>float(37)</code> → <code>37.0</code></li>
+</ul></li>
+<li><code>str()</code>: Converts to string
+<ul>
+<li><code>str(37)</code> → <code>"37"</code></li>
+<li><code>str(37.5)</code> → <code>"37.5"</code></li>
+</ul></li>
+<li><code>bool()</code>: Converts to boolean
+<ul>
+<li><code>bool(1)</code> → <code>True</code></li>
+<li><code>bool(0)</code> → <code>False</code></li>
+<li><code>bool("")</code> → <code>False</code></li>
+<li><code>bool("hello")</code> → <code>True</code></li>
+</ul></li>
+</ul>
+<section id="exercise-3.1---decision-point" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3.1---decision-point">Exercise 3.1 - Decision Point</h2>
+<p>Convert the string <code>"37"</code> into an integer variable named <code>stopping_point</code>.</p>
+<div id="1155fed7" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>stopping_point <span class="op">=</span> <span class="st">"37"</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="0398bfeb" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="bu">isinstance</span>(stopping_point, <span class="bu">int</span>) <span class="kw">and</span> stopping_point <span class="op">==</span> <span class="dv">37</span>, <span class="st">"Convert '37' to an integer"</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"After person </span><span class="sc">{</span>stopping_point<span class="sc">}</span><span class="ss">, we'll get serious about finding the best possible partner."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
-<p>We can use the <code>$</code> symbol to insert variables directly into our text:</p>
-<div id="40" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> <span class="st">"My name is </span><span class="sc">$</span>name<span class="st"> and I am </span><span class="sc">$</span>age<span class="st"> years old"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>"My name is Tobias and I am 30 years old"</code></pre>
+<div class="callout-body-container callout-body">
+<p>When converting strings to numbers: - Make sure the string contains only numeric characters - Use <code>int()</code> for whole numbers - Use <code>float()</code> if you need decimal points</p>
 </div>
 </div>
-<p>It’s like having a template where Julia automatically fills in the values for you! If you have paid attention to the previous excercise, you have already seen this in action. The following example illustrates this again:</p>
-<div id="42" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>language <span class="op">=</span> <span class="st">"Julia"</span></span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"I'm learning </span><span class="sc">$</span>language<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>I'm learning Julia</code></pre>
+</section>
+</section>
+<section id="section-4---dating-profile-output" class="level1">
+<h1>Section 4 - Dating Profile Output</h1>
+<p>Let’s create a nice dating profile using string formatting:</p>
+<div id="28d5b09d" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Casey"</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>bio <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> - Looking for someone special!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<section id="exercise-4.1---profile-message" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4.1---profile-message">Exercise 4.1 - Profile Message</h2>
+<p>We have already defined the variables <code>name</code> and <code>minimum_rating</code>. Now we want to use them in the context of a formatted string. You have already seen how to do this in the previous cells, but not explicitly. String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces <code>{}</code> around the variable names and with the <code>f</code> prefix before the string. For example:</p>
+<div id="96c43862" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">! Nice to meet you."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="exercise-4.1---string-interpolation" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-4.1---string-interpolation">Exercise 4.1 - String Interpolation</h2>
-<p>Create a string <code>message</code> that says <code>"y is [value of y]"</code> using string interpolation.</p>
-<div id="44" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, <code>{name}</code> will insert the value of <code>name</code> into the string if the variable <code>name</code> is defined.</p>
+<p>Create a formatted string <code>profile_message</code> using the variables <code>name</code> and <code>minimum_rating</code> that says “Looking for {name} (must be at least {minimum_rating}/10)”.</p>
+<div id="1ce4bcb5" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="46" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> message <span class="op">==</span> <span class="st">"y is 5"</span> <span class="st">"Make sure your string includes the correct value of y."</span></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Excellent! Your interpolated string is: </span><span class="sc">$</span>message<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="a1a46cb0" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> profile_message <span class="op">==</span> <span class="st">"Looking for Casey (must be at least 7.0/10)"</span>, <span class="st">"Format your dating profile message correctly!"</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Your dating profile is ready!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>Congratulations! You have completed the first tutorial on Variables and Types. You’ve learned about the basics of variables, integers, floats, booleans, and strings. Continue to the next file to learn more.</p>
+<p>Congratulations! You’ve learned about Python variables and types through the lens of dating optimization!</p>
+<p>Remember:</p>
+<ul>
+<li>Variables help track your dating journey</li>
+<li>Different types handle different kinds of dating data</li>
+<li>The 37% rule suggests when to get serious</li>
+<li>String formatting helps create the perfect dating profile</li>
+</ul>
+<p>Dating tip: While this mathematical approach is a good starting point, remember that love isn’t always logical! We haven’t considered the emotional aspects of dating yet or the fact that we might not be the best partner for each other.</p>
+<hr>
 </section>
 <section id="solutions" class="level1">
 <h1>Solutions</h1>
 <p>You will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.</p>
 <p>Remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.</p>
 <p>Later, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.</p>
+<hr>
+<p><em>Continue to the next tutorial to learn about comparisons and conditionals in the context of the optimal stopping problem!</em></p>
 
 
 </section>

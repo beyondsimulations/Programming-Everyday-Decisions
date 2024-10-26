@@ -25,6 +25,133 @@ format:
         documentclass: report
 ---
 
+# [Optimal Stopping]{.flow} {.title}
+
+## The Secretary Problem
+
+:::{.incremental}
+- Imagine you're hiring a secretary
+- You must interview candidates one by one
+- After each interview, you must decide: hire or continue searching
+- Once you reject a candidate, you cannot go back
+- How do you maximize your chances of selecting the best candidate?
+:::
+
+## Real-World Applications
+
+:::{.incremental}
+- Apartment hunting
+- Dating and relationships
+- Job searching
+- Parking spots
+- Selling a house
+:::
+
+## The 37% Rule
+
+:::{.callout-tip}
+The optimal strategy is to:
+1. Look at the first 37% of options
+2. Remember the best one seen so far
+3. Choose the next option that's better than the best seen
+:::
+
+## Why 37%?
+
+```{python}
+#| eval: true
+#| output-location: fragment
+
+import math
+
+def optimal_stopping_point(n):
+    return round(n/math.e, 2)
+
+examples = [10, 20, 50, 100]
+for n in examples:
+    stop = optimal_stopping_point(n)
+    percent = round(stop/n * 100, 1)
+    print(f"For {n} options: Look at first {stop} ({percent}%)")
+```
+
+## Implementation in Python
+
+```{python}
+def optimal_secretary_strategy(candidates):
+    n = len(candidates)
+    lookout_phase = int(n/math.e)
+    best_so_far = max(candidates[:lookout_phase])
+    
+    for i in range(lookout_phase, n):
+        if candidates[i] > best_so_far:
+            return i
+    return n-1  # If no better candidate found
+```
+
+# [Practical Examples]{.flow} {.title}
+
+## Apartment Hunting
+
+[Task]{.task}: Let's simulate an apartment search in Hamburg
+
+```{python}
+import random
+
+def generate_apartments(n):
+    """Generate n apartments with random scores (1-100)"""
+    return [random.randint(1, 100) for _ in range(n)]
+
+# Example usage
+apartments = generate_apartments(10)
+stopping_point = optimal_stopping_point(len(apartments))
+print(f"Look at first {stopping_point} apartments before deciding")
+```
+
+## Interactive Demo
+
+[Let's try it!]{.task}
+
+```{python}
+#| eval: false
+
+def apartment_search_game():
+    apartments = generate_apartments(10)
+    for i, score in enumerate(apartments):
+        print(f"\nApartment {i+1} Score: {score}")
+        if i < int(len(apartments)/math.e):
+            print("Still in observation phase...")
+            continue
+        
+        choice = input("Take this apartment? (y/n): ")
+        if choice.lower() == 'y':
+            if score == max(apartments[i:]):
+                print("Great choice! This was the best remaining option!")
+            else:
+                print("There was a better apartment later...")
+            break
+```
+
+# [Variations]{.flow} {.title}
+
+## Cost of Searching
+
+- What if each additional search costs money?
+- How does this change our strategy?
+- Trade-off between finding better options and search costs
+
+## Risk Tolerance
+
+- Different scenarios require different strategies
+- Conservative vs. aggressive approaches
+- Impact of wrong decisions
+
+# [Questions?]{.flow} {.title}
+
+## Further Reading
+
+- Christian, B., & Griffiths, T. (2016). Algorithms to live by: The computer science of human decisions
+- Ferguson, T. S. (1989). Who solved the secretary problem?
+
 # [About this Course]{.flow} {.title}
 
 ## About me

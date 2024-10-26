@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial II.III - Comparison Operators – Programming: Everyday Decision-Making Algorithms</title>
+<title>Tutorial I.II - Comparison Operators – Programming: Everyday Decision-Making Algorithms</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -216,17 +216,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#section-1---comparisons" id="toc-section-1---comparisons" class="nav-link" data-scroll-target="#section-1---comparisons">Section 1 - Comparisons</a>
+  <li><a href="#section-1---basic-comparisons" id="toc-section-1---basic-comparisons" class="nav-link" data-scroll-target="#section-1---basic-comparisons">Section 1 - Basic Comparisons</a>
   <ul class="collapse">
-  <li><a href="#exercise-1.1---compare-if-10-is-greater-than-5" id="toc-exercise-1.1---compare-if-10-is-greater-than-5" class="nav-link" data-scroll-target="#exercise-1.1---compare-if-10-is-greater-than-5">Exercise 1.1 - Compare if 10 is greater than 5</a></li>
-  <li><a href="#exercise-1.2---compare-if-x-is-not-equal-to-y" id="toc-exercise-1.2---compare-if-x-is-not-equal-to-y" class="nav-link" data-scroll-target="#exercise-1.2---compare-if-x-is-not-equal-to-y">Exercise 1.2 - Compare if x is not equal to y</a></li>
+  <li><a href="#exercise-1.1---compare-test-scores" id="toc-exercise-1.1---compare-test-scores" class="nav-link" data-scroll-target="#exercise-1.1---compare-test-scores">Exercise 1.1 - Compare Test Scores</a></li>
+  <li><a href="#exercise-1.2---compare-skills" id="toc-exercise-1.2---compare-skills" class="nav-link" data-scroll-target="#exercise-1.2---compare-skills">Exercise 1.2 - Compare Skills</a></li>
+  <li><a href="#exercise-1.3---compare-candidates" id="toc-exercise-1.3---compare-candidates" class="nav-link" data-scroll-target="#exercise-1.3---compare-candidates">Exercise 1.3 - Compare Candidates</a></li>
   </ul></li>
-  <li><a href="#section-2---logical-operators" id="toc-section-2---logical-operators" class="nav-link" data-scroll-target="#section-2---logical-operators">Section 2 - Logical Operators</a>
+  <li><a href="#section-2---combining-comparisons-with-logical-operators" id="toc-section-2---combining-comparisons-with-logical-operators" class="nav-link" data-scroll-target="#section-2---combining-comparisons-with-logical-operators">Section 2 - Combining Comparisons with Logical Operators</a>
   <ul class="collapse">
-  <li><a href="#exercise-2.1---use-the-and-operator" id="toc-exercise-2.1---use-the-and-operator" class="nav-link" data-scroll-target="#exercise-2.1---use-the-and-operator">Exercise 2.1 - Use the AND operator</a></li>
-  <li><a href="#exercise-2.2---use-the-or-operator" id="toc-exercise-2.2---use-the-or-operator" class="nav-link" data-scroll-target="#exercise-2.2---use-the-or-operator">Exercise 2.2 - Use the OR operator</a></li>
-  <li><a href="#exercise-2.3---use-the-not-operator" id="toc-exercise-2.3---use-the-not-operator" class="nav-link" data-scroll-target="#exercise-2.3---use-the-not-operator">Exercise 2.3 - Use the NOT operator</a></li>
-  <li><a href="#exercise-2.4---chaining-comparisons" id="toc-exercise-2.4---chaining-comparisons" class="nav-link" data-scroll-target="#exercise-2.4---chaining-comparisons">Exercise 2.4 - Chaining Comparisons</a></li>
+  <li><a href="#exercise-2.1---check-multiple-requirements" id="toc-exercise-2.1---check-multiple-requirements" class="nav-link" data-scroll-target="#exercise-2.1---check-multiple-requirements">Exercise 2.1 - Check Multiple Requirements</a></li>
+  <li><a href="#exercise-2.2---alternative-requirements" id="toc-exercise-2.2---alternative-requirements" class="nav-link" data-scroll-target="#exercise-2.2---alternative-requirements">Exercise 2.2 - Alternative Requirements</a></li>
+  </ul></li>
+  <li><a href="#section-3---putting-it-all-together" id="toc-section-3---putting-it-all-together" class="nav-link" data-scroll-target="#section-3---putting-it-all-together">Section 3 - Putting It All Together</a>
+  <ul class="collapse">
+  <li><a href="#exercise-3.1---make-a-hiring-decision" id="toc-exercise-3.1---make-a-hiring-decision" class="nav-link" data-scroll-target="#exercise-3.1---make-a-hiring-decision">Exercise 3.1 - Make a Hiring Decision</a></li>
+  <li><a href="#exercise-2.3---optimal-stopping-decision" id="toc-exercise-2.3---optimal-stopping-decision" class="nav-link" data-scroll-target="#exercise-2.3---optimal-stopping-decision">Exercise 2.3 - Optimal Stopping Decision</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
@@ -238,8 +242,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tutorial II.III - Comparison Operators</h1>
-<p class="subtitle lead">Applied Optimization with Julia</p>
+<h1 class="title">Tutorial I.II - Comparison Operators</h1>
+<p class="subtitle lead">Programming: Everyday Decision-Making Algorithms</p>
 </div>
 
 
@@ -258,293 +262,320 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Imagine you’re teaching a computer to make decisions. Just like we compare things in everyday life (“Is it raining?”, “Do I have enough money?”), computers need ways to compare values and make choices. This tutorial will show you how to help computers make these comparisons!</p>
-<p>Follow the instructions, write your code in the designated code blocks, and execute the corresponding code cell.</p>
+<p>Imagine you’re teaching a computer to make decisions. Just like we compare things in everyday life (“Is it raining?”, “Do I have enough money?”), computers need ways to compare values and make choices. Let’s look at this in the context of hiring decisions to help us how to make decisions in the context of optimal stopping problems. Imagine you’re helping a company make hiring decisions. You need to look at different candidates and decide if they meet certain requirements. To make these decisions with Python, we need to learn how to make comparisons!</p>
 </section>
-<section id="section-1---comparisons" class="level1">
-<h1>Section 1 - Comparisons</h1>
-<p>In everyday life, we make comparisons all the time:</p>
+<section id="section-1---basic-comparisons" class="level1">
+<h1>Section 1 - Basic Comparisons</h1>
+<p>When looking at job candidates, we often ask questions like:</p>
 <ul>
-<li>Is this coffee too hot?</li>
-<li>Do I have enough money for lunch?</li>
-<li>Is my password correct?</li>
+<li>Does the candidate have enough experience?</li>
+<li>Is their salary request within our budget?</li>
+<li>Did they score well on the test?</li>
 </ul>
-<p>In Julia, we use special symbols to make these comparisons. Comparisons return a boolean value (true or false). You can use these directly or store them in a variable. For example:</p>
-<div id="2" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"secret123"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>password_correct <span class="op">=</span> (user_input <span class="op">==</span> <span class="st">"secret123"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>true</code></pre>
+<p>These questions all require yes/no (True/False) answers, which is exactly what comparison operators give us in Python. Each comparison will result in either <code>True</code> or <code>False</code>.</p>
+<p>In Python, we use special symbols to make these comparisons:</p>
+<div id="86dedf5f" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's look at the current candidate compared to the best we've seen so far</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>current_candidate_score <span class="op">=</span> <span class="dv">85</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>best_score_so_far <span class="op">=</span> <span class="dv">82</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Is this the best candidate yet?</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>is_best_so_far <span class="op">=</span> (current_candidate_score <span class="op">&gt;</span> best_score_so_far)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Is this our best candidate so far? </span><span class="sc">{</span>is_best_so_far<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Have we interviewed enough candidates?</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>candidates_seen <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>total_candidates <span class="op">=</span> <span class="dv">30</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>passed_threshold <span class="op">=</span> (candidates_seen <span class="op">&gt;=</span> total_candidates <span class="op">*</span> <span class="fl">0.37</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Have we passed our optimal stopping threshold? </span><span class="sc">{</span>passed_threshold<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
-<div id="4" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>coffee_temp <span class="op">=</span> <span class="fl">75</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>temperature_safe <span class="op">=</span> (coffee_temp <span class="op">&lt;=</span> <span class="fl">70</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>false</code></pre>
+<div class="callout-body-container callout-body">
+<p>When you make a comparison in Python, the result is always a boolean value (<code>True</code> or <code>False</code>). This is why we can store the result in variables like <code>is_best_so_far</code> - these variables will contain either <code>True</code> or <code>False</code>.</p>
 </div>
 </div>
-<p>The following are potential real-world examples:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do I have enough money?</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>enough_money <span class="op">=</span> (wallet <span class="op">&gt;=</span> price)    </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Is the person an adult?</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>is_adult <span class="op">=</span> (age <span class="op">&gt;=</span> <span class="fl">18</span>)            </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Is this person Elio?</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>same_name <span class="op">=</span> (name <span class="op">==</span> <span class="st">"Elio"</span>)     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Here are all the comparison operators:</p>
+<p>Here are all the comparison operators we can use:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Symbol</th>
 <th>Meaning</th>
-<th>Real-world Example</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>==</code></td>
 <td>Equal to</td>
-<td>Is my password correct?</td>
+<td><code>score == 100</code></td>
 </tr>
 <tr class="even">
 <td><code>!=</code></td>
 <td>Not equal to</td>
-<td>Is this a different person?</td>
+<td><code>degree != "Computer Science"</code></td>
 </tr>
 <tr class="odd">
 <td><code>&lt;</code></td>
 <td>Less than</td>
-<td>Is it colder than freezing?</td>
+<td><code>salary &lt; 80000</code></td>
 </tr>
 <tr class="even">
 <td><code>&gt;</code></td>
 <td>Greater than</td>
-<td>Do I have more than $10?</td>
+<td><code>experience &gt; 5</code></td>
 </tr>
 <tr class="odd">
 <td><code>&lt;=</code></td>
 <td>Less than or equal to</td>
-<td>Can this ride fit in my garage?</td>
+<td><code>age &lt;= 65</code></td>
 </tr>
 <tr class="even">
 <td><code>&gt;=</code></td>
 <td>Greater than or equal to</td>
-<td>Am I old enough to vote?</td>
+<td><code>test_score &gt;= 80</code></td>
 </tr>
 </tbody>
 </table>
-<p>Let’s try some examples:</p>
-<div id="6" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Temperature comparison</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>temp <span class="op">=</span> <span class="fl">25</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>is_freezing <span class="op">=</span> (temp <span class="op">&lt;=</span> <span class="fl">0</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Is it freezing? </span><span class="sc">$</span>is_freezing<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Is it freezing? false</code></pre>
+<section id="exercise-1.1---compare-test-scores" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.1---compare-test-scores">Exercise 1.1 - Compare Test Scores</h2>
+<p>A candidate scored 95 on their test. The previous highest score was 88. Create a comparison to check if the new score is better and store the result in <code>compare_scores</code>.</p>
+<div id="58136047" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creates the variables</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>new_score <span class="op">=</span> <span class="dv">95</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>previous_best <span class="op">=</span> <span class="dv">88</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> compare_scores <span class="op">==</span> <span class="va">True</span>, <span class="st">"The new score should be greater than the previous best"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Is new score better? </span><span class="sc">{</span>compare_scores<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercise-1.2---compare-skills" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.2---compare-skills">Exercise 1.2 - Compare Skills</h2>
+<p>Check if a candidate’s skill matches what we need. Compare if the following two variables are different and store the result in <code>compare_skills</code>.</p>
+<div id="a449df92" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>candidate_skill <span class="op">=</span> <span class="st">"Finance"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>required_skill <span class="op">=</span> <span class="st">"Python"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="8" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Price comparison</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>budget <span class="op">=</span> <span class="fl">50</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> <span class="fl">45</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>can_afford <span class="op">=</span> (budget <span class="op">&gt;=</span> price)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Can I afford it? </span><span class="sc">$</span>can_afford<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Can I afford it? true</code></pre>
-</div>
-</div>
-<section id="exercise-1.1---compare-if-10-is-greater-than-5" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.1---compare-if-10-is-greater-than-5">Exercise 1.1 - Compare if 10 is greater than 5</h2>
-<p>Compare if 10 is greater than 5 and store the result in <code>comparison1</code>.</p>
-<div id="10" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="12" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> comparison1 <span class="op">==</span> <span class="cn">true</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"comparison1 is "</span>, comparison1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="fbca76b8" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> compare_skills <span class="op">==</span> <span class="va">False</span>, <span class="st">"The candidate's skill should not match the required skill"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Good job! You correctly identified that the skills are different"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-1.2---compare-if-x-is-not-equal-to-y" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-1.2---compare-if-x-is-not-equal-to-y">Exercise 1.2 - Compare if x is not equal to y</h2>
-<p>Define variables <code>x</code> with value <code>"Hello"</code> and <code>y</code> with value <code>"world"</code>. Compare if <code>x</code> is not equal to <code>y</code> and store the result in <code>comparison2</code>.</p>
-<div id="14" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-1.3---compare-candidates" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.3---compare-candidates">Exercise 1.3 - Compare Candidates</h2>
+<p>In the secretary problem, we need to compare candidates to the best we’ve seen. Check if the current candidate is better than our best so far and store the result in <code>is_better</code>.</p>
+<div id="9c96aea1" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">92</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>best_so_far <span class="op">=</span> <span class="dv">88</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="16" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> x <span class="op">==</span> <span class="st">"Hello"</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> y <span class="op">==</span> <span class="st">"world"</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> comparison2 <span class="op">==</span> <span class="cn">true</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Comparison2 is "</span>, comparison2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="d0f77a61" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> is_better <span class="op">==</span> <span class="va">True</span>, <span class="st">"The current candidate should be better than the best so far"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Good job! You correctly identified that the current candidate is better than the best so far"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="section-2---logical-operators" class="level1">
-<h1>Section 2 - Logical Operators</h1>
-<p>Sometimes we need to combine multiple comparisons in our code, just like in real life decisions:</p>
+<section id="section-2---combining-comparisons-with-logical-operators" class="level1">
+<h1>Section 2 - Combining Comparisons with Logical Operators</h1>
+<p>Often, we need to check multiple things at once. For example, a good candidate should:</p>
 <ul>
-<li>“Can I go to the party?” might depend on:
-<ul>
-<li>(Is it weekend?) AND (Have I finished my studies?)</li>
-</ul></li>
-<li>“Should I take an umbrella?” might depend on:
-<ul>
-<li>(Is it raining?) OR (Is it likely to rain?)</li>
-</ul></li>
+<li>Have enough experience</li>
+<li>Be within our budget</li>
+<li>Pass the test</li>
 </ul>
-<p>Julia uses three main logical operators:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AND (&amp;&amp;): Both conditions must be true</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>can_go_to_party <span class="op">=</span> (is_weekend <span class="op">&amp;&amp;</span> homework_done)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># OR (||): At least one condition must be true</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>need_umbrella <span class="op">=</span> (is_raining <span class="op">||</span> forecast_says_rain)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># NOT (!): Opposite of the condition</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>is_closed <span class="op">=</span> !is_open</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Real-world Examples:</p>
-<div id="18" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Can I buy this game?</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="fl">25</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>money <span class="op">=</span> <span class="fl">60</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>game_price <span class="op">=</span> <span class="fl">50</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>can_buy <span class="op">=</span> (age <span class="op">&gt;=</span> <span class="fl">18</span>) <span class="op">&amp;&amp;</span> (money <span class="op">&gt;=</span> game_price)</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Can I buy the game? </span><span class="sc">$</span>can_buy<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Can I buy the game? true</code></pre>
+<p>Python gives us three ways to combine comparisons:</p>
+<ul>
+<li><code>and</code>: Both conditions must be true</li>
+<li><code>or</code>: At least one condition must be true</li>
+<li><code>not</code>: Makes true become false and false become true</li>
+</ul>
+<p>Let’s see some examples:</p>
+<div id="8776dc4b" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Candidate information</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>experience <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>test_score <span class="op">=</span> <span class="dv">90</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>salary_ask <span class="op">=</span> <span class="dv">75000</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Check multiple requirements at once</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>meets_experience <span class="op">=</span> (experience <span class="op">&gt;=</span> <span class="dv">3</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>good_test_score <span class="op">=</span> (test_score <span class="op">&gt;=</span> <span class="dv">85</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>affordable <span class="op">=</span> (salary_ask <span class="op">&lt;=</span> <span class="dv">80000</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># All requirements must be met (using AND)</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>is_good_candidate <span class="op">=</span> (meets_experience <span class="kw">and</span> good_test_score <span class="kw">and</span> affordable)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we hire this candidate? </span><span class="sc">{</span>is_good_candidate<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative qualifications (using OR)</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>has_degree <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>has_certification <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>is_qualified <span class="op">=</span> (has_degree <span class="kw">or</span> has_certification)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Is candidate qualified? </span><span class="sc">{</span>is_qualified<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<div id="20" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Should I wear a coat?</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>temperature <span class="op">=</span> <span class="fl">5</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>is_raining <span class="op">=</span> <span class="cn">true</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>need_coat <span class="op">=</span> (temperature <span class="op">&lt;</span> <span class="fl">10</span>) <span class="op">||</span> is_raining</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"Should I wear a coat? </span><span class="sc">$</span>need_coat<span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Should I wear a coat? true</code></pre>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Think of those logical operators as follows:</p>
+<p>Common Mistakes to Avoid:</p>
+<ol type="1">
+<li>Don’t confuse <code>=</code> (assignment) with <code>==</code> (comparison)</li>
+<li>Remember that <code>and</code> requires ALL conditions to be True</li>
+<li>When combining multiple comparisons, use parentheses to make your logic clear Example: <code>(experience &gt;= 3) and (test_score &gt;= 85)</code></li>
+</ol>
+</div>
+</div>
+<section id="exercise-2.1---check-multiple-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.1---check-multiple-requirements">Exercise 2.1 - Check Multiple Requirements</h2>
+<p>We have a candidate with:</p>
 <ul>
-<li><code>&amp;&amp;</code> (AND) as a strict condition - everything must be perfect</li>
-<li><code>||</code> (OR) as a lenient condition - any good reason is enough</li>
-<li><code>!</code> (NOT) as the opposite of something</li>
+<li>4 years of experience</li>
+<li>Test score of 90</li>
 </ul>
+<p>Check if they meet BOTH requirements:</p>
+<ul>
+<li>More than 3 years experience</li>
+<li>Test score above 85</li>
+</ul>
+<p>Store the result in <code>meets_requirements</code>.</p>
+<div id="cf90fc3e" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>years <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>score <span class="op">=</span> <span class="dv">90</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<section id="exercise-2.1---use-the-and-operator" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.1---use-the-and-operator">Exercise 2.1 - Use the AND operator</h2>
-<p>Use the <code>AND</code> operator to check if <code>10</code> is greater than <code>5</code> and <code>hello</code> is equal to <code>hello</code>. Store the result in <code>logic1</code>.</p>
-<div id="22" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="24" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> logic1 <span class="op">==</span> <span class="cn">true</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"logic1 is "</span>, logic1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="exercise-2.2---use-the-or-operator" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.2---use-the-or-operator">Exercise 2.2 - Use the OR operator</h2>
-<p>Use the <code>OR</code> operator to check if <code>10</code> is less than <code>5</code> or <code>hello</code> is equal to <code>hello</code>. Store the result in <code>logic2</code>.</p>
-<div id="26" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="28" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> logic2 <span class="op">==</span> <span class="cn">true</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"logic2 is "</span>, logic2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Julia uses short-circuit evaluation for <code>&amp;&amp;</code> and <code>||</code> operators. This means that the second operand is only evaluated if necessary.</p>
-</div>
+<div id="c112544e" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> meets_requirements <span class="op">==</span> <span class="va">True</span>, <span class="st">"The candidate should meet both requirements"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Good job! You correctly identified that the candidate meets both requirements"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-2.3---use-the-not-operator" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.3---use-the-not-operator">Exercise 2.3 - Use the NOT operator</h2>
-<p>Check whether <code>10</code> is greater than <code>5</code> and store the result in <code>logic3</code>. Then, use the <code>NOT</code> operator to invert <code>logic3</code>. Store the result in <code>logic4</code>.</p>
-<div id="30" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-2.2---alternative-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.2---alternative-requirements">Exercise 2.2 - Alternative Requirements</h2>
+<p>A candidate is acceptable if they EITHER:</p>
+<ul>
+<li>Have a PhD</li>
+<li>OR have a high test score (above 95)</li>
+</ul>
+<div id="7c0fb134" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>has_phd <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>test_score <span class="op">=</span> <span class="dv">92</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Store the result in `is_qualified`</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="32" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> logic3 <span class="op">==</span> <span class="cn">true</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> logic4 <span class="op">==</span> <span class="cn">false</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"logic3 is "</span>, logic3,<span class="st">" and logic4 is"</span>, logic4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="ac311e15" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> is_qualified <span class="op">==</span> <span class="va">True</span>, <span class="st">"The candidate should be qualified"</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Good job! You correctly identified that the candidate is qualified"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-2.4---chaining-comparisons" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.4---chaining-comparisons">Exercise 2.4 - Chaining Comparisons</h2>
-<p>Julia has a neat feature that lets you write comparisons the way you think about them:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead of writing:</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">&gt;=</span> <span class="fl">13</span> <span class="op">&amp;&amp;</span> age <span class="op">&lt;=</span> <span class="fl">19</span>    <span class="co"># Is age between 13 and 19?</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># You can write:</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fl">13</span> <span class="op">&lt;=</span> age <span class="op">&lt;=</span> <span class="fl">19</span>          <span class="co"># Much more natural!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Real-world examples:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Is the body temperature normal?</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>normal_temperature <span class="op">=</span> (<span class="fl">36.5</span> <span class="op">&lt;=</span> body_temp <span class="op">&lt;=</span> <span class="fl">37.5</span>)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Is the current hour within working hours?</span></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>working_hours <span class="op">=</span> (<span class="fl">9</span> <span class="op">&lt;=</span> current_hour <span class="op">&lt;</span> <span class="fl">17</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Check if <code>x</code> is between <code>1</code> and <code>10</code> (exclusive) using a chained comparison. Store the result in <code>chained_comparison</code>.</p>
-<div id="34" class="cell" data-execution_count="0">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">5</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="section-3---putting-it-all-together" class="level1">
+<h1>Section 3 - Putting It All Together</h1>
+<p>Let’s look at a real candidate and check all their qualifications:</p>
+<div id="f6bf16ea" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Secretary Problem Scenario</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>candidate_name <span class="op">=</span> <span class="st">"Mika"</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>candidates_seen <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>total_candidates <span class="op">=</span> <span class="dv">50</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>current_score <span class="op">=</span> <span class="dv">88</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>best_score_so_far <span class="op">=</span> <span class="dv">85</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Our decision criteria</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>threshold_ratio <span class="op">=</span> <span class="fl">0.37</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>passed_threshold <span class="op">=</span> (candidates_seen <span class="op">&gt;=</span> total_candidates <span class="op">*</span> threshold_ratio)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>is_best_so_far <span class="op">=</span> (current_score <span class="op">&gt;</span> best_score_so_far)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Final decision - must pass threshold AND be best so far</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>should_hire <span class="op">=</span> (passed_threshold <span class="kw">and</span> is_best_so_far)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Candidate: </span><span class="sc">{</span>candidate_name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Passed observation threshold: </span><span class="sc">{</span>passed_threshold<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Best candidate so far: </span><span class="sc">{</span>is_best_so_far<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Final decision - Should hire: </span><span class="sc">{</span>should_hire<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="36" class="cell" data-execution_count="0">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@assert</span> chained_comparison <span class="op">==</span> <span class="cn">true</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"chained_comparison is "</span>, chained_comparison)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<section id="exercise-3.1---make-a-hiring-decision" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3.1---make-a-hiring-decision">Exercise 3.1 - Make a Hiring Decision</h2>
+<p>Look at the following candidate’s information and decide if we should hire them:</p>
+<p>Requirements:</p>
+<ul>
+<li>At least 5 years experience</li>
+<li>Test score above 85</li>
+<li>Salary request at most 90000</li>
+<li>Must have a degree</li>
+</ul>
+<p>Create a single boolean expression that checks ALL requirements and store the result in <code>final_decision</code>.</p>
+<div id="d4b3fbc6" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Candidate information</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>candidate_experience <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>candidate_score <span class="op">=</span> <span class="dv">89</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>candidate_salary <span class="op">=</span> <span class="dv">92000</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>candidate_has_degree <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="45030326" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> final_decision <span class="op">==</span> <span class="va">False</span>, <span class="st">"The candidate should not meet all requirements"</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Good job! You correctly identified that the candidate does not meet all requirements as his salary expectation is too high."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exercise-2.3---optimal-stopping-decision" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.3---optimal-stopping-decision">Exercise 2.3 - Optimal Stopping Decision</h2>
+<p>We have:</p>
+<ul>
+<li>Seen 18 out of 40 candidates</li>
+<li>Current candidate score: 90</li>
+<li>Best score so far: 85</li>
+</ul>
+<p>Check if we should hire this candidate (we should hire if we’ve seen at least 37% of candidates AND this candidate is better than the best so far).</p>
+<p>Store the result in <code>make_offer</code>.</p>
+<div id="4eb87fb8" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Candidate information</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>candidates_seen <span class="op">=</span> <span class="dv">18</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>total_candidates <span class="op">=</span> <span class="dv">40</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>current_score <span class="op">=</span> <span class="dv">90</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>best_score_so_far <span class="op">=</span> <span class="dv">85</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="bc4d9c80" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> make_offer <span class="op">==</span> <span class="va">True</span>, <span class="st">"We should hire this candidate"</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Good job! You correctly identified that we should hire this candidate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>Excellent work! You’ve completed the tutorial on Comparisons and logical operators in Julia. You’ve learned to compare values and use logical operators to combine or invert boolean values. Experiment with the code, try different operations, and understand how Julia handles logic. Continue to the next file to learn more.</p>
+<p>Great job! You now know how to:</p>
+<ul>
+<li>Compare values using Python’s comparison operators</li>
+<li>Combine comparisons using logical operators</li>
+<li>Make decisions based on multiple criteria</li>
+</ul>
+<p>These skills are useful not just for hiring decisions, but for any situation where you need to make choices based on multiple conditions, especially in the context of optimal stopping problems!</p>
+<hr>
 </section>
 <section id="solutions" class="level1">
 <h1>Solutions</h1>
 <p>You will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.</p>
 <p>Remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.</p>
 <p>Later, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.</p>
+<p><em>Continue to the next tutorial to learn how to apply these skills to the optimal stopping problem!</em></p>
 
 
 </section>

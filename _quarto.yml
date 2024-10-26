@@ -30,7 +30,7 @@ website:
           - text: "01 - Variables"
             href: part-01/tutorial-01-variables.qmd
           - text: "02 - Comparisons"
-            href: part-01/tutorial-01-comparisons.qmd
+            href: part-01/tutorial-02-comparisons.qmd
           - text: "03 - Stopping"
             href: part-01/tutorial-03-stopping.qmd
       - text: "***"

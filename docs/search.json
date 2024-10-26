@@ -375,7 +375,7 @@
     "href": "part-01/lecture-optimal-stopping.html",
     "title": "Lecture I - Optimal Stopping",
     "section": "",
-    "text": "Field: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nPart I: Introduction to Programming with Python\nPart II: Data Science Tools with Python\nPart III: Programming Projects\n\n\n\n\n\nPrequisite for course Management Science (Prof. Goel)\nTry actively participating in this course\nYou will find it much (!) easier to follow Prof. Goel\nMaterials will be provided in the KLU portal\nSlides are hosted at beyondsimulations.github.io/Introduction-to-Python\n\n\n\n\n\nLecture: Presentation of tools and concepts, based on small examples and code snippets\nTutorial: Hands-on examples to be solved in groups\nDifficulty: Difficult at first, but gradually easier\n\n\n\n\n\nPass/fail course\n75% attendance required for passing the course\n2 assignments and 1 little project\nYou will be given programming exercises to solve\nYou can group up (3 students) and work together\nEach student group submits one solution\n\n\n\n\n\nProvide a code solution to the problem (.py files)\nCode files need to be executable\nDetailed explanations of your code should be provided\nUse comments or docstrings in your code\nProvide a general (verbal) introduction to each problem\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI’d encourage you to start and submit your solution early\n\n\n\n\n\n\nWe’ll cover the basics of programming (in Python) at first\nThis is similar to learning a new foreign language\nFirst, you have to get used to the language and learn words\nLater, you’ll be able to apply it and see results\nSimilar to learning a language: Practice, practice, practice!\n\n\n\n\n\nSome investment in the beginning to see the return later\nYou can ask questions and get support anytime\nAfter completion, you will be able to read code\nand write your own program using Python\nThat’s quite something!\n\n\n\n\n\nEssential concepts and tools of modern programming\nAutomated solutions for recurrent tasks\nAlgorithm-based solutions of complex problems\nUsage of AI in a specific context\n\n\n\n\n\nOrigins: Conceived in late 1980s as a teaching and scripting language\nSimple Syntax: Python’s syntax is straightforward and easy to learn\nVersatility: Used in web development, data analysis, artificial intelligence, and more\nCommunity Support: A large community of users and extensive documentation\n\n\n\n\n\nYou are allowed to use AI (GitHub Copilot, ChatGPT, LLama3 …)\nThese new tools are really powerful for learning Python!\nThey can help you a lot to get started with programming\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nBut you should not simply use them to replace your learning.",
+    "text": "Imagine you’re hiring a secretary\nYou must interview candidates one by one\nAfter each interview, you must decide: hire or continue searching\nOnce you reject a candidate, you cannot go back\nHow do you maximize your chances of selecting the best candidate?\n\n\n\n\n\n\n\nApartment hunting\nDating and relationships\nJob searching\nParking spots\nSelling a house\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe optimal strategy is to: 1. Look at the first 37% of options 2. Remember the best one seen so far 3. Choose the next option that’s better than the best seen\n\n\n\n\n\n\nimport math\n\ndef optimal_stopping_point(n):\n    return round(n/math.e, 2)\n\nexamples = [10, 20, 50, 100]\nfor n in examples:\n    stop = optimal_stopping_point(n)\n    percent = round(stop/n * 100, 1)\n    print(f\"For {n} options: Look at first {stop} ({percent}%)\")\n\nFor 10 options: Look at first 3.68 (36.8%)\nFor 20 options: Look at first 7.36 (36.8%)\nFor 50 options: Look at first 18.39 (36.8%)\nFor 100 options: Look at first 36.79 (36.8%)\n\n\n\n\n\n\ndef optimal_secretary_strategy(candidates):\n    n = len(candidates)\n    lookout_phase = int(n/math.e)\n    best_so_far = max(candidates[:lookout_phase])\n    \n    for i in range(lookout_phase, n):\n        if candidates[i] &gt; best_so_far:\n            return i\n    return n-1  # If no better candidate found",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -385,8 +385,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#about-me",
     "href": "part-01/lecture-optimal-stopping.html#about-me",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Field: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!",
+    "section": "About me",
+    "text": "About me\n\n\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -396,8 +396,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#course-outline",
     "href": "part-01/lecture-optimal-stopping.html#course-outline",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Part I: Introduction to Programming with Python\nPart II: Data Science Tools with Python\nPart III: Programming Projects",
+    "section": "Course Outline",
+    "text": "Course Outline\n\nPart I: Introduction to Programming with Python\nPart II: Data Science Tools with Python\nPart III: Programming Projects",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -407,8 +407,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#participation",
     "href": "part-01/lecture-optimal-stopping.html#participation",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Prequisite for course Management Science (Prof. Goel)\nTry actively participating in this course\nYou will find it much (!) easier to follow Prof. Goel\nMaterials will be provided in the KLU portal\nSlides are hosted at beyondsimulations.github.io/Introduction-to-Python",
+    "section": "Participation",
+    "text": "Participation\n\nPrequisite for course Management Science (Prof. Goel)\nTry actively participating in this course\nYou will find it much (!) easier to follow Prof. Goel\nMaterials will be provided in the KLU portal\nSlides are hosted at beyondsimulations.github.io/Introduction-to-Python",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -418,8 +418,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#teaching",
     "href": "part-01/lecture-optimal-stopping.html#teaching",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Lecture: Presentation of tools and concepts, based on small examples and code snippets\nTutorial: Hands-on examples to be solved in groups\nDifficulty: Difficult at first, but gradually easier",
+    "section": "Teaching",
+    "text": "Teaching\n\nLecture: Presentation of tools and concepts, based on small examples and code snippets\nTutorial: Hands-on examples to be solved in groups\nDifficulty: Difficult at first, but gradually easier",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -429,8 +429,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#passing-the-course",
     "href": "part-01/lecture-optimal-stopping.html#passing-the-course",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Pass/fail course\n75% attendance required for passing the course\n2 assignments and 1 little project\nYou will be given programming exercises to solve\nYou can group up (3 students) and work together\nEach student group submits one solution",
+    "section": "Passing the Course",
+    "text": "Passing the Course\n\nPass/fail course\n75% attendance required for passing the course\n2 assignments and 1 little project\nYou will be given programming exercises to solve\nYou can group up (3 students) and work together\nEach student group submits one solution",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -440,8 +440,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#solution",
     "href": "part-01/lecture-optimal-stopping.html#solution",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Provide a code solution to the problem (.py files)\nCode files need to be executable\nDetailed explanations of your code should be provided\nUse comments or docstrings in your code\nProvide a general (verbal) introduction to each problem\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI’d encourage you to start and submit your solution early",
+    "section": "Solution",
+    "text": "Solution\n\nProvide a code solution to the problem (.py files)\nCode files need to be executable\nDetailed explanations of your code should be provided\nUse comments or docstrings in your code\nProvide a general (verbal) introduction to each problem\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI’d encourage you to start and submit your solution early",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -451,8 +451,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#difficulty-of-the-course",
     "href": "part-01/lecture-optimal-stopping.html#difficulty-of-the-course",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "We’ll cover the basics of programming (in Python) at first\nThis is similar to learning a new foreign language\nFirst, you have to get used to the language and learn words\nLater, you’ll be able to apply it and see results\nSimilar to learning a language: Practice, practice, practice!",
+    "section": "Difficulty of the Course",
+    "text": "Difficulty of the Course\n\nWe’ll cover the basics of programming (in Python) at first\nThis is similar to learning a new foreign language\nFirst, you have to get used to the language and learn words\nLater, you’ll be able to apply it and see results\nSimilar to learning a language: Practice, practice, practice!",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -462,8 +462,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#what-to-expect",
     "href": "part-01/lecture-optimal-stopping.html#what-to-expect",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Some investment in the beginning to see the return later\nYou can ask questions and get support anytime\nAfter completion, you will be able to read code\nand write your own program using Python\nThat’s quite something!",
+    "section": "What to expect",
+    "text": "What to expect\n\nSome investment in the beginning to see the return later\nYou can ask questions and get support anytime\nAfter completion, you will be able to read code\nand write your own program using Python\nThat’s quite something!",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -473,8 +473,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#goals-of-the-course",
     "href": "part-01/lecture-optimal-stopping.html#goals-of-the-course",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Essential concepts and tools of modern programming\nAutomated solutions for recurrent tasks\nAlgorithm-based solutions of complex problems\nUsage of AI in a specific context",
+    "section": "Goals of the Course",
+    "text": "Goals of the Course\n\nEssential concepts and tools of modern programming\nAutomated solutions for recurrent tasks\nAlgorithm-based solutions of complex problems\nUsage of AI in a specific context",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -484,8 +484,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#python-as-language",
     "href": "part-01/lecture-optimal-stopping.html#python-as-language",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Origins: Conceived in late 1980s as a teaching and scripting language\nSimple Syntax: Python’s syntax is straightforward and easy to learn\nVersatility: Used in web development, data analysis, artificial intelligence, and more\nCommunity Support: A large community of users and extensive documentation",
+    "section": "Python as Language",
+    "text": "Python as Language\n\nOrigins: Conceived in late 1980s as a teaching and scripting language\nSimple Syntax: Python’s syntax is straightforward and easy to learn\nVersatility: Used in web development, data analysis, artificial intelligence, and more\nCommunity Support: A large community of users and extensive documentation",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -495,8 +495,8 @@
     "objectID": "part-01/lecture-optimal-stopping.html#help-from-ai",
     "href": "part-01/lecture-optimal-stopping.html#help-from-ai",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "You are allowed to use AI (GitHub Copilot, ChatGPT, LLama3 …)\nThese new tools are really powerful for learning Python!\nThey can help you a lot to get started with programming\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nBut you should not simply use them to replace your learning.",
+    "section": "Help from AI",
+    "text": "Help from AI\n\nYou are allowed to use AI (GitHub Copilot, ChatGPT, LLama3 …)\nThese new tools are really powerful for learning Python!\nThey can help you a lot to get started with programming\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nBut you should not simply use them to replace your learning.",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -967,9 +967,9 @@
   {
     "objectID": "part-01/tutorial-03-stopping.html",
     "href": "part-01/tutorial-03-stopping.html",
-    "title": "Tutorial II.IV - Loops",
+    "title": "Tutorial I.III - Making Decisions",
     "section": "",
-    "text": "Imagine you need to do the same task many times - like sending emails to 100 people or counting from 1 to 10. Instead of writing the same code over and over, we use loops! Loops are like having a helpful assistant who can repeat tasks for you.\nFollow the instructions, input your code in the designated areas, and verify your implementations with @assert statements.",
+    "text": "Imagine you’re searching for a new apartment. You view a flat - should you take it or keep looking for something better? This is another classic optimal stopping problem! Just like in dating or hiring, you need to decide when to stop searching.\nIn this tutorial, we’ll learn how computers make decisions using if and else statements. These are like the “if this, then that” decisions we make every day!",
     "crumbs": [
       "01 Optimal Stopping",
       "03 - Stopping"
@@ -1175,9 +1175,9 @@
   {
     "objectID": "part-01/tutorial-02-comparisons.html",
     "href": "part-01/tutorial-02-comparisons.html",
-    "title": "Tutorial II.III - Comparison Operators",
+    "title": "Tutorial I.II - Comparison Operators",
     "section": "",
-    "text": "Imagine you’re teaching a computer to make decisions. Just like we compare things in everyday life (“Is it raining?”, “Do I have enough money?”), computers need ways to compare values and make choices. This tutorial will show you how to help computers make these comparisons!\nFollow the instructions, write your code in the designated code blocks, and execute the corresponding code cell."
+    "text": "Imagine you’re teaching a computer to make decisions. Just like we compare things in everyday life (“Is it raining?”, “Do I have enough money?”), computers need ways to compare values and make choices. Let’s look at this in the context of hiring decisions to help us how to make decisions in the context of optimal stopping problems. Imagine you’re helping a company make hiring decisions. You need to look at different candidates and decide if they meet certain requirements. To make these decisions with Python, we need to learn how to make comparisons!"
   },
   {
     "objectID": "part-01/tutorial-02-comparisons.html#exercise-1.1---compare-if-10-is-greater-than-5",
@@ -1224,9 +1224,9 @@
   {
     "objectID": "part-01/tutorial-01-variables.html",
     "href": "part-01/tutorial-01-variables.html",
-    "title": "Tutorial II.I - Variables and Types",
+    "title": "Tutorial I.I - Variables and Types",
     "section": "",
-    "text": "Welcome to this interactive Julia tutorial which introduces the basics of variables and types. Understanding variables and their types is crucial as they are the building blocks of any program. They determine how data is stored, manipulated, and how efficiently your code runs.\nThis script is designed to be interactive. Follow the instructions, write your code in the designated code blocks, and then execute the corresponding code. Each exercise is followed by an @assert statement that checks your solution.\nThere are two ways to run the code:\n\nThe easiest way to run the code is by using VS Code. First, install the Julia and the Jupyter Extension. Then, you can open the downloaded .ipynb files and run the code from there.\nThe second way is by using IJulia. Start Julia, and type using IJulia; notebook() in the Julia prompt. This will open a new browser window where you can run the code. If you have not installed IJulia yet, you can do so by typing ] in the Julia prompt to open the package manager, and then installing IJulia by typing add IJulia.\n\n\n\n\n\n\n\nNote\n\n\n\nAlways replace ‘YOUR CODE BELOW’ with your actual code.",
+    "text": "Welcome to this interactive Python tutorial on variables, types, and algorithmic thinking! We’ll explore these concepts through the lens of optimization problems, specifically using the famous “Secretary Problem” as our running example.\nThe Secretary Problem asks: “If you need to hire the best candidate, and you can only interview candidates one at a time (with no going back), when should you stop and make an offer?” This is a perfect example of optimal stopping and will help us understand how variables and data types play crucial roles in algorithmic thinking. To make the problem more interesting, we will use the Secretary Problem to help us make better dating decisions! The question is thus: When should you stop dating and commit to someone?\nKnown academically as the “Optimal Stopping Problem” or “The Marriage Problem”, it asks: If you want to find the best possible partner, and you can only date one person at a time (no going back to previous dates!), when should you stop dating and propose?\nLet’s learn how to use Python to help us in order to make better dating decisions!",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"
@@ -1308,5 +1308,373 @@
       "01 Optimal Stopping",
       "01 - Variables"
     ]
+  },
+  {
+    "objectID": "part-01/tutorial-01-variables.html#exercise-1.1---first-date-setup",
+    "href": "part-01/tutorial-01-variables.html#exercise-1.1---first-date-setup",
+    "title": "Tutorial I.I - Variables and Types",
+    "section": "Exercise 1.1 - First Date Setup",
+    "text": "Exercise 1.1 - First Date Setup\nCreate a variable currently_dating and set it to False (because we’re starting our dating journey).\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert currently_dating == False, \"Let's start fresh - set currently_dating to False!\"\nprint(\"Ready to start dating! We have defined the variable `currently_dating` as boolean.\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "01 - Variables"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-01-variables.html#exercise-1.2---dream-date",
+    "href": "part-01/tutorial-01-variables.html#exercise-1.2---dream-date",
+    "title": "Tutorial I.I - Variables and Types",
+    "section": "Exercise 1.2 - Dream Date",
+    "text": "Exercise 1.2 - Dream Date\nCreate a variable dream_date_name with your ideal date’s name (let’s say “Mika”).\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert dream_date_name == \"Mika\", \"Let's use 'Mika' as our dream date's name\"\nprint(f\"We have defined a string variable for our dream date. Now, we are looking for {dream_date_name}!\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "01 - Variables"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-01-variables.html#exercise-2.1---dating-score",
+    "href": "part-01/tutorial-01-variables.html#exercise-2.1---dating-score",
+    "title": "Tutorial I.I - Variables and Types",
+    "section": "Exercise 2.1 - Dating Score",
+    "text": "Exercise 2.1 - Dating Score\nCreate a float variable minimum_rating and set it to 7.0 (our standards are high!). Of course, we don’t objectify people and rate their appearance, we rate the compatibility. We just want to find the best possible partner!\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert minimum_rating == 7.0 and isinstance(minimum_rating, float), \"Set your standards (minimum_rating) to 7.0!\"\nprint(f\"We won't settle for less than {minimum_rating}/10, where the minimum rating is defined as a float!\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "01 - Variables"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-01-variables.html#exercise-2.2---dating-history",
+    "href": "part-01/tutorial-01-variables.html#exercise-2.2---dating-history",
+    "title": "Tutorial I.I - Variables and Types",
+    "section": "Exercise 2.2 - Dating History",
+    "text": "Exercise 2.2 - Dating History\nCreate an integer variable past_relationships and set it to 0.\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert past_relationships == 0 and isinstance(past_relationships, int), \"Let's start fresh with 0 past relationships\"\nprint(\"Clean slate, although likely not true! We have defined the variable `past_relationships` as an integer and are ready to start dating!\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "01 - Variables"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-01-variables.html#exercise-3.1---decision-point",
+    "href": "part-01/tutorial-01-variables.html#exercise-3.1---decision-point",
+    "title": "Tutorial I.I - Variables and Types",
+    "section": "Exercise 3.1 - Decision Point",
+    "text": "Exercise 3.1 - Decision Point\nConvert the string \"37\" into an integer variable named stopping_point.\n\nstopping_point = \"37\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert isinstance(stopping_point, int) and stopping_point == 37, \"Convert '37' to an integer\"\nprint(f\"After person {stopping_point}, we'll get serious about finding the best possible partner.\")\n\n\n\n\n\n\n\nTip\n\n\n\nWhen converting strings to numbers: - Make sure the string contains only numeric characters - Use int() for whole numbers - Use float() if you need decimal points",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "01 - Variables"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-01-variables.html#exercise-4.1---profile-message",
+    "href": "part-01/tutorial-01-variables.html#exercise-4.1---profile-message",
+    "title": "Tutorial I.I - Variables and Types",
+    "section": "Exercise 4.1 - Profile Message",
+    "text": "Exercise 4.1 - Profile Message\nWe have already defined the variables name and minimum_rating. Now we want to use them in the context of a formatted string. You have already seen how to do this in the previous cells, but not explicitly. String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces {} around the variable names and with the f prefix before the string. For example:\n\nf\"Hello, {name}! Nice to meet you.\"\n\nHere, {name} will insert the value of name into the string if the variable name is defined.\nCreate a formatted string profile_message using the variables name and minimum_rating that says “Looking for {name} (must be at least {minimum_rating}/10)”.\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert profile_message == \"Looking for Casey (must be at least 7.0/10)\", \"Format your dating profile message correctly!\"\nprint(\"Your dating profile is ready!\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "01 - Variables"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#the-secretary-problem",
+    "href": "part-01/lecture-optimal-stopping.html#the-secretary-problem",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "",
+    "text": "Imagine you’re hiring a secretary\nYou must interview candidates one by one\nAfter each interview, you must decide: hire or continue searching\nOnce you reject a candidate, you cannot go back\nHow do you maximize your chances of selecting the best candidate?",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#real-world-applications",
+    "href": "part-01/lecture-optimal-stopping.html#real-world-applications",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "",
+    "text": "Apartment hunting\nDating and relationships\nJob searching\nParking spots\nSelling a house",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#the-37-rule",
+    "href": "part-01/lecture-optimal-stopping.html#the-37-rule",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "",
+    "text": "Tip\n\n\n\nThe optimal strategy is to: 1. Look at the first 37% of options 2. Remember the best one seen so far 3. Choose the next option that’s better than the best seen",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#why-37",
+    "href": "part-01/lecture-optimal-stopping.html#why-37",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "",
+    "text": "import math\n\ndef optimal_stopping_point(n):\n    return round(n/math.e, 2)\n\nexamples = [10, 20, 50, 100]\nfor n in examples:\n    stop = optimal_stopping_point(n)\n    percent = round(stop/n * 100, 1)\n    print(f\"For {n} options: Look at first {stop} ({percent}%)\")\n\nFor 10 options: Look at first 3.68 (36.8%)\nFor 20 options: Look at first 7.36 (36.8%)\nFor 50 options: Look at first 18.39 (36.8%)\nFor 100 options: Look at first 36.79 (36.8%)",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#implementation-in-python",
+    "href": "part-01/lecture-optimal-stopping.html#implementation-in-python",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "",
+    "text": "def optimal_secretary_strategy(candidates):\n    n = len(candidates)\n    lookout_phase = int(n/math.e)\n    best_so_far = max(candidates[:lookout_phase])\n    \n    for i in range(lookout_phase, n):\n        if candidates[i] &gt; best_so_far:\n            return i\n    return n-1  # If no better candidate found",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#apartment-hunting",
+    "href": "part-01/lecture-optimal-stopping.html#apartment-hunting",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Apartment Hunting",
+    "text": "Apartment Hunting\nTask: Let’s simulate an apartment search in Hamburg\n\nimport random\n\ndef generate_apartments(n):\n    \"\"\"Generate n apartments with random scores (1-100)\"\"\"\n    return [random.randint(1, 100) for _ in range(n)]\n\n# Example usage\napartments = generate_apartments(10)\nstopping_point = optimal_stopping_point(len(apartments))\nprint(f\"Look at first {stopping_point} apartments before deciding\")\n\nLook at first 3.68 apartments before deciding",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#interactive-demo",
+    "href": "part-01/lecture-optimal-stopping.html#interactive-demo",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\nLet’s try it!\n\ndef apartment_search_game():\n    apartments = generate_apartments(10)\n    for i, score in enumerate(apartments):\n        print(f\"\\nApartment {i+1} Score: {score}\")\n        if i &lt; int(len(apartments)/math.e):\n            print(\"Still in observation phase...\")\n            continue\n        \n        choice = input(\"Take this apartment? (y/n): \")\n        if choice.lower() == 'y':\n            if score == max(apartments[i:]):\n                print(\"Great choice! This was the best remaining option!\")\n            else:\n                print(\"There was a better apartment later...\")\n            break",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#cost-of-searching",
+    "href": "part-01/lecture-optimal-stopping.html#cost-of-searching",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Cost of Searching",
+    "text": "Cost of Searching\n\nWhat if each additional search costs money?\nHow does this change our strategy?\nTrade-off between finding better options and search costs",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#risk-tolerance",
+    "href": "part-01/lecture-optimal-stopping.html#risk-tolerance",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Risk Tolerance",
+    "text": "Risk Tolerance\n\nDifferent scenarios require different strategies\nConservative vs. aggressive approaches\nImpact of wrong decisions",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#further-reading",
+    "href": "part-01/lecture-optimal-stopping.html#further-reading",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: The computer science of human decisions\nFerguson, T. S. (1989). Who solved the secretary problem?",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-optimal-stopping.html#questions-1",
+    "href": "part-01/lecture-optimal-stopping.html#questions-1",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Questions?",
+    "text": "Questions?\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for todays lecture!\nWe now have covered the basics on the Python syntax, variables, and data types.",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-03-stopping.html#exercise-1.1---your-first-decision",
+    "href": "part-01/tutorial-03-stopping.html#exercise-1.1---your-first-decision",
+    "title": "Tutorial I.III - Making Decisions",
+    "section": "Exercise 1.1 - Your First Decision",
+    "text": "Exercise 1.1 - Your First Decision\nCreate an if statement that prints “Perfect flat!” if the flat_rating is 10.\n\nflat_rating = 10\n# YOUR CODE BELOW\n\n# Test your answer yourself - the cell should print \"Perfect flat!\" if executed correctly",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "03 - Stopping"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-03-stopping.html#exercise-2.1---complete-decision",
+    "href": "part-01/tutorial-03-stopping.html#exercise-2.1---complete-decision",
+    "title": "Tutorial I.III - Making Decisions",
+    "section": "Exercise 2.1 - Complete Decision",
+    "text": "Exercise 2.1 - Complete Decision\nWrite an if-else statement that sets decision to “Apply now” if flat_rating is at least 7, and “Keep searching” otherwise.\n\nflat_rating = 6\ndecision = \"\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert decision == \"Keep searching\", \"The decision should be 'Keep searching' as the flat rating is less than 7\"\nprint(f\"Decision: {decision} as the flat rating is {flat_rating}\")\n\n\n\n\n\n\n\nTip\n\n\n\nWriting Better If-Else Statements:\n\nKeep your conditions simple and readable\nUse meaningful variable names\nConsider what should happen in both cases\nTest both paths to make sure they work",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "03 - Stopping"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-03-stopping.html#exercise-3.1---apartment-categories",
+    "href": "part-01/tutorial-03-stopping.html#exercise-3.1---apartment-categories",
+    "title": "Tutorial I.III - Making Decisions",
+    "section": "Exercise 3.1 - Apartment Categories",
+    "text": "Exercise 3.1 - Apartment Categories\nCreate a variable flat_category that is:\n\n“Luxury” if rating is 9 or 10\n“Premium” if rating is 7 or 8\n“Standard” if rating is 5 or 6\n“Basic” for anything lower\n\n\nflat_rating = 8\nflat_category = \"\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert flat_category == \"Premium\", \"The flat category should be 'Premium' as the flat rating is 8\"\nprint(f\"Flat Category: {flat_category} as the flat rating is {flat_rating}\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "03 - Stopping"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-03-stopping.html#exercise-4.1---real-world-flat-hunting",
+    "href": "part-01/tutorial-03-stopping.html#exercise-4.1---real-world-flat-hunting",
+    "title": "Tutorial I.III - Making Decisions",
+    "section": "Exercise 4.1 - Real World Flat Hunting",
+    "text": "Exercise 4.1 - Real World Flat Hunting\nCreate a variable should_apply that is True if:\n\nThe flat rating is at least 8, OR\nThe flat rating is at least 6 AND we’ve been searching for 3 weeks or more\n\n\nflat_rating = 6\nweeks_searching = 4\nshould_apply = False\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert should_apply == True, \"The flat rating is 6 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply? {should_apply} as the flat rating is {flat_rating} and we've been searching for {weeks_searching} weeks\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "03 - Stopping"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-03-stopping.html#exercise-5.1---implement-the-rule",
+    "href": "part-01/tutorial-03-stopping.html#exercise-5.1---implement-the-rule",
+    "title": "Tutorial I.III - Making Decisions",
+    "section": "Exercise 5.1 - Implement the Rule",
+    "text": "Exercise 5.1 - Implement the Rule\nAdjust the code below to change the variable make_application to True if:\n\nWe’ve seen at least 37% of available flats (use 15 total flats), AND\nThe current flat is better than the best we’ve seen so far\n\n\nflats_seen = 6  # We've seen 6 flats\ntotal_viewings = 15  # We plan to view 15 flats in total\ncurrent_rating = 9\nbest_rating_so_far = 8\nmake_application = False\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert make_application == True, \"The flat rating is 9 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply for this flat? {make_application}\")",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "03 - Stopping"
+    ]
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-1.1---compare-test-scores",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-1.1---compare-test-scores",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 1.1 - Compare Test Scores",
+    "text": "Exercise 1.1 - Compare Test Scores\nA candidate scored 95 on their test. The previous highest score was 88. Create a comparison to check if the new score is better and store the result in compare_scores.\n\n# Creates the variables\nnew_score = 95\nprevious_best = 88\n# YOUR CODE BELOW\n\n# Test your answer\nassert compare_scores == True, \"The new score should be greater than the previous best\"\nprint(f\"Is new score better? {compare_scores}\")"
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-1.2---compare-skills",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-1.2---compare-skills",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 1.2 - Compare Skills",
+    "text": "Exercise 1.2 - Compare Skills\nCheck if a candidate’s skill matches what we need. Compare if the following two variables are different and store the result in compare_skills.\n\ncandidate_skill = \"Finance\"\nrequired_skill = \"Python\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert compare_skills == False, \"The candidate's skill should not match the required skill\"\nprint(\"Good job! You correctly identified that the skills are different\")"
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-1.3---compare-candidates",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-1.3---compare-candidates",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 1.3 - Compare Candidates",
+    "text": "Exercise 1.3 - Compare Candidates\nIn the secretary problem, we need to compare candidates to the best we’ve seen. Check if the current candidate is better than our best so far and store the result in is_better.\n\ncurrent_rating = 92\nbest_so_far = 88\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert is_better == True, \"The current candidate should be better than the best so far\"\nprint(\"Good job! You correctly identified that the current candidate is better than the best so far\")"
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-2.1---check-multiple-requirements",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-2.1---check-multiple-requirements",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 2.1 - Check Multiple Requirements",
+    "text": "Exercise 2.1 - Check Multiple Requirements\nWe have a candidate with:\n\n4 years of experience\nTest score of 90\n\nCheck if they meet BOTH requirements:\n\nMore than 3 years experience\nTest score above 85\n\nStore the result in meets_requirements.\n\nyears = 4\nscore = 90\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert meets_requirements == True, \"The candidate should meet both requirements\"\nprint(\"Good job! You correctly identified that the candidate meets both requirements\")"
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-2.2---alternative-requirements",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-2.2---alternative-requirements",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 2.2 - Alternative Requirements",
+    "text": "Exercise 2.2 - Alternative Requirements\nA candidate is acceptable if they EITHER:\n\nHave a PhD\nOR have a high test score (above 95)\n\n\nhas_phd = True\ntest_score = 92\n\n# Store the result in `is_qualified`\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert is_qualified == True, \"The candidate should be qualified\"\nprint(\"Good job! You correctly identified that the candidate is qualified\")"
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-3.1---make-a-hiring-decision",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-3.1---make-a-hiring-decision",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 3.1 - Make a Hiring Decision",
+    "text": "Exercise 3.1 - Make a Hiring Decision\nLook at the following candidate’s information and decide if we should hire them:\nRequirements:\n\nAt least 5 years experience\nTest score above 85\nSalary request at most 90000\nMust have a degree\n\nCreate a single boolean expression that checks ALL requirements and store the result in final_decision.\n\n# Candidate information\ncandidate_experience = 7\ncandidate_score = 89\ncandidate_salary = 92000\ncandidate_has_degree = True\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert final_decision == False, \"The candidate should not meet all requirements\"\nprint(\"Good job! You correctly identified that the candidate does not meet all requirements as his salary expectation is too high.\")"
+  },
+  {
+    "objectID": "part-01/tutorial-02-comparisons.html#exercise-2.3---optimal-stopping-decision",
+    "href": "part-01/tutorial-02-comparisons.html#exercise-2.3---optimal-stopping-decision",
+    "title": "Tutorial I.II - Comparison Operators",
+    "section": "Exercise 2.3 - Optimal Stopping Decision",
+    "text": "Exercise 2.3 - Optimal Stopping Decision\nWe have:\n\nSeen 18 out of 40 candidates\nCurrent candidate score: 90\nBest score so far: 85\n\nCheck if we should hire this candidate (we should hire if we’ve seen at least 37% of candidates AND this candidate is better than the best so far).\nStore the result in make_offer.\n\n# Candidate information\ncandidates_seen = 18\ntotal_candidates = 40\ncurrent_score = 90\nbest_score_so_far = 85\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert make_offer == True, \"We should hire this candidate\"\nprint(\"Good job! You correctly identified that we should hire this candidate\")"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#the-secretary-problem",
+    "href": "part-01/lecture-presentation.html#the-secretary-problem",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "The Secretary Problem",
+    "text": "The Secretary Problem\n\n\nImagine you’re hiring a secretary\nYou must interview candidates one by one\nAfter each interview, you must decide: hire or continue searching\nOnce you reject a candidate, you cannot go back\nHow do you maximize your chances of selecting the best candidate?"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#real-world-applications",
+    "href": "part-01/lecture-presentation.html#real-world-applications",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Real-World Applications",
+    "text": "Real-World Applications\n\n\nApartment hunting\nDating and relationships\nJob searching\nParking spots\nSelling a house"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#the-37-rule",
+    "href": "part-01/lecture-presentation.html#the-37-rule",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "The 37% Rule",
+    "text": "The 37% Rule\n\n\n\n\n\n\nTip\n\n\nThe optimal strategy is to: 1. Look at the first 37% of options 2. Remember the best one seen so far 3. Choose the next option that’s better than the best seen"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#why-37",
+    "href": "part-01/lecture-presentation.html#why-37",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Why 37%?",
+    "text": "Why 37%?\n\nimport math\n\ndef optimal_stopping_point(n):\n    return round(n/math.e, 2)\n\nexamples = [10, 20, 50, 100]\nfor n in examples:\n    stop = optimal_stopping_point(n)\n    percent = round(stop/n * 100, 1)\n    print(f\"For {n} options: Look at first {stop} ({percent}%)\")\n\n\n\nFor 10 options: Look at first 3.68 (36.8%)\nFor 20 options: Look at first 7.36 (36.8%)\nFor 50 options: Look at first 18.39 (36.8%)\nFor 100 options: Look at first 36.79 (36.8%)"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#implementation-in-python",
+    "href": "part-01/lecture-presentation.html#implementation-in-python",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Implementation in Python",
+    "text": "Implementation in Python\n\ndef optimal_secretary_strategy(candidates):\n    n = len(candidates)\n    lookout_phase = int(n/math.e)\n    best_so_far = max(candidates[:lookout_phase])\n    \n    for i in range(lookout_phase, n):\n        if candidates[i] &gt; best_so_far:\n            return i\n    return n-1  # If no better candidate found"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#apartment-hunting",
+    "href": "part-01/lecture-presentation.html#apartment-hunting",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Apartment Hunting",
+    "text": "Apartment Hunting\nTask: Let’s simulate an apartment search in Hamburg\n\nimport random\n\ndef generate_apartments(n):\n    \"\"\"Generate n apartments with random scores (1-100)\"\"\"\n    return [random.randint(1, 100) for _ in range(n)]\n\n# Example usage\napartments = generate_apartments(10)\nstopping_point = optimal_stopping_point(len(apartments))\nprint(f\"Look at first {stopping_point} apartments before deciding\")\n\nLook at first 3.68 apartments before deciding"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#interactive-demo",
+    "href": "part-01/lecture-presentation.html#interactive-demo",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\nLet’s try it!\n\ndef apartment_search_game():\n    apartments = generate_apartments(10)\n    for i, score in enumerate(apartments):\n        print(f\"\\nApartment {i+1} Score: {score}\")\n        if i &lt; int(len(apartments)/math.e):\n            print(\"Still in observation phase...\")\n            continue\n        \n        choice = input(\"Take this apartment? (y/n): \")\n        if choice.lower() == 'y':\n            if score == max(apartments[i:]):\n                print(\"Great choice! This was the best remaining option!\")\n            else:\n                print(\"There was a better apartment later...\")\n            break"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#cost-of-searching",
+    "href": "part-01/lecture-presentation.html#cost-of-searching",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Cost of Searching",
+    "text": "Cost of Searching\n\nWhat if each additional search costs money?\nHow does this change our strategy?\nTrade-off between finding better options and search costs"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#risk-tolerance",
+    "href": "part-01/lecture-presentation.html#risk-tolerance",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Risk Tolerance",
+    "text": "Risk Tolerance\n\nDifferent scenarios require different strategies\nConservative vs. aggressive approaches\nImpact of wrong decisions"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#further-reading",
+    "href": "part-01/lecture-presentation.html#further-reading",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: The computer science of human decisions\nFerguson, T. S. (1989). Who solved the secretary problem?"
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#questions-1",
+    "href": "part-01/lecture-presentation.html#questions-1",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Questions?",
+    "text": "Questions?\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for todays lecture!\nWe now have covered the basics on the Python syntax, variables, and data types."
   }
 ]
