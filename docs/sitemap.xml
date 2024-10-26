@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-01-variables.html</loc>
-    <lastmod>2024-10-26T23:28:30.590Z</lastmod>
-  </url>
-  <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-03-stopping.html</loc>
     <lastmod>2024-10-26T20:37:38.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-01-variables.html</loc>
+    <lastmod>2024-10-26T23:28:30.590Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/syllabus.html</loc>
@@ -26,11 +26,11 @@
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-optimal-stopping.html</loc>
-    <lastmod>2024-10-26T23:40:57.158Z</lastmod>
+    <lastmod>2024-10-26T23:48:46.070Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-presentation.html</loc>
-    <lastmod>2024-10-26T23:40:57.158Z</lastmod>
+    <lastmod>2024-10-26T23:48:46.070Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-02-comparisons.html</loc>
