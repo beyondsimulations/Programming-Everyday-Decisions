@@ -51,13 +51,13 @@ format:
     theme: litera
     toc: true
     highlight-style: arrow
-    linkcolor: "#a60000"
+    linkcolor: "#025159"
     code-copy: true
     code-link: true
     toc-location: right
     code-overflow: wrap
     code-block-bg: true
-    code-block-border-left: "#AD1F00"
+    code-block-border-left: "#025159"
 
   pdf:
     documentclass: report
