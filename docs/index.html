@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nils Roemer and Tobias Vlćek">
 
-<title>Welcome to Applied Optimization with Julia! – Applied Optimization with Julia</title>
+<title>Programming: Everyday Decision-Making Algorithms</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Applied Optimization with Julia</a> 
+      <a href="./">Programming: Everyday Decision-Making Algorithms</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -117,10 +117,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+ <span class="menu-text">***</span>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">01 Introduction</span></a>
+ <span class="menu-text">01 Optimal Stopping</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -128,17 +131,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part-01/lecture-introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="./part-01/lecture-optimal-stopping.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part-01/tutorial-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial</span></a>
+  <a href="./part-01/tutorial-01-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">01 - Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part-01/tutorial-01-comparisons.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">02 - Comparisons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part-01/tutorial-03-stopping.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">03 - Stopping</span></a>
   </div>
 </li>
       </ul>
+  </li>
+        <li class="sidebar-item">
+ <span class="menu-text">***</span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -165,26 +183,31 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
   <li><a href="#course-blocks" id="toc-course-blocks" class="nav-link" data-scroll-target="#course-blocks">Course Blocks</a></li>
-  <li><a href="#tutorials" id="toc-tutorials" class="nav-link" data-scroll-target="#tutorials">Tutorials</a></li>
+  <li><a href="#course-structure" id="toc-course-structure" class="nav-link" data-scroll-target="#course-structure">Course Structure</a></li>
   <li><a href="#how-to-see-the-slides" id="toc-how-to-see-the-slides" class="nav-link" data-scroll-target="#how-to-see-the-slides">How to see the slides</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome to Applied Optimization with Julia!</h1>
-<p class="subtitle lead">University of Hamburg - Fall 2024</p>
+<h1 class="title">Programming: Everyday Decision-Making Algorithms</h1>
+<p class="subtitle lead">Kühne Logistics University - Fall 2024</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nils Roemer and Tobias Vlćek </p>
+          </div>
+  </div>
     
   
     
@@ -197,35 +220,26 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="course-description" class="level1">
 <h1>Course Description</h1>
-<p>In this module we will focus on solving practical problems with the help of optimization. To this end, over the course of the semester you will become familiar with a number of optimization problems that have been worked on in the past at the Institute of Logistics, Transportation and Production in cooperation with practice partners. Problems include improving the sustainability of parcel delivery companies, Corona-compliant seat allocations of stadiums and theaters, optimizing districts and locations for police departments, and many more. The module consists of the following two parts: Lectures (2 SWS) and Exercises (1 SWS).</p>
+<p>This course explores the intersection of computer science and everyday life by examining how algorithms can be applied to improve decision-making in various contexts. Based on the book “Algorithms to Live By” by Brian Christian and Tom Griffiths, the course will cover topics such as optimal stopping, scheduling, caching, and game theory, providing both theoretical foundations and practical programming exercises. The course consists of lectures and exercises.</p>
 </section>
 <section id="learning-outcomes" class="level1">
 <h1>Learning Outcomes</h1>
-<p>You can find our specific outcomes in the module handbook. Our broader goal is to introduce you to how diversified the solution of practical problems can be. We want to enable you to independently apply methods and concepts from optimization, and to get a feeling for abstracting and modeling problems. Is our module hard? That’s a subjective question. We would say it is exciting and doable. If you have a basic interest in logical relationships and mathematics, you are in the right place. If you also have basic knowledge of programming or want to get into the subject with help, our module is perfect for you.</p>
-<p>Upon completion of the course, you …</p>
-<ul>
-<li>can implement solutions to complex optimization problems in Julia</li>
-<li>know advanced concepts of optimization such as linear and nonlinear optimization</li>
-<li>know basic concepts of programming and algorithms such as loops, functions</li>
-<li>will be able to read and write code in Julia</li>
-<li>will have experience working with Julia libraries such as JuMP and HiGHS</li>
-<li>will know how to collaborate in a small team to find solutions for problems at hand</li>
-</ul>
+<p>Our broad goal is to equip students with the ability to get to grips with algorithmic thinking. We want to enable students, to indepently apply methods and concepts from algorithms to solve their everyday practical problems while also providing a brief introduction into programming with python.</p>
+<p>Upon completion of the course, students … • … will understand fundamental algorithms and their applications to everyday problems • … develop the ability to model real-world scenarios using algorithmic thinking • … implement simple algorithms in python to solve practical problems • … analyze the efficiency and effectiveness of different algorithms in various contexts</p>
 <p>Please note that this course is <strong>specifically designed for business students</strong>. That is, it is <strong>not required to have any advanced knowledge or experience in programming</strong> to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.</p>
 </section>
 <section id="course-blocks" class="level1">
 <h1>Course Blocks</h1>
-<p>The core content of the course is organized in three blocks:</p>
-<ol type="1">
-<li><strong>Part I</strong>: Introduction to Julia and Modelling</li>
-<li><strong>Part II</strong>: Applied Optimization with Basic Models</li>
-<li><strong>Part III</strong>: Applied Optimization with Advanced Models</li>
-</ol>
-<p>You can find more information on the course blocks and the corresponding lectures in the <a href="./general/syllabus.html">syllabus</a>.</p>
 </section>
-<section id="tutorials" class="level1">
-<h1>Tutorials</h1>
-<p>The tutorials accompany the lectures. In the tutorials, you will apply the concepts from the lectures to realistic data sets. You will work in small groups of 3 participants, in which you can work out solutions together. We will help you during the weekly practice sessions by answering your questions or briefly explaining individual issues in case of difficulties. Afterwards, you have the opportunity to submit your jointly developed solution until the next exercise date in order to earn bonus points for the exam. You can earn up to half a bonus point per exercise, up to 6.5 bonus points in total. Important: the bonus points will only be credited to you if you pass the exam with at least a 4.0. Furthermore, we will not award bonus points for exercises in which you have simply copied the results of another group.</p>
+<section id="course-structure" class="level1">
+<h1>Course Structure</h1>
+<p>The course is based on a hands-on approach with a two-fold structure:</p>
+<ol type="1">
+<li><strong>Lectures</strong>: In the lectures, we will introduce and discuss concepts and illustrate them in reproducible examples.</li>
+<li><strong>Hands-on Tutorials</strong>: Students will apply the concepts from the lecture in jupyter notebooks, while simultaneously learning the basics of python.</li>
+</ol>
+<p>The evaluation of the course will be based on the following two components: 1. <strong>Assignment</strong>: Students will solve one programming exercise in groups of up to three students that they will have to hand in. 2. <strong>Presentation</strong>: Students will give a short presentation on a topic of their choice.</p>
+<p>You can find more information on the course contents in the <a href="./general/syllabus.html">syllabus</a>.</p>
 </section>
 <section id="how-to-see-the-slides" class="level1">
 <h1>How to see the slides</h1>
@@ -238,11 +252,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="questions" class="level1">
 <h1>Questions</h1>
-<p>If you have any questions regarding the course, please contact me under <a href="mailto:tobias.vlcek@uni-hamburg.de?subject=Applied%20Optimization%3A%20%3CYour%20subject%3E">tobias.vlcek@uni-hamburg.de</a>.</p>
-</section>
-<section id="contributors" class="level1">
-<h1>Contributors</h1>
-<p>Thanks to <a href="https://github.com/OpResCodes">Matthes Koch</a> and <a href="https://github.com/jasdefer">Justus Bonz</a>, who helped to prepare the lecture materials.</p>
+<p>If you have any questions regarding the course, please contact me under <a href="mailto:vlcek@beyondsimulations.com?subject=Programming%20Algorithms%3A%20%3CYour%20subject%3E">vlcek@beyondsimulations.com</a>.</p>
 
 
 </section>
@@ -340,7 +350,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Applied-Optimization");
+      var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Programming-Everyday-Decisions");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -675,12 +685,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Applied Optimization with Julia, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-</div>
+<p>Programming: Everyday Decision-Making Algorithms, Tobias Vlćek and Nils Roemer<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Programming-Everyday-Decisions">
       <i class="bi bi-github" role="img">
 </i> 
     </a>

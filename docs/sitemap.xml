@@ -1,91 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/index.html</loc>
-    <lastmod>2024-09-23T11:21:46.880Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-presentation.html</loc>
+    <lastmod>2024-10-26T06:45:22.479Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-02/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.174Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-optimal-stopping.html</loc>
+    <lastmod>2024-10-26T06:45:22.479Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-02/part-01/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.174Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-03-stopping.html</loc>
+    <lastmod>2024-10-26T06:27:18.186Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-02/part-01/part-01/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.174Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/syllabus.html</loc>
+    <lastmod>2024-10-26T06:16:14.583Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-05/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.176Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/faq.html</loc>
+    <lastmod>2024-10-26T06:16:06.981Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-04/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.175Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/index.html</loc>
+    <lastmod>2024-10-26T05:43:31.897Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-03/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.175Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/literature.html</loc>
+    <lastmod>2024-10-26T06:16:03.978Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/general/literature.html</loc>
-    <lastmod>2024-09-18T05:39:47.274Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-02-comparisons.html</loc>
+    <lastmod>2024-10-26T05:47:33.683Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/general/faq.html</loc>
-    <lastmod>2024-09-18T05:39:47.273Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-06/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-01/lecture-introduction.html</loc>
-    <lastmod>2024-09-18T05:39:47.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-07/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.177Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-07/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.177Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-01/tutorial-introduction.html</loc>
-    <lastmod>2024-09-18T05:39:47.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-06/tutorial-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/general/syllabus.html</loc>
-    <lastmod>2024-09-18T05:39:47.274Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-03/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.175Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-04/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.175Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-05/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-02/part-01/part-01/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.174Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-02/part-01/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.173Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Applied-Optimization/part-02/lecture-introduction.html</loc>
-    <lastmod>2024-09-23T11:21:16.173Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-01-variables.html</loc>
+    <lastmod>2024-10-26T06:41:36.681Z</lastmod>
   </url>
 </urlset>

@@ -3,69 +3,45 @@ title: "Syllabus"
 subtitle: "This years course structure"
 
 html:
-    theme: litera
-    highlight-style: breezedark
-    linkcolor: "#a60000"
-    code-copy: true
-    code-link: true
-    toc: true
 ---
-# Part I 
-## Introduction to Julia and Modelling
 
-In the first part, an introduction to the basic concepts of programming in Julia and to mathematical modelling is provided. Students will learn the Julia syntax, data types, as well as how to implement loops and functions in Julia. We will introduce core Julia libraries, too, including JuMP and DataFrames. Once these concepts are understood, we will learn how they can be used to solve problems.
+# Lectures
 
-## Lectures
+In our lectures, we mostly refrain from showing you any code. Instead, we will focus on explaining the concepts and how they can be used to solve problems. The tutorials will then show you step-by-step how to implement the concepts in Python. We were rather ambitious in the design of the course in the course module, thus we will not be able to cover all topics there. However, we have chosen the most important topics from our perspective that will lay a good foundation for interested students to continue learning on their own.
 
-**Welcome and Introduction (I)**\
-Introduction to the course and mathematical modelling
+**Welcome and Optimal Stopping (I)**\
+- Overview of the course and its objectives
+- Introduction to algorithmic thinking
+- Optimal Stopping
+- Programming: First Steps in Python
 
-**First Steps in Julia (II)**\
-Vectors, matrices, basic operations loops and functions
+**Explore & Exploit (II)**\
+- Multi-armed Bandit Problem
+- Balancing exploration and exploitation
+- Programming: Simulating the Multi-armed Bandit Problem
 
-**Packages and Data Management (III)**\
-Package Management, DataFrames, reading and writing data
+**Caching (III)**\
+- Principles of caching and memory management
+- Least Recently Used (LRU) and other caching strategies
+- Programming: Implementing an LRU cache
 
-**Modelling with JuMP (IV)**\
-Modeling with JuMP with variables, parameters and constraints
+**Scheduling (IV)**\
+- Task scheduling algorithms
+- Trade-offs between efficiency and fairness
+- Programming: Implementing scheduling algorithms
 
-# Part II 
-## Applied Optimization with Basic Models
+**Randomness (V)**\
+- Role of randomness in algorithms
+- Monte Carlo methods and their applications
+- Programming: Monte Carlo simulation
 
-In the second part, we will cover applied optimization based on basic modelling concepts. We will start with the classic capacitated lot-sizing problem and learn how to model and solve it using JuMP. 
+**Computational Kindness (VI)**\
+- Algorithms for social good
+- Ethical considerations in algorithm design
+- Quick review of key concepts
+- Brief student presentations
+- Open discussion and Q&A
 
-## Lectures
+# Assignment
 
-**Beer Production Planning (V)**\
-A case study on beer brewing based on the classic capacitated lot-sizing problem
-
-**Minimizing Split Orders in E-Commerce (VI)**\
-A case study in E-Commerce based on a quadratic knapsack problem
-
-**Periodic Library Routing (VII)**\
-A case study on routing books to branches based on a capacitated vehicle routing problem
-
-**Police Districting (VIII)**\
-A case study on police districting based on a facility location problem
-
-# Part III 
-## Applied Optimization with Advanced Models
-
-In the third part, we will cover more advanced optimisation models and concepts. We will start by looking into three different applied optimisation problems in crowd safety.
-
-## Lectures
-
-**Safety Planning for the Islamic Pilgrimage in Mecca (IX)**\
-A case study on safety planning for the hajj pilgrimage based on time-dependent network flows
-
-**Passenger Flow Control in Urban Rail (X)**\
-A case study on passenger flow control in urban rail based on time-dependent network flows
-
-**Arena Seat Planning under Distancing Rules (XI)**\
-A case study on arena seat planning under distancing rules based on the 2-dimensional knapsack problem
-
-**Sales Force Deployment for Teams (XII)**\
-A case study on sales force deployment for teams based on a linear programming model
-
-**Recap and Discussion (XIII)**\
-We repeat the concepts from the course and discuss all your remaining questions
+The assignment will be posted on the course website in the coming weeks. We will create three assignments to choose from. You can do the assignments in your own time at your own pace. However, you will have to hand in your solutions before the deadline.

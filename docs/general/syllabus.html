@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Syllabus – Applied Optimization with Julia</title>
+<title>Syllabus – Programming: Everyday Decision-Making Algorithms</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -95,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Applied Optimization with Julia</a> 
+      <a href="../">Programming: Everyday Decision-Making Algorithms</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -117,10 +116,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+ <span class="menu-text">***</span>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">01 Introduction</span></a>
+ <span class="menu-text">01 Optimal Stopping</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -128,17 +130,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/lecture-introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="../part-01/lecture-optimal-stopping.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lecture</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/tutorial-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial</span></a>
+  <a href="../part-01/tutorial-01-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">01 - Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-01/tutorial-01-comparisons.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">02 - Comparisons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-01/tutorial-03-stopping.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">03 - Stopping</span></a>
   </div>
 </li>
       </ul>
+  </li>
+        <li class="sidebar-item">
+ <span class="menu-text">***</span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -162,23 +179,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-i" id="toc-part-i" class="nav-link active" data-scroll-target="#part-i">Part I</a>
-  <ul class="collapse">
-  <li><a href="#introduction-to-julia-and-modelling" id="toc-introduction-to-julia-and-modelling" class="nav-link" data-scroll-target="#introduction-to-julia-and-modelling">Introduction to Julia and Modelling</a></li>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a></li>
-  </ul></li>
-  <li><a href="#part-ii" id="toc-part-ii" class="nav-link" data-scroll-target="#part-ii">Part II</a>
-  <ul class="collapse">
-  <li><a href="#applied-optimization-with-basic-models" id="toc-applied-optimization-with-basic-models" class="nav-link" data-scroll-target="#applied-optimization-with-basic-models">Applied Optimization with Basic Models</a></li>
-  <li><a href="#lectures-1" id="toc-lectures-1" class="nav-link" data-scroll-target="#lectures-1">Lectures</a></li>
-  </ul></li>
-  <li><a href="#part-iii" id="toc-part-iii" class="nav-link" data-scroll-target="#part-iii">Part III</a>
-  <ul class="collapse">
-  <li><a href="#applied-optimization-with-advanced-models" id="toc-applied-optimization-with-advanced-models" class="nav-link" data-scroll-target="#applied-optimization-with-advanced-models">Applied Optimization with Advanced Models</a></li>
-  <li><a href="#lectures-2" id="toc-lectures-2" class="nav-link" data-scroll-target="#lectures-2">Lectures</a></li>
-  </ul></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
+  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/general/syllabus.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/general/syllabus.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -203,63 +207,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="part-i" class="level1">
-<h1>Part I</h1>
-<section id="introduction-to-julia-and-modelling" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-julia-and-modelling">Introduction to Julia and Modelling</h2>
-<p>In the first part, an introduction to the basic concepts of programming in Julia and to mathematical modelling is provided. Students will learn the Julia syntax, data types, as well as how to implement loops and functions in Julia. We will introduce core Julia libraries, too, including JuMP and DataFrames. Once these concepts are understood, we will learn how they can be used to solve problems.</p>
+<section id="lectures" class="level1">
+<h1>Lectures</h1>
+<p>In our lectures, we mostly refrain from showing you any code. Instead, we will focus on explaining the concepts and how they can be used to solve problems. The tutorials will then show you step-by-step how to implement the concepts in Python. We were rather ambitious in the design of the course in the course module, thus we will not be able to cover all topics there. However, we have chosen the most important topics from our perspective that will lay a good foundation for interested students to continue learning on their own.</p>
+<p><strong>Welcome and Optimal Stopping (I)</strong><br>
+- Overview of the course and its objectives - Introduction to algorithmic thinking - Optimal Stopping - Programming: First Steps in Python</p>
+<p><strong>Explore &amp; Exploit (II)</strong><br>
+- Multi-armed Bandit Problem - Balancing exploration and exploitation - Programming: Simulating the Multi-armed Bandit Problem</p>
+<p><strong>Caching (III)</strong><br>
+- Principles of caching and memory management - Least Recently Used (LRU) and other caching strategies - Programming: Implementing an LRU cache</p>
+<p><strong>Scheduling (IV)</strong><br>
+- Task scheduling algorithms - Trade-offs between efficiency and fairness - Programming: Implementing scheduling algorithms</p>
+<p><strong>Randomness (V)</strong><br>
+- Role of randomness in algorithms - Monte Carlo methods and their applications - Programming: Monte Carlo simulation</p>
+<p><strong>Computational Kindness (VI)</strong><br>
+- Algorithms for social good - Ethical considerations in algorithm design - Quick review of key concepts - Brief student presentations - Open discussion and Q&amp;A</p>
 </section>
-<section id="lectures" class="level2">
-<h2 class="anchored" data-anchor-id="lectures">Lectures</h2>
-<p><strong>Welcome and Introduction (I)</strong><br>
-Introduction to the course and mathematical modelling</p>
-<p><strong>First Steps in Julia (II)</strong><br>
-Vectors, matrices, basic operations loops and functions</p>
-<p><strong>Packages and Data Management (III)</strong><br>
-Package Management, DataFrames, reading and writing data</p>
-<p><strong>Modelling with JuMP (IV)</strong><br>
-Modeling with JuMP with variables, parameters and constraints</p>
-</section>
-</section>
-<section id="part-ii" class="level1">
-<h1>Part II</h1>
-<section id="applied-optimization-with-basic-models" class="level2">
-<h2 class="anchored" data-anchor-id="applied-optimization-with-basic-models">Applied Optimization with Basic Models</h2>
-<p>In the second part, we will cover applied optimization based on basic modelling concepts. We will start with the classic capacitated lot-sizing problem and learn how to model and solve it using JuMP.</p>
-</section>
-<section id="lectures-1" class="level2">
-<h2 class="anchored" data-anchor-id="lectures-1">Lectures</h2>
-<p><strong>Beer Production Planning (V)</strong><br>
-A case study on beer brewing based on the classic capacitated lot-sizing problem</p>
-<p><strong>Minimizing Split Orders in E-Commerce (VI)</strong><br>
-A case study in E-Commerce based on a quadratic knapsack problem</p>
-<p><strong>Periodic Library Routing (VII)</strong><br>
-A case study on routing books to branches based on a capacitated vehicle routing problem</p>
-<p><strong>Police Districting (VIII)</strong><br>
-A case study on police districting based on a facility location problem</p>
-</section>
-</section>
-<section id="part-iii" class="level1">
-<h1>Part III</h1>
-<section id="applied-optimization-with-advanced-models" class="level2">
-<h2 class="anchored" data-anchor-id="applied-optimization-with-advanced-models">Applied Optimization with Advanced Models</h2>
-<p>In the third part, we will cover more advanced optimisation models and concepts. We will start by looking into three different applied optimisation problems in crowd safety.</p>
-</section>
-<section id="lectures-2" class="level2">
-<h2 class="anchored" data-anchor-id="lectures-2">Lectures</h2>
-<p><strong>Safety Planning for the Islamic Pilgrimage in Mecca (IX)</strong><br>
-A case study on safety planning for the hajj pilgrimage based on time-dependent network flows</p>
-<p><strong>Passenger Flow Control in Urban Rail (X)</strong><br>
-A case study on passenger flow control in urban rail based on time-dependent network flows</p>
-<p><strong>Arena Seat Planning under Distancing Rules (XI)</strong><br>
-A case study on arena seat planning under distancing rules based on the 2-dimensional knapsack problem</p>
-<p><strong>Sales Force Deployment for Teams (XII)</strong><br>
-A case study on sales force deployment for teams based on a linear programming model</p>
-<p><strong>Recap and Discussion (XIII)</strong><br>
-We repeat the concepts from the course and discuss all your remaining questions</p>
+<section id="assignment" class="level1">
+<h1>Assignment</h1>
+<p>The assignment will be posted on the course website in the coming weeks. We will create three assignments to choose from. You can do the assignments in your own time at your own pace. However, you will have to hand in your solutions before the deadline.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -355,7 +323,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Applied-Optimization");
+      var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Programming-Everyday-Decisions");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -690,12 +658,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Applied Optimization with Julia, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-</div>
+<p>Programming: Everyday Decision-Making Algorithms, Tobias Vlćek and Nils Roemer<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/general/syllabus.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/general/syllabus.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Programming-Everyday-Decisions">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
