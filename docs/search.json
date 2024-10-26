@@ -84,7 +84,7 @@
     "text": "Imagine you’re searching for a new apartment. You view a flat - should you take it or keep looking for something better? This is another classic optimal stopping problem! Just like in dating or hiring, you need to decide when to stop searching.\nIn this tutorial, we’ll learn how computers make decisions using if and else statements. These are like the “if this, then that” decisions we make every day!",
     "crumbs": [
       "01 Optimal Stopping",
-      "03 - Stopping"
+      "03 - Decisions"
     ]
   },
   {
@@ -95,7 +95,7 @@
     "text": "Exercise 1.1 - Your First Decision\nCreate an if statement that prints “Perfect flat!” if the flat_rating is 10.\n\nflat_rating = 10\n# YOUR CODE BELOW\n\n# Test your answer yourself - the cell should print \"Perfect flat!\" if executed correctly",
     "crumbs": [
       "01 Optimal Stopping",
-      "03 - Stopping"
+      "03 - Decisions"
     ]
   },
   {
@@ -106,7 +106,7 @@
     "text": "Exercise 2.1 - Complete Decision\nWrite an if-else statement that sets decision to “Apply now” if flat_rating is at least 7, and “Keep searching” otherwise.\n\nflat_rating = 6\ndecision = \"\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert decision == \"Keep searching\", \"The decision should be 'Keep searching' as the flat rating is less than 7\"\nprint(f\"Decision: {decision} as the flat rating is {flat_rating}\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nWriting Better If-Else Statements:\n\nKeep your conditions simple and readable\nUse meaningful variable names\nConsider what should happen in both cases\nTest both paths to make sure they work",
     "crumbs": [
       "01 Optimal Stopping",
-      "03 - Stopping"
+      "03 - Decisions"
     ]
   },
   {
@@ -117,7 +117,7 @@
     "text": "Exercise 3.1 - Apartment Categories\nCreate a variable flat_category that is:\n\n“Luxury” if rating is 9 or 10\n“Premium” if rating is 7 or 8\n“Standard” if rating is 5 or 6\n“Basic” for anything lower\n\n\nflat_rating = 8\nflat_category = \"\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert flat_category == \"Premium\", \"The flat category should be 'Premium' as the flat rating is 8\"\nprint(f\"Flat Category: {flat_category} as the flat rating is {flat_rating}\")",
     "crumbs": [
       "01 Optimal Stopping",
-      "03 - Stopping"
+      "03 - Decisions"
     ]
   },
   {
@@ -128,7 +128,7 @@
     "text": "Exercise 4.1 - Real World Flat Hunting\nCreate a variable should_apply that is True if:\n\nThe flat rating is at least 8, OR\nThe flat rating is at least 6 AND we’ve been searching for 3 weeks or more\n\n\nflat_rating = 6\nweeks_searching = 4\nshould_apply = False\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert should_apply == True, \"The flat rating is 6 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply? {should_apply} as the flat rating is {flat_rating} and we've been searching for {weeks_searching} weeks\")",
     "crumbs": [
       "01 Optimal Stopping",
-      "03 - Stopping"
+      "03 - Decisions"
     ]
   },
   {
@@ -139,7 +139,7 @@
     "text": "Exercise 5.1 - Implement the Rule\nAdjust the code below to change the variable make_application to True if:\n\nWe’ve seen at least 37% of available flats (use 15 total flats), AND\nThe current flat is better than the best we’ve seen so far\n\n\nflats_seen = 6  # We've seen 6 flats\ntotal_viewings = 15  # We plan to view 15 flats in total\ncurrent_rating = 9\nbest_rating_so_far = 8\nmake_application = False\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert make_application == True, \"The flat rating is 9 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply for this flat? {make_application}\")",
     "crumbs": [
       "01 Optimal Stopping",
-      "03 - Stopping"
+      "03 - Decisions"
     ]
   },
   {
