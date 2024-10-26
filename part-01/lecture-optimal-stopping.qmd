@@ -305,6 +305,8 @@ so far?
 [Photo by <a href="https://unsplash.com/@josephtpearson">Joseph Pearson</a> on Unsplash]{.invert-font}
 :::
 
+# [37% Rule]{.flow} {.title}
+
 ## The Secretary Problem
 
 :::{.incremental}

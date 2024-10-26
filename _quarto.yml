@@ -72,6 +72,4 @@ format:
         \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 
 execute:
-  freeze: auto
-  echo: true
-
+    echo: true

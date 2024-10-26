@@ -16,7 +16,9 @@ format:
 
 Welcome to this interactive Python tutorial on variables, types, and algorithmic thinking! We'll explore these concepts through the lens of optimization problems, specifically using the famous "Secretary Problem" as our running example.
 
-The Secretary Problem asks: "If you need to hire the best candidate, and you can only interview candidates one at a time (with no going back), when should you stop and make an offer?" This is a perfect example of optimal stopping and will help us understand how variables and data types play crucial roles in algorithmic thinking. To make the problem more interesting, we will use the Secretary Problem to help us make better dating decisions! The question is thus: **When should you stop dating and commit to someone?**
+The Secretary Problem asks: "If you need to hire the best candidate, and you can only interview candidates one at a time (with no going back), when should you stop and make an offer?" This is a perfect example of optimal stopping and will help us understand how variables and data types play crucial roles in algorithmic thinking. To make the problem more interesting, we will use the Secretary Problem to help us make better dating decisions! 
+
+The question is thus: **When should you stop dating and commit to someone?**
 
 Known academically as the "Optimal Stopping Problem" or "The Marriage Problem", it asks: If you want to find the best possible partner, and you can only date one person at a time (no going back to previous dates!), when should you stop dating and propose?
 
@@ -229,7 +231,7 @@ f"Hello, {name}! Nice to meet you."
 
 Here, `{name}` will insert the value of `name` into the string if the variable `name` is defined.
 
-Create a formatted string `profile_message` using the variables `name` and `minimum_rating` that says "Looking for {name} (must be at least {minimum_rating}/10)". 
+Create a formatted string `profile_message` using the variables `name` and `minimum_rating` that says "Hello, {name}! Nice to meet you. I hope you are at least {minimum_rating}/10 compatible with me!". 
 
 ```{python}
 #| eval: false
@@ -240,8 +242,8 @@ Create a formatted string `profile_message` using the variables `name` and `mini
 #| eval: false
 #| code-fold: true
 # Test your answer
-assert profile_message == "Looking for Casey (must be at least 7.0/10)", "Format your dating profile message correctly!"
-print("Your dating profile is ready!")
+assert profile_message == "Hello, Casey! Nice to meet you. I hope you are at least 7.0/10 compatible with me!", "Format your first message to Casey correctly!"
+print("Your message is send - good luck!")
 ```
 
 # Conclusion

@@ -26,7 +26,7 @@ When looking at job candidates, we often ask questions like:
 - Is their salary request within our budget?
 - Did they score well on the test?
 
-These questions all require yes/no (True/False) answers, which is exactly what comparison operators give us in Python. Each comparison will result in either `True` or `False`.
+These questions all require yes/no (`True/False`) answers, which is exactly what comparison operators give us in Python. Each comparison will result in either `True` or `False`.
 
 In Python, we use special symbols to make these comparisons:
 
