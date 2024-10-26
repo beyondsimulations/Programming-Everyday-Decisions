@@ -21,12 +21,12 @@ Imagine you're searching for a new apartment. You view a flat - should you take 
 
 In this tutorial, we'll learn how computers make decisions using `if` and `else` statements. These are like the "if this, then that" decisions we make every day!
 
-# Section 1 - Understanding If Statements
+# 1 - Understanding If Statements
 
 An `if` statement is like asking a yes/no question and doing something based on the answer. For example:
 
 ```{python}
-#| eval: false
+#| eval: true
 flat_rating = 8  # Rate the flat from 0-10
 
 if flat_rating >= 7:
@@ -70,12 +70,12 @@ flat_rating = 10
 # Test your answer yourself - the cell should print "Perfect flat!" if executed correctly
 ```
 
-# Section 2 - Adding Else Statements
+# 2 - Adding Else Statements
 
 But what if we want to do something different when the condition is False? That's where `else` comes in:
 
 ```{python}
-#| eval: false
+#| eval: true
 flat_rating = 4  # Not a great flat!
 
 if flat_rating >= 7:
@@ -111,8 +111,9 @@ decision = ""
 # YOUR CODE BELOW
 
 ```
-```{python}
+```{python} 
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert decision == "Keep searching", "The decision should be 'Keep searching' as the flat rating is less than 7"
 print(f"Decision: {decision} as the flat rating is {flat_rating}")
@@ -127,12 +128,12 @@ Writing Better If-Else Statements:
 4. Test both paths to make sure they work
 :::
 
-# Section 3 - Adding Elif (Else If)
+# 3 - Adding Elif (Else If)
 
 Sometimes we need more than two options. That's where `elif` comes in:
 
 ```{python}
-#| eval: false
+#| eval: true
 flat_rating = 8
 
 if flat_rating >= 9:
@@ -188,17 +189,18 @@ flat_category = ""
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert flat_category == "Premium", "The flat category should be 'Premium' as the flat rating is 8"
 print(f"Flat Category: {flat_category} as the flat rating is {flat_rating}")
 ```
 
-# Section 4 - Complex Decisions
+# 4 - Complex Decisions
 
 In real life, we often need to check multiple conditions at once. We can combine conditions using `and` and `or`:
 
 ```{python}
-#| eval: false
+#| eval: true
 flat_rating = 8
 weeks_searching = 3
 max_search_time = 4
@@ -235,17 +237,18 @@ should_apply = False
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert should_apply == True, "The flat rating is 6 and we've been searching for 4 weeks, so we should apply"
 print(f"Should we apply? {should_apply} as the flat rating is {flat_rating} and we've been searching for {weeks_searching} weeks")
 ```
 
-# Section 5 - The 37% Rule with Decisions
+# 5 - The 37% Rule with Decisions
 
 Remember the optimal stopping rule? Let's apply it to apartment hunting:
 
 ```{python}
-#| eval: false
+#| eval: true
 flats_seen = 6
 total_viewings = 15
 current_rating = 8
@@ -280,6 +283,7 @@ make_application = False
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert make_application == True, "The flat rating is 9 and we've been searching for 4 weeks, so we should apply"
 print(f"Should we apply for this flat? {make_application}")

@@ -7,21 +7,22 @@ html:
 ---
 
 # Course Description
+
 This course explores the intersection of computer science and everyday life by examining how algorithms can be applied to improve decision-making in various contexts. Based on the book "Algorithms to Live By" by Brian Christian and Tom Griffiths, the course will cover topics such as optimal stopping, scheduling, caching, and game theory, providing both theoretical foundations and practical programming exercises. The course consists of lectures and exercises.
 
 # Learning Outcomes
 
 Our broad goal is to equip students with the ability to get to grips with algorithmic thinking. We want to enable students, to indepently apply methods and concepts from algorithms to solve their everyday practical problems while also providing a brief introduction into programming with python.
 
-Upon completion of the course, students …
-•	… will understand fundamental algorithms and their applications to everyday problems
-•	… develop the ability to model real-world scenarios using algorithmic thinking
-•	… implement simple algorithms in python to solve practical problems
-•	… analyze the efficiency and effectiveness of different algorithms in various contexts
+Upon completion of the course, students will:
+
+- understand fundamental algorithms and their applications to everyday problems
+- develop the ability to model real-world scenarios using algorithmic thinking
+- implement simple algorithms in python to solve practical problems
+- analyze the efficiency and effectiveness of different algorithms in various contexts
 
 Please note that this course is **specifically designed for business students**. That is, it is **not required to have any advanced knowledge or experience in programming** to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.
 
-# Course Blocks
 
 # Course Structure
 The course is based on a hands-on approach with a two-fold structure:
@@ -29,9 +30,11 @@ The course is based on a hands-on approach with a two-fold structure:
 1. **Lectures**: In the lectures, we will introduce and discuss concepts and illustrate them in reproducible examples.
 2. **Hands-on Tutorials**: Students will apply the concepts from the lecture in jupyter notebooks, while simultaneously learning the basics of python.
 
-The evaluation of the course will be based on the following two components:
-1. **Assignment**: Students will solve one programming exercise in groups of up to three students that they will have to hand in.
-2. **Presentation**: Students will give a short presentation on a topic of their choice.
+The course is not graded and can only be passed/failed. The evaluation of the course will be based on the following components:
+
+1. **Attendence**: Students are expected to attend at least 75% of the lectures.
+2. **Assignments**: Students will have to hand in the assignments from 2 out of the 5 tutorials in this course. All are due by the end of the quarter, but earlier submissions of the assignments are highly encouraged. At least 50% of the solutions of the assignment must be correct.
+3. **Presentation**: Students will give a short presentation in groups of up to 3 students on their main findings and the application of the learned concepts of the course in the last lecture which are then discussed with the rest of the class.
 
 You can find more information on the course contents in the [syllabus](general/syllabus.qmd).
 

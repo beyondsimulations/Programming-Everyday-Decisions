@@ -214,23 +214,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#section-1---understanding-if-statements" id="toc-section-1---understanding-if-statements" class="nav-link" data-scroll-target="#section-1---understanding-if-statements">Section 1 - Understanding If Statements</a>
+  <li><a href="#understanding-if-statements" id="toc-understanding-if-statements" class="nav-link" data-scroll-target="#understanding-if-statements">1 - Understanding If Statements</a>
   <ul class="collapse">
   <li><a href="#exercise-1.1---your-first-decision" id="toc-exercise-1.1---your-first-decision" class="nav-link" data-scroll-target="#exercise-1.1---your-first-decision">Exercise 1.1 - Your First Decision</a></li>
   </ul></li>
-  <li><a href="#section-2---adding-else-statements" id="toc-section-2---adding-else-statements" class="nav-link" data-scroll-target="#section-2---adding-else-statements">Section 2 - Adding Else Statements</a>
+  <li><a href="#adding-else-statements" id="toc-adding-else-statements" class="nav-link" data-scroll-target="#adding-else-statements">2 - Adding Else Statements</a>
   <ul class="collapse">
   <li><a href="#exercise-2.1---complete-decision" id="toc-exercise-2.1---complete-decision" class="nav-link" data-scroll-target="#exercise-2.1---complete-decision">Exercise 2.1 - Complete Decision</a></li>
   </ul></li>
-  <li><a href="#section-3---adding-elif-else-if" id="toc-section-3---adding-elif-else-if" class="nav-link" data-scroll-target="#section-3---adding-elif-else-if">Section 3 - Adding Elif (Else If)</a>
+  <li><a href="#adding-elif-else-if" id="toc-adding-elif-else-if" class="nav-link" data-scroll-target="#adding-elif-else-if">3 - Adding Elif (Else If)</a>
   <ul class="collapse">
   <li><a href="#exercise-3.1---apartment-categories" id="toc-exercise-3.1---apartment-categories" class="nav-link" data-scroll-target="#exercise-3.1---apartment-categories">Exercise 3.1 - Apartment Categories</a></li>
   </ul></li>
-  <li><a href="#section-4---complex-decisions" id="toc-section-4---complex-decisions" class="nav-link" data-scroll-target="#section-4---complex-decisions">Section 4 - Complex Decisions</a>
+  <li><a href="#complex-decisions" id="toc-complex-decisions" class="nav-link" data-scroll-target="#complex-decisions">4 - Complex Decisions</a>
   <ul class="collapse">
   <li><a href="#exercise-4.1---real-world-flat-hunting" id="toc-exercise-4.1---real-world-flat-hunting" class="nav-link" data-scroll-target="#exercise-4.1---real-world-flat-hunting">Exercise 4.1 - Real World Flat Hunting</a></li>
   </ul></li>
-  <li><a href="#section-5---the-37-rule-with-decisions" id="toc-section-5---the-37-rule-with-decisions" class="nav-link" data-scroll-target="#section-5---the-37-rule-with-decisions">Section 5 - The 37% Rule with Decisions</a>
+  <li><a href="#the-37-rule-with-decisions" id="toc-the-37-rule-with-decisions" class="nav-link" data-scroll-target="#the-37-rule-with-decisions">5 - The 37% Rule with Decisions</a>
   <ul class="collapse">
   <li><a href="#exercise-5.1---implement-the-rule" id="toc-exercise-5.1---implement-the-rule" class="nav-link" data-scroll-target="#exercise-5.1---implement-the-rule">Exercise 5.1 - Implement the Rule</a></li>
   </ul></li>
@@ -267,14 +267,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Imagine you’re searching for a new apartment. You view a flat - should you take it or keep looking for something better? This is another classic optimal stopping problem! Just like in dating or hiring, you need to decide when to stop searching.</p>
 <p>In this tutorial, we’ll learn how computers make decisions using <code>if</code> and <code>else</code> statements. These are like the “if this, then that” decisions we make every day!</p>
 </section>
-<section id="section-1---understanding-if-statements" class="level1">
-<h1>Section 1 - Understanding If Statements</h1>
+<section id="understanding-if-statements" class="level1">
+<h1>1 - Understanding If Statements</h1>
 <p>An <code>if</code> statement is like asking a yes/no question and doing something based on the answer. For example:</p>
-<div id="c17f17d7" class="cell" data-execution_count="1">
+<div id="7f0f0676" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span>  <span class="co"># Rate the flat from 0-10</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is a good apartment!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>This is a good apartment!</code></pre>
+</div>
 </div>
 <p>The structure is:</p>
 <ol type="1">
@@ -324,24 +327,27 @@ Important
 <section id="exercise-1.1---your-first-decision" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.1---your-first-decision">Exercise 1.1 - Your First Decision</h2>
 <p>Create an <code>if</code> statement that prints “Perfect flat!” if the <code>flat_rating</code> is 10.</p>
-<div id="9673eb16" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer yourself - the cell should print "Perfect flat!" if executed correctly</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b674ed71" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer yourself - the cell should print "Perfect flat!" if executed correctly</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="section-2---adding-else-statements" class="level1">
-<h1>Section 2 - Adding Else Statements</h1>
+<section id="adding-else-statements" class="level1">
+<h1>2 - Adding Else Statements</h1>
 <p>But what if we want to do something different when the condition is False? That’s where <code>else</code> comes in:</p>
-<div id="cd5eda43" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">4</span>  <span class="co"># Not a great flat!</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep searching!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="8ecce86e" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">4</span>  <span class="co"># Not a great flat!</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep searching!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Keep searching!</code></pre>
+</div>
 </div>
 <p>The structure is:</p>
 <ol type="1">
@@ -372,15 +378,18 @@ Tip
 <section id="exercise-2.1---complete-decision" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2.1---complete-decision">Exercise 2.1 - Complete Decision</h2>
 <p>Write an if-else statement that sets <code>decision</code> to “Apply now” if <code>flat_rating</code> is at least 7, and “Keep searching” otherwise.</p>
-<div id="d8cd75f7" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">6</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>decision <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="a15f2697" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>decision <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="c0f59b0b" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> decision <span class="op">==</span> <span class="st">"Keep searching"</span>, <span class="st">"The decision should be 'Keep searching' as the flat rating is less than 7"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Decision: </span><span class="sc">{</span>decision<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="47d5fa1e" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> decision <span class="op">==</span> <span class="st">"Keep searching"</span>, <span class="st">"The decision should be 'Keep searching' as the flat rating is less than 7"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Decision: </span><span class="sc">{</span>decision<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -403,20 +412,23 @@ Tip
 </div>
 </section>
 </section>
-<section id="section-3---adding-elif-else-if" class="level1">
-<h1>Section 3 - Adding Elif (Else If)</h1>
+<section id="adding-elif-else-if" class="level1">
+<h1>3 - Adding Elif (Else If)</h1>
 <p>Sometimes we need more than two options. That’s where <code>elif</code> comes in:</p>
-<div id="f517d607" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>:</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Amazing flat - apply immediately!"</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Good flat - consider applying"</span>)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> flat_rating <span class="op">&gt;=</span> <span class="dv">5</span>:</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Mediocre flat - keep it as backup"</span>)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Poor flat - definitely keep looking"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="87f2ac1d" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Amazing flat - apply immediately!"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Good flat - consider applying"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> flat_rating <span class="op">&gt;=</span> <span class="dv">5</span>:</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Mediocre flat - keep it as backup"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Poor flat - definitely keep looking"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Good flat - consider applying</code></pre>
+</div>
 </div>
 <p>The structure adds:</p>
 <ul>
@@ -472,32 +484,38 @@ Warning
 <li>“Standard” if rating is 5 or 6</li>
 <li>“Basic” for anything lower</li>
 </ul>
-<div id="3e864b99" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>flat_category <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="3ad8a838" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>flat_category <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="2715c5b0" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> flat_category <span class="op">==</span> <span class="st">"Premium"</span>, <span class="st">"The flat category should be 'Premium' as the flat rating is 8"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Flat Category: </span><span class="sc">{</span>flat_category<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c49a3835" class="cell" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> flat_category <span class="op">==</span> <span class="st">"Premium"</span>, <span class="st">"The flat category should be 'Premium' as the flat rating is 8"</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Flat Category: </span><span class="sc">{</span>flat_category<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 </section>
-<section id="section-4---complex-decisions" class="level1">
-<h1>Section 4 - Complex Decisions</h1>
+<section id="complex-decisions" class="level1">
+<h1>4 - Complex Decisions</h1>
 <p>In real life, we often need to check multiple conditions at once. We can combine conditions using <code>and</code> and <code>or</code>:</p>
-<div id="3fdd4e72" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>weeks_searching <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>max_search_time <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>) <span class="kw">and</span> (weeks_searching <span class="op">&lt;</span> max_search_time):</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Take this flat - it's good enough and we still have time!"</span>)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>) <span class="kw">or</span> (weeks_searching <span class="op">&gt;=</span> max_search_time):</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Take this flat - either it's perfect or we're out of time!"</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="24cb3a3e" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>weeks_searching <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>max_search_time <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>) <span class="kw">and</span> (weeks_searching <span class="op">&lt;</span> max_search_time):</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Take this flat - it's good enough and we still have time!"</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>) <span class="kw">or</span> (weeks_searching <span class="op">&gt;=</span> max_search_time):</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Take this flat - either it's perfect or we're out of time!"</span>)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Take this flat - it's good enough and we still have time!</code></pre>
+</div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -524,37 +542,43 @@ Tip
 <li>The flat rating is at least 8, OR</li>
 <li>The flat rating is at least 6 AND we’ve been searching for 3 weeks or more</li>
 </ul>
-<div id="669e68d7" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">6</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>weeks_searching <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>should_apply <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="82c18b6c" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>weeks_searching <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>should_apply <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="92f28695" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> should_apply <span class="op">==</span> <span class="va">True</span>, <span class="st">"The flat rating is 6 and we've been searching for 4 weeks, so we should apply"</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we apply? </span><span class="sc">{</span>should_apply<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss"> and we've been searching for </span><span class="sc">{</span>weeks_searching<span class="sc">}</span><span class="ss"> weeks"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="90d30a59" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> should_apply <span class="op">==</span> <span class="va">True</span>, <span class="st">"The flat rating is 6 and we've been searching for 4 weeks, so we should apply"</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we apply? </span><span class="sc">{</span>should_apply<span class="sc">}</span><span class="ss"> as the flat rating is </span><span class="sc">{</span>flat_rating<span class="sc">}</span><span class="ss"> and we've been searching for </span><span class="sc">{</span>weeks_searching<span class="sc">}</span><span class="ss"> weeks"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 </section>
-<section id="section-5---the-37-rule-with-decisions" class="level1">
-<h1>Section 5 - The 37% Rule with Decisions</h1>
+<section id="the-37-rule-with-decisions" class="level1">
+<h1>5 - The 37% Rule with Decisions</h1>
 <p>Remember the optimal stopping rule? Let’s apply it to apartment hunting:</p>
-<div id="7fe81751" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>flats_seen <span class="op">=</span> <span class="dv">6</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>total_viewings <span class="op">=</span> <span class="dv">15</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">8</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>best_rating_so_far <span class="op">=</span> <span class="dv">7</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate if we've passed 37% of viewings</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>threshold_passed <span class="op">=</span> flats_seen <span class="op">&gt;=</span> (total_viewings <span class="op">*</span> <span class="fl">0.37</span>)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> threshold_passed:</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking - still in observation phase"</span>)</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> current_rating <span class="op">&gt;</span> best_rating_so_far:</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking - waiting for better than our best"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="1779cbb5" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>flats_seen <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>total_viewings <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>best_rating_so_far <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate if we've passed 37% of viewings</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>threshold_passed <span class="op">=</span> flats_seen <span class="op">&gt;=</span> (total_viewings <span class="op">*</span> <span class="fl">0.37</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> threshold_passed:</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking - still in observation phase"</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> current_rating <span class="op">&gt;</span> best_rating_so_far:</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Keep looking - waiting for better than our best"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Apply for this flat!</code></pre>
+</div>
 </div>
 <section id="exercise-5.1---implement-the-rule" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-5.1---implement-the-rule">Exercise 5.1 - Implement the Rule</h2>
@@ -563,18 +587,21 @@ Tip
 <li>We’ve seen at least 37% of available flats (use 15 total flats), AND</li>
 <li>The current flat is better than the best we’ve seen so far</li>
 </ul>
-<div id="d45df494" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>flats_seen <span class="op">=</span> <span class="dv">6</span>  <span class="co"># We've seen 6 flats</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>total_viewings <span class="op">=</span> <span class="dv">15</span>  <span class="co"># We plan to view 15 flats in total</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">9</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>best_rating_so_far <span class="op">=</span> <span class="dv">8</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>make_application <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b8b6e4c4" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>flats_seen <span class="op">=</span> <span class="dv">6</span>  <span class="co"># We've seen 6 flats</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>total_viewings <span class="op">=</span> <span class="dv">15</span>  <span class="co"># We plan to view 15 flats in total</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>current_rating <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>best_rating_so_far <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>make_application <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="2c4fbcc1" class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> make_application <span class="op">==</span> <span class="va">True</span>, <span class="st">"The flat rating is 9 and we've been searching for 4 weeks, so we should apply"</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we apply for this flat? </span><span class="sc">{</span>make_application<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="f1b4200f" class="cell" data-execution_count="14">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> make_application <span class="op">==</span> <span class="va">True</span>, <span class="st">"The flat rating is 9 and we've been searching for 4 weeks, so we should apply"</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Should we apply for this flat? </span><span class="sc">{</span>make_application<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 </section>
@@ -1029,7 +1056,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Programming: Everyday Decision-Making Algorithms, Tobias Vlćek and Nils Roemer<br>CC BY-NC-SA 4.0</p>
+<p>Programming: Everyday Decision-Making Algorithms<br>Tobias Vlćek and Nils Roemer<br>CC BY-NC-SA 4.0</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/part-01/tutorial-03-stopping.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/part-01/tutorial-03-stopping.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

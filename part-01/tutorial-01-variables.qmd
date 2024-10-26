@@ -22,16 +22,17 @@ Known academically as the "Optimal Stopping Problem" or "The Marriage Problem", 
 
 Let's learn how to use Python to help us in order to make better dating decisions! 
 
-# Section 1 - Variables: Tracking Your Dating Life
+# 1 - Variables
 
 Just like you keep track of important things in dating (name, phone number, red flags), in Python we use variables to store information:
 
 ```{python}
-#| eval: false
+#| eval: true
 date_name = "Alexander" # Current date's name
 red_flags = 0 # Count of red flags noticed
 butterflies_felt = True # Do I feel butterflies?
 compatibility_score = 8.5 # On a scale of 1-10, how compatible are we?
+print("We have defined a some variables based on tonight's date.")
 ```
 
 :::{.callout-tip}
@@ -61,14 +62,15 @@ Create a variable `currently_dating` and set it to `False` (because we're starti
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert currently_dating == False, "Let's start fresh - set currently_dating to False!"
 print("Ready to start dating! We have defined the variable `currently_dating` as boolean.")
 ```
 
-## Exercise 1.2 - Dream Date
+## Exercise 1.2 - Date Name
 
-Create a variable `dream_date_name` with your ideal date's name (let's say "Mika").
+Create a variable `date_name` with your tonight's date's name (let's say `"Mika"`).
 
 ```{python}
 #| eval: false
@@ -77,19 +79,20 @@ Create a variable `dream_date_name` with your ideal date's name (let's say "Mika
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
-assert dream_date_name == "Mika", "Let's use 'Mika' as our dream date's name"
-print(f"We have defined a string variable for our dream date. Now, we are looking for {dream_date_name}!")
+assert date_name == "Mika", "Let's use 'Mika' as our tonight's date's name"
+print(f"We have defined a string variable for our tonight's date. Now, we are looking for {date_name}!")
 ```
 
-# Section 2 - Types: Different Kinds of Dating Data
+# 2 - Types
 
 Just like dating involves different types of information, Python has different types for different kinds of data:
 
-- Integers (int): Counting things (number of dates, red flags)
-- Floats (float): Ratings and scores (compatibility score)
-- Booleans (bool): Yes/no information (are they single?)
-- Strings (str): Text (names, favorite food)
+- Integers (`int`): Counting things (number of dates, red flags)
+- Floats (`float`): Ratings and scores (compatibility score)
+- Booleans (`bool`): Yes/no information (are they single?)
+- Strings (`str`): Text (names, favorite food)
 
 :::{.callout-important}
 Why do types matter? Because:
@@ -100,11 +103,12 @@ Why do types matter? Because:
 :::
 
 ```{python}
-#| eval: false
-dates_gone_on = 0  # int: keeping count
-chemistry_level = 9.5  # float: rating of that spark!
+#| eval: true
+dates_gone_on = 7  # int: keeping count
+chemistry_level = 9.5  # float: rating of the butterflies
 is_single = True  # bool: availability
 favorite_food = "Sushi"  # str: important info!
+print(f"We have gone on {dates_gone_on} dates, a chemistry level of {chemistry_level} in the last date, and we love {favorite_food}!")
 ```
 
 :::{.callout-tip}
@@ -113,7 +117,7 @@ You can check a variable's type using the `type()` function.
 
 ## Exercise 2.1 - Dating Score
 
-Create a float variable `minimum_rating` and set it to `7.0` (our standards are high!). Of course, we don't objectify people and rate their appearance, we rate the compatibility. We just want to find the best possible partner!
+Create a float variable `minimum_rating` and set it to `7.0` (our standards are high!). Of course, we don't objectify people and rate their appearance, thus we rate the compatibility!
 
 ```{python}
 #| eval: false
@@ -122,6 +126,7 @@ Create a float variable `minimum_rating` and set it to `7.0` (our standards are 
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert minimum_rating == 7.0 and isinstance(minimum_rating, float), "Set your standards (minimum_rating) to 7.0!"
 print(f"We won't settle for less than {minimum_rating}/10, where the minimum rating is defined as a float!")
@@ -138,21 +143,13 @@ Create an integer variable `past_relationships` and set it to `0`.
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert past_relationships == 0 and isinstance(past_relationships, int), "Let's start fresh with 0 past relationships"
 print("Clean slate, although likely not true! We have defined the variable `past_relationships` as an integer and are ready to start dating!")
 ```
 
-# Section 3 - Making Dating Decisions
-
-In optimal stopping for dating, the math says you should date and reject the first 37% of your dating pool, then commit to the next person who's better than everyone you've met before! Let's track this:
-
-```{python}
-#| eval: false
-dating_pool = 100 # The number of people we will date
-exploration_phase = int(dating_pool * 0.37)  # The 37% rule
-print(f"Date (and reject) the first {exploration_phase} people")
-```
+# 3 - Converting Data Types
 
 Python provides several functions to convert between different types:
 
@@ -174,6 +171,15 @@ Python provides several functions to convert between different types:
   - `bool("")` → `False`
   - `bool("hello")` → `True`
 
+In optimal stopping for dating, the math says you should date and reject the first 37% of your dating pool, then commit to the next person who's better than everyone you've met before! Let's track this:
+
+```{python}
+#| eval: true
+dating_pool = 100 # The number of people we will date
+exploration_phase = int(dating_pool * 0.37)  # The 37% rule
+print(f"Date (and reject) the first {exploration_phase} people")
+```
+
 ## Exercise 3.1 - Decision Point
 
 Convert the string `"37"` into an integer variable named `stopping_point`.
@@ -187,6 +193,7 @@ stopping_point = "37"
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert isinstance(stopping_point, int) and stopping_point == 37, "Convert '37' to an integer"
 print(f"After person {stopping_point}, we'll get serious about finding the best possible partner.")
@@ -199,15 +206,16 @@ When converting strings to numbers:
 - Use `float()` if you need decimal points
 :::
 
-# Section 4 - Dating Profile Output
+# 4 - String Formatting
 
 Let's create a nice dating profile using string formatting:
 
 ```{python}
-#| eval: false
+#| eval: true
 name = "Casey"
 age = 25
 bio = f"{name}, {age} - Looking for someone special!"
+print(bio)
 ```
 
 ## Exercise 4.1 - Profile Message
@@ -215,7 +223,7 @@ bio = f"{name}, {age} - Looking for someone special!"
 We have already defined the variables `name` and `minimum_rating`. Now we want to use them in the context of a formatted string. You have already seen how to do this in the previous cells, but not explicitly. String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces `{}` around the variable names and with the `f` prefix before the string. For example:
 
 ```{python}
-#| eval: false
+#| eval: true
 f"Hello, {name}! Nice to meet you."
 ```
 
@@ -230,6 +238,7 @@ Create a formatted string `profile_message` using the variables `name` and `mini
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert profile_message == "Looking for Casey (must be at least 7.0/10)", "Format your dating profile message correctly!"
 print("Your dating profile is ready!")

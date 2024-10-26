@@ -1149,7 +1149,7 @@
     "href": "part-01/tutorial-02-comparisons.html",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "",
-    "text": "Imagine you’re teaching a computer to make decisions. Just like we compare things in everyday life (“Is it raining?”, “Do I have enough money?”), computers need ways to compare values and make choices. Let’s look at this in the context of hiring decisions to help us how to make decisions in the context of optimal stopping problems. Imagine you’re helping a company make hiring decisions. You need to look at different candidates and decide if they meet certain requirements. To make these decisions with Python, we need to learn how to make comparisons!",
+    "text": "You’re teaching a computer to make decisions. Just like we compare things in everyday life (“Is it raining?”, “Do I have enough money?”), computers need ways to compare values and make choices. Let’s look at this in the context of hiring decisions to help us how to make decisions in the context of optimal stopping problems.\nImagine you’re helping a company make hiring decisions. You need to look at different candidates and decide if they meet certain requirements. To make these decisions with Python, we need to learn how to make comparisons!",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1160,7 +1160,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-1.1---compare-test-scores",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 1.1 - Compare Test Scores",
-    "text": "Exercise 1.1 - Compare Test Scores\nA candidate scored 95 on their test. The previous highest score was 88. Create a comparison to check if the new score is better and store the result in compare_scores.\n\n# Creates the variables\nnew_score = 95\nprevious_best = 88\n# YOUR CODE BELOW\n\n# Test your answer\nassert compare_scores == True, \"The new score should be greater than the previous best\"\nprint(f\"Is new score better? {compare_scores}\")",
+    "text": "Exercise 1.1 - Compare Test Scores\nA candidate scored 95 on their test. The previous highest score was 88. Create a comparison to check if the new score is better and store the result in compare_scores.\n\n# Creates the variables\nnew_score = 95\nprevious_best = 88\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert compare_scores == True, \"The new score should be greater than the previous best\"\nprint(f\"Is new score better? {compare_scores}\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1171,7 +1171,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-1.2---compare-skills",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 1.2 - Compare Skills",
-    "text": "Exercise 1.2 - Compare Skills\nCheck if a candidate’s skill matches what we need. Compare if the following two variables are different and store the result in compare_skills.\n\ncandidate_skill = \"Finance\"\nrequired_skill = \"Python\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert compare_skills == False, \"The candidate's skill should not match the required skill\"\nprint(\"Good job! You correctly identified that the skills are different\")",
+    "text": "Exercise 1.2 - Compare Skills\nCheck if a candidate’s skill matches what we need. Compare if the following two variables are different and store the result in compare_skills.\n\ncandidate_skill = \"Finance\"\nrequired_skill = \"Python\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert compare_skills == False, \"The candidate's skill should not match the required skill\"\nprint(\"Good job! You correctly identified that the skills are different\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1182,7 +1182,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-1.3---compare-candidates",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 1.3 - Compare Candidates",
-    "text": "Exercise 1.3 - Compare Candidates\nIn the secretary problem, we need to compare candidates to the best we’ve seen. Check if the current candidate is better than our best so far and store the result in is_better.\n\ncurrent_rating = 92\nbest_so_far = 88\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert is_better == True, \"The current candidate should be better than the best so far\"\nprint(\"Good job! You correctly identified that the current candidate is better than the best so far\")",
+    "text": "Exercise 1.3 - Compare Candidates\nIn the secretary problem, we need to compare candidates to the best we’ve seen. Check if the current candidate is better than our best so far and store the result in is_better.\n\ncurrent_rating = 92\nbest_so_far = 88\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert is_better == True, \"The current candidate should be better than the best so far\"\nprint(\"Good job! You correctly identified that the current candidate is better than the best so far\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1193,7 +1193,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-2.1---check-multiple-requirements",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 2.1 - Check Multiple Requirements",
-    "text": "Exercise 2.1 - Check Multiple Requirements\nWe have a candidate with:\n\n4 years of experience\nTest score of 90\n\nCheck if they meet BOTH requirements:\n\nMore than 3 years experience\nTest score above 85\n\nStore the result in meets_requirements.\n\nyears = 4\nscore = 90\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert meets_requirements == True, \"The candidate should meet both requirements\"\nprint(\"Good job! You correctly identified that the candidate meets both requirements\")",
+    "text": "Exercise 2.1 - Check Multiple Requirements\nWe have a candidate with:\n\n4 years of experience\nTest score of 90\n\nCheck if they meet BOTH requirements:\n\nMore than 3 years experience\nTest score above 85\n\nStore the result in meets_requirements.\n\nyears = 4\nscore = 90\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert meets_requirements == True, \"The candidate should meet both requirements\"\nprint(\"Good job! You correctly identified that the candidate meets both requirements\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1204,7 +1204,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-2.2---alternative-requirements",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 2.2 - Alternative Requirements",
-    "text": "Exercise 2.2 - Alternative Requirements\nA candidate is acceptable if they EITHER:\n\nHave a PhD\nOR have a high test score (above 95)\n\n\nhas_phd = True\ntest_score = 92\n\n# Store the result in `is_qualified`\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert is_qualified == True, \"The candidate should be qualified\"\nprint(\"Good job! You correctly identified that the candidate is qualified\")",
+    "text": "Exercise 2.2 - Alternative Requirements\nA candidate is acceptable if they EITHER:\n\nHave a PhD\nOR have a high test score (above 95)\n\nStore the result in is_qualified\n\nhas_phd = True\ntest_score = 92\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert is_qualified == True, \"The candidate should be qualified\"\nprint(\"Good job! You correctly identified that the candidate is qualified\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1215,7 +1215,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-3.1---make-a-hiring-decision",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 3.1 - Make a Hiring Decision",
-    "text": "Exercise 3.1 - Make a Hiring Decision\nLook at the following candidate’s information and decide if we should hire them:\nRequirements:\n\nAt least 5 years experience\nTest score above 85\nSalary request at most 90000\nMust have a degree\n\nCreate a single boolean expression that checks ALL requirements and store the result in final_decision.\n\n# Candidate information\ncandidate_experience = 7\ncandidate_score = 89\ncandidate_salary = 92000\ncandidate_has_degree = True\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert final_decision == False, \"The candidate should not meet all requirements\"\nprint(\"Good job! You correctly identified that the candidate does not meet all requirements as his salary expectation is too high.\")",
+    "text": "Exercise 3.1 - Make a Hiring Decision\nLook at the following candidate’s information and decide if we should hire them:\nRequirements:\n\nAt least 5 years experience\nTest score above 85\nSalary request at most 90000\nMust have a degree\n\nCreate a single boolean expression that checks ALL requirements and store the result in final_decision.\n\n# Candidate information\ncandidate_experience = 7\ncandidate_score = 89\ncandidate_salary = 92000\ncandidate_has_degree = True\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert final_decision == False, \"The candidate should not meet all requirements\"\nprint(\"Good job! You correctly identified that the candidate does not meet all requirements as his salary expectation is too high.\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1226,7 +1226,7 @@
     "href": "part-01/tutorial-02-comparisons.html#exercise-2.3---optimal-stopping-decision",
     "title": "Tutorial I.II - Comparison Operators",
     "section": "Exercise 2.3 - Optimal Stopping Decision",
-    "text": "Exercise 2.3 - Optimal Stopping Decision\nWe have:\n\nSeen 18 out of 40 candidates\nCurrent candidate score: 90\nBest score so far: 85\n\nCheck if we should hire this candidate (we should hire if we’ve seen at least 37% of candidates AND this candidate is better than the best so far).\nStore the result in make_offer.\n\n# Candidate information\ncandidates_seen = 18\ntotal_candidates = 40\ncurrent_score = 90\nbest_score_so_far = 85\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert make_offer == True, \"We should hire this candidate\"\nprint(\"Good job! You correctly identified that we should hire this candidate\")",
+    "text": "Exercise 2.3 - Optimal Stopping Decision\nWe have:\n\nSeen 18 out of 40 candidates\nCurrent candidate score: 90\nBest score so far: 85\n\nCheck if we should hire this candidate (we should hire if we’ve seen at least 37% of candidates AND this candidate is better than the best so far).\nStore the result in make_offer.\n\n# Candidate information\ncandidates_seen = 18\ntotal_candidates = 40\ncurrent_score = 90\nbest_score_so_far = 85\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert make_offer == True, \"We should hire this candidate\"\nprint(\"Good job! You correctly identified that we should hire this candidate\")",
     "crumbs": [
       "01 Optimal Stopping",
       "02 - Comparisons"
@@ -1237,7 +1237,7 @@
     "href": "general/syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Lectures\nIn our lectures, we mostly refrain from showing you any code. Instead, we will focus on explaining the concepts and how they can be used to solve problems. The tutorials will then show you step-by-step how to implement the concepts in Python. We were rather ambitious in the design of the course in the course module, thus we will not be able to cover all topics there. However, we have chosen the most important topics from our perspective that will lay a good foundation for interested students to continue learning on their own.\nWelcome and Optimal Stopping (I)\n- Overview of the course and its objectives - Introduction to algorithmic thinking - Optimal Stopping - Programming: First Steps in Python\nExplore & Exploit (II)\n- Multi-armed Bandit Problem - Balancing exploration and exploitation - Programming: Simulating the Multi-armed Bandit Problem\nCaching (III)\n- Principles of caching and memory management - Least Recently Used (LRU) and other caching strategies - Programming: Implementing an LRU cache\nScheduling (IV)\n- Task scheduling algorithms - Trade-offs between efficiency and fairness - Programming: Implementing scheduling algorithms\nRandomness (V)\n- Role of randomness in algorithms - Monte Carlo methods and their applications - Programming: Monte Carlo simulation\nComputational Kindness (VI)\n- Algorithms for social good - Ethical considerations in algorithm design - Quick review of key concepts - Brief student presentations - Open discussion and Q&A\n\n\nAssignment\nThe assignment will be posted on the course website in the coming weeks. We will create three assignments to choose from. You can do the assignments in your own time at your own pace. However, you will have to hand in your solutions before the deadline.",
+    "text": "Lectures\nIn our lectures, we mostly refrain from showing you any code. Instead, we will focus on explaining the concepts and how they can be used to solve problems. The tutorials will then show you step-by-step how to implement the concepts in Python.\nWe were rather ambitious in the design of the course in the course module, thus we will not be able to cover all topics there. However, we have chosen the most important topics from our perspective that will lay a good foundation for interested students to continue learning on their own.\nWelcome and Optimal Stopping (I)\n\nOverview of the course and its objectives\nIntroduction to algorithmic thinking\nOptimal Stopping\nProgramming: First Steps in Python\n\nExplore & Exploit (II)\n\nMulti-armed Bandit Problem\nBalancing exploration and exploitation\nProgramming: Simulating the Multi-armed Bandit Problem\n\nCaching (III)\n\nPrinciples of caching and memory management\nLeast Recently Used (LRU) and other caching strategies\nProgramming: Implementing an LRU cache\n\nScheduling (IV)\n\nTask scheduling algorithms\nTrade-offs between efficiency and fairness\nProgramming: Implementing scheduling algorithms\n\nRandomness (V)\n\nRole of randomness in algorithms\nMonte Carlo methods and their applications\nProgramming: Monte Carlo simulation\n\nComputational Kindness (VI)\n\nAlgorithms for social good\nEthical considerations in algorithm design\nQuick review of key concepts\nBrief student presentations\nOpen discussion and Q&A",
     "crumbs": [
       "Syllabus"
     ]
@@ -1287,7 +1287,7 @@
     "href": "index.html",
     "title": "Programming: Everyday Decision-Making Algorithms",
     "section": "",
-    "text": "Course Description\nThis course explores the intersection of computer science and everyday life by examining how algorithms can be applied to improve decision-making in various contexts. Based on the book “Algorithms to Live By” by Brian Christian and Tom Griffiths, the course will cover topics such as optimal stopping, scheduling, caching, and game theory, providing both theoretical foundations and practical programming exercises. The course consists of lectures and exercises.\n\n\nLearning Outcomes\nOur broad goal is to equip students with the ability to get to grips with algorithmic thinking. We want to enable students, to indepently apply methods and concepts from algorithms to solve their everyday practical problems while also providing a brief introduction into programming with python.\nUpon completion of the course, students … • … will understand fundamental algorithms and their applications to everyday problems • … develop the ability to model real-world scenarios using algorithmic thinking • … implement simple algorithms in python to solve practical problems • … analyze the efficiency and effectiveness of different algorithms in various contexts\nPlease note that this course is specifically designed for business students. That is, it is not required to have any advanced knowledge or experience in programming to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.\n\n\nCourse Blocks\n\n\nCourse Structure\nThe course is based on a hands-on approach with a two-fold structure:\n\nLectures: In the lectures, we will introduce and discuss concepts and illustrate them in reproducible examples.\nHands-on Tutorials: Students will apply the concepts from the lecture in jupyter notebooks, while simultaneously learning the basics of python.\n\nThe evaluation of the course will be based on the following two components: 1. Assignment: Students will solve one programming exercise in groups of up to three students that they will have to hand in. 2. Presentation: Students will give a short presentation on a topic of their choice.\nYou can find more information on the course contents in the syllabus.\n\n\nHow to see the slides\n\nThis course is based on Quarto\nIt uses revealjs to render the slides\nYou find the slides for each lecture in the corresponding lecture\nTo see the slides, click on RevealJS in the top right corner\n\n\n\nQuestions\nIf you have any questions regarding the course, please contact me under vlcek@beyondsimulations.com.",
+    "text": "Course Description\nThis course explores the intersection of computer science and everyday life by examining how algorithms can be applied to improve decision-making in various contexts. Based on the book “Algorithms to Live By” by Brian Christian and Tom Griffiths, the course will cover topics such as optimal stopping, scheduling, caching, and game theory, providing both theoretical foundations and practical programming exercises. The course consists of lectures and exercises.\n\n\nLearning Outcomes\nOur broad goal is to equip students with the ability to get to grips with algorithmic thinking. We want to enable students, to indepently apply methods and concepts from algorithms to solve their everyday practical problems while also providing a brief introduction into programming with python.\nUpon completion of the course, students will:\n\nunderstand fundamental algorithms and their applications to everyday problems\ndevelop the ability to model real-world scenarios using algorithmic thinking\nimplement simple algorithms in python to solve practical problems\nanalyze the efficiency and effectiveness of different algorithms in various contexts\n\nPlease note that this course is specifically designed for business students. That is, it is not required to have any advanced knowledge or experience in programming to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.\n\n\nCourse Structure\nThe course is based on a hands-on approach with a two-fold structure:\n\nLectures: In the lectures, we will introduce and discuss concepts and illustrate them in reproducible examples.\nHands-on Tutorials: Students will apply the concepts from the lecture in jupyter notebooks, while simultaneously learning the basics of python.\n\nThe course is not graded and can only be passed/failed. The evaluation of the course will be based on the following components:\n\nAttendence: Students are expected to attend at least 75% of the lectures.\nAssignments: Students will have to hand in the assignments from 2 out of the 5 tutorials in this course. All are due by the end of the quarter, but earlier submissions of the assignments are highly encouraged. At least 50% of the solutions of the assignment must be correct.\nPresentation: Students will give a short presentation in groups of up to 3 students on their main findings and the application of the learned concepts of the course in the last lecture which are then discussed with the rest of the class.\n\nYou can find more information on the course contents in the syllabus.\n\n\nHow to see the slides\n\nThis course is based on Quarto\nIt uses revealjs to render the slides\nYou find the slides for each lecture in the corresponding lecture\nTo see the slides, click on RevealJS in the top right corner\n\n\n\nQuestions\nIf you have any questions regarding the course, please contact me under vlcek@beyondsimulations.com.",
     "crumbs": [
       "Welcome"
     ]
@@ -1379,7 +1379,7 @@
     "href": "part-01/tutorial-03-stopping.html#exercise-2.1---complete-decision",
     "title": "Tutorial I.III - Making Decisions",
     "section": "Exercise 2.1 - Complete Decision",
-    "text": "Exercise 2.1 - Complete Decision\nWrite an if-else statement that sets decision to “Apply now” if flat_rating is at least 7, and “Keep searching” otherwise.\n\nflat_rating = 6\ndecision = \"\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert decision == \"Keep searching\", \"The decision should be 'Keep searching' as the flat rating is less than 7\"\nprint(f\"Decision: {decision} as the flat rating is {flat_rating}\")\n\n\n\n\n\n\n\nTip\n\n\n\nWriting Better If-Else Statements:\n\nKeep your conditions simple and readable\nUse meaningful variable names\nConsider what should happen in both cases\nTest both paths to make sure they work",
+    "text": "Exercise 2.1 - Complete Decision\nWrite an if-else statement that sets decision to “Apply now” if flat_rating is at least 7, and “Keep searching” otherwise.\n\nflat_rating = 6\ndecision = \"\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert decision == \"Keep searching\", \"The decision should be 'Keep searching' as the flat rating is less than 7\"\nprint(f\"Decision: {decision} as the flat rating is {flat_rating}\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nWriting Better If-Else Statements:\n\nKeep your conditions simple and readable\nUse meaningful variable names\nConsider what should happen in both cases\nTest both paths to make sure they work",
     "crumbs": [
       "01 Optimal Stopping",
       "03 - Stopping"
@@ -1390,7 +1390,7 @@
     "href": "part-01/tutorial-03-stopping.html#exercise-3.1---apartment-categories",
     "title": "Tutorial I.III - Making Decisions",
     "section": "Exercise 3.1 - Apartment Categories",
-    "text": "Exercise 3.1 - Apartment Categories\nCreate a variable flat_category that is:\n\n“Luxury” if rating is 9 or 10\n“Premium” if rating is 7 or 8\n“Standard” if rating is 5 or 6\n“Basic” for anything lower\n\n\nflat_rating = 8\nflat_category = \"\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert flat_category == \"Premium\", \"The flat category should be 'Premium' as the flat rating is 8\"\nprint(f\"Flat Category: {flat_category} as the flat rating is {flat_rating}\")",
+    "text": "Exercise 3.1 - Apartment Categories\nCreate a variable flat_category that is:\n\n“Luxury” if rating is 9 or 10\n“Premium” if rating is 7 or 8\n“Standard” if rating is 5 or 6\n“Basic” for anything lower\n\n\nflat_rating = 8\nflat_category = \"\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert flat_category == \"Premium\", \"The flat category should be 'Premium' as the flat rating is 8\"\nprint(f\"Flat Category: {flat_category} as the flat rating is {flat_rating}\")",
     "crumbs": [
       "01 Optimal Stopping",
       "03 - Stopping"
@@ -1401,7 +1401,7 @@
     "href": "part-01/tutorial-03-stopping.html#exercise-4.1---real-world-flat-hunting",
     "title": "Tutorial I.III - Making Decisions",
     "section": "Exercise 4.1 - Real World Flat Hunting",
-    "text": "Exercise 4.1 - Real World Flat Hunting\nCreate a variable should_apply that is True if:\n\nThe flat rating is at least 8, OR\nThe flat rating is at least 6 AND we’ve been searching for 3 weeks or more\n\n\nflat_rating = 6\nweeks_searching = 4\nshould_apply = False\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert should_apply == True, \"The flat rating is 6 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply? {should_apply} as the flat rating is {flat_rating} and we've been searching for {weeks_searching} weeks\")",
+    "text": "Exercise 4.1 - Real World Flat Hunting\nCreate a variable should_apply that is True if:\n\nThe flat rating is at least 8, OR\nThe flat rating is at least 6 AND we’ve been searching for 3 weeks or more\n\n\nflat_rating = 6\nweeks_searching = 4\nshould_apply = False\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert should_apply == True, \"The flat rating is 6 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply? {should_apply} as the flat rating is {flat_rating} and we've been searching for {weeks_searching} weeks\")",
     "crumbs": [
       "01 Optimal Stopping",
       "03 - Stopping"
@@ -1412,7 +1412,7 @@
     "href": "part-01/tutorial-03-stopping.html#exercise-5.1---implement-the-rule",
     "title": "Tutorial I.III - Making Decisions",
     "section": "Exercise 5.1 - Implement the Rule",
-    "text": "Exercise 5.1 - Implement the Rule\nAdjust the code below to change the variable make_application to True if:\n\nWe’ve seen at least 37% of available flats (use 15 total flats), AND\nThe current flat is better than the best we’ve seen so far\n\n\nflats_seen = 6  # We've seen 6 flats\ntotal_viewings = 15  # We plan to view 15 flats in total\ncurrent_rating = 9\nbest_rating_so_far = 8\nmake_application = False\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert make_application == True, \"The flat rating is 9 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply for this flat? {make_application}\")",
+    "text": "Exercise 5.1 - Implement the Rule\nAdjust the code below to change the variable make_application to True if:\n\nWe’ve seen at least 37% of available flats (use 15 total flats), AND\nThe current flat is better than the best we’ve seen so far\n\n\nflats_seen = 6  # We've seen 6 flats\ntotal_viewings = 15  # We plan to view 15 flats in total\ncurrent_rating = 9\nbest_rating_so_far = 8\nmake_application = False\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert make_application == True, \"The flat rating is 9 and we've been searching for 4 weeks, so we should apply\"\nprint(f\"Should we apply for this flat? {make_application}\")",
     "crumbs": [
       "01 Optimal Stopping",
       "03 - Stopping"
@@ -1434,18 +1434,18 @@
     "href": "part-01/tutorial-01-variables.html#exercise-1.1---first-date-setup",
     "title": "Tutorial I.I - Variables and Types",
     "section": "Exercise 1.1 - First Date Setup",
-    "text": "Exercise 1.1 - First Date Setup\nCreate a variable currently_dating and set it to False (because we’re starting our dating journey).\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert currently_dating == False, \"Let's start fresh - set currently_dating to False!\"\nprint(\"Ready to start dating! We have defined the variable `currently_dating` as boolean.\")",
+    "text": "Exercise 1.1 - First Date Setup\nCreate a variable currently_dating and set it to False (because we’re starting our dating journey).\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert currently_dating == False, \"Let's start fresh - set currently_dating to False!\"\nprint(\"Ready to start dating! We have defined the variable `currently_dating` as boolean.\")",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"
     ]
   },
   {
-    "objectID": "part-01/tutorial-01-variables.html#exercise-1.2---dream-date",
-    "href": "part-01/tutorial-01-variables.html#exercise-1.2---dream-date",
+    "objectID": "part-01/tutorial-01-variables.html#exercise-1.2---date-name",
+    "href": "part-01/tutorial-01-variables.html#exercise-1.2---date-name",
     "title": "Tutorial I.I - Variables and Types",
-    "section": "Exercise 1.2 - Dream Date",
-    "text": "Exercise 1.2 - Dream Date\nCreate a variable dream_date_name with your ideal date’s name (let’s say “Mika”).\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert dream_date_name == \"Mika\", \"Let's use 'Mika' as our dream date's name\"\nprint(f\"We have defined a string variable for our dream date. Now, we are looking for {dream_date_name}!\")",
+    "section": "Exercise 1.2 - Date Name",
+    "text": "Exercise 1.2 - Date Name\nCreate a variable date_name with your tonight’s date’s name (let’s say \"Mika\").\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert date_name == \"Mika\", \"Let's use 'Mika' as our tonight's date's name\"\nprint(f\"We have defined a string variable for our tonight's date. Now, we are looking for {date_name}!\")",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"
@@ -1456,7 +1456,7 @@
     "href": "part-01/tutorial-01-variables.html#exercise-2.1---dating-score",
     "title": "Tutorial I.I - Variables and Types",
     "section": "Exercise 2.1 - Dating Score",
-    "text": "Exercise 2.1 - Dating Score\nCreate a float variable minimum_rating and set it to 7.0 (our standards are high!). Of course, we don’t objectify people and rate their appearance, we rate the compatibility. We just want to find the best possible partner!\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert minimum_rating == 7.0 and isinstance(minimum_rating, float), \"Set your standards (minimum_rating) to 7.0!\"\nprint(f\"We won't settle for less than {minimum_rating}/10, where the minimum rating is defined as a float!\")",
+    "text": "Exercise 2.1 - Dating Score\nCreate a float variable minimum_rating and set it to 7.0 (our standards are high!). Of course, we don’t objectify people and rate their appearance, thus we rate the compatibility!\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert minimum_rating == 7.0 and isinstance(minimum_rating, float), \"Set your standards (minimum_rating) to 7.0!\"\nprint(f\"We won't settle for less than {minimum_rating}/10, where the minimum rating is defined as a float!\")",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"
@@ -1467,7 +1467,7 @@
     "href": "part-01/tutorial-01-variables.html#exercise-2.2---dating-history",
     "title": "Tutorial I.I - Variables and Types",
     "section": "Exercise 2.2 - Dating History",
-    "text": "Exercise 2.2 - Dating History\nCreate an integer variable past_relationships and set it to 0.\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert past_relationships == 0 and isinstance(past_relationships, int), \"Let's start fresh with 0 past relationships\"\nprint(\"Clean slate, although likely not true! We have defined the variable `past_relationships` as an integer and are ready to start dating!\")",
+    "text": "Exercise 2.2 - Dating History\nCreate an integer variable past_relationships and set it to 0.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert past_relationships == 0 and isinstance(past_relationships, int), \"Let's start fresh with 0 past relationships\"\nprint(\"Clean slate, although likely not true! We have defined the variable `past_relationships` as an integer and are ready to start dating!\")",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"
@@ -1478,7 +1478,7 @@
     "href": "part-01/tutorial-01-variables.html#exercise-3.1---decision-point",
     "title": "Tutorial I.I - Variables and Types",
     "section": "Exercise 3.1 - Decision Point",
-    "text": "Exercise 3.1 - Decision Point\nConvert the string \"37\" into an integer variable named stopping_point.\n\nstopping_point = \"37\"\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert isinstance(stopping_point, int) and stopping_point == 37, \"Convert '37' to an integer\"\nprint(f\"After person {stopping_point}, we'll get serious about finding the best possible partner.\")\n\n\n\n\n\n\n\nTip\n\n\n\nWhen converting strings to numbers: - Make sure the string contains only numeric characters - Use int() for whole numbers - Use float() if you need decimal points",
+    "text": "Exercise 3.1 - Decision Point\nConvert the string \"37\" into an integer variable named stopping_point.\n\nstopping_point = \"37\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert isinstance(stopping_point, int) and stopping_point == 37, \"Convert '37' to an integer\"\nprint(f\"After person {stopping_point}, we'll get serious about finding the best possible partner.\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhen converting strings to numbers: - Make sure the string contains only numeric characters - Use int() for whole numbers - Use float() if you need decimal points",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"
@@ -1489,7 +1489,7 @@
     "href": "part-01/tutorial-01-variables.html#exercise-4.1---profile-message",
     "title": "Tutorial I.I - Variables and Types",
     "section": "Exercise 4.1 - Profile Message",
-    "text": "Exercise 4.1 - Profile Message\nWe have already defined the variables name and minimum_rating. Now we want to use them in the context of a formatted string. You have already seen how to do this in the previous cells, but not explicitly. String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces {} around the variable names and with the f prefix before the string. For example:\n\nf\"Hello, {name}! Nice to meet you.\"\n\nHere, {name} will insert the value of name into the string if the variable name is defined.\nCreate a formatted string profile_message using the variables name and minimum_rating that says “Looking for {name} (must be at least {minimum_rating}/10)”.\n\n# YOUR CODE BELOW\n\n\n# Test your answer\nassert profile_message == \"Looking for Casey (must be at least 7.0/10)\", \"Format your dating profile message correctly!\"\nprint(\"Your dating profile is ready!\")",
+    "text": "Exercise 4.1 - Profile Message\nWe have already defined the variables name and minimum_rating. Now we want to use them in the context of a formatted string. You have already seen how to do this in the previous cells, but not explicitly. String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces {} around the variable names and with the f prefix before the string. For example:\n\nf\"Hello, {name}! Nice to meet you.\"\n\n'Hello, Casey! Nice to meet you.'\n\n\nHere, {name} will insert the value of name into the string if the variable name is defined.\nCreate a formatted string profile_message using the variables name and minimum_rating that says “Looking for {name} (must be at least {minimum_rating}/10)”.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert profile_message == \"Looking for Casey (must be at least 7.0/10)\", \"Format your dating profile message correctly!\"\nprint(\"Your dating profile is ready!\")",
     "crumbs": [
       "01 Optimal Stopping",
       "01 - Variables"

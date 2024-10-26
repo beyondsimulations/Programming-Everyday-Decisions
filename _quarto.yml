@@ -39,7 +39,7 @@ website:
       - text: "Literature"
         href: general/literature.qmd
   page-footer: 
-    center: "Programming: Everyday Decision-Making Algorithms, Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0" 
+    center: "Programming: Everyday Decision-Making Algorithms</br>Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0" 
     right: 
       - icon: github
         href: https://github.com/beyondsimulations/Programming-Everyday-Decisions

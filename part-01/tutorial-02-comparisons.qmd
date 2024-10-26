@@ -14,9 +14,11 @@ format:
 
 # Introduction
 
-Imagine you're teaching a computer to make decisions. Just like we compare things in everyday life ("Is it raining?", "Do I have enough money?"), computers need ways to compare values and make choices. Let's look at this in the context of hiring decisions to help us how to make decisions in the context of optimal stopping problems. Imagine you're helping a company make hiring decisions. You need to look at different candidates and decide if they meet certain requirements. To make these decisions with Python, we need to learn how to make comparisons!
+You're teaching a computer to make decisions. Just like we compare things in everyday life ("Is it raining?", "Do I have enough money?"), computers need ways to compare values and make choices. Let's look at this in the context of hiring decisions to help us how to make decisions in the context of optimal stopping problems. 
 
-# Section 1 - Basic Comparisons
+Imagine you're helping a company make hiring decisions. You need to look at different candidates and decide if they meet certain requirements. To make these decisions with Python, we need to learn how to make comparisons!
+
+# 1 - Basic Comparisons
 
 When looking at job candidates, we often ask questions like:
 
@@ -29,7 +31,7 @@ These questions all require yes/no (True/False) answers, which is exactly what c
 In Python, we use special symbols to make these comparisons:
 
 ```{python}
-#| eval: false
+#| eval: true
 # Let's look at the current candidate compared to the best we've seen so far
 current_candidate_score = 85
 best_score_so_far = 82
@@ -72,7 +74,9 @@ previous_best = 88
 # YOUR CODE BELOW
 
 ```
-```python
+```{python}
+#| eval: false
+#| code-fold: true
 # Test your answer
 assert compare_scores == True, "The new score should be greater than the previous best"
 print(f"Is new score better? {compare_scores}")
@@ -90,6 +94,7 @@ required_skill = "Python"
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert compare_skills == False, "The candidate's skill should not match the required skill"
 print("Good job! You correctly identified that the skills are different")
@@ -107,12 +112,13 @@ best_so_far = 88
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert is_better == True, "The current candidate should be better than the best so far"
 print("Good job! You correctly identified that the current candidate is better than the best so far")
 ```
 
-# Section 2 - Combining Comparisons with Logical Operators
+# 2 - Combining Comparisons with Logical Operators
 
 Often, we need to check multiple things at once. For example, a good candidate should:
 
@@ -129,7 +135,7 @@ Python gives us three ways to combine comparisons:
 Let's see some examples:
 
 ```{python}
-#| eval: false
+#| eval: true
 # Candidate information
 experience = 5
 test_score = 90
@@ -182,6 +188,7 @@ score = 90
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert meets_requirements == True, "The candidate should meet both requirements"
 print("Good job! You correctly identified that the candidate meets both requirements")
@@ -193,28 +200,29 @@ A candidate is acceptable if they EITHER:
 - Have a PhD
 - OR have a high test score (above 95)
 
+Store the result in `is_qualified`
+
 ```{python}
 #| eval: false
 has_phd = True
 test_score = 92
-
-# Store the result in `is_qualified`
 # YOUR CODE BELOW
 
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert is_qualified == True, "The candidate should be qualified"
 print("Good job! You correctly identified that the candidate is qualified")
 ```
 
-# Section 3 - Putting It All Together
+# 3 - Putting It All Together
 
 Let's look at a real candidate and check all their qualifications:
 
 ```{python}
-#| eval: false
+#| eval: true
 # Secretary Problem Scenario
 candidate_name = "Mika"
 candidates_seen = 25
@@ -260,6 +268,7 @@ candidate_has_degree = True
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert final_decision == False, "The candidate should not meet all requirements"
 print("Good job! You correctly identified that the candidate does not meet all requirements as his salary expectation is too high.")
@@ -288,6 +297,7 @@ best_score_so_far = 85
 ```
 ```{python}
 #| eval: false
+#| code-fold: true
 # Test your answer
 assert make_offer == True, "We should hire this candidate"
 print("Good job! You correctly identified that we should hire this candidate")
