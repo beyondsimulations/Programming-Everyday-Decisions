@@ -19,13 +19,12 @@ format:
         footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-optimal-stopping.qmd)"
         output-file: lecture-presentation.html
     html:
-        theme: litera
+        theme: [litera, ../styles_html.scss]
     pdf: 
         documentclass: report
 
 execute:
     freeze: auto
-    cache: true
     echo: true
 ---
 

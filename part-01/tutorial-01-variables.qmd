@@ -4,7 +4,7 @@ subtitle: "Programming: Everyday Decision-Making Algorithms"
 
 format:
     html:
-        theme: litera
+        theme: [litera, ../styles_html.scss]
     pdf: 
         documentclass: report
     ipynb:
@@ -203,6 +203,7 @@ print(f"After person {stopping_point}, we'll get serious about finding the best 
 
 :::{.callout-tip}
 When converting strings to numbers:
+
 - Make sure the string contains only numeric characters
 - Use `int()` for whole numbers
 - Use `float()` if you need decimal points
@@ -210,28 +211,29 @@ When converting strings to numbers:
 
 # 4 - String Formatting
 
+String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces `{}` around the variable names and with the `f` prefix before the string. For example:
+
+```{python}
+#| eval: true
+name = "Casey"
+print(f"Hello, {name}! Nice to meet you.")
+```
+
+Here, `{name}` will insert the value of `name` into the string if the variable `name` is defined.
+
 Let's create a nice dating profile using string formatting:
 
 ```{python}
 #| eval: true
 name = "Casey"
-age = 25
-bio = f"{name}, {age} - Looking for someone special!"
-print(bio)
+age = 25 # Age of Casey
+bio = f"{name}, {age} - Looking for someone special!" # Insert the variables into the string
+print(bio) # Print the string which is stored in bio
 ```
 
 ## Exercise 4.1 - Profile Message
 
-We have already defined the variables `name` and `minimum_rating`. Now we want to use them in the context of a formatted string. You have already seen how to do this in the previous cells, but not explicitly. String formatting is a powerful tool in Python that allows you to insert variables into strings. We do so by using curly braces `{}` around the variable names and with the `f` prefix before the string. For example:
-
-```{python}
-#| eval: true
-f"Hello, {name}! Nice to meet you."
-```
-
-Here, `{name}` will insert the value of `name` into the string if the variable `name` is defined.
-
-Create a formatted string `profile_message` using the variables `name` and `minimum_rating` that says "Hello, {name}! Nice to meet you. I hope you are at least {minimum_rating}/10 compatible with me!". 
+We have already defined the variables `name` and `minimum_rating`. Now we want to use them in the context of a formatted string. Create a formatted string `profile_message` using the variables `name` and `minimum_rating` that says "Hello, {name}! Nice to meet you. I hope you are at least {minimum_rating}/10 compatible with me!". 
 
 ```{python}
 #| eval: false

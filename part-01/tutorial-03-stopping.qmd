@@ -4,7 +4,7 @@ subtitle: "Programming: Everyday Decision-Making Algorithms"
 
 format:
     html:
-        theme: litera
+        theme: [litera, ../styles_html.scss]
 
     pdf:
         documentclass: report

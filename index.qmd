@@ -4,6 +4,7 @@ subtitle: "Kühne Logistics University - Fall 2024"
 author: "Dr. Tobias Vlćek and Dr. Nils Roemer"
 
 html:
+    theme: [litera, styles_html.scss]
 ---
 
 # Course Description

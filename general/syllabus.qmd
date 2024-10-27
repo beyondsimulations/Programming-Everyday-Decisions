@@ -3,6 +3,7 @@ title: "Syllabus"
 subtitle: "This years course structure"
 
 html:
+    theme: [litera, ../styles_html.scss]
 ---
 
 # Lectures

@@ -1,0 +1,52 @@
+
+/*-- scss:defaults --*/
+
+// fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// colors background
+$background-color: #ffffff;
+
+// theme colors
+$theme-color-primary: #8C3048;
+$theme-color-secondary: #023059;
+$theme-color-tertiary: #BF7C63;
+$theme-color-quaternary: #F4E2DE;
+
+// fonts colors
+$font-color: #000000;
+$font-color-inverted: $background-color;
+$font-color-loud: $theme-color-secondary;
+
+// colors
+$body-bg: $background-color;
+$body-color: $font-color;
+$link-color: $theme-color-tertiary;
+
+
+/*-- scss:rules --*/
+
+.reveal .title {
+  background-color: $theme-color-primary;
+}
+
+.title-slide.title {
+  background-color: $theme-color-quaternary !important;
+}
+
+.highlight {
+  color: $theme-color-primary;
+  font-weight: bold;
+}
+
+.task {
+  color: $theme-color-secondary;
+  font-weight: bold;
+}
+
+.question {
+  color: $theme-color-tertiary;
+  font-weight: bold;
+}
+
+

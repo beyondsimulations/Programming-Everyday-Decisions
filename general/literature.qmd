@@ -3,6 +3,7 @@ title: "Literature and Resources"
 subtitle: "Good books and resources to read"
 
 html:
+    theme: [litera, ../styles_html.scss]
 ---
 
 This section provides a curated list of books and resources to enhance your understanding of algorithmic thinking and programming. Each recommendation includes a brief description to help you choose the most suitable resources for you.
