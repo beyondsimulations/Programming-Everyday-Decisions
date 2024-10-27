@@ -163,6 +163,7 @@ cython_debug/
 
 /.quarto/
 /_site/
+/_freeze/
 
 # Solutions
 part-01/solution/
