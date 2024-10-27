@@ -71,3 +71,21 @@ $presentation-heading-line-height: 1.5 !default;
   font-weight: bold !important;
 }
 
+.flow {
+  background-image: url("https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?auto=format&fit=crop&w=2000&q=80");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 120s linear infinite;
+  background-size: cover;  
+  background-repeat: repeat;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 192px top 108px;
+  }
+  100% {
+    background-position: left 1728px top 972px;
+  }
+}

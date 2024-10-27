@@ -8,7 +8,7 @@ title-slide-attributes:
 
 format:
     revealjs:
-        theme: [default, ../styles.scss]
+        theme: [default, ../styles2.scss]
         transition: slide
         transition-speed: fast
         highlight-style: arrow
