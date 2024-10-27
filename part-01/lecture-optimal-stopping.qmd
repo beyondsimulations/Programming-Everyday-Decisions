@@ -9,7 +9,6 @@ title-slide-attributes:
 format:
     revealjs:
         theme: [default, ../styles.scss]
-        embed-resources: true
         transition: slide
         transition-speed: fast
         highlight-style: arrow
@@ -23,7 +22,6 @@ format:
         output-file: lecture-presentation.html
     html:
         theme: litera
-        embed-resources: true
     pdf: 
         documentclass: report
 ---
@@ -33,9 +31,9 @@ format:
 ## Teaching Team
 
 ::: {layout="[[1,1]]"}
-![**Dr. Tobias Vlcek**](http://images.beyondsimulations.com/tobias-vlcek.jpg)
+![**Dr. Tobias Vlcek**](../images/tobias-vlcek.jpg)
 
-![**Dr. Nils Roemer**](http://images.beyondsimulations.com/nils-roemer.jpeg)
+![**Dr. Nils Roemer**](../images/nils-roemer.jpeg)
 :::
 
 ## About me
