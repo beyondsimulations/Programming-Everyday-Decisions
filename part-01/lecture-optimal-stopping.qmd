@@ -15,8 +15,6 @@ format:
         code-overflow: wrap
         slide-number: true
         code-copy: true
-        code-link: true
-        preview-links: auto
         height: 750
         footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-optimal-stopping.qmd)"
         output-file: lecture-presentation.html
