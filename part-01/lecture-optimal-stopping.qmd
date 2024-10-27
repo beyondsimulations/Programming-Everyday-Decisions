@@ -8,7 +8,7 @@ title-slide-attributes:
 
 format:
     revealjs:
-        theme: [default, ../styles2.scss]
+        theme: [default, ../styles.scss]
         transition: slide
         transition-speed: fast
         highlight-style: arrow
@@ -22,6 +22,11 @@ format:
         theme: litera
     pdf: 
         documentclass: report
+
+execute:
+    freeze: auto
+    cache: true
+    echo: true
 ---
 
 # [About this Course]{.flow} {.title}
