@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.30">
+<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.6.30" />
 
-<meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta name="author" content="Dr. Tobias Vlćek" />
 
 <title>Lecture I - Optimal Stopping – Programming: Everyday Decision-Making Algorithms</title>
 <style>
@@ -57,23 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b546a680a5d4f43146927d6cbd1f7fb9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<!-- htmldependencies:E3FAD763 -->
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -105,17 +91,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar floating">
+<body>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn"
+      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
+      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part-01/lecture-optimal-stopping.html">01 Optimal Stopping</a></li><li class="breadcrumb-item"><a href="../part-01/lecture-optimal-stopping.html">Lecture</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
+        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -129,7 +120,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Programming: Everyday Decision-Making Algorithms</a> 
+      <a href="/">
+      Programming: Everyday Decision-Making Algorithms
+      </a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -141,13 +134,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general/syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="/general/syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
@@ -156,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1"  role="navigation" aria-expanded="true">
  <span class="menu-text">01 Optimal Stopping</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -165,25 +158,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/lecture-optimal-stopping.html" class="sidebar-item-text sidebar-link active">
+  <a href="/part-01/lecture-optimal-stopping.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lecture</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/tutorial-01-variables.html" class="sidebar-item-text sidebar-link">
+  <a href="/part-01/tutorial-01-variables.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01 - Variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/tutorial-02-comparisons.html" class="sidebar-item-text sidebar-link">
+  <a href="/part-01/tutorial-02-comparisons.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">02 - Comparisons</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../part-01/tutorial-03-stopping.html" class="sidebar-item-text sidebar-link">
+  <a href="/part-01/tutorial-03-stopping.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">03 - Decisions</span></a>
   </div>
 </li>
@@ -194,93 +187,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general/faq.html" class="sidebar-item-text sidebar-link">
+  <a href="/general/faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQs</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general/literature.html" class="sidebar-item-text sidebar-link">
+  <a href="/general/literature.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Literature</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-this-course" id="toc-about-this-course" class="nav-link active" data-scroll-target="#about-this-course"><span class="flow">About this Course</span></a>
-  <ul class="collapse">
-  <li><a href="#teaching-team" id="toc-teaching-team" class="nav-link" data-scroll-target="#teaching-team">Teaching Team</a></li>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link" data-scroll-target="#about-me">About me</a></li>
-  <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course Outline</a></li>
-  <li><a href="#participation" id="toc-participation" class="nav-link" data-scroll-target="#participation">Participation</a></li>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a></li>
-  <li><a href="#passing-the-course" id="toc-passing-the-course" class="nav-link" data-scroll-target="#passing-the-course">Passing the Course</a></li>
-  <li><a href="#handing-in-assignments" id="toc-handing-in-assignments" class="nav-link" data-scroll-target="#handing-in-assignments">Handing in Assignments</a></li>
-  <li><a href="#learning-python" id="toc-learning-python" class="nav-link" data-scroll-target="#learning-python">Learning Python</a></li>
-  <li><a href="#difficulty-of-the-course" id="toc-difficulty-of-the-course" class="nav-link" data-scroll-target="#difficulty-of-the-course">Difficulty of the Course</a></li>
-  <li><a href="#goals-of-the-course" id="toc-goals-of-the-course" class="nav-link" data-scroll-target="#goals-of-the-course">Goals of the Course</a></li>
-  <li><a href="#why-python" id="toc-why-python" class="nav-link" data-scroll-target="#why-python">Why Python?</a></li>
-  <li><a href="#help-from-ai" id="toc-help-from-ai" class="nav-link" data-scroll-target="#help-from-ai">Help from AI</a></li>
-  </ul></li>
-  <li><a href="#how-to-learn-programming" id="toc-how-to-learn-programming" class="nav-link" data-scroll-target="#how-to-learn-programming"><span class="flow">How to learn programming</span></a>
-  <ul class="collapse">
-  <li><a href="#our-recommendation" id="toc-our-recommendation" class="nav-link" data-scroll-target="#our-recommendation">Our Recommendation</a></li>
-  <li><a href="#dont-give-up" id="toc-dont-give-up" class="nav-link" data-scroll-target="#dont-give-up">Don’t give up!</a></li>
-  </ul></li>
-  <li><a href="#setting-up-python" id="toc-setting-up-python" class="nav-link" data-scroll-target="#setting-up-python"><span class="flow">Setting up Python</span></a>
-  <ul class="collapse">
-  <li><a href="#the-setup" id="toc-the-setup" class="nav-link" data-scroll-target="#the-setup">The Setup</a></li>
-  <li><a href="#install-python" id="toc-install-python" class="nav-link" data-scroll-target="#install-python">Install Python</a></li>
-  <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link" data-scroll-target="#install-vs-code">Install VS Code</a></li>
-  <li><a href="#python-on-ipads" id="toc-python-on-ipads" class="nav-link" data-scroll-target="#python-on-ipads">Python on iPads</a></li>
-  </ul></li>
-  <li><a href="#your-first-code" id="toc-your-first-code" class="nav-link" data-scroll-target="#your-first-code"><span class="flow">Your first code</span></a>
-  <ul class="collapse">
-  <li><a href="#hello-world" id="toc-hello-world" class="nav-link" data-scroll-target="#hello-world">Hello, World!</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  </ul></li>
-  <li><a href="#optimal-stopping" id="toc-optimal-stopping" class="nav-link" data-scroll-target="#optimal-stopping"><span class="flow">Optimal Stopping</span></a>
-  <ul class="collapse">
-  <li><a href="#what-is-optimal-stopping" id="toc-what-is-optimal-stopping" class="nav-link" data-scroll-target="#what-is-optimal-stopping">What is Optimal Stopping?</a></li>
-  <li><a href="#flat-hunting" id="toc-flat-hunting" class="nav-link" data-scroll-target="#flat-hunting"><span class="invert-font">Flat Hunting</span></a></li>
-  <li><a href="#hiring-applicants" id="toc-hiring-applicants" class="nav-link" data-scroll-target="#hiring-applicants"><span class="invert-font">Hiring applicants</span></a></li>
-  <li><a href="#dating" id="toc-dating" class="nav-link" data-scroll-target="#dating"><span class="invert-font">Dating</span></a></li>
-  <li><a href="#searching-for-a-parking-spot" id="toc-searching-for-a-parking-spot" class="nav-link" data-scroll-target="#searching-for-a-parking-spot"><span class="invert-font">Searching for a parking spot</span></a></li>
-  </ul></li>
-  <li><a href="#rule" id="toc-rule" class="nav-link" data-scroll-target="#rule"><span class="flow">37% Rule</span></a>
-  <ul class="collapse">
-  <li><a href="#the-secretary-problem" id="toc-the-secretary-problem" class="nav-link" data-scroll-target="#the-secretary-problem">The Secretary Problem</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#the-37-rule" id="toc-the-37-rule" class="nav-link" data-scroll-target="#the-37-rule">The 37% Rule</a></li>
-  <li><a href="#why-37" id="toc-why-37" class="nav-link" data-scroll-target="#why-37">Why 37%?</a></li>
-  <li><a href="#in-python" id="toc-in-python" class="nav-link" data-scroll-target="#in-python">In Python</a></li>
-  </ul></li>
-  <li><a href="#variations" id="toc-variations" class="nav-link" data-scroll-target="#variations"><span class="flow">Variations</span></a>
-  <ul class="collapse">
-  <li><a href="#cost-of-searching" id="toc-cost-of-searching" class="nav-link" data-scroll-target="#cost-of-searching">Cost of Searching</a></li>
-  <li><a href="#choose-past-candidates" id="toc-choose-past-candidates" class="nav-link" data-scroll-target="#choose-past-candidates">Choose past candidates</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
-  </ul></li>
-  <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature"><span class="flow">Literature</span></a>
-  <ul class="collapse">
-  <li><a href="#interesting-books-to-start" id="toc-interesting-books-to-start" class="nav-link" data-scroll-target="#interesting-books-to-start">Interesting Books to start</a></li>
-  <li><a href="#books-on-programming" id="toc-books-on-programming" class="nav-link" data-scroll-target="#books-on-programming">Books on Programming</a></li>
-  <li><a href="#more-literature" id="toc-more-literature" class="nav-link" data-scroll-target="#more-literature">More Literature</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/part-01/lecture-optimal-stopping.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/part-01/lecture-optimal-stopping.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lecture-presentation.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="lecture-optimal-stopping.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+        <div id="quarto-toc-target"></div>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part-01/lecture-optimal-stopping.html">01 Optimal Stopping</a></li><li class="breadcrumb-item"><a href="../part-01/lecture-optimal-stopping.html">Lecture</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Lecture I - Optimal Stopping</h1>
 <p class="subtitle lead">Programming: Everyday Decision-Making Algorithms</p>
@@ -292,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Dr.&nbsp;Tobias Vlćek </p>
+    <p class="author">Dr. Tobias Vlćek </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -312,11 +240,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-this-course" id="toc-about-this-course"><span class="flow">About this Course</span></a>
+  <ul>
+  <li><a href="#teaching-team" id="toc-teaching-team">Teaching Team</a></li>
+  <li><a href="#about-me" id="toc-about-me">About me</a></li>
+  <li><a href="#course-outline" id="toc-course-outline">Course Outline</a></li>
+  <li><a href="#participation" id="toc-participation">Participation</a></li>
+  <li><a href="#teaching" id="toc-teaching">Teaching</a></li>
+  <li><a href="#passing-the-course" id="toc-passing-the-course">Passing the Course</a></li>
+  <li><a href="#handing-in-assignments" id="toc-handing-in-assignments">Handing in Assignments</a></li>
+  <li><a href="#learning-python" id="toc-learning-python">Learning Python</a></li>
+  <li><a href="#difficulty-of-the-course" id="toc-difficulty-of-the-course">Difficulty of the Course</a></li>
+  <li><a href="#goals-of-the-course" id="toc-goals-of-the-course">Goals of the Course</a></li>
+  <li><a href="#why-python" id="toc-why-python">Why Python?</a></li>
+  <li><a href="#help-from-ai" id="toc-help-from-ai">Help from AI</a></li>
+  </ul></li>
+  <li><a href="#how-to-learn-programming" id="toc-how-to-learn-programming"><span class="flow">How to learn programming</span></a>
+  <ul>
+  <li><a href="#our-recommendation" id="toc-our-recommendation">Our Recommendation</a></li>
+  <li><a href="#dont-give-up" id="toc-dont-give-up">Don’t give up!</a></li>
+  </ul></li>
+  <li><a href="#setting-up-python" id="toc-setting-up-python"><span class="flow">Setting up Python</span></a>
+  <ul>
+  <li><a href="#the-setup" id="toc-the-setup">The Setup</a></li>
+  <li><a href="#install-python" id="toc-install-python">Install Python</a></li>
+  <li><a href="#install-vs-code" id="toc-install-vs-code">Install VS Code</a></li>
+  <li><a href="#python-on-ipads" id="toc-python-on-ipads">Python on iPads</a></li>
+  </ul></li>
+  <li><a href="#your-first-code" id="toc-your-first-code"><span class="flow">Your first code</span></a>
+  <ul>
+  <li><a href="#hello-world" id="toc-hello-world">Hello, World!</a></li>
+  <li><a href="#section" id="toc-section"></a></li>
+  </ul></li>
+  <li><a href="#optimal-stopping" id="toc-optimal-stopping"><span class="flow">Optimal Stopping</span></a>
+  <ul>
+  <li><a href="#what-is-optimal-stopping" id="toc-what-is-optimal-stopping">What is Optimal Stopping?</a></li>
+  <li><a href="#flat-hunting" id="toc-flat-hunting"><span class="invert-font">Flat Hunting</span></a></li>
+  <li><a href="#hiring-applicants" id="toc-hiring-applicants"><span class="invert-font">Hiring applicants</span></a></li>
+  <li><a href="#dating" id="toc-dating"><span class="invert-font">Dating</span></a></li>
+  <li><a href="#searching-for-a-parking-spot" id="toc-searching-for-a-parking-spot"><span class="invert-font">Searching for a parking spot</span></a></li>
+  </ul></li>
+  <li><a href="#rule" id="toc-rule"><span class="flow">37% Rule</span></a>
+  <ul>
+  <li><a href="#the-secretary-problem" id="toc-the-secretary-problem">The Secretary Problem</a></li>
+  <li><a href="#section-1" id="toc-section-1"></a></li>
+  <li><a href="#the-37-rule" id="toc-the-37-rule">The 37% Rule</a></li>
+  <li><a href="#why-37" id="toc-why-37">Why 37%?</a></li>
+  <li><a href="#in-python" id="toc-in-python">In Python</a></li>
+  </ul></li>
+  <li><a href="#variations" id="toc-variations"><span class="flow">Variations</span></a>
+  <ul>
+  <li><a href="#cost-of-searching" id="toc-cost-of-searching">Cost of Searching</a></li>
+  <li><a href="#choose-past-candidates" id="toc-choose-past-candidates">Choose past candidates</a></li>
+  <li><a href="#questions" id="toc-questions">Questions?</a></li>
+  </ul></li>
+  <li><a href="#literature" id="toc-literature"><span class="flow">Literature</span></a>
+  <ul>
+  <li><a href="#interesting-books-to-start" id="toc-interesting-books-to-start">Interesting Books to start</a></li>
+  <li><a href="#books-on-programming" id="toc-books-on-programming">Books on Programming</a></li>
+  <li><a href="#more-literature" id="toc-more-literature">More Literature</a></li>
+  </ul></li>
+  </ul>
+</nav>
 <section id="about-this-course" class="level1 title">
 <h1 class="title"><span class="flow">About this Course</span></h1>
 <section id="teaching-team" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-team">Teaching Team</h2>
+<h2>Teaching Team</h2>
 <div>
 
 </div>
@@ -324,17 +317,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/tobias-vlcek.jpg" class="img-fluid figure-img"></p>
-<figcaption><strong>Dr.&nbsp;Tobias Vlcek</strong></figcaption>
+<figure>
+<p><img src="../images/tobias-vlcek.jpg" class="img-fluid" /></p>
+<figcaption><strong>Dr. Tobias Vlcek</strong></figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/nils-roemer.jpeg" class="img-fluid figure-img"></p>
-<figcaption><strong>Dr.&nbsp;Nils Roemer</strong></figcaption>
+<figure>
+<p><img src="../images/nils-roemer.jpeg" class="img-fluid" /></p>
+<figcaption><strong>Dr. Nils Roemer</strong></figcaption>
 </figure>
 </div>
 </div>
@@ -342,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="about-me" class="level2">
-<h2 class="anchored" data-anchor-id="about-me">About me</h2>
+<h2>About me</h2>
 <div class="incremental">
 <ul class="incremental">
 <li><strong>Field:</strong> Optimizing and simulating complex systems</li>
@@ -356,7 +349,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -368,7 +361,7 @@ Tip
 </div>
 </section>
 <section id="course-outline" class="level2">
-<h2 class="anchored" data-anchor-id="course-outline">Course Outline</h2>
+<h2>Course Outline</h2>
 <ul>
 <li><strong>I:</strong> Optimal Stopping</li>
 <li><strong>II:</strong> Explore &amp; Exploit</li>
@@ -379,7 +372,7 @@ Tip
 </ul>
 </section>
 <section id="participation" class="level2">
-<h2 class="anchored" data-anchor-id="participation">Participation</h2>
+<h2>Participation</h2>
 <ul>
 <li>Try <strong>actively participating</strong> in this course</li>
 <li>You will find it much <span class="highlight">(!)</span> easier and more fun</li>
@@ -387,7 +380,7 @@ Tip
 </ul>
 </section>
 <section id="teaching" class="level2">
-<h2 class="anchored" data-anchor-id="teaching">Teaching</h2>
+<h2>Teaching</h2>
 <ul>
 <li><strong>Lecture:</strong> Presentation and discussion of algorithms related to everyday decision-making</li>
 <li><strong>Tutorial:</strong> Step-by-step assignments to be solved and discussed together in groups</li>
@@ -397,7 +390,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -409,7 +402,7 @@ Tip
 </div>
 </section>
 <section id="passing-the-course" class="level2">
-<h2 class="anchored" data-anchor-id="passing-the-course">Passing the Course</h2>
+<h2>Passing the Course</h2>
 <ul>
 <li><strong>Pass/fail course</strong> without exams</li>
 <li><span class="highlight">75% attendance</span> required for passing the course</li>
@@ -419,7 +412,7 @@ Tip
 </ul>
 </section>
 <section id="handing-in-assignments" class="level2">
-<h2 class="anchored" data-anchor-id="handing-in-assignments">Handing in Assignments</h2>
+<h2>Handing in Assignments</h2>
 <ul>
 <li>Each student group submits <strong>one solution</strong></li>
 <li>Provide us <strong>all</strong> working notebooks of the lecture</li>
@@ -431,7 +424,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -443,7 +436,7 @@ Tip
 </div>
 </section>
 <section id="learning-python" class="level2">
-<h2 class="anchored" data-anchor-id="learning-python">Learning Python</h2>
+<h2>Learning Python</h2>
 <p>We will mostly <strong>not cover Python during the lectures!</strong></p>
 <p>. . .</p>
 <p><span class="question">Question</span>: Anybody know why?</p>
@@ -457,7 +450,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -469,7 +462,7 @@ Tip
 </div>
 </section>
 <section id="difficulty-of-the-course" class="level2">
-<h2 class="anchored" data-anchor-id="difficulty-of-the-course">Difficulty of the Course</h2>
+<h2>Difficulty of the Course</h2>
 <ul>
 <li>At first it might be <span class="highlight">a little bit overwhelming</span></li>
 <li>Programming is similar to learning a <strong>new language</strong></li>
@@ -479,7 +472,7 @@ Tip
 </ul>
 </section>
 <section id="goals-of-the-course" class="level2">
-<h2 class="anchored" data-anchor-id="goals-of-the-course">Goals of the Course</h2>
+<h2>Goals of the Course</h2>
 <ul>
 <li>Learn the <span class="highlight">basics of programming</span></li>
 <li>Learn about <strong>algorithmic thinking</strong></li>
@@ -489,7 +482,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -501,7 +494,7 @@ Tip
 </div>
 </section>
 <section id="why-python" class="level2">
-<h2 class="anchored" data-anchor-id="why-python">Why Python?</h2>
+<h2>Why Python?</h2>
 <ul>
 <li><strong>Origins</strong>: Conceived in late 1980s as a teaching and scripting language</li>
 <li><strong>Simple Syntax</strong>: Python’s syntax is mostly straightforward and very easy to learn</li>
@@ -510,7 +503,7 @@ Tip
 </ul>
 </section>
 <section id="help-from-ai" class="level2">
-<h2 class="anchored" data-anchor-id="help-from-ai">Help from AI</h2>
+<h2>Help from AI</h2>
 <ul>
 <li>You are <span class="highlight">allowed to use AI</span> in the course, we use it as well (e.g., Claude, ChatGPT, LLama3 …)</li>
 <li>These <strong>tools are great</strong> for learning Python!</li>
@@ -520,7 +513,7 @@ Tip
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Warning
@@ -535,7 +528,7 @@ Warning
 <section id="how-to-learn-programming" class="level1 title">
 <h1 class="title"><span class="flow">How to learn programming</span></h1>
 <section id="our-recommendation" class="level2">
-<h2 class="anchored" data-anchor-id="our-recommendation">Our Recommendation</h2>
+<h2>Our Recommendation</h2>
 <ol type="1">
 <li><span class="highlight">Be present</span>: Attend the lecture and solve the tutorials</li>
 <li><span class="highlight">Put in some work</span>: Repeat code and try to understand it</li>
@@ -545,7 +538,7 @@ Warning
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -557,20 +550,20 @@ Tip
 </div>
 </section>
 <section id="dont-give-up" class="level2">
-<h2 class="anchored" data-anchor-id="dont-give-up">Don’t give up!</h2>
+<h2>Don’t give up!</h2>
 <ul>
 <li>Programming is <span class="highlight">problem solving</span>, don’t get <strong>frustrated</strong>!</li>
 <li>Expect to <strong>stretch</strong> your comfort zone</li>
 </ul>
 <center>
-<p><br> <iframe src="https://giphy.com/embed/FKsCiEI5pFvIQ" width="480" height="360" style="" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></p>
+<p><br> <iframe src="https://giphy.com/embed/FKsCiEI5pFvIQ" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
 <center>
-</center></center></section>
+</section>
 </section>
 <section id="setting-up-python" class="level1 title">
 <h1 class="title"><span class="flow">Setting up Python</span></h1>
 <section id="the-setup" class="level2">
-<h2 class="anchored" data-anchor-id="the-setup">The Setup</h2>
+<h2>The Setup</h2>
 <ul>
 <li>We will use <a href="https://jupyter.org/">Jupyter Notebooks</a> for the tutorials</li>
 <li>Allow to <strong>combine code and text</strong> in one document</li>
@@ -580,7 +573,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -592,7 +585,7 @@ Tip
 </div>
 </section>
 <section id="install-python" class="level2">
-<h2 class="anchored" data-anchor-id="install-python">Install Python</h2>
+<h2>Install Python</h2>
 <ul>
 <li>Sources are the <a href="https://www.python.org/downloads/">Python website</a> or <a href="https://www.anaconda.com/">Anaconda</a></li>
 <li>On macOS, Python is often <strong>already installed</strong></li>
@@ -602,7 +595,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -614,7 +607,7 @@ Tip
 </div>
 </section>
 <section id="install-vs-code" class="level2">
-<h2 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h2>
+<h2>Install VS Code</h2>
 <ul>
 <li>Download and install from the <a href="https://code.visualstudio.com/">website</a></li>
 <li>Built for <strong>Windows, Linux and Mac</strong></li>
@@ -625,7 +618,7 @@ Tip
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -637,7 +630,7 @@ Tip
 </div>
 </section>
 <section id="python-on-ipads" class="level2">
-<h2 class="anchored" data-anchor-id="python-on-ipads">Python on iPads</h2>
+<h2>Python on iPads</h2>
 <ul>
 <li>You <strong>can run Python scripts</strong> on your iPad</li>
 <li>But it is <span class="highlight">not recommended</span> for the course</li>
@@ -648,7 +641,7 @@ Tip
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Caution
@@ -663,11 +656,11 @@ Caution
 <section id="your-first-code" class="level1 title">
 <h1 class="title"><span class="flow">Your first code</span></h1>
 <section id="hello-world" class="level2">
-<h2 class="anchored" data-anchor-id="hello-world">Hello, World!</h2>
+<h2>Hello, World!</h2>
 <p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="ea686fe2" class="cell" data-output-location="fragment" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="341f0adc" class="cell" data-output-location="fragment" data-execution_count="2">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python cell-code"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Hello, World!</code></pre>
 </div>
@@ -678,7 +671,7 @@ Caution
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
@@ -690,7 +683,7 @@ Note
 </div>
 </section>
 <section id="section" class="level2 loud-slide">
-<h2 class="loud-slide anchored" data-anchor-id="section"></h2>
+<h2 class="loud-slide"></h2>
 <div class="r-fit-text">
 <p>Any questions</p>
 <p>so far?</p>
@@ -700,7 +693,7 @@ Note
 <section id="optimal-stopping" class="level1 title">
 <h1 class="title"><span class="flow">Optimal Stopping</span></h1>
 <section id="what-is-optimal-stopping" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-optimal-stopping">What is Optimal Stopping?</h2>
+<h2>What is Optimal Stopping?</h2>
 <p><span class="question">Question:</span> Anybody know what optimal stopping is?</p>
 <div class="incremental">
 <ul class="incremental">
@@ -716,25 +709,25 @@ Note
 <p><span class="question">Question:</span> Anybody have an example of optimal stopping?</p>
 </section>
 <section id="flat-hunting" class="level2" data-background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&amp;force=true">
-<h2 data-background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&amp;force=true" class="anchored" data-anchor-id="flat-hunting"><span class="invert-font">Flat Hunting</span></h2>
+<h2 data-background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&amp;force=true"><span class="invert-font">Flat Hunting</span></h2>
 <div class="footer">
 <p><span class="invert-font">Photo by <a href="https://unsplash.com/@jiren_091">Aditya Ghosh</a> on Unsplash</span></p>
 </div>
 </section>
 <section id="hiring-applicants" class="level2" data-background-image="https://unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3wxMjA3fDB8MXxhbGx8NHx8fHx8fHx8MTcyOTk3MzA0OXw&amp;force=true">
-<h2 data-background-image="https://unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3wxMjA3fDB8MXxhbGx8NHx8fHx8fHx8MTcyOTk3MzA0OXw&amp;force=true" class="anchored" data-anchor-id="hiring-applicants"><span class="invert-font">Hiring applicants</span></h2>
+<h2 data-background-image="https://unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3wxMjA3fDB8MXxhbGx8NHx8fHx8fHx8MTcyOTk3MzA0OXw&amp;force=true"><span class="invert-font">Hiring applicants</span></h2>
 <div class="footer">
 <p><span class="invert-font">Photo by <a href="https://unsplash.com/@homajob">Scott Graham</a> on Unsplash</span></p>
 </div>
 </section>
 <section id="dating" class="level2" data-background-image="https://unsplash.com/photos/-XlBjdtRqK8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTV8fGxvdmV8ZW58MHx8fHwxNzI5OTI4NTkxfDA&amp;force=true">
-<h2 data-background-image="https://unsplash.com/photos/-XlBjdtRqK8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTV8fGxvdmV8ZW58MHx8fHwxNzI5OTI4NTkxfDA&amp;force=true" class="anchored" data-anchor-id="dating"><span class="invert-font">Dating</span></h2>
+<h2 data-background-image="https://unsplash.com/photos/-XlBjdtRqK8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTV8fGxvdmV8ZW58MHx8fHwxNzI5OTI4NTkxfDA&amp;force=true"><span class="invert-font">Dating</span></h2>
 <div class="footer">
 <p><span class="invert-font">Photo by <a href="https://unsplash.com/@shelbymary_">Shelby Deeter</a> on Unsplash</span></p>
 </div>
 </section>
 <section id="searching-for-a-parking-spot" class="level2" data-background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&amp;force=true">
-<h2 data-background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&amp;force=true" class="anchored" data-anchor-id="searching-for-a-parking-spot"><span class="invert-font">Searching for a parking spot</span></h2>
+<h2 data-background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&amp;force=true"><span class="invert-font">Searching for a parking spot</span></h2>
 <div class="footer">
 <p><span class="invert-font">Photo by <a href="https://unsplash.com/@josephtpearson">Joseph Pearson</a> on Unsplash</span></p>
 </div>
@@ -743,7 +736,7 @@ Note
 <section id="rule" class="level1 title">
 <h1 class="title"><span class="flow">37% Rule</span></h1>
 <section id="the-secretary-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-secretary-problem">The Secretary Problem</h2>
+<h2>The Secretary Problem</h2>
 <div class="incremental">
 <ul class="incremental">
 <li>Imagine you’re <strong>hiring a secretary</strong></li>
@@ -757,7 +750,7 @@ Note
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
@@ -769,13 +762,13 @@ Note
 </div>
 </section>
 <section id="section-1" class="level2 loud-slide">
-<h2 class="loud-slide anchored" data-anchor-id="section-1"></h2>
+<h2 class="loud-slide"></h2>
 <div class="r-fit-text">
 <p>Ideas?</p>
 </div>
 </section>
 <section id="the-37-rule" class="level2">
-<h2 class="anchored" data-anchor-id="the-37-rule">The 37% Rule</h2>
+<h2>The 37% Rule</h2>
 <p>The optimal strategy is to:</p>
 <ol type="1">
 <li>Look at the <span class="highlight">first 37%</span> of options</li>
@@ -788,7 +781,7 @@ Note
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
@@ -800,7 +793,7 @@ Note
 </div>
 </section>
 <section id="why-37" class="level2">
-<h2 class="anchored" data-anchor-id="why-37">Why 37%?</h2>
+<h2>Why 37%?</h2>
 <ul>
 <li>This is based on the <strong>geometric distribution</strong></li>
 <li>The <span class="highlight">optimal stopping point</span> is at <code>n/e</code></li>
@@ -811,7 +804,7 @@ Note
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Tip
@@ -823,17 +816,17 @@ Tip
 </div>
 </section>
 <section id="in-python" class="level2">
-<h2 class="anchored" data-anchor-id="in-python">In Python</h2>
+<h2>In Python</h2>
 <p>We can check this in Python:</p>
-<div id="6368a525" class="cell" data-output-location="fragment" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<div id="fe1f0a52" class="cell" data-output-location="fragment" data-execution_count="3">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python cell-code"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of options to look at: </span><span class="sc">{</span>percentage<span class="sc">:.3f}</span><span class="ss">%"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Percentage of options to look at: </span><span class="sc">{</span>percentage<span class="sc">:.3f}</span><span class="ss">%&quot;</span>)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>candidates <span class="op">=</span> <span class="dv">20</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>lookout_phase <span class="op">=</span> candidates<span class="op">/</span>math.e</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Look at first </span><span class="sc">{</span>lookout_phase<span class="sc">:.3f}</span><span class="ss"> candidates"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Look at first </span><span class="sc">{</span>lookout_phase<span class="sc">:.3f}</span><span class="ss"> candidates&quot;</span>)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Percentage of options to look at: 0.368%
 Look at first 7.358 candidates</code></pre>
@@ -843,7 +836,7 @@ Look at first 7.358 candidates</code></pre>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
@@ -858,7 +851,7 @@ Note
 <section id="variations" class="level1 title">
 <h1 class="title"><span class="flow">Variations</span></h1>
 <section id="cost-of-searching" class="level2">
-<h2 class="anchored" data-anchor-id="cost-of-searching">Cost of Searching</h2>
+<h2>Cost of Searching</h2>
 <ul>
 <li>What if each <strong>additional search costs money</strong>?</li>
 <li>Trade-off between finding better options and search costs</li>
@@ -866,7 +859,7 @@ Note
 </ul>
 </section>
 <section id="choose-past-candidates" class="level2">
-<h2 class="anchored" data-anchor-id="choose-past-candidates">Choose past candidates</h2>
+<h2>Choose past candidates</h2>
 <ul>
 <li>What if you could <strong>choose past candidates</strong>?</li>
 <li>Trade-off between choosing a candidate you like and continuing to search</li>
@@ -874,19 +867,19 @@ Note
 </ul>
 </section>
 <section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions?</h2>
+<h2>Questions?</h2>
 <p>. . .</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>That’s it for todays lecture!</strong><br>
+<p><strong>That’s it for todays lecture!</strong><br />
 We now have covered a brief introduction into optimal stopping and seen how to set up Python.</p>
 </div>
 </div>
@@ -895,7 +888,7 @@ We now have covered a brief introduction into optimal stopping and seen how to s
 <section id="literature" class="level1 title">
 <h1 class="title"><span class="flow">Literature</span></h1>
 <section id="interesting-books-to-start" class="level2">
-<h2 class="anchored" data-anchor-id="interesting-books-to-start">Interesting Books to start</h2>
+<h2>Interesting Books to start</h2>
 <ul>
 <li>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.</li>
 </ul>
@@ -903,7 +896,7 @@ We now have covered a brief introduction into optimal stopping and seen how to s
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
@@ -915,7 +908,7 @@ Note
 </div>
 </section>
 <section id="books-on-programming" class="level2">
-<h2 class="anchored" data-anchor-id="books-on-programming">Books on Programming</h2>
+<h2>Books on Programming</h2>
 <ul>
 <li>Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. <a href="https://greenteapress.com/wp/think-python-3rd-edition/">Here</a></li>
 <li>Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.</li>
@@ -924,7 +917,7 @@ Note
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
 Note
@@ -936,15 +929,22 @@ Note
 </div>
 </section>
 <section id="more-literature" class="level2">
-<h2 class="anchored" data-anchor-id="more-literature">More Literature</h2>
-<p>For more interesting literature, take a look at the <a href="../general/literature.html">literature list</a> of this course.</p>
-
-
+<h2>More Literature</h2>
+<p>For more interesting literature, take a look at the <a href="../general/literature.qmd">literature list</a> of this course.</p>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">01 - Variables</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sV2VsY29tZQ==">Welcome</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9nZW5lcmFsL3N5bGxhYnVzLmh0bWxTeWxsYWJ1cw==">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnVuZGVmaW5lZCoqKg==">***</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">01 Optimal Stopping</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9wYXJ0LTAxL2xlY3R1cmUtb3B0aW1hbC1zdG9wcGluZy5odG1sTGVjdHVyZQ==">Lecture</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9wYXJ0LTAxL3R1dG9yaWFsLTAxLXZhcmlhYmxlcy5odG1sMDEtLS1WYXJpYWJsZXM=">01 - Variables</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9wYXJ0LTAxL3R1dG9yaWFsLTAyLWNvbXBhcmlzb25zLmh0bWwwMi0tLUNvbXBhcmlzb25z">02 - Comparisons</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9wYXJ0LTAxL3R1dG9yaWFsLTAzLXN0b3BwaW5nLmh0bWwwMy0tLURlY2lzaW9ucw==">03 - Decisions</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9nZW5lcmFsL2ZhcS5odG1sRkFRcw==">FAQs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9nZW5lcmFsL2xpdGVyYXR1cmUuaHRtbExpdGVyYXR1cmU=">Literature</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLTAxLU9wdGltYWwtU3RvcHBpbmc=">01 Optimal Stopping</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxlY3R1cmU=">Lecture</span></p>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlcg==">
+<p>Programming: Everyday Decision-Making Algorithms</br>Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0</p>
+</div>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lecture I - Optimal Stopping – Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lecture I - Optimal Stopping – Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lecture I - Optimal Stopping – Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Programming: Everyday Decision-Making Algorithms</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Programming: Everyday Decision-Making Algorithms</span></p>
+</div>
 </section>
 </section>
 
 </main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<script id = "quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -1371,19 +1371,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Programming: Everyday Decision-Making Algorithms<br>Tobias Vlćek and Nils Roemer<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/part-01/lecture-optimal-stopping.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/part-01/lecture-optimal-stopping.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+      <div class='footer-contents'>Programming: Everyday Decision-Making Algorithms</br>Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0</div>  
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/beyondsimulations/Programming-Everyday-Decisions">
-      <i class="bi bi-github" role="img">
+      <i 
+  class="bi bi-github" 
+  role="img" 
+>
 </i> 
     </a>
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://linkedin.com/in/tobiasvlcek">
-      <i class="bi bi-linkedin" role="img">
+      <i 
+  class="bi bi-linkedin" 
+  role="img" 
+>
 </i> 
     </a>
   </li>  
@@ -1392,7 +1398,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </footer>
 
+</body>
 
-
-
-</body></html>
+</html>
