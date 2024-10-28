@@ -435,6 +435,3 @@ Think Python is a great book to start with. It's available online for free. Schr
 
 For more interesting literature, take a look at the [literature list](../general/literature.qmd) of this course.
 
-
-
-
