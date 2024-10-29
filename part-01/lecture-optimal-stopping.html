@@ -249,24 +249,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#optimal-stopping" id="toc-optimal-stopping" class="nav-link" data-scroll-target="#optimal-stopping"><span class="flow">Optimal Stopping</span></a>
   <ul class="collapse">
   <li><a href="#what-is-optimal-stopping" id="toc-what-is-optimal-stopping" class="nav-link" data-scroll-target="#what-is-optimal-stopping">What is Optimal Stopping?</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
   <li><a href="#flat-hunting" id="toc-flat-hunting" class="nav-link" data-scroll-target="#flat-hunting"><span class="invert-font">Flat Hunting</span></a></li>
   <li><a href="#hiring-applicants" id="toc-hiring-applicants" class="nav-link" data-scroll-target="#hiring-applicants"><span class="invert-font">Hiring applicants</span></a></li>
   <li><a href="#dating" id="toc-dating" class="nav-link" data-scroll-target="#dating"><span class="invert-font">Dating</span></a></li>
   <li><a href="#searching-for-a-parking-spot" id="toc-searching-for-a-parking-spot" class="nav-link" data-scroll-target="#searching-for-a-parking-spot"><span class="invert-font">Searching for a parking spot</span></a></li>
   </ul></li>
-  <li><a href="#rule" id="toc-rule" class="nav-link" data-scroll-target="#rule"><span class="flow">37% Rule</span></a>
+  <li><a href="#secretary-problem" id="toc-secretary-problem" class="nav-link" data-scroll-target="#secretary-problem"><span class="flow">“Secretary Problem”</span></a>
   <ul class="collapse">
   <li><a href="#the-secretary-problem" id="toc-the-secretary-problem" class="nav-link" data-scroll-target="#the-secretary-problem">The Secretary Problem</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#the-37-rule" id="toc-the-37-rule" class="nav-link" data-scroll-target="#the-37-rule">The 37% Rule</a></li>
+  <li><a href="#basic-setup" id="toc-basic-setup" class="nav-link" data-scroll-target="#basic-setup">Basic Setup</a></li>
+  <li><a href="#ways-to-fail" id="toc-ways-to-fail" class="nav-link" data-scroll-target="#ways-to-fail">Ways to fail</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
+  <li><a href="#look-and-leap-strategy" id="toc-look-and-leap-strategy" class="nav-link" data-scroll-target="#look-and-leap-strategy">Look-and-Leap Strategy</a></li>
+  <li><a href="#step-by-step-approximation" id="toc-step-by-step-approximation" class="nav-link" data-scroll-target="#step-by-step-approximation">Step-by-step Approximation</a></li>
   <li><a href="#why-37" id="toc-why-37" class="nav-link" data-scroll-target="#why-37">Why 37%?</a></li>
-  <li><a href="#in-python" id="toc-in-python" class="nav-link" data-scroll-target="#in-python">In Python</a></li>
+  <li><a href="#computing-the-number" id="toc-computing-the-number" class="nav-link" data-scroll-target="#computing-the-number">Computing the number</a></li>
+  <li><a href="#geometric-distribution" id="toc-geometric-distribution" class="nav-link" data-scroll-target="#geometric-distribution">Geometric Distribution</a></li>
   </ul></li>
   <li><a href="#variations" id="toc-variations" class="nav-link" data-scroll-target="#variations"><span class="flow">Variations</span></a>
   <ul class="collapse">
-  <li><a href="#cost-of-searching" id="toc-cost-of-searching" class="nav-link" data-scroll-target="#cost-of-searching">Cost of Searching</a></li>
-  <li><a href="#choose-past-candidates" id="toc-choose-past-candidates" class="nav-link" data-scroll-target="#choose-past-candidates">Choose past candidates</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
+  <li><a href="#rejection" id="toc-rejection" class="nav-link" data-scroll-target="#rejection">Rejection</a></li>
+  <li><a href="#the-role-of-time" id="toc-the-role-of-time" class="nav-link" data-scroll-target="#the-role-of-time">The role of time</a></li>
+  <li><a href="#other-versions" id="toc-other-versions" class="nav-link" data-scroll-target="#other-versions">Other versions</a></li>
+  </ul></li>
+  <li><a href="#optimal-solution" id="toc-optimal-solution" class="nav-link" data-scroll-target="#optimal-solution"><span class="flow">Optimal Solution</span></a>
+  <ul class="collapse">
+  <li><a href="#the-gamblers-fallacy" id="toc-the-gamblers-fallacy" class="nav-link" data-scroll-target="#the-gamblers-fallacy">The Gambler’s Fallacy</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
+  <li><a href="#the-end" id="toc-the-end" class="nav-link" data-scroll-target="#the-end">The End</a></li>
   </ul></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature"><span class="flow">Literature</span></a>
   <ul class="collapse">
@@ -383,7 +394,8 @@ Tip
 <ul>
 <li>Try <strong>actively participating</strong> in this course</li>
 <li>You will find it much <span class="highlight">(!)</span> easier and more fun</li>
-<li>Material and slides are hosted here: <a href="https://beyondsimulations.github.io/Programming-Everyday-Decisions/">beyondsimulations.github.io/Programming-Everyday-Decisions</a></li>
+<li>Lecture based on the book <span class="highlight">Algorithms to live by</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>Material and slides are hosted online: <a href="https://beyondsimulations.github.io/Programming-Everyday-Decisions/">beyondsimulations.github.io/Programming-Everyday-Decisions</a></li>
 </ul>
 </section>
 <section id="teaching" class="level2">
@@ -665,7 +677,7 @@ Caution
 <section id="hello-world" class="level2">
 <h2 class="anchored" data-anchor-id="hello-world">Hello, World!</h2>
 <p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="ea686fe2" class="cell" data-output-location="fragment" data-execution_count="1">
+<div id="c50ce342" class="cell" data-output-location="fragment" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -712,8 +724,14 @@ Note
 </ul></li>
 </ul>
 </div>
-<p>. . .</p>
-<p><span class="question">Question:</span> Anybody have an example of optimal stopping?</p>
+</section>
+<section id="section-1" class="level2 loud-slide">
+<h2 class="loud-slide anchored" data-anchor-id="section-1"></h2>
+<div class="r-fit-text">
+<p>Anybody an</p>
+<p>example of</p>
+<p>optimal stopping?</p>
+</div>
 </section>
 <section id="flat-hunting" class="level2" data-background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&amp;force=true">
 <h2 data-background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&amp;force=true" class="anchored" data-anchor-id="flat-hunting"><span class="invert-font">Flat Hunting</span></h2>
@@ -740,8 +758,8 @@ Note
 </div>
 </section>
 </section>
-<section id="rule" class="level1 title">
-<h1 class="title"><span class="flow">37% Rule</span></h1>
+<section id="secretary-problem" class="level1 title">
+<h1 class="title"><span class="flow">“Secretary Problem”</span></h1>
 <section id="the-secretary-problem" class="level2">
 <h2 class="anchored" data-anchor-id="the-secretary-problem">The Secretary Problem</h2>
 <div class="incremental">
@@ -768,36 +786,59 @@ Note
 </div>
 </div>
 </section>
-<section id="section-1" class="level2 loud-slide">
-<h2 class="loud-slide anchored" data-anchor-id="section-1"></h2>
+<section id="basic-setup" class="level2">
+<h2 class="anchored" data-anchor-id="basic-setup">Basic Setup</h2>
+<ul>
+<li>We have <code>n</code> candidates</li>
+<li>We interview them <strong>one by one</strong></li>
+<li>We must decide to <strong>hire or continue searching</strong></li>
+<li><span class="highlight">Ordinal ranking</span> of candidates</li>
+</ul>
+<p>. . .</p>
+<p><span class="question">Question:</span> Anybody know what ordinal ranking is?</p>
+</section>
+<section id="ways-to-fail" class="level2">
+<h2 class="anchored" data-anchor-id="ways-to-fail">Ways to fail</h2>
+<p><span class="question">Question:</span> Anybody an idea how we can fail?</p>
+<p>. . .</p>
+<ol type="1">
+<li>Reject all candidates and never hire - <span class="highlight">stopping too late</span></li>
+<li>You hire someone too early - <span class="highlight">stopping too early</span></li>
+</ol>
+</section>
+<section id="section-2" class="level2 loud-slide">
+<h2 class="loud-slide anchored" data-anchor-id="section-2"></h2>
 <div class="r-fit-text">
 <p>Ideas?</p>
 </div>
 </section>
-<section id="the-37-rule" class="level2">
-<h2 class="anchored" data-anchor-id="the-37-rule">The 37% Rule</h2>
+<section id="look-and-leap-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="look-and-leap-strategy">Look-and-Leap Strategy</h2>
 <p>The optimal strategy is to:</p>
-<ol type="1">
-<li>Look at the <span class="highlight">first 37%</span> of options</li>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li>Look at the <span class="highlight">first 37 %</span> of options</li>
 <li>Remember the <strong>best one seen so far</strong></li>
 <li>Choose the next option that’s <strong>better than the best seen</strong></li>
+<li>Chance of selecting the best candidate is <strong>37 %</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li>Thus, we can fail with <strong>63 %</strong>!</li>
 </ol>
+</div>
+</section>
+<section id="step-by-step-approximation" class="level2">
+<h2 class="anchored" data-anchor-id="step-by-step-approximation">Step-by-step Approximation</h2>
+<ul>
+<li>With each additional candidate, the chance of getting a new best candidate decreases
+<ul>
+<li>1 candidate: 100%</li>
+<li>2 candidates: 50%</li>
+<li>3 candidates: 33%</li>
+<li>4 candidates: 25%</li>
+<li>5 candidates: 20%</li>
+</ul></li>
+</ul>
 <p>. . .</p>
-<p>Done - at least for this scenario!</p>
-<p>. . .</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Chance of <strong>selecting the best candidate is 37%</strong>!</p>
-</div>
-</div>
+<p><span class="question">Question:</span> Anybody see a pattern?</p>
 </section>
 <section id="why-37" class="level2">
 <h2 class="anchored" data-anchor-id="why-37">Why 37%?</h2>
@@ -822,10 +863,9 @@ Tip
 </div>
 </div>
 </section>
-<section id="in-python" class="level2">
-<h2 class="anchored" data-anchor-id="in-python">In Python</h2>
-<p>We can check this in Python:</p>
-<div id="6368a525" class="cell" data-output-location="fragment" data-execution_count="2">
+<section id="computing-the-number" class="level2">
+<h2 class="anchored" data-anchor-id="computing-the-number">Computing the number</h2>
+<div id="80dd3bd9" class="cell" data-output-location="fragment" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
@@ -854,28 +894,74 @@ Note
 </div>
 </div>
 </section>
+<section id="geometric-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="geometric-distribution">Geometric Distribution</h2>
+<p>Let’s visualize the success of a simulation with 20 candidates:</p>
+<div id="1a666bbd" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="lecture-optimal-stopping_files/figure-revealjs/cell-4-output-1.png" width="1118" height="541" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="variations" class="level1 title">
 <h1 class="title"><span class="flow">Variations</span></h1>
-<section id="cost-of-searching" class="level2">
-<h2 class="anchored" data-anchor-id="cost-of-searching">Cost of Searching</h2>
-<ul>
-<li>What if each <strong>additional search costs money</strong>?</li>
-<li>Trade-off between finding better options and search costs</li>
-<li><span class="highlight">Optimal stopping point</span> can change!</li>
-</ul>
-</section>
-<section id="choose-past-candidates" class="level2">
-<h2 class="anchored" data-anchor-id="choose-past-candidates">Choose past candidates</h2>
-<ul>
-<li>What if you could <strong>choose past candidates</strong>?</li>
-<li>Trade-off between choosing a candidate you like and continuing to search</li>
-<li><span class="highlight">Optimal stopping point</span> changes!</li>
-</ul>
-</section>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions?</h2>
+<section id="rejection" class="level2">
+<h2 class="anchored" data-anchor-id="rejection">Rejection</h2>
+<p><span class="question">Question:</span> Imagine a dating scenario, <span class="highlight">where the other person can also reject you</span>. <strong>Optimal stopping point?</strong></p>
 <p>. . .</p>
+<ul>
+<li>The optimal stopping point is now <strong>lower</strong></li>
+<li>Because we can now <strong>fail more often</strong></li>
+<li>With 50 % chance of rejection, we <strong>start leaping at 25 %</strong></li>
+</ul>
+</section>
+<section id="the-role-of-time" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-time">The role of time</h2>
+<p><span class="question">Question:</span> What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
+<p>. . .</p>
+<ul>
+<li>Imagine we have <strong>one year</strong> to find a new flat</li>
+<li>We want the <span class="highlight">best flat</span>, but don’t know what a good flat is</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Same</strong>, but now we decide when to stop searching!</li>
+</ul>
+</section>
+<section id="other-versions" class="level2">
+<h2 class="anchored" data-anchor-id="other-versions">Other versions</h2>
+<ul>
+<li>Selling a house for the <strong>best price</strong> (“Threshold Rule”)</li>
+<li>Stealing with a <strong>success probability</strong> (“Burglar’s Problem”)</li>
+<li><strong>Finding</strong> a parking spot (“Parking Lot Problem”) <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+</ul>
+</section>
+</section>
+<section id="optimal-solution" class="level1 title">
+<h1 class="title"><span class="flow">Optimal Solution</span></h1>
+<section id="the-gamblers-fallacy" class="level2">
+<h2 class="anchored" data-anchor-id="the-gamblers-fallacy">The Gambler’s Fallacy</h2>
+<p><span class="question">Question:</span> Can you imagine a scenario where it would be unwise to use optimal stopping?</p>
+<p>. . .</p>
+<ul>
+<li>Imagine a game with a <span class="highlight">50 % chance of winning</span></li>
+<li>If you win, your payoff is a <strong>triple</strong> of your bet</li>
+<li>If you lose, you have to pay your bet</li>
+</ul>
+</section>
+<section id="section-3" class="level2 loud-slide">
+<h2 class="loud-slide anchored" data-anchor-id="section-3"></h2>
+<div class="r-fit-text">
+<p>Questions?</p>
+</div>
+</section>
+<section id="the-end" class="level2">
+<h2 class="anchored" data-anchor-id="the-end">The End</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -887,7 +973,7 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>That’s it for todays lecture!</strong><br>
-We now have covered a brief introduction into optimal stopping and seen how to set up Python.</p>
+We now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!</p>
 </div>
 </div>
 </section>
@@ -943,7 +1029,15 @@ Note
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>With a large number of candidates. With a small number of candidates, we can do even better.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>With a large number of candidates. With a small number of candidates, we can do even better.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>An increase in occupancy from 90 to 95% doubles the search time for all drivers!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
