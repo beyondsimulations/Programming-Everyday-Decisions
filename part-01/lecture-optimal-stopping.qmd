@@ -389,8 +389,8 @@ The optimal strategy is to:
 
 - This is based on the **geometric distribution**
 - The [optimal stopping point]{.highlight} is at `n/e`
-- `e` is the base of the natural logarithm
-- It is the limit of `(1 + 1/n)^n` as `n` approaches infinity
+- `e` is the base of the natural logarithm (≈ 2.718)
+- This comes from maximizing the probability of success
 
 . . .
 
