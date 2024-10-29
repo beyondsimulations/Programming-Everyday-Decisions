@@ -67,9 +67,10 @@ We really appreciate active participation and interaction!
 
 - Try **actively participating** in this course 
 - You will find it much [(!)]{.highlight} easier and more fun
-- Lecture based on the book [Algorithms to live by]{.highlight}[^1]
+- Lecture based on the book [Algorithms to live by]{.highlight}[^3]
 - Material and slides are hosted online: [beyondsimulations.github.io/Programming-Everyday-Decisions]( https://beyondsimulations.github.io/Programming-Everyday-Decisions/)
 
+[^3]: Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.
 
 ## Teaching
 
