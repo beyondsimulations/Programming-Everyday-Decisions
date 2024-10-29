@@ -67,7 +67,9 @@ We really appreciate active participation and interaction!
 
 - Try **actively participating** in this course 
 - You will find it much [(!)]{.highlight} easier and more fun
-- Material and slides are hosted here: [beyondsimulations.github.io/Programming-Everyday-Decisions]( https://beyondsimulations.github.io/Programming-Everyday-Decisions/)
+- Lecture based on the book [Algorithms to live by]{.highlight}[^1]
+- Material and slides are hosted online: [beyondsimulations.github.io/Programming-Everyday-Decisions]( https://beyondsimulations.github.io/Programming-Everyday-Decisions/)
+
 
 ## Teaching
 
