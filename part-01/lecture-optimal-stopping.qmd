@@ -283,9 +283,14 @@ so far?
     - where the options are revealed **one by one**
 :::
 
-. . .
+## {.loud-slide}
+::: {.r-fit-text}
+Anybody an 
 
-[Question:]{.question} Anybody have an example of optimal stopping?
+example of 
+
+optimal stopping?
+:::
 
 ## [Flat Hunting]{.invert-font} {background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&force=true"}
 ::: footer
@@ -307,7 +312,7 @@ so far?
 [Photo by <a href="https://unsplash.com/@josephtpearson">Joseph Pearson</a> on Unsplash]{.invert-font}
 :::
 
-# [37% Rule]{.flow} {.title}
+# ["Secretary Problem"]{.flow} {.title}
 
 ## The Secretary Problem
 
@@ -325,28 +330,57 @@ so far?
 The name is a bit misleading, as the problem is not about hiring a secretary, but about finding the best candidate. It comes from the 1960s and thus a little outdated.
 :::
 
+## Basic Setup
+
+- We have `n` candidates
+- We interview them **one by one**
+- We must decide to **hire or continue searching**
+- [Ordinal ranking]{.highlight} of candidates
+
+. . .
+
+[Question:]{.question} Anybody know what ordinal ranking is?
+
+## Ways to fail
+
+[Question:]{.question} Anybody an idea how we can fail?
+
+. . .
+
+1. Reject all candidates and never hire - [stopping too late]{.highlight}
+2. You hire someone too early - [stopping too early]{.highlight}
+
 ## {.loud-slide}
 ::: {.r-fit-text}
 Ideas?
 :::
 
-## The 37% Rule
+## Look-and-Leap Strategy
 
 The optimal strategy is to:
 
-1. Look at the [first 37%]{.highlight} of options
+:::{.incremental}
+1. Look at the [first 37 %]{.highlight} of options
 2. Remember the **best one seen so far**
 3. Choose the next option that's **better than the best seen**
-
-. . .
-
-Done - at least for this scenario!
-
-. . .
-
-::: {.callout-note}
-Chance of **selecting the best candidate is 37%**!
+4. Chance of selecting the best candidate is **37 %**[^1]
+5. Thus, we can fail with **63 %**!
 :::
+
+[^1]: With a large number of candidates. With a small number of candidates, we can do even better.
+
+## Step-by-step Approximation
+
+- With each additional candidate, the chance of getting a new best candidate decreases
+    - 1 candidate: 100% 
+    - 2 candidates: 50% 
+    - 3 candidates: 33% 
+    - 4 candidates: 25%
+    - 5 candidates: 20%
+
+. . .
+
+[Question:]{.question} Anybody see a pattern?
 
 ## Why 37%?
 
@@ -361,9 +395,7 @@ Chance of **selecting the best candidate is 37%**!
 This is a bit more advanced, so don't worry if you don't understand it! We will not go into the details of the math here and focus more on the insights.
 :::
 
-## In Python
-
-We can check this in Python:
+## Computing the number
 
 ```{python}
 #| eval: true
@@ -385,27 +417,122 @@ print(f"Look at first {lookout_phase:.3f} candidates")
 No worries if you don't understand the code! We are essentialy just using the formula to calculate the percentage of candidates to look at.
 :::
 
+## Geometric Distribution
+
+Let's visualize the success of a simulation with 20 candidates:
+
+
+```{python}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 4
+import numpy as np
+import matplotlib.pyplot as plt
+
+def simulate_secretary_problem(n_candidates, stopping_position, n_trials=10000):
+    successes = 0
+    
+    for _ in range(n_trials):
+        # Generate random rankings
+        candidates = np.random.permutation(n_candidates)
+        # Best candidate seen so far
+        best_so_far = float('-inf')
+        # Position of the best candidate overall
+        best_overall_pos = np.argmax(candidates)
+        
+        # Look at first stopping_position-1 candidates
+        for i in range(stopping_position):
+            if candidates[i] > best_so_far:
+                best_so_far = candidates[i]
+        
+        # Try to select the best candidate after stopping position
+        for i in range(stopping_position, n_candidates):
+            if candidates[i] > best_so_far:
+                if i == best_overall_pos:  # We found the best candidate
+                    successes += 1
+                break
+                
+    return successes / n_trials
+
+# Parameters
+n_candidates = 20
+n_trials = 10000
+
+# Calculate success rate for each stopping position
+stopping_positions = range(1, n_candidates + 1)
+success_rates = [simulate_secretary_problem(n_candidates, pos, n_trials) 
+                for pos in stopping_positions]
+
+# Plotting
+plt.figure(figsize=(14, 6))
+plt.plot(stopping_positions, success_rates, 'b-', label='Simulated Success Rate')
+plt.axvline(x=n_candidates/np.e, color='r', linestyle='--', 
+            label=f'Optimal stopping point (n/e ≈ {n_candidates/np.e:.0f})')
+
+plt.xlabel('Stopping Position')
+plt.ylabel('Success Rate')
+plt.title(f'Secretary Problem Success Rate\n(Based on {n_trials:,} trials per position)')
+plt.grid(True, alpha=0.3)
+plt.legend()
+plt.show()
+```
+
 # [Variations]{.flow} {.title}
 
-## Cost of Searching
+## Rejection
 
-- What if each **additional search costs money**?
-- Trade-off between finding better options and search costs
-- [Optimal stopping point]{.highlight} can change!
-
-## Choose past candidates
-
-- What if you could **choose past candidates**?
-- Trade-off between choosing a candidate you like and continuing to search
-- [Optimal stopping point]{.highlight} changes!
-
-## Questions?
+[Question:]{.question} Imagine a dating scenario, [where the other person can also reject you]{.highlight}. **Optimal stopping point?**
 
 . . .
 
+- The optimal stopping point is now **lower**
+- Because we can now **fail more often**
+- With 50 % chance of rejection, we **start leaping at 25 %**
+
+## The role of time
+
+[Question:]{.question} What if we don't have a fixed number of candidates, but rather a [fixed amount of time]{.highlight}? 
+
+. . .
+
+- Imagine we have **one year** to find a new flat
+- We want the [best flat]{.highlight}, but don't know what a good flat is
+
+. . .
+
+- **Same**, but now we decide when to stop searching!
+
+## Other versions
+
+- Selling a house for the **best price** ("Threshold Rule")
+- Stealing with a **success probability** ("Burglar's Problem")
+- **Finding** a parking spot ("Parking Lot Problem") [^2]
+
+[^2]: An increase in occupancy from 90 to 95% doubles the search time for all drivers!
+
+# [Optimal Solution]{.flow} {.title}
+
+## The Gambler's Fallacy
+
+[Question:]{.question} Can you imagine a scenario where it would be unwise to use optimal stopping?
+
+. . .
+
+- Imagine a game with a [50 % chance of winning]{.highlight}
+- If you win, your payoff is a **triple** of your bet
+- If you lose, you have to pay your bet
+
+## {.loud-slide}
+::: {.r-fit-text}
+Questions?
+:::
+
+
+## The End
+
 ::: {.callout-note}
 **That's it for todays lecture!**\
-We now have covered a brief introduction into optimal stopping and seen how to set up Python.
+We now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!
 :::
 
 # [Literature]{.flow} {.title}
