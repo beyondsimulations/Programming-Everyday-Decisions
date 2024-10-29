@@ -630,7 +630,7 @@
     "href": "part-01/lecture-optimal-stopping.html#why-37",
     "title": "Lecture I - Optimal Stopping",
     "section": "Why 37%?",
-    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e\ne is the base of the natural logarithm\nIt is the limit of (1 + 1/n)^n as n approaches infinity\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThis is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights.",
+    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e\ne is the base of the natural logarithm (≈ 2.718)\nThis comes from maximizing the probability of success\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThis is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights.",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -762,7 +762,7 @@
     "href": "part-01/lecture-optimal-stopping.html#footnotes",
     "title": "Lecture I - Optimal Stopping",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nWith a large number of candidates. With a small number of candidates, we can do even better.↩︎\nWith a large number of candidates. With a small number of candidates, we can do even better.↩︎\nAn increase in occupancy from 90 to 95% doubles the search time for all drivers!↩︎",
+    "text": "Footnotes\n\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.↩︎\nWith a large number of candidates. With a small number of candidates, we can do even better.↩︎\nAn increase in occupancy from 90 to 95% doubles the search time for all drivers!↩︎",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -794,7 +794,7 @@
     "href": "part-01/lecture-presentation.html#participation",
     "title": "Lecture I - Optimal Stopping",
     "section": "Participation",
-    "text": "Participation\n\nTry actively participating in this course\nYou will find it much (!) easier and more fun\nLecture based on the book Algorithms to live by1\nMaterial and slides are hosted online: beyondsimulations.github.io/Programming-Everyday-Decisions\n\nWith a large number of candidates. With a small number of candidates, we can do even better."
+    "text": "Participation\n\nTry actively participating in this course\nYou will find it much (!) easier and more fun\nLecture based on the book Algorithms to live by1\nMaterial and slides are hosted online: beyondsimulations.github.io/Programming-Everyday-Decisions\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company."
   },
   {
     "objectID": "part-01/lecture-presentation.html#teaching",
@@ -997,7 +997,7 @@
     "href": "part-01/lecture-presentation.html#why-37",
     "title": "Lecture I - Optimal Stopping",
     "section": "Why 37%?",
-    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e\ne is the base of the natural logarithm\nIt is the limit of (1 + 1/n)^n as n approaches infinity\n\n\n\n\n\n\n\n\nTip\n\n\nThis is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights."
+    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e\ne is the base of the natural logarithm (≈ 2.718)\nThis comes from maximizing the probability of success\n\n\n\n\n\n\n\n\nTip\n\n\nThis is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights."
   },
   {
     "objectID": "part-01/lecture-presentation.html#computing-the-number",
