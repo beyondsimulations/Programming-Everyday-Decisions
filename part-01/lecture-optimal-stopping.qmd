@@ -370,7 +370,7 @@ The optimal strategy is to:
 5. Thus, we can fail with **63 %**!
 :::
 
-[^1]: With a large number of candidates. With a small number of candidates, we can do even better.
+[^1]: Large number of candidates! With a small number of candidates, we can do even better.
 
 ## Step-by-step Approximation
 
@@ -388,15 +388,14 @@ The optimal strategy is to:
 ## Why 37%?
 
 - This is based on the **geometric distribution**
-- The [optimal stopping point]{.highlight} is at `n/e`
+- The [optimal stopping point]{.highlight} is at `n/e`[^3]
 - `e` is the base of the natural logarithm (≈ 2.718)
 - This comes from maximizing the probability of success
 
 . . .
 
-::: {.callout-tip}
-This is a bit more advanced, so don't worry if you don't understand it! We will not go into the details of the math here and focus more on the insights.
-:::
+
+[^3]: This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493. 
 
 ## Computing the number
 
@@ -486,20 +485,27 @@ plt.show()
 
 [Question:]{.question} Imagine a dating scenario, [where the other person can also reject you]{.highlight}. **Optimal stopping point?**
 
-. . .
-
+:::{.incremental}
 - The optimal stopping point is now **lower**
 - Because we can now **fail more often**
 - With 50 % chance of rejection, we **start leaping at 25 %**
+- **Formula:** $q^{\frac{1}{1-q}}$ with $q$ being the chance of rejection
+:::
+
+
 
 ## The role of time
 
-[Question:]{.question} What if we don't have a fixed number of candidates, but rather a [fixed amount of time]{.highlight}? 
+What if we don't have a fixed number of candidates, but rather a [fixed amount of time]{.highlight}? 
 
 . . .
 
 - Imagine we have **one year** to find a new flat
 - We want the [best flat]{.highlight}, but don't know what a good flat is
+
+. . .
+
+[Question:]{.question} How should we behave?
 
 . . .
 
@@ -511,7 +517,11 @@ plt.show()
 - Stealing with a **success probability** ("Burglar's Problem")
 - **Finding** a parking spot ("Parking Lot Problem") [^2]
 
-[^2]: An increase in occupancy from 90 to 95% doubles the search time for all drivers!
+. . .
+
+::: {.callout-note}
+Side note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!
+:::
 
 # [Optimal Solution]{.flow} {.title}
 
@@ -540,15 +550,13 @@ We now have covered a brief introduction into optimal stopping and seen how to s
 
 # [Literature]{.flow} {.title}
 
-## Interesting Books to start
+## Interesting literature to start
 
-- Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company. 
+- Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^4]
+- Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493. 
 
-. . .
+[^4]: The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.
 
-::: {.callout-note}
-The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.
-:::
 
 ## Books on Programming
 
