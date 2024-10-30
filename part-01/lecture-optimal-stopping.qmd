@@ -388,14 +388,14 @@ The optimal strategy is to:
 ## Why 37%?
 
 - This is based on the **geometric distribution**
-- The [optimal stopping point]{.highlight} is at `n/e`[^3]
+- The [optimal stopping point]{.highlight} is at `n/e`[^8]
 - `e` is the base of the natural logarithm (≈ 2.718)
 - This comes from maximizing the probability of success
 
 . . .
 
 
-[^3]: This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493. 
+[^8]: This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493. 
 
 ## Computing the number
 
