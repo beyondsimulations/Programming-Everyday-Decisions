@@ -779,7 +779,7 @@ Dr.&nbsp;Tobias Vlćek
 <section id="hello-world" class="slide level2">
 <h2>Hello, World!</h2>
 <p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="61730a52" class="cell" data-execution_count="1">
+<div id="a3bd5d89" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># This is a comment in Python</span></span>
 <span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -937,7 +937,7 @@ Dr.&nbsp;Tobias Vlćek
 <li class="fragment">Thus, we can fail with <strong>63 %</strong>!</li>
 </ol>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>With a large number of candidates. With a small number of candidates, we can do even better.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Large number of candidates! With a small number of candidates, we can do even better.</p></li></ol></aside></section>
 <section id="step-by-step-approximation" class="slide level2">
 <h2>Step-by-step Approximation</h2>
 <ul>
@@ -958,29 +958,14 @@ Dr.&nbsp;Tobias Vlćek
 <h2>Why 37%?</h2>
 <ul>
 <li>This is based on the <strong>geometric distribution</strong></li>
-<li>The <span class="highlight">optimal stopping point</span> is at <code>n/e</code></li>
+<li>The <span class="highlight">optimal stopping point</span> is at <code>n/e</code><sup>1</sup></li>
 <li><code>e</code> is the base of the natural logarithm (≈ 2.718)</li>
 <li>This comes from maximizing the probability of success</li>
 </ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>This is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</p></li></ol></aside></section>
 <section id="computing-the-number" class="slide level2">
 <h2>Computing the number</h2>
-<div id="da7f46aa" class="cell" data-execution_count="2">
+<div id="c6d9504d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> math</span>
 <span id="cb3-2"><a></a></span>
 <span id="cb3-3"><a></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
@@ -1015,7 +1000,7 @@ Look at first 7.358 candidates</code></pre>
 <section id="geometric-distribution" class="slide level2">
 <h2>Geometric Distribution</h2>
 <p>Let’s visualize the success of a simulation with 20 candidates:</p>
-<div id="f5d1d66a" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="3">
+<div id="8f928f33" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1033,22 +1018,26 @@ Look at first 7.358 candidates</code></pre>
 <section id="rejection" class="slide level2">
 <h2>Rejection</h2>
 <p><span class="question">Question:</span> Imagine a dating scenario, <span class="highlight">where the other person can also reject you</span>. <strong>Optimal stopping point?</strong></p>
-<div class="fragment">
+<div>
 <ul>
-<li>The optimal stopping point is now <strong>lower</strong></li>
-<li>Because we can now <strong>fail more often</strong></li>
-<li>With 50 % chance of rejection, we <strong>start leaping at 25 %</strong></li>
+<li class="fragment">The optimal stopping point is now <strong>lower</strong></li>
+<li class="fragment">Because we can now <strong>fail more often</strong></li>
+<li class="fragment">With 50 % chance of rejection, we <strong>start leaping at 25 %</strong></li>
+<li class="fragment"><strong>Formula:</strong> <span class="math inline">\(q^{\frac{1}{1-q}}\)</span> with <span class="math inline">\(q\)</span> being the chance of rejection</li>
 </ul>
 </div>
 </section>
 <section id="the-role-of-time" class="slide level2">
 <h2>The role of time</h2>
-<p><span class="question">Question:</span> What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
+<p>What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
 <div class="fragment">
 <ul>
 <li>Imagine we have <strong>one year</strong> to find a new flat</li>
 <li>We want the <span class="highlight">best flat</span>, but don’t know what a good flat is</li>
 </ul>
+</div>
+<div class="fragment">
+<p><span class="question">Question:</span> How should we behave?</p>
 </div>
 <div class="fragment">
 <ul>
@@ -1061,9 +1050,24 @@ Look at first 7.358 candidates</code></pre>
 <ul>
 <li>Selling a house for the <strong>best price</strong> (“Threshold Rule”)</li>
 <li>Stealing with a <strong>success probability</strong> (“Burglar’s Problem”)</li>
-<li><strong>Finding</strong> a parking spot (“Parking Lot Problem”) <sup>1</sup></li>
+<li><strong>Finding</strong> a parking spot (“Parking Lot Problem”) [^2]</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>An increase in occupancy from 90 to 95% doubles the search time for all drivers!</p></li></ol></aside></section></section>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Side note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
 <section>
 <section id="optimal-solution" class="title-slide slide level1 title center">
 <h1><span class="flow">Optimal Solution</span></h1>
@@ -1108,27 +1112,13 @@ We now have covered a brief introduction into optimal stopping and seen how to s
 <h1><span class="flow">Literature</span></h1>
 
 </section>
-<section id="interesting-books-to-start" class="slide level2">
-<h2>Interesting Books to start</h2>
+<section id="interesting-literature-to-start" class="slide level2">
+<h2>Interesting literature to start</h2>
 <ul>
-<li>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.</li>
+<li>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.<sup>1</sup></li>
+<li>Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</li>
 </ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.</p></li></ol></aside></section>
 <section id="books-on-programming" class="slide level2">
 <h2>Books on Programming</h2>
 <ul>

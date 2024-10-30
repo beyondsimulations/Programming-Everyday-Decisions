@@ -630,7 +630,7 @@
     "href": "part-01/lecture-optimal-stopping.html#why-37",
     "title": "Lecture I - Optimal Stopping",
     "section": "Why 37%?",
-    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e\ne is the base of the natural logarithm (≈ 2.718)\nThis comes from maximizing the probability of success\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThis is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights.",
+    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e3\ne is the base of the natural logarithm (≈ 2.718)\nThis comes from maximizing the probability of success\n\n. . .",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -663,7 +663,7 @@
     "href": "part-01/lecture-optimal-stopping.html#rejection",
     "title": "Lecture I - Optimal Stopping",
     "section": "Rejection",
-    "text": "Rejection\nQuestion: Imagine a dating scenario, where the other person can also reject you. Optimal stopping point?\n. . .\n\nThe optimal stopping point is now lower\nBecause we can now fail more often\nWith 50 % chance of rejection, we start leaping at 25 %",
+    "text": "Rejection\nQuestion: Imagine a dating scenario, where the other person can also reject you. Optimal stopping point?\n\n\nThe optimal stopping point is now lower\nBecause we can now fail more often\nWith 50 % chance of rejection, we start leaping at 25 %\nFormula: \\(q^{\\frac{1}{1-q}}\\) with \\(q\\) being the chance of rejection",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -674,7 +674,7 @@
     "href": "part-01/lecture-optimal-stopping.html#the-role-of-time",
     "title": "Lecture I - Optimal Stopping",
     "section": "The role of time",
-    "text": "The role of time\nQuestion: What if we don’t have a fixed number of candidates, but rather a fixed amount of time?\n. . .\n\nImagine we have one year to find a new flat\nWe want the best flat, but don’t know what a good flat is\n\n. . .\n\nSame, but now we decide when to stop searching!",
+    "text": "The role of time\nWhat if we don’t have a fixed number of candidates, but rather a fixed amount of time?\n. . .\n\nImagine we have one year to find a new flat\nWe want the best flat, but don’t know what a good flat is\n\n. . .\nQuestion: How should we behave?\n. . .\n\nSame, but now we decide when to stop searching!",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -685,7 +685,7 @@
     "href": "part-01/lecture-optimal-stopping.html#other-versions",
     "title": "Lecture I - Optimal Stopping",
     "section": "Other versions",
-    "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) 3",
+    "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) [^2]\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nSide note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -725,11 +725,11 @@
     ]
   },
   {
-    "objectID": "part-01/lecture-optimal-stopping.html#interesting-books-to-start",
-    "href": "part-01/lecture-optimal-stopping.html#interesting-books-to-start",
+    "objectID": "part-01/lecture-optimal-stopping.html#interesting-literature-to-start",
+    "href": "part-01/lecture-optimal-stopping.html#interesting-literature-to-start",
     "title": "Lecture I - Optimal Stopping",
-    "section": "Interesting Books to start",
-    "text": "Interesting Books to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.4\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -762,7 +762,7 @@
     "href": "part-01/lecture-optimal-stopping.html#footnotes",
     "title": "Lecture I - Optimal Stopping",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.↩︎\nWith a large number of candidates. With a small number of candidates, we can do even better.↩︎\nAn increase in occupancy from 90 to 95% doubles the search time for all drivers!↩︎",
+    "text": "Footnotes\n\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.↩︎\nLarge number of candidates! With a small number of candidates, we can do even better.↩︎\nThis is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.↩︎\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -983,7 +983,7 @@
     "href": "part-01/lecture-presentation.html#look-and-leap-strategy",
     "title": "Lecture I - Optimal Stopping",
     "section": "Look-and-Leap Strategy",
-    "text": "Look-and-Leap Strategy\nThe optimal strategy is to:\n\n\nLook at the first 37 % of options\nRemember the best one seen so far\nChoose the next option that’s better than the best seen\nChance of selecting the best candidate is 37 %1\nThus, we can fail with 63 %!\n\n\nWith a large number of candidates. With a small number of candidates, we can do even better."
+    "text": "Look-and-Leap Strategy\nThe optimal strategy is to:\n\n\nLook at the first 37 % of options\nRemember the best one seen so far\nChoose the next option that’s better than the best seen\nChance of selecting the best candidate is 37 %1\nThus, we can fail with 63 %!\n\n\nLarge number of candidates! With a small number of candidates, we can do even better."
   },
   {
     "objectID": "part-01/lecture-presentation.html#step-by-step-approximation",
@@ -997,7 +997,7 @@
     "href": "part-01/lecture-presentation.html#why-37",
     "title": "Lecture I - Optimal Stopping",
     "section": "Why 37%?",
-    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e\ne is the base of the natural logarithm (≈ 2.718)\nThis comes from maximizing the probability of success\n\n\n\n\n\n\n\n\nTip\n\n\nThis is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights."
+    "text": "Why 37%?\n\nThis is based on the geometric distribution\nThe optimal stopping point is at n/e1\ne is the base of the natural logarithm (≈ 2.718)\nThis comes from maximizing the probability of success\n\nThis is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493."
   },
   {
     "objectID": "part-01/lecture-presentation.html#computing-the-number",
@@ -1018,21 +1018,21 @@
     "href": "part-01/lecture-presentation.html#rejection",
     "title": "Lecture I - Optimal Stopping",
     "section": "Rejection",
-    "text": "Rejection\nQuestion: Imagine a dating scenario, where the other person can also reject you. Optimal stopping point?\n\n\nThe optimal stopping point is now lower\nBecause we can now fail more often\nWith 50 % chance of rejection, we start leaping at 25 %"
+    "text": "Rejection\nQuestion: Imagine a dating scenario, where the other person can also reject you. Optimal stopping point?\n\n\nThe optimal stopping point is now lower\nBecause we can now fail more often\nWith 50 % chance of rejection, we start leaping at 25 %\nFormula: \\(q^{\\frac{1}{1-q}}\\) with \\(q\\) being the chance of rejection"
   },
   {
     "objectID": "part-01/lecture-presentation.html#the-role-of-time",
     "href": "part-01/lecture-presentation.html#the-role-of-time",
     "title": "Lecture I - Optimal Stopping",
     "section": "The role of time",
-    "text": "The role of time\nQuestion: What if we don’t have a fixed number of candidates, but rather a fixed amount of time?\n\n\nImagine we have one year to find a new flat\nWe want the best flat, but don’t know what a good flat is\n\n\n\n\nSame, but now we decide when to stop searching!"
+    "text": "The role of time\nWhat if we don’t have a fixed number of candidates, but rather a fixed amount of time?\n\n\nImagine we have one year to find a new flat\nWe want the best flat, but don’t know what a good flat is\n\n\n\nQuestion: How should we behave?\n\n\n\nSame, but now we decide when to stop searching!"
   },
   {
     "objectID": "part-01/lecture-presentation.html#other-versions",
     "href": "part-01/lecture-presentation.html#other-versions",
     "title": "Lecture I - Optimal Stopping",
     "section": "Other versions",
-    "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) 1\n\nAn increase in occupancy from 90 to 95% doubles the search time for all drivers!"
+    "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) [^2]\n\n\n\n\n\n\n\n\nNote\n\n\nSide note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!"
   },
   {
     "objectID": "part-01/lecture-presentation.html#the-gamblers-fallacy",
@@ -1056,11 +1056,11 @@
     "text": "The End\n\n\n\n\n\n\nNote\n\n\nThat’s it for todays lecture!\nWe now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!"
   },
   {
-    "objectID": "part-01/lecture-presentation.html#interesting-books-to-start",
-    "href": "part-01/lecture-presentation.html#interesting-books-to-start",
+    "objectID": "part-01/lecture-presentation.html#interesting-literature-to-start",
+    "href": "part-01/lecture-presentation.html#interesting-literature-to-start",
     "title": "Lecture I - Optimal Stopping",
-    "section": "Interesting Books to start",
-    "text": "Interesting Books to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.\n\n\n\n\n\n\n\n\nNote\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course."
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course."
   },
   {
     "objectID": "part-01/lecture-presentation.html#books-on-programming",

@@ -102,6 +102,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -281,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature"><span class="flow">Literature</span></a>
   <ul class="collapse">
-  <li><a href="#interesting-books-to-start" id="toc-interesting-books-to-start" class="nav-link" data-scroll-target="#interesting-books-to-start">Interesting Books to start</a></li>
+  <li><a href="#interesting-literature-to-start" id="toc-interesting-literature-to-start" class="nav-link" data-scroll-target="#interesting-literature-to-start">Interesting literature to start</a></li>
   <li><a href="#books-on-programming" id="toc-books-on-programming" class="nav-link" data-scroll-target="#books-on-programming">Books on Programming</a></li>
   <li><a href="#more-literature" id="toc-more-literature" class="nav-link" data-scroll-target="#more-literature">More Literature</a></li>
   </ul></li>
@@ -677,7 +706,7 @@ Caution
 <section id="hello-world" class="level2">
 <h2 class="anchored" data-anchor-id="hello-world">Hello, World!</h2>
 <p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="61730a52" class="cell" data-output-location="fragment" data-execution_count="1">
+<div id="a3bd5d89" class="cell" data-output-location="fragment" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -844,28 +873,15 @@ Note
 <h2 class="anchored" data-anchor-id="why-37">Why 37%?</h2>
 <ul>
 <li>This is based on the <strong>geometric distribution</strong></li>
-<li>The <span class="highlight">optimal stopping point</span> is at <code>n/e</code></li>
+<li>The <span class="highlight">optimal stopping point</span> is at <code>n/e</code><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
 <li><code>e</code> is the base of the natural logarithm (≈ 2.718)</li>
 <li>This comes from maximizing the probability of success</li>
 </ul>
 <p>. . .</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is a bit more advanced, so don’t worry if you don’t understand it! We will not go into the details of the math here and focus more on the insights.</p>
-</div>
-</div>
 </section>
 <section id="computing-the-number" class="level2">
 <h2 class="anchored" data-anchor-id="computing-the-number">Computing the number</h2>
-<div id="da7f46aa" class="cell" data-output-location="fragment" data-execution_count="2">
+<div id="c6d9504d" class="cell" data-output-location="fragment" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
@@ -897,7 +913,7 @@ Note
 <section id="geometric-distribution" class="level2">
 <h2 class="anchored" data-anchor-id="geometric-distribution">Geometric Distribution</h2>
 <p>Let’s visualize the success of a simulation with 20 candidates:</p>
-<div id="f5d1d66a" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="3">
+<div id="8f928f33" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -913,21 +929,25 @@ Note
 <section id="rejection" class="level2">
 <h2 class="anchored" data-anchor-id="rejection">Rejection</h2>
 <p><span class="question">Question:</span> Imagine a dating scenario, <span class="highlight">where the other person can also reject you</span>. <strong>Optimal stopping point?</strong></p>
-<p>. . .</p>
-<ul>
+<div class="incremental">
+<ul class="incremental">
 <li>The optimal stopping point is now <strong>lower</strong></li>
 <li>Because we can now <strong>fail more often</strong></li>
 <li>With 50 % chance of rejection, we <strong>start leaping at 25 %</strong></li>
+<li><strong>Formula:</strong> <span class="math inline">\(q^{\frac{1}{1-q}}\)</span> with <span class="math inline">\(q\)</span> being the chance of rejection</li>
 </ul>
+</div>
 </section>
 <section id="the-role-of-time" class="level2">
 <h2 class="anchored" data-anchor-id="the-role-of-time">The role of time</h2>
-<p><span class="question">Question:</span> What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
+<p>What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
 <p>. . .</p>
 <ul>
 <li>Imagine we have <strong>one year</strong> to find a new flat</li>
 <li>We want the <span class="highlight">best flat</span>, but don’t know what a good flat is</li>
 </ul>
+<p>. . .</p>
+<p><span class="question">Question:</span> How should we behave?</p>
 <p>. . .</p>
 <ul>
 <li><strong>Same</strong>, but now we decide when to stop searching!</li>
@@ -938,8 +958,22 @@ Note
 <ul>
 <li>Selling a house for the <strong>best price</strong> (“Threshold Rule”)</li>
 <li>Stealing with a <strong>success probability</strong> (“Burglar’s Problem”)</li>
-<li><strong>Finding</strong> a parking spot (“Parking Lot Problem”) <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li><strong>Finding</strong> a parking spot (“Parking Lot Problem”) [^2]</li>
 </ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Side note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!</p>
+</div>
+</div>
 </section>
 </section>
 <section id="optimal-solution" class="level1 title">
@@ -980,25 +1014,12 @@ We now have covered a brief introduction into optimal stopping and seen how to s
 </section>
 <section id="literature" class="level1 title">
 <h1 class="title"><span class="flow">Literature</span></h1>
-<section id="interesting-books-to-start" class="level2">
-<h2 class="anchored" data-anchor-id="interesting-books-to-start">Interesting Books to start</h2>
+<section id="interesting-literature-to-start" class="level2">
+<h2 class="anchored" data-anchor-id="interesting-literature-to-start">Interesting literature to start</h2>
 <ul>
-<li>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.</li>
+<li>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li>Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</li>
 </ul>
-<p>. . .</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.</p>
-</div>
-</div>
 </section>
 <section id="books-on-programming" class="level2">
 <h2 class="anchored" data-anchor-id="books-on-programming">Books on Programming</h2>
@@ -1034,8 +1055,9 @@ Note
 
 <ol>
 <li id="fn1"><p>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>With a large number of candidates. With a small number of candidates, we can do even better.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>An increase in occupancy from 90 to 95% doubles the search time for all drivers!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Large number of candidates! With a small number of candidates, we can do even better.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
