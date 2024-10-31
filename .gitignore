@@ -162,3 +162,13 @@ cython_debug/
 #.idea/
 
 /.quarto/
+/_site/
+/_freeze/
+
+# Solutions
+part-01/solution/
+part-02/solution/
+part-03/solution/
+part-04/solution/
+part-05/solution/
+part-06/solution/

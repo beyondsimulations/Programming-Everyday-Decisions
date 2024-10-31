@@ -1,11 +1,16 @@
 project:
   type: website
-  output-dir: docs
+  render:
+    - 404.qmd
+    - index.qmd
+    - general/*.qmd
+    - part-01/*.qmd
 
 website:
-  title: "Applied Optimization with Julia"
-  repo-url: https://github.com/beyondsimulations/Applied-Optimization
-  site-url: https://beyondsimulations.github.io/Applied-Optimization
+  title: "Programming: Everyday Decision-Making Algorithms"
+  repo-url: https://github.com/beyondsimulations/Programming-Everyday-Decisions
+  repo-actions: [edit, source, issue]
+  site-url: https://beyondsimulations.github.io/Programming-Everyday-Decisions
   bread-crumbs: true
   sidebar:
     style: floating
@@ -16,37 +21,51 @@ website:
         href: index.qmd
       - text: "Syllabus"
         href: general/syllabus.qmd
-      - section: "01 Introduction "
+      - text: "***"
+      - section: "01 Optimal Stopping"
         contents:
           - text: "Lecture"
-            href: part-01/lecture-introduction.qmd
-          - text: "Tutorial"
-            href: part-01/tutorial-introduction.qmd
-      - section: "02 Explore/Exploit "
-        contents:
-          - text: "Lecture"
-            href: part-02/lecture-introduction.qmd
-          - text: "Tutorial"
-            href: part-02/tutorial-introduction.qmd
+            href: part-01/lecture-optimal-stopping.qmd
+          - text: "01 - Variables"
+            href: part-01/tutorial-01-variables.qmd
+          - text: "02 - Comparisons"
+            href: part-01/tutorial-02-comparisons.qmd
+          - text: "03 - Decisions"
+            href: part-01/tutorial-03-stopping.qmd
+      - text: "***"
       - text: "FAQs"
         href: general/faq.qmd
       - text: "Literature"
         href: general/literature.qmd
   page-footer: 
-    center: "Applied Optimization with Julia, Tobias Vlćek</br>CC BY-NC-SA 4.0" 
+    center: "Programming: Everyday Decision-Making Algorithms</br>Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0" 
     right: 
       - icon: github
-        href: https://github.com/beyondsimulations/Applied-Optimization
+        href: https://github.com/beyondsimulations/Programming-Everyday-Decisions
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
 
 format:
   html:
     theme: litera
-    css: styles.css
     toc: true
+    highlight-style: arrow
+    linkcolor: "#BF7C63"
+    code-copy: true
+    code-link: true
+    toc-location: right
+    code-overflow: wrap
+    code-block-bg: true
+    code-block-border-left: "#D99D55"
 
-execute:
-  cache: true
-
-
+  pdf:
+    documentclass: report
+    geometry:
+        - margin=1in
+    fontfamily: roboto
+    fontfamilyoptions: sfdefault
+    colorlinks: true
+    include-in-header: 
+      text: |
+        \usepackage{fvextra}
+        \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}

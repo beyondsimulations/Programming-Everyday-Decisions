@@ -1,0 +1,167 @@
+---
+title: "Tutorial II.I - Loops"
+subtitle: "Applied Optimization with Julia"
+
+format:
+    html:
+        theme: litera
+        highlight-style: arrow
+        linkcolor: "#a60000"
+        code-copy: true
+        code-link: true
+        toc: true
+        toc-location: right
+        code-overflow: wrap
+    pdf: 
+        documentclass: report
+        geometry:
+            - margin=1in
+        fontfamily: roboto
+        fontfamilyoptions: sfdefault
+        colorlinks: true
+    ipynb:
+        code-copy: true
+        code-overflow: wrap
+---
+
+# Introduction
+
+When choosing restaurants, we often face the explore/exploit tradeoff: should we return to our favorite place (exploit) or try something new (explore)? This concept is perfect for learning about loops in Python! Loops help us simulate and analyze such decisions repeatedly.
+
+# Section 1 - For Loops
+
+A `for` loop in Python helps us iterate through choices. For example:
+
+```{python}
+# Reviewing our favorite restaurants
+restaurants = ["Pizza Place", "Sushi Bar", "Taco Shop"]
+for restaurant in restaurants:
+    print(f"Considering {restaurant} for dinner")
+```
+
+Using break statements for decision-making:
+```{python}
+satisfaction_scores = [7, 9, 4, 8, 6]
+for score in satisfaction_scores:
+    print(f"Restaurant rating: {score}")
+    if score >= 9:  # We found an excellent restaurant!
+        print("Found a fantastic place - let's stick to it!")
+        break
+```
+
+# Exercise 1.1 - Calculate Average Restaurant Rating
+
+Calculate the average rating of the restaurants by using a `for` loop.
+
+```{python}
+#| eval: false
+ratings = [8, 7, 9, 6, 8]
+average_rating = 0
+# YOUR CODE BELOW
+
+```
+```{python}
+#| eval: false
+#| code-fold: true
+# Test your answer
+assert isinstance(average_rating, float), "average_rating should be a float"
+assert 7.5 <= average_rating <= 7.6, f"Expected average around 7.6, got {average_rating}"
+```
+
+
+# Exercise 1.2 - Find High-Rated Restaurants
+
+Add all restaurants with a rating of at least 8 to the list `good_restaurants`.
+
+```{python}
+#| eval: false
+restaurants = [("Pizza Place", 7), ("Sushi Bar", 9), ("Taco Shop", 6)]
+good_restaurants = []
+# YOUR CODE BELOW
+
+```
+```{python}
+#| eval: false
+#| code-fold: true
+# Test your answer
+assert isinstance(good_restaurants, list), "good_restaurants should be a list"
+assert len(good_restaurants) == 1, f"Expected 1 good restaurant, got {len(good_restaurants)}"
+assert good_restaurants[0] == "Sushi Bar", f"Expected 'Sushi Bar', got {good_restaurants[0]}"
+```
+
+# Section 2 - While Loops for Restaurant Search
+
+While loops are perfect for modeling continuous restaurant exploration:
+
+```{python}
+budget = 100  # Starting budget
+restaurants_tried = 0
+
+while budget > 0:
+    print(f"Budget remaining: ${budget}")
+    budget -= 20  # Each restaurant visit costs $20
+    restaurants_tried += 1
+    
+print(f"Tried {restaurants_tried} restaurants")
+```
+
+# Exercise 2.1 - Find the First Great Restaurant
+
+Keep trying restaurants until you find one with satisfaction >= 9. Use the following satisfaction scores list to simulate different restaurant visits.
+
+```{python}
+#| eval: false
+satisfaction_scores = [7, 6, 8, 9, 7, 6, 5]  # Predefined scores
+satisfaction = 0
+visits = 0
+# YOUR CODE BELOW
+
+```
+```{python}
+#| eval: false
+#| code-fold: true
+# Test your answer
+assert satisfaction >= 9, f"Expected satisfaction >= 9, got {satisfaction}"
+assert visits == 4, f"Expected 4 visits to find satisfaction >= 9, got {visits}"
+```
+
+# Section 3 - Nested Loops for Complex Decisions
+
+Nested loops help us evaluate multiple factors:
+
+```{python}
+cuisines = ["Italian", "Japanese", "Mexican"]
+price_ranges = ["$", "$$", "$$$"]
+
+for cuisine in cuisines:
+    for price in price_ranges:
+        print(f"Evaluating {cuisine} restaurants in {price} range")
+```
+
+# Exercise 3.1 - Restaurant Recommendation Matrix
+```python
+locations = ["Downtown", "Suburbs", "Beach"]
+times = ["Lunch", "Dinner"]
+recommendations = []
+# YOUR CODE BELOW: Create recommendations for each location-time pair
+
+```
+
+# Section 4 - List Comprehensions
+
+List comprehensions provide an elegant way to filter restaurant data:
+
+```python
+restaurants = [("Pizza", 4.5), ("Sushi", 4.8), ("Tacos", 4.2)]
+# Get names of highly-rated restaurants
+good_ones = [name for (name, rating) in restaurants if rating >= 4.5]
+```
+
+# Exercise 4.1 - Filter Affordable Restaurants
+```python
+restaurant_prices = [("Cafe", 15), ("Bistro", 25), ("Fine Dining", 50)]
+# YOUR CODE BELOW: Create a list of restaurants under $30
+
+```
+
+{{< include ../include/tutorial_end.qmd >}}
