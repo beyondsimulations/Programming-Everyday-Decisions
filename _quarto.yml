@@ -22,6 +22,12 @@ website:
             href: part-01/lecture-introduction.qmd
           - text: "Tutorial"
             href: part-01/tutorial-introduction.qmd
+      - section: "02 Explore/Exploit "
+        contents:
+          - text: "Lecture"
+            href: part-02/lecture-introduction.qmd
+          - text: "Tutorial"
+            href: part-02/tutorial-introduction.qmd
       - text: "FAQs"
         href: general/faq.qmd
       - text: "Literature"

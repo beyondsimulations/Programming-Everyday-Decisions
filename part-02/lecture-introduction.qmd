@@ -1,8 +1,7 @@
 ---
-title: "Lecture I - Welcome and Introduction"
-subtitle: "Applied Optimization with Julia"
-author: "Dr. Tobias Vlćek"
-institute: "University of Hamburg - Fall 2024"
+title: "Lecture III - Explore vs. Exploit"
+subtitle: "Algorithms to Live By"
+author: "Dr. Tobias Vlćek, Dr. Nils Roemer"
 title-slide-attributes:
     data-background-color: "#7e0015"
 
@@ -10,15 +9,6 @@ execute:
     echo: true
 
 format:
-    html:
-        theme: litera
-        highlight-style: breezedark
-        linkcolor: "#a60000"
-        slide-number: true
-        code-copy: true
-        code-link: true
-        toc: true
-        toc-location: right
     revealjs:
         theme: [default, ../styles.scss]
         transition: slide
@@ -32,6 +22,15 @@ format:
         preview-links: auto
         footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-introduction.qmd)"
         output-file: lecture-presentation.html
+    html:
+        theme: litera
+        highlight-style: breezedark
+        linkcolor: "#a60000"
+        slide-number: true
+        code-copy: true
+        code-link: true
+        toc: true
+        toc-location: right
     pdf: 
         documentclass: report
         geometry:
@@ -45,12 +44,11 @@ format:
 
 ## About me
 :::{.incremental}
-- Post-doctoral researcher from the University of Hamburg
-- **Field:** Optimizing and simulating complex systems
-- **Languages:** of choice: Julia, Python and Rust
-- **Interest:** Modelling, Simulations, Machine Learning
-- **Teaching:** OR, Algorithms, and Programming
-- **Contact:** [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de)
+- Co-Founder and Managing Director at [Planningio GmbH](https://planningio.com)
+- **Field:** Production planning software for the beverage industry
+- **Interest:** Modelling, contract design, and behavioral economics
+- **Teaching:** Operations Research, Supply Chain Management, and Behavioral Operations Management
+- **Contact:** [nils.roemer@planningio.com](mailto:nils.rooemer@planningio.com)
 :::
 
 . . .
@@ -58,3 +56,65 @@ format:
 :::{.callout-tip}
 I really appreciate active participation and interaction!
 :::
+
+## About this Course
+
+- Explore/Exploit is a concept from the scientific study of learning
+- It is a trade-off between exploration and exploitation
+
+
+# Explore/Exploit Dilemma
+
+## Definition Explore vs. Exploit
+- **Explore**: Trying out new options to discover their potential benefits and gather information.
+- **Exploit**: Choosing the best-known option to maximize immediate reward and get a known result.
+- **Trade-off**: Doing favorite things vs. trying new things (Dilemma)
+
+## Real-World Examples
+- **Restaurant Choice**: Trying new restaurants (explore) vs. going to your favorite one (exploit).
+- **Job Search**: Exploring different career opportunities (explore) vs. staying in a current job (exploit).
+- **Online Advertising**: Testing new ad creatives (explore) vs. using the best-performing ad (exploit).
+
+## Mathematical Formulation
+- **One-Armed Bandit**: A one-armed bandit is a slot machine with only one lever. Pulling the lever costs a certain amount of money and the slot machine pays out a random amount of money.
+- **Multi-Armed Bandit Problem**: A classic problem that models the explore vs. exploit trade-off. Each "arm" of the bandit represents a different option with an unknown reward distribution.
+- **Real-World analogy**: You go in a casino. The room is full of slot machines. You start without any information about the slot machines. What should you do when you want to maximize your profits?
+    - **Explore**: Try out new slot machines.
+    - **Exploit**: Stick to the slot machine that seems to be the best.
+
+## Strategies for Balancing Explore and Exploit
+
+
+
+## Strategies for Balancing Explore and Exploit
+- **Epsilon-Greedy Algorithm**: With probability ε, explore; otherwise, exploit.
+- **Upper Confidence Bound (UCB)**: Select the option with the highest upper confidence bound on the expected reward.
+- **Thompson Sampling**: Use Bayesian methods to sample from the posterior distribution of the rewards and choose the best option.
+
+## Theoretical Insights
+- **Regret**: The difference between the reward you could have obtained by always exploiting the best option and the reward you actually obtained.
+- **Gittins Index**: A dynamic allocation index that provides an optimal solution to the multi-armed bandit problem under certain conditions.
+
+## Practical Applications
+- **A/B Testing**: Balancing the need to test new variations (explore) with the need to use the best-performing variation (exploit).
+- **Reinforcement Learning**: Algorithms like Q-learning and Deep Q-Networks (DQN) that incorporate explore/exploit strategies.
+
+## 7. Psychological and Behavioral Aspects
+- **Human Decision-Making**: How people naturally balance exploration and exploitation in their daily lives.
+- **Risk Aversion**: The tendency to prefer known risks over unknown risks, affecting the explore/exploit balance.
+
+## 8. Computational Complexity
+- **Trade-offs**: The computational cost of exploring new options vs. the potential long-term benefits.
+
+## 9. Case Studies and Experiments
+- **Historical Examples**: Famous experiments and case studies that illustrate the explore/exploit dilemma.
+- **Modern Applications**: How companies like Google, Amazon, and Netflix use explore/exploit strategies in their algorithms.
+
+## 10. Conclusion
+- **Summary**: Recap the importance of balancing exploration and exploitation.
+- **Future Directions**: Emerging research and potential future applications of explore/exploit strategies.
+
+## Additional Resources
+- **Books**: "Algorithms to Live By" by Brian Christian and Tom Griffiths.
+- **Research Papers**: Key academic papers on the multi-armed bandit problem and related algorithms.
+- **Online Courses**: MOOCs and online lectures that cover explore/exploit strategies in more detail.

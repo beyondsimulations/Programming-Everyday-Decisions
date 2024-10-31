@@ -58,3 +58,5 @@ format:
 :::{.callout-tip}
 I really appreciate active participation and interaction!
 :::
+
+## About this Course
