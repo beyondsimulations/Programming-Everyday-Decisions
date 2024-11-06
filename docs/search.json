@@ -1,0 +1,411 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Applied Optimization with Julia!",
+    "section": "",
+    "text": "Course Description\nIn this module we will focus on solving practical problems with the help of optimization. To this end, over the course of the semester you will become familiar with a number of optimization problems that have been worked on in the past at the Institute of Logistics, Transportation and Production in cooperation with practice partners. Problems include improving the sustainability of parcel delivery companies, Corona-compliant seat allocations of stadiums and theaters, optimizing districts and locations for police departments, and many more. The module consists of the following two parts: Lectures (2 SWS) and Exercises (1 SWS).\n\n\nLearning Outcomes\nYou can find our specific outcomes in the module handbook. Our broader goal is to introduce you to how diversified the solution of practical problems can be. We want to enable you to independently apply methods and concepts from optimization, and to get a feeling for abstracting and modeling problems. Is our module hard? That’s a subjective question. We would say it is exciting and doable. If you have a basic interest in logical relationships and mathematics, you are in the right place. If you also have basic knowledge of programming or want to get into the subject with help, our module is perfect for you.\nUpon completion of the course, you …\n\ncan implement solutions to complex optimization problems in Julia\nknow advanced concepts of optimization such as linear and nonlinear optimization\nknow basic concepts of programming and algorithms such as loops, functions\nwill be able to read and write code in Julia\nwill have experience working with Julia libraries such as JuMP and HiGHS\nwill know how to collaborate in a small team to find solutions for problems at hand\n\nPlease note that this course is specifically designed for business students. That is, it is not required to have any advanced knowledge or experience in programming to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.\n\n\nCourse Blocks\nThe core content of the course is organized in three blocks:\n\nPart I: Introduction to Julia and Modelling\nPart II: Applied Optimization with Basic Models\nPart III: Applied Optimization with Advanced Models\n\nYou can find more information on the course blocks and the corresponding lectures in the syllabus.\n\n\nTutorials\nThe tutorials accompany the lectures. In the tutorials, you will apply the concepts from the lectures to realistic data sets. You will work in small groups of 3 participants, in which you can work out solutions together. We will help you during the weekly practice sessions by answering your questions or briefly explaining individual issues in case of difficulties. Afterwards, you have the opportunity to submit your jointly developed solution until the next exercise date in order to earn bonus points for the exam. You can earn up to half a bonus point per exercise, up to 6.5 bonus points in total. Important: the bonus points will only be credited to you if you pass the exam with at least a 4.0. Furthermore, we will not award bonus points for exercises in which you have simply copied the results of another group.\n\n\nHow to see the slides\n\nThis course is based on Quarto\nIt uses revealjs to render the slides\nYou find the slides for each lecture in the corresponding lecture\nTo see the slides, click on RevealJS in the top right corner\n\n\n\nQuestions\nIf you have any questions regarding the course, please contact me under tobias.vlcek@uni-hamburg.de.\n\n\nContributors\nThanks to Matthes Koch and Justus Bonz, who helped to prepare the lecture materials.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "general/literature.html",
+    "href": "general/literature.html",
+    "title": "Literature and Resources",
+    "section": "",
+    "text": "This section provides a curated list of books and resources to enhance your understanding of mathematical Modelling, Julia programming and related topics. Each recommendation includes a brief description to help you choose the most suitable resources for you.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#books",
+    "href": "general/literature.html#books",
+    "title": "Literature and Resources",
+    "section": "Books",
+    "text": "Books\n\nLauwens, B., & Downey, A. B. (2019). Think Julia: How to think like a computer scientist (First edition). O’Reilly®. Link to the free book website.\n\nThis book is great for beginners and covers Julia programming in a comprehensive manner.\n\nKwon, C. (2019). Julia programming for operations research (Second edition). Changhyun Kwon. Link to the free book website.\n\nThis book is a fantastic ressource for students interested in Julia and Operations Research and covers a variety of topics.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#resources",
+    "href": "general/literature.html#resources",
+    "title": "Literature and Resources",
+    "section": "Resources",
+    "text": "Resources\n\nJulia Documentation\n\nThe official Julia documentation is an good starting point to understand the language’s features and syntax.\n\nJuMP Documentation\n\nThe official documentation of JuMP is a great resource for understanding optimization modeling in Julia, covering everything from simple linear models to advanced nonlinear and mixed-integer problems.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#books-1",
+    "href": "general/literature.html#books-1",
+    "title": "Literature and Resources",
+    "section": "Books",
+    "text": "Books\n\nWilke, C. (2019). Fundamentals of data visualization: A primer on making informative and compelling figures (First edition). O’Reilly Media.\n\nA book that is highly recommended to understand the principles of data visualization and how to create effective visualizations.\nLink to the free book website\n\nThomas, D., & Hunt, A. (2019). The pragmatic programmer, 20th anniversary edition: Journey to mastery (Second edition). Addison-Wesley.\n\nA fantasticbook to understand the principles of software development and how to create effective software.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#resources-1",
+    "href": "general/literature.html#resources-1",
+    "title": "Literature and Resources",
+    "section": "Resources",
+    "text": "Resources\n\nQuarto\n\nA static website generator that is very powerful and flexible. Used to create the slides and the website for the course.\n\nCursor\n\nA code editor based on VS Code that is very powerful and flexible. It uses AI to help you write code.\n\nJupyter\n\nA web application that allows you to create and share documents that contain code, equations, visualizations and text. It is very popular in the field of data science and academia and also part of Quarto.\n\nAdvent of Code\n\nA wonderful website with daily challenges during the christmas time. Highly recommended to playfully improve your skills.\n\nGithub\n\nThe largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code.\n\nCodewars\n\nA platform to improve your coding skills by solving challenges. You can compete with others, see how other people solved the challenges and read and learn from the code.\n\nDaily Dose of Data Science\n\nA website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/faq.html",
+    "href": "general/faq.html",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "If you have a question that is not answered here, please let me know by sending me an e-mail to tobias.vlcek@uni-hamburg.de or by creating an issue on GitHub.",
+    "crumbs": [
+      "FAQs"
+    ]
+  },
+  {
+    "objectID": "general/faq.html#unanswered-questions",
+    "href": "general/faq.html#unanswered-questions",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "If you have a question that is not answered here, please let me know by sending me an e-mail to tobias.vlcek@uni-hamburg.de or by creating an issue on GitHub.",
+    "crumbs": [
+      "FAQs"
+    ]
+  },
+  {
+    "objectID": "general/faq.html#contribution-and-mistakes",
+    "href": "general/faq.html#contribution-and-mistakes",
+    "title": "Frequently Asked Questions",
+    "section": "Contribution and Mistakes",
+    "text": "Contribution and Mistakes\nIf you have found a mistake in the course material or if you have any suggestion on how to improve the course, please let me know in the following form or by creating an issue on GitHub.",
+    "crumbs": [
+      "FAQs"
+    ]
+  },
+  {
+    "objectID": "general/faq.html#faqs",
+    "href": "general/faq.html#faqs",
+    "title": "Frequently Asked Questions",
+    "section": "FAQs",
+    "text": "FAQs\nSo far, I haven’t received any questions.",
+    "crumbs": [
+      "FAQs"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html",
+    "href": "general/syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "In the first part, an introduction to the basic concepts of programming in Julia and to mathematical modelling is provided. Students will learn the Julia syntax, data types, as well as how to implement loops and functions in Julia. We will introduce core Julia libraries, too, including JuMP and DataFrames. Once these concepts are understood, we will learn how they can be used to solve problems.\n\n\n\nWelcome and Introduction (I)\nIntroduction to the course and mathematical modelling\nFirst Steps in Julia (II)\nVectors, matrices, basic operations loops and functions\nPackages and Data Management (III)\nPackage Management, DataFrames, reading and writing data\nModelling with JuMP (IV)\nModeling with JuMP with variables, parameters and constraints",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html#introduction-to-julia-and-modelling",
+    "href": "general/syllabus.html#introduction-to-julia-and-modelling",
+    "title": "Syllabus",
+    "section": "",
+    "text": "In the first part, an introduction to the basic concepts of programming in Julia and to mathematical modelling is provided. Students will learn the Julia syntax, data types, as well as how to implement loops and functions in Julia. We will introduce core Julia libraries, too, including JuMP and DataFrames. Once these concepts are understood, we will learn how they can be used to solve problems.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html#lectures",
+    "href": "general/syllabus.html#lectures",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Welcome and Introduction (I)\nIntroduction to the course and mathematical modelling\nFirst Steps in Julia (II)\nVectors, matrices, basic operations loops and functions\nPackages and Data Management (III)\nPackage Management, DataFrames, reading and writing data\nModelling with JuMP (IV)\nModeling with JuMP with variables, parameters and constraints",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html#applied-optimization-with-basic-models",
+    "href": "general/syllabus.html#applied-optimization-with-basic-models",
+    "title": "Syllabus",
+    "section": "Applied Optimization with Basic Models",
+    "text": "Applied Optimization with Basic Models\nIn the second part, we will cover applied optimization based on basic modelling concepts. We will start with the classic capacitated lot-sizing problem and learn how to model and solve it using JuMP.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html#lectures-1",
+    "href": "general/syllabus.html#lectures-1",
+    "title": "Syllabus",
+    "section": "Lectures",
+    "text": "Lectures\nBeer Production Planning (V)\nA case study on beer brewing based on the classic capacitated lot-sizing problem\nMinimizing Split Orders in E-Commerce (VI)\nA case study in E-Commerce based on a quadratic knapsack problem\nPeriodic Library Routing (VII)\nA case study on routing books to branches based on a capacitated vehicle routing problem\nPolice Districting (VIII)\nA case study on police districting based on a facility location problem",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html#applied-optimization-with-advanced-models",
+    "href": "general/syllabus.html#applied-optimization-with-advanced-models",
+    "title": "Syllabus",
+    "section": "Applied Optimization with Advanced Models",
+    "text": "Applied Optimization with Advanced Models\nIn the third part, we will cover more advanced optimisation models and concepts. We will start by looking into three different applied optimisation problems in crowd safety.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "general/syllabus.html#lectures-2",
+    "href": "general/syllabus.html#lectures-2",
+    "title": "Syllabus",
+    "section": "Lectures",
+    "text": "Lectures\nSafety Planning for the Islamic Pilgrimage in Mecca (IX)\nA case study on safety planning for the hajj pilgrimage based on time-dependent network flows\nPassenger Flow Control in Urban Rail (X)\nA case study on passenger flow control in urban rail based on time-dependent network flows\nArena Seat Planning under Distancing Rules (XI)\nA case study on arena seat planning under distancing rules based on the 2-dimensional knapsack problem\nSales Force Deployment for Teams (XII)\nA case study on sales force deployment for teams based on a linear programming model\nRecap and Discussion (XIII)\nWe repeat the concepts from the course and discuss all your remaining questions",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-presentation.html#about-me",
+    "href": "part-01/lecture-presentation.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "About me",
+    "text": "About me\n\n\nPost-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nLecture I - Welcome and Introduction | Dr. Tobias Vlćek | Home"
+  },
+  {
+    "objectID": "part-01/lecture-introduction.html",
+    "href": "part-01/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!",
+    "crumbs": [
+      "01 Introduction ",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-01/lecture-introduction.html#about-me",
+    "href": "part-01/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!",
+    "crumbs": [
+      "01 Introduction ",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#about-me",
+    "href": "part-02/lecture-presentation.html#about-me",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "About me",
+    "text": "About me\n\n\nCo-Founder and Managing Director at Planningio GmbH\nField: Production planning software for the beverage industry\nInterest: Modelling, contract design, and behavioral economics\nTeaching: Operations Research, Supply Chain Management, and Behavioral Operations Management\nContact: nils.rooemer@planningio.com\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-02/lecture-introduction.html",
+    "href": "part-02/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-02/lecture-introduction.html#about-me",
+    "href": "part-02/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#about-me",
+    "href": "part-03/lecture-presentation.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "About me",
+    "text": "About me\n\n\nPost-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nLecture I - Welcome and Introduction | Dr. Tobias Vlćek | Home"
+  },
+  {
+    "objectID": "part-03/lecture-introduction.html",
+    "href": "part-03/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-03/lecture-introduction.html#about-me",
+    "href": "part-03/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-04/lecture-presentation.html#about-me",
+    "href": "part-04/lecture-presentation.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "About me",
+    "text": "About me\n\n\nPost-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nLecture I - Welcome and Introduction | Dr. Tobias Vlćek | Home"
+  },
+  {
+    "objectID": "part-04/lecture-introduction.html",
+    "href": "part-04/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-04/lecture-introduction.html#about-me",
+    "href": "part-04/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#about-me",
+    "href": "part-05/lecture-presentation.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "About me",
+    "text": "About me\n\n\nPost-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nLecture I - Welcome and Introduction | Dr. Tobias Vlćek | Home"
+  },
+  {
+    "objectID": "part-05/lecture-introduction.html",
+    "href": "part-05/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-05/lecture-introduction.html#about-me",
+    "href": "part-05/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-06/lecture-presentation.html#about-me",
+    "href": "part-06/lecture-presentation.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "About me",
+    "text": "About me\n\n\nPost-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nLecture I - Welcome and Introduction | Dr. Tobias Vlćek | Home"
+  },
+  {
+    "objectID": "part-06/lecture-introduction.html",
+    "href": "part-06/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-06/lecture-introduction.html#about-me",
+    "href": "part-06/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-07/lecture-presentation.html#about-me",
+    "href": "part-07/lecture-presentation.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "About me",
+    "text": "About me\n\n\nPost-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n\n\n\n\n\n\n\nTip\n\n\nI really appreciate active participation and interaction!\n\n\n\n\n\n\nLecture I - Welcome and Introduction | Dr. Tobias Vlćek | Home"
+  },
+  {
+    "objectID": "part-07/lecture-introduction.html",
+    "href": "part-07/lecture-introduction.html",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-07/lecture-introduction.html#about-me",
+    "href": "part-07/lecture-introduction.html#about-me",
+    "title": "Lecture I - Welcome and Introduction",
+    "section": "",
+    "text": "Post-doctoral researcher from the University of Hamburg\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: tobias.vlcek@uni-hamburg.de\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nI really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#about-this-course-1",
+    "href": "part-02/lecture-presentation.html#about-this-course-1",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "About this Course",
+    "text": "About this Course\n\nExplore/Exploit is a concept from the scientific study of learning\nIt is a trade-off between exploration and exploitation"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#definition-of-exploreexploit-dilemma",
+    "href": "part-02/lecture-presentation.html#definition-of-exploreexploit-dilemma",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Definition of Explore/Exploit Dilemma",
+    "text": "Definition of Explore/Exploit Dilemma\n\nExplore: Trying out new options to discover their potential benefits.\nExploit: Choosing the best-known option to maximize immediate reward.\nTrade-off: Doing favorite things vs. trying new things (Dilemma)"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#real-world-examples",
+    "href": "part-02/lecture-presentation.html#real-world-examples",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Real-World Examples",
+    "text": "Real-World Examples\n\nRestaurant Choice: Trying new restaurants (explore) vs. going to your favorite one (exploit).\nJob Search: Exploring different career opportunities (explore) vs. staying in a current job (exploit).\nOnline Advertising: Testing new ad creatives (explore) vs. using the best-performing ad (exploit)."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#mathematical-formulation",
+    "href": "part-02/lecture-presentation.html#mathematical-formulation",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Mathematical Formulation",
+    "text": "Mathematical Formulation\n\nMulti-Armed Bandit Problem: A classic problem that models the explore/exploit trade-off. Each “arm” of the bandit represents a different option with an unknown reward distribution."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#strategies-for-balancing-explore-and-exploit",
+    "href": "part-02/lecture-presentation.html#strategies-for-balancing-explore-and-exploit",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Strategies for Balancing Explore and Exploit",
+    "text": "Strategies for Balancing Explore and Exploit\n\nEpsilon-Greedy Algorithm: With probability ε, explore; otherwise, exploit.\nUpper Confidence Bound (UCB): Select the option with the highest upper confidence bound on the expected reward.\nThompson Sampling: Use Bayesian methods to sample from the posterior distribution of the rewards and choose the best option."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#theoretical-insights",
+    "href": "part-02/lecture-presentation.html#theoretical-insights",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Theoretical Insights",
+    "text": "Theoretical Insights\n\nRegret: The difference between the reward you could have obtained by always exploiting the best option and the reward you actually obtained.\nGittins Index: A dynamic allocation index that provides an optimal solution to the multi-armed bandit problem under certain conditions."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#practical-applications",
+    "href": "part-02/lecture-presentation.html#practical-applications",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Practical Applications",
+    "text": "Practical Applications\n\nA/B Testing: Balancing the need to test new variations (explore) with the need to use the best-performing variation (exploit).\nReinforcement Learning: Algorithms like Q-learning and Deep Q-Networks (DQN) that incorporate explore/exploit strategies."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#psychological-and-behavioral-aspects",
+    "href": "part-02/lecture-presentation.html#psychological-and-behavioral-aspects",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "7. Psychological and Behavioral Aspects",
+    "text": "7. Psychological and Behavioral Aspects\n\nHuman Decision-Making: How people naturally balance exploration and exploitation in their daily lives.\nRisk Aversion: The tendency to prefer known risks over unknown risks, affecting the explore/exploit balance."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#computational-complexity",
+    "href": "part-02/lecture-presentation.html#computational-complexity",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "8. Computational Complexity",
+    "text": "8. Computational Complexity\n\nTrade-offs: The computational cost of exploring new options vs. the potential long-term benefits."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#case-studies-and-experiments",
+    "href": "part-02/lecture-presentation.html#case-studies-and-experiments",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "9. Case Studies and Experiments",
+    "text": "9. Case Studies and Experiments\n\nHistorical Examples: Famous experiments and case studies that illustrate the explore/exploit dilemma.\nModern Applications: How companies like Google, Amazon, and Netflix use explore/exploit strategies in their algorithms."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#conclusion",
+    "href": "part-02/lecture-presentation.html#conclusion",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "10. Conclusion",
+    "text": "10. Conclusion\n\nSummary: Recap the importance of balancing exploration and exploitation.\nFuture Directions: Emerging research and potential future applications of explore/exploit strategies."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#additional-resources",
+    "href": "part-02/lecture-presentation.html#additional-resources",
+    "title": "Lecture III - Explore vs. Exploit",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nBooks: “Algorithms to Live By” by Brian Christian and Tom Griffiths.\nResearch Papers: Key academic papers on the multi-armed bandit problem and related algorithms.\nOnline Courses: MOOCs and online lectures that cover explore/exploit strategies in more detail.\n\n\n\n\nLecture III - Explore vs. Exploit | Dr. Tobias Vlćek, Dr. Nils Roemer | Home"
+  }
+]
