@@ -278,14 +278,14 @@ print("Success! You've managed resources effectively.")
 Excellent work! You've learned about two powerful loop structures in Python through the lens of clinical trials and treatment exploration:
 
 - `for` loops help us:
-  * Process data systematically
-  * Analyze outcomes efficiently
-  * Work with structured data like treatment efficacy rates
+  - Process data systematically
+  - Analyze outcomes efficiently
+  - Work with structured data like treatment efficacy rates
 
 - `while` loops are perfect for:
-  * Resource-constrained scenarios
-  * Finding certain outcomes
-  * Situations with unknown iteration counts
+  - Resource-constrained scenarios
+  - Finding certain outcomes
+  - Situations with unknown iteration counts
 
 In the context of clinical trials:
 - `for` loops are like reviewing a predetermined set of patient data
@@ -293,7 +293,8 @@ In the context of clinical trials:
 
 These loop structures are fundamental tools, allowing us to process large datasets and make informed decisions in the context of the explore-exploit trade-off.
 
+---
+
 {{< include ../include/tutorial_end.qmd >}}
 
----
 *Continue to the next tutorial to tie all previous concepts together in the context of the explore-exploit problem in a casino!*

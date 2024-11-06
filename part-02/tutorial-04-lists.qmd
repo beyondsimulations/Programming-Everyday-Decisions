@@ -163,7 +163,7 @@ Sometimes we need to store multiple pieces of information about each restaurant.
 
 ```{python}
 #| eval: false
-Restaurant data: [name, rating, times_visited]
+# Restaurant data: [name, rating, times_visited]
 restaurant_data = [
 ["Pasta Place", 4.5, 3], # Each inner list is one restaurant's data
 ["Sushi Bar", 4.2, 1],

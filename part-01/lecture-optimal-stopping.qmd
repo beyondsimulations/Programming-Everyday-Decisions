@@ -7,6 +7,8 @@ title-slide-attributes:
     data-background-color: "#8C3048"
 
 format:
+    html:
+        theme: [litera, ../styles_html.scss]
     revealjs:
         theme: [default, ../styles.scss]
         transition: slide
@@ -18,8 +20,6 @@ format:
         height: 750
         footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-optimal-stopping.qmd)"
         output-file: lecture-presentation.html
-    html:
-        theme: [litera, ../styles_html.scss]
     pdf: 
         documentclass: report
 
