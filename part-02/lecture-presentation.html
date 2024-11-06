@@ -951,402 +951,216 @@ th:first-child, td:first-child {
 <ul>
 <li class="fragment">The Gittins index can be used for any problems of the form of the multi-armed bandit problem.</li>
 <li class="fragment">That means it solves the explore-exploit trade-off.</li>
-<li class="fragment">Let’s consider our machine A and B example one last time.</li>
+<li class="fragment">Let’s consider our machine A and B example one last time.
+<ul>
+<li class="fragment">Machine A: 15 pulls, 9 wins, 6 loses.</li>
+<li class="fragment">Machine B: 2 pulls, 1 win, 1 lose.</li>
+</ul></li>
 </ul>
 </div>
 </section>
 <section id="the-gittins-index-iv" class="slide level2">
 <h2>The Gittins Index IV</h2>
+<div class="cell" style="display: flex; justify-content: center;">
+<style>
+table {
+    border-collapse: collapse;
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+    min-width: 60px;
+}
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+th:first-child, td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loses/Wins</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>.7029</td>
+<td>.8001</td>
+<td>.8452</td>
+<td>.8723</td>
+<td>.8905</td>
+<td>.9039</td>
+<td>.9141</td>
+<td>.9221</td>
+<td>.9287</td>
+<td>.9342</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>.5001</td>
+<td>.6346</td>
+<td>.7072</td>
+<td>.7539</td>
+<td>.7869</td>
+<td>.8115</td>
+<td>.8307</td>
+<td>.8461</td>
+<td>.8588</td>
+<td>.8695</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>.3796</td>
+<td>.5163</td>
+<td>.6010</td>
+<td>.6579</td>
+<td>.6996</td>
+<td>.7318</td>
+<td>.7573</td>
+<td>.7782</td>
+<td>.7956</td>
+<td>.8103</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>.3021</td>
+<td>.4342</td>
+<td>.5184</td>
+<td>.5809</td>
+<td>.6276</td>
+<td>.6642</td>
+<td>.6940</td>
+<td>.7187</td>
+<td>.7396</td>
+<td>.7573</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>.2488</td>
+<td>.3720</td>
+<td>.4561</td>
+<td>.5179</td>
+<td>.5676</td>
+<td>.6071</td>
+<td>.6395</td>
+<td>.6666</td>
+<td>.6899</td>
+<td>.7101</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>.2103</td>
+<td>.3245</td>
+<td>.4058</td>
+<td>.4677</td>
+<td>.5168</td>
+<td>.5581</td>
+<td>.5923</td>
+<td>.6212</td>
+<td>.6461</td>
+<td>.6677</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>.1815</td>
+<td>.2871</td>
+<td>.3647</td>
+<td>.4257</td>
+<td>.4748</td>
+<td>.5156</td>
+<td>.5510</td>
+<td>.5811</td>
+<td>.6071</td>
+<td>.6300</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>.1591</td>
+<td>.2569</td>
+<td>.3308</td>
+<td>.3900</td>
+<td>.4387</td>
+<td>.4795</td>
+<td>.5144</td>
+<td>.5454</td>
+<td>.5723</td>
+<td>.5960</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>.1413</td>
+<td>.2323</td>
+<td>.3025</td>
+<td>.3595</td>
+<td>.4073</td>
+<td>.4479</td>
+<td>.4828</td>
+<td>.5134</td>
+<td>.5409</td>
+<td>.5652</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>.1269</td>
+<td>.2116</td>
+<td>.2784</td>
+<td>.3332</td>
+<td>.3799</td>
+<td>.4200</td>
+<td>.4548</td>
+<td>.4853</td>
+<td>.5125</td>
+<td>.5373</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="question-choose-machine-a-or-b-according-to-the-gittins-index" class="slide level2">
+<h2><span class="question">Question:</span> Choose machine A or B according to the Gittins index?</h2>
 <div>
 <ul>
-<li class="fragment">The Gittins index considers a discount factor of 90%.</li>
-<li class="fragment">Clear win-stay but no lose-shift pattern.</li>
-<li class="fragment">At (0,0) we see the exploration bonus (premium).</li>
-<li class="fragment">Convergence to 1/2 for a 50/50 chance game.</li>
+<li class="fragment">The index shows a clear win-stay pattern.</li>
+<li class="fragment">There is a relaxed lose-shift pattern.</li>
+<li class="fragment">At the (0,0) point we see the exploration bonus (premium).</li>
+<li class="fragment">The index converges to 1/2 for a 50/50 chance game.</li>
+<li class="fragment">The index for machine B (0.6346) is higher than for machine A (0.6300).</li>
 </ul>
 </div>
 </section>
 <section id="the-gittins-index-v" class="slide level2">
 <h2>The Gittins Index V</h2>
-<div class="cell" style="display: flex; justify-content: center;">
-<style>
-table {
-    border-collapse: collapse;
-    font-size: 24px;
-    font-family: "Courier New", Courier, monospace;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: right;
-    min-width: 60px;
-}
-th {
-    background-color: #f4f4f4;
-    text-align: center;
-}
-th:first-child, td:first-child {
-    text-align: center;
-    font-weight: bold;
-}
-</style>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Loses/Wins</th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td>.7029</td>
-<td>.8001</td>
-<td>.8452</td>
-<td>.8723</td>
-<td>.8905</td>
-<td>.9039</td>
-<td>.9141</td>
-<td>.9221</td>
-<td>.9287</td>
-<td>.9342</td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td>.5001</td>
-<td>.6346</td>
-<td>.7072</td>
-<td>.7539</td>
-<td>.7869</td>
-<td>.8115</td>
-<td>.8307</td>
-<td>.8461</td>
-<td>.8588</td>
-<td>.8695</td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td>.3796</td>
-<td>.5163</td>
-<td>.6010</td>
-<td>.6579</td>
-<td>.6996</td>
-<td>.7318</td>
-<td>.7573</td>
-<td>.7782</td>
-<td>.7956</td>
-<td>.8103</td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td>.3021</td>
-<td>.4342</td>
-<td>.5184</td>
-<td>.5809</td>
-<td>.6276</td>
-<td>.6642</td>
-<td>.6940</td>
-<td>.7187</td>
-<td>.7396</td>
-<td>.7573</td>
-</tr>
-<tr class="odd">
-<td>4</td>
-<td>.2488</td>
-<td>.3720</td>
-<td>.4561</td>
-<td>.5179</td>
-<td>.5676</td>
-<td>.6071</td>
-<td>.6395</td>
-<td>.6666</td>
-<td>.6899</td>
-<td>.7101</td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td>.2103</td>
-<td>.3245</td>
-<td>.4058</td>
-<td>.4677</td>
-<td>.5168</td>
-<td>.5581</td>
-<td>.5923</td>
-<td>.6212</td>
-<td>.6461</td>
-<td>.6677</td>
-</tr>
-<tr class="odd">
-<td>6</td>
-<td>.1815</td>
-<td>.2871</td>
-<td>.3647</td>
-<td>.4257</td>
-<td>.4748</td>
-<td>.5156</td>
-<td>.5510</td>
-<td>.5811</td>
-<td>.6071</td>
-<td>.6300</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>.1591</td>
-<td>.2569</td>
-<td>.3308</td>
-<td>.3900</td>
-<td>.4387</td>
-<td>.4795</td>
-<td>.5144</td>
-<td>.5454</td>
-<td>.5723</td>
-<td>.5960</td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>.1413</td>
-<td>.2323</td>
-<td>.3025</td>
-<td>.3595</td>
-<td>.4073</td>
-<td>.4479</td>
-<td>.4828</td>
-<td>.5134</td>
-<td>.5409</td>
-<td>.5652</td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>.1269</td>
-<td>.2116</td>
-<td>.2784</td>
-<td>.3332</td>
-<td>.3799</td>
-<td>.4200</td>
-<td>.4548</td>
-<td>.4853</td>
-<td>.5125</td>
-<td>.5373</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="the-gittins-index-vi" class="slide level2">
-<h2>The Gittins Index VI</h2>
-<div class="cell" style="display: flex; justify-content: center;">
-<style>
-table {
-    border-collapse: collapse;
-    font-size: 24px;
-    font-family: "Courier New", Courier, monospace;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: right;
-    min-width: 60px;
-}
-th {
-    background-color: #f4f4f4;
-    text-align: center;
-}
-th:first-child, td:first-child {
-    text-align: center;
-    font-weight: bold;
-}
-</style>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Loses/Wins</th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td>.7029</td>
-<td>.8001</td>
-<td>.8452</td>
-<td>.8723</td>
-<td>.8905</td>
-<td>.9039</td>
-<td>.9141</td>
-<td>.9221</td>
-<td>.9287</td>
-<td>.9342</td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td>.5001</td>
-<td>.6346</td>
-<td>.7072</td>
-<td>.7539</td>
-<td>.7869</td>
-<td>.8115</td>
-<td>.8307</td>
-<td>.8461</td>
-<td>.8588</td>
-<td>.8695</td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td>.3796</td>
-<td>.5163</td>
-<td>.6010</td>
-<td>.6579</td>
-<td>.6996</td>
-<td>.7318</td>
-<td>.7573</td>
-<td>.7782</td>
-<td>.7956</td>
-<td>.8103</td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td>.3021</td>
-<td>.4342</td>
-<td>.5184</td>
-<td>.5809</td>
-<td>.6276</td>
-<td>.6642</td>
-<td>.6940</td>
-<td>.7187</td>
-<td>.7396</td>
-<td>.7573</td>
-</tr>
-<tr class="odd">
-<td>4</td>
-<td>.2488</td>
-<td>.3720</td>
-<td>.4561</td>
-<td>.5179</td>
-<td>.5676</td>
-<td>.6071</td>
-<td>.6395</td>
-<td>.6666</td>
-<td>.6899</td>
-<td>.7101</td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td>.2103</td>
-<td>.3245</td>
-<td>.4058</td>
-<td>.4677</td>
-<td>.5168</td>
-<td>.5581</td>
-<td>.5923</td>
-<td>.6212</td>
-<td>.6461</td>
-<td>.6677</td>
-</tr>
-<tr class="odd">
-<td>6</td>
-<td>.1815</td>
-<td>.2871</td>
-<td>.3647</td>
-<td>.4257</td>
-<td>.4748</td>
-<td>.5156</td>
-<td>.5510</td>
-<td>.5811</td>
-<td>.6071</td>
-<td>.6300</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>.1591</td>
-<td>.2569</td>
-<td>.3308</td>
-<td>.3900</td>
-<td>.4387</td>
-<td>.4795</td>
-<td>.5144</td>
-<td>.5454</td>
-<td>.5723</td>
-<td>.5960</td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>.1413</td>
-<td>.2323</td>
-<td>.3025</td>
-<td>.3595</td>
-<td>.4073</td>
-<td>.4479</td>
-<td>.4828</td>
-<td>.5134</td>
-<td>.5409</td>
-<td>.5652</td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>.1269</td>
-<td>.2116</td>
-<td>.2784</td>
-<td>.3332</td>
-<td>.3799</td>
-<td>.4200</td>
-<td>.4548</td>
-<td>.4853</td>
-<td>.5125</td>
-<td>.5373</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fragment">
-<p><span class="question">Question:</span> What does the Gittins index tell us about the trade-off between machine A and B?</p>
-</div>
-</section>
-<section id="the-gittins-index-vii" class="slide level2">
-<h2>The Gittins Index VII</h2>
 <div>
 <ul>
 <li class="fragment">The problem with the Gittins index is that it is very difficult to calculate.</li>
@@ -1365,8 +1179,8 @@ th:first-child, td:first-child {
 <div>
 <ul>
 <li class="fragment">Consider an explore vs exploit decision situation.</li>
-<li class="fragment">As you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.</li>
-<li class="fragment">Exploring comes with an unknown outcome E(B) = ?.</li>
+<li class="fragment">As you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6</li>
+<li class="fragment">Exploring comes with an unknown outcome E(B) = ?</li>
 <li class="fragment">What should you do according to decision science?</li>
 </ul>
 </div>

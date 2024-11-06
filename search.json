@@ -1664,7 +1664,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index III",
-    "text": "The Gittins Index III\n\n\nThe Gittins index can be used for any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLet’s consider our machine A and B example one last time.",
+    "text": "The Gittins Index III\n\n\nThe Gittins index can be used for any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLet’s consider our machine A and B example one last time.\n\nMachine A: 15 pulls, 9 wins, 6 loses.\nMachine B: 2 pulls, 1 win, 1 lose.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1675,7 +1675,18 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index IV",
-    "text": "The Gittins Index IV\n\n\nThe Gittins index considers a discount factor of 90%.\nClear win-stay but no lose-shift pattern.\nAt (0,0) we see the exploration bonus (premium).\nConvergence to 1/2 for a 50/50 chance game.",
+    "text": "The Gittins Index IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#question-choose-machine-a-or-b-according-to-the-gittins-index",
+    "href": "part-02/lecture-explore-exploit.html#question-choose-machine-a-or-b-according-to-the-gittins-index",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Question: Choose machine A or B according to the Gittins index?",
+    "text": "Question: Choose machine A or B according to the Gittins index?\n\n\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game.\nThe index for machine B (0.6346) is higher than for machine A (0.6300).",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1686,29 +1697,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-v",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index V",
-    "text": "The Gittins Index V\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373",
-    "crumbs": [
-      "02 Explore/Exploit",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "part-02/lecture-explore-exploit.html#the-gittins-index-vi",
-    "href": "part-02/lecture-explore-exploit.html#the-gittins-index-vi",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index VI",
-    "text": "The Gittins Index VI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373\n\n\n\n\n. . .\nQuestion: What does the Gittins index tell us about the trade-off between machine A and B?",
-    "crumbs": [
-      "02 Explore/Exploit",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "part-02/lecture-explore-exploit.html#the-gittins-index-vii",
-    "href": "part-02/lecture-explore-exploit.html#the-gittins-index-vii",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index VII",
-    "text": "The Gittins Index VII\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\).",
+    "text": "The Gittins Index V\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\).",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1719,7 +1708,7 @@
     "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Summary",
-    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.\nExploring comes with an unknown outcome E(B) = ?.\nWhat should you do according to decision science?",
+    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6\nExploring comes with an unknown outcome E(B) = ?\nWhat should you do according to decision science?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -2052,42 +2041,35 @@
     "href": "part-02/lecture-presentation.html#the-gittins-index-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index III",
-    "text": "The Gittins Index III\n\n\nThe Gittins index can be used for any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLet’s consider our machine A and B example one last time."
+    "text": "The Gittins Index III\n\n\nThe Gittins index can be used for any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLet’s consider our machine A and B example one last time.\n\nMachine A: 15 pulls, 9 wins, 6 loses.\nMachine B: 2 pulls, 1 win, 1 lose."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-iv",
     "href": "part-02/lecture-presentation.html#the-gittins-index-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index IV",
-    "text": "The Gittins Index IV\n\n\nThe Gittins index considers a discount factor of 90%.\nClear win-stay but no lose-shift pattern.\nAt (0,0) we see the exploration bonus (premium).\nConvergence to 1/2 for a 50/50 chance game."
+    "text": "The Gittins Index IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#question-choose-machine-a-or-b-according-to-the-gittins-index",
+    "href": "part-02/lecture-presentation.html#question-choose-machine-a-or-b-according-to-the-gittins-index",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Question: Choose machine A or B according to the Gittins index?",
+    "text": "Question: Choose machine A or B according to the Gittins index?\n\n\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game.\nThe index for machine B (0.6346) is higher than for machine A (0.6300)."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-v",
     "href": "part-02/lecture-presentation.html#the-gittins-index-v",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index V",
-    "text": "The Gittins Index V\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373"
-  },
-  {
-    "objectID": "part-02/lecture-presentation.html#the-gittins-index-vi",
-    "href": "part-02/lecture-presentation.html#the-gittins-index-vi",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index VI",
-    "text": "The Gittins Index VI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373\n\n\n\n\n\nQuestion: What does the Gittins index tell us about the trade-off between machine A and B?"
-  },
-  {
-    "objectID": "part-02/lecture-presentation.html#the-gittins-index-vii",
-    "href": "part-02/lecture-presentation.html#the-gittins-index-vii",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index VII",
-    "text": "The Gittins Index VII\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\)."
+    "text": "The Gittins Index V\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\)."
   },
   {
     "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-summary-1",
     "href": "part-02/lecture-presentation.html#explore-vs-exploit-summary-1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Summary",
-    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.\nExploring comes with an unknown outcome E(B) = ?.\nWhat should you do according to decision science?"
+    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6\nExploring comes with an unknown outcome E(B) = ?\nWhat should you do according to decision science?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-anecdotally",
