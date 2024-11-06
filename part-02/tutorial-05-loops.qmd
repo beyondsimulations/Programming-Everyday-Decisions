@@ -92,7 +92,7 @@ for name, efficacy in treatments:
 
 ## Exercise 1.1 - Count Adverse Events
 
-Track the number of treatments that had too many adverse events (more than 5) with a `for` loop.
+Track the number of treatments that had too many adverse events (more than 5) with a `for` loop. Add 1 to `high_adverse_count` for each treatment that had more than 5 adverse events.
 
 ```{python}
 #| eval: false
@@ -113,7 +113,7 @@ print("Success! You've correctly counted the high adverse event treatments.")
 
 ## Exercise 1.2 - Calculate Average Treatment Efficacy
 
-Calculate the average efficacy of the treatments using a `for` loop.
+Calculate the average efficacy of the treatments using a `for` loop. First, add each rate to the total. Then, calculate the average by dividing the total by the number of treatments.
 
 ```{python}
 #| eval: false
@@ -135,7 +135,7 @@ print("Success! Your average calculation is correct.")
 ::: {.callout-tip}
 - Add each rate to the total
 - Calculate the average by dividing the total by the number of treatments
-- Remember that `len(efficacy_rates)` gives you the count of treatments
+- Note that `len(efficacy_rates)` gives you the count of treatments
 :::
 
 ## Exercise 1.3 - Find Promising Treatments
@@ -220,7 +220,7 @@ Always ensure:
 
 ## Exercise 2.1 - Breakthrough Treatment
 
-Use a `while` loop to find the first treatment with an efficacy score of at least 88. Count the number of trials it takes to find this treatment and store it in the variable `trials`. Save the efficacy score of the breakthrough treatment in the variable `current_efficacy`.
+Use a `while` loop to find the first treatment with an efficacy score of at least 88. Count the number of trials it takes to find this treatment and store it in the variable `trials`. Save the efficacy score of the breakthrough treatment in the variable `current_efficacy`. Note, that the `efficacy_scores` list is indexed from 0!
 
 ```{python}
 #| eval: false
@@ -242,7 +242,7 @@ print("Success! You've found the breakthrough treatment efficiently.")
 
 ## Exercise 2.2 - Resource Management
 
-Continue trials until either resources are depleted or a breakthrough (efficacy >= 90) is found. Count the number of trials it takes to find this treatment and store it in the variable `trials_conducted`. Save the efficacy score of the breakthrough treatment in the variable `current_best`.
+Continue trials until either resources are depleted or a breakthrough (efficacy >= 90) is found. Count the number of trials it takes to find this treatment and store it in the variable `trials_conducted`. Save the efficacy score of the breakthrough treatment in the variable `current_best`. Note, that the `efficacy_scores` list is indexed from 0!
 
 ```{python}
 #| eval: false
