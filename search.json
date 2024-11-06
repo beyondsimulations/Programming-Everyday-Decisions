@@ -4,7 +4,7 @@
     "href": "part-02/tutorial-06-explore-exploit.html",
     "title": "Tutorial II.III - Explore and Exploit",
     "section": "",
-    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $10!\nYour new balance is $110\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt; 100, \"You should not end up with more money than you started with\"\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is: - The function random.random() generates a random number between 0 and 1. - A rate of 2.0 means you get back exactly what you bet (on average) - Our rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 2 for x in plays), \"Number of plays seems unreasonably high given budget\"\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
+    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $5!\nYour new balance is $105\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt; 100, \"You should not end up with more money than you started with\"\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is: - The function random.random() generates a random number between 0 and 1. - A rate of 2.0 means you get back exactly what you bet (on average) - Our rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 2 for x in plays), \"Number of plays seems unreasonably high given budget\"\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
     "crumbs": [
       "02 Explore/Exploit",
       "06 - Exploration"
@@ -1268,7 +1268,7 @@
     "href": "part-02/lecture-explore-exploit.html",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Question: What does “explore” mean?\nQuestion: What does “exploit” mean?\nQuestion: what is the relationship between ‘explore’ and ‘exploit’ ?\nExplore is the gathering of new information\nExploit exploit is the utilisation of already known information in order to obtain a known result.\nExplore and exploit are opposing action alternatives in a trade-off.\n\n\n\n\n\n\n\nClinical trials\nA/B testing\nRestaurant choice\nDating\nSocial interactions\n\n\n\n\n\n\n\nExplore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLive is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nComputer scientists have been working on this problem for over 50 years.\n\n\n\n\n\n\n\nExploitation is not always the best strategy.\nEspecially when you have very limited information.\nWhen you stop exploring, you might miss out on better options.\nImagine you were no longer able to gather any new information and could only choose between known alternatives.\n\n\n\n\n\n\n\nExploration is not always the best strategy.\nEspecially when you are limited to use the new gathered information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could eat each meal only once, hear each song only once, talk to each person only once…",
+    "text": "Question: What does “explore” mean?\nQuestion: What does “exploit” mean?\nQuestion: what is the relationship between ‘explore’ and ‘exploit’ ?\nExplore is the gathering of new information.\nExploit is the utilization of already known information to obtain a known result.\nExplore and exploit are opposing alternatives in a trade-off.\n\n\n\n\n\n\n\nClinical trials\nA/B testing\nRestaurant choice\nDating\nSocial interactions\n\n\n\n\n\n\n\nExplore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLife is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nScientists have been working on this for over 50 years.\n\n\n\n\n\n\n\nExploitation is not always the best strategy.\nEspecially when you have very limited information.\nWhen you stop exploring, you might miss out on better options.\nImagine you were no longer able to gather any new information and could only choose between known alternatives.\n\n\n\n\n\n\n\nExploration is not always the best strategy.\nEspecially when you are limited in using the newly gathered information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could eat each meal only once, hear each song only once, talk to each person only once…",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1279,7 +1279,7 @@
     "href": "part-02/lecture-explore-exploit.html#some-definitions",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Question: What does “explore” mean?\nQuestion: What does “exploit” mean?\nQuestion: what is the relationship between ‘explore’ and ‘exploit’ ?\nExplore is the gathering of new information\nExploit exploit is the utilisation of already known information in order to obtain a known result.\nExplore and exploit are opposing action alternatives in a trade-off.",
+    "text": "Question: What does “explore” mean?\nQuestion: What does “exploit” mean?\nQuestion: what is the relationship between ‘explore’ and ‘exploit’ ?\nExplore is the gathering of new information.\nExploit is the utilization of already known information to obtain a known result.\nExplore and exploit are opposing alternatives in a trade-off.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1301,7 +1301,7 @@
     "href": "part-02/lecture-explore-exploit.html#everyday-decision-making",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Explore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLive is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nComputer scientists have been working on this problem for over 50 years.",
+    "text": "Explore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLife is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nScientists have been working on this for over 50 years.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1323,7 +1323,7 @@
     "href": "part-02/lecture-explore-exploit.html#question-what-is-the-problem-with-exploration",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Exploration is not always the best strategy.\nEspecially when you are limited to use the new gathered information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could eat each meal only once, hear each song only once, talk to each person only once…",
+    "text": "Exploration is not always the best strategy.\nEspecially when you are limited in using the newly gathered information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could eat each meal only once, hear each song only once, talk to each person only once…",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1367,7 +1367,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-multi-armed-bandit-problem-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem II",
-    "text": "The multi-armed bandit problem II\n\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximise his winnings.",
+    "text": "The multi-armed bandit problem II\n\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximize his winnings.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1400,7 +1400,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-multi-armed-bandit-problem-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem IV",
-    "text": "The multi-armed bandit problem IV\n\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we havent discussed yet:",
+    "text": "The multi-armed bandit problem IV\n\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we haven’t discussed yet:",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1411,7 +1411,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-multi-armed-bandit-problem-v",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem V",
-    "text": "The multi-armed bandit problem V\n\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)",
+    "text": "The multi-armed bandit problem V\n\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n\n\n. . .\n\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1429,11 +1429,22 @@
     ]
   },
   {
-    "objectID": "part-02/lecture-explore-exploit.html#the-interval-makes-the-strategy",
-    "href": "part-02/lecture-explore-exploit.html#the-interval-makes-the-strategy",
+    "objectID": "part-02/lecture-explore-exploit.html#interval-and-exploration",
+    "href": "part-02/lecture-explore-exploit.html#interval-and-exploration",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The interval makes the strategy",
-    "text": "The interval makes the strategy\n\n\nExplore when you have the time to use the resulting knowledge.\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)\nExploit when you are ready to cash in.\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)",
+    "section": "Interval and Exploration",
+    "text": "Interval and Exploration\n\nExplore when you have the time to use the resulting knowledge.\n\n. . .\n\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#interval-and-exploitation",
+    "href": "part-02/lecture-explore-exploit.html#interval-and-exploitation",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interval and Exploitation",
+    "text": "Interval and Exploitation\n\nExploit when you are ready to cash in.\n\n. . .\n\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1462,11 +1473,11 @@
     ]
   },
   {
-    "objectID": "part-02/lecture-explore-exploit.html#reverse-engineering-derivation-of-the-interval-by-observing-the-strategy-excursion",
-    "href": "part-02/lecture-explore-exploit.html#reverse-engineering-derivation-of-the-interval-by-observing-the-strategy-excursion",
+    "objectID": "part-02/lecture-explore-exploit.html#reverse-engineering",
+    "href": "part-02/lecture-explore-exploit.html#reverse-engineering",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reverse Engineering: Derivation of the interval by observing the strategy (excursion)",
-    "text": "Reverse Engineering: Derivation of the interval by observing the strategy (excursion)\n\n\nAmong the the ten highest-grossing movies, how many were sequels?\n\n1981: 2\n1991: 3\n2001: 5\n2011: 8\n\nQuestion: Do you have an explanation for the observed trend?",
+    "section": "Reverse Engineering",
+    "text": "Reverse Engineering\n\n\nDerivation of the interval by observing the strategy\nAmong the the ten highest-grossing movies, how many were sequels?\n\n1981: 2\n1991: 3\n2001: 5\n2011: 8\n\nQuestion: Do you have an explanation for the trend?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1510,7 +1521,7 @@
     "href": "part-02/lecture-explore-exploit.html#win-stay-lose-shift1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Win-Stay Lose-Shift1",
-    "text": "Win-Stay Lose-Shift1\n\n\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\nQuestion: How would you test this proof using Python?",
+    "text": "Win-Stay Lose-Shift1\n\n\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1543,7 +1554,7 @@
     "href": "part-02/lecture-explore-exploit.html#like-most-of-the-time-easy-answers-comes-with-problems",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Like most of the time, easy answers comes with problems",
-    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes loses to much.\nThe strategy does not take into account the interval.\nBut the strategy laid the foundation for better approaches",
+    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes losses too much.\nThe strategy does not take into account the interval.\nBut the strategy laid the foundation for better approaches",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1554,7 +1565,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-i",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach I",
-    "text": "The Bellman approach I\n\n\nFew years later, Richard Bellman, found an exact solution to the problem for all cases with finite and known intervals.\nBellman found, that under the given assumptions, exploit vs explore can be formulated as optimal stopping problem.\nWhere the question is, when to stop exploring and start exploiting.\nThe solution is based on dynamic programming and backward calculation starting from the final pull (analogous to the secretary problem with full-information).",
+    "text": "The Bellman approach I\n\n\nFew years later, Richard Bellman, found an exact solution to the problem for all cases with finite and known intervals.\nBellman found that under the given assumptions, exploit vs explore can be formulated as an optimal stopping problem.\nWhere the question is, when to stop exploring and start exploiting.\nThe solution is based on dynamic programming and backward calculation starting from the final pull (analogous to the secretary problem with full information).",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1565,7 +1576,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach II",
-    "text": "The Bellman approach II\n\n\nConsider the example with machine A and B again.\nThe following graph shows the possible outcomes of the next 4 pulls at machine B.\nWhen should we stop exploring and start exploiting?\n\n\n\n\n\n\n\ngraph TD\n    D1([\"(1,1)\"]) --&gt; |Win| D2A([\"(2,1)\"])\n    D1 --&gt; |Lose| D2B([\"(1,2)\"])\n    \n    D2A --&gt; |Win| D3AA([\"(3,1)\"])\n    D2A --&gt; |Lose| D3AB([\"(2,2)\"])\n    D2B --&gt; |Win| D3AB([\"(2,2)\"])\n    D2B --&gt; |Lose| D3BB([\"(1,3)\"])\n    \n    D3AA --&gt; |Win| D4AAA([\"(4,1)\"])\n    D3AA --&gt; |Lose| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Win| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Lose| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Win| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Lose| D4BBB([\"(1,4)\"])\n    \n    D4AAA --&gt; |Win| D5AAAA([\"(5,1)\"])\n    D4AAA --&gt; |Lose| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Win| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Lose| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Win| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Lose| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Win| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Lose| D5BBBB([\"(1,5)\"])",
+    "text": "The Bellman approach II\n\n\nConsider the example with machine A and B again.\nThe following graph shows the possible outcomes of the next 4 pulls at machine B.\nWhen should we stop exploring and start exploiting?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1576,7 +1587,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach III",
-    "text": "The Bellman approach III\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50\n\n\n\n\nCalculated with the following equation: \\[\n\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\n\\] where w is the number of wins and l is the number of loses.",
+    "text": "The Bellman approach III\n\n\n\n\n\n\ngraph TD\n    D1([\"(1,1)\"]) --&gt; |Win| D2A([\"(2,1)\"])\n    D1 --&gt; |Lose| D2B([\"(1,2)\"])\n    \n    D2A --&gt; |Win| D3AA([\"(3,1)\"])\n    D2A --&gt; |Lose| D3AB([\"(2,2)\"])\n    D2B --&gt; |Win| D3AB([\"(2,2)\"])\n    D2B --&gt; |Lose| D3BB([\"(1,3)\"])\n    \n    D3AA --&gt; |Win| D4AAA([\"(4,1)\"])\n    D3AA --&gt; |Lose| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Win| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Lose| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Win| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Lose| D4BBB([\"(1,4)\"])\n    \n    D4AAA --&gt; |Win| D5AAAA([\"(5,1)\"])\n    D4AAA --&gt; |Lose| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Win| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Lose| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Win| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Lose| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Win| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Lose| D5BBBB([\"(1,5)\"])",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1587,7 +1598,29 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach IV",
-    "text": "The Bellman approach IV\n\n\nThe calculation of the optimal strategy are very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact number of opportunities / time in the casino (length of the interval).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution.",
+    "text": "The Bellman approach IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#the-bellman-approach-v",
+    "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-v",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Bellman approach V",
+    "text": "The Bellman approach V\nCalculated with the following equation: \\[\n\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\n\\] where w is the number of wins and l is the number of loses.",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#the-bellman-approach-vi",
+    "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-vi",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Bellman approach VI",
+    "text": "The Bellman approach VI\n\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact number of opportunities/time in the casino (length of the interval).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1598,7 +1631,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-i2",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index I2",
-    "text": "The Gittins Index I2\n\n\nIn the 1970s, the Unilever Corporation asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven several different chemical compounds, what is the quickest way to determine which compound is likely to be effective against a disease?\nGittins found an optimal strategy, abstracted the problem to a general level, and realized that what he had discovered was, in fact, the solution to the multi-armed bandit problem.",
+    "text": "The Gittins Index I2\n\n\nIn the 1970s Unilever asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven different compounds, what is the quickest way to determine which is likely to be effective?\nGittins found an optimal strategy and abstracted the problem to a general level.\nHe found the solution to the multi-armed bandit problem.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1609,7 +1642,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index II",
-    "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g. cash flows) are discounted3 so that any interval length (including infinity) can be considered.",
+    "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1620,7 +1653,7 @@
     "href": "part-02/lecture-explore-exploit.html#reality-check-discounting",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Reality check: Discounting",
-    "text": "Reality check: Discounting\n\n\nDoes discounting future wins make sense?\nRegarding monetary wins, it does. For example due to interest rates and oppurtunity costs.\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?",
+    "text": "Reality check: Discounting\n\n\nDoes discounting future wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs.\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1631,7 +1664,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index III",
-    "text": "The Gittins Index III\n\n\nThe Gittins index can be used to any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLets consider our machine A and B example one last time.",
+    "text": "The Gittins Index III\n\n\nThe Gittins index can be used for any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLet’s consider our machine A and B example one last time.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1642,7 +1675,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index IV",
-    "text": "The Gittins Index IV\n\n\nThe Gittins index considering a discount factor of 90%.\nClear win-stay but no lose-shift pattern.\nAt (0,0) we see the exploration bonus (premium).\nConvergence to 1/2 for a 50/50 chance game.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373",
+    "text": "The Gittins Index IV\n\n\nThe Gittins index considers a discount factor of 90%.\nClear win-stay but no lose-shift pattern.\nAt (0,0) we see the exploration bonus (premium).\nConvergence to 1/2 for a 50/50 chance game.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1653,7 +1686,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-v",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index V",
-    "text": "The Gittins Index V\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373\n\n\n\n\nQuestion: What does the Gittins index tell us about the trade-off between machine A and B?",
+    "text": "The Gittins Index V\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1664,29 +1697,51 @@
     "href": "part-02/lecture-explore-exploit.html#the-gittins-index-vi",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index VI",
-    "text": "The Gittins Index VI\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\).",
+    "text": "The Gittins Index VI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373\n\n\n\n\n. . .\nQuestion: What does the Gittins index tell us about the trade-off between machine A and B?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-i",
-    "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-i",
+    "objectID": "part-02/lecture-explore-exploit.html#the-gittins-index-vii",
+    "href": "part-02/lecture-explore-exploit.html#the-gittins-index-vii",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Explore vs Exploit: Summary I",
-    "text": "Explore vs Exploit: Summary I\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.\nExploring comes with an unknown outcome E(B) = ?.\nWhat should you do according to decision science?",
+    "section": "The Gittins Index VII",
+    "text": "The Gittins Index VII\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\).",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-ii",
-    "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-ii",
+    "objectID": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-1",
+    "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-summary-1",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Explore vs Exploit: Summary II",
-    "text": "Explore vs Exploit: Summary II\n\n\nAnecdotally:\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(B).\nIf you have a short interval, you should exploit, choose A.\n\nMathematically:\n\nIf E(A) and E(B) are known, choose the higher expected value.\nIf E(B) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(B) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy.",
+    "section": "Explore vs Exploit: Summary",
+    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.\nExploring comes with an unknown outcome E(B) = ?.\nWhat should you do according to decision science?",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#explore-vs-exploit-anecdotally",
+    "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-anecdotally",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Explore vs Exploit: Anecdotally",
+    "text": "Explore vs Exploit: Anecdotally\n\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(B).\nIf you have a short interval, you should exploit, choose A.",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#explore-vs-exploit-mathematically",
+    "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-mathematically",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Explore vs Exploit: Mathematically",
+    "text": "Explore vs Exploit: Mathematically\n\n\nIf E(A) and E(B) are known, choose higher expected value.\nIf E(B) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(B) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1697,7 +1752,40 @@
     "href": "part-02/lecture-explore-exploit.html#explore-vs-exploit-key-takeaways",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Key Takeaways",
-    "text": "Explore vs Exploit: Key Takeaways\n\n\n“The grass is always greener on the other side of the fence.”\nThe math tells us why:\nExploration in it self has a value, since trying new things increases our chance of finding the best.\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…",
+    "text": "Explore vs Exploit: Key Takeaways\n\n“The grass is always greener on the other side of the fence.”\n\n\n\nThe math tells us why:\nExploration in it self has a value, since trying new things increases our chance of finding the best.\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#interesting-literature-to-start",
+    "href": "part-02/lecture-explore-exploit.html#interesting-literature-to-start",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.3\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#books-on-programming",
+    "href": "part-02/lecture-explore-exploit.html#books-on-programming",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Books on Programming",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#more-literature",
+    "href": "part-02/lecture-explore-exploit.html#more-literature",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "More Literature",
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1708,7 +1796,7 @@
     "href": "part-02/lecture-explore-exploit.html#footnotes",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58.↩︎\nGittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological). 41 (2).↩︎\nGittins makes a geometric discounting assumption, but the approach can be extended to other discounting assumptions.↩︎",
+    "text": "Footnotes\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58.↩︎\nGittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological).↩︎\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1719,7 +1807,7 @@
     "href": "part-02/lecture-presentation.html#some-definitions",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Some definitions…",
-    "text": "Some definitions…\n\n\nQuestion: What does “explore” mean?\nQuestion: What does “exploit” mean?\nQuestion: what is the relationship between ‘explore’ and ‘exploit’ ?\nExplore is the gathering of new information\nExploit exploit is the utilisation of already known information in order to obtain a known result.\nExplore and exploit are opposing action alternatives in a trade-off."
+    "text": "Some definitions…\n\n\nQuestion: What does “explore” mean?\nQuestion: What does “exploit” mean?\nQuestion: what is the relationship between ‘explore’ and ‘exploit’ ?\nExplore is the gathering of new information.\nExploit is the utilization of already known information to obtain a known result.\nExplore and exploit are opposing alternatives in a trade-off."
   },
   {
     "objectID": "part-02/lecture-presentation.html#some-examples",
@@ -1733,7 +1821,7 @@
     "href": "part-02/lecture-presentation.html#everyday-decision-making",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Everyday decision-making",
-    "text": "Everyday decision-making\n\n\nExplore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLive is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nComputer scientists have been working on this problem for over 50 years."
+    "text": "Everyday decision-making\n\n\nExplore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLife is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nScientists have been working on this for over 50 years."
   },
   {
     "objectID": "part-02/lecture-presentation.html#question-what-is-the-problem-with-exploitation",
@@ -1747,7 +1835,7 @@
     "href": "part-02/lecture-presentation.html#question-what-is-the-problem-with-exploration",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Question: What is the problem with exploration?",
-    "text": "Question: What is the problem with exploration?\n\n\nExploration is not always the best strategy.\nEspecially when you are limited to use the new gathered information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could eat each meal only once, hear each song only once, talk to each person only once…"
+    "text": "Question: What is the problem with exploration?\n\n\nExploration is not always the best strategy.\nEspecially when you are limited in using the newly gathered information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could eat each meal only once, hear each song only once, talk to each person only once…"
   },
   {
     "objectID": "part-02/lecture-presentation.html#to-provide-decision-support-computer-scientists-formulated-the-explore-exploit-trade-off-as-the-multi-armed-bandit-problem.",
@@ -1775,7 +1863,7 @@
     "href": "part-02/lecture-presentation.html#the-multi-armed-bandit-problem-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem II",
-    "text": "The multi-armed bandit problem II\n\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximise his winnings."
+    "text": "The multi-armed bandit problem II\n\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximize his winnings."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-multi-armed-bandit-problem-iii",
@@ -1796,14 +1884,14 @@
     "href": "part-02/lecture-presentation.html#the-multi-armed-bandit-problem-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem IV",
-    "text": "The multi-armed bandit problem IV\n\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we havent discussed yet:"
+    "text": "The multi-armed bandit problem IV\n\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we haven’t discussed yet:"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-multi-armed-bandit-problem-v",
     "href": "part-02/lecture-presentation.html#the-multi-armed-bandit-problem-v",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem V",
-    "text": "The multi-armed bandit problem V\n\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)"
+    "text": "The multi-armed bandit problem V\n\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n\n\n\n\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-influence-of-the-interval",
@@ -1813,11 +1901,18 @@
     "text": "The influence of the interval\n\n\nLet’s call the time you plan to be in the casino “the interval”.\nThe longer the interval, the more (in general) you should explore, since you will have more opportunities to exploit the gathered information.\nThe shorter the interval, the more you should exploit your current knowledge.\nThe optimal strategy depends on the length of the interval."
   },
   {
-    "objectID": "part-02/lecture-presentation.html#the-interval-makes-the-strategy",
-    "href": "part-02/lecture-presentation.html#the-interval-makes-the-strategy",
+    "objectID": "part-02/lecture-presentation.html#interval-and-exploration",
+    "href": "part-02/lecture-presentation.html#interval-and-exploration",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The interval makes the strategy",
-    "text": "The interval makes the strategy\n\n\nExplore when you have the time to use the resulting knowledge.\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)\nExploit when you are ready to cash in.\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)"
+    "section": "Interval and Exploration",
+    "text": "Interval and Exploration\n\nExplore when you have the time to use the resulting knowledge.\n\n\n\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#interval-and-exploitation",
+    "href": "part-02/lecture-presentation.html#interval-and-exploitation",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interval and Exploitation",
+    "text": "Interval and Exploitation\n\nExploit when you are ready to cash in.\n\n\n\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)"
   },
   {
     "objectID": "part-02/lecture-presentation.html#exploration",
@@ -1834,11 +1929,11 @@
     "text": "Exploitation\n\nPhoto by Cristina Gottardi on Unsplash"
   },
   {
-    "objectID": "part-02/lecture-presentation.html#reverse-engineering-derivation-of-the-interval-by-observing-the-strategy-excursion",
-    "href": "part-02/lecture-presentation.html#reverse-engineering-derivation-of-the-interval-by-observing-the-strategy-excursion",
+    "objectID": "part-02/lecture-presentation.html#reverse-engineering",
+    "href": "part-02/lecture-presentation.html#reverse-engineering",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reverse Engineering: Derivation of the interval by observing the strategy (excursion)",
-    "text": "Reverse Engineering: Derivation of the interval by observing the strategy (excursion)\n\n\nAmong the the ten highest-grossing movies, how many were sequels?\n\n1981: 2\n1991: 3\n2001: 5\n2011: 8\n\nQuestion: Do you have an explanation for the observed trend?"
+    "section": "Reverse Engineering",
+    "text": "Reverse Engineering\n\n\nDerivation of the interval by observing the strategy\nAmong the the ten highest-grossing movies, how many were sequels?\n\n1981: 2\n1991: 3\n2001: 5\n2011: 8\n\nQuestion: Do you have an explanation for the trend?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#sequels",
@@ -1866,7 +1961,7 @@
     "href": "part-02/lecture-presentation.html#win-stay-lose-shift1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Win-Stay Lose-Shift1",
-    "text": "Win-Stay Lose-Shift1\n\n\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\nQuestion: How would you test this proof using Python?\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58."
+    "text": "Win-Stay Lose-Shift1\n\n\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58."
   },
   {
     "objectID": "part-02/lecture-presentation.html#win-stay-is-a-no-brainer",
@@ -1887,105 +1982,154 @@
     "href": "part-02/lecture-presentation.html#like-most-of-the-time-easy-answers-comes-with-problems",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Like most of the time, easy answers comes with problems",
-    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes loses to much.\nThe strategy does not take into account the interval.\nBut the strategy laid the foundation for better approaches"
+    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes losses too much.\nThe strategy does not take into account the interval.\nBut the strategy laid the foundation for better approaches"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-i",
     "href": "part-02/lecture-presentation.html#the-bellman-approach-i",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach I",
-    "text": "The Bellman approach I\n\n\nFew years later, Richard Bellman, found an exact solution to the problem for all cases with finite and known intervals.\nBellman found, that under the given assumptions, exploit vs explore can be formulated as optimal stopping problem.\nWhere the question is, when to stop exploring and start exploiting.\nThe solution is based on dynamic programming and backward calculation starting from the final pull (analogous to the secretary problem with full-information)."
+    "text": "The Bellman approach I\n\n\nFew years later, Richard Bellman, found an exact solution to the problem for all cases with finite and known intervals.\nBellman found that under the given assumptions, exploit vs explore can be formulated as an optimal stopping problem.\nWhere the question is, when to stop exploring and start exploiting.\nThe solution is based on dynamic programming and backward calculation starting from the final pull (analogous to the secretary problem with full information)."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-ii",
     "href": "part-02/lecture-presentation.html#the-bellman-approach-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach II",
-    "text": "The Bellman approach II\n\n\nConsider the example with machine A and B again.\nThe following graph shows the possible outcomes of the next 4 pulls at machine B.\nWhen should we stop exploring and start exploiting?\n\n\n\n\n\n\n\ngraph TD\n    D1([\"(1,1)\"]) --&gt; |Win| D2A([\"(2,1)\"])\n    D1 --&gt; |Lose| D2B([\"(1,2)\"])\n    \n    D2A --&gt; |Win| D3AA([\"(3,1)\"])\n    D2A --&gt; |Lose| D3AB([\"(2,2)\"])\n    D2B --&gt; |Win| D3AB([\"(2,2)\"])\n    D2B --&gt; |Lose| D3BB([\"(1,3)\"])\n    \n    D3AA --&gt; |Win| D4AAA([\"(4,1)\"])\n    D3AA --&gt; |Lose| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Win| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Lose| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Win| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Lose| D4BBB([\"(1,4)\"])\n    \n    D4AAA --&gt; |Win| D5AAAA([\"(5,1)\"])\n    D4AAA --&gt; |Lose| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Win| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Lose| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Win| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Lose| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Win| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Lose| D5BBBB([\"(1,5)\"])"
+    "text": "The Bellman approach II\n\n\nConsider the example with machine A and B again.\nThe following graph shows the possible outcomes of the next 4 pulls at machine B.\nWhen should we stop exploring and start exploiting?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-iii",
     "href": "part-02/lecture-presentation.html#the-bellman-approach-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach III",
-    "text": "The Bellman approach III\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50\n\n\n\n\nCalculated with the following equation: \\[\n\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\n\\] where w is the number of wins and l is the number of loses."
+    "text": "The Bellman approach III\n\n\n\n\n\n\ngraph TD\n    D1([\"(1,1)\"]) --&gt; |Win| D2A([\"(2,1)\"])\n    D1 --&gt; |Lose| D2B([\"(1,2)\"])\n    \n    D2A --&gt; |Win| D3AA([\"(3,1)\"])\n    D2A --&gt; |Lose| D3AB([\"(2,2)\"])\n    D2B --&gt; |Win| D3AB([\"(2,2)\"])\n    D2B --&gt; |Lose| D3BB([\"(1,3)\"])\n    \n    D3AA --&gt; |Win| D4AAA([\"(4,1)\"])\n    D3AA --&gt; |Lose| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Win| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Lose| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Win| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Lose| D4BBB([\"(1,4)\"])\n    \n    D4AAA --&gt; |Win| D5AAAA([\"(5,1)\"])\n    D4AAA --&gt; |Lose| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Win| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Lose| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Win| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Lose| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Win| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Lose| D5BBBB([\"(1,5)\"])"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-iv",
     "href": "part-02/lecture-presentation.html#the-bellman-approach-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach IV",
-    "text": "The Bellman approach IV\n\n\nThe calculation of the optimal strategy are very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact number of opportunities / time in the casino (length of the interval).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution."
+    "text": "The Bellman approach IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#the-bellman-approach-v",
+    "href": "part-02/lecture-presentation.html#the-bellman-approach-v",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Bellman approach V",
+    "text": "The Bellman approach V\nCalculated with the following equation: \\[\n\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\n\\] where w is the number of wins and l is the number of loses."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#the-bellman-approach-vi",
+    "href": "part-02/lecture-presentation.html#the-bellman-approach-vi",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Bellman approach VI",
+    "text": "The Bellman approach VI\n\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact number of opportunities/time in the casino (length of the interval).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-i2",
     "href": "part-02/lecture-presentation.html#the-gittins-index-i2",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index I1",
-    "text": "The Gittins Index I1\n\n\nIn the 1970s, the Unilever Corporation asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven several different chemical compounds, what is the quickest way to determine which compound is likely to be effective against a disease?\nGittins found an optimal strategy, abstracted the problem to a general level, and realized that what he had discovered was, in fact, the solution to the multi-armed bandit problem.\n\n\nGittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological). 41 (2)."
+    "text": "The Gittins Index I1\n\n\nIn the 1970s Unilever asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven different compounds, what is the quickest way to determine which is likely to be effective?\nGittins found an optimal strategy and abstracted the problem to a general level.\nHe found the solution to the multi-armed bandit problem.\n\n\nGittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological)."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-ii",
     "href": "part-02/lecture-presentation.html#the-gittins-index-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index II",
-    "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g. cash flows) are discounted1 so that any interval length (including infinity) can be considered.\n\n\nGittins makes a geometric discounting assumption, but the approach can be extended to other discounting assumptions."
+    "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered."
   },
   {
     "objectID": "part-02/lecture-presentation.html#reality-check-discounting",
     "href": "part-02/lecture-presentation.html#reality-check-discounting",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Reality check: Discounting",
-    "text": "Reality check: Discounting\n\n\nDoes discounting future wins make sense?\nRegarding monetary wins, it does. For example due to interest rates and oppurtunity costs.\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?"
+    "text": "Reality check: Discounting\n\n\nDoes discounting future wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs.\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-iii",
     "href": "part-02/lecture-presentation.html#the-gittins-index-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index III",
-    "text": "The Gittins Index III\n\n\nThe Gittins index can be used to any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLets consider our machine A and B example one last time."
+    "text": "The Gittins Index III\n\n\nThe Gittins index can be used for any problems of the form of the multi-armed bandit problem.\nThat means it solves the explore-exploit trade-off.\nLet’s consider our machine A and B example one last time."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-iv",
     "href": "part-02/lecture-presentation.html#the-gittins-index-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index IV",
-    "text": "The Gittins Index IV\n\n\nThe Gittins index considering a discount factor of 90%.\nClear win-stay but no lose-shift pattern.\nAt (0,0) we see the exploration bonus (premium).\nConvergence to 1/2 for a 50/50 chance game.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373"
+    "text": "The Gittins Index IV\n\n\nThe Gittins index considers a discount factor of 90%.\nClear win-stay but no lose-shift pattern.\nAt (0,0) we see the exploration bonus (premium).\nConvergence to 1/2 for a 50/50 chance game."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-v",
     "href": "part-02/lecture-presentation.html#the-gittins-index-v",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index V",
-    "text": "The Gittins Index V\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373\n\n\n\n\nQuestion: What does the Gittins index tell us about the trade-off between machine A and B?"
+    "text": "The Gittins Index V\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-vi",
     "href": "part-02/lecture-presentation.html#the-gittins-index-vi",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index VI",
-    "text": "The Gittins Index VI\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\)."
+    "text": "The Gittins Index VI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n0\n.7029\n.8001\n.8452\n.8723\n.8905\n.9039\n.9141\n.9221\n.9287\n.9342\n\n\n1\n.5001\n.6346\n.7072\n.7539\n.7869\n.8115\n.8307\n.8461\n.8588\n.8695\n\n\n2\n.3796\n.5163\n.6010\n.6579\n.6996\n.7318\n.7573\n.7782\n.7956\n.8103\n\n\n3\n.3021\n.4342\n.5184\n.5809\n.6276\n.6642\n.6940\n.7187\n.7396\n.7573\n\n\n4\n.2488\n.3720\n.4561\n.5179\n.5676\n.6071\n.6395\n.6666\n.6899\n.7101\n\n\n5\n.2103\n.3245\n.4058\n.4677\n.5168\n.5581\n.5923\n.6212\n.6461\n.6677\n\n\n6\n.1815\n.2871\n.3647\n.4257\n.4748\n.5156\n.5510\n.5811\n.6071\n.6300\n\n\n7\n.1591\n.2569\n.3308\n.3900\n.4387\n.4795\n.5144\n.5454\n.5723\n.5960\n\n\n8\n.1413\n.2323\n.3025\n.3595\n.4073\n.4479\n.4828\n.5134\n.5409\n.5652\n\n\n9\n.1269\n.2116\n.2784\n.3332\n.3799\n.4200\n.4548\n.4853\n.5125\n.5373\n\n\n\n\n\nQuestion: What does the Gittins index tell us about the trade-off between machine A and B?"
   },
   {
-    "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-summary-i",
-    "href": "part-02/lecture-presentation.html#explore-vs-exploit-summary-i",
+    "objectID": "part-02/lecture-presentation.html#the-gittins-index-vii",
+    "href": "part-02/lecture-presentation.html#the-gittins-index-vii",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Explore vs Exploit: Summary I",
-    "text": "Explore vs Exploit: Summary I\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.\nExploring comes with an unknown outcome E(B) = ?.\nWhat should you do according to decision science?"
+    "section": "The Gittins Index VII",
+    "text": "The Gittins Index VII\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\)."
   },
   {
-    "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-summary-ii",
-    "href": "part-02/lecture-presentation.html#explore-vs-exploit-summary-ii",
+    "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-summary-1",
+    "href": "part-02/lecture-presentation.html#explore-vs-exploit-summary-1",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Explore vs Exploit: Summary II",
-    "text": "Explore vs Exploit: Summary II\n\n\nAnecdotally:\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(B).\nIf you have a short interval, you should exploit, choose A.\n\nMathematically:\n\nIf E(A) and E(B) are known, choose the higher expected value.\nIf E(B) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(B) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy."
+    "section": "Explore vs Exploit: Summary",
+    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6.\nExploring comes with an unknown outcome E(B) = ?.\nWhat should you do according to decision science?"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-anecdotally",
+    "href": "part-02/lecture-presentation.html#explore-vs-exploit-anecdotally",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Explore vs Exploit: Anecdotally",
+    "text": "Explore vs Exploit: Anecdotally\n\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(B).\nIf you have a short interval, you should exploit, choose A."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-mathematically",
+    "href": "part-02/lecture-presentation.html#explore-vs-exploit-mathematically",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Explore vs Exploit: Mathematically",
+    "text": "Explore vs Exploit: Mathematically\n\n\nIf E(A) and E(B) are known, choose higher expected value.\nIf E(B) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(B) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy."
   },
   {
     "objectID": "part-02/lecture-presentation.html#explore-vs-exploit-key-takeaways",
     "href": "part-02/lecture-presentation.html#explore-vs-exploit-key-takeaways",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Key Takeaways",
-    "text": "Explore vs Exploit: Key Takeaways\n\n\n“The grass is always greener on the other side of the fence.”\nThe math tells us why:\nExploration in it self has a value, since trying new things increases our chance of finding the best.\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…"
+    "text": "Explore vs Exploit: Key Takeaways\n\n“The grass is always greener on the other side of the fence.”\n\n\n\nThe math tells us why:\nExploration in it self has a value, since trying new things increases our chance of finding the best.\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…"
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#interesting-literature-to-start",
+    "href": "part-02/lecture-presentation.html#interesting-literature-to-start",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#books-on-programming",
+    "href": "part-02/lecture-presentation.html#books-on-programming",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Books on Programming",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#more-literature",
+    "href": "part-02/lecture-presentation.html#more-literature",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "More Literature",
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course."
   },
   {
     "objectID": "part-02/tutorial-05-loops.html",
