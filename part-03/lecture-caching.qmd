@@ -1,13 +1,10 @@
 ---
-title: "Lecture I - Introduction"
-subtitle: "Programming with Python"
-author: "Dr. Tobias Vlćek"
-institute: "Kühne Logistics University Hamburg - Fall 2024"
+title: "Lecture III - Caching"
+subtitle: "Programming: Everyday Decision-Making Algorithms"
+author: "Dr. Nils Roemer"
+institute: "Kühne Logistics University Hamburg - Winter 2024"
 title-slide-attributes:
-    data-background-color: "#FFE0D3"
-
-execute:
-    echo: true
+    data-background-color: "#8C3048"
 
 format:
     revealjs:
@@ -18,17 +15,359 @@ format:
         code-overflow: wrap
         slide-number: true
         code-copy: true
-        code-link: true
-        preview-links: auto
-        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-introduction.qmd)"
+        height: 750
+        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-explore-exploit.qmd)"
         output-file: lecture-presentation.html
-
     html:
-        theme: litera
+        theme: [litera, ../styles_html.scss]
 
-    pdf:
-        documentclass: report
-
+execute:
+    freeze: auto
+    echo: true
 ---
 
+# [Caching]{.flow} {.title}       
 
+## Caching: Making the most of limited resources
+
+> In the practical use of our intellect, forgetting is as important a function as remembering.
+> -- [William James]
+
+- Today's lecture is on caching.
+- The discussed topics are highly relevant for everything that has to do with computers and data.
+- On top of that, caching is another very important concept for our everyday decision-making.
+
+## Let's approach the topic using an everyday decision-making situation
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- We have a problem: Our cupboard.
+- It's time to put things in order.
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Closet-1.png)
+:::
+:::
+
+## [Question:]{.question} What could we do?
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- Better organization
+- Clearing out things we no longer need 
+- Now we have two problems:
+    - Storing?
+    - Clearing out?
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Closet-2.png)
+:::
+:::
+
+## Storing
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+**How to bring order to storage?**
+
+- Subdivide storage
+- Efficient sorting
+- Increase capacity
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Closet-2.png)
+:::
+:::
+
+## Subdivide storage and efficient sorting Outcome
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- Time investment can improve storing.
+- That is a difficult trade-off in itself.
+- Nontheless: Each storage has a limited capacity.
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Closet-2.png)
+:::
+:::
+
+## [Question:]{.question} What do we do, when the storage is full?
+
+::: {style="text-align: center;"}
+
+![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="80%"}
+
+**We could increase the capacity**
+:::
+
+## But...
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- Increase capacity is costly.
+- There is a trade-off between size and speed.
+- Sooner or later, every storage will fill up if not cleared out.
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Closet-3.png)
+:::
+:::
+
+## [Question:]{.question} What types of storages can you imagine that are affected by this?
+
+:::{.incremental}
+- Our cupboard
+- Our computer (hard drive, RAM, cache, ...)
+- Our brain?!
+:::
+
+## [Question:]{.question} What is the impact of a full storage?
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- Access speed drops significantly
+- Processing time increases
+- Overall performance decreases
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Closet-3.png)
+:::
+:::
+
+## Now we see, why clearing out is so important
+
+:::{.incremental}
+- And that goes for our cupboard as well as for computers and other storages...
+- But what stays and what goes?
+- [Question:]{.question} What replacement/eviction policies can you imagine?
+    - Random Eviction
+    - First-In, First-Out (FIFO)
+    - Least Recently Used (LRU)
+:::
+
+## Once again, we can learn a lot from the computer sciences.
+
+**The evolution of computer memory**
+- In the 1950s, computer science faced the same question…
+- …and has faced it repeatedly since then.
+- Processors have become faster and faster (Moore's Law).
+- The demands on memory also grew.
+
+## CPU
+
+- The processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the "brain" of the system.
+- It executes instructions and performs calculations, to process data and run programs.
+
+## Problem: Access Time
+
+::: {style="text-align: center;"}
+```{mermaid}
+%%| echo: false
+flowchart LR
+    subgraph Memory
+    A["Input Data"]
+    end
+    
+    subgraph CPU
+    B["Processing Data"]
+    end
+    
+    subgraph Memory
+    C["Output Data"]
+    end
+    
+    A --> B --> C
+    
+    style Memory fill:white,stroke:#01579B,stroke-width:4px
+    style CPU fill:white,stroke:#01579B,stroke-width:4px
+    style Memory fill:white,stroke:#01579B,stroke-width:4px
+    style A fill:white
+    style B fill:white
+    style C fill:white
+```
+:::
+
+**Problem:** No matter how much faster the processor gets, if input data isn't available fast enough or can't be stored quickly enough, the system won't become faster overall.
+
+
+[Question:]{.question} What is the solution?
+
+## Cache - Hierarchical memory pyramid for efficient data management
+:::{.incremental}
+- L1 Cache, directly on CPU, very fast access time.
+- L2 Cache, between L1 and main memory.
+- RAM memory.
+- Mass Storage (hard drive).
+- The whole memory system works like a library.
+- Find an explanation here: https://www.techtarget.com/searchstorage/definition/cache
+:::
+
+## Cache - Size and Speed trade-off
+
+::: {style="text-align: center;"}
+
+![](https://i.imgur.com/suD65Rs.png)
+
+:::
+
+## Library Principle
+
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- Library storage (5 million books, Mass Storage)
+- Subject locations (100K books, RAM)
+- Desk (5 borrowed books, L2)
+- Short-term memory (L1)
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Desk-1.png)
+:::
+:::
+
+# Library Principle
+
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- The access times for the L1 and L2 cache are only so high because they only contain the most necessary data.
+- The same should apply to your desk. 
+- Therefore, both must be cleared regularly.
+:::
+::: {.column width="50%"}
+![](https://images.beyondsimulations.com/alg/Desk-2.png)
+:::
+:::
+
+## How to clear up your?
+
+- Optimal: Clairvoyance
+    - Store everything in the cache that will be needed
+    - Delete everything from the cache that won't be needed
+- [Question:]{.question} What is the problem with this strategy?
+- Optimal strategy not achievable in reality
+
+## Realisable strategies?
+
+- Least recently used is the dominant strategy.
+- Evicts the least recently accessed item from the cache when space is needed.
+- Leads to much better performance on average than, for example, random eviction.
+- [Question:]{.question} Why do you think least recently used is the better strategy?
+
+## Managerial and personal insights:
+
+- Let go of things you haven’t used in ages
+- Keep things where they are used
+- Both have been proven to contribute to a significant increase in productivity
+    
+## The strong limitations of caches make them a "security risk".
+
+- Denial-of-Service Attacks (DoS) attacks.
+    - Cache Flooding
+    - Cache Poisoning
+- Overload a system with excessive requests or data.
+- Causing it to slow down or crash.
+- The system is forced to evict important data.
+
+## [Question:]{.question} Why are the findings about cache so important for humans?
+
+>Your Brain is a Cache, Not a Database -[Joe Chrysler]
+
+## Weaknesses of efficient memory systems also apply to the human brain.
+
+Productivity and creativity are negatively affected by:
+
+- Overload (too much)
+- Exhaustion (too long)
+- Context switching (interruption of "flow", 23 minutes to get back on track)
+- Distraction (Cache Flooding)
+- Fake News (Cache Poisoning)
+
+This can lead to burnout.
+
+## [Question:]{.question} What do you think should we do about it?
+
+## Stolen Focus: Why You Can’t Pay Attention - Key Insights I 
+
+**Main Idea:**
+
+- Modern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.
+- The reason for that has much to do with the way our brain works and how we interact with technology.
+
+## Stolen Focus: Why You Can’t Pay Attention - Key Insights II
+
+**Key Causes of Attention Loss:**
+
+- Technology & Social Media: Designed to capture and keep attention, leading to fragmented focus.
+- Constant Interruptions: Notifications and multitasking disrupt deep work and concentration.
+- Environmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function.
+
+## Stolen Focus: Why You Can’t Pay Attention - Key Insights III
+
+**Consequences:**
+
+- Reduced ability to think critically and creatively.
+- Difficulty sustaining attention on meaningful tasks.
+
+## Stolen Focus: Why You Can’t Pay Attention - Key Insights IV
+
+**Solutions Suggested:**
+
+- Limit screen time and practice "monotasking."
+- Prioritize sleep, nutrition, and mindful habits.
+
+## Stolen Focus: Why You Can’t Pay Attention - Key Insights V
+
+- You can find a comprehensive summary here: 
+
+> https://www.youtube.com/watch?v=DqlywBxYELw
+
+- But even better: read the book!
+
+## Stolen Focus: Why You Can’t Pay Attention - Key Insights VI
+
+::: {style="text-align: center;"}
+
+![](https://m.media-amazon.com/images/I/71OfQycq2ZL._SL1500_.jpg)
+
+:::
+
+# Mitigation
+
+- Distraction can hardly be avoided in today’s world but can be mitigated. 
+- This is particularly important for managers.
+- This lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.
+
+## Awareness I
+
+**Train awareness**
+
+- Spotlight – immediate goals – Focus
+- Starlight – medium-term goals – Wishes
+- Daylight – long-term goals – Values
+
+## Awareness II
+
+- Prioritization
+- Structure (Schedule)
+- Breaks
+- Enable flow (dedicated workspace, manage notifications, clear communication)
+- Meditation & exercise
+
+# [Literature]{.flow} {.title}
+
+## Interesting literature to start
+
+- Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^4]
+- Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493. 
+
+[^4]: The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.
+
+
+## Books on Programming
+
+- Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
+- Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
+
+. . .
+
+::: {.callout-note}
+Think Python is a great book to start with. It's available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.
+::: 
+
+## More Literature
+
+For more interesting literature, take a look at the [literature list](../general/literature.qmd) of this course.
