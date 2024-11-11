@@ -1,207 +1,201 @@
 ---
-title: "Tutorial III.I - Functions in Julia"
-subtitle: "Applied Optimization with Julia"
+title: "Tutorial III.II - Functions"
+subtitle: "Programming: Everyday Decision-Making Algorithms"
 
 format:
     html:
-        theme: litera
-        highlight-style: arrow
-        linkcolor: "#a60000"
-        code-copy: true
-        code-link: true
-        toc: true
-        toc-location: right
-        code-overflow: wrap
+        theme: [litera, ../styles_html.scss]
     pdf: 
         documentclass: report
-        geometry:
-            - margin=1in
-        fontfamily: roboto
-        fontfamilyoptions: sfdefault
-        colorlinks: true     
     ipynb:
         code-copy: true
         code-overflow: wrap
-
-engine: julia
 ---
 
 # Introduction
 
-Imagine you have a helpful worker. Instead of explaining every little task to it each time, you can teach it specific jobs once, and then just ask it to do those jobs later. In programming, these "jobs" are called functions! This tutorial will show you how to create and use functions in Julia, making your code more organized and reusable.
+Imagine you're a librarian who needs to organize and retrieve books efficiently. Instead of explaining every step of finding a book each time, wouldn't it be nice to have a set of standard procedures? In programming, **these procedures are called functions!** They help us organize our code into **reusable blocks**, just like having standard procedures in a library.
 
-Follow the instructions, input your code in the designated areas, and verify your implementations with `@assert` statements.
+This tutorial will teach you about functions using a library management system as an example. We'll create functions to help us manage books, track their popularity, and implement a simple caching system.
 
-# Section 1 - Creating and Calling Functions
+# Section 1 - Creating Basic Functions
 
-Functions in Julia encapsulate reusable code and can be defined using the `function` keyword or shorthand syntax. After the keyword, you name the function and write the parameters in parentheses. Later, you can call the function by writing the name of the function followed by the parameters in parentheses.
+Functions in Python are like recipes: they have a name, might need ingredients (parameters), follow steps (code), and usually produce something (return value). Let's start with a simple function:
 
-Thus, think of a function like a recipe:
-
-1. It has a name (like "say_something")
-2. It might need ingredients (our "parameters")
-3. It has steps to follow (the code inside the function)
-4. It usually produces something (we call this the "return value")
-
-Let's see some examples:
-
-```{julia}
-# A simple function to greet someone
-function say_hello(name)
-    return "Hello, $(name)!"
-end
+```{python}
+# A simple function to greet library visitors
+def greet_visitor(name):
+    return f"Welcome to the library, {name}!"
 
 # Using our function
-message = say_hello("Elio")
+message = greet_visitor("Tobias")
+print(message)
 ```
 
-```{julia}
-function multiply(a,b)
-   a * b
-end
-multiply(10, 5)
+The structure is:
+
+1. The `def` keyword to start defining a function
+2. A function name (like `greet_visitor`)
+3. Parameters in parentheses (like `name`)
+4. A colon `:` to start the function body
+5. Indented code that makes up the function
+6. Optional `return` statement to send back a value
+
+The following illustrates this in a more generic form:
+
+```{python}
+def function_name(parameter1, parameter2):  # ← Function signature
+    # Function body
+    result = parameter1 + parameter2        # ← Processing
+    return result                           # ← Return value
 ```
 
-The second function takes two parameters, multiplies them, and returns the result implicitly. In Julia, the last expression is automatically returned, making the `return` keyword optional. If you explicitly use the `return` keyword in the function, it will return the value immediately once the function encounters the keyword and stops the further execution of the function. That way, you can also use the keyword in conditional statements and use it to return a value based on a condition. For example:
+## Exercise 1.1 - Create a Book Information Function
 
-```{julia}
-function do_something(a,b)
-   if a > b
-      return a * b
-   else
-      return a + b
-   end
-end
-println("The result of do_something(10, 5) is $(do_something(10, 5))")
-println("The result of do_something(5, 10) is $(do_something(5, 10))")
+Create a function called `get_book_info` that takes three parameters: `title`, `author`, and `year`. It should return a formatted string with the book's information.
+```{python}
+#| eval: false
+# If you call the function like this:
+# get_book_info("Return", "Alan Wake", 2023)
+# it should return the string:
+# "Return by Alan Wake (2023)"
+# YOUR CODE BELOW
+
+```
+```{python}
+#| eval: false
+#| code-fold: true
+# Assertions to verify your solution
+assert get_book_info("1984", "George Orwell", 1949) == "1984 by George Orwell (1949)"
+print("Great job! Your book information function works as expected!")
 ```
 
-:::{.callout-tip}
-Functions are like teaching a robot new skills:
+# Section 2 - Functions with Decision Making
 
-- The function name is like the skill name (e.g., "make_sandwich")
-- Parameters are things the robot needs to do the job (e.g., bread, filling)
-- The code inside are the steps to follow
-- The return value is the finished product
-:::
+Functions can contain any code we've learned before, including if statements. This is useful for making decisions within our functions:
 
-## Exercise 1.1 - Define and Test a Simple Addition Function
+```{python}
+def is_book_available(copies_available, on_hold):
+    if copies_available > 0 and not on_hold:
+        return True
+    else:
+        return False
 
-Define and test a simple addition function. Define a function `add` that takes two parameters and returns their sum.
+# Test the function
+print("The book is available:", is_book_available(3, False))
+print("The book is available:", is_book_available(0, False))
+```
 
-```{julia}
+Here we use an `if` statement to check if the book is available. If the book is available, we return `True`, otherwise we return `False`. As soon as one of the conditions (in this case `copies_available > 0`) is met, the function returns and does not check the other conditions.
+
+## Exercise 2.1 - Create a Function to Check if a Book is Popular
+
+Create a function called `is_popular` that takes a single parameter `rating`. If the rating is greater than 3, it should return `True`, otherwise it should return `False`.
+
+```{python}
 #| eval: false
 # YOUR CODE BELOW
 
 ```
-```{julia}
+```{python}
 #| eval: false
 #| code-fold: true
-# Test your answer
-@assert add(10, 5) == 15 "The sum computed is $(add(10, 5)) but should be 15."
-println("The sum computed is $(add(10, 5)), wonderful!")
+# Assertions to verify your solution
+assert is_popular(4) == True "A rating of 4 or higher is considered popular"
+assert is_popular(2) == False "A rating of 3 or lower is not popular"
+print("Excellent! Your popular book function works correctly!")
 ```
 
-# Section 2 - Scope within Functions
+## Exercise 2.2 - Create a Book Access Function
 
-When you create variables inside a function, they're like secret ingredients - they only exist inside that function's "kitchen". We call this "local scope". Thus, variables declared inside a function are local to that function and are not accessible outside. 
+Many libraries have borrowing policies that depend on multiple factors. Let's implement a realistic borrowing policy function that a library might use. Create a function called `can_borrow_book` that takes three parameters:
 
-```{julia}
-#| eval: true
-function bake_cake()
-    secret_ingredient = "vanilla extract"
-    println("Adding the secret ingredient: $secret_ingredient")
-end
-bake_cake()  # This works fine
-```
-```{julia}
-#| eval: false
-# But this would cause an error:
-println(secret_ingredient)
-```
+- `is_member`: boolean indicating if the person is a library member
+- `books_borrowed`: number of books currently borrowed
+- `has_overdue`: boolean indicating if they have overdue books
 
-If you want to access the variable outside of the function, you have to explicitly return it. You can do this by passing `return` in front of the variable you want to return from the function.
+The function should return `True` only if:
 
-## Exercise 2.1 - Return a Local Variable
+- They are a member AND
+- They have borrowed less than 3 books AND
+- They have no overdue books
 
-Try to execute the following block of code. The objective is to understand how to return the `local_variable_one` from the function `scope_test`. Your task is to change the function, to return the value of `local_variable_one`.
-
-```{julia}
-#| eval: false
-# YOUR CHANGES BELOW
-function scope_test()
-    local_variable_one = 10
-    local_variable_two = 20
-end
-# YOUR CHANGES ABOVE
-```
-```{julia}
-#| eval: false
-# Test your function
-@assert scope_test() == 10 "The value exported is $(scope_test())."
-println("The value exported is $(scope_test()), you solved it!")
-```
-
-## Exercise 2.2 - Define an Implicit Return Function
-
-Define and test an implicit return function. Define a function `subtract` that takes two parameters and implicitly returns their difference. The implicit return feature makes your code cleaner and more concise.
-
-```{julia}
-#| eval: false
+```{python}
 # YOUR CODE BELOW
 
 ```
-```{julia}
+```{python}
+#| eval: false
+#| code-fold: true
+# Assertions to verify your solution
+assert can_borrow_book(True, 2, False) == True "Should allow borrowing"
+assert can_borrow_book(True, 3, False) == False "Should not allow more than 3 books"
+assert can_borrow_book(True, 1, True) == False "Should not allow with overdue books"
+print("Excellent! Your borrowing function works as it should!")
+```
+
+
+# Section 3 - Functions with Default Parameters
+
+Sometimes we want functions to have default values for parameters. This makes them more flexible:
+
+```{python}
+def calculate_fine(days_overdue, rate_per_day=0.50):
+    return days_overdue * rate_per_day
+
+# Using default rate
+print(f"The fine for 5 days overdue with the default rate is {calculate_fine(5)}")
+# Using custom rate
+print(f"The fine for 5 days overdue with a custom rate is {calculate_fine(5, 1.00)}")
+```
+
+## Exercise 3.1 - Create a Cache Priority Function
+
+Create a function called `calculate_cache_priority` that helps decide if a book should be kept in the easily accessible section. It should take:
+
+- `times_borrowed`: How many times the book was borrowed
+- `days_since_last_borrow`: Days since last borrowed
+- `is_reference`: Whether it's a reference book (default: False)
+
+Return a priority score calculated as:
+
+- For regular books: `times_borrowed / (days_since_last_borrow + 1)`
+- For reference books: `2 * (times_borrowed / (days_since_last_borrow + 1))`
+
+```{python}
+# YOUR CODE BELOW
+
+``` 
+```{python}
 #| eval: false
 #| code-fold: true
 # Test your answer
-@assert subtract(10, 5) == 5  "The difference computed is $(subtract(10, 5)) but should be 5."
-println("The difference computed is $(subtract(10, 5)), perfect!")
+assert calculate_cache_priority(10, 5) == 10/(5+1) "Check your regular book calculation"
+assert calculate_cache_priority(10, 5, True) == 2(10/(5+1)) "Check your reference book calculation"
+print("Great! Your cache priority function works and calculates correctly!")
 ```
 
-# Section 3 - Multiple Dispatch
-
-Multiple dispatch in Julia allows defining function behavior based on argument types, promoting code reuse and clarity. It's a powerful feature for designing flexible and extensible functions. We first define a generic version and then provide specific implementations for different types:
-
-```{julia}
-#| eval: true
-# Generic operation for objects of all types.
-function operation(a, b)
-    "Generic operation for objects of type $(typeof(a)) and $(typeof(b))"
-end
-
-# The specific implementations are:
-operation(a::Number, b::Number) = a + b        # Specific method for Number types.
-operation(a::String, b::String) = string(a, b) # Specific method for String types.
-
-# Test with different types of arguments.
-result1 = operation(10, 20)
-println(result1)
-result2 = operation("Hello, ", "World!")
-println(result2)
-result3 = operation("Hello, ", 20)
-println(result3)
-```
-
-## Exercise 3.1 - Match Results to Assertions
-
-Match the results from the previous example to the correct assertions:
-
-```{julia}
-#| eval: false
-# YOUR CHANGES BELOW
-@assert result2 == 30 "result1 should be the sum of two numbers"
-@assert result3 == "Hello, World!" "result2 should be the concatenation of two strings"
-@assert result1 == "Generic operation for objects of type String and Int64" "result3 should use the generic operation"
-println("You solved it, the assertions are now correct!")
-```
-
-::: {.callout-tip}
-**Hint**: Look at the types of arguments used in each `operation` call and match them to the appropriate method.
-:::
 
 # Conclusion
 
-Great work! You've just completed the tutorial on functions in Julia. You now have a first understanding of how to create, use, and understand functions in Julia. Continue to the next file to learn more.
+Excellent work! You've learned how to create and use functions in Python through the lens of library management. You now know how to:
+
+- Create basic functions with parameters
+- Use functions with decision-making logic
+- Work with default parameters
+- Return values from functions
+
+Remember:
+
+- Functions help us organize and reuse code
+- They make our code more readable and maintainable
+- They can take inputs (parameters) and produce outputs (return values)
+- They can have default values for parameters
+
+In a real library system, functions like these would be part of a larger caching system that helps optimize book retrieval times and improve user experience!
 
 {{< include ../include/tutorial_end.qmd >}}
+
+---
+
+*In the next tutorial, we'll take a look on how to import packages and libraries to extend our functionality!*
