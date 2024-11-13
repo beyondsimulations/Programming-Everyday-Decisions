@@ -44,6 +44,16 @@ website:
             href: part-02/tutorial-05-loops.qmd
           - text: "06 - Exploration"
             href: part-02/tutorial-06-explore-exploit.qmd
+      - section: "03 Caching"
+        contents:
+          - text: "Lecture"
+            href: part-03/lecture-caching.qmd
+          - text: "07 - Recap"
+            href: part-03/tutorial-07-recap.qmd
+          - text: "08 - Functions"
+            href: part-03/tutorial-08-functions.qmd
+          - text: "09 - Packages"
+            href: part-03/tutorial-09-packages.qmd
       - text: "***"
       - text: "FAQs"
         href: general/faq.qmd
