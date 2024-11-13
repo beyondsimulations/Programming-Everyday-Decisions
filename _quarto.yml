@@ -6,6 +6,7 @@ project:
     - general/*.qmd
     - part-01/*.qmd
     - part-02/*.qmd
+    - part-03/*.qmd
 
 website:
   title: "Programming: Everyday Decision-Making Algorithms"
@@ -48,6 +49,8 @@ website:
         href: general/faq.qmd
       - text: "Literature"
         href: general/literature.qmd
+      - text: "Cheatsheet"
+        href: general/cheatsheet.qmd
   page-footer: 
     center: "Programming: Everyday Decision-Making Algorithms</br>Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0" 
     right: 
