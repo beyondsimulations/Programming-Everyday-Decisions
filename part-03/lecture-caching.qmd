@@ -30,14 +30,17 @@ execute:
 
 ## Caching: Making the most of limited resources
 
+:::{.incremental}
 > In the practical use of our intellect, forgetting is as important a function as remembering.
 > -- [William James]
 
 - Today's lecture is on caching.
 - The discussed topics are highly relevant for everything that has to do with computers and data.
 - On top of that, caching is another very important concept for our everyday decision-making.
+:::
 
 ## Let's approach the topic using an everyday decision-making situation
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 - We have a problem: Our cupboard.
@@ -47,8 +50,10 @@ execute:
 ![](https://images.beyondsimulations.com/alg/Closet-1.png)
 :::
 :::
+:::
 
 ## [Question:]{.question} What could we do?
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 - Better organization
@@ -61,8 +66,11 @@ execute:
 ![](https://images.beyondsimulations.com/alg/Closet-2.png)
 :::
 :::
+:::
 
 ## Storing
+
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 **How to bring order to storage?**
@@ -75,8 +83,10 @@ execute:
 ![](https://images.beyondsimulations.com/alg/Closet-2.png)
 :::
 :::
+:::
 
 ## Subdivide storage and efficient sorting Outcome
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 - Time investment can improve storing.
@@ -87,17 +97,19 @@ execute:
 ![](https://images.beyondsimulations.com/alg/Closet-2.png)
 :::
 :::
+:::
 
 ## [Question:]{.question} What do we do, when the storage is full?
 
 ::: {style="text-align: center;"}
 
-![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="80%"}
+![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="60%"}
 
 **We could increase the capacity**
 :::
 
 ## But...
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 - Increase capacity is costly.
@@ -106,6 +118,7 @@ execute:
 :::
 ::: {.column width="50%"}
 ![](https://images.beyondsimulations.com/alg/Closet-3.png)
+:::
 :::
 :::
 
@@ -118,6 +131,7 @@ execute:
 :::
 
 ## [Question:]{.question} What is the impact of a full storage?
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 - Access speed drops significantly
@@ -128,33 +142,43 @@ execute:
 ![](https://images.beyondsimulations.com/alg/Closet-3.png)
 :::
 :::
+:::
 
 ## Now we see, why clearing out is so important
 
 :::{.incremental}
 - And that goes for our cupboard as well as for computers and other storages...
 - But what stays and what goes?
-- [Question:]{.question} What replacement/eviction policies can you imagine?
-    - Random Eviction
-    - First-In, First-Out (FIFO)
-    - Least Recently Used (LRU)
+:::
+
+## [Question:]{.question} What replacement/eviction policies can you imagine?
+    
+:::{.incremental}
+- Random Eviction
+- First-In, First-Out (FIFO)
+- Least Recently Used (LRU)
 :::
 
 ## Once again, we can learn a lot from the computer sciences.
 
+:::{.incremental}
 **The evolution of computer memory**
+
 - In the 1950s, computer science faced the same question…
 - …and has faced it repeatedly since then.
 - Processors have become faster and faster (Moore's Law).
 - The demands on memory also grew.
+:::
 
 ## CPU
 
+:::{.incremental}
 - The processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the "brain" of the system.
 - It executes instructions and performs calculations, to process data and run programs.
+:::
 
 ## Problem: Access Time
-
+:::{.incremental}
 ::: {style="text-align: center;"}
 ```{mermaid}
 %%| echo: false
@@ -184,11 +208,13 @@ flowchart LR
 
 **Problem:** No matter how much faster the processor gets, if input data isn't available fast enough or can't be stored quickly enough, the system won't become faster overall.
 
-
 [Question:]{.question} What is the solution?
+:::
 
-## Cache - Hierarchical memory pyramid for efficient data management
+## Cache
 :::{.incremental}
+**Hierarchical memory pyramid for efficient data management**
+
 - L1 Cache, directly on CPU, very fast access time.
 - L2 Cache, between L1 and main memory.
 - RAM memory.
@@ -200,13 +226,14 @@ flowchart LR
 ## Cache - Size and Speed trade-off
 
 ::: {style="text-align: center;"}
+![](https://i.imgur.com/suD65Rs.png){width="80%"}
 
-![](https://i.imgur.com/suD65Rs.png)
-
+**Registers are 10 million times faster than the hard drive!**
 :::
 
 ## Library Principle
 
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
 - Library storage (5 million books, Mass Storage)
@@ -218,12 +245,14 @@ flowchart LR
 ![](https://images.beyondsimulations.com/alg/Desk-1.png)
 :::
 :::
+:::
 
 # Library Principle
 
+:::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
-- The access times for the L1 and L2 cache are only so high because they only contain the most necessary data.
+- L1 and L2 cache only contain most necessary data.
 - The same should apply to your desk. 
 - Therefore, both must be cleared regularly.
 :::
@@ -231,121 +260,161 @@ flowchart LR
 ![](https://images.beyondsimulations.com/alg/Desk-2.png)
 :::
 :::
+:::
 
-## How to clear up your?
+## How to clear up?
 
+:::{.incremental}
 - Optimal: Clairvoyance
     - Store everything in the cache that will be needed
     - Delete everything from the cache that won't be needed
 - [Question:]{.question} What is the problem with this strategy?
 - Optimal strategy not achievable in reality
+:::
 
 ## Realisable strategies?
 
+:::{.incremental}
 - Least recently used is the dominant strategy.
 - Evicts the least recently accessed item from the cache when space is needed.
 - Leads to much better performance on average than, for example, random eviction.
 - [Question:]{.question} Why do you think least recently used is the better strategy?
+:::
 
 ## Managerial and personal insights:
 
+:::{.incremental}
 - Let go of things you haven’t used in ages
 - Keep things where they are used
 - Both have been proven to contribute to a significant increase in productivity
-    
+:::
+
+## Keeping things where they are used...
+
+::: {style="text-align: center;"}
+
+![](https://images.beyondsimulations.com/alg/Bed.png){width="40%"}
+
+**Might be optimal, in a mathematical sense**
+:::
+
 ## The strong limitations of caches make them a "security risk".
 
+:::{.incremental}
 - Denial-of-Service Attacks (DoS) attacks.
     - Cache Flooding
     - Cache Poisoning
 - Overload a system with excessive requests or data.
 - Causing it to slow down or crash.
 - The system is forced to evict important data.
+:::
 
 ## [Question:]{.question} Why are the findings about cache so important for humans?
 
+## [Question:]{.question} Why are the findings about cache so important for humans?
 >Your Brain is a Cache, Not a Database -[Joe Chrysler]
 
-## Weaknesses of efficient memory systems also apply to the human brain.
+## Our brain has similar weaknesses
 
-Productivity and creativity are negatively affected by:
+:::{.incremental}
+**Productivity and creativity are negatively affected by:**
 
 - Overload (too much)
 - Exhaustion (too long)
 - Context switching (interruption of "flow", 23 minutes to get back on track)
 - Distraction (Cache Flooding)
 - Fake News (Cache Poisoning)
+- **This can lead to burnout.**
 
-This can lead to burnout.
+
+:::
 
 ## [Question:]{.question} What do you think should we do about it?
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights I 
 
+:::{.incremental}
 **Main Idea:**
 
 - Modern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.
 - The reason for that has much to do with the way our brain works and how we interact with technology.
+:::
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights II
 
+:::{.incremental}
 **Key Causes of Attention Loss:**
 
 - Technology & Social Media: Designed to capture and keep attention, leading to fragmented focus.
 - Constant Interruptions: Notifications and multitasking disrupt deep work and concentration.
 - Environmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function.
+:::
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights III
 
+:::{.incremental}
 **Consequences:**
 
 - Reduced ability to think critically and creatively.
 - Difficulty sustaining attention on meaningful tasks.
+:::
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights IV
 
+:::{.incremental}
 **Solutions Suggested:**
 
 - Limit screen time and practice "monotasking."
 - Prioritize sleep, nutrition, and mindful habits.
-
+:::
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights V
 
-- You can find a comprehensive summary here: 
-
-> https://www.youtube.com/watch?v=DqlywBxYELw
-
+:::{.incremental}
+::: {layout="[[50,50]]"}
+::: {.column width="50%"}
+- You can find a comprehensive summary on youtube.
 - But even better: read the book!
+:::
+::: {.column width="50%"}
+{{< video https://www.youtube.com/watch?v=DqlywBxYELw >}}
+:::
+:::
+:::
 
-## Stolen Focus: Why You Can’t Pay Attention - Key Insights VI
+## Stolen Focus: Why You Can’t Pay Attention - Book
 
 ::: {style="text-align: center;"}
 
-![](https://m.media-amazon.com/images/I/71OfQycq2ZL._SL1500_.jpg)
+![](https://m.media-amazon.com/images/I/71OfQycq2ZL._SL1500_.jpg){width="30%"}
 
 :::
 
 # Mitigation
 
+:::{.incremental}
 - Distraction can hardly be avoided in today’s world but can be mitigated. 
 - This is particularly important for managers.
 - This lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.
+:::
 
 ## Awareness I
 
+:::{.incremental}
 **Train awareness**
 
 - Spotlight – immediate goals – Focus
 - Starlight – medium-term goals – Wishes
 - Daylight – long-term goals – Values
-
+:::
 ## Awareness II
 
+:::{.incremental}
 - Prioritization
 - Structure (Schedule)
 - Breaks
 - Enable flow (dedicated workspace, manage notifications, clear communication)
 - Meditation & exercise
+:::
 
 # [Literature]{.flow} {.title}
 
