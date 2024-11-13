@@ -25,15 +25,28 @@ execute:
     freeze: auto
     echo: true
 ---
+# Learning Objectives {.title}
 
-# [Caching]{.flow} {.title}       
+:::{.fragment}
+By the end of this lecture, you will be able to:
+:::
+:::{.incremental}
+- Explain the fundamental concepts of caching and its importance
+- Compare different cache replacement strategies
+- Identify caching principles in everyday life
+- Apply caching concepts to personal productivity
+- Understand the relationship between caching and attention management
+:::
+# [Introduction]{.flow} {.title}       
 
 ## Caching: Making the most of limited resources
 
-:::{.incremental}
+:::{.fragment}
 > In the practical use of our intellect, forgetting is as important a function as remembering.
 > -- [William James]
+:::
 
+:::{.incremental}
 - Today's lecture is on caching.
 - The discussed topics are highly relevant for everything that has to do with computers and data.
 - On top of that, caching is another very important concept for our everyday decision-making.
@@ -85,7 +98,7 @@ execute:
 :::
 :::
 
-## Subdivide storage and efficient sorting Outcome
+## Subdivide storage and efficient sorting outcome
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
@@ -144,6 +157,7 @@ execute:
 :::
 :::
 
+# [Clearing out]{.flow} {.title}   
 ## Now we see, why clearing out is so important
 
 :::{.incremental}
@@ -161,9 +175,10 @@ execute:
 
 ## Once again, we can learn a lot from the computer sciences.
 
-:::{.incremental}
+:::{.fragment}
 **The evolution of computer memory**
-
+:::
+:::{.incremental}
 - In the 1950s, computer science faced the same question…
 - …and has faced it repeatedly since then.
 - Processors have become faster and faster (Moore's Law).
@@ -211,16 +226,20 @@ flowchart LR
 [Question:]{.question} What is the solution?
 :::
 
-## Cache
-:::{.incremental}
-**Hierarchical memory pyramid for efficient data management**
+# [Cache]{.flow} {.title}   
 
+## Cache
+:::{.fragment}
+**Hierarchical memory pyramid for efficient data management**
+:::
+
+:::{.incremental}
 - L1 Cache, directly on CPU, very fast access time.
 - L2 Cache, between L1 and main memory.
 - RAM memory.
 - Mass Storage (hard drive).
 - The whole memory system works like a library.
-- Find an explanation here: https://www.techtarget.com/searchstorage/definition/cache
+- Find an explanation [here](https://www.techtarget.com/searchstorage/definition/cache).
 :::
 
 ## Cache - Size and Speed trade-off
@@ -247,7 +266,7 @@ flowchart LR
 :::
 :::
 
-# Library Principle
+## Library Principle
 
 :::{.incremental}
 ::: {layout="[[50,50]]"}
@@ -261,6 +280,8 @@ flowchart LR
 :::
 :::
 :::
+
+# [Clearing out Strategies]{.flow} {.title}   
 
 ## How to clear up?
 
@@ -298,6 +319,7 @@ flowchart LR
 **Might be optimal, in a mathematical sense**
 :::
 
+# [Productivity]{.flow} {.title}   
 ## The strong limitations of caches make them a "security risk".
 
 :::{.incremental}
@@ -311,40 +333,48 @@ flowchart LR
 
 ## [Question:]{.question} Why are the findings about cache so important for humans?
 
-## [Question:]{.question} Why are the findings about cache so important for humans?
+:::{.fragment}
 >Your Brain is a Cache, Not a Database -[Joe Chrysler]
+:::
 
 ## Our brain has similar weaknesses
 
-:::{.incremental}
+:::{.fragment}
 **Productivity and creativity are negatively affected by:**
+:::
 
+:::{.incremental}
 - Overload (too much)
 - Exhaustion (too long)
 - Context switching (interruption of "flow", 23 minutes to get back on track)
 - Distraction (Cache Flooding)
 - Fake News (Cache Poisoning)
-- **This can lead to burnout.**
+:::
 
-
+:::{.fragment}
+**This can lead to burnout.**
 :::
 
 ## [Question:]{.question} What do you think should we do about it?
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights I 
 
-:::{.incremental}
+:::{.fragment}
 **Main Idea:**
+:::
 
+:::{.incremental}
 - Modern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.
 - The reason for that has much to do with the way our brain works and how we interact with technology.
 :::
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights II
 
-:::{.incremental}
+:::{.fragment}
 **Key Causes of Attention Loss:**
+:::
 
+:::{.incremental}
 - Technology & Social Media: Designed to capture and keep attention, leading to fragmented focus.
 - Constant Interruptions: Notifications and multitasking disrupt deep work and concentration.
 - Environmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function.
@@ -352,35 +382,34 @@ flowchart LR
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights III
 
-:::{.incremental}
+:::{.fragment}
 **Consequences:**
+:::
 
+:::{.incremental}
 - Reduced ability to think critically and creatively.
 - Difficulty sustaining attention on meaningful tasks.
 :::
 
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights IV
 
-:::{.incremental}
+:::{.fragment}
 **Solutions Suggested:**
+:::
 
+:::{.incremental}
 - Limit screen time and practice "monotasking."
 - Prioritize sleep, nutrition, and mindful habits.
 :::
 ## Stolen Focus: Why You Can’t Pay Attention - Key Insights V
 
-:::{.incremental}
-::: {layout="[[50,50]]"}
-::: {.column width="50%"}
-- You can find a comprehensive summary on youtube.
-- But even better: read the book!
-:::
-::: {.column width="50%"}
-{{< video https://www.youtube.com/watch?v=DqlywBxYELw >}}
-:::
-:::
-:::
+::: {style="text-align: center;"}
+{{< video https://www.youtube.com/watch?v=DqlywBxYELw width="80%" height="400px" >}}
 
+:::{.fragment}
+But even better: read the book!
+:::
+:::
 ## Stolen Focus: Why You Can’t Pay Attention - Book
 
 ::: {style="text-align: center;"}
@@ -389,7 +418,8 @@ flowchart LR
 
 :::
 
-# Mitigation
+# [Mitigation]{.flow} {.title}   
+## Mitigation
 
 :::{.incremental}
 - Distraction can hardly be avoided in today’s world but can be mitigated. 
@@ -399,14 +429,21 @@ flowchart LR
 
 ## Awareness I
 
-:::{.incremental}
+:::{.fragment}
 **Train awareness**
+:::
 
+:::{.incremental}
 - Spotlight – immediate goals – Focus
 - Starlight – medium-term goals – Wishes
 - Daylight – long-term goals – Values
 :::
+
 ## Awareness II
+
+:::{.fragment}
+**Prioritization**
+:::
 
 :::{.incremental}
 - Prioritization
@@ -414,6 +451,28 @@ flowchart LR
 - Breaks
 - Enable flow (dedicated workspace, manage notifications, clear communication)
 - Meditation & exercise
+:::
+
+# [Key Takeaways]{.flow} {.title}   
+## Key Takeaways
+
+:::{.incremental}
+- Caching is a universal concept that applies to computers, organizations, and human cognition
+- Efficient cache management requires strategic decisions about what to keep and what to remove
+- LRU (Least Recently Used) is often the most practical replacement strategy
+- Our brain's limitations are similar to computer caches
+- Managing our attention and focus requires understanding these limitations
+:::
+
+## Summary Quiz
+
+[Question:]{.question} Take a moment to reflect:
+
+:::{.incremental}
+1. What are the three main types of cache replacement strategies?
+2. How does the library principle relate to computer memory hierarchy?
+3. What are two ways you can apply caching principles to improve your productivity?
+4. How can understanding cache flooding help protect against information overload?
 :::
 
 # [Literature]{.flow} {.title}
