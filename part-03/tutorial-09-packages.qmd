@@ -14,93 +14,213 @@ format:
 
 # Introduction
 
-Welcome to this beginner-friendly guide on understanding packages and package management in Julia! 
+Welcome to this guided tutorial on understanding packages and package management in Python! We'll explore this concept through the lens of library management - how libraries organize, maintain, and share their resources.
 
-Think of packages as pre-written sets of tools that extend what Julia can do. It's like having a toolbox where you can add new tools (packages) to help you solve specific problems. For example, there are packages for working with data, creating visualizations, or solving complex math problems.
+Think of Python as your local library's main building. Just like a library has:
 
-The best part? Most Julia packages are free to use, thanks to the open-source community!
+- A main collection (Python's standard library)
+- Different sections (third-party packages)
+- A catalog system (pip package manager)
+- Multiple branches (virtual environments)
+
+## In more detail
+
+Let's break this down:
+
+1. **Standard Library**: Like the core collection every library branch has:
+
+   - Python comes with essential tools built-in
+   - Data structures (lists, dictionaries, etc.)
+   - Mathematical functions (sin, cos, sqrt, etc.)
+   - Random numbers (random, choice, etc.)
+
+
+2. **Third-Party Packages**: Similar to specialized sections in a library:
+
+   - Data analysis packages (pandas, numpy) → Research section
+   - Visualization packages (matplotlib, seaborn) → Art books
+   - Web frameworks (Django, Flask) → Technical manuals
+   - Machine learning packages (scikit-learn) → Advanced studies section
+
+3. **Package Manager (pip)**: Works like the library's catalog:
+
+   - Installing packages → Ordering new books
+   - Updating packages → Replacing with newer editions
+   - Uninstalling packages → Removing outdated books
+   - Dependencies → "You must read Book A before Book B"
+
+4. **Virtual Environments**: Works like different library branches:
+
+   - Each branch can have its own collection of books (packages)
+   - Different editions of the same book (package versions)
+   - Specialized sections for different purposes (project-specific dependencies)
+
+**The best part? Most Python packages are free to use, thanks to the open-source community!**
 
 ::: {.callout-note}
-While we'll practice some commands here, you'll typically manage packages in Julia's REPL (Read-Eval-Print Loop), which is like Julia's command center.
+While we'll practice some commands here, you'll typically manage packages in your terminal or IDE.
 :::
 
-# Section 1 - Using the Package Manager
+# Section 1 - Using Standard Libraries
 
-Julia's built-in package manager, Pkg, provides a robust set of tools for managing packages. To utilize these tools, start by importing the Pkg module. This module allows you to add, update, and remove packages, and manage environments efficiently. Note, `import PackageName` lets you access exported functions with `PackageName.function`, while `using PackageName` imports all exported names into the local namespace for direct access.
+Before we start using packages, let's take a look at Python's standard libraries. Python comes with a set of** standard libraries that are always available**. You can use these libraries by simply importing them. For example, the `math` library provides mathematical functions like `sqrt` and `sin` and the `random` library provides functions to generate random numbers. You can import these libraries using the following syntax:
 
-## Exercise 1.1 - Import the Pkg Module
+```{python}
+import math
+import random
+```
 
-Import the Pkg module to start managing packages effectively.
+You can then use the functions provided by these libraries by calling them with the library name as a prefix. For example, the following code calculates the square root of 16.
 
-```{julia}
+```{python}
+a_square_root = math.sqrt(16)
+print(f"The square root of 16 is {a_square_root}!")
+```
+
+The following code generates a random number between 0 and 1.
+
+```{python}
+a_random_number = random.random()
+print(f"A random number is {a_random_number}!")
+```
+
+We can also use the library to choose a random element from a list.
+
+```{python}
+random_choice = random.choice(['book1', 'book2', 'book3'])
+print(f"We chose {random_choice}!")
+```
+
+Sometimes, we only need one function from a library. In this case, we can use the `from` keyword to import only the specific function we need. For example, the following code imports only the `randint` function from the `random` library and uses it to generate a random integer between 1 and 10.
+
+```{python}
+from random import randint
+a_random_integer = randint(1, 10)
+print(f"A random integer between 1 and 10 is {a_random_integer}!")
+```
+
+Other times, we might need to work with a library that has a rather long name. In this case, we can use the `as` keyword to give the library a shorter name. For example, the following code imports the `random` library and gives it the shorter name `rd`.
+
+```{python}
+import random as rd
+a_random_integer = rd.randint(1, 100)
+print(f"Now, a random integer between 1 and 100 is {a_random_integer}!")
+```
+
+## Exercise 1.1 - Use the math library
+
+Use the `math` library to calculate the square root of 256.
+
+```{python}
 #| eval: false
 # YOUR CODE BELOW
 
 ```
-```{julia}
+```{python}
+#| eval: false
+#| code-fold: true
+assert a_square_root == 16
+print("Great job! The square root of 256 is 16!")
+```
+
+## Exercise 1.2 - Use the random library
+
+Use the `random` library to generate a random number between 1 and 10.
+
+```{python}
+#| eval: false
+#| # YOUR CODE BELOW
+
+```
+```{python}
+#| eval: false
+#| code-fold: true
+assert a_random_integer >= 1 and a_random_integer <= 10
+print(f"Good! You generated a random integer {a_random_integer} between 1 and 10!")
+```
+
+# Section 2 - Using pip
+
+Just as a library needs a system to track books (checkout system, catalog, etc.), Python uses pip to manage its packages. Think of pip as your library's management system that:
+
+- Keeps track of what's available (like searching the catalog)
+- Handles "checkouts" (installing packages)
+- Manages "returns" (uninstalling packages)
+- Ensures you have the right "edition" (version management)
+
+## Exercise 2.1 - Check your package manager version
+
+Let's start by checking which version of pip we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press `ctrl + shift + p` and then type `Terminal: Create new terminal`. Then, run the following command:
+
+```{bash}
+pip --version
+```
+
+If you are working with Miniconda instead of a standard Python installation, you can also check the version of your package manager by running the following command in the terminal:
+
+```{bash}
+conda info
+```
+
+# Section 3 - Installing Packages
+
+Installing packages is like ordering new books for your library branch. Just as a library might:
+
+- Order books from publishers (pip install from PyPI)
+- Get specific editions (version specifications)
+- Check for space on shelves (system requirements)
+- Ensure books don't conflict (dependency management)
+
+Luckily most of that is handled for you and not that important in this basic introduction to python. Installing packages in Python is straightforward using `pip install packagename`. 
+
+## Exercise 3.1 - Install pandas
+
+Let's practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.
+
+```{bash}
+pip install pandas
+```
+
+If you are working with Miniconda, you can use the following command instead.
+
+```{bash}
+conda install pandas
+```
+
+You can test if the installation was successful by running the following code.
+
+```{python}
 #| eval: false
 #| code-fold: true
 # Test your answer
-try 
-    Pkg.update()
-    println("Pkg module imported successfully and packages were updated!")
-catch e
-    @error "The Pkg module was not imported yet! Have you used the correct syntax?"
-end
+try:
+    import pandas
+    print("pandas installed successfully!")
+except ImportError:
+    error("pandas was not installed correctly")
 ```
 
-# Section 2 - Adding Packages
+# Section 4 - Virtual Environments
 
-Adding packages in Julia is straightforward using the `Pkg.add("PackageName")` function. Replace `PackageName` with the actual package name you wish to add.
+Virtual environments are like having different library branches. Each branch can have:
 
-## Exercise 2.1 - Add the DataFrames Package
+- Its own collection of books (packages)
+- Different editions of the same book (package versions)
+- Specialized sections for different purposes (project-specific dependencies)
 
-Let's add a popular package called DataFrames. It's great for working with structured data, like spreadsheets.
+This separation ensures that:
 
-```{julia}
-# YOUR CODE BELOW
+- Changes in one branch don't affect others (project isolation)
+- Each branch can be optimized for its community (project-specific dependencies)
+- You can experiment without affecting the main collection (development safety)
 
-```
-```{julia}
-#| eval: false
-#| code-fold: true
-# Test your answer
-try 
-    using DataFrames
-    println("Package added successfully!")
-catch e
-    @error "Package was not added yet! Have you used the correct syntax?"
-end
-```
+For now, you don't need to worry about virtual environments. This is more advanced and thus not necessary for this tutorial (or lecture). But it's good to know that they exist and that you can use them to manage your packages.
 
-# Section 3 - Updating and Removing Packages
-
-Just like apps on your phone, packages can be updated or removed when you no longer need them.
-
-- To update a package: `Pkg.update("PackageName")`
-- To update all packages: `Pkg.update()`
-- To remove a package: `Pkg.rm("PackageName")`
-
-::: {.callout-example}
-If you wanted to update DataFrames, you'd use `Pkg.update("DataFrames")`.
-To remove it, you'd use `Pkg.rm("DataFrames")`.
-:::
-
-# Section 4 - Managing Environments
-
-Think of environments as separate workspaces for different projects. It's like having different folders for different school subjects. It's a best practice to create a new environment for each project to avoid conflicts between package versions. Activate a new environment with `Pkg.activate("new_environment")` and add packages to it with `Pkg.add("PackageName")`. This ensures that each of your projects has a clean, dedicated set of dependencies. When you create a new environment, Julia generates two important files:
-
-1. `Project.toml`: Lists direct dependencies of your project.
-2. `Manifest.toml`: Contains a complete dependency graph of your project.
-
-These files help ensure reproducibility and should be version controlled with your project. But don't worry, you don't have to worry about this yet.
-
-::: {.callout-note}
-If you plan to stick to working with notebooks, you don't have to care about environments yet. Just use the regular environment for the course and you don't have to activate anything.
-:::
-
-## Conclusion
-
-Congratulations! You've completed the tutorial on packages and package management in Julia. These skills are important for effectively managing and utilizing external libraries. Continue to the next file to learn more.
+# Conclusion
+Congratulations! You've learned about Python package management through the lens of library caching. Remember, just like libraries use caching to make popular books more accessible, Python uses package management to make useful code more accessible!
 
 {{< include ../include/tutorial_end.qmd >}}
+
+---
+
+*That's it for this week! Next week, we'll take a look at how to read and write files in Python and work with tabular data!*

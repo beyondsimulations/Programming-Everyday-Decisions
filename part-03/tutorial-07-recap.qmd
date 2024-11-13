@@ -116,6 +116,15 @@ assert isinstance(should_evict, bool), "should_evict should be a boolean"
 
 Lists work like a cache's storage system, holding multiple items that we might need later. Tuples are similar, but they are immutable. This means that once a tuple is created, its contents cannot be changed.
 
+::: {.callout-important}
+## Think about the following code yourself!
+
+Before running the code below, try to predict:
+
+1. What will be in the cache after adding "Carnival of Rust"?
+2. Which song will be removed?
+:::
+
 ```{python}
 # Recently played songs cache
 recent_songs = ["Lithonia", "Leon", "WHEN THE MUSIC STOPS", "Chop Suey", "Rain of Fire"]
@@ -135,7 +144,7 @@ print(f"Current cache: {recent_songs}")
 ```
 
 ::: {.callout-tip}
-This would **not have been possible with a tuple**, as we cannot change the contents of a tuple once it is created!
+This behavior would **not have been possible with a tuple**, as we cannot change the contents of a tuple once it is created!
 :::
 
 We can also use **lists to store tuples**, which is useful for storing multiple items with different properties. For example, we can store the name and price of items in a shopping cart.
