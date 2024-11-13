@@ -1,10 +1,87 @@
 [
   {
+    "objectID": "part-03/tutorial-09-packages.html",
+    "href": "part-03/tutorial-09-packages.html",
+    "title": "Tutorial III.III - Package Management",
+    "section": "",
+    "text": "Welcome to this guided tutorial on understanding packages and package management in Python! We’ll explore this concept through the lens of library management - how libraries organize, maintain, and share their resources.\nThink of Python as your local library’s main building. Just like a library has:\n\nA main collection (Python’s standard library)\nDifferent sections (third-party packages)\nA catalog system (pip package manager)\nMultiple branches (virtual environments)\n\n\n\nLet’s break this down:\n\nStandard Library: Like the core collection every library branch has:\n\nPython comes with essential tools built-in\nData structures (lists, dictionaries, etc.)\nMathematical functions (sin, cos, sqrt, etc.)\nRandom numbers (random, choice, etc.)\n\nThird-Party Packages: Similar to specialized sections in a library:\n\nData analysis packages (pandas, numpy) → Research section\nVisualization packages (matplotlib, seaborn) → Art books\nWeb frameworks (Django, Flask) → Technical manuals\nMachine learning packages (scikit-learn) → Advanced studies section\n\nPackage Manager (pip): Works like the library’s catalog:\n\nInstalling packages → Ordering new books\nUpdating packages → Replacing with newer editions\nUninstalling packages → Removing outdated books\nDependencies → “You must read Book A before Book B”\n\nVirtual Environments: Works like different library branches:\n\nEach branch can have its own collection of books (packages)\nDifferent editions of the same book (package versions)\nSpecialized sections for different purposes (project-specific dependencies)\n\n\nThe best part? Most Python packages are free to use, thanks to the open-source community!\n\n\n\n\n\n\nNote\n\n\n\nWhile we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE."
+  },
+  {
+    "objectID": "part-03/tutorial-09-packages.html#in-more-detail",
+    "href": "part-03/tutorial-09-packages.html#in-more-detail",
+    "title": "Tutorial III.III - Package Management",
+    "section": "",
+    "text": "Let’s break this down:\n\nStandard Library: Like the core collection every library branch has:\n\nPython comes with essential tools built-in\nData structures (lists, dictionaries, etc.)\nMathematical functions (sin, cos, sqrt, etc.)\nRandom numbers (random, choice, etc.)\n\nThird-Party Packages: Similar to specialized sections in a library:\n\nData analysis packages (pandas, numpy) → Research section\nVisualization packages (matplotlib, seaborn) → Art books\nWeb frameworks (Django, Flask) → Technical manuals\nMachine learning packages (scikit-learn) → Advanced studies section\n\nPackage Manager (pip): Works like the library’s catalog:\n\nInstalling packages → Ordering new books\nUpdating packages → Replacing with newer editions\nUninstalling packages → Removing outdated books\nDependencies → “You must read Book A before Book B”\n\nVirtual Environments: Works like different library branches:\n\nEach branch can have its own collection of books (packages)\nDifferent editions of the same book (package versions)\nSpecialized sections for different purposes (project-specific dependencies)\n\n\nThe best part? Most Python packages are free to use, thanks to the open-source community!\n\n\n\n\n\n\nNote\n\n\n\nWhile we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE."
+  },
+  {
+    "objectID": "part-03/tutorial-09-packages.html#exercise-1.1---use-the-math-library",
+    "href": "part-03/tutorial-09-packages.html#exercise-1.1---use-the-math-library",
+    "title": "Tutorial III.III - Package Management",
+    "section": "Exercise 1.1 - Use the math library",
+    "text": "Exercise 1.1 - Use the math library\nUse the math library to calculate the square root of 256. Call the result square_root.\n\n# YOUR CODE BELOW\n\n\n\nCode\nassert square_root == 16\nprint(f\"Great job! The square root of 256 is {square_root}!\")"
+  },
+  {
+    "objectID": "part-03/tutorial-09-packages.html#exercise-1.2---use-the-random-library",
+    "href": "part-03/tutorial-09-packages.html#exercise-1.2---use-the-random-library",
+    "title": "Tutorial III.III - Package Management",
+    "section": "Exercise 1.2 - Use the random library",
+    "text": "Exercise 1.2 - Use the random library\nUse the random library to generate a random number between 1 and 25. Call the result random_number.\n\n\nCode\nassert random_number &gt;= 1 and random_number &lt;= 25\nprint(f\"Good! You generated a random integer {random_number} between 1 and 25!\")"
+  },
+  {
+    "objectID": "part-03/tutorial-09-packages.html#exercise-2.1---check-your-package-manager-version",
+    "href": "part-03/tutorial-09-packages.html#exercise-2.1---check-your-package-manager-version",
+    "title": "Tutorial III.III - Package Management",
+    "section": "Exercise 2.1 - Check your package manager version",
+    "text": "Exercise 2.1 - Check your package manager version\nLet’s start by checking which version of conda we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press ctrl + shift + p and then type Terminal: Create new terminal. Then, run the following command:\nconda info"
+  },
+  {
+    "objectID": "part-03/tutorial-09-packages.html#exercise-3.1---install-pandas",
+    "href": "part-03/tutorial-09-packages.html#exercise-3.1---install-pandas",
+    "title": "Tutorial III.III - Package Management",
+    "section": "Exercise 3.1 - Install pandas",
+    "text": "Exercise 3.1 - Install pandas\nLet’s practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.\nconda install pandas\nYou can test if the installation was successful by running the following code.\n\n\nCode\n# Test your answer\ntry:\n    import pandas\n    print(\"pandas installed successfully!\")\nexcept ImportError:\n    print(\"pandas was not installed correctly\")"
+  },
+  {
+    "objectID": "part-03/tutorial-07-recap.html",
+    "href": "part-03/tutorial-07-recap.html",
+    "title": "Tutorial III.I - Caching and Recap",
+    "section": "",
+    "text": "Throughout our previous tutorials, we’ve explored fundamental programming concepts through the lens of everyday decision-making. Now, let’s connect these concepts to another important algorithmic idea: caching.\nThe concepts we’ve learned map directly to caching principles:\n\nVariables → Like cache entries (storing specific pieces of information)\nComparisons → Like cache eviction policies (what we keep/remove)\nLists → Like cache storage (what we remember)\nLoops → Like cache maintenance (how we update our knowledge)\n\n\n\n\n\n\n\nWhat is Caching?\n\n\n\nRemember today’s lecture. Think of caching for example like your brain’s short-term memory. When you frequently need certain information (like your friend’s phone number), you keep it readily available instead of looking it up each time."
+  },
+  {
+    "objectID": "part-03/tutorial-07-recap.html#exercise-1.1-create-a-simple-cache-system-for-your-favorite-restaurant-orders",
+    "href": "part-03/tutorial-07-recap.html#exercise-1.1-create-a-simple-cache-system-for-your-favorite-restaurant-orders",
+    "title": "Tutorial III.I - Caching and Recap",
+    "section": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders",
+    "text": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders\n\nCreate a variable last_meal for the last meal you ordered (as a string)\nStore its price in a variable price (as a float)\nWhether you would order it again in a variable would_order_again (as a boolean)\nHow many times you’ve ordered it in the last month in a variable num_orders (as an integer)\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(last_meal, str), \"last_meal should be a string\"\nassert isinstance(price, float), \"price should be a float\"\nassert isinstance(would_order_again, bool), \"would_order_again should be a boolean\"\nassert isinstance(num_orders, int), \"num_orders should be an integer\"\nprint(f\"Last meal: {last_meal}, price: {price}, would order again: {would_order_again}, number of orders in the last month: {num_orders}\")"
+  },
+  {
+    "objectID": "part-03/tutorial-07-recap.html#exercise-2.1-create-a-decision-system-for-your-favorite-song",
+    "href": "part-03/tutorial-07-recap.html#exercise-2.1-create-a-decision-system-for-your-favorite-song",
+    "title": "Tutorial III.I - Caching and Recap",
+    "section": "Exercise 2.1: Create a decision system for your favorite song",
+    "text": "Exercise 2.1: Create a decision system for your favorite song\n\nWrite a small decision system for your cached favorite song favorite_song\nUse at least two conditions based on the song’s play count and last played time (play_count and last_played_minutes_ago)\nYou can set the parameters for the conditions yourself\nSave the result of the decision in a variable should_evict\nPrint the result of whether we should evict the song or not\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(favorite_song, str), \"favorite_song should be a string\"\nassert isinstance(play_count, int), \"play_count should be an integer\"\nassert isinstance(last_played_minutes_ago, int), \"last_played_minutes_ago should be an integer\"\nassert isinstance(should_evict, bool), \"should_evict should be a boolean\"\nprint(f\"Favorite song: {favorite_song}, play count: {play_count}, last played minutes ago: {last_played_minutes_ago}, should evict: {should_evict}\")"
+  },
+  {
+    "objectID": "part-03/tutorial-07-recap.html#exercise-3.1-create-a-shopping-cart-cache",
+    "href": "part-03/tutorial-07-recap.html#exercise-3.1-create-a-shopping-cart-cache",
+    "title": "Tutorial III.I - Caching and Recap",
+    "section": "Exercise 3.1: Create a shopping cart cache",
+    "text": "Exercise 3.1: Create a shopping cart cache\n\nMake a list shopping_cart of five recently viewed items in your shopping cart\nCreate tuples for the item details (name and price) and add them to the list\nEnsure that the name is a string and the price is a float\n\n\n\n\n\n\n\nTip\n\n\n\nFirst, create a list. Inside the list, the entries should be tuples of the item name and price.\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(shopping_cart) == 5, \"shopping_cart should have 5 items\"\nassert isinstance(shopping_cart, list), \"shopping_cart should be a list\"\nassert all(isinstance(item, tuple) for item in shopping_cart), \"All items in shopping_cart should be tuples\"\nassert all(isinstance(item[0], str) and isinstance(item[1], (int, float)) for item in shopping_cart), \"All items in shopping_cart should be tuples with a string and a number\"\nprint(\"Great job! Your shopping cart is ready.\")"
+  },
+  {
+    "objectID": "part-03/tutorial-07-recap.html#exercise-4.1-clean-up-a-browser-history-cache",
+    "href": "part-03/tutorial-07-recap.html#exercise-4.1-clean-up-a-browser-history-cache",
+    "title": "Tutorial III.I - Caching and Recap",
+    "section": "Exercise 4.1: Clean up a browser history cache",
+    "text": "Exercise 4.1: Clean up a browser history cache\n\nWrite a loop to remove sites with low visit counts\nIf the site has been visited less than 6 times, remove it from the cache\nPrint the browser history after cleanup\n\n\n\n\n\n\n\nTip\n\n\n\nBe careful with the loop. You need to iterate over the list and remove items from it. If you remove items directly from the list while iterating over it, you won’t get the correct answer, as the list will change size while you iterate over it. Thus, you first need to create a list of items to keep and at the end replace the old list with the new one.\n\n\n\nbrowser_history = [\n    (\"google.com\", 10), \n    (\"youtube.de\", 5), \n    (\"amazon.de\", 1), \n    (\"netflix.de\", 2), \n    (\"github.com\", 15)\n]\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(browser_history) == 2, \"browser_history should have 2 items\"\nassert isinstance(browser_history, list), \"browser_history should be a list\"\nassert all(isinstance(item, tuple) for item in browser_history), \"All items in browser_history should be tuples\""
+  },
+  {
     "objectID": "part-02/tutorial-06-explore-exploit.html",
     "href": "part-02/tutorial-06-explore-exploit.html",
     "title": "Tutorial II.III - Explore and Exploit",
     "section": "",
-    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $50!\nYour new balance is $150\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nbet = 10 # How much we bet each time\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nprint(f\"You played the slot machine {len(results)} times\")\nprint(f\"Your final balance is ${results[-1]}\")\nprint(f\"Unfortunately, the payout rates are not realistic here...\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is:\n\nThe function random.random() generates a random number between 0 and 1.\nA rate of 2.0 means you get back exactly what you bet (on average)\nOur rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\nprint(f\"You played the slot machine {len(results)} times\")\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 6 for x in plays), \"Number of plays seems unreasonably high given budget\"\nprint(f\"You played the slot machine {plays[0]} times on machine 1\")\nprint(f\"You played the slot machine {plays[1]} times on machine 2\")\nprint(f\"You played the slot machine {plays[2]} times on machine 3\")\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\nprint(f\"The best machine is machine {best_machine}\")\nprint(f\"The worst machine is machine {worst_machine}\")\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
+    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $5!\nYour new balance is $105\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nbet = 10 # How much we bet each time\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nprint(f\"You played the slot machine {len(results)} times\")\nprint(f\"Your final balance is ${results[-1]}\")\nprint(f\"Unfortunately, the payout rates are not realistic here...\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is:\n\nThe function random.random() generates a random number between 0 and 1.\nA rate of 2.0 means you get back exactly what you bet (on average)\nOur rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\nprint(f\"You played the slot machine {len(results)} times\")\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 6 for x in plays), \"Number of plays seems unreasonably high given budget\"\nprint(f\"You played the slot machine {plays[0]} times on machine 1\")\nprint(f\"You played the slot machine {plays[1]} times on machine 2\")\nprint(f\"You played the slot machine {plays[2]} times on machine 3\")\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\nprint(f\"The best machine is machine {best_machine}\")\nprint(f\"The worst machine is machine {worst_machine}\")\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
     "crumbs": [
       "02 Explore/Exploit",
       "06 - Exploration"
@@ -286,7 +363,7 @@
     "href": "general/faq.html#faqs",
     "title": "Frequently Asked Questions",
     "section": "FAQs",
-    "text": "FAQs\nSo far, we haven’t received any questions.",
+    "text": "FAQs\n\nHow can I download PDF slides from the lecture?\n\nFirst, open the lecture you want to download the slides from.\nThen, click on the RevealJS button in the top right corner.\nNow, click on the three stacked bars in the lower left corner.\nThen, click on Tools in the upper left corner.\nNow you can select PDF Export Mode and then save the slides as a PDF.",
     "crumbs": [
       "FAQs"
     ]
@@ -299,6 +376,216 @@
     "text": "Course Description\nThis course explores the intersection of computer science and everyday life by examining how algorithms can be applied to improve decision-making in various contexts. Based on the book “Algorithms to Live By” by Brian Christian and Tom Griffiths, the course will cover topics such as optimal stopping, scheduling, caching, and game theory, providing both theoretical foundations and practical programming exercises. The course consists of lectures and exercises.\n\n\nLearning Outcomes\nOur broad goal is to equip students with the ability to get to grips with algorithmic thinking. We want to enable students, to indepently apply methods and concepts from algorithms to solve their everyday practical problems while also providing a brief introduction into programming with python.\nUpon completion of the course, students will:\n\nunderstand fundamental algorithms and their applications to everyday problems\ndevelop the ability to model real-world scenarios using algorithmic thinking\nimplement simple algorithms in python to solve practical problems\nanalyze the efficiency and effectiveness of different algorithms in various contexts\n\nPlease note that this course is specifically designed for business students. That is, it is not required to have any advanced knowledge or experience in programming to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.\n\n\nCourse Structure\nThe course is based on a hands-on approach with a two-fold structure:\n\nLectures: In the lectures, we will introduce and discuss concepts and illustrate them in reproducible examples.\nHands-on Tutorials: Students will apply the concepts from the lecture in jupyter notebooks, while simultaneously learning the basics of python.\n\nThe course is not graded and can only be passed/failed. The evaluation of the course will be based on the following components:\n\nAttendence: Students are expected to attend at least 75% of the lectures.\nAssignments: Students will have to hand in the assignments from 2 out of the 5 tutorials in this course. All are due by the end of the quarter, but earlier submissions of the assignments are highly encouraged. At least 50% of the solutions of the assignment must be correct.\nPresentation: Students will give a short presentation in groups of up to 3 students on their main findings and the application of the learned concepts of the course in the last lecture which are then discussed with the rest of the class.\n\nYou can find more information on the course contents in the syllabus.\n\n\nHow to see the slides\n\nThis course is based on Quarto\nIt uses revealjs to render the slides\nYou find the slides for each lecture in the corresponding lecture\nTo see the slides, click on RevealJS in the top right corner\n\n\n\nQuestions\nIf you have any questions regarding the course, please contact me under vlcek@beyondsimulations.com.",
     "crumbs": [
       "Welcome"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html",
+    "href": "general/cheatsheet.html",
+    "title": "Cheatsheet",
+    "section": "",
+    "text": "Definition: Containers for storing information.\nExample: x = 10\n\n\n\n\n\nIntegers (int): Whole numbers (e.g., count of dates).\nFloats (float): Decimal numbers (e.g., compatibility score).\nBooleans (bool): True/False values (e.g., availability).\nStrings (str): Text values (e.g., names).\n\n  name = \"Alexander\"  # String variable\n  flags = 0           # Integer variable\n  butterflies = True  # Boolean variable\n\n\n\n\nChecking: Use type() to check the type of a variable.\nConversion:\n\nint(): Converts to integer.\nfloat(): Converts to float.\nstr(): Converts to string.\nbool(): Converts to boolean.\n\n\n\n\n\n\nConcatenation: Combine strings using +.\nFormatting: Use f\"...\" for formatted strings.\n\n\nname = \"Alexander\"\nprint(f\"Hello, {name}!\")\n\nHello, Alexander!",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#variables",
+    "href": "general/cheatsheet.html#variables",
+    "title": "Cheatsheet",
+    "section": "",
+    "text": "Definition: Containers for storing information.\nExample: x = 10",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#data-types",
+    "href": "general/cheatsheet.html#data-types",
+    "title": "Cheatsheet",
+    "section": "",
+    "text": "Integers (int): Whole numbers (e.g., count of dates).\nFloats (float): Decimal numbers (e.g., compatibility score).\nBooleans (bool): True/False values (e.g., availability).\nStrings (str): Text values (e.g., names).\n\n  name = \"Alexander\"  # String variable\n  flags = 0           # Integer variable\n  butterflies = True  # Boolean variable",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#type-conversion",
+    "href": "general/cheatsheet.html#type-conversion",
+    "title": "Cheatsheet",
+    "section": "",
+    "text": "Checking: Use type() to check the type of a variable.\nConversion:\n\nint(): Converts to integer.\nfloat(): Converts to float.\nstr(): Converts to string.\nbool(): Converts to boolean.",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#string-formatting",
+    "href": "general/cheatsheet.html#string-formatting",
+    "title": "Cheatsheet",
+    "section": "",
+    "text": "Concatenation: Combine strings using +.\nFormatting: Use f\"...\" for formatted strings.\n\n\nname = \"Alexander\"\nprint(f\"Hello, {name}!\")\n\nHello, Alexander!",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#comparison-operators",
+    "href": "general/cheatsheet.html#comparison-operators",
+    "title": "Cheatsheet",
+    "section": "Comparison Operators",
+    "text": "Comparison Operators\n\n\n\n\n\n\n\n\nSymbol\nMeaning\nExample\n\n\n\n\n==\nEqual to\nscore == 100\n\n\n!=\nNot equal to\ndegree != “Computer Science”\n\n\n&lt;\nLess than\nsalary &lt; 80000\n\n\n&gt;\nGreater than\nexperience &gt; 5\n\n\n&lt;=\nLess than or equal to\nage &lt;= 65\n\n\n&gt;=\nGreater than or equal to\ntest_score &gt;= 80",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#logical-operators",
+    "href": "general/cheatsheet.html#logical-operators",
+    "title": "Cheatsheet",
+    "section": "Logical Operators",
+    "text": "Logical Operators\n\n\n\n\n\n\n\n\nSymbol\nMeaning\nExample\n\n\n\n\nand\nBoth conditions must be true\nscore &gt; 80 and experience &gt; 5\n\n\nor\nAt least one condition must be true\nscore &gt; 80 or experience &gt; 5\n\n\nnot\nCondition must be false\nnot (score &gt; 80)",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#if-statements",
+    "href": "general/cheatsheet.html#if-statements",
+    "title": "Cheatsheet",
+    "section": "if Statements",
+    "text": "if Statements\n\nStructure:\n\nif condition:\n    # code to execute if condition is True\n\nExample:\n\n\nflat_rating = 8\nif flat_rating &gt;= 7:\n    print(\"This is a good apartment!\")\n\nThis is a good apartment!",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#if-else-statements",
+    "href": "general/cheatsheet.html#if-else-statements",
+    "title": "Cheatsheet",
+    "section": "if-else Statements",
+    "text": "if-else Statements\n\nStructure:\n\nif condition:\n    # code to execute if condition is True\nelse:\n    # code to execute if condition is False\n\nExample:\n\n\nflat_rating = 4\nif flat_rating &gt;= 7:\n    print(\"Apply for this flat!\")\nelse:\n    print(\"Keep searching!\")\n\nKeep searching!",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#if-elif-else-statements",
+    "href": "general/cheatsheet.html#if-elif-else-statements",
+    "title": "Cheatsheet",
+    "section": "if-elif-else Statements",
+    "text": "if-elif-else Statements\n\nStructure:\n\nif condition:\n    # code to execute if condition is True\nelif condition:\n    # code to execute if condition is False\nelse:\n    # code to execute if condition is False\n\nExample:\n\n\nflat_rating = 8\nif flat_rating &gt;= 9:\n    print(\"Amazing flat - apply immediately!\")\nelif flat_rating &gt;= 7:\n    print(\"Good flat - consider applying\")\nelse:\n    print(\"Keep looking\")\n\nGood flat - consider applying",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#complex-conditions",
+    "href": "general/cheatsheet.html#complex-conditions",
+    "title": "Cheatsheet",
+    "section": "Complex Conditions",
+    "text": "Complex Conditions\n\nNested if Statements: Use if statements inside other if statements.\nLogical Operators: Combine conditions using and, or, not.\nStructure:\n\nif (condition1) and (condition2):\n    # code if both conditions are True\nelif (condition1) or (condition2):\n    # code if at least one condition is True\nelse:\n    # code if none of the conditions are True\n\nExample:\n\n\nflat_rating = 9\nprice = 900\nif (flat_rating &gt;= 9) and (price &lt; 1000):\n    print(\"Amazing flat - apply immediately!\")\n\nAmazing flat - apply immediately!",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#accessing-elements",
+    "href": "general/cheatsheet.html#accessing-elements",
+    "title": "Cheatsheet",
+    "section": "Accessing Elements",
+    "text": "Accessing Elements\n\nIndexing: Use [index] to access elements.\n\n\nprint(restaurants[0])  # Access the first element\n\nMagic Place\n\n\n\nNegative Indexing: Use [-1] to access the last element.\n\n\nprint(restaurants[-1])  # Access the last element\n\nCoffee Shop\n\n\n\nSlicing: Use [start:end] to access a range of elements.\n\n\nprint(restaurants[0:2])  # Access the first two elements\n\n['Magic Place', 'Sushi Bar']",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#adding-elements",
+    "href": "general/cheatsheet.html#adding-elements",
+    "title": "Cheatsheet",
+    "section": "Adding Elements",
+    "text": "Adding Elements\n\nAppending: Use append() to add an element to the end of the list.\n\n\nrestaurants.append(\"Pasta Place\")\n\n\nInserting: Use insert() to add an element at a specific index.\n\n\nrestaurants.insert(0, \"Pasta Magic\")",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#removing-elements",
+    "href": "general/cheatsheet.html#removing-elements",
+    "title": "Cheatsheet",
+    "section": "Removing Elements",
+    "text": "Removing Elements\n\nRemoving: Use remove() to remove an element by value.\n\n\nrestaurants.remove(\"Pasta Place\")\n\n\nRemoving by Index: Use pop() to remove an element by index.\n\n\nrestaurants.pop(0)\n\n'Pasta Magic'",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#nested-lists",
+    "href": "general/cheatsheet.html#nested-lists",
+    "title": "Cheatsheet",
+    "section": "Nested Lists",
+    "text": "Nested Lists\n\nDefinition: Lists containing other lists or tuples.\nAccessing: Use nested indexing.\n\n\nrestaurant_data = [\n    [\"Pasta Place\", 4.5, 3],\n    [\"Sushi Bar\", 4.2, 1]\n]\nprint(restaurants[0][1])  # Access the second element of the first list\n\na",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#tuples",
+    "href": "general/cheatsheet.html#tuples",
+    "title": "Cheatsheet",
+    "section": "Tuples",
+    "text": "Tuples\n\nDefinition: Ordered, immutable collections of items.\nCreation: Use parentheses ().\nImmutability: Once created, cannot be changed.\nMemory Efficiency: Use less memory than lists.\nUse Cases: Ideal for fixed data (e.g., restaurant location).\n\n\nratings = (4.5, 3.8, 4.2)\nrestaurant_info = (\"Pasta Place\", \"Italian\", 2020)",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#for-loops",
+    "href": "general/cheatsheet.html#for-loops",
+    "title": "Cheatsheet",
+    "section": "for Loops",
+    "text": "for Loops\n\nDefinition: Iterate over a sequence of items.\nStructure:\n\nfor item in sequence:\n    # code to execute for each item\n\nExample:\n\n\ntreatments = [\"Standard Drug\", \"New Drug A\", \"New Drug B\"]\nfor treatment in treatments:\n    print(f\"Evaluating efficacy of {treatment}\")\n\nEvaluating efficacy of Standard Drug\nEvaluating efficacy of New Drug A\nEvaluating efficacy of New Drug B",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#range-in-for-loops",
+    "href": "general/cheatsheet.html#range-in-for-loops",
+    "title": "Cheatsheet",
+    "section": "Range in for Loops",
+    "text": "Range in for Loops\n\nDefinition: Generate a sequence of numbers.\nStructure:\n\nrange(start, stop, step)\n\nExample:\n\n\nfor phase in range(5):  # 0 to 4\n    print(f\"Starting Phase {phase + 1}\")\n\nStarting Phase 1\nStarting Phase 2\nStarting Phase 3\nStarting Phase 4\nStarting Phase 5\n\n\n\nfor phase in range(1, 5):  # 1 to 4\n    print(f\"Starting Phase {phase}\")\n\nStarting Phase 1\nStarting Phase 2\nStarting Phase 3\nStarting Phase 4\n\n\n\nfor phase in range(1, 5, 2):  # 1 to 4, step 2\n    print(f\"Starting Phase {phase}\")\n\nStarting Phase 1\nStarting Phase 3",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#break-and-continue",
+    "href": "general/cheatsheet.html#break-and-continue",
+    "title": "Cheatsheet",
+    "section": "break and continue",
+    "text": "break and continue\n\nbreak: Exit the loop.\ncontinue: Skip the current iteration and continue with the next.\n\n\nefficacy_scores = [45, 60, 75, 85, 90]\nfor score in efficacy_scores:\n    if score &lt; 50:\n        continue\n        print(f\"Treatment efficacy: {score}%\")\n    if score &gt;= 85:\n        break",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#tuple-unpacking",
+    "href": "general/cheatsheet.html#tuple-unpacking",
+    "title": "Cheatsheet",
+    "section": "Tuple unpacking",
+    "text": "Tuple unpacking\n\nDefinition: Assign elements of a tuple to variables.\nStructure:\nExample:\n\n\nrestaurant_info = (\"Pasta Place\", \"Italian\", 2020)\nname, cuisine, year = restaurant_info\nprint(name)\nprint(cuisine)\nprint(year)\n\nPasta Place\nItalian\n2020",
+    "crumbs": [
+      "Cheatsheet"
+    ]
+  },
+  {
+    "objectID": "general/cheatsheet.html#while-loops",
+    "href": "general/cheatsheet.html#while-loops",
+    "title": "Cheatsheet",
+    "section": "while Loops",
+    "text": "while Loops\n\nDefinition: Execute code repeatedly as long as a condition is true.\nStructure:\n\nwhile condition:\n    # code to execute while condition is True\n\nExample:\n\n\nphase = 1\nwhile phase &lt;= 5:\n    print(f\"Starting Phase {phase}\")\n    phase += 1\n\nStarting Phase 1\nStarting Phase 2\nStarting Phase 3\nStarting Phase 4\nStarting Phase 5",
+    "crumbs": [
+      "Cheatsheet"
     ]
   },
   {
@@ -1521,7 +1808,7 @@
     "href": "part-02/lecture-explore-exploit.html#win-stay-lose-shift1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Win-Stay Lose-Shift1",
-    "text": "Win-Stay Lose-Shift1\n\n\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.",
+    "text": "Win-Stay Lose-Shift1\n\n\nQuestion: What do you think, what the win-stay lose-shift strategy does?\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1532,7 +1819,7 @@
     "href": "part-02/lecture-explore-exploit.html#win-stay-is-a-no-brainer",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Win-Stay is a no brainer",
-    "text": "Win-Stay is a no brainer\n\n\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher.",
+    "text": "Win-Stay is a no brainer\n\n\nQuestion: What do you think about win-stay?\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1543,7 +1830,7 @@
     "href": "part-02/lecture-explore-exploit.html#lose-shift-is-another-story",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Lose-Shift is another story",
-    "text": "Lose-Shift is another story\n\n\nChanging arms each time you lose might be a prety rush move.\nImagine you’re eating at your favorite restaurant for the tenth time in a row.\nYou have always been very satisfied (win), but today you are disappointed (loose).\nShould you turn your back on the restaurant?",
+    "text": "Lose-Shift is another story\n\n\nQuestion: What do you think about lose-shift?\nChanging arms each time you lose might be a prety rush move.\nImagine you’re eating at your favorite restaurant for the tenth time in a row.\nYou have always been very satisfied (win), but today you are disappointed (loose).\nShould you turn your back on the restaurant?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1554,7 +1841,7 @@
     "href": "part-02/lecture-explore-exploit.html#like-most-of-the-time-easy-answers-comes-with-problems",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Like most of the time, easy answers comes with problems",
-    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes losses too much.\nThe strategy does not take into account the interval.\nBut the strategy laid the foundation for better approaches",
+    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes losses too much.\nThe strategy does not take into account the interval.\nBut the strategy was good start to develop better approaches.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1576,7 +1863,18 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach II",
-    "text": "The Bellman approach II\n\n\nConsider the example with machine A and B again.\nThe following graph shows the possible outcomes of the next 4 pulls at machine B.\nWhen should we stop exploring and start exploiting?",
+    "text": "The Bellman approach II\n\n\nBellman found that the following equation provides the optimal strategy (when the assumptions hold):\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nwhere w is the number of wins and l is the number of loses.",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#question-time",
+    "href": "part-02/lecture-explore-exploit.html#question-time",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Question time",
+    "text": "Question time\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nQuestion: What is E[B]?\nQuestion: What is E[A]?\nQuestion: What machine shall we play according to the Bellman approach?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1587,7 +1885,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach III",
-    "text": "The Bellman approach III\n\n\n\n\n\n\ngraph TD\n    D1([\"(1,1)\"]) --&gt; |Win| D2A([\"(2,1)\"])\n    D1 --&gt; |Lose| D2B([\"(1,2)\"])\n    \n    D2A --&gt; |Win| D3AA([\"(3,1)\"])\n    D2A --&gt; |Lose| D3AB([\"(2,2)\"])\n    D2B --&gt; |Win| D3AB([\"(2,2)\"])\n    D2B --&gt; |Lose| D3BB([\"(1,3)\"])\n    \n    D3AA --&gt; |Win| D4AAA([\"(4,1)\"])\n    D3AA --&gt; |Lose| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Win| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Lose| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Win| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Lose| D4BBB([\"(1,4)\"])\n    \n    D4AAA --&gt; |Win| D5AAAA([\"(5,1)\"])\n    D4AAA --&gt; |Lose| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Win| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Lose| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Win| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Lose| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Win| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Lose| D5BBBB([\"(1,5)\"])",
+    "text": "The Bellman approach III\nThe following table shows the expected value for different win-lose scenarios.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1598,29 +1896,7 @@
     "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach IV",
-    "text": "The Bellman approach IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50",
-    "crumbs": [
-      "02 Explore/Exploit",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "part-02/lecture-explore-exploit.html#the-bellman-approach-v",
-    "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-v",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Bellman approach V",
-    "text": "The Bellman approach V\nCalculated with the following equation: \\[\n\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\n\\] where w is the number of wins and l is the number of loses.",
-    "crumbs": [
-      "02 Explore/Exploit",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "part-02/lecture-explore-exploit.html#the-bellman-approach-vi",
-    "href": "part-02/lecture-explore-exploit.html#the-bellman-approach-vi",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Bellman approach VI",
-    "text": "The Bellman approach VI\n\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact number of opportunities/time in the casino (length of the interval).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution.",
+    "text": "The Bellman approach IV\n\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact length of the interval (time in the casino).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1649,11 +1925,22 @@
     ]
   },
   {
-    "objectID": "part-02/lecture-explore-exploit.html#reality-check-discounting",
-    "href": "part-02/lecture-explore-exploit.html#reality-check-discounting",
+    "objectID": "part-02/lecture-explore-exploit.html#reality-check-discounting-i",
+    "href": "part-02/lecture-explore-exploit.html#reality-check-discounting-i",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reality check: Discounting",
-    "text": "Reality check: Discounting\n\n\nDoes discounting future wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs.\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?",
+    "section": "Reality check: Discounting I",
+    "text": "Reality check: Discounting I\n\n\nDoes discounting future wins make sense?\nQuestion: Does discounting money wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs.",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-02/lecture-explore-exploit.html#reality-check-discounting-ii",
+    "href": "part-02/lecture-explore-exploit.html#reality-check-discounting-ii",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Reality check: Discounting II",
+    "text": "Reality check: Discounting II\n\n\nDoes discounting future wins make sense?\nQuestion: Does discounting non-monetary wins make sense?\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1686,7 +1973,7 @@
     "href": "part-02/lecture-explore-exploit.html#question-choose-machine-a-or-b-according-to-the-gittins-index",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Question: Choose machine A or B according to the Gittins index?",
-    "text": "Question: Choose machine A or B according to the Gittins index?\n\n\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game.\nThe index for machine B (0.6346) is higher than for machine A (0.6300).",
+    "text": "Question: Choose machine A or B according to the Gittins index?\n\n\nThe index for machine B (0.6346) is higher than for machine A (0.6300).\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -1950,28 +2237,28 @@
     "href": "part-02/lecture-presentation.html#win-stay-lose-shift1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Win-Stay Lose-Shift1",
-    "text": "Win-Stay Lose-Shift1\n\n\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58."
+    "text": "Win-Stay Lose-Shift1\n\n\nQuestion: What do you think, what the win-stay lose-shift strategy does?\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58."
   },
   {
     "objectID": "part-02/lecture-presentation.html#win-stay-is-a-no-brainer",
     "href": "part-02/lecture-presentation.html#win-stay-is-a-no-brainer",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Win-Stay is a no brainer",
-    "text": "Win-Stay is a no brainer\n\n\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher."
+    "text": "Win-Stay is a no brainer\n\n\nQuestion: What do you think about win-stay?\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher."
   },
   {
     "objectID": "part-02/lecture-presentation.html#lose-shift-is-another-story",
     "href": "part-02/lecture-presentation.html#lose-shift-is-another-story",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Lose-Shift is another story",
-    "text": "Lose-Shift is another story\n\n\nChanging arms each time you lose might be a prety rush move.\nImagine you’re eating at your favorite restaurant for the tenth time in a row.\nYou have always been very satisfied (win), but today you are disappointed (loose).\nShould you turn your back on the restaurant?"
+    "text": "Lose-Shift is another story\n\n\nQuestion: What do you think about lose-shift?\nChanging arms each time you lose might be a prety rush move.\nImagine you’re eating at your favorite restaurant for the tenth time in a row.\nYou have always been very satisfied (win), but today you are disappointed (loose).\nShould you turn your back on the restaurant?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#like-most-of-the-time-easy-answers-comes-with-problems",
     "href": "part-02/lecture-presentation.html#like-most-of-the-time-easy-answers-comes-with-problems",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Like most of the time, easy answers comes with problems",
-    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes losses too much.\nThe strategy does not take into account the interval.\nBut the strategy laid the foundation for better approaches"
+    "text": "Like most of the time, easy answers comes with problems\n\n\nThe win-stay lose-shift strategy penalizes losses too much.\nThe strategy does not take into account the interval.\nBut the strategy was good start to develop better approaches."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-i",
@@ -1985,35 +2272,28 @@
     "href": "part-02/lecture-presentation.html#the-bellman-approach-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach II",
-    "text": "The Bellman approach II\n\n\nConsider the example with machine A and B again.\nThe following graph shows the possible outcomes of the next 4 pulls at machine B.\nWhen should we stop exploring and start exploiting?"
+    "text": "The Bellman approach II\n\n\nBellman found that the following equation provides the optimal strategy (when the assumptions hold):\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nwhere w is the number of wins and l is the number of loses."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#question-time",
+    "href": "part-02/lecture-presentation.html#question-time",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Question time",
+    "text": "Question time\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nQuestion: What is E[B]?\nQuestion: What is E[A]?\nQuestion: What machine shall we play according to the Bellman approach?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-iii",
     "href": "part-02/lecture-presentation.html#the-bellman-approach-iii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach III",
-    "text": "The Bellman approach III\n\n\n\n\n\n\ngraph TD\n    D1([\"(1,1)\"]) --&gt; |Win| D2A([\"(2,1)\"])\n    D1 --&gt; |Lose| D2B([\"(1,2)\"])\n    \n    D2A --&gt; |Win| D3AA([\"(3,1)\"])\n    D2A --&gt; |Lose| D3AB([\"(2,2)\"])\n    D2B --&gt; |Win| D3AB([\"(2,2)\"])\n    D2B --&gt; |Lose| D3BB([\"(1,3)\"])\n    \n    D3AA --&gt; |Win| D4AAA([\"(4,1)\"])\n    D3AA --&gt; |Lose| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Win| D4AAB([\"(3,2)\"])\n    D3AB --&gt; |Lose| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Win| D4ABB([\"(2,3)\"])\n    D3BB --&gt; |Lose| D4BBB([\"(1,4)\"])\n    \n    D4AAA --&gt; |Win| D5AAAA([\"(5,1)\"])\n    D4AAA --&gt; |Lose| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Win| D5AAAB([\"(4,2)\"])\n    D4AAB --&gt; |Lose| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Win| D5AABB([\"(3,3)\"])\n    D4ABB --&gt; |Lose| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Win| D5ABBB([\"(2,4)\"])\n    D4BBB --&gt; |Lose| D5BBBB([\"(1,5)\"])"
+    "text": "The Bellman approach III\nThe following table shows the expected value for different win-lose scenarios.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-bellman-approach-iv",
     "href": "part-02/lecture-presentation.html#the-bellman-approach-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach IV",
-    "text": "The Bellman approach IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoses/Wins\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n\n\n\n1\n0.50\n0.60\n0.67\n0.71\n0.75\n0.78\n0.80\n0.82\n0.83\n0.85\n\n\n2\n0.40\n0.50\n0.57\n0.63\n0.67\n0.70\n0.73\n0.75\n0.77\n0.79\n\n\n3\n0.33\n0.43\n0.50\n0.56\n0.60\n0.64\n0.67\n0.69\n0.71\n0.73\n\n\n4\n0.29\n0.38\n0.44\n0.50\n0.55\n0.58\n0.62\n0.64\n0.67\n0.69\n\n\n5\n0.25\n0.33\n0.40\n0.45\n0.50\n0.54\n0.57\n0.60\n0.63\n0.65\n\n\n6\n0.22\n0.30\n0.36\n0.42\n0.46\n0.50\n0.53\n0.56\n0.59\n0.61\n\n\n7\n0.20\n0.27\n0.33\n0.38\n0.43\n0.47\n0.50\n0.53\n0.56\n0.58\n\n\n8\n0.18\n0.25\n0.31\n0.36\n0.40\n0.44\n0.47\n0.50\n0.53\n0.55\n\n\n9\n0.17\n0.23\n0.29\n0.33\n0.38\n0.41\n0.44\n0.47\n0.50\n0.52\n\n\n10\n0.15\n0.21\n0.27\n0.31\n0.35\n0.39\n0.42\n0.45\n0.48\n0.50"
-  },
-  {
-    "objectID": "part-02/lecture-presentation.html#the-bellman-approach-v",
-    "href": "part-02/lecture-presentation.html#the-bellman-approach-v",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Bellman approach V",
-    "text": "The Bellman approach V\nCalculated with the following equation: \\[\n\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\n\\] where w is the number of wins and l is the number of loses."
-  },
-  {
-    "objectID": "part-02/lecture-presentation.html#the-bellman-approach-vi",
-    "href": "part-02/lecture-presentation.html#the-bellman-approach-vi",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Bellman approach VI",
-    "text": "The Bellman approach VI\n\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact number of opportunities/time in the casino (length of the interval).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution."
+    "text": "The Bellman approach IV\n\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact length of the interval (time in the casino).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-i2",
@@ -2030,11 +2310,18 @@
     "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered."
   },
   {
-    "objectID": "part-02/lecture-presentation.html#reality-check-discounting",
-    "href": "part-02/lecture-presentation.html#reality-check-discounting",
+    "objectID": "part-02/lecture-presentation.html#reality-check-discounting-i",
+    "href": "part-02/lecture-presentation.html#reality-check-discounting-i",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reality check: Discounting",
-    "text": "Reality check: Discounting\n\n\nDoes discounting future wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs.\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?"
+    "section": "Reality check: Discounting I",
+    "text": "Reality check: Discounting I\n\n\nDoes discounting future wins make sense?\nQuestion: Does discounting money wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs."
+  },
+  {
+    "objectID": "part-02/lecture-presentation.html#reality-check-discounting-ii",
+    "href": "part-02/lecture-presentation.html#reality-check-discounting-ii",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Reality check: Discounting II",
+    "text": "Reality check: Discounting II\n\n\nDoes discounting future wins make sense?\nQuestion: Does discounting non-monetary wins make sense?\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?"
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-iii",
@@ -2055,7 +2342,7 @@
     "href": "part-02/lecture-presentation.html#question-choose-machine-a-or-b-according-to-the-gittins-index",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Question: Choose machine A or B according to the Gittins index?",
-    "text": "Question: Choose machine A or B according to the Gittins index?\n\n\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game.\nThe index for machine B (0.6346) is higher than for machine A (0.6300)."
+    "text": "Question: Choose machine A or B according to the Gittins index?\n\n\nThe index for machine B (0.6346) is higher than for machine A (0.6300).\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game."
   },
   {
     "objectID": "part-02/lecture-presentation.html#the-gittins-index-v",
@@ -2200,5 +2487,628 @@
       "02 Explore/Exploit",
       "05 - Loops"
     ]
+  },
+  {
+    "objectID": "part-03/lecture-caching.html",
+    "href": "part-03/lecture-caching.html",
+    "title": "Lecture III - Caching",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to:\n\n\n\nExplain the fundamental concepts of caching and its importance\nCompare different cache replacement strategies\nIdentify caching principles in everyday life\nApply caching concepts to personal productivity\nUnderstand the relationship between caching and attention management"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#caching-making-the-most-of-limited-resources",
+    "href": "part-03/lecture-caching.html#caching-making-the-most-of-limited-resources",
+    "title": "Lecture III - Caching",
+    "section": "Caching: Making the most of limited resources",
+    "text": "Caching: Making the most of limited resources\n\n\nIn the practical use of our intellect, forgetting is as important a function as remembering. – [William James]\n\n\n\n\nToday’s lecture is on caching.\nThe discussed topics are highly relevant for everything that has to do with computers and data.\nOn top of that, caching is another very important concept for our everyday decision-making."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
+    "href": "part-03/lecture-caching.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
+    "title": "Lecture III - Caching",
+    "section": "Let’s approach the topic using an everyday decision-making situation",
+    "text": "Let’s approach the topic using an everyday decision-making situation\n\n\n\n\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-what-could-we-do",
+    "href": "part-03/lecture-caching.html#question-what-could-we-do",
+    "title": "Lecture III - Caching",
+    "section": "Question: What could we do?",
+    "text": "Question: What could we do?\n\n\n\n\n\n\n\n\nBetter organization\nClearing out things we no longer need\nNow we have two problems:\n\nStoring?\nClearing out?"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#storing",
+    "href": "part-03/lecture-caching.html#storing",
+    "title": "Lecture III - Caching",
+    "section": "Storing",
+    "text": "Storing\n\n\n\n\n\n\n\nHow to bring order to storage?\n\nSubdivide storage\nEfficient sorting\nIncrease capacity"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#subdivide-storage-and-efficient-sorting-outcome",
+    "href": "part-03/lecture-caching.html#subdivide-storage-and-efficient-sorting-outcome",
+    "title": "Lecture III - Caching",
+    "section": "Subdivide storage and efficient sorting outcome",
+    "text": "Subdivide storage and efficient sorting outcome\n\n\n\n\n\n\n\n\nTime investment can improve storing.\nThat is a difficult trade-off in itself.\nNontheless: Each storage has a limited capacity."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-what-do-we-do-when-the-storage-is-full",
+    "href": "part-03/lecture-caching.html#question-what-do-we-do-when-the-storage-is-full",
+    "title": "Lecture III - Caching",
+    "section": "Question: What do we do, when the storage is full?",
+    "text": "Question: What do we do, when the storage is full?\n\n\nWe could increase the capacity"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#but",
+    "href": "part-03/lecture-caching.html#but",
+    "title": "Lecture III - Caching",
+    "section": "But…",
+    "text": "But…\n\n\n\n\n\n\n\n\nIncrease capacity is costly.\nThere is a trade-off between size and speed.\nSooner or later, every storage will fill up if not cleared out."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
+    "href": "part-03/lecture-caching.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
+    "title": "Lecture III - Caching",
+    "section": "Question: What types of storages can you imagine that are affected by this?",
+    "text": "Question: What types of storages can you imagine that are affected by this?\n\n\nOur cupboard\nOur computer (hard drive, RAM, cache, …)\nOur brain?!"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-what-is-the-impact-of-a-full-storage",
+    "href": "part-03/lecture-caching.html#question-what-is-the-impact-of-a-full-storage",
+    "title": "Lecture III - Caching",
+    "section": "Question: What is the impact of a full storage?",
+    "text": "Question: What is the impact of a full storage?\n\n\n\n\n\n\n\n\nAccess speed drops significantly\nProcessing time increases\nOverall performance decreases"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#now-we-see-why-clearing-out-is-so-important",
+    "href": "part-03/lecture-caching.html#now-we-see-why-clearing-out-is-so-important",
+    "title": "Lecture III - Caching",
+    "section": "Now we see, why clearing out is so important",
+    "text": "Now we see, why clearing out is so important\n\n\nAnd that goes for our cupboard as well as for computers and other storages…\nBut what stays and what goes?"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-what-replacementeviction-policies-can-you-imagine",
+    "href": "part-03/lecture-caching.html#question-what-replacementeviction-policies-can-you-imagine",
+    "title": "Lecture III - Caching",
+    "section": "Question: What replacement/eviction policies can you imagine?",
+    "text": "Question: What replacement/eviction policies can you imagine?\n\n\nRandom Eviction\nFirst-In, First-Out (FIFO)\nLeast Recently Used (LRU)"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
+    "href": "part-03/lecture-caching.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
+    "title": "Lecture III - Caching",
+    "section": "Once again, we can learn a lot from the computer sciences.",
+    "text": "Once again, we can learn a lot from the computer sciences.\n\nThe evolution of computer memory\n\n\n\nIn the 1950s, computer science faced the same question…\n…and has faced it repeatedly since then.\nProcessors have become faster and faster (Moore’s Law).\nThe demands on memory also grew."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#cpu",
+    "href": "part-03/lecture-caching.html#cpu",
+    "title": "Lecture III - Caching",
+    "section": "CPU",
+    "text": "CPU\n\n\nThe processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the “brain” of the system.\nIt executes instructions and performs calculations, to process data and run programs."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#problem-access-time",
+    "href": "part-03/lecture-caching.html#problem-access-time",
+    "title": "Lecture III - Caching",
+    "section": "Problem: Access Time",
+    "text": "Problem: Access Time\n\n\n\n\n\n\n\nflowchart LR\n    subgraph Memory\n    A[\"Input Data\"]\n    end\n    \n    subgraph CPU\n    B[\"Processing Data\"]\n    end\n    \n    subgraph Memory\n    C[\"Output Data\"]\n    end\n    \n    A --&gt; B --&gt; C\n    \n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style CPU fill:white,stroke:#01579B,stroke-width:4px\n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style A fill:white\n    style B fill:white\n    style C fill:white\n\n\n\n\n\n\n\nProblem: No matter how much faster the processor gets, if input data isn’t available fast enough or can’t be stored quickly enough, the system won’t become faster overall.\nQuestion: What is the solution?"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#cache-1",
+    "href": "part-03/lecture-caching.html#cache-1",
+    "title": "Lecture III - Caching",
+    "section": "Cache",
+    "text": "Cache\n\nHierarchical memory pyramid for efficient data management\n\n\n\nL1 Cache, directly on CPU, very fast access time.\nL2 Cache, between L1 and main memory.\nRAM memory.\nMass Storage (hard drive).\nThe whole memory system works like a library.\nFind an explanation here."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#cache---size-and-speed-trade-off",
+    "href": "part-03/lecture-caching.html#cache---size-and-speed-trade-off",
+    "title": "Lecture III - Caching",
+    "section": "Cache - Size and Speed trade-off",
+    "text": "Cache - Size and Speed trade-off\n\n\nRegisters are 10 million times faster than the hard drive!"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#library-principle",
+    "href": "part-03/lecture-caching.html#library-principle",
+    "title": "Lecture III - Caching",
+    "section": "Library Principle",
+    "text": "Library Principle\n\n\n\n\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nDesk (5 borrowed books, L2)\nShort-term memory (L1)"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#library-principle-1",
+    "href": "part-03/lecture-caching.html#library-principle-1",
+    "title": "Lecture III - Caching",
+    "section": "Library Principle",
+    "text": "Library Principle\n\n\n\n\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#how-to-clear-up",
+    "href": "part-03/lecture-caching.html#how-to-clear-up",
+    "title": "Lecture III - Caching",
+    "section": "How to clear up?",
+    "text": "How to clear up?\n\n\nOptimal: Clairvoyance\n\nStore everything in the cache that will be needed\nDelete everything from the cache that won’t be needed\n\nQuestion: What is the problem with this strategy?\nOptimal strategy not achievable in reality"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#realisable-strategies",
+    "href": "part-03/lecture-caching.html#realisable-strategies",
+    "title": "Lecture III - Caching",
+    "section": "Realisable strategies?",
+    "text": "Realisable strategies?\n\n\nLeast recently used is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#managerial-and-personal-insights",
+    "href": "part-03/lecture-caching.html#managerial-and-personal-insights",
+    "title": "Lecture III - Caching",
+    "section": "Managerial and personal insights:",
+    "text": "Managerial and personal insights:\n\n\nLet go of things you haven’t used in ages\nKeep things where they are used\nBoth have been proven to contribute to a significant increase in productivity"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#keeping-things-where-they-are-used",
+    "href": "part-03/lecture-caching.html#keeping-things-where-they-are-used",
+    "title": "Lecture III - Caching",
+    "section": "Keeping things where they are used…",
+    "text": "Keeping things where they are used…\n\n\nMight be optimal, in a mathematical sense"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
+    "href": "part-03/lecture-caching.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
+    "title": "Lecture III - Caching",
+    "section": "The strong limitations of caches make them a “security risk”.",
+    "text": "The strong limitations of caches make them a “security risk”.\n\n\nDenial-of-Service Attacks (DoS) attacks.\n\nCache Flooding\nCache Poisoning\n\nOverload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-why-are-the-findings-about-cache-so-important-for-humans",
+    "href": "part-03/lecture-caching.html#question-why-are-the-findings-about-cache-so-important-for-humans",
+    "title": "Lecture III - Caching",
+    "section": "Question: Why are the findings about cache so important for humans?",
+    "text": "Question: Why are the findings about cache so important for humans?\n\n\nYour Brain is a Cache, Not a Database -[Joe Chrysler]"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#our-brain-has-similar-weaknesses",
+    "href": "part-03/lecture-caching.html#our-brain-has-similar-weaknesses",
+    "title": "Lecture III - Caching",
+    "section": "Our brain has similar weaknesses",
+    "text": "Our brain has similar weaknesses\n\nProductivity and creativity are negatively affected by:\n\n\n\nOverload (too much)\nExhaustion (too long)\nContext switching (interruption of “flow”, 23 minutes to get back on track)\nDistraction (Cache Flooding)\nFake News (Cache Poisoning)\n\n\n\nThis can lead to burnout."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#question-what-do-you-think-should-we-do-about-it",
+    "href": "part-03/lecture-caching.html#question-what-do-you-think-should-we-do-about-it",
+    "title": "Lecture III - Caching",
+    "section": "Question: What do you think should we do about it?",
+    "text": "Question: What do you think should we do about it?"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
+    "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I\n\nMain Idea:\n\n\n\nModern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.\nThe reason for that has much to do with the way our brain works and how we interact with technology."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
+    "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II\n\nKey Causes of Attention Loss:\n\n\n\nTechnology & Social Media: Designed to capture and keep attention, leading to fragmented focus.\nConstant Interruptions: Notifications and multitasking disrupt deep work and concentration.\nEnvironmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
+    "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III\n\nConsequences:\n\n\n\nReduced ability to think critically and creatively.\nDifficulty sustaining attention on meaningful tasks."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
+    "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV\n\nSolutions Suggested:\n\n\n\nLimit screen time and practice “monotasking.”\nPrioritize sleep, nutrition, and mindful habits."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
+    "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V\n\n\n\nBut even better: read the book!"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---book",
+    "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---book",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Book",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Book"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#mitigation-1",
+    "href": "part-03/lecture-caching.html#mitigation-1",
+    "title": "Lecture III - Caching",
+    "section": "Mitigation",
+    "text": "Mitigation\n\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#awareness-i",
+    "href": "part-03/lecture-caching.html#awareness-i",
+    "title": "Lecture III - Caching",
+    "section": "Awareness I",
+    "text": "Awareness I\n\nTrain awareness\n\n\n\nSpotlight – immediate goals – Focus\nStarlight – medium-term goals – Wishes\nDaylight – long-term goals – Values"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#awareness-ii",
+    "href": "part-03/lecture-caching.html#awareness-ii",
+    "title": "Lecture III - Caching",
+    "section": "Awareness II",
+    "text": "Awareness II\n\nPrioritization\n\n\n\nPrioritization\nStructure (Schedule)\nBreaks\nEnable flow (dedicated workspace, manage notifications, clear communication)\nMeditation & exercise"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#key-takeaways-1",
+    "href": "part-03/lecture-caching.html#key-takeaways-1",
+    "title": "Lecture III - Caching",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\nCaching is a universal concept that applies to computers, organizations, and human cognition\nEfficient cache management requires strategic decisions about what to keep and what to remove\nLRU (Least Recently Used) is often the most practical replacement strategy\nOur brain’s limitations are similar to computer caches\nManaging our attention and focus requires understanding these limitations"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#summary-quiz",
+    "href": "part-03/lecture-caching.html#summary-quiz",
+    "title": "Lecture III - Caching",
+    "section": "Summary Quiz",
+    "text": "Summary Quiz\nQuestion: Take a moment to reflect:\n\n\nWhat are the three main types of cache replacement strategies?\nHow does the library principle relate to computer memory hierarchy?\nWhat are two ways you can apply caching principles to improve your productivity?\nHow can understanding cache flooding help protect against information overload?"
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#interesting-literature-to-start",
+    "href": "part-03/lecture-caching.html#interesting-literature-to-start",
+    "title": "Lecture III - Caching",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#books-on-programming",
+    "href": "part-03/lecture-caching.html#books-on-programming",
+    "title": "Lecture III - Caching",
+    "section": "Books on Programming",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#more-literature",
+    "href": "part-03/lecture-caching.html#more-literature",
+    "title": "Lecture III - Caching",
+    "section": "More Literature",
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course."
+  },
+  {
+    "objectID": "part-03/lecture-caching.html#footnotes",
+    "href": "part-03/lecture-caching.html#footnotes",
+    "title": "Lecture III - Caching",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#caching-making-the-most-of-limited-resources",
+    "href": "part-03/lecture-presentation.html#caching-making-the-most-of-limited-resources",
+    "title": "Lecture III - Caching",
+    "section": "Caching: Making the most of limited resources",
+    "text": "Caching: Making the most of limited resources\n\n\nIn the practical use of our intellect, forgetting is as important a function as remembering. – [William James]\n\n\n\n\nToday’s lecture is on caching.\nThe discussed topics are highly relevant for everything that has to do with computers and data.\nOn top of that, caching is another very important concept for our everyday decision-making."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
+    "href": "part-03/lecture-presentation.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
+    "title": "Lecture III - Caching",
+    "section": "Let’s approach the topic using an everyday decision-making situation",
+    "text": "Let’s approach the topic using an everyday decision-making situation\n\n\n\n\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-what-could-we-do",
+    "href": "part-03/lecture-presentation.html#question-what-could-we-do",
+    "title": "Lecture III - Caching",
+    "section": "Question: What could we do?",
+    "text": "Question: What could we do?\n\n\n\n\n\n\n\n\nBetter organization\nClearing out things we no longer need\nNow we have two problems:\n\nStoring?\nClearing out?"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#storing",
+    "href": "part-03/lecture-presentation.html#storing",
+    "title": "Lecture III - Caching",
+    "section": "Storing",
+    "text": "Storing\n\n\n\n\n\n\n\nHow to bring order to storage?\n\nSubdivide storage\nEfficient sorting\nIncrease capacity"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#subdivide-storage-and-efficient-sorting-outcome",
+    "href": "part-03/lecture-presentation.html#subdivide-storage-and-efficient-sorting-outcome",
+    "title": "Lecture III - Caching",
+    "section": "Subdivide storage and efficient sorting outcome",
+    "text": "Subdivide storage and efficient sorting outcome\n\n\n\n\n\n\n\n\nTime investment can improve storing.\nThat is a difficult trade-off in itself.\nNontheless: Each storage has a limited capacity."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-what-do-we-do-when-the-storage-is-full",
+    "href": "part-03/lecture-presentation.html#question-what-do-we-do-when-the-storage-is-full",
+    "title": "Lecture III - Caching",
+    "section": "Question: What do we do, when the storage is full?",
+    "text": "Question: What do we do, when the storage is full?\n\n\nWe could increase the capacity"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#but",
+    "href": "part-03/lecture-presentation.html#but",
+    "title": "Lecture III - Caching",
+    "section": "But…",
+    "text": "But…\n\n\n\n\n\n\n\n\nIncrease capacity is costly.\nThere is a trade-off between size and speed.\nSooner or later, every storage will fill up if not cleared out."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
+    "href": "part-03/lecture-presentation.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
+    "title": "Lecture III - Caching",
+    "section": "Question: What types of storages can you imagine that are affected by this?",
+    "text": "Question: What types of storages can you imagine that are affected by this?\n\n\nOur cupboard\nOur computer (hard drive, RAM, cache, …)\nOur brain?!"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-what-is-the-impact-of-a-full-storage",
+    "href": "part-03/lecture-presentation.html#question-what-is-the-impact-of-a-full-storage",
+    "title": "Lecture III - Caching",
+    "section": "Question: What is the impact of a full storage?",
+    "text": "Question: What is the impact of a full storage?\n\n\n\n\n\n\n\n\nAccess speed drops significantly\nProcessing time increases\nOverall performance decreases"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#now-we-see-why-clearing-out-is-so-important",
+    "href": "part-03/lecture-presentation.html#now-we-see-why-clearing-out-is-so-important",
+    "title": "Lecture III - Caching",
+    "section": "Now we see, why clearing out is so important",
+    "text": "Now we see, why clearing out is so important\n\n\nAnd that goes for our cupboard as well as for computers and other storages…\nBut what stays and what goes?"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-what-replacementeviction-policies-can-you-imagine",
+    "href": "part-03/lecture-presentation.html#question-what-replacementeviction-policies-can-you-imagine",
+    "title": "Lecture III - Caching",
+    "section": "Question: What replacement/eviction policies can you imagine?",
+    "text": "Question: What replacement/eviction policies can you imagine?\n\n\nRandom Eviction\nFirst-In, First-Out (FIFO)\nLeast Recently Used (LRU)"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
+    "href": "part-03/lecture-presentation.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
+    "title": "Lecture III - Caching",
+    "section": "Once again, we can learn a lot from the computer sciences.",
+    "text": "Once again, we can learn a lot from the computer sciences.\n\nThe evolution of computer memory\n\n\n\nIn the 1950s, computer science faced the same question…\n…and has faced it repeatedly since then.\nProcessors have become faster and faster (Moore’s Law).\nThe demands on memory also grew."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#cpu",
+    "href": "part-03/lecture-presentation.html#cpu",
+    "title": "Lecture III - Caching",
+    "section": "CPU",
+    "text": "CPU\n\n\nThe processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the “brain” of the system.\nIt executes instructions and performs calculations, to process data and run programs."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#problem-access-time",
+    "href": "part-03/lecture-presentation.html#problem-access-time",
+    "title": "Lecture III - Caching",
+    "section": "Problem: Access Time",
+    "text": "Problem: Access Time\n\n\n\n\n\n\n\nflowchart LR\n    subgraph Memory\n    A[\"Input Data\"]\n    end\n    \n    subgraph CPU\n    B[\"Processing Data\"]\n    end\n    \n    subgraph Memory\n    C[\"Output Data\"]\n    end\n    \n    A --&gt; B --&gt; C\n    \n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style CPU fill:white,stroke:#01579B,stroke-width:4px\n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style A fill:white\n    style B fill:white\n    style C fill:white\n\n\n\n\n\n\n\nProblem: No matter how much faster the processor gets, if input data isn’t available fast enough or can’t be stored quickly enough, the system won’t become faster overall.\nQuestion: What is the solution?"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#cache-1",
+    "href": "part-03/lecture-presentation.html#cache-1",
+    "title": "Lecture III - Caching",
+    "section": "Cache",
+    "text": "Cache\n\nHierarchical memory pyramid for efficient data management\n\n\n\nL1 Cache, directly on CPU, very fast access time.\nL2 Cache, between L1 and main memory.\nRAM memory.\nMass Storage (hard drive).\nThe whole memory system works like a library.\nFind an explanation here."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#cache---size-and-speed-trade-off",
+    "href": "part-03/lecture-presentation.html#cache---size-and-speed-trade-off",
+    "title": "Lecture III - Caching",
+    "section": "Cache - Size and Speed trade-off",
+    "text": "Cache - Size and Speed trade-off\n\n\nRegisters are 10 million times faster than the hard drive!"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#library-principle",
+    "href": "part-03/lecture-presentation.html#library-principle",
+    "title": "Lecture III - Caching",
+    "section": "Library Principle",
+    "text": "Library Principle\n\n\n\n\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nDesk (5 borrowed books, L2)\nShort-term memory (L1)"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#library-principle-1",
+    "href": "part-03/lecture-presentation.html#library-principle-1",
+    "title": "Lecture III - Caching",
+    "section": "Library Principle",
+    "text": "Library Principle\n\n\n\n\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#how-to-clear-up",
+    "href": "part-03/lecture-presentation.html#how-to-clear-up",
+    "title": "Lecture III - Caching",
+    "section": "How to clear up?",
+    "text": "How to clear up?\n\n\nOptimal: Clairvoyance\n\nStore everything in the cache that will be needed\nDelete everything from the cache that won’t be needed\n\nQuestion: What is the problem with this strategy?\nOptimal strategy not achievable in reality"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#realisable-strategies",
+    "href": "part-03/lecture-presentation.html#realisable-strategies",
+    "title": "Lecture III - Caching",
+    "section": "Realisable strategies?",
+    "text": "Realisable strategies?\n\n\nLeast recently used is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#managerial-and-personal-insights",
+    "href": "part-03/lecture-presentation.html#managerial-and-personal-insights",
+    "title": "Lecture III - Caching",
+    "section": "Managerial and personal insights:",
+    "text": "Managerial and personal insights:\n\n\nLet go of things you haven’t used in ages\nKeep things where they are used\nBoth have been proven to contribute to a significant increase in productivity"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#keeping-things-where-they-are-used",
+    "href": "part-03/lecture-presentation.html#keeping-things-where-they-are-used",
+    "title": "Lecture III - Caching",
+    "section": "Keeping things where they are used…",
+    "text": "Keeping things where they are used…\n\n\nMight be optimal, in a mathematical sense"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
+    "href": "part-03/lecture-presentation.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
+    "title": "Lecture III - Caching",
+    "section": "The strong limitations of caches make them a “security risk”.",
+    "text": "The strong limitations of caches make them a “security risk”.\n\n\nDenial-of-Service Attacks (DoS) attacks.\n\nCache Flooding\nCache Poisoning\n\nOverload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-why-are-the-findings-about-cache-so-important-for-humans",
+    "href": "part-03/lecture-presentation.html#question-why-are-the-findings-about-cache-so-important-for-humans",
+    "title": "Lecture III - Caching",
+    "section": "Question: Why are the findings about cache so important for humans?",
+    "text": "Question: Why are the findings about cache so important for humans?\n\n\nYour Brain is a Cache, Not a Database -[Joe Chrysler]"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#our-brain-has-similar-weaknesses",
+    "href": "part-03/lecture-presentation.html#our-brain-has-similar-weaknesses",
+    "title": "Lecture III - Caching",
+    "section": "Our brain has similar weaknesses",
+    "text": "Our brain has similar weaknesses\n\nProductivity and creativity are negatively affected by:\n\n\n\nOverload (too much)\nExhaustion (too long)\nContext switching (interruption of “flow”, 23 minutes to get back on track)\nDistraction (Cache Flooding)\nFake News (Cache Poisoning)\n\n\n\nThis can lead to burnout."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#question-what-do-you-think-should-we-do-about-it",
+    "href": "part-03/lecture-presentation.html#question-what-do-you-think-should-we-do-about-it",
+    "title": "Lecture III - Caching",
+    "section": "Question: What do you think should we do about it?",
+    "text": "Question: What do you think should we do about it?"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
+    "href": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I\n\nMain Idea:\n\n\n\nModern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.\nThe reason for that has much to do with the way our brain works and how we interact with technology."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
+    "href": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II\n\nKey Causes of Attention Loss:\n\n\n\nTechnology & Social Media: Designed to capture and keep attention, leading to fragmented focus.\nConstant Interruptions: Notifications and multitasking disrupt deep work and concentration.\nEnvironmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
+    "href": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III\n\nConsequences:\n\n\n\nReduced ability to think critically and creatively.\nDifficulty sustaining attention on meaningful tasks."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
+    "href": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV\n\nSolutions Suggested:\n\n\n\nLimit screen time and practice “monotasking.”\nPrioritize sleep, nutrition, and mindful habits."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
+    "href": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V\n\n\n\nBut even better: read the book!"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---book",
+    "href": "part-03/lecture-presentation.html#stolen-focus-why-you-cant-pay-attention---book",
+    "title": "Lecture III - Caching",
+    "section": "Stolen Focus: Why You Can’t Pay Attention - Book",
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Book"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#mitigation-1",
+    "href": "part-03/lecture-presentation.html#mitigation-1",
+    "title": "Lecture III - Caching",
+    "section": "Mitigation",
+    "text": "Mitigation\n\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#awareness-i",
+    "href": "part-03/lecture-presentation.html#awareness-i",
+    "title": "Lecture III - Caching",
+    "section": "Awareness I",
+    "text": "Awareness I\n\nTrain awareness\n\n\n\nSpotlight – immediate goals – Focus\nStarlight – medium-term goals – Wishes\nDaylight – long-term goals – Values"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#awareness-ii",
+    "href": "part-03/lecture-presentation.html#awareness-ii",
+    "title": "Lecture III - Caching",
+    "section": "Awareness II",
+    "text": "Awareness II\n\nPrioritization\n\n\n\nPrioritization\nStructure (Schedule)\nBreaks\nEnable flow (dedicated workspace, manage notifications, clear communication)\nMeditation & exercise"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#key-takeaways-1",
+    "href": "part-03/lecture-presentation.html#key-takeaways-1",
+    "title": "Lecture III - Caching",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\nCaching is a universal concept that applies to computers, organizations, and human cognition\nEfficient cache management requires strategic decisions about what to keep and what to remove\nLRU (Least Recently Used) is often the most practical replacement strategy\nOur brain’s limitations are similar to computer caches\nManaging our attention and focus requires understanding these limitations"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#summary-quiz",
+    "href": "part-03/lecture-presentation.html#summary-quiz",
+    "title": "Lecture III - Caching",
+    "section": "Summary Quiz",
+    "text": "Summary Quiz\nQuestion: Take a moment to reflect:\n\n\nWhat are the three main types of cache replacement strategies?\nHow does the library principle relate to computer memory hierarchy?\nWhat are two ways you can apply caching principles to improve your productivity?\nHow can understanding cache flooding help protect against information overload?"
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#interesting-literature-to-start",
+    "href": "part-03/lecture-presentation.html#interesting-literature-to-start",
+    "title": "Lecture III - Caching",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#books-on-programming",
+    "href": "part-03/lecture-presentation.html#books-on-programming",
+    "title": "Lecture III - Caching",
+    "section": "Books on Programming",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+  },
+  {
+    "objectID": "part-03/lecture-presentation.html#more-literature",
+    "href": "part-03/lecture-presentation.html#more-literature",
+    "title": "Lecture III - Caching",
+    "section": "More Literature",
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course."
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html",
+    "href": "part-03/tutorial-08-functions.html",
+    "title": "Tutorial III.II - Functions",
+    "section": "",
+    "text": "Imagine you’re a librarian who needs to organize and retrieve books efficiently. Instead of explaining every step of finding a book each time, wouldn’t it be nice to have a set of standard procedures? In programming, these procedures are called functions! They help us organize our code into reusable blocks, just like having standard procedures in a library.\nThis tutorial will teach you about functions using a library management system and a coffee machine as an example. We’ll create functions to help us manage books, track their popularity, and implement a simple caching system.\n\n\n\n\n\n\nReal-World Example\n\n\n\nThink of a function like a coffee machine:\n\nInput (parameters) → Coffee beans, water, settings\nProcess → Internal brewing steps\nOutput (return value) → Your finished coffee"
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html#exercise-1.1---create-a-book-information-function",
+    "href": "part-03/tutorial-08-functions.html#exercise-1.1---create-a-book-information-function",
+    "title": "Tutorial III.II - Functions",
+    "section": "Exercise 1.1 - Create a Book Information Function",
+    "text": "Exercise 1.1 - Create a Book Information Function\nCreate a function called get_book_info that takes three parameters: title, author, and year. It should return a formatted string with the book’s information.\n\n\n\n\n\n\nBefore You Start\n\n\n\nCommon mistakes to avoid:\n\nDon’t forget the spaces in the formatting\nRemember to use f-strings for easy string formatting\nMake sure to include the parentheses around the year\n\n\n\n\n# If you call the function like this:\n# get_book_info(\"Return\", \"Alan Wake\", 2023)\n# it should return the string:\n# \"Return by Alan Wake (2023)\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert get_book_info(\"1984\", \"George Orwell\", 1949) == \"1984 by George Orwell (1949)\"\nprint(\"Great job! Your book information function works as expected!\")"
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html#common-pitfall",
+    "href": "part-03/tutorial-08-functions.html#common-pitfall",
+    "title": "Tutorial III.II - Functions",
+    "section": "Common Pitfall",
+    "text": "Common Pitfall\nWhen using multiple conditions, be careful with the order of operations. Consider using parentheses to make your logic clear:\nif (copies_available &gt; 0) and (not on_hold):  # More readable than the code above"
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html#exercise-2.1---create-a-function-to-check-if-a-book-is-popular",
+    "href": "part-03/tutorial-08-functions.html#exercise-2.1---create-a-function-to-check-if-a-book-is-popular",
+    "title": "Tutorial III.II - Functions",
+    "section": "Exercise 2.1 - Create a Function to Check if a Book is Popular",
+    "text": "Exercise 2.1 - Create a Function to Check if a Book is Popular\nCreate a function called is_popular that takes a single parameter rating. If the rating is greater than 3, it should return True, otherwise it should return False.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert is_popular(4) == True, \"A rating of 4 or higher is considered popular\"\nassert is_popular(2) == False, \"A rating of 3 or lower is not popular\"\nprint(\"Excellent! Your popular book function works correctly!\")"
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html#exercise-2.2---create-a-book-access-function",
+    "href": "part-03/tutorial-08-functions.html#exercise-2.2---create-a-book-access-function",
+    "title": "Tutorial III.II - Functions",
+    "section": "Exercise 2.2 - Create a Book Access Function",
+    "text": "Exercise 2.2 - Create a Book Access Function\nMany libraries have borrowing policies that depend on multiple factors. Let’s implement a realistic borrowing policy function that a library might use. Create a function called can_borrow_book that takes three parameters:\n\nis_member: boolean indicating if the person is a library member\nbooks_borrowed: number of books currently borrowed\nhas_overdue: boolean indicating if they have overdue books\n\nThe function should return True only if:\n\nThey are a member AND\nThey have borrowed less than 3 books AND\nThey have no overdue books\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert can_borrow_book(True, 2, False) == True \"Should allow borrowing\"\nassert can_borrow_book(True, 3, False) == False, \"Should not allow more than 3 books\"\nassert can_borrow_book(True, 1, True) == False, \"Should not allow with overdue books\"\nprint(\"Excellent! Your borrowing function works as it should!\")"
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html#exercise-3.1---create-a-cache-priority-function",
+    "href": "part-03/tutorial-08-functions.html#exercise-3.1---create-a-cache-priority-function",
+    "title": "Tutorial III.II - Functions",
+    "section": "Exercise 3.1 - Create a Cache Priority Function",
+    "text": "Exercise 3.1 - Create a Cache Priority Function\nCreate a function called calculate_cache_priority that helps decide if a book should be kept in the easily accessible section. It should take:\n\ntimes_borrowed: How many times the book was borrowed\ndays_since_last_borrow: Days since last borrowed\nis_reference: Whether it’s a reference book (default: False)\n\nReturn a priority score calculated as:\n\nFor regular books: times_borrowed / (days_since_last_borrow + 1)\nFor reference books: 2 * (times_borrowed / (days_since_last_borrow + 1))\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert calculate_cache_priority(10, 5) == 10/(5+1), \"Check your regular book calculation\"\nassert calculate_cache_priority(10, 5, True) == 2*(10/(5+1)), \"Check your reference book calculation\"\nprint(\"Great! Your cache priority function works and calculates correctly!\")"
+  },
+  {
+    "objectID": "part-03/tutorial-08-functions.html#exercise-4.1---working-with-string-methods-and-functions",
+    "href": "part-03/tutorial-08-functions.html#exercise-4.1---working-with-string-methods-and-functions",
+    "title": "Tutorial III.II - Functions",
+    "section": "Exercise 4.1 - Working with String Methods and Functions",
+    "text": "Exercise 4.1 - Working with String Methods and Functions\nCreate a function called format_book_title that takes a book title as input and:\n\nCapitalizes the first letter of each word\nRemoves any extra whitespace\nReturns the formatted title\n\n\n\n\n\n\n\nCommon String Methods\n\n\n\n\n.strip() - Removes whitespace from start and end\n.title() - Capitalizes first letter of each word\n.lower() - Converts to lowercase\n.upper() - Converts to uppercase\n\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert format_book_title(\"  the hitchhikers guide  \") == \"The Hitchhikers Guide\", \"Check your whitespace removal\"\nassert format_book_title(\"dune\") == \"Dune\", \"Check your capitalization\"\nprint(\"Excellent! Your title formatting function works correctly!\")"
   }
 ]
