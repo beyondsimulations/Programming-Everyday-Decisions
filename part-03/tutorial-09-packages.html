@@ -113,9 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Programming: Everyday Decision-Making Algorithms
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part-03/lecture-caching.html">03 Caching</a></li><li class="breadcrumb-item"><a href="../part-03/tutorial-09-packages.html">09 - Packages</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -225,6 +223,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">03 Caching</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/lecture-caching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/tutorial-07-recap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">07 - Recap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/tutorial-08-functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">08 - Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/tutorial-09-packages.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">09 - Packages</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
  <span class="menu-text">***</span>
   </li>
@@ -282,7 +315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part-03/lecture-caching.html">03 Caching</a></li><li class="breadcrumb-item"><a href="../part-03/tutorial-09-packages.html">09 - Packages</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Tutorial III.III - Package Management</h1>
 <p class="subtitle lead">Programming: Everyday Decision-Making Algorithms</p>
@@ -363,12 +396,12 @@ Note
 <section id="section-1---using-standard-libraries" class="level1">
 <h1>Section 1 - Using Standard Libraries</h1>
 <p>Before we start using packages, let’s take a look at Python’s standard libraries. Python comes with a set of <strong>standard libraries that are always available</strong>. You can use these libraries by simply importing them. For example, the <code>math</code> library provides mathematical functions like <code>sqrt</code> and <code>sin</code> and the <code>random</code> library provides functions to generate random numbers. You can import these libraries using the following syntax:</p>
-<div id="0184bda7" class="cell" data-execution_count="1">
+<div id="2cefae80" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can then use the functions provided by these libraries by calling them with the library name as a prefix. For example, the following code calculates the square root of 16.</p>
-<div id="1ef0a6f6" class="cell" data-execution_count="2">
+<div id="ca34d172" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a_square_root <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The square root of 16 is </span><span class="sc">{</span>a_square_root<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -376,46 +409,46 @@ Note
 </div>
 </div>
 <p>The following code generates a random number between 0 and 1.</p>
-<div id="97e7b1f9" class="cell" data-execution_count="3">
+<div id="b624c0f8" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>a_random_number <span class="op">=</span> random.random()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"A random number is </span><span class="sc">{</span>a_random_number<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A random number is 0.463644880286867!</code></pre>
+<pre><code>A random number is 0.12309236184936656!</code></pre>
 </div>
 </div>
 <p>We can also use the library to choose a random element from a list. For example, the following code chooses a random element from the list <code>['book1', 'book2', 'book3']</code>. Try it out by executing the cell multiple times.</p>
-<div id="28bfaca9" class="cell" data-execution_count="4">
+<div id="bc29ed4b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>random_choice <span class="op">=</span> random.choice([<span class="st">'book1'</span>, <span class="st">'book2'</span>, <span class="st">'book3'</span>])</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"We chose </span><span class="sc">{</span>random_choice<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>We chose book1!</code></pre>
+<pre><code>We chose book3!</code></pre>
 </div>
 </div>
 <p>Sometimes, we only need one function from a library. In this case, we can use the <code>from</code> keyword to import only the specific function we need. For example, the following code imports only the <code>randint</code> function from the <code>random</code> library and uses it to generate a random integer between 1 and 10.</p>
-<div id="516c7a09" class="cell" data-execution_count="5">
+<div id="0bc5d571" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> randint</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>a_random_integer <span class="op">=</span> randint(<span class="dv">1</span>, <span class="dv">10</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"A random integer between 1 and 10 is </span><span class="sc">{</span>a_random_integer<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A random integer between 1 and 10 is 10!</code></pre>
+<pre><code>A random integer between 1 and 10 is 1!</code></pre>
 </div>
 </div>
 <p>Other times, we might need to work with a library that has a rather long name. In this case, we can use the <code>as</code> keyword to give the library a shorter name. For example, the following code imports the <code>random</code> library and gives it the shorter name <code>rd</code>.</p>
-<div id="b99bd522" class="cell" data-execution_count="6">
+<div id="9299ed90" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random <span class="im">as</span> rd</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>a_random_integer <span class="op">=</span> rd.randint(<span class="dv">1</span>, <span class="dv">100</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Now, a random integer between 1 and 100 is </span><span class="sc">{</span>a_random_integer<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Now, a random integer between 1 and 100 is 79!</code></pre>
+<pre><code>Now, a random integer between 1 and 100 is 51!</code></pre>
 </div>
 </div>
 <section id="exercise-1.1---use-the-math-library" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.1---use-the-math-library">Exercise 1.1 - Use the math library</h2>
 <p>Use the <code>math</code> library to calculate the square root of 256. Call the result <code>square_root</code>.</p>
-<div id="8098889f" class="cell" data-execution_count="7">
+<div id="9364052f" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="87adf298" class="cell" data-execution_count="8">
+<div id="c3de106f" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> square_root <span class="op">==</span> <span class="dv">16</span></span>
@@ -426,7 +459,7 @@ Note
 <section id="exercise-1.2---use-the-random-library" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.2---use-the-random-library">Exercise 1.2 - Use the random library</h2>
 <p>Use the <code>random</code> library to generate a random number between 1 and 25. Call the result <code>random_number</code>.</p>
-<div id="ff60b707" class="cell" data-execution_count="10">
+<div id="7dc40fc3" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> random_number <span class="op">&gt;=</span> <span class="dv">1</span> <span class="kw">and</span> random_number <span class="op">&lt;=</span> <span class="dv">25</span></span>
@@ -478,7 +511,7 @@ Miniconda
 <p>Let’s practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.</p>
 <pre class="{bash}"><code>conda install pandas</code></pre>
 <p>You can test if the installation was successful by running the following code.</p>
-<div id="4fcf2054" class="cell" data-execution_count="11">
+<div id="a33017a5" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>

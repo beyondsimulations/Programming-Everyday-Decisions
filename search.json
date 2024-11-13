@@ -4,84 +4,128 @@
     "href": "part-03/tutorial-09-packages.html",
     "title": "Tutorial III.III - Package Management",
     "section": "",
-    "text": "Welcome to this guided tutorial on understanding packages and package management in Python! We’ll explore this concept through the lens of library management - how libraries organize, maintain, and share their resources.\nThink of Python as your local library’s main building. Just like a library has:\n\nA main collection (Python’s standard library)\nDifferent sections (third-party packages)\nA catalog system (pip package manager)\nMultiple branches (virtual environments)\n\n\n\nLet’s break this down:\n\nStandard Library: Like the core collection every library branch has:\n\nPython comes with essential tools built-in\nData structures (lists, dictionaries, etc.)\nMathematical functions (sin, cos, sqrt, etc.)\nRandom numbers (random, choice, etc.)\n\nThird-Party Packages: Similar to specialized sections in a library:\n\nData analysis packages (pandas, numpy) → Research section\nVisualization packages (matplotlib, seaborn) → Art books\nWeb frameworks (Django, Flask) → Technical manuals\nMachine learning packages (scikit-learn) → Advanced studies section\n\nPackage Manager (pip): Works like the library’s catalog:\n\nInstalling packages → Ordering new books\nUpdating packages → Replacing with newer editions\nUninstalling packages → Removing outdated books\nDependencies → “You must read Book A before Book B”\n\nVirtual Environments: Works like different library branches:\n\nEach branch can have its own collection of books (packages)\nDifferent editions of the same book (package versions)\nSpecialized sections for different purposes (project-specific dependencies)\n\n\nThe best part? Most Python packages are free to use, thanks to the open-source community!\n\n\n\n\n\n\nNote\n\n\n\nWhile we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE."
+    "text": "Welcome to this guided tutorial on understanding packages and package management in Python! We’ll explore this concept through the lens of library management - how libraries organize, maintain, and share their resources.\nThink of Python as your local library’s main building. Just like a library has:\n\nA main collection (Python’s standard library)\nDifferent sections (third-party packages)\nA catalog system (pip package manager)\nMultiple branches (virtual environments)\n\n\n\nLet’s break this down:\n\nStandard Library: Like the core collection every library branch has:\n\nPython comes with essential tools built-in\nData structures (lists, dictionaries, etc.)\nMathematical functions (sin, cos, sqrt, etc.)\nRandom numbers (random, choice, etc.)\n\nThird-Party Packages: Similar to specialized sections in a library:\n\nData analysis packages (pandas, numpy) → Research section\nVisualization packages (matplotlib, seaborn) → Art books\nWeb frameworks (Django, Flask) → Technical manuals\nMachine learning packages (scikit-learn) → Advanced studies section\n\nPackage Manager (pip): Works like the library’s catalog:\n\nInstalling packages → Ordering new books\nUpdating packages → Replacing with newer editions\nUninstalling packages → Removing outdated books\nDependencies → “You must read Book A before Book B”\n\nVirtual Environments: Works like different library branches:\n\nEach branch can have its own collection of books (packages)\nDifferent editions of the same book (package versions)\nSpecialized sections for different purposes (project-specific dependencies)\n\n\nThe best part? Most Python packages are free to use, thanks to the open-source community!\n\n\n\n\n\n\nNote\n\n\n\nWhile we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE.",
+    "crumbs": [
+      "03 Caching",
+      "09 - Packages"
+    ]
   },
   {
     "objectID": "part-03/tutorial-09-packages.html#in-more-detail",
     "href": "part-03/tutorial-09-packages.html#in-more-detail",
     "title": "Tutorial III.III - Package Management",
     "section": "",
-    "text": "Let’s break this down:\n\nStandard Library: Like the core collection every library branch has:\n\nPython comes with essential tools built-in\nData structures (lists, dictionaries, etc.)\nMathematical functions (sin, cos, sqrt, etc.)\nRandom numbers (random, choice, etc.)\n\nThird-Party Packages: Similar to specialized sections in a library:\n\nData analysis packages (pandas, numpy) → Research section\nVisualization packages (matplotlib, seaborn) → Art books\nWeb frameworks (Django, Flask) → Technical manuals\nMachine learning packages (scikit-learn) → Advanced studies section\n\nPackage Manager (pip): Works like the library’s catalog:\n\nInstalling packages → Ordering new books\nUpdating packages → Replacing with newer editions\nUninstalling packages → Removing outdated books\nDependencies → “You must read Book A before Book B”\n\nVirtual Environments: Works like different library branches:\n\nEach branch can have its own collection of books (packages)\nDifferent editions of the same book (package versions)\nSpecialized sections for different purposes (project-specific dependencies)\n\n\nThe best part? Most Python packages are free to use, thanks to the open-source community!\n\n\n\n\n\n\nNote\n\n\n\nWhile we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE."
+    "text": "Let’s break this down:\n\nStandard Library: Like the core collection every library branch has:\n\nPython comes with essential tools built-in\nData structures (lists, dictionaries, etc.)\nMathematical functions (sin, cos, sqrt, etc.)\nRandom numbers (random, choice, etc.)\n\nThird-Party Packages: Similar to specialized sections in a library:\n\nData analysis packages (pandas, numpy) → Research section\nVisualization packages (matplotlib, seaborn) → Art books\nWeb frameworks (Django, Flask) → Technical manuals\nMachine learning packages (scikit-learn) → Advanced studies section\n\nPackage Manager (pip): Works like the library’s catalog:\n\nInstalling packages → Ordering new books\nUpdating packages → Replacing with newer editions\nUninstalling packages → Removing outdated books\nDependencies → “You must read Book A before Book B”\n\nVirtual Environments: Works like different library branches:\n\nEach branch can have its own collection of books (packages)\nDifferent editions of the same book (package versions)\nSpecialized sections for different purposes (project-specific dependencies)\n\n\nThe best part? Most Python packages are free to use, thanks to the open-source community!\n\n\n\n\n\n\nNote\n\n\n\nWhile we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE.",
+    "crumbs": [
+      "03 Caching",
+      "09 - Packages"
+    ]
   },
   {
     "objectID": "part-03/tutorial-09-packages.html#exercise-1.1---use-the-math-library",
     "href": "part-03/tutorial-09-packages.html#exercise-1.1---use-the-math-library",
     "title": "Tutorial III.III - Package Management",
     "section": "Exercise 1.1 - Use the math library",
-    "text": "Exercise 1.1 - Use the math library\nUse the math library to calculate the square root of 256. Call the result square_root.\n\n# YOUR CODE BELOW\n\n\n\nCode\nassert square_root == 16\nprint(f\"Great job! The square root of 256 is {square_root}!\")"
+    "text": "Exercise 1.1 - Use the math library\nUse the math library to calculate the square root of 256. Call the result square_root.\n\n# YOUR CODE BELOW\n\n\n\nCode\nassert square_root == 16\nprint(f\"Great job! The square root of 256 is {square_root}!\")",
+    "crumbs": [
+      "03 Caching",
+      "09 - Packages"
+    ]
   },
   {
     "objectID": "part-03/tutorial-09-packages.html#exercise-1.2---use-the-random-library",
     "href": "part-03/tutorial-09-packages.html#exercise-1.2---use-the-random-library",
     "title": "Tutorial III.III - Package Management",
     "section": "Exercise 1.2 - Use the random library",
-    "text": "Exercise 1.2 - Use the random library\nUse the random library to generate a random number between 1 and 25. Call the result random_number.\n\n\nCode\nassert random_number &gt;= 1 and random_number &lt;= 25\nprint(f\"Good! You generated a random integer {random_number} between 1 and 25!\")"
+    "text": "Exercise 1.2 - Use the random library\nUse the random library to generate a random number between 1 and 25. Call the result random_number.\n\n\nCode\nassert random_number &gt;= 1 and random_number &lt;= 25\nprint(f\"Good! You generated a random integer {random_number} between 1 and 25!\")",
+    "crumbs": [
+      "03 Caching",
+      "09 - Packages"
+    ]
   },
   {
     "objectID": "part-03/tutorial-09-packages.html#exercise-2.1---check-your-package-manager-version",
     "href": "part-03/tutorial-09-packages.html#exercise-2.1---check-your-package-manager-version",
     "title": "Tutorial III.III - Package Management",
     "section": "Exercise 2.1 - Check your package manager version",
-    "text": "Exercise 2.1 - Check your package manager version\nLet’s start by checking which version of conda we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press ctrl + shift + p and then type Terminal: Create new terminal. Then, run the following command:\nconda info"
+    "text": "Exercise 2.1 - Check your package manager version\nLet’s start by checking which version of conda we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press ctrl + shift + p and then type Terminal: Create new terminal. Then, run the following command:\nconda info",
+    "crumbs": [
+      "03 Caching",
+      "09 - Packages"
+    ]
   },
   {
     "objectID": "part-03/tutorial-09-packages.html#exercise-3.1---install-pandas",
     "href": "part-03/tutorial-09-packages.html#exercise-3.1---install-pandas",
     "title": "Tutorial III.III - Package Management",
     "section": "Exercise 3.1 - Install pandas",
-    "text": "Exercise 3.1 - Install pandas\nLet’s practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.\nconda install pandas\nYou can test if the installation was successful by running the following code.\n\n\nCode\n# Test your answer\ntry:\n    import pandas\n    print(\"pandas installed successfully!\")\nexcept ImportError:\n    print(\"pandas was not installed correctly\")"
+    "text": "Exercise 3.1 - Install pandas\nLet’s practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.\nconda install pandas\nYou can test if the installation was successful by running the following code.\n\n\nCode\n# Test your answer\ntry:\n    import pandas\n    print(\"pandas installed successfully!\")\nexcept ImportError:\n    print(\"pandas was not installed correctly\")",
+    "crumbs": [
+      "03 Caching",
+      "09 - Packages"
+    ]
   },
   {
     "objectID": "part-03/tutorial-07-recap.html",
     "href": "part-03/tutorial-07-recap.html",
     "title": "Tutorial III.I - Caching and Recap",
     "section": "",
-    "text": "Throughout our previous tutorials, we’ve explored fundamental programming concepts through the lens of everyday decision-making. Now, let’s connect these concepts to another important algorithmic idea: caching.\nThe concepts we’ve learned map directly to caching principles:\n\nVariables → Like cache entries (storing specific pieces of information)\nComparisons → Like cache eviction policies (what we keep/remove)\nLists → Like cache storage (what we remember)\nLoops → Like cache maintenance (how we update our knowledge)\n\n\n\n\n\n\n\nWhat is Caching?\n\n\n\nRemember today’s lecture. Think of caching for example like your brain’s short-term memory. When you frequently need certain information (like your friend’s phone number), you keep it readily available instead of looking it up each time."
+    "text": "Throughout our previous tutorials, we’ve explored fundamental programming concepts through the lens of everyday decision-making. Now, let’s connect these concepts to another important algorithmic idea: caching.\nThe concepts we’ve learned map directly to caching principles:\n\nVariables → Like cache entries (storing specific pieces of information)\nComparisons → Like cache eviction policies (what we keep/remove)\nLists → Like cache storage (what we remember)\nLoops → Like cache maintenance (how we update our knowledge)\n\n\n\n\n\n\n\nWhat is Caching?\n\n\n\nRemember today’s lecture. Think of caching for example like your brain’s short-term memory. When you frequently need certain information (like your friend’s phone number), you keep it readily available instead of looking it up each time.",
+    "crumbs": [
+      "03 Caching",
+      "07 - Recap"
+    ]
   },
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-1.1-create-a-simple-cache-system-for-your-favorite-restaurant-orders",
     "href": "part-03/tutorial-07-recap.html#exercise-1.1-create-a-simple-cache-system-for-your-favorite-restaurant-orders",
     "title": "Tutorial III.I - Caching and Recap",
     "section": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders",
-    "text": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders\n\nCreate a variable last_meal for the last meal you ordered (as a string)\nStore its price in a variable price (as a float)\nWhether you would order it again in a variable would_order_again (as a boolean)\nHow many times you’ve ordered it in the last month in a variable num_orders (as an integer)\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(last_meal, str), \"last_meal should be a string\"\nassert isinstance(price, float), \"price should be a float\"\nassert isinstance(would_order_again, bool), \"would_order_again should be a boolean\"\nassert isinstance(num_orders, int), \"num_orders should be an integer\"\nprint(f\"Last meal: {last_meal}, price: {price}, would order again: {would_order_again}, number of orders in the last month: {num_orders}\")"
+    "text": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders\n\nCreate a variable last_meal for the last meal you ordered (as a string)\nStore its price in a variable price (as a float)\nWhether you would order it again in a variable would_order_again (as a boolean)\nHow many times you’ve ordered it in the last month in a variable num_orders (as an integer)\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(last_meal, str), \"last_meal should be a string\"\nassert isinstance(price, float), \"price should be a float\"\nassert isinstance(would_order_again, bool), \"would_order_again should be a boolean\"\nassert isinstance(num_orders, int), \"num_orders should be an integer\"\nprint(f\"Last meal: {last_meal}, price: {price}, would order again: {would_order_again}, number of orders in the last month: {num_orders}\")",
+    "crumbs": [
+      "03 Caching",
+      "07 - Recap"
+    ]
   },
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-2.1-create-a-decision-system-for-your-favorite-song",
     "href": "part-03/tutorial-07-recap.html#exercise-2.1-create-a-decision-system-for-your-favorite-song",
     "title": "Tutorial III.I - Caching and Recap",
     "section": "Exercise 2.1: Create a decision system for your favorite song",
-    "text": "Exercise 2.1: Create a decision system for your favorite song\n\nWrite a small decision system for your cached favorite song favorite_song\nUse at least two conditions based on the song’s play count and last played time (play_count and last_played_minutes_ago)\nYou can set the parameters for the conditions yourself\nSave the result of the decision in a variable should_evict\nPrint the result of whether we should evict the song or not\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(favorite_song, str), \"favorite_song should be a string\"\nassert isinstance(play_count, int), \"play_count should be an integer\"\nassert isinstance(last_played_minutes_ago, int), \"last_played_minutes_ago should be an integer\"\nassert isinstance(should_evict, bool), \"should_evict should be a boolean\"\nprint(f\"Favorite song: {favorite_song}, play count: {play_count}, last played minutes ago: {last_played_minutes_ago}, should evict: {should_evict}\")"
+    "text": "Exercise 2.1: Create a decision system for your favorite song\n\nWrite a small decision system for your cached favorite song favorite_song\nUse at least two conditions based on the song’s play count and last played time (play_count and last_played_minutes_ago)\nYou can set the parameters for the conditions yourself\nSave the result of the decision in a variable should_evict\nPrint the result of whether we should evict the song or not\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(favorite_song, str), \"favorite_song should be a string\"\nassert isinstance(play_count, int), \"play_count should be an integer\"\nassert isinstance(last_played_minutes_ago, int), \"last_played_minutes_ago should be an integer\"\nassert isinstance(should_evict, bool), \"should_evict should be a boolean\"\nprint(f\"Favorite song: {favorite_song}, play count: {play_count}, last played minutes ago: {last_played_minutes_ago}, should evict: {should_evict}\")",
+    "crumbs": [
+      "03 Caching",
+      "07 - Recap"
+    ]
   },
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-3.1-create-a-shopping-cart-cache",
     "href": "part-03/tutorial-07-recap.html#exercise-3.1-create-a-shopping-cart-cache",
     "title": "Tutorial III.I - Caching and Recap",
     "section": "Exercise 3.1: Create a shopping cart cache",
-    "text": "Exercise 3.1: Create a shopping cart cache\n\nMake a list shopping_cart of five recently viewed items in your shopping cart\nCreate tuples for the item details (name and price) and add them to the list\nEnsure that the name is a string and the price is a float\n\n\n\n\n\n\n\nTip\n\n\n\nFirst, create a list. Inside the list, the entries should be tuples of the item name and price.\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(shopping_cart) == 5, \"shopping_cart should have 5 items\"\nassert isinstance(shopping_cart, list), \"shopping_cart should be a list\"\nassert all(isinstance(item, tuple) for item in shopping_cart), \"All items in shopping_cart should be tuples\"\nassert all(isinstance(item[0], str) and isinstance(item[1], (int, float)) for item in shopping_cart), \"All items in shopping_cart should be tuples with a string and a number\"\nprint(\"Great job! Your shopping cart is ready.\")"
+    "text": "Exercise 3.1: Create a shopping cart cache\n\nMake a list shopping_cart of five recently viewed items in your shopping cart\nCreate tuples for the item details (name and price) and add them to the list\nEnsure that the name is a string and the price is a float\n\n\n\n\n\n\n\nTip\n\n\n\nFirst, create a list. Inside the list, the entries should be tuples of the item name and price.\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(shopping_cart) == 5, \"shopping_cart should have 5 items\"\nassert isinstance(shopping_cart, list), \"shopping_cart should be a list\"\nassert all(isinstance(item, tuple) for item in shopping_cart), \"All items in shopping_cart should be tuples\"\nassert all(isinstance(item[0], str) and isinstance(item[1], (int, float)) for item in shopping_cart), \"All items in shopping_cart should be tuples with a string and a number\"\nprint(\"Great job! Your shopping cart is ready.\")",
+    "crumbs": [
+      "03 Caching",
+      "07 - Recap"
+    ]
   },
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-4.1-clean-up-a-browser-history-cache",
     "href": "part-03/tutorial-07-recap.html#exercise-4.1-clean-up-a-browser-history-cache",
     "title": "Tutorial III.I - Caching and Recap",
     "section": "Exercise 4.1: Clean up a browser history cache",
-    "text": "Exercise 4.1: Clean up a browser history cache\n\nWrite a loop to remove sites with low visit counts\nIf the site has been visited less than 6 times, remove it from the cache\nPrint the browser history after cleanup\n\n\n\n\n\n\n\nTip\n\n\n\nBe careful with the loop. You need to iterate over the list and remove items from it. If you remove items directly from the list while iterating over it, you won’t get the correct answer, as the list will change size while you iterate over it. Thus, you first need to create a list of items to keep and at the end replace the old list with the new one.\n\n\n\nbrowser_history = [\n    (\"google.com\", 10), \n    (\"youtube.de\", 5), \n    (\"amazon.de\", 1), \n    (\"netflix.de\", 2), \n    (\"github.com\", 15)\n]\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(browser_history) == 2, \"browser_history should have 2 items\"\nassert isinstance(browser_history, list), \"browser_history should be a list\"\nassert all(isinstance(item, tuple) for item in browser_history), \"All items in browser_history should be tuples\""
+    "text": "Exercise 4.1: Clean up a browser history cache\n\nWrite a loop to remove sites with low visit counts\nIf the site has been visited less than 6 times, remove it from the cache\nPrint the browser history after cleanup\n\n\n\n\n\n\n\nTip\n\n\n\nBe careful with the loop. You need to iterate over the list and remove items from it. If you remove items directly from the list while iterating over it, you won’t get the correct answer, as the list will change size while you iterate over it. Thus, you first need to create a list of items to keep and at the end replace the old list with the new one.\n\n\n\nbrowser_history = [\n    (\"google.com\", 10), \n    (\"youtube.de\", 5), \n    (\"amazon.de\", 1), \n    (\"netflix.de\", 2), \n    (\"github.com\", 15)\n]\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(browser_history) == 2, \"browser_history should have 2 items\"\nassert isinstance(browser_history, list), \"browser_history should be a list\"\nassert all(isinstance(item, tuple) for item in browser_history), \"All items in browser_history should be tuples\"",
+    "crumbs": [
+      "03 Caching",
+      "07 - Recap"
+    ]
   },
   {
     "objectID": "part-02/tutorial-06-explore-exploit.html",
     "href": "part-02/tutorial-06-explore-exploit.html",
     "title": "Tutorial II.III - Explore and Exploit",
     "section": "",
-    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $5!\nYour new balance is $105\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nbet = 10 # How much we bet each time\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nprint(f\"You played the slot machine {len(results)} times\")\nprint(f\"Your final balance is ${results[-1]}\")\nprint(f\"Unfortunately, the payout rates are not realistic here...\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is:\n\nThe function random.random() generates a random number between 0 and 1.\nA rate of 2.0 means you get back exactly what you bet (on average)\nOur rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\nprint(f\"You played the slot machine {len(results)} times\")\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 6 for x in plays), \"Number of plays seems unreasonably high given budget\"\nprint(f\"You played the slot machine {plays[0]} times on machine 1\")\nprint(f\"You played the slot machine {plays[1]} times on machine 2\")\nprint(f\"You played the slot machine {plays[2]} times on machine 3\")\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\nprint(f\"The best machine is machine {best_machine}\")\nprint(f\"The worst machine is machine {worst_machine}\")\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
+    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $0!\nYour new balance is $100\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nbet = 10 # How much we bet each time\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nprint(f\"You played the slot machine {len(results)} times\")\nprint(f\"Your final balance is ${results[-1]}\")\nprint(f\"Unfortunately, the payout rates are not realistic here...\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is:\n\nThe function random.random() generates a random number between 0 and 1.\nA rate of 2.0 means you get back exactly what you bet (on average)\nOur rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\nprint(f\"You played the slot machine {len(results)} times\")\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 6 for x in plays), \"Number of plays seems unreasonably high given budget\"\nprint(f\"You played the slot machine {plays[0]} times on machine 1\")\nprint(f\"You played the slot machine {plays[1]} times on machine 2\")\nprint(f\"You played the slot machine {plays[2]} times on machine 3\")\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\nprint(f\"The best machine is machine {best_machine}\")\nprint(f\"The worst machine is machine {worst_machine}\")\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
     "crumbs": [
       "02 Explore/Exploit",
       "06 - Exploration"
@@ -2493,294 +2537,462 @@
     "href": "part-03/lecture-caching.html",
     "title": "Lecture III - Caching",
     "section": "",
-    "text": "By the end of this lecture, you will be able to:\n\n\n\nExplain the fundamental concepts of caching and its importance\nCompare different cache replacement strategies\nIdentify caching principles in everyday life\nApply caching concepts to personal productivity\nUnderstand the relationship between caching and attention management"
+    "text": "By the end of this lecture, you will be able to:\n\n\n\nExplain the fundamental concepts of caching and its importance\nCompare different cache replacement strategies\nIdentify caching principles in everyday life\nApply caching concepts to personal productivity\nUnderstand the relationship between caching and attention management",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#caching-making-the-most-of-limited-resources",
     "href": "part-03/lecture-caching.html#caching-making-the-most-of-limited-resources",
     "title": "Lecture III - Caching",
     "section": "Caching: Making the most of limited resources",
-    "text": "Caching: Making the most of limited resources\n\n\nIn the practical use of our intellect, forgetting is as important a function as remembering. – [William James]\n\n\n\n\nToday’s lecture is on caching.\nThe discussed topics are highly relevant for everything that has to do with computers and data.\nOn top of that, caching is another very important concept for our everyday decision-making."
+    "text": "Caching: Making the most of limited resources\n\n\nIn the practical use of our intellect, forgetting is as important a function as remembering. – [William James]\n\n\n\n\nToday’s lecture is on caching.\nThe discussed topics are highly relevant for everything that has to do with computers and data.\nOn top of that, caching is another very important concept for our everyday decision-making.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
     "href": "part-03/lecture-caching.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
     "title": "Lecture III - Caching",
     "section": "Let’s approach the topic using an everyday decision-making situation",
-    "text": "Let’s approach the topic using an everyday decision-making situation\n\n\n\n\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order."
+    "text": "Let’s approach the topic using an everyday decision-making situation\n\n\n\n\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-what-could-we-do",
     "href": "part-03/lecture-caching.html#question-what-could-we-do",
     "title": "Lecture III - Caching",
     "section": "Question: What could we do?",
-    "text": "Question: What could we do?\n\n\n\n\n\n\n\n\nBetter organization\nClearing out things we no longer need\nNow we have two problems:\n\nStoring?\nClearing out?"
+    "text": "Question: What could we do?\n\n\n\n\n\n\n\n\nBetter organization\nClearing out things we no longer need\nNow we have two problems:\n\nStoring?\nClearing out?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#storing",
     "href": "part-03/lecture-caching.html#storing",
     "title": "Lecture III - Caching",
     "section": "Storing",
-    "text": "Storing\n\n\n\n\n\n\n\nHow to bring order to storage?\n\nSubdivide storage\nEfficient sorting\nIncrease capacity"
+    "text": "Storing\n\n\n\n\n\n\n\nHow to bring order to storage?\n\nSubdivide storage\nEfficient sorting\nIncrease capacity",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#subdivide-storage-and-efficient-sorting-outcome",
     "href": "part-03/lecture-caching.html#subdivide-storage-and-efficient-sorting-outcome",
     "title": "Lecture III - Caching",
     "section": "Subdivide storage and efficient sorting outcome",
-    "text": "Subdivide storage and efficient sorting outcome\n\n\n\n\n\n\n\n\nTime investment can improve storing.\nThat is a difficult trade-off in itself.\nNontheless: Each storage has a limited capacity."
+    "text": "Subdivide storage and efficient sorting outcome\n\n\n\n\n\n\n\n\nTime investment can improve storing.\nThat is a difficult trade-off in itself.\nNontheless: Each storage has a limited capacity.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-what-do-we-do-when-the-storage-is-full",
     "href": "part-03/lecture-caching.html#question-what-do-we-do-when-the-storage-is-full",
     "title": "Lecture III - Caching",
     "section": "Question: What do we do, when the storage is full?",
-    "text": "Question: What do we do, when the storage is full?\n\n\nWe could increase the capacity"
+    "text": "Question: What do we do, when the storage is full?\n\n\nWe could increase the capacity",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#but",
     "href": "part-03/lecture-caching.html#but",
     "title": "Lecture III - Caching",
     "section": "But…",
-    "text": "But…\n\n\n\n\n\n\n\n\nIncrease capacity is costly.\nThere is a trade-off between size and speed.\nSooner or later, every storage will fill up if not cleared out."
+    "text": "But…\n\n\n\n\n\n\n\n\nIncrease capacity is costly.\nThere is a trade-off between size and speed.\nSooner or later, every storage will fill up if not cleared out.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
     "href": "part-03/lecture-caching.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
     "title": "Lecture III - Caching",
     "section": "Question: What types of storages can you imagine that are affected by this?",
-    "text": "Question: What types of storages can you imagine that are affected by this?\n\n\nOur cupboard\nOur computer (hard drive, RAM, cache, …)\nOur brain?!"
+    "text": "Question: What types of storages can you imagine that are affected by this?\n\n\nOur cupboard\nOur computer (hard drive, RAM, cache, …)\nOur brain?!",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-what-is-the-impact-of-a-full-storage",
     "href": "part-03/lecture-caching.html#question-what-is-the-impact-of-a-full-storage",
     "title": "Lecture III - Caching",
     "section": "Question: What is the impact of a full storage?",
-    "text": "Question: What is the impact of a full storage?\n\n\n\n\n\n\n\n\nAccess speed drops significantly\nProcessing time increases\nOverall performance decreases"
+    "text": "Question: What is the impact of a full storage?\n\n\n\n\n\n\n\n\nAccess speed drops significantly\nProcessing time increases\nOverall performance decreases",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#now-we-see-why-clearing-out-is-so-important",
     "href": "part-03/lecture-caching.html#now-we-see-why-clearing-out-is-so-important",
     "title": "Lecture III - Caching",
     "section": "Now we see, why clearing out is so important",
-    "text": "Now we see, why clearing out is so important\n\n\nAnd that goes for our cupboard as well as for computers and other storages…\nBut what stays and what goes?"
+    "text": "Now we see, why clearing out is so important\n\n\nAnd that goes for our cupboard as well as for computers and other storages…\nBut what stays and what goes?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-what-replacementeviction-policies-can-you-imagine",
     "href": "part-03/lecture-caching.html#question-what-replacementeviction-policies-can-you-imagine",
     "title": "Lecture III - Caching",
     "section": "Question: What replacement/eviction policies can you imagine?",
-    "text": "Question: What replacement/eviction policies can you imagine?\n\n\nRandom Eviction\nFirst-In, First-Out (FIFO)\nLeast Recently Used (LRU)"
+    "text": "Question: What replacement/eviction policies can you imagine?\n\n\nRandom Eviction\nFirst-In, First-Out (FIFO)\nLeast Recently Used (LRU)",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
     "href": "part-03/lecture-caching.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
     "title": "Lecture III - Caching",
     "section": "Once again, we can learn a lot from the computer sciences.",
-    "text": "Once again, we can learn a lot from the computer sciences.\n\nThe evolution of computer memory\n\n\n\nIn the 1950s, computer science faced the same question…\n…and has faced it repeatedly since then.\nProcessors have become faster and faster (Moore’s Law).\nThe demands on memory also grew."
+    "text": "Once again, we can learn a lot from the computer sciences.\n\nThe evolution of computer memory\n\n\n\nIn the 1950s, computer science faced the same question…\n…and has faced it repeatedly since then.\nProcessors have become faster and faster (Moore’s Law).\nThe demands on memory also grew.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#cpu",
     "href": "part-03/lecture-caching.html#cpu",
     "title": "Lecture III - Caching",
     "section": "CPU",
-    "text": "CPU\n\n\nThe processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the “brain” of the system.\nIt executes instructions and performs calculations, to process data and run programs."
+    "text": "CPU\n\n\nThe processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the “brain” of the system.\nIt executes instructions and performs calculations, to process data and run programs.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#problem-access-time",
     "href": "part-03/lecture-caching.html#problem-access-time",
     "title": "Lecture III - Caching",
     "section": "Problem: Access Time",
-    "text": "Problem: Access Time\n\n\n\n\n\n\n\nflowchart LR\n    subgraph Memory\n    A[\"Input Data\"]\n    end\n    \n    subgraph CPU\n    B[\"Processing Data\"]\n    end\n    \n    subgraph Memory\n    C[\"Output Data\"]\n    end\n    \n    A --&gt; B --&gt; C\n    \n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style CPU fill:white,stroke:#01579B,stroke-width:4px\n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style A fill:white\n    style B fill:white\n    style C fill:white\n\n\n\n\n\n\n\nProblem: No matter how much faster the processor gets, if input data isn’t available fast enough or can’t be stored quickly enough, the system won’t become faster overall.\nQuestion: What is the solution?"
+    "text": "Problem: Access Time\n\n\n\n\n\n\n\nflowchart LR\n    subgraph Memory\n    A[\"Input Data\"]\n    end\n    \n    subgraph CPU\n    B[\"Processing Data\"]\n    end\n    \n    subgraph Memory\n    C[\"Output Data\"]\n    end\n    \n    A --&gt; B --&gt; C\n    \n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style CPU fill:white,stroke:#01579B,stroke-width:4px\n    style Memory fill:white,stroke:#01579B,stroke-width:4px\n    style A fill:white\n    style B fill:white\n    style C fill:white\n\n\n\n\n\n\n\nProblem: No matter how much faster the processor gets, if input data isn’t available fast enough or can’t be stored quickly enough, the system won’t become faster overall.\nQuestion: What is the solution?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#cache-1",
     "href": "part-03/lecture-caching.html#cache-1",
     "title": "Lecture III - Caching",
     "section": "Cache",
-    "text": "Cache\n\nHierarchical memory pyramid for efficient data management\n\n\n\nL1 Cache, directly on CPU, very fast access time.\nL2 Cache, between L1 and main memory.\nRAM memory.\nMass Storage (hard drive).\nThe whole memory system works like a library.\nFind an explanation here."
+    "text": "Cache\n\nHierarchical memory pyramid for efficient data management\n\n\n\nL1 Cache, directly on CPU, very fast access time.\nL2 Cache, between L1 and main memory.\nRAM memory.\nMass Storage (hard drive).\nThe whole memory system works like a library.\nFind an explanation here.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#cache---size-and-speed-trade-off",
     "href": "part-03/lecture-caching.html#cache---size-and-speed-trade-off",
     "title": "Lecture III - Caching",
     "section": "Cache - Size and Speed trade-off",
-    "text": "Cache - Size and Speed trade-off\n\n\nRegisters are 10 million times faster than the hard drive!"
+    "text": "Cache - Size and Speed trade-off\n\n\nRegisters are 10 million times faster than the hard drive!",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#library-principle",
     "href": "part-03/lecture-caching.html#library-principle",
     "title": "Lecture III - Caching",
     "section": "Library Principle",
-    "text": "Library Principle\n\n\n\n\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nDesk (5 borrowed books, L2)\nShort-term memory (L1)"
+    "text": "Library Principle\n\n\n\n\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nDesk (5 borrowed books, L2)\nShort-term memory (L1)",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#library-principle-1",
     "href": "part-03/lecture-caching.html#library-principle-1",
     "title": "Lecture III - Caching",
     "section": "Library Principle",
-    "text": "Library Principle\n\n\n\n\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly."
+    "text": "Library Principle\n\n\n\n\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#how-to-clear-up",
     "href": "part-03/lecture-caching.html#how-to-clear-up",
     "title": "Lecture III - Caching",
     "section": "How to clear up?",
-    "text": "How to clear up?\n\n\nOptimal: Clairvoyance\n\nStore everything in the cache that will be needed\nDelete everything from the cache that won’t be needed\n\nQuestion: What is the problem with this strategy?\nOptimal strategy not achievable in reality"
+    "text": "How to clear up?\n\n\nOptimal: Clairvoyance\n\nStore everything in the cache that will be needed\nDelete everything from the cache that won’t be needed\n\nQuestion: What is the problem with this strategy?\nOptimal strategy not achievable in reality",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#realisable-strategies",
     "href": "part-03/lecture-caching.html#realisable-strategies",
     "title": "Lecture III - Caching",
     "section": "Realisable strategies?",
-    "text": "Realisable strategies?\n\n\nLeast recently used is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?"
+    "text": "Realisable strategies?\n\n\nLeast recently used is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#managerial-and-personal-insights",
     "href": "part-03/lecture-caching.html#managerial-and-personal-insights",
     "title": "Lecture III - Caching",
     "section": "Managerial and personal insights:",
-    "text": "Managerial and personal insights:\n\n\nLet go of things you haven’t used in ages\nKeep things where they are used\nBoth have been proven to contribute to a significant increase in productivity"
+    "text": "Managerial and personal insights:\n\n\nLet go of things you haven’t used in ages\nKeep things where they are used\nBoth have been proven to contribute to a significant increase in productivity",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#keeping-things-where-they-are-used",
     "href": "part-03/lecture-caching.html#keeping-things-where-they-are-used",
     "title": "Lecture III - Caching",
     "section": "Keeping things where they are used…",
-    "text": "Keeping things where they are used…\n\n\nMight be optimal, in a mathematical sense"
+    "text": "Keeping things where they are used…\n\n\nMight be optimal, in a mathematical sense",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
     "href": "part-03/lecture-caching.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
     "title": "Lecture III - Caching",
     "section": "The strong limitations of caches make them a “security risk”.",
-    "text": "The strong limitations of caches make them a “security risk”.\n\n\nDenial-of-Service Attacks (DoS) attacks.\n\nCache Flooding\nCache Poisoning\n\nOverload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data."
+    "text": "The strong limitations of caches make them a “security risk”.\n\n\nDenial-of-Service Attacks (DoS) attacks.\n\nCache Flooding\nCache Poisoning\n\nOverload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-why-are-the-findings-about-cache-so-important-for-humans",
     "href": "part-03/lecture-caching.html#question-why-are-the-findings-about-cache-so-important-for-humans",
     "title": "Lecture III - Caching",
     "section": "Question: Why are the findings about cache so important for humans?",
-    "text": "Question: Why are the findings about cache so important for humans?\n\n\nYour Brain is a Cache, Not a Database -[Joe Chrysler]"
+    "text": "Question: Why are the findings about cache so important for humans?\n\n\nYour Brain is a Cache, Not a Database -[Joe Chrysler]",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#our-brain-has-similar-weaknesses",
     "href": "part-03/lecture-caching.html#our-brain-has-similar-weaknesses",
     "title": "Lecture III - Caching",
     "section": "Our brain has similar weaknesses",
-    "text": "Our brain has similar weaknesses\n\nProductivity and creativity are negatively affected by:\n\n\n\nOverload (too much)\nExhaustion (too long)\nContext switching (interruption of “flow”, 23 minutes to get back on track)\nDistraction (Cache Flooding)\nFake News (Cache Poisoning)\n\n\n\nThis can lead to burnout."
+    "text": "Our brain has similar weaknesses\n\nProductivity and creativity are negatively affected by:\n\n\n\nOverload (too much)\nExhaustion (too long)\nContext switching (interruption of “flow”, 23 minutes to get back on track)\nDistraction (Cache Flooding)\nFake News (Cache Poisoning)\n\n\n\nThis can lead to burnout.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#question-what-do-you-think-should-we-do-about-it",
     "href": "part-03/lecture-caching.html#question-what-do-you-think-should-we-do-about-it",
     "title": "Lecture III - Caching",
     "section": "Question: What do you think should we do about it?",
-    "text": "Question: What do you think should we do about it?"
+    "text": "Question: What do you think should we do about it?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
     "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
     "title": "Lecture III - Caching",
     "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I\n\nMain Idea:\n\n\n\nModern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.\nThe reason for that has much to do with the way our brain works and how we interact with technology."
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I\n\nMain Idea:\n\n\n\nModern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.\nThe reason for that has much to do with the way our brain works and how we interact with technology.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
     "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
     "title": "Lecture III - Caching",
     "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II\n\nKey Causes of Attention Loss:\n\n\n\nTechnology & Social Media: Designed to capture and keep attention, leading to fragmented focus.\nConstant Interruptions: Notifications and multitasking disrupt deep work and concentration.\nEnvironmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function."
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II\n\nKey Causes of Attention Loss:\n\n\n\nTechnology & Social Media: Designed to capture and keep attention, leading to fragmented focus.\nConstant Interruptions: Notifications and multitasking disrupt deep work and concentration.\nEnvironmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
     "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
     "title": "Lecture III - Caching",
     "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III\n\nConsequences:\n\n\n\nReduced ability to think critically and creatively.\nDifficulty sustaining attention on meaningful tasks."
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III\n\nConsequences:\n\n\n\nReduced ability to think critically and creatively.\nDifficulty sustaining attention on meaningful tasks.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
     "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
     "title": "Lecture III - Caching",
     "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV\n\nSolutions Suggested:\n\n\n\nLimit screen time and practice “monotasking.”\nPrioritize sleep, nutrition, and mindful habits."
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV\n\nSolutions Suggested:\n\n\n\nLimit screen time and practice “monotasking.”\nPrioritize sleep, nutrition, and mindful habits.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
     "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
     "title": "Lecture III - Caching",
     "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V\n\n\n\nBut even better: read the book!"
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V\n\n\n\nBut even better: read the book!",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---book",
     "href": "part-03/lecture-caching.html#stolen-focus-why-you-cant-pay-attention---book",
     "title": "Lecture III - Caching",
     "section": "Stolen Focus: Why You Can’t Pay Attention - Book",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Book"
+    "text": "Stolen Focus: Why You Can’t Pay Attention - Book",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#mitigation-1",
     "href": "part-03/lecture-caching.html#mitigation-1",
     "title": "Lecture III - Caching",
     "section": "Mitigation",
-    "text": "Mitigation\n\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently."
+    "text": "Mitigation\n\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#awareness-i",
     "href": "part-03/lecture-caching.html#awareness-i",
     "title": "Lecture III - Caching",
     "section": "Awareness I",
-    "text": "Awareness I\n\nTrain awareness\n\n\n\nSpotlight – immediate goals – Focus\nStarlight – medium-term goals – Wishes\nDaylight – long-term goals – Values"
+    "text": "Awareness I\n\nTrain awareness\n\n\n\nSpotlight – immediate goals – Focus\nStarlight – medium-term goals – Wishes\nDaylight – long-term goals – Values",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#awareness-ii",
     "href": "part-03/lecture-caching.html#awareness-ii",
     "title": "Lecture III - Caching",
     "section": "Awareness II",
-    "text": "Awareness II\n\nPrioritization\n\n\n\nPrioritization\nStructure (Schedule)\nBreaks\nEnable flow (dedicated workspace, manage notifications, clear communication)\nMeditation & exercise"
+    "text": "Awareness II\n\nPrioritization\n\n\n\nPrioritization\nStructure (Schedule)\nBreaks\nEnable flow (dedicated workspace, manage notifications, clear communication)\nMeditation & exercise",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#key-takeaways-1",
     "href": "part-03/lecture-caching.html#key-takeaways-1",
     "title": "Lecture III - Caching",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\n\nCaching is a universal concept that applies to computers, organizations, and human cognition\nEfficient cache management requires strategic decisions about what to keep and what to remove\nLRU (Least Recently Used) is often the most practical replacement strategy\nOur brain’s limitations are similar to computer caches\nManaging our attention and focus requires understanding these limitations"
+    "text": "Key Takeaways\n\n\nCaching is a universal concept that applies to computers, organizations, and human cognition\nEfficient cache management requires strategic decisions about what to keep and what to remove\nLRU (Least Recently Used) is often the most practical replacement strategy\nOur brain’s limitations are similar to computer caches\nManaging our attention and focus requires understanding these limitations",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#summary-quiz",
     "href": "part-03/lecture-caching.html#summary-quiz",
     "title": "Lecture III - Caching",
     "section": "Summary Quiz",
-    "text": "Summary Quiz\nQuestion: Take a moment to reflect:\n\n\nWhat are the three main types of cache replacement strategies?\nHow does the library principle relate to computer memory hierarchy?\nWhat are two ways you can apply caching principles to improve your productivity?\nHow can understanding cache flooding help protect against information overload?"
+    "text": "Summary Quiz\nQuestion: Take a moment to reflect:\n\n\nWhat are the three main types of cache replacement strategies?\nHow does the library principle relate to computer memory hierarchy?\nWhat are two ways you can apply caching principles to improve your productivity?\nHow can understanding cache flooding help protect against information overload?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#interesting-literature-to-start",
     "href": "part-03/lecture-caching.html#interesting-literature-to-start",
     "title": "Lecture III - Caching",
     "section": "Interesting literature to start",
-    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493."
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#books-on-programming",
     "href": "part-03/lecture-caching.html#books-on-programming",
     "title": "Lecture III - Caching",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#more-literature",
     "href": "part-03/lecture-caching.html#more-literature",
     "title": "Lecture III - Caching",
     "section": "More Literature",
-    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course."
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course.",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-caching.html#footnotes",
     "href": "part-03/lecture-caching.html#footnotes",
     "title": "Lecture III - Caching",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎"
+    "text": "Footnotes\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
   },
   {
     "objectID": "part-03/lecture-presentation.html#caching-making-the-most-of-limited-resources",
@@ -3067,48 +3279,76 @@
     "href": "part-03/tutorial-08-functions.html",
     "title": "Tutorial III.II - Functions",
     "section": "",
-    "text": "Imagine you’re a librarian who needs to organize and retrieve books efficiently. Instead of explaining every step of finding a book each time, wouldn’t it be nice to have a set of standard procedures? In programming, these procedures are called functions! They help us organize our code into reusable blocks, just like having standard procedures in a library.\nThis tutorial will teach you about functions using a library management system and a coffee machine as an example. We’ll create functions to help us manage books, track their popularity, and implement a simple caching system.\n\n\n\n\n\n\nReal-World Example\n\n\n\nThink of a function like a coffee machine:\n\nInput (parameters) → Coffee beans, water, settings\nProcess → Internal brewing steps\nOutput (return value) → Your finished coffee"
+    "text": "Imagine you’re a librarian who needs to organize and retrieve books efficiently. Instead of explaining every step of finding a book each time, wouldn’t it be nice to have a set of standard procedures? In programming, these procedures are called functions! They help us organize our code into reusable blocks, just like having standard procedures in a library.\nThis tutorial will teach you about functions using a library management system and a coffee machine as an example. We’ll create functions to help us manage books, track their popularity, and implement a simple caching system.\n\n\n\n\n\n\nReal-World Example\n\n\n\nThink of a function like a coffee machine:\n\nInput (parameters) → Coffee beans, water, settings\nProcess → Internal brewing steps\nOutput (return value) → Your finished coffee",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   },
   {
     "objectID": "part-03/tutorial-08-functions.html#exercise-1.1---create-a-book-information-function",
     "href": "part-03/tutorial-08-functions.html#exercise-1.1---create-a-book-information-function",
     "title": "Tutorial III.II - Functions",
     "section": "Exercise 1.1 - Create a Book Information Function",
-    "text": "Exercise 1.1 - Create a Book Information Function\nCreate a function called get_book_info that takes three parameters: title, author, and year. It should return a formatted string with the book’s information.\n\n\n\n\n\n\nBefore You Start\n\n\n\nCommon mistakes to avoid:\n\nDon’t forget the spaces in the formatting\nRemember to use f-strings for easy string formatting\nMake sure to include the parentheses around the year\n\n\n\n\n# If you call the function like this:\n# get_book_info(\"Return\", \"Alan Wake\", 2023)\n# it should return the string:\n# \"Return by Alan Wake (2023)\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert get_book_info(\"1984\", \"George Orwell\", 1949) == \"1984 by George Orwell (1949)\"\nprint(\"Great job! Your book information function works as expected!\")"
+    "text": "Exercise 1.1 - Create a Book Information Function\nCreate a function called get_book_info that takes three parameters: title, author, and year. It should return a formatted string with the book’s information.\n\n\n\n\n\n\nBefore You Start\n\n\n\nCommon mistakes to avoid:\n\nDon’t forget the spaces in the formatting\nRemember to use f-strings for easy string formatting\nMake sure to include the parentheses around the year\n\n\n\n\n# If you call the function like this:\n# get_book_info(\"Return\", \"Alan Wake\", 2023)\n# it should return the string:\n# \"Return by Alan Wake (2023)\"\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert get_book_info(\"1984\", \"George Orwell\", 1949) == \"1984 by George Orwell (1949)\"\nprint(\"Great job! Your book information function works as expected!\")",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   },
   {
     "objectID": "part-03/tutorial-08-functions.html#common-pitfall",
     "href": "part-03/tutorial-08-functions.html#common-pitfall",
     "title": "Tutorial III.II - Functions",
     "section": "Common Pitfall",
-    "text": "Common Pitfall\nWhen using multiple conditions, be careful with the order of operations. Consider using parentheses to make your logic clear:\nif (copies_available &gt; 0) and (not on_hold):  # More readable than the code above"
+    "text": "Common Pitfall\nWhen using multiple conditions, be careful with the order of operations. Consider using parentheses to make your logic clear:\nif (copies_available &gt; 0) and (not on_hold):  # More readable than the code above",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   },
   {
     "objectID": "part-03/tutorial-08-functions.html#exercise-2.1---create-a-function-to-check-if-a-book-is-popular",
     "href": "part-03/tutorial-08-functions.html#exercise-2.1---create-a-function-to-check-if-a-book-is-popular",
     "title": "Tutorial III.II - Functions",
     "section": "Exercise 2.1 - Create a Function to Check if a Book is Popular",
-    "text": "Exercise 2.1 - Create a Function to Check if a Book is Popular\nCreate a function called is_popular that takes a single parameter rating. If the rating is greater than 3, it should return True, otherwise it should return False.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert is_popular(4) == True, \"A rating of 4 or higher is considered popular\"\nassert is_popular(2) == False, \"A rating of 3 or lower is not popular\"\nprint(\"Excellent! Your popular book function works correctly!\")"
+    "text": "Exercise 2.1 - Create a Function to Check if a Book is Popular\nCreate a function called is_popular that takes a single parameter rating. If the rating is greater than 3, it should return True, otherwise it should return False.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert is_popular(4) == True, \"A rating of 4 or higher is considered popular\"\nassert is_popular(2) == False, \"A rating of 3 or lower is not popular\"\nprint(\"Excellent! Your popular book function works correctly!\")",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   },
   {
     "objectID": "part-03/tutorial-08-functions.html#exercise-2.2---create-a-book-access-function",
     "href": "part-03/tutorial-08-functions.html#exercise-2.2---create-a-book-access-function",
     "title": "Tutorial III.II - Functions",
     "section": "Exercise 2.2 - Create a Book Access Function",
-    "text": "Exercise 2.2 - Create a Book Access Function\nMany libraries have borrowing policies that depend on multiple factors. Let’s implement a realistic borrowing policy function that a library might use. Create a function called can_borrow_book that takes three parameters:\n\nis_member: boolean indicating if the person is a library member\nbooks_borrowed: number of books currently borrowed\nhas_overdue: boolean indicating if they have overdue books\n\nThe function should return True only if:\n\nThey are a member AND\nThey have borrowed less than 3 books AND\nThey have no overdue books\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert can_borrow_book(True, 2, False) == True \"Should allow borrowing\"\nassert can_borrow_book(True, 3, False) == False, \"Should not allow more than 3 books\"\nassert can_borrow_book(True, 1, True) == False, \"Should not allow with overdue books\"\nprint(\"Excellent! Your borrowing function works as it should!\")"
+    "text": "Exercise 2.2 - Create a Book Access Function\nMany libraries have borrowing policies that depend on multiple factors. Let’s implement a realistic borrowing policy function that a library might use. Create a function called can_borrow_book that takes three parameters:\n\nis_member: boolean indicating if the person is a library member\nbooks_borrowed: number of books currently borrowed\nhas_overdue: boolean indicating if they have overdue books\n\nThe function should return True only if:\n\nThey are a member AND\nThey have borrowed less than 3 books AND\nThey have no overdue books\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert can_borrow_book(True, 2, False) == True \"Should allow borrowing\"\nassert can_borrow_book(True, 3, False) == False, \"Should not allow more than 3 books\"\nassert can_borrow_book(True, 1, True) == False, \"Should not allow with overdue books\"\nprint(\"Excellent! Your borrowing function works as it should!\")",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   },
   {
     "objectID": "part-03/tutorial-08-functions.html#exercise-3.1---create-a-cache-priority-function",
     "href": "part-03/tutorial-08-functions.html#exercise-3.1---create-a-cache-priority-function",
     "title": "Tutorial III.II - Functions",
     "section": "Exercise 3.1 - Create a Cache Priority Function",
-    "text": "Exercise 3.1 - Create a Cache Priority Function\nCreate a function called calculate_cache_priority that helps decide if a book should be kept in the easily accessible section. It should take:\n\ntimes_borrowed: How many times the book was borrowed\ndays_since_last_borrow: Days since last borrowed\nis_reference: Whether it’s a reference book (default: False)\n\nReturn a priority score calculated as:\n\nFor regular books: times_borrowed / (days_since_last_borrow + 1)\nFor reference books: 2 * (times_borrowed / (days_since_last_borrow + 1))\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert calculate_cache_priority(10, 5) == 10/(5+1), \"Check your regular book calculation\"\nassert calculate_cache_priority(10, 5, True) == 2*(10/(5+1)), \"Check your reference book calculation\"\nprint(\"Great! Your cache priority function works and calculates correctly!\")"
+    "text": "Exercise 3.1 - Create a Cache Priority Function\nCreate a function called calculate_cache_priority that helps decide if a book should be kept in the easily accessible section. It should take:\n\ntimes_borrowed: How many times the book was borrowed\ndays_since_last_borrow: Days since last borrowed\nis_reference: Whether it’s a reference book (default: False)\n\nReturn a priority score calculated as:\n\nFor regular books: times_borrowed / (days_since_last_borrow + 1)\nFor reference books: 2 * (times_borrowed / (days_since_last_borrow + 1))\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert calculate_cache_priority(10, 5) == 10/(5+1), \"Check your regular book calculation\"\nassert calculate_cache_priority(10, 5, True) == 2*(10/(5+1)), \"Check your reference book calculation\"\nprint(\"Great! Your cache priority function works and calculates correctly!\")",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   },
   {
     "objectID": "part-03/tutorial-08-functions.html#exercise-4.1---working-with-string-methods-and-functions",
     "href": "part-03/tutorial-08-functions.html#exercise-4.1---working-with-string-methods-and-functions",
     "title": "Tutorial III.II - Functions",
     "section": "Exercise 4.1 - Working with String Methods and Functions",
-    "text": "Exercise 4.1 - Working with String Methods and Functions\nCreate a function called format_book_title that takes a book title as input and:\n\nCapitalizes the first letter of each word\nRemoves any extra whitespace\nReturns the formatted title\n\n\n\n\n\n\n\nCommon String Methods\n\n\n\n\n.strip() - Removes whitespace from start and end\n.title() - Capitalizes first letter of each word\n.lower() - Converts to lowercase\n.upper() - Converts to uppercase\n\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert format_book_title(\"  the hitchhikers guide  \") == \"The Hitchhikers Guide\", \"Check your whitespace removal\"\nassert format_book_title(\"dune\") == \"Dune\", \"Check your capitalization\"\nprint(\"Excellent! Your title formatting function works correctly!\")"
+    "text": "Exercise 4.1 - Working with String Methods and Functions\nCreate a function called format_book_title that takes a book title as input and:\n\nCapitalizes the first letter of each word\nRemoves any extra whitespace\nReturns the formatted title\n\n\n\n\n\n\n\nCommon String Methods\n\n\n\n\n.strip() - Removes whitespace from start and end\n.title() - Capitalizes first letter of each word\n.lower() - Converts to lowercase\n.upper() - Converts to uppercase\n\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Test your answer\nassert format_book_title(\"  the hitchhikers guide  \") == \"The Hitchhikers Guide\", \"Check your whitespace removal\"\nassert format_book_title(\"dune\") == \"Dune\", \"Check your capitalization\"\nprint(\"Excellent! Your title formatting function works correctly!\")",
+    "crumbs": [
+      "03 Caching",
+      "08 - Functions"
+    ]
   }
 ]

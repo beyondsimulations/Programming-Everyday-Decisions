@@ -223,6 +223,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">03 Caching</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/lecture-caching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/tutorial-07-recap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">07 - Recap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/tutorial-08-functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">08 - Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-03/tutorial-09-packages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09 - Packages</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
  <span class="menu-text">***</span>
   </li>
@@ -320,7 +355,7 @@ Note
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> sequence:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># do something with item</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Think of it like reviewing patient charts: instead of manually checking each chart, you can automate the process to review them one by one systematically. This is especially valuable when dealing with large clinical trials or multiple treatment groups. Example with treatment options:</p>
-<div id="281904ec" class="cell" data-execution_count="1">
+<div id="4b7fa96b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>treatments <span class="op">=</span> [<span class="st">"Standard Drug"</span>, <span class="st">"New Drug A"</span>, <span class="st">"New Drug B"</span>]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> treatment <span class="kw">in</span> treatments:</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Evaluating efficacy of </span><span class="sc">{</span>treatment<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -339,7 +374,7 @@ Evaluating efficacy of New Drug B</code></pre>
 <li><code>stop</code>: The ending number (exclusive)</li>
 <li><code>step</code>: The difference between each number in the sequence</li>
 </ul>
-<div id="766de48d" class="cell" data-execution_count="2">
+<div id="652fda6d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visual representation of range</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"range(5):"</span>, <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">5</span>)))</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"range(1, 6):"</span>, <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>)))</span>
@@ -351,7 +386,7 @@ range(0, 10, 2): [0, 2, 4, 6, 8]</code></pre>
 </div>
 </div>
 <p>We can then use this sequence in a <code>for</code> loop to iterate through the numbers.</p>
-<div id="be1bb572" class="cell" data-execution_count="3">
+<div id="53a5756d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate 5 trial phases</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phase <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):  <span class="co"># 0 to 4</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Starting Phase </span><span class="sc">{</span>phase <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -363,7 +398,7 @@ Starting Phase 4
 Starting Phase 5</code></pre>
 </div>
 </div>
-<div id="156e742a" class="cell" data-execution_count="4">
+<div id="85ab94b0" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Range with start, stop, and step</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> dose <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100</span>, <span class="dv">501</span>, <span class="dv">100</span>):  <span class="co"># 100 to 500 in steps of 100</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Testing dosage: </span><span class="sc">{</span>dose<span class="sc">}</span><span class="ss">mg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -381,7 +416,7 @@ Testing dosage: 500mg</code></pre>
 <li><code>break</code>: Immediately exits the loop</li>
 <li><code>continue</code>: Skips to the next iteration</li>
 </ul>
-<div id="ee50bf1e" class="cell" data-execution_count="5">
+<div id="8706e49a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>efficacy_scores <span class="op">=</span> [<span class="dv">65</span>, <span class="dv">85</span>, <span class="dv">45</span>, <span class="dv">82</span>, <span class="dv">58</span>]</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> score <span class="kw">in</span> efficacy_scores:</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> score <span class="op">&lt;</span> <span class="dv">50</span>:  <span class="co"># Skip low efficacy treatments</span></span>
@@ -400,7 +435,7 @@ Found a promising treatment - consider focusing on this one!</code></pre>
 <section id="tuple-unpacking" class="level2">
 <h2 class="anchored" data-anchor-id="tuple-unpacking">Tuple Unpacking</h2>
 <p>Tuple unpacking is a powerful feature that allows you to assign multiple variables in a single statement. It’s often used in <code>for</code> loops to access elements from a list or tuple. For example:</p>
-<div id="3ae2c892" class="cell" data-execution_count="6">
+<div id="b1be4c21" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>treatments <span class="op">=</span> [(<span class="st">"Standard Drug"</span>, <span class="dv">75</span>), (<span class="st">"New Drug A"</span>, <span class="dv">85</span>), (<span class="st">"Alternative B"</span>, <span class="dv">68</span>), (<span class="st">"New Drug C"</span>, <span class="dv">92</span>)]</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, efficacy <span class="kw">in</span> treatments:</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Treatment: </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">, Efficacy: </span><span class="sc">{</span>efficacy<span class="sc">}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -415,13 +450,13 @@ Treatment: New Drug C, Efficacy: 92%</code></pre>
 <section id="exercise-1.1---count-adverse-events" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.1---count-adverse-events">Exercise 1.1 - Count Adverse Events</h2>
 <p>Track the number of treatments that had too many adverse events (more than 5) with a <code>for</code> loop. Add 1 to <code>high_adverse_count</code> for each treatment that had more than 5 adverse events.</p>
-<div id="d6f4b944" class="cell" data-execution_count="7">
+<div id="379d66b4" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>adverse_events <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">1</span>, <span class="dv">4</span>]</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>high_adverse_count <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="0217bb81" class="cell" data-execution_count="8">
+<div id="4c2094d6" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -434,13 +469,13 @@ Treatment: New Drug C, Efficacy: 92%</code></pre>
 <section id="exercise-1.2---calculate-average-treatment-efficacy" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.2---calculate-average-treatment-efficacy">Exercise 1.2 - Calculate Average Treatment Efficacy</h2>
 <p>Calculate the average efficacy of the treatments using a <code>for</code> loop. First, add each rate to the total. Then, calculate the average by dividing the total by the number of treatments.</p>
-<div id="d9aa2fc4" class="cell" data-execution_count="9">
+<div id="d245ad27" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>efficacy_rates <span class="op">=</span> [<span class="dv">78</span>, <span class="dv">72</span>, <span class="dv">85</span>, <span class="dv">65</span>, <span class="dv">80</span>]</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>average_efficacy <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="985a2958" class="cell" data-execution_count="10">
+<div id="71d6868f" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -470,13 +505,13 @@ Tip
 <section id="exercise-1.3---find-promising-treatments" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.3---find-promising-treatments">Exercise 1.3 - Find Promising Treatments</h2>
 <p>Add all treatments with an efficacy rate of at least 80% to the list <code>promising_treatments</code>.</p>
-<div id="8e33b20c" class="cell" data-execution_count="11">
+<div id="ad1b7d97" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>treatments <span class="op">=</span> [(<span class="st">"Standard Drug"</span>, <span class="dv">75</span>), (<span class="st">"New Drug A"</span>, <span class="dv">85</span>), (<span class="st">"Alternative B"</span>, <span class="dv">68</span>), (<span class="st">"New Drug C"</span>, <span class="dv">92</span>)]</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>promising_treatments <span class="op">=</span> []</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="a7cdaae7" class="cell" data-execution_count="12">
+<div id="380b4ee4" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -509,7 +544,7 @@ Tip
 <section id="section-2---while-loops" class="level1">
 <h1>Section 2 - While Loops</h1>
 <p>While loops continue executing as long as a condition is true. They’re perfect for situations where we don’t know in advance how many iterations we’ll need, like finding an effective treatment. Think of them as running clinical trials until you either find a breakthrough treatment or run out of research funding.</p>
-<div id="5b7fcdeb" class="cell" data-execution_count="13">
+<div id="846fb81d" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>resources <span class="op">=</span> <span class="dv">100</span>  <span class="co"># Starting research resources</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>treatments_tested <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>current_best <span class="op">=</span> <span class="dv">0</span></span>
@@ -530,7 +565,7 @@ Tested 5 treatment variations</code></pre>
 </div>
 </div>
 <p>We can also use them without specific conditions at the beginning:</p>
-<div id="fdfda367" class="cell" data-execution_count="14">
+<div id="ca00962c" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>trials <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> trials <span class="op">&gt;</span> <span class="dv">5</span>:</span>
@@ -588,14 +623,14 @@ Warning
 <section id="exercise-2.1---breakthrough-treatment" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2.1---breakthrough-treatment">Exercise 2.1 - Breakthrough Treatment</h2>
 <p>Use a <code>while</code> loop to find the first treatment with an efficacy score of at least 88. Count the number of trials it takes to find this treatment and store it in the variable <code>trials</code>. Save the efficacy score of the breakthrough treatment in the variable <code>current_efficacy</code>. Note, that the <code>efficacy_scores</code> list is indexed from 0!</p>
-<div id="c3283e36" class="cell" data-execution_count="15">
+<div id="f8fa156d" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>efficacy_scores <span class="op">=</span> [<span class="dv">72</span>, <span class="dv">68</span>, <span class="dv">78</span>, <span class="dv">88</span>, <span class="dv">71</span>, <span class="dv">65</span>, <span class="dv">59</span>]</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>current_efficacy <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>trials <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="565d7df9" class="cell" data-execution_count="16">
+<div id="c29c1eb6" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -608,7 +643,7 @@ Warning
 <section id="exercise-2.2---resource-management" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2.2---resource-management">Exercise 2.2 - Resource Management</h2>
 <p>Continue trials until either resources are depleted or a breakthrough (efficacy &gt;= 90) is found. Count the number of trials it takes to find this treatment and store it in the variable <code>trials_conducted</code>. Save the efficacy score of the breakthrough treatment in the variable <code>current_best</code>. Note, that the <code>efficacy_scores</code> list is indexed from 0!</p>
-<div id="265f749b" class="cell" data-execution_count="17">
+<div id="038df25a" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>resources <span class="op">=</span> <span class="dv">100</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>cost_per_trial <span class="op">=</span> <span class="dv">25</span></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>current_best <span class="op">=</span> <span class="dv">0</span></span>
@@ -617,7 +652,7 @@ Warning
 <span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="3b24ce2d" class="cell" data-execution_count="18">
+<div id="1b7fc0b9" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
