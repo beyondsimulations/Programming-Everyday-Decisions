@@ -53,7 +53,7 @@ num_orders = 3 # Integer cache
 1. Create a variable `last_meal` for the last meal you ordered (as a string)
 2. Store its price in a variable `price` (as a float)
 3. Whether you would order it again in a variable `would_order_again` (as a boolean)
-4. How many times you've ordered it in a variable `num_orders` (as an integer)
+4. How many times you've ordered it in the last month in a variable `num_orders` (as an integer)
 
 ```{python}
 # YOUR CODE BELOW
@@ -67,6 +67,7 @@ assert isinstance(last_meal, str), "last_meal should be a string"
 assert isinstance(price, float), "price should be a float"
 assert isinstance(would_order_again, bool), "would_order_again should be a boolean"
 assert isinstance(num_orders, int), "num_orders should be an integer"
+print(f"Last meal: {last_meal}, price: {price}, would order again: {would_order_again}, number of orders in the last month: {num_orders}")
 ```
 
 # Section 2 - Comparisons
@@ -93,7 +94,7 @@ Just like deciding what to remove from your phone when storage is full, cache ev
 ## Exercise 2.1: Create a decision system for your favorite song
 
 1. Write a small decision system for your **cached favorite song** `favorite_song`
-2. Use at least **two conditions** based on the song's play count and last played time  (`play_count` and `last_played_minutes`)
+2. Use at least **two conditions** based on the song's play count and last played time  (`play_count` and `last_played_minutes_ago`)
 3. You can set the parameters for the conditions yourself
 4. Save the result of the decision in a variable `should_evict`
 5. Print the result of whether we should evict the song or not
@@ -108,13 +109,14 @@ Just like deciding what to remove from your phone when storage is full, cache ev
 # Assertions to verify your solution
 assert isinstance(favorite_song, str), "favorite_song should be a string"
 assert isinstance(play_count, int), "play_count should be an integer"
-assert isinstance(last_played_minutes, int), "last_played_minutes should be an integer"
+assert isinstance(last_played_minutes_ago, int), "last_played_minutes_ago should be an integer"
 assert isinstance(should_evict, bool), "should_evict should be a boolean"
+print(f"Favorite song: {favorite_song}, play count: {play_count}, last played minutes ago: {last_played_minutes_ago}, should evict: {should_evict}")
 ```
 
 # Section 3 - Lists and Tuples
 
-Lists work like a cache's storage system, holding multiple items that we might need later. Tuples are similar, but they are immutable. This means that once a tuple is created, its contents cannot be changed.
+Lists work like a cache's storage system, holding multiple items that we might need later. Tuples are similar, but they are immutable. This means that once a tuple is created, its contents cannot be changed. To measure the size of a list or tuple, we can use the `len()` function.
 
 ::: {.callout-important}
 ## Think about the following code yourself!
@@ -126,6 +128,7 @@ Before running the code below, try to predict:
 :::
 
 ```{python}
+#| eval: false
 # Recently played songs cache
 recent_songs = ["Lithonia", "Leon", "WHEN THE MUSIC STOPS", "Chop Suey", "Rain of Fire"]
 max_cache_size = 5
@@ -181,6 +184,7 @@ assert len(shopping_cart) == 5, "shopping_cart should have 5 items"
 assert isinstance(shopping_cart, list), "shopping_cart should be a list"
 assert all(isinstance(item, tuple) for item in shopping_cart), "All items in shopping_cart should be tuples"
 assert all(isinstance(item[0], str) and isinstance(item[1], (int, float)) for item in shopping_cart), "All items in shopping_cart should be tuples with a string and a number"
+print("Great job! Your shopping cart is ready.")
 ```
 
 # Section 4 - Loops
@@ -209,9 +213,12 @@ print(f"Cached items after cleanup: {cached_items}")
 ## Exercise 4.1: Clean up a browser history cache
 
 1. Write a loop to remove sites with low visit counts
-2. If the site has been visited **less than 5 times**, remove it from the cache
+2. If the site has been visited **less than 6 times**, remove it from the cache
 3. Print the browser history after cleanup
 
+::: {.callout-tip}
+Be careful with the loop. You need to iterate over the list and remove items from it. If you remove items directly from the list while iterating over it, you won't get the correct answer, as the list will change size while you iterate over it. Thus, you **first need to create a list of items to keep** and at the end replace the old list with the new one.
+:::
 
 ```{python}
 browser_history = [
@@ -223,12 +230,13 @@ browser_history = [
 ]
 # YOUR CODE BELOW
 
+
 ```
 ```{python}
 #| eval: false
 #| code-fold: true
 # Assertions to verify your solution
-assert len(browser_history) == 3, "browser_history should have 3 items"
+assert len(browser_history) == 2, "browser_history should have 2 items"
 assert isinstance(browser_history, list), "browser_history should be a list"
 assert all(isinstance(item, tuple) for item in browser_history), "All items in browser_history should be tuples"
 ```

@@ -55,7 +55,12 @@ The structure is:
 3. Parameters in parentheses (like `name`)
 4. A colon `:` to start the function body
 5. Indented code that makes up the function
-6. Optional `return` statement to send back a value
+6. Optional `return` statement to send back a value from the function
+
+::: {.callout-tip}
+## Return Value
+The `return` statement is optional. If you don't use it, the function will return `None` by default.
+:::
 
 The following illustrates this in a more generic form:
 
@@ -119,7 +124,7 @@ print("The book is available:", is_book_available(3, False))
 print("The book is available:", is_book_available(0, False))
 ```
 
-Here we use an `if` statement to check if the book is available. If the book is available, we return `True`, otherwise we return `False`. As soon as one of the conditions (in this case `copies_available > 0`) is met, the function returns and does not check the other conditions.
+Here we use an `if` statement to check if the book is available. If the book is available, we return `True`, otherwise we return `False`.
 
 ## Common Pitfall
 
@@ -142,8 +147,8 @@ Create a function called `is_popular` that takes a single parameter `rating`. If
 #| eval: false
 #| code-fold: true
 # Assertions to verify your solution
-assert is_popular(4) == True "A rating of 4 or higher is considered popular"
-assert is_popular(2) == False "A rating of 3 or lower is not popular"
+assert is_popular(4) == True, "A rating of 4 or higher is considered popular"
+assert is_popular(2) == False, "A rating of 3 or lower is not popular"
 print("Excellent! Your popular book function works correctly!")
 ```
 
@@ -170,8 +175,8 @@ The function should return `True` only if:
 #| code-fold: true
 # Assertions to verify your solution
 assert can_borrow_book(True, 2, False) == True "Should allow borrowing"
-assert can_borrow_book(True, 3, False) == False "Should not allow more than 3 books"
-assert can_borrow_book(True, 1, True) == False "Should not allow with overdue books"
+assert can_borrow_book(True, 3, False) == False, "Should not allow more than 3 books"
+assert can_borrow_book(True, 1, True) == False, "Should not allow with overdue books"
 print("Excellent! Your borrowing function works as it should!")
 ```
 
@@ -212,8 +217,8 @@ Return a priority score calculated as:
 #| eval: false
 #| code-fold: true
 # Test your answer
-assert calculate_cache_priority(10, 5) == 10/(5+1) "Check your regular book calculation"
-assert calculate_cache_priority(10, 5, True) == 2(10/(5+1)) "Check your reference book calculation"
+assert calculate_cache_priority(10, 5) == 10/(5+1), "Check your regular book calculation"
+assert calculate_cache_priority(10, 5, True) == 2*(10/(5+1)), "Check your reference book calculation"
 print("Great! Your cache priority function works and calculates correctly!")
 ```
 
@@ -269,8 +274,8 @@ Create a function called `format_book_title` that takes a book title as input an
 #| eval: false
 #| code-fold: true
 # Test your answer
-assert format_book_title("  the hitchhiker's guide  ") == "The Hitchhiker's Guide"
-assert format_book_title("dune") == "Dune"
+assert format_book_title("  the hitchhikers guide  ") == "The Hitchhikers Guide", "Check your whitespace removal"
+assert format_book_title("dune") == "Dune", "Check your capitalization"
 print("Excellent! Your title formatting function works correctly!")
 ```
 

@@ -63,7 +63,7 @@ While we'll practice some commands here, you'll typically manage packages in you
 
 # Section 1 - Using Standard Libraries
 
-Before we start using packages, let's take a look at Python's standard libraries. Python comes with a set of** standard libraries that are always available**. You can use these libraries by simply importing them. For example, the `math` library provides mathematical functions like `sqrt` and `sin` and the `random` library provides functions to generate random numbers. You can import these libraries using the following syntax:
+Before we start using packages, let's take a look at Python's standard libraries. Python comes with a set of **standard libraries that are always available**. You can use these libraries by simply importing them. For example, the `math` library provides mathematical functions like `sqrt` and `sin` and the `random` library provides functions to generate random numbers. You can import these libraries using the following syntax:
 
 ```{python}
 import math
@@ -84,7 +84,7 @@ a_random_number = random.random()
 print(f"A random number is {a_random_number}!")
 ```
 
-We can also use the library to choose a random element from a list.
+We can also use the library to choose a random element from a list. For example, the following code chooses a random element from the list `['book1', 'book2', 'book3']`. Try it out by executing the cell multiple times.
 
 ```{python}
 random_choice = random.choice(['book1', 'book2', 'book3'])
@@ -109,54 +109,55 @@ print(f"Now, a random integer between 1 and 100 is {a_random_integer}!")
 
 ## Exercise 1.1 - Use the math library
 
-Use the `math` library to calculate the square root of 256.
+Use the `math` library to calculate the square root of 256. Call the result `square_root`.
 
 ```{python}
 #| eval: false
 # YOUR CODE BELOW
 
 ```
+
 ```{python}
 #| eval: false
 #| code-fold: true
-assert a_square_root == 16
-print("Great job! The square root of 256 is 16!")
+assert square_root == 16
+print(f"Great job! The square root of 256 is {square_root}!")
 ```
 
 ## Exercise 1.2 - Use the random library
 
-Use the `random` library to generate a random number between 1 and 10.
+Use the `random` library to generate a random number between 1 and 25. Call the result `random_number`.
 
 ```{python}
 #| eval: false
 #| # YOUR CODE BELOW
 
 ```
+
 ```{python}
 #| eval: false
 #| code-fold: true
-assert a_random_integer >= 1 and a_random_integer <= 10
-print(f"Good! You generated a random integer {a_random_integer} between 1 and 10!")
+assert random_number >= 1 and random_number <= 25
+print(f"Good! You generated a random integer {random_number} between 1 and 25!")
 ```
 
-# Section 2 - Using pip
+# Section 2 - Using a package manager
 
-Just as a library needs a system to track books (checkout system, catalog, etc.), Python uses pip to manage its packages. Think of pip as your library's management system that:
+Just as a library needs a system to track books (checkout system, catalog, etc.), Python uses pip or conda to manage its packages. Think of pip or conda as your library's management system that:
 
 - Keeps track of what's available (like searching the catalog)
 - Handles "checkouts" (installing packages)
 - Manages "returns" (uninstalling packages)
 - Ensures you have the right "edition" (version management)
 
+::: {.callout-note}
+## Miniconda
+As we have installed Miniconda in the lecture, **we will use conda in this tutorial**. If you work with a standard Python installation, you can use pip instead but the commands are slightly different.
+:::
+
 ## Exercise 2.1 - Check your package manager version
 
-Let's start by checking which version of pip we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press `ctrl + shift + p` and then type `Terminal: Create new terminal`. Then, run the following command:
-
-```{bash}
-pip --version
-```
-
-If you are working with Miniconda instead of a standard Python installation, you can also check the version of your package manager by running the following command in the terminal:
+Let's start by checking which version of conda we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press `ctrl + shift + p` and then type `Terminal: Create new terminal`. Then, run the following command:
 
 ```{bash}
 conda info
@@ -171,17 +172,11 @@ Installing packages is like ordering new books for your library branch. Just as 
 - Check for space on shelves (system requirements)
 - Ensure books don't conflict (dependency management)
 
-Luckily most of that is handled for you and not that important in this basic introduction to python. Installing packages in Python is straightforward using `pip install packagename`. 
+Luckily most of that is handled for you and not that important in this basic introduction to python. Installing packages in Python is straightforward using `conda install packagename` if you are using Miniconda.
 
 ## Exercise 3.1 - Install pandas
 
 Let's practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.
-
-```{bash}
-pip install pandas
-```
-
-If you are working with Miniconda, you can use the following command instead.
 
 ```{bash}
 conda install pandas
@@ -197,7 +192,7 @@ try:
     import pandas
     print("pandas installed successfully!")
 except ImportError:
-    error("pandas was not installed correctly")
+    print("pandas was not installed correctly")
 ```
 
 # Section 4 - Virtual Environments
@@ -214,7 +209,21 @@ This separation ensures that:
 - Each branch can be optimized for its community (project-specific dependencies)
 - You can experiment without affecting the main collection (development safety)
 
-For now, you don't need to worry about virtual environments. This is more advanced and thus not necessary for this tutorial (or lecture). But it's good to know that they exist and that you can use them to manage your packages.
+For now, you don't need to worry about virtual environments. This is more advanced and thus not necessary for this tutorial (or lecture). But it's good to know that they exist and that you can use them to manage your packages. Still, if you ever want to check them out, you can use the following command to create a new virtual environment with a certain name and Python version.
+
+```{bash}
+conda create -n myenv python=3.10
+```
+
+::: {.callout-note}
+You can replace `myenv` with any name you want and `python=3.10` with the Python version you want.
+:::
+
+To activate the environment later on, you can use the following command:
+
+```{bash}
+conda activate myenv
+```
 
 # Conclusion
 Congratulations! You've learned about Python package management through the lens of library caching. Remember, just like libraries use caching to make popular books more accessible, Python uses package management to make useful code more accessible!
