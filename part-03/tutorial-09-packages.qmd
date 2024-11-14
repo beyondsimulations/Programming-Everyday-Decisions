@@ -163,6 +163,12 @@ Let's start by checking which version of conda we have installed. We do so by ru
 conda info
 ```
 
+If you are not using Miniconda, you can use `pip` instead. Here, you can check the version of your package manager by running the following command in the terminal:
+
+```{bash}
+pip --version
+```
+
 # Section 3 - Installing Packages
 
 Installing packages is like ordering new books for your library branch. Just as a library might:
@@ -172,7 +178,7 @@ Installing packages is like ordering new books for your library branch. Just as 
 - Check for space on shelves (system requirements)
 - Ensure books don't conflict (dependency management)
 
-Luckily most of that is handled for you and not that important in this basic introduction to python. Installing packages in Python is straightforward using `conda install packagename` if you are using Miniconda.
+Luckily most of that is handled for you and not that important in this basic introduction to python. Installing packages in Python is straightforward using `conda install packagename` if you are using Miniconda. If you are not using Miniconda, you can use `pip install packagename` instead.
 
 ## Exercise 3.1 - Install pandas
 
@@ -180,6 +186,12 @@ Let's practice by installing pandas, a popular package for data analysis. Execut
 
 ```{bash}
 conda install pandas
+```
+
+Or, if you are not using Miniconda, you can use the following command.
+
+```{bash}
+pip install pandas
 ```
 
 You can test if the installation was successful by running the following code.

@@ -174,7 +174,7 @@ The function should return `True` only if:
 #| eval: false
 #| code-fold: true
 # Assertions to verify your solution
-assert can_borrow_book(True, 2, False) == True "Should allow borrowing"
+assert can_borrow_book(True, 2, False) == True, "Should allow borrowing"
 assert can_borrow_book(True, 3, False) == False, "Should not allow more than 3 books"
 assert can_borrow_book(True, 1, True) == False, "Should not allow with overdue books"
 print("Excellent! Your borrowing function works as it should!")

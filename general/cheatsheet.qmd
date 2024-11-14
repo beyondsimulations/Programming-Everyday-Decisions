@@ -335,3 +335,131 @@ while phase <= 5:
     print(f"Starting Phase {phase}")
     phase += 1
 ```
+
+# Functions
+
+## Basic Function
+
+- **Definition**: Use the `def` keyword.
+- **Structure**:
+
+```python
+def function_name(parameters):
+    # code to execute (function body)
+    return value  # Optional
+```
+
+- **Example**:
+
+```{python}
+def greet_visitor(name):
+    return f"Welcome to the library, {name}!"
+
+greet_visitor("Student")
+```
+
+## Return Value
+
+- **Definition**: The value returned by a function.
+- **Example**:
+
+```{python}
+def multiply_by_two(number):
+    return number * 2
+
+result = multiply_by_two(5)
+print(result)
+```
+
+- **Note**: If a function does not return a value, it implicitly returns `None`.
+
+## Default Parameters
+
+- **Definition**: Provide default values for function parameters.
+- **Structure**:
+
+```python
+def greet_visitor(name="People"):
+    return f"Welcome to the library, {name}!"
+
+print(greet_visitor()) # Calls the function with the default parameter
+print(greet_visitor("Tobias")) # Calls the function with a custom parameter
+```
+
+## Multiple Parameters
+
+- **Definition**: Functions can have multiple parameters.
+- **Structure**:
+
+```python
+def greet_visitor(name, age):
+    return f"Welcome to the library, {name}! You are {age} years old."
+
+print(greet_visitor("Tobias", 30))
+```
+
+# String Methods
+
+- **Definition**: Methods are functions that are called on strings.
+- **Structure**:
+
+```python
+string.method()
+```
+
+- **Common String Methods**:
+    - `.strip()` - Removes whitespace from start and end
+    - `.title()` - Capitalizes first letter of each word
+    - `.lower()` - Converts to lowercase
+    - `.upper()` - Converts to uppercase
+
+- **Example**:
+
+```{python}
+title = "the hitchhikers guide"
+print(title.title())
+```
+
+```{python}
+title = "   the hitchhikers guide    "
+print(title.strip())
+```
+
+# Packages
+
+## Standard Libraries
+
+- **Definition**: Libraries that are part of the Python standard library.
+- **Access**: Import them using `import`.
+
+```{python}
+import math
+import random
+```
+
+- For long package names, you can use the `as` keyword to create an alias.
+
+```{python}
+import random as rd
+```
+
+- To call a function from an imported package, use the package name as a prefix.
+
+```{python}
+random_number = rd.random()
+print(random_number)
+```
+
+## Installing Packages
+
+- **Definition**: Install packages using `pip`.
+
+```{bash}
+pip install package_name
+```
+
+- If you are using Miniconda, you can use `conda` instead.
+
+```{bash}
+conda install package_name
+```
