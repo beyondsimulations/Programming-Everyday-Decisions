@@ -325,6 +325,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#tuple-unpacking" id="toc-tuple-unpacking" class="nav-link" data-scroll-target="#tuple-unpacking">Tuple unpacking</a></li>
   <li><a href="#while-loops" id="toc-while-loops" class="nav-link" data-scroll-target="#while-loops">while Loops</a></li>
   </ul></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a>
+  <ul class="collapse">
+  <li><a href="#basic-function" id="toc-basic-function" class="nav-link" data-scroll-target="#basic-function">Basic Function</a></li>
+  <li><a href="#return-value" id="toc-return-value" class="nav-link" data-scroll-target="#return-value">Return Value</a></li>
+  <li><a href="#default-parameters" id="toc-default-parameters" class="nav-link" data-scroll-target="#default-parameters">Default Parameters</a></li>
+  <li><a href="#multiple-parameters" id="toc-multiple-parameters" class="nav-link" data-scroll-target="#multiple-parameters">Multiple Parameters</a></li>
+  </ul></li>
+  <li><a href="#string-methods" id="toc-string-methods" class="nav-link" data-scroll-target="#string-methods">String Methods</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a>
+  <ul class="collapse">
+  <li><a href="#standard-libraries" id="toc-standard-libraries" class="nav-link" data-scroll-target="#standard-libraries">Standard Libraries</a></li>
+  <li><a href="#installing-packages" id="toc-installing-packages" class="nav-link" data-scroll-target="#installing-packages">Installing Packages</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/general/cheatsheet.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/general/cheatsheet.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="cheatsheet.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -391,7 +404,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Concatenation</strong>: Combine strings using <code>+</code>.</li>
 <li><strong>Formatting</strong>: Use <code>f"..."</code> for formatted strings.</li>
 </ul>
-<div id="ff0af3ad" class="cell" data-execution_count="1">
+<div id="bfcc6340" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alexander"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -498,7 +511,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="4c5f33f4" class="cell" data-execution_count="2">
+<div id="d54da02f" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is a good apartment!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -519,7 +532,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="313598db" class="cell" data-execution_count="3">
+<div id="f766a71e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">4</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">7</span>:</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Apply for this flat!"</span>)</span>
@@ -544,7 +557,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="87034e17" class="cell" data-execution_count="4">
+<div id="80ce64ea" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">8</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>:</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Amazing flat - apply immediately!"</span>)</span>
@@ -573,7 +586,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="608da82c" class="cell" data-execution_count="5">
+<div id="ead10f61" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>flat_rating <span class="op">=</span> <span class="dv">9</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> <span class="dv">900</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (flat_rating <span class="op">&gt;=</span> <span class="dv">9</span>) <span class="kw">and</span> (price <span class="op">&lt;</span> <span class="dv">1000</span>):</span>
@@ -593,7 +606,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Definition</strong>: Ordered, mutable collections of items.</li>
 <li><strong>Creation</strong>: Use square brackets <code>[]</code>.</li>
 </ul>
-<div id="a6e8740d" class="cell" data-execution_count="6">
+<div id="4987f004" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>ratings <span class="op">=</span> [<span class="fl">4.5</span>, <span class="fl">3.8</span>, <span class="fl">4.2</span>]</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>restaurants <span class="op">=</span> [<span class="st">"Magic Place"</span>, <span class="st">"Sushi Bar"</span>, <span class="st">"Coffee Shop"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -602,7 +615,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Indexing</strong>: Use <code>[index]</code> to access elements.</li>
 </ul>
-<div id="a394e98b" class="cell" data-execution_count="7">
+<div id="09fee8d4" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(restaurants[<span class="dv">0</span>])  <span class="co"># Access the first element</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Magic Place</code></pre>
@@ -611,7 +624,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Negative Indexing</strong>: Use <code>[-1]</code> to access the last element.</li>
 </ul>
-<div id="84a59d23" class="cell" data-execution_count="8">
+<div id="211d287d" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(restaurants[<span class="op">-</span><span class="dv">1</span>])  <span class="co"># Access the last element</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Coffee Shop</code></pre>
@@ -620,7 +633,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Slicing</strong>: Use <code>[start:end]</code> to access a range of elements.</li>
 </ul>
-<div id="9cdc8ff8" class="cell" data-execution_count="9">
+<div id="06c33abf" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(restaurants[<span class="dv">0</span>:<span class="dv">2</span>])  <span class="co"># Access the first two elements</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>['Magic Place', 'Sushi Bar']</code></pre>
@@ -632,13 +645,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Appending</strong>: Use <code>append()</code> to add an element to the end of the list.</li>
 </ul>
-<div id="53026698" class="cell" data-execution_count="10">
+<div id="0cc6f8d3" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>restaurants.append(<span class="st">"Pasta Place"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><strong>Inserting</strong>: Use <code>insert()</code> to add an element at a specific index.</li>
 </ul>
-<div id="9dea9158" class="cell" data-execution_count="11">
+<div id="0293b173" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>restaurants.insert(<span class="dv">0</span>, <span class="st">"Pasta Magic"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -647,13 +660,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Removing</strong>: Use <code>remove()</code> to remove an element by value.</li>
 </ul>
-<div id="6731d1ac" class="cell" data-execution_count="12">
+<div id="52d61c6b" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>restaurants.remove(<span class="st">"Pasta Place"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><strong>Removing by Index</strong>: Use <code>pop()</code> to remove an element by index.</li>
 </ul>
-<div id="f47477f1" class="cell" data-execution_count="13">
+<div id="f0adea32" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>restaurants.pop(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>'Pasta Magic'</code></pre>
@@ -666,7 +679,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Definition</strong>: Lists containing other lists or tuples.</li>
 <li><strong>Accessing</strong>: Use nested indexing.</li>
 </ul>
-<div id="34bc7b85" class="cell" data-execution_count="14">
+<div id="41f6e4e4" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>restaurant_data <span class="op">=</span> [</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Pasta Place"</span>, <span class="fl">4.5</span>, <span class="dv">3</span>],</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Sushi Bar"</span>, <span class="fl">4.2</span>, <span class="dv">1</span>]</span>
@@ -686,7 +699,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Memory Efficiency</strong>: Use less memory than lists.</li>
 <li><strong>Use Cases</strong>: Ideal for fixed data (e.g., restaurant location).</li>
 </ul>
-<div id="e5b4401e" class="cell" data-execution_count="15">
+<div id="1502e203" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>ratings <span class="op">=</span> (<span class="fl">4.5</span>, <span class="fl">3.8</span>, <span class="fl">4.2</span>)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>restaurant_info <span class="op">=</span> (<span class="st">"Pasta Place"</span>, <span class="st">"Italian"</span>, <span class="dv">2020</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -705,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="024a6ab1" class="cell" data-execution_count="16">
+<div id="f467d536" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>treatments <span class="op">=</span> [<span class="st">"Standard Drug"</span>, <span class="st">"New Drug A"</span>, <span class="st">"New Drug B"</span>]</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> treatment <span class="kw">in</span> treatments:</span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Evaluating efficacy of </span><span class="sc">{</span>treatment<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -726,7 +739,7 @@ Evaluating efficacy of New Drug B</code></pre>
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="68a6a6ad" class="cell" data-execution_count="17">
+<div id="fd434da7" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phase <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):  <span class="co"># 0 to 4</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Starting Phase </span><span class="sc">{</span>phase <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -737,7 +750,7 @@ Starting Phase 4
 Starting Phase 5</code></pre>
 </div>
 </div>
-<div id="fdeb9b8e" class="cell" data-execution_count="18">
+<div id="f8368b1d" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phase <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>):  <span class="co"># 1 to 4</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Starting Phase </span><span class="sc">{</span>phase<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -747,7 +760,7 @@ Starting Phase 3
 Starting Phase 4</code></pre>
 </div>
 </div>
-<div id="b1152210" class="cell" data-execution_count="19">
+<div id="95a61146" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> phase <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">2</span>):  <span class="co"># 1 to 4, step 2</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Starting Phase </span><span class="sc">{</span>phase<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -762,7 +775,7 @@ Starting Phase 3</code></pre>
 <li><strong>break</strong>: Exit the loop.</li>
 <li><strong>continue</strong>: Skip the current iteration and continue with the next.</li>
 </ul>
-<div id="ffe4a058" class="cell" data-execution_count="20">
+<div id="9ec300e0" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>efficacy_scores <span class="op">=</span> [<span class="dv">45</span>, <span class="dv">60</span>, <span class="dv">75</span>, <span class="dv">85</span>, <span class="dv">90</span>]</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> score <span class="kw">in</span> efficacy_scores:</span>
 <span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> score <span class="op">&lt;</span> <span class="dv">50</span>:</span>
@@ -779,7 +792,7 @@ Starting Phase 3</code></pre>
 <li><strong>Structure</strong>:</li>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="b26f362e" class="cell" data-execution_count="21">
+<div id="05b9f234" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>restaurant_info <span class="op">=</span> (<span class="st">"Pasta Place"</span>, <span class="st">"Italian"</span>, <span class="dv">2020</span>)</span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>name, cuisine, year <span class="op">=</span> restaurant_info</span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)</span>
@@ -803,7 +816,7 @@ Italian
 <ul>
 <li><strong>Example</strong>:</li>
 </ul>
-<div id="a35a8246" class="cell" data-execution_count="22">
+<div id="b1c98772" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>phase <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> phase <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
 <span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Starting Phase </span><span class="sc">{</span>phase<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -816,6 +829,147 @@ Starting Phase 4
 Starting Phase 5</code></pre>
 </div>
 </div>
+</section>
+</section>
+<section id="functions" class="level1">
+<h1>Functions</h1>
+<section id="basic-function" class="level2">
+<h2 class="anchored" data-anchor-id="basic-function">Basic Function</h2>
+<ul>
+<li><strong>Definition</strong>: Use the <code>def</code> keyword.</li>
+<li><strong>Structure</strong>:</li>
+</ul>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> function_name(parameters):</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># code to execute (function body)</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> value  <span class="co"># Optional</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>Example</strong>:</li>
+</ul>
+<div id="bd42b91f" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet_visitor(name):</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Welcome to the library, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>greet_visitor(<span class="st">"Student"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>'Welcome to the library, Student!'</code></pre>
+</div>
+</div>
+</section>
+<section id="return-value" class="level2">
+<h2 class="anchored" data-anchor-id="return-value">Return Value</h2>
+<ul>
+<li><strong>Definition</strong>: The value returned by a function.</li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div id="3d8db415" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> multiply_by_two(number):</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> number <span class="op">*</span> <span class="dv">2</span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> multiply_by_two(<span class="dv">5</span>)</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>10</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Note</strong>: If a function does not return a value, it implicitly returns <code>None</code>.</li>
+</ul>
+</section>
+<section id="default-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="default-parameters">Default Parameters</h2>
+<ul>
+<li><strong>Definition</strong>: Provide default values for function parameters.</li>
+<li><strong>Structure</strong>:</li>
+</ul>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet_visitor(name<span class="op">=</span><span class="st">"People"</span>):</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Welcome to the library, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(greet_visitor()) <span class="co"># Calls the function with the default parameter</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(greet_visitor(<span class="st">"Tobias"</span>)) <span class="co"># Calls the function with a custom parameter</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="multiple-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-parameters">Multiple Parameters</h2>
+<ul>
+<li><strong>Definition</strong>: Functions can have multiple parameters.</li>
+<li><strong>Structure</strong>:</li>
+</ul>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet_visitor(name, age):</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Welcome to the library, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">! You are </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> years old."</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(greet_visitor(<span class="st">"Tobias"</span>, <span class="dv">30</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="string-methods" class="level1">
+<h1>String Methods</h1>
+<ul>
+<li><strong>Definition</strong>: Methods are functions that are called on strings.</li>
+<li><strong>Structure</strong>:</li>
+</ul>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>string.method()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>Common String Methods</strong>:
+<ul>
+<li><code>.strip()</code> - Removes whitespace from start and end</li>
+<li><code>.title()</code> - Capitalizes first letter of each word</li>
+<li><code>.lower()</code> - Converts to lowercase</li>
+<li><code>.upper()</code> - Converts to uppercase</li>
+</ul></li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div id="8d428db2" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">"the hitchhikers guide"</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(title.title())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The Hitchhikers Guide</code></pre>
+</div>
+</div>
+<div id="036cab50" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">"   the hitchhikers guide    "</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(title.strip())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>the hitchhikers guide</code></pre>
+</div>
+</div>
+</section>
+<section id="packages" class="level1">
+<h1>Packages</h1>
+<section id="standard-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="standard-libraries">Standard Libraries</h2>
+<ul>
+<li><strong>Definition</strong>: Libraries that are part of the Python standard library.</li>
+<li><strong>Access</strong>: Import them using <code>import</code>.</li>
+</ul>
+<div id="4ba49e31" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>For long package names, you can use the <code>as</code> keyword to create an alias.</li>
+</ul>
+<div id="9d19e6a3" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random <span class="im">as</span> rd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>To call a function from an imported package, use the package name as a prefix.</li>
+</ul>
+<div id="8f765508" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>random_number <span class="op">=</span> rd.random()</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(random_number)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.0671811729773556</code></pre>
+</div>
+</div>
+</section>
+<section id="installing-packages" class="level2">
+<h2 class="anchored" data-anchor-id="installing-packages">Installing Packages</h2>
+<ul>
+<li><strong>Definition</strong>: Install packages using <code>pip</code>.</li>
+</ul>
+<pre class="{bash}"><code>pip install package_name</code></pre>
+<ul>
+<li>If you are using Miniconda, you can use <code>conda</code> instead.</li>
+</ul>
+<pre class="{bash}"><code>conda install package_name</code></pre>
 
 
 </section>
