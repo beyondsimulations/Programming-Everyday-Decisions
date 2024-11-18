@@ -7,6 +7,7 @@ project:
     - part-01/*.qmd
     - part-02/*.qmd
     - part-03/*.qmd
+    - part-04/lecture-scheduling.qmd
 
 website:
   title: "Programming: Everyday Decision-Making Algorithms"
@@ -54,6 +55,10 @@ website:
             href: part-03/tutorial-08-functions.qmd
           - text: "09 - Packages"
             href: part-03/tutorial-09-packages.qmd
+      - section: "04 Scheduling"
+        contents:
+          - text: "Lecture"
+            href: part-04/lecture-scheduling.qmd
       - text: "***"
       - text: "FAQs"
         href: general/faq.qmd
