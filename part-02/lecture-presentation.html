@@ -349,24 +349,52 @@ Dr.&nbsp;Nils Roemer
 <h2>Some definitions…</h2>
 <div>
 <ol type="1">
-<li class="fragment"><p><span class="question">Question:</span> What does “explore” mean?</p></li>
-<li class="fragment"><p><span class="question">Question:</span> What does “exploit” mean?</p></li>
-<li class="fragment"><p><span class="question">Question:</span> what is the relationship between ‘explore’ and ‘exploit’ ?</p></li>
-<li class="fragment"><p><span class="highlight">Explore</span> is the gathering of new information.</p></li>
-<li class="fragment"><p><span class="highlight">Exploit</span> is the utilization of already known information to obtain a known result.</p></li>
-<li class="fragment"><p><span class="highlight">Explore and exploit</span> are opposing alternatives in a trade-off.</p></li>
+<li class="fragment"><span class="question">Question:</span> What does “explore” mean?
+<ul>
+<li class="fragment"><span class="highlight">Explore</span> is the gathering of new information.</li>
+</ul></li>
+<li class="fragment"><span class="question">Question:</span> What does “exploit” mean?
+<ul>
+<li class="fragment"><span class="highlight">Exploit</span> is the utilization of already known information to obtain a known result.</li>
+</ul></li>
+<li class="fragment"><span class="question">Question:</span> what is the relationship between both?
+<ul>
+<li class="fragment">Explore and exploit are <span class="highlight">opposing alternatives</span>.</li>
+</ul></li>
 </ol>
 </div>
 </section>
-<section id="some-examples" class="slide level2">
-<h2>Some examples…</h2>
+<section id="some-examples-i" class="slide level2">
+<h2>Some examples I</h2>
 <div>
 <ul>
-<li class="fragment">Clinical trials</li>
-<li class="fragment">A/B testing</li>
-<li class="fragment">Restaurant choice</li>
-<li class="fragment">Dating</li>
-<li class="fragment">Social interactions</li>
+<li class="fragment"><strong>Clinical trials:</strong>
+<ul>
+<li class="fragment">Explore: Test new drugs.</li>
+<li class="fragment">Exploit: Use existing drugs.</li>
+</ul></li>
+<li class="fragment"><strong>A/B testing:</strong>
+<ul>
+<li class="fragment">Explore: Test new website designs.</li>
+<li class="fragment">Exploit: Use existing website designs.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="some-examples-ii" class="slide level2">
+<h2>Some examples II</h2>
+<div>
+<ul>
+<li class="fragment"><strong>Dating:</strong>
+<ul>
+<li class="fragment">Explore: Go on a date with someone new.</li>
+<li class="fragment">Exploit: Go on a date with someone you already know.</li>
+</ul></li>
+<li class="fragment"><strong>Social interactions:</strong>
+<ul>
+<li class="fragment">Explore: Meet new people.</li>
+<li class="fragment">Exploit: Spend time with known people.</li>
+</ul></li>
 </ul>
 </div>
 </section>
@@ -374,9 +402,9 @@ Dr.&nbsp;Nils Roemer
 <h2>Everyday decision-making</h2>
 <div>
 <ul>
-<li class="fragment">Explore: Do we try new things?</li>
-<li class="fragment">Exploit: Do we stick to our favorite ones?</li>
-<li class="fragment">Life is a trade-off, a balance:
+<li class="fragment"><span class="highlight">Explore</span>: Do we try new things?</li>
+<li class="fragment"><span class="highlight">Exploit</span>: Do we stick to our favorite ones?</li>
+<li class="fragment">Life is a <strong>trade-off</strong>, a balance:
 <ul>
 <li class="fragment">between novelty and tradition.</li>
 <li class="fragment">between the latest and the greatest.</li>
@@ -387,25 +415,27 @@ Dr.&nbsp;Nils Roemer
 </ul>
 </div>
 </section>
-<section id="question-what-is-the-problem-with-exploitation" class="slide level2">
-<h2><span class="question">Question:</span> What is the problem with exploitation?</h2>
+<section id="the-problem-with-exploitation" class="slide level2">
+<h2>The problem with exploitation</h2>
+<h3 id="question-any-ideas-what-it-might-be"><span class="question">Question:</span> Any ideas what it might be?</h3>
 <div>
 <ul>
-<li class="fragment">Exploitation is not always the best strategy.</li>
-<li class="fragment">Especially when you have very limited information.</li>
-<li class="fragment">When you stop exploring, you might miss out on better options.</li>
-<li class="fragment">Imagine you were no longer able to gather any new information and could only choose between known alternatives.</li>
+<li class="fragment">Exploitation is <span class="highlight">not always the best strategy.</span></li>
+<li class="fragment">Especially when you have <strong>very limited information.</strong></li>
+<li class="fragment">When you <strong>stop exploring</strong>, you might <strong>miss better options</strong>.</li>
+<li class="fragment">Imagine you are not able to gather new information and could <strong>only choose known alternatives.</strong></li>
 </ul>
 </div>
 </section>
-<section id="question-what-is-the-problem-with-exploration" class="slide level2">
-<h2><span class="question">Question:</span> What is the problem with exploration?</h2>
+<section id="the-problem-with-exploration" class="slide level2">
+<h2>The problem with exploration</h2>
+<h3 id="question-any-ideas-what-it-might-be-1"><span class="question">Question:</span> Any ideas what it might be?</h3>
 <div>
 <ul>
-<li class="fragment">Exploration is not always the best strategy.</li>
-<li class="fragment">Especially when you are limited in using the newly gathered information.</li>
-<li class="fragment">When you constantly explore, you might never enjoy the fruits of your exploration.</li>
-<li class="fragment">Imagine you could eat each meal only once, hear each song only once, talk to each person only once…</li>
+<li class="fragment">Exploration is <span class="highlight">not always the best strategy.</span></li>
+<li class="fragment">Especially when you are <strong>limited in using new information.</strong></li>
+<li class="fragment">When you <strong>constantly explore</strong>, you might <strong>never enjoy the fruits of your exploration.</strong></li>
+<li class="fragment">Imagine you could only <strong>eat each meal only once, hear each song only once, talk to each person only once…</strong></li>
 </ul>
 </div>
 </section></section>
@@ -414,9 +444,15 @@ Dr.&nbsp;Nils Roemer
 <h1><span class="flow">The Multi-Armed Bandit Problem</span></h1>
 
 </section>
-<section id="to-provide-decision-support-computer-scientists-formulated-the-explore-exploit-trade-off-as-the-multi-armed-bandit-problem." class="slide level2">
-<h2>To provide decision support, computer scientists formulated the explore-exploit trade-off as the multi-armed bandit problem.</h2>
-<p><span class="question">Question:</span> What is a one-armed bandit?</p>
+<section id="decision-support" class="slide level2">
+<h2>Decision Support</h2>
+<div>
+<ul>
+<li class="fragment">To provide support, computer scientists formulated the explore-exploit trade-off.</li>
+<li class="fragment">It is known as the <span class="highlight">multi-armed bandit problem</span>.</li>
+<li class="fragment"><span class="question">Question:</span> What is a one-armed bandit?</li>
+</ul>
+</div>
 </section>
 <section id="one-armed-bandit" class="slide level2" data-background-image="https://images.unsplash.com/photo-1578693988706-534015857ff5?q=80&amp;w=2664&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 <h2><span class="invert-font">One Armed Bandit</span></h2>

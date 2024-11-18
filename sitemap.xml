@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/tutorial-09-packages.html</loc>
-    <lastmod>2024-11-14T08:38:21.945Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-04/lecture-presentation.html</loc>
+    <lastmod>2024-11-18T18:51:40.907Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/tutorial-07-recap.html</loc>
-    <lastmod>2024-11-13T11:49:07.895Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-04/lecture-scheduling.html</loc>
+    <lastmod>2024-11-18T18:51:40.907Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/tutorial-06-explore-exploit.html</loc>
-    <lastmod>2024-11-06T13:42:50.398Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/tutorial-08-functions.html</loc>
+    <lastmod>2024-11-14T08:29:22.995Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/tutorial-04-lists.html</loc>
-    <lastmod>2024-11-06T16:53:44.552Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/lecture-presentation.html</loc>
+    <lastmod>2024-11-18T18:57:15.650Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-03-stopping.html</loc>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/lecture-caching.html</loc>
+    <lastmod>2024-11-18T18:57:15.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/tutorial-05-loops.html</loc>
+    <lastmod>2024-11-13T14:17:48.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/lecture-presentation.html</loc>
+    <lastmod>2024-11-14T09:05:55.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/lecture-explore-exploit.html</loc>
+    <lastmod>2024-11-14T09:05:55.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-02-comparisons.html</loc>
     <lastmod>2024-10-30T09:27:51.927Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-01-variables.html</loc>
-    <lastmod>2024-10-30T09:27:51.927Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-optimal-stopping.html</loc>
+    <lastmod>2024-11-17T14:18:56.977Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/syllabus.html</loc>
-    <lastmod>2024-10-30T09:27:51.924Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-presentation.html</loc>
+    <lastmod>2024-11-17T14:18:56.977Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/faq.html</loc>
-    <lastmod>2024-11-10T13:46:51.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/index.html</loc>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/literature.html</loc>
     <lastmod>2024-10-30T09:27:51.924Z</lastmod>
   </url>
   <url>
@@ -41,43 +53,39 @@
     <lastmod>2024-11-14T08:40:31.935Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/literature.html</loc>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/index.html</loc>
     <lastmod>2024-10-30T09:27:51.924Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-presentation.html</loc>
-    <lastmod>2024-11-06T12:27:17.150Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/faq.html</loc>
+    <lastmod>2024-11-10T13:46:51.388Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/lecture-optimal-stopping.html</loc>
-    <lastmod>2024-11-06T12:27:17.150Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/general/syllabus.html</loc>
+    <lastmod>2024-10-30T09:27:51.924Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-02-comparisons.html</loc>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-01-variables.html</loc>
     <lastmod>2024-10-30T09:27:51.927Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/lecture-explore-exploit.html</loc>
-    <lastmod>2024-11-10T13:44:27.884Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-01/tutorial-03-stopping.html</loc>
+    <lastmod>2024-10-30T09:27:51.927Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/lecture-presentation.html</loc>
-    <lastmod>2024-11-10T13:44:27.884Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/tutorial-04-lists.html</loc>
+    <lastmod>2024-11-06T16:53:44.552Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/tutorial-05-loops.html</loc>
-    <lastmod>2024-11-13T14:17:48.184Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-02/tutorial-06-explore-exploit.html</loc>
+    <lastmod>2024-11-06T13:42:50.398Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/lecture-caching.html</loc>
-    <lastmod>2024-11-13T14:40:13.944Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/tutorial-07-recap.html</loc>
+    <lastmod>2024-11-13T11:49:07.895Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/lecture-presentation.html</loc>
-    <lastmod>2024-11-13T14:40:13.944Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/tutorial-08-functions.html</loc>
-    <lastmod>2024-11-14T08:29:22.995Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-03/tutorial-09-packages.html</loc>
+    <lastmod>2024-11-14T08:38:21.945Z</lastmod>
   </url>
 </urlset>
