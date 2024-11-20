@@ -4,7 +4,7 @@
     "href": "part-04/tutorial-12-dataframes.html",
     "title": "Tutorial IV.III - DataFrames",
     "section": "",
-    "text": "Imagine you’re planning a Mars mission. Every task, from equipment checks to crew training, needs careful scheduling. In this tutorial, we’ll learn how to use Python’s Pandas library to implement scheduling algorithms like Earliest Due Date (EDD) and Shortest Processing Time (SPT).\n\n\n\n\n\n\nNote\n\n\n\nBefore starting, ensure you have the pandas library installed. Depending on your operating system and installation method, you might need to use pip, pip3 or conda to install it.\n#| eval: false\npip install pandas\n#| eval: false\npip3 install pandas\n#| eval: false\nconda install pandas\n\n\nLet’s begin by importing pandas:\n\nimport pandas as pd",
+    "text": "Imagine you’re planning a Mars mission. Every task, from equipment checks to crew training, needs careful scheduling. In this tutorial, we’ll learn how to use Python’s Pandas library to implement scheduling algorithms like Earliest Due Date (EDD) and Shortest Processing Time (SPT).\n\n\n\n\n\n\nNote\n\n\n\nBefore starting, ensure you have the pandas library installed. Depending on your operating system and installation method, you might need to use pip, pip3 or conda to install it via the command line.\npip install pandas\npip3 install pandas\nconda install pandas\n\n\nLet’s begin by importing pandas:\n\nimport pandas as pd",
     "crumbs": [
       "04 Scheduling",
       "12 - DataFrames"
@@ -831,7 +831,7 @@
     "href": "general/cheatsheet.html#standard-libraries",
     "title": "Cheatsheet",
     "section": "Standard Libraries",
-    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.6934213306726933",
+    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.9291456180107782",
     "crumbs": [
       "Cheatsheet"
     ]
