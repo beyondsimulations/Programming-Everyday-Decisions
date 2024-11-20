@@ -30,9 +30,6 @@ format:
         mermaid:
             theme: neutral
 
-    pdf:
-        documentclass: report
-
 ---
 
 # [Introduction]{.flow} {.title}

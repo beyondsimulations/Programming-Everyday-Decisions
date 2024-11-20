@@ -16,7 +16,7 @@ format:
         slide-number: true
         code-copy: true
         height: 750
-        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-explore-exploit.qmd)"
+        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-caching.qmd)"
         output-file: lecture-presentation.html
     html:
         theme: [litera, ../styles_html.scss]
