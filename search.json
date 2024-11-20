@@ -4118,7 +4118,7 @@
     "href": "general/cheatsheet.html#standard-libraries",
     "title": "Cheatsheet",
     "section": "Standard Libraries",
-    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.780342894949756",
+    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.8417254841472571",
     "crumbs": [
       "Cheatsheet"
     ]
@@ -4438,7 +4438,7 @@
   {
     "objectID": "part-03/tutorial-07-recap.html",
     "href": "part-03/tutorial-07-recap.html",
-    "title": "Tutorial III.I - Caching and Recap",
+    "title": "Tutorial III.I - Recap with Caching",
     "section": "",
     "text": "Throughout our previous tutorials, we’ve explored fundamental programming concepts through the lens of everyday decision-making. Now, let’s connect these concepts to another important algorithmic idea: caching.\nThe concepts we’ve learned map directly to caching principles:\n\nVariables → Like cache entries (storing specific pieces of information)\nComparisons → Like cache eviction policies (what we keep/remove)\nLists → Like cache storage (what we remember)\nLoops → Like cache maintenance (how we update our knowledge)\n\n\n\n\n\n\n\nWhat is Caching?\n\n\n\nRemember today’s lecture. Think of caching for example like your brain’s short-term memory. When you frequently need certain information (like your friend’s phone number), you keep it readily available instead of looking it up each time.",
     "crumbs": [
@@ -4449,7 +4449,7 @@
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-1.1-create-a-simple-cache-system-for-your-favorite-restaurant-orders",
     "href": "part-03/tutorial-07-recap.html#exercise-1.1-create-a-simple-cache-system-for-your-favorite-restaurant-orders",
-    "title": "Tutorial III.I - Caching and Recap",
+    "title": "Tutorial III.I - Recap with Caching",
     "section": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders",
     "text": "Exercise 1.1: Create a simple cache system for your favorite restaurant orders\n\nCreate a variable last_meal for the last meal you ordered (as a string)\nStore its price in a variable price (as a float)\nWhether you would order it again in a variable would_order_again (as a boolean)\nHow many times you’ve ordered it in the last month in a variable num_orders (as an integer)\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(last_meal, str), \"last_meal should be a string\"\nassert isinstance(price, float), \"price should be a float\"\nassert isinstance(would_order_again, bool), \"would_order_again should be a boolean\"\nassert isinstance(num_orders, int), \"num_orders should be an integer\"\nprint(f\"Last meal: {last_meal}, price: {price}, would order again: {would_order_again}, number of orders in the last month: {num_orders}\")",
     "crumbs": [
@@ -4460,7 +4460,7 @@
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-2.1-create-a-decision-system-for-your-favorite-song",
     "href": "part-03/tutorial-07-recap.html#exercise-2.1-create-a-decision-system-for-your-favorite-song",
-    "title": "Tutorial III.I - Caching and Recap",
+    "title": "Tutorial III.I - Recap with Caching",
     "section": "Exercise 2.1: Create a decision system for your favorite song",
     "text": "Exercise 2.1: Create a decision system for your favorite song\n\nWrite a small decision system for your cached favorite song favorite_song\nUse at least two conditions based on the song’s play count and last played time (play_count and last_played_minutes_ago)\nYou can set the parameters for the conditions yourself\nSave the result of the decision in a variable should_evict\nPrint the result of whether we should evict the song or not\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert isinstance(favorite_song, str), \"favorite_song should be a string\"\nassert isinstance(play_count, int), \"play_count should be an integer\"\nassert isinstance(last_played_minutes_ago, int), \"last_played_minutes_ago should be an integer\"\nassert isinstance(should_evict, bool), \"should_evict should be a boolean\"\nprint(f\"Favorite song: {favorite_song}, play count: {play_count}, last played minutes ago: {last_played_minutes_ago}, should evict: {should_evict}\")",
     "crumbs": [
@@ -4471,7 +4471,7 @@
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-3.1-create-a-shopping-cart-cache",
     "href": "part-03/tutorial-07-recap.html#exercise-3.1-create-a-shopping-cart-cache",
-    "title": "Tutorial III.I - Caching and Recap",
+    "title": "Tutorial III.I - Recap with Caching",
     "section": "Exercise 3.1: Create a shopping cart cache",
     "text": "Exercise 3.1: Create a shopping cart cache\n\nMake a list shopping_cart of five recently viewed items in your shopping cart\nCreate tuples for the item details (name and price) and add them to the list\nEnsure that the name is a string and the price is a float\n\n\n\n\n\n\n\nTip\n\n\n\nFirst, create a list. Inside the list, the entries should be tuples of the item name and price.\n\n\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(shopping_cart) == 5, \"shopping_cart should have 5 items\"\nassert isinstance(shopping_cart, list), \"shopping_cart should be a list\"\nassert all(isinstance(item, tuple) for item in shopping_cart), \"All items in shopping_cart should be tuples\"\nassert all(isinstance(item[0], str) and isinstance(item[1], (int, float)) for item in shopping_cart), \"All items in shopping_cart should be tuples with a string and a number\"\nprint(\"Great job! Your shopping cart is ready.\")",
     "crumbs": [
@@ -4482,7 +4482,7 @@
   {
     "objectID": "part-03/tutorial-07-recap.html#exercise-4.1-clean-up-a-browser-history-cache",
     "href": "part-03/tutorial-07-recap.html#exercise-4.1-clean-up-a-browser-history-cache",
-    "title": "Tutorial III.I - Caching and Recap",
+    "title": "Tutorial III.I - Recap with Caching",
     "section": "Exercise 4.1: Clean up a browser history cache",
     "text": "Exercise 4.1: Clean up a browser history cache\n\nWrite a loop to remove sites with low visit counts\nIf the site has been visited less than 6 times, remove it from the cache\nPrint the browser history after cleanup\n\n\n\n\n\n\n\nTip\n\n\n\nBe careful with the loop. You need to iterate over the list and remove items from it. If you remove items directly from the list while iterating over it, you won’t get the correct answer, as the list will change size while you iterate over it. Thus, you first need to create a list of items to keep and at the end replace the old list with the new one.\n\n\n\nbrowser_history = [\n    (\"google.com\", 10), \n    (\"youtube.de\", 5), \n    (\"amazon.de\", 1), \n    (\"netflix.de\", 2), \n    (\"github.com\", 15)\n]\n# YOUR CODE BELOW\n\n\n\nCode\n# Assertions to verify your solution\nassert len(browser_history) == 2, \"browser_history should have 2 items\"\nassert isinstance(browser_history, list), \"browser_history should be a list\"\nassert all(isinstance(item, tuple) for item in browser_history), \"All items in browser_history should be tuples\"",
     "crumbs": [

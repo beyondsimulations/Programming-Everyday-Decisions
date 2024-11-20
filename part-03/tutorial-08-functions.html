@@ -273,6 +273,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Lecture</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-04/tutorial-10-recap.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10 - Recap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-04/tutorial-11-dicts.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11 - Dictionaries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part-04/tutorial-12-dataframes.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 - DataFrames</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -386,7 +404,7 @@ Real-World Example
 <li>Usually produce something (return value)</li>
 </ul>
 <p>Let’s start with a simple function:</p>
-<div id="84e02059" class="cell" data-execution_count="1">
+<div id="236e18d4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A simple function to greet library visitors</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet_visitor(name):</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Welcome to the library, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span></span>
@@ -421,7 +439,7 @@ Return Value
 </div>
 </div>
 <p>The following illustrates this in a more generic form:</p>
-<div id="2b6654e9" class="cell" data-execution_count="2">
+<div id="be8776e8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> function_name(parameter1, parameter2):  <span class="co"># ← Function signature</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> parameter1 <span class="op">+</span> parameter2        <span class="co"># ← Processing</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result                           <span class="co"># ← Return value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -464,14 +482,14 @@ Before You Start
 </ul>
 </div>
 </div>
-<div id="d9cf0581" class="cell" data-execution_count="3">
+<div id="0814c761" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If you call the function like this:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># get_book_info("Return", "Alan Wake", 2023)</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># it should return the string:</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># "Return by Alan Wake (2023)"</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="d356b8f4" class="cell" data-execution_count="4">
+<div id="ae964471" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -484,7 +502,7 @@ Before You Start
 <section id="section-2---functions-with-decision-making" class="level1">
 <h1>Section 2 - Functions with Decision Making</h1>
 <p>Functions can contain any code we’ve learned before, including if statements. This is useful for making decisions within our functions:</p>
-<div id="f0f306b7" class="cell" data-execution_count="5">
+<div id="7151c674" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_book_available(copies_available, on_hold):</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> copies_available <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> <span class="kw">not</span> on_hold:</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">True</span></span>
@@ -508,10 +526,10 @@ The book is available: False</code></pre>
 <section id="exercise-2.1---create-a-function-to-check-if-a-book-is-popular" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2.1---create-a-function-to-check-if-a-book-is-popular">Exercise 2.1 - Create a Function to Check if a Book is Popular</h2>
 <p>Create a function called <code>is_popular</code> that takes a single parameter <code>rating</code>. If the rating is greater than 3, it should return <code>True</code>, otherwise it should return <code>False</code>.</p>
-<div id="12cdf69a" class="cell" data-execution_count="6">
+<div id="eb052afa" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="c014c691" class="cell" data-execution_count="7">
+<div id="a3a166f5" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -535,10 +553,10 @@ The book is available: False</code></pre>
 <li>They have borrowed less than 3 books AND</li>
 <li>They have no overdue books</li>
 </ul>
-<div id="f38ad72c" class="cell" data-execution_count="8">
+<div id="94962bf9" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="dc0d9972" class="cell" data-execution_count="9">
+<div id="912e42f8" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assertions to verify your solution</span></span>
@@ -553,7 +571,7 @@ The book is available: False</code></pre>
 <section id="section-3---functions-with-default-parameters" class="level1">
 <h1>Section 3 - Functions with Default Parameters</h1>
 <p>Sometimes we want functions to have default values for parameters. This makes them more flexible, as we don’t have to specify all parameters every time we call the function.</p>
-<div id="004326c5" class="cell" data-execution_count="10">
+<div id="434035ef" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_fine(days_overdue, rate_per_day<span class="op">=</span><span class="fl">0.50</span>):</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> days_overdue <span class="op">*</span> rate_per_day</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -580,10 +598,10 @@ The fine for 5 days overdue with a custom rate is 5.0</code></pre>
 <li>For regular books: <code>times_borrowed / (days_since_last_borrow + 1)</code></li>
 <li>For reference books: <code>2 * (times_borrowed / (days_since_last_borrow + 1))</code></li>
 </ul>
-<div id="10033241" class="cell" data-execution_count="11">
+<div id="ab40572c" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="5fca9d33" class="cell" data-execution_count="12">
+<div id="049e0336" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -597,7 +615,7 @@ The fine for 5 days overdue with a custom rate is 5.0</code></pre>
 <section id="section-4---introduction-to-methods" class="level1">
 <h1>Section 4 - Introduction to Methods</h1>
 <p>Methods are special types of functions that belong to objects. While regular functions <strong>stand alone</strong>, methods are <strong>always associated with a specific object or data type</strong>. Let’s explore this with some examples:</p>
-<div id="5491dfe2" class="cell" data-execution_count="13">
+<div id="42ef6d80" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># String methods</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>book_title <span class="op">=</span> <span class="st">"the great gatsby"</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(book_title.title())  <span class="co"># Outputs: "The Great Gatsby"</span></span>
@@ -607,7 +625,7 @@ The fine for 5 days overdue with a custom rate is 5.0</code></pre>
 THE GREAT GATSBY</code></pre>
 </div>
 </div>
-<div id="97758c7d" class="cell" data-execution_count="14">
+<div id="5419d822" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List methods</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>books <span class="op">=</span> [<span class="st">"Neuromancer"</span>, <span class="st">"1984"</span>, <span class="st">"Foundation"</span>]</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>books.append(<span class="st">"Dune"</span>)  <span class="co"># Adds a book to the list</span></span>
@@ -662,10 +680,10 @@ Common String Methods
 </ul>
 </div>
 </div>
-<div id="7fe9c8bb" class="cell" data-execution_count="15">
+<div id="0719b985" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="f18c640d" class="cell" data-execution_count="16">
+<div id="b1f6c613" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
