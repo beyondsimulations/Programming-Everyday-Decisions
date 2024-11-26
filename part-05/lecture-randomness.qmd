@@ -1,13 +1,10 @@
 ---
-title: "Lecture I - Introduction"
-subtitle: "Programming with Python"
+title: "Lecture V - Randomness"
+subtitle: "Programming: Everyday Decision-Making Algorithms"
 author: "Dr. Tobias Vlćek"
-institute: "Kühne Logistics University Hamburg - Fall 2024"
+institute: "Kühne Logistics University Hamburg - Winter 2024"
 title-slide-attributes:
-    data-background-color: "#FFE0D3"
-
-execute:
-    echo: true
+    data-background-color: "#8C3048"
 
 format:
     revealjs:
@@ -20,762 +17,697 @@ format:
         code-copy: true
         code-link: true
         preview-links: auto
-        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-introduction.qmd)"
+        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-scheduling.qmd)"
         output-file: lecture-presentation.html
+        mermaid:
+            theme: neutral
 
     html:
         theme: litera
+        mermaid:
+            theme: neutral
 
-    pdf:
-        documentclass: report
+execute:
+    eval: true
 
 ---
 
-# [About this Course]{.flow} {.title}
+# [Understanding Randomness]{.flow} {.title}
 
-## About me
+## Randomness
 
-:::{.incremental}
-- **Field:** Optimizing and simulating complex systems
-- **Languages:** of choice: Julia, Python and Rust
-- **Interest:** Modelling, Simulations, Machine Learning
-- **Teaching:** OR, Algorithms, and Programming
-- **Contact:** [vlcek@beyondsimulations.com](mailto:vlcek@beyondsimulations.com)
-:::
+[Question:]{.question} **What comes to your mind when you think of randomness?**
 
 . . .
 
-:::{.callout-tip}
-I really appreciate active participation and interaction!
-:::
+- **Dice rolls** that are uniformly distributed
+- **Coin flips** with a binary outcome
+- **Lottery numbers** based on a random draw
+- **Shuffling cards** in a deck
+- **Genetic mutations** in biology
 
-## Course Outline
+## Why Randomness Matters
 
-- **Part I:** Introduction to Programming with Python
-- **Part II:** Data Science Tools with Python
-- **Part III:** Programming Projects
-
-## Participation
-
-- Prequisite for course *Management Science* (Prof. Goel)
-- Try actively participating in this course 
-- You will find it much (!) easier to follow Prof. Goel
-- Materials will be provided in the KLU portal
-- Slides are hosted at [beyondsimulations.github.io/Introduction-to-Python]( https://beyondsimulations.github.io/Introduction-to-Python/)
-
-## Teaching
-
-- **Lecture:** Presentation of tools and concepts, based on small examples and code snippets
-- **Tutorial:** Hands-on examples to be solved in groups
-- **Difficulty:** Difficult at first, but gradually easier
-
-## Passing the Course 
-
-- Pass/fail course
-- [75% attendance]{.highlight} required for passing the course
-- 2 assignments and 1 little project
-- You will be given programming exercises to solve
-- You can group up (3 students) and work together 
-- Each student group submits one solution
-
-## Solution
-
-- Provide a code solution to the problem (`.py` files)
-- Code files need to be executable
-- Detailed explanations of your code should be provided
-- Use comments or docstrings in your code
-- Provide a general (verbal) introduction to each problem
+[Question:]{.question} **What's the opposite of randomness?**
 
 . . .
 
-:::{.callout-tip}
-I'd encourage you to start and submit your solution early
-:::
-
-## Difficulty of the Course
-
-- We'll cover the basics of programming (in Python) at first
-- This is similar to learning a **new foreign language**
-- First, you have to get used to the language and learn words
-- **Later**, you'll be able to apply it and see results
-- Similar to learning a language: *Practice, practice, practice!*
-
-## What to expect
-
-- Some **investment** in the beginning to see the **return** later
-- You can ask questions and get support anytime 
-- After completion, you will be able to read code 
-- **and** write your own program using Python
-- **That's quite something!**
-
-## Goals of the Course
-
-- Essential concepts and tools of modern programming
-- Automated solutions for recurrent tasks
-- Algorithm-based solutions of complex problems
-- **Usage of AI** in a specific context
-
-## Python as Language
-
-- **Origins**: Conceived in late 1980s as a teaching and scripting language
-- **Simple Syntax**: Python’s syntax is straightforward and easy to learn
-- **Versatility**: Used in web development, data analysis, artificial intelligence, and more
-- **Community Support**: A large community of users and extensive documentation
-
-## Help from AI
-
-- You are allowed to use AI (GitHub Copilot, ChatGPT, LLama3 ...)
-- These new tools are really powerful for learning Python!
-- They can help you a lot to get started with programming
+- **Determinism**
+- **Predictability**
+- **Consistency**
 
 . . .
 
-:::{.callout-warning}
-But you should *not* simply use them to *replace* your learning.
-:::
+- [Boredom?]{.highlight}
 
-# [Why learn programming?]{.flow} {.title}
+## Discovery by Randomness
 
-## [Analytics]{.white} {background-image="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86"}
-::: footer
-[Photo by <a href="https://unsplash.com/@dengxiangs">Choong Deng Xiang</a> on <a href="https://unsplash.com/photos/graphical-user-interface--WXQm_NTK0U">Unsplash</a>]{.white}
-:::
-
-## [Research]{.white} {background-image="https://images.unsplash.com/photo-1576086213369-97a306d36557"}
-::: footer
-[Photo by <a href="https://images.unsplash.com/photo-1576086213369-97a306d36557">National Cancer Institute</a> on <a href="https://unsplash.com/photos/purple-cells-L7en7Lb-Ovc">Unsplash</a>]{.white}
-:::
-
-## [Visualization]{.white} {background-image="https://images.unsplash.com/photo-1584291527935-456e8e2dd734"}
-::: footer
-[Photo by <a href="https://unsplash.com/@claybanks">Clay Banks</a> on <a href="https://unsplash.com/photos/red-and-white-heart-illustration-no2blvVYoJw">Unsplash</a>]{.white}
-:::
-
-## [Finance]{.white} {background-image="https://images.unsplash.com/photo-1549421263-5ec394a5ad4c"}
-::: footer
-[Photo by <a href="https://unsplash.com/@ishant_mishra54">Ishant Mishra</a> on <a href="https://unsplash.com/photos/smartphone-on-brown-wooden-surface-UXEJDX4SqdE">Unsplash</a>]{.white}
-:::
-
-## [Logistics]{.white} {.white background-image="https://images.unsplash.com/photo-1465447142348-e9952c393450"}
-::: footer
-[Photo by <a href="https://unsplash.com/@dnevozhai">Denys Nevozhai</a> on <a href="https://unsplash.com/photos/aerial-photography-of-concrete-roads-7nrsVjvALnA">Unsplash</a>]{.white}
-:::
-
-# [How to learn programming]{.flow} {.title}
-
-## My Recommendation
-
-1. [Be present]{.highlight}: Attend the lecture and participate
-2. [Put in some work]{.highlight}: Repeat lecture notes and try to understand the examples yourself
-3. [Do coding]{.highlight}: Run code examples on your own, play around, *google*, modify, and solve problems on your own
+[Question:]{.question} **How would you test if a pair of dice is fair?**
 
 . . .
 
-:::{.callout-tip}
-Great resources to start are books and small challenges. You can find a list of book recommendations at the end of the lecture. Small challenges to solve can for example be found on [Codewars](https://www.codewars.com/).
-:::
-
-## Don't give up!
-
-- Programming is **problem solving**, don't get **frustrated**!
-- Expect to **stretch** your comfort zone
-
-<center>
-
-<br>
-<iframe src="https://giphy.com/embed/FKsCiEI5pFvIQ" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-<center>
-
-## Learning Path
-
-- The learning path can be quite steep!
-- [First of all help each other!]{.highlight}
-- Try to find help in lecture materials and books, the Python documentation, and online (e.g. Google, ChatGPT, StackOverflow, ...)
-- In case you get frustrated, read the following [helpful blog post about the challenges on medium.com](https://medium.com/sololearn/why-learning-to-code-is-soooo-hard-3c2372e9d12c)
-
-## Errors
-
-In case you find errors and typos in the lecture notes, please report them in the following form:\
-[https://tally.so/r/w7oapa](https://tally.so/r/w7oapa)
-
-
-# [Setting up Python]{.flow} {.title}
-
-## Install Python
-
-- Sources are the [Python website](https://www.python.org/downloads/) or [Anaconda](https://www.anaconda.com/products/individual)
-- **But I would recommend we start by installing [Thonny](https://thonny.org/)**
-- An open source IDE running on Windows, Linux and Mac
-- Built in Python interpreter and package management!
-
-## What is an IDE?
-
-- Integrated Development Environment `=` application 
-- It allows you to write, run and debug code scripts
-- Thonny is an IDE specifically for Python beginners
-- **It is easy to use as beginner!**
-- Other IDEs include for example [PyCharm](https://www.jetbrains.com/pycharm/) from JetBrains or [Visual Studio Code](https://code.visualstudio.com/) from Microsoft
-
-## Thonny
-![First start of Thonny](images/thonny_start.png)
-
-
-## Python on iPads
-
-- Although you can run Python scripts from on your iPad, it is not recommended for the course
-- Nonetheless, you could use [Pythonista](https://apps.apple.com/de/app/pythonista-3/id1085978097)
-- It works locally on your iPad and can run most scripts
+- Send the dice **to a lab** to [check weight and balance]{.highlight}
 
 . . .
 
-::: {.callout-caution}
-Not all packages available in Python are available in Pythonista, thus you might need a computer to solve certain problems.
-:::
+- Roll the dice **many times**
+- Check if the outcomes are **uniformly distributed**
+- Compare **observed** frequencies to **expected** frequencies
 
-## First start of Pythonista
+## Dice Rolls
 
-![First start of Pythonista](images/start_pythonista.png)
-
-# [Your first code]{.flow} {.title}
-
-## Hello, World!
-
-[Task]{.task}: Create a directory for the course and create a new file called `hello_world.py` with the following code:
 
 ```{python}
-#| eval: true
-#| output-location: fragment
+#| echo: false
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+import pathlib
 
-# This is a comment in Python
-print("Hello, World!")
-```
+DIR = pathlib.Path(".").resolve()
 
-. . .
+# Setup the figure
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 8), dpi=150)
+plt.style.use('fivethirtyeight')
 
-Run it with the green 'run' button or by pressing [F5]{.task}!
+# Setup first subplot for rolling history
+ax1.set_xlim(0, 200)
+ax1.set_ylim(0.5, 6.5)
+ax1.set_title('Dice Roll History')
+ax1.set_xlabel('Roll Number')
+ax1.set_ylabel('Roll Value')
+ax1.grid(True, alpha=0.3)
 
-. . .
+# Setup second subplot for distribution
+x = np.arange(1, 7)
+expected_prob = [1/6] * 6  # Fair die probabilities
+biased_prob = [0.1, 0.1, 0.1, 0.1, 0.1, 0.5]  # Biased die probabilities
+ax2.set_xlim(0.5, 6.5)
+ax2.set_ylim(0, 0.6)
+ax2.set_title('Distribution of Outcomes')
+ax2.set_xlabel('Roll Value')
+ax2.set_ylabel('Probability')
+ax2.grid(True, alpha=0.3)
 
-::: {.callout-note}
-"Hello world" is a classic example to start with. It is often used as a test to check if your computer is working properly and that you have installed the necessary software.
-:::
+# Plot expected probability lines
+ax2.plot(x, expected_prob, 'g--', label='Fair Die (Expected)', alpha=0.7)
+ax2.plot(x, biased_prob, 'r--', label='Biased Die (Expected)', alpha=0.7)
+ax2.legend()
 
-## Hello, World in a Message
+# Initialize data
+fair_rolls = []
+biased_rolls = []
+fair_line, = ax1.plot([], [], 'g-', alpha=0.5, label='Fair Die')
+biased_line, = ax1.plot([], [], 'r-', alpha=0.5, label='Biased Die')
+fair_scatter = ax1.scatter([], [], c='green', alpha=0.6)
+biased_scatter = ax1.scatter([], [], c='red', alpha=0.6)
+fair_bars = ax2.bar(x - 0.2, np.zeros_like(x), width=0.4, alpha=0.5, color='green', label='Fair Die (Observed)')
+biased_bars = ax2.bar(x + 0.2, np.zeros_like(x), width=0.4, alpha=0.5, color='red', label='Biased Die (Observed)')
 
-[Task]{.task}: Change the code in your `hello_world.py` file. Assign the string `"Hello, World!"` to a variable called `message` and print the variable.
+ax1.legend()
+ax2.legend()
 
-. . .
+def biased_roll():
+    # Returns 6 with 50% probability, others equally likely
+    return np.random.choice(range(1, 7), p=biased_prob)
 
-- Use the equals sign (=)
-- Variable name goes on the left
-- Value to be assigned goes on the right
-
-. . .
-
-```{python}
-#| eval: true
-#| output-location: fragment
-
-# Here we assign the string "Hello, World!" to variable message and print it
-message = "Hello, World!"
-print(message)
-```
-
-## Hello, World in Parentheses
-
-We can also mix `"` and `'` in a string, if we are consistent:
-
-```{python}
-#| eval: true
-#| output-location: fragment
-
-# This code works
-message = 'I shout "Hello, World!"'
-print(message)
-```
-
-. . .
-
-\
-```{python}
-#| eval: false
-#| error: true
-
-# This code does not!
-message = 'I shout 'Hello, World!""
-print(message)
-```
-
-. . .
-
-\
-[Try it yourself!]{.task} What does happen, if you try to run it?
-
-## First Errors
-
-[SyntaxError]{.errors}: invalid syntax
-
-- The code is not valid Python syntax
-- Likely the most common error that you will encounter!
-- Happens when you make a mistake, e.g., illegal character, missing a colon, parentheses or quotations
-- You can fix this by correcting the code and re-running
-- **In the lecture you will encounter many more errors!**
-
-# [Program]{.flow} {.title}
-
-## What is a Program? 
-
-- Sequence of instructions telling a computer what to do
-- Written in a language the computer can understand
-- Basic operations in most languages: 
-    - **Input**: Data from keyboard, file, network, sensors, etc.
-    - **Output**: Display data, save it, send over network, etc.
-    - **Processing**: Perform calculations, analyze data, make decisions, find patterns, etc.
+def update(frame):
+    # Generate new rolls
+    fair_roll = np.random.randint(1, 7)
+    unfair_roll = biased_roll()
     
-## Key concepts
+    fair_rolls.append(fair_roll)
+    biased_rolls.append(unfair_roll)
+    
+    # Update rolling history
+    fair_line.set_data(range(len(fair_rolls)), fair_rolls)
+    biased_line.set_data(range(len(biased_rolls)), biased_rolls)
+    fair_scatter.set_offsets(np.c_[range(len(fair_rolls)), fair_rolls])
+    biased_scatter.set_offsets(np.c_[range(len(biased_rolls)), biased_rolls])
+    
+    # Update distributions
+    if fair_rolls:
+        fair_counts = np.bincount(fair_rolls)[1:]
+        fair_probs = fair_counts / len(fair_rolls)
+        biased_counts = np.bincount(biased_rolls)[1:]
+        biased_probs = biased_counts / len(biased_rolls)
+        
+        for bar, prob in zip(fair_bars, fair_probs):
+            bar.set_height(prob)
+        for bar, prob in zip(biased_bars, biased_probs):
+            bar.set_height(prob)
+    
+    return (fair_line, biased_line, fair_scatter, biased_scatter, *fair_bars, *biased_bars)
 
-- Key concepts in most languages:
-    - **Variables**: Store and manipulate data 
-    - **Conditional execution**: Check and execute accordingly
-    - **Loops**: Perform actions repeatedly
-    - **Functions**: Group instructions for reusability
-
-. . .
-
-::: {.callout-note}
-We will cover these concepts in more detail later in the course.
-:::
-
-## How Python executes code
-
-- Python is an **interpreted language**
-- The source code is executed line by line
-- The interpreter checks the syntax and executes the code
-- This is in contrast to compiled languages, where the code is compiled into machine code before execution
-
-## Hello again, World!
-
-Let's go back to our first program:
-
-```{python}
-#| eval: false
-
-# Our first program
-message = "Hello, World!"
-print(message)
+# Create and save animation
+anim = FuncAnimation(fig, update, frames=200, interval=50, blit=True)
+anim.save(DIR / 'dice_fairness.gif', writer='pillow')
+plt.close()
 ```
 
-. . .
+![](dice_fairness.gif)
 
-- **Comment**: In the first line we define a comment with `#`
-- **Variable**: In the second we define a variable `message`
-- **Function**: In the third line we call a function `print`
+## Using Randomness
 
-## Don't worry!
+- Randomness is a [fundamental aspect of the world]{.highlight}
+- Randomness is used to model **uncertainty**
+- It is used to **explore** solutions and **avoid bias**
 
-- [Already confused?]{.blue} Don't worry about it for now!
-- We'll learn more about variables and functions later
-
-<center>
-\
-<iframe src="https://giphy.com/embed/12W5Sg2koWYnwA" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-<center>
-
-# [Python's Syntax]{.flow} {.title}
-
-## The Zen of Python
-
-- Python's name originally comes from Monty Python
-- Style is based on a philosophy called [Zen of Python]{.highlight}
-- Collection of 19 statements with general principles
-
-. . .
-
-[Task]{.task}: Try this code in Python:
-
-```{python}
-#| eval: false
-
-# Try this code in Python to see the Zen of Python
-import this
-```
-
-## Variables
-
-- A variable in Python is a name that points to a value
-- Created by using the assignment operator `=`
-- Python does not require a declaration of variable types
-
-```{python}
-#| eval: true
-#| output-location: fragment
-a = 2 # Variable a assigned the value 2
-b = "Time" # Variable b assigned the value "Time"
-c = print # Variable c assigned the print function
-c(b) # Now we can call the print function with c
-```
-. . .
-
-**But there are certain rules to variable names!**
-
-## Variable Naming Conventions
-
-- Must start with a letter or underscore `_`
-- Can contain letters, numbers and underscores
-- Names are case sensitive, e.g., `a` and `A` are different!
-- Cannot be a reserved word, e.g., `for`, `if`, `def`, etc
-- Good names are short and meaningful for humans!
-
-. . .
-
-\
-[Question]{.question}: Which of the following fulfill these conditions?\
-a, _duration, 1x, time_left, 1_minute, oneWorld, xy4792
-
-## Functions
-
-- Functions are named blocks of code 
-- Can take arguments `function([arguments])` 
-- Can return results or `None`
-
-. . .
-
-
-```{python}
-#| eval: true
-#| output-location: fragment
-# Print is such a function
-print("Hello, World!") # It takes an argument and prints it to the console
-print("Hello","World!", sep=", ") # It can also take multiple arguments
-```
-
-. . .
-
-::: {.callout-note}
-We will cover functions in more detail **later** in the course.
-:::
-
-# [Values and Types]{.flow} {.title}
-
-## What are Values and Types?
-
-- **Value**: Fundamental thing that a program manipulates
-    - In Python, values are either numbers or strings
-- **Type**: Type of a value 
-    - Determines what operations can be performed on it
-    - `type()` is a function that returns the type of a value
-    - Takes one argument and returns its type as string
-
-## Strings
-
-Back to our example of "Hello, World!"
-```{python}
-#| eval: true
-#| code-line-numbers: 1-2|4-5|7-8
-#| output-location: fragment
-
-# We define the variable message and assign it the value "Hello, World!"
-message = "Hello, World!"
-
-# We save its type in another variable called message_type
-message_type = type(message)
-
-# We print the value of our new variable
-print(f"{message} is a {message_type}")
-
-```
-
-. . .
-
-\
-**Result**: "Hello, World" is a string - in short 'str'.
-
-. . .
-
-[But what about the f"?]{.blue}
-
-## Formated Strings
-
-- **f-strings** are strings that start with `f`
-- They contain **expressions**, e.g., [variables]{.highlight}, in braces
-- Evaluated at run time and inserted into the string
-
-. . .
-
-::: {.callout-note}
-In older code bases, f strings were not available. Here, interpolation could be done as shown below with `print()` and `.format()`. But this method is less concise and arguably less readable.
-:::
-
-. . .
-
-```{python}
-#| eval: true
-#| output-location: fragment
-print("{} is a {}".format(message, message_type))
-```
-
-## Specifying Formatted Strings
-
-- We can further specify their forman with `{<to_print>:<width>.<precision>f}`
-- `width` can be a number specifying the output width
-- `<`, `^`, `>` can be used before the width to align the text
-- `precision` can be used to specify the decimals
-- `.f` can be used to format floats
-
-```{python}
-#| eval: true
-#| output-location: fragment
-x = "hello"
-print(f"{x:<10} has {len(x):>10.2f} characters.")
-```
-
-## Expressions
-
-- Produce a value when evaluated
-- Can be used as part of larger expressions or statements
-- Statements are expressions that don't produce a value
-- Examples: arithmetic operations, function calls, variables
-```{python}
-#| eval: true
-#| output-location: fragment
-x = 1 # Statement that assigns the value 3 to x
-y = x + 2 # Expression on the right side assigned to a variable y
-print(f"Great, the result is {y}")
-```
-
-## A step back: What is a String?
-
-- [Remember]{.blue}: "Hello, World" is a string - in short 'str'
-- A string is a sequence of characters enclosed in quotes
-- Examples: `"Hello"`, `'World'`, `"123"`, `'1World23'`
-
-```{python}
-#| eval: true
-#| output-location: fragment
-hello = "Hello"
-world = 'World!'
-print(hello,world,sep=", ") # We can specify the separator with the argument sep
-```
-. . .
-
-:::{.callout-note}
-Strings are immutable, we can't change characters in them once created.
-:::
-
-## String Operations
-
-- [But we can also do much more with strings!]{.highlight}
-- String concatenation, indexing, slicing, length, etc.
-```{python}
-#| eval: true
-#| output-location: fragment
-two_strings = "Hello" + ", " + "World!" # String concatenation
-print(two_strings)
-```
-. . .
-```{python}
-#| eval: true
-#| output-location: fragment
-print(two_strings[0]) # Indexing starts at zero!
-```
-. . .
-
-```{python}
-#| eval: true
-#| output-location: fragment
-print(len(two_strings)) # With len we can find the length of our string
-```
-. . .
-```{python}
-#| eval: true
-#| output-location: fragment
-print("--x--"*3) # We can also repeat strings
-```
-
-## Booleans
-- Booleans represent two values: `True` and `False`
-- Internally they are represented as `1` and `0`, respectively
-- They are used for logical operations and control flow
-- E.g.: `if`, `while`, `for`, `elif`, `else
-
-. . .
-```{python}
-#| eval: true
-#| output-location: fragment
-x = True
-y = False
-print(x)
-print(type(y))
-```
-. . .
-
-[> More on them in our next lecture!]{.blue}
-
-## Integers and Floats
-- Integers are whole numbers, e.g.: `1`, `-3`, `0` or `100`
-- Floats are decimal numbers, e.g.: `-4.78`, `0.1` or `1.23e2`
-- Bit size is **not specified** (e.g.: 64 bits) in Python!
-
-. . .
-```{python}
-#| eval: true
-#| output-location: fragment
-x = 1; y = 1.2864e2 # We can separate multiple operations in one line with semicolons
-print(f"{x} is of type {type(x)}, {y} is of type {type(y)}")
-```
-. . .
-
-:::{.callout-warning}
-The interpreter will automatically convert booleans to integers to floats when necessary, **but not the other way around!**
-:::
-
-# [First Functions and Operators]{.flow} {.title}
-
-## Arithmetic operators
-
-```{python}
-#| eval: true
-#| output-location: fragment
-addition = 1 + 2;           print(f"Result: addition is {addition}")
-substraction = 1 - 2;       print(f"Result: substraction is {substraction}")
-multiplication = 3 * 4;     print(f"Result: multiplication is {multiplication}")
-division = 7 / 4;           print(f"Result: division is {division}")
-floor_division = 7 // 4;    print(f"Result: floor_division is {floor_division}")
-exponentiation = 9 ** 0.5;  print(f"Result: exponentiation is {exponentiation}")
-modulo = 10 % 3;            print(f"Result: modulo is {modulo}")
-```
-
-## Precedence
-
-- Operators are the same as in most other languages
-- Can be combined with each other and variables
-- [Normal rules of precedence apply]{.highlight}
-
-. . .
-```{python}
-#| eval: true
-#| output-location: fragment
-# Operator precedence works as on paper
-combined_operation = 2 + 3 * 4
-print(f"2 + 3 * 4 = {combined_operation}")
-```
-. . .
-```{python}
-#| eval: true
-#| output-location: fragment
-# Parentheses change precedence as expected
-parentheses_operation = (2 + 3) * 4
-print(f"(2 + 3) * 4 = {parentheses_operation}")
-```
-
-## The input() Function
-
-- Used to get user input [as string]{.blue} from the console
-- Syntax: `input([userprompt])`
-- Displays optional prompt and waits for user input
-
-. . .
-
-```{python}
-#| eval: false
-name = input("What's your name? ")
-print(f"Hello, {name}!")
-```
 . . .
 
 ::: {.callout-important}
-The function always returns the input as **string**!
+Randomness is not just about **generating random numbers**!
 :::
 
-## Input in Action
+# [Computational Applications]{.flow} {.title}
 
-[Task]{.task}: Solve the following task:
+## Randomness and Everyday Life
 
+[Question:]{.question} **Where do you see algorithms that use randomness in daily life?**
 
-```{python}
-#| eval: true
-# TODO: Ask the user for their age and print a compliment
-```
+## Cryptography
+- Bitcoin miners are playing a **giant random number lottery**
+- Your password generator **not just generating random keys!**
+- `correct-horse-battery-staple` is secure 
+- `Tr0ub4dor&3` is not that secure
+- [Encryption]{.highlight} uses randomness to create **uncrackable** keys
 
-. . .
+## Entertainment Industry
 
-[Solution]{.highlight}
+- Pokémon's "random" encounters are **carefully weighted**
+- **Loot systems:** Better items have lower drop rates
+- Chess AI makes **suboptimal moves** to be unpredictable
+- Spotify shuffle makes it **less random to feel more random**
 
-```{python}
-#| eval: false
-age = int(input("How old are you? "))
-print(f"You look great for {age}!")
-```
+## Real-World Applications
 
-## Type Conversion
-Use [type conversion]{.blue} for other data types
-
-1. Integer: `int(input())`
-2. Float: `float(input())`
-3. Boolean: `bool(input())`
-4. String: `str(input())`
-
-. . .
-
-```{python}
-#| eval: false
-# Converting to Integer
-age = int(input("Enter your age: "))
-next_year = age + 1
-print(f"Next year, you'll be {next_year}")
-```
-
-## The round() Function
-
-```{python}
-#| eval: true
-#| output-location: fragment
-# Hence, we can use the int() function to convert a float into an int
-soon_int = 1.789
-print(f"{soon_int} converted to {int(soon_int)} of type {type(int(soon_int))}")
-```
-. . .
-
-```{python}
-#| eval: true
-#| output-location: fragment
-# We can also use `round()` to round a float to an int
-soon_int = 1.789
-print(f"{soon_int} converted to {round(soon_int)} of type {type(round(soon_int))}")
-```
-. . .
-
-```{python}
-#| eval: true
-#| output-location: fragment
-# Or to a float with a certain number of decimals
-no_int = 1.789
-print(f"{no_int} converted to {round(no_int,1)} of type {type(round(no_int,1))}")
-```
-
-## Questions?
+- [Weather forecasting]{.highlight} uses random simulations
+- **Stock algorithms** add randomness to avoid predictability
+- **Self-driving cars** add randomness for natural behavior
 
 . . .
 
 ::: {.callout-note}
-**That's it for todays lecture!**\
-We now have covered the basics on the Python syntax, variables, and data types.
+Thus, we see that randomness is **everywhere** but also **not just about generating random numbers**!
 :::
 
-# [Literature]{.flow} {.title}
+## Types of Randomness
 
-## Interesting Books to start
+[Question:]{.question} **What's the difference between true and pseudo-randomness?**
 
-- Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. [Link to free online version](https://greenteapress.com/wp/think-python-3rd-edition/)
-- Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+[True Randomness]{.highlight}
+
+- Physical phenomena
+- Atmospheric noise
+- Radioactive decay
+- Quantum effects
+:::
+
+::: {.column width="50%"}
+[Pseudo-randomness]{.highlight}
+
+- Deterministic algorithms
+- Seed-based generation
+- Repeatable sequences
+- Good enough for most uses
+:::
+:::
+
+## Randomness in Computer Science
+
+- **Fundamental concept** in computer science
+- Helps solve "hard" problems **efficiently**
+- Often **faster than deterministic approaches**
+- [Trade-off:]{.highlight} Optimal vs. "Good Enough" solutions
+
+. . .
+
+::: {.callout-important}
+Sometimes a quick "good enough" solution is better than waiting for the perfect one.
+:::
+
+## Limits of Computation
+
+[Question:]{.question} **How many possible combinations exist in a shuffled deck of cards?**
+
+```{python}
+#| echo: true
+#| eval: true
+#| output-location: fragment
+import math
+print(math.factorial(52))
+```
+
+. . .
+
+::: {.callout-important}
+Computing and evaluating all possible combinations is not feasible!
+:::
+
+
+## Addressing Computational Limits
+
+[Question:]{.question} **Has anybody heard the term Monte Carlo methods?**
+
+. . .
+
+- Developed in the **1940s for nuclear weapons research**
+- Nuclear fission chain reactions **were too complex**
+- Helped to [evaluate the probabilities of different outcomes]{.highlight}
+- Named after **Monaco's famous casino**
+
+. . .
+
+[Question:]{.question} **How could we estimate π?**
+
+## Estimating π
+
+```{python}
+#| echo: false
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+import pathlib
+
+DIR = pathlib.Path(".").resolve()
+
+# Setup
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 8), dpi=150) 
+
+# Draw circle and square boundaries
+circle = plt.Circle((0, 0), 1, fill=False, color='black')
+ax1.add_artist(circle)
+ax1.set_xlim(-1.1, 1.1)
+ax1.set_ylim(-1.1, 1.1)
+ax1.set_aspect('equal')
+ax1.grid(True)
+ax1.set_title('Monte Carlo Simulation')
+
+# Setup pi estimation plot
+ax2.set_xlim(0, 200)  # Reduced number of frames
+ax2.set_ylim(2.8, 3.4)
+ax2.axhline(y=np.pi, color='r', linestyle='--', label='π')
+ax2.grid(True)
+ax2.set_title('π Estimation')
+ax2.legend()
+
+# Pre-allocate points and create scatter plots once
+points_per_frame = 10  # Process multiple points per frame
+scatter_inside = ax1.scatter([], [], c='blue', alpha=0.6, s=20)
+scatter_outside = ax1.scatter([], [], c='red', alpha=0.6, s=20)
+line_estimate, = ax2.plot([], [], 'g-', alpha=0.5)
+
+# Initialize arrays
+inside_points = np.empty((0, 2))
+outside_points = np.empty((0, 2))
+estimates = np.empty(0)
+
+def update(frame):
+    global inside_points, outside_points, estimates
+    
+    # Generate batch of points
+    points = np.random.uniform(-1, 1, (points_per_frame, 2))
+    distances = np.sum(points**2, axis=1)
+    
+    # Split into inside/outside points
+    new_inside = points[distances <= 1]
+    new_outside = points[distances > 1]
+    
+    # Update arrays
+    inside_points = np.vstack([inside_points, new_inside])
+    outside_points = np.vstack([outside_points, new_outside])
+    
+    # Update scatter plots
+    scatter_inside.set_offsets(inside_points)
+    scatter_outside.set_offsets(outside_points)
+    
+    # Calculate and update pi estimation
+    total_points = len(inside_points) + len(outside_points)
+    if total_points > 0:
+        pi_estimate = 4 * len(inside_points) / total_points
+        estimates = np.append(estimates, pi_estimate)
+        line_estimate.set_data(range(len(estimates)), estimates)
+    
+    return scatter_inside, scatter_outside, line_estimate
+
+# Create and save animation
+anim = FuncAnimation(fig, update, frames=200, interval=50, blit=True)
+anim.save(DIR / "pi.gif", writer="pillow")
+plt.close()
+```
+
+![](pi.gif)
+
+
+# [Decision Making]{.flow} {.title}
+
+## Travel Itinerary
+
+[Question:]{.question} **How and in which order would you visit 10 cities by plane with minimal total distance?**
+
+```{python}
+#| echo: true
+#| eval: true
+#| output-location: fragment
+import math
+print(math.factorial(10))
+```
+
+. . .
+
+[Question:]{.question} **What could be a strategy?**
+
+## Brute Force  
+
+- Try [every possibility]{.highlight}
+- Total possible routes: 10! = **3,628,800**
+- **Guaranteed** to find best solution
+
+. . .
+
+[Question:]{.question} **What could be the problem with this approach?**
+
+## Greedy Algorithm
+
+- **Example:** Always picking shortest next flight
+- Make **locally optimal** choices
+- [Does not change existing choices]{.highlight}
+- Fast but may miss global optimum
+
+## Hill Climbing
+
+- [Iteratively improve solution]{.highlight}
+- Like **climbing in fog**
+- Check **all neighboring solutions**
+- Can get stuck in **local optima**
+
+## Simulated Annealing
+
+- Make random changes and **accept improvements**
+- Sometimes accept **worse solutions**
+- Gradually become **more selective**
+
+. . .
+
+[Question:]{.question} **Why accept worse solutions sometimes?**
+
+. . .
+
+- Randomness helps to escape **local optima**
+- Balances [exploration vs. exploitation]{.highlight}
+
+## Simulated Annealing Animation
+
+```{python}
+#| echo: false
+# Setup the figure with two subplots: main visualization and temperature
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(18, 8), height_ratios=[3, 1], dpi=150)
+plt.subplots_adjust(hspace=0.3)
+
+# Generate the objective function (parabola)
+x = np.linspace(0, 10, 200)
+y = -((x-5)**2)  # Parabola with maximum at x=5
+ax1.plot(x, y, 'k-', alpha=0.3, label='Objective Function')
+
+# Initialize starting position (random x between 0 and 10)
+current_x = np.random.uniform(0, 10)
+current_y = -((current_x-5)**2)
+point, = ax1.plot([current_x], [current_y], 'ro', markersize=10, 
+                  label='Current Position')
+
+# Animation parameters
+initial_temp = 10.0
+temperature = initial_temp
+cooling_rate = 0.995
+path_x = [current_x]
+path_y = [current_y]
+temperatures = [temperature]
+
+# Plot search path
+line, = ax1.plot(path_x, path_y, 'r-', alpha=0.5, label='Search Path')
+
+# Temperature plot
+temp_line, = ax2.plot(temperatures, 'b-', label='Temperature')
+
+def update(frame):
+    global current_x, current_y, temperature
+    
+    # Propose new solution (larger steps when temperature is high)
+    new_x = current_x + np.random.normal(0, temperature)
+    new_x = np.clip(new_x, 0, 10)  # Keep within bounds
+    new_y = -((new_x-5)**2)
+    
+    # Acceptance probability (higher temp = more likely to accept worse solutions)
+    if new_y > current_y:  # Always accept better solutions
+        acceptance = True
+    else:
+        prob = np.exp((new_y - current_y) / temperature)
+        acceptance = np.random.random() < prob
+    
+    # Update position if accepted
+    if acceptance:
+        current_x = new_x
+        current_y = new_y
+    
+    # Cool down system
+    temperature *= cooling_rate
+    
+    # Update visualization
+    path_x.append(current_x)
+    path_y.append(current_y)
+    temperatures.append(temperature)
+    
+    line.set_data(path_x, path_y)
+    point.set_data([current_x], [current_y])
+    temp_line.set_data(range(len(temperatures)), temperatures)
+    
+    # Update progress text
+    progress = frame / 200 * 100
+    ax1.set_title(f'Simulated Annealing Progress: {progress:.1f}%\n'
+                  f'Current Temperature: {temperature:.2f}')
+    
+    return line, point, temp_line
+
+# Setup axis limits and labels
+ax1.set_xlim(0, 10)
+ax1.set_ylim(-30, 5)
+ax1.grid(True, alpha=0.3)
+ax1.set_xlabel('Search Space')
+ax1.set_ylabel('Objective Value')
+ax1.legend(loc='upper right')
+
+ax2.set_xlim(0, 200)
+ax2.set_ylim(0, initial_temp)
+ax2.grid(True, alpha=0.3)
+ax2.set_xlabel('Iterations')
+ax2.set_ylabel('Temperature')
+ax2.set_title('Cooling Schedule')
+
+# Create and save animation
+anim = FuncAnimation(fig, update, frames=200, interval=50, blit=True)
+anim.save(DIR / 'simulated_annealing.gif', writer='pillow')
+plt.close()
+```
+
+![](simulated_annealing.gif)
+
+
+# [Nature and Society]{.flow} {.title}
+
+## Bacterial Evolution
+
+[Question:]{.question} **Do bacteria "choose" to become resistant to antibiotics or is it random?**
 
 . . .
 
 ::: {.callout-note}
-Think Python is a great book to start with. It's available online for free [here](https://greenteapress.com/wp/think-python-3rd-edition/). Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.
-::: 
+## Salvador Luria's Experiment
+- If adaptive: All bacteria would develop resistance
+- If random: Only some colonies develop resistance
+:::
 
 . . .
 
-For more interesting literature to learn more about Python, take a look at the [literature list](../general/literature.qmd) of this course.
+[Result: Randomness wins!]{.highlight} 🦠
+
+## Thought Experiment
+
+[Question:]{.question} **What's more important for a society?**
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+[Freedom]{.highlight}
+
+- Individual choice
+- Personal responsibility
+- Market-driven
+:::
+
+::: {.column width="50%"}
+[Equality]{.highlight}
+
+- Shared resources
+- Social safety nets
+- Regulated systems
+:::
+:::
+
+. . .
+
+[Question:]{.question} **Any problem with this question?**
+
+## Veil of Ignorance
+
+You might [randomly]{.highlight} be:
+
+- Any gender identity and economic status
+- Any health condition and intelligence level
+- Any cultural background and religious belief
+
+. . .
+
+[Question:]{.question} **If you didn't know who you'd be born as, what kind of society would you design?**
+
+# [Key Considerations]{.flow} {.title}
+
+## Overview
+
+1. **Impact of Policies**
+2. **Measuring Societal Success**
+3. **Data and Decision Making**
+
+. . .
+
+[Question:]{.question} **What would you consider in each of these?**
+
+## Impact of Policies
+
+- Small policy changes [can have cascading effects]{.highlight}
+- **Example**: Changes in education funding affect generations
+
+. . .
+
+[Question:]{.question} **Do you have any other examples?**
+
+## Data and Decision Making
+
+- **Individual stories:** Powerful but potentially misleading
+- **Statistics:** Comprehensive but can miss nuance
+- **Hidden diversity:** Important subgroups may be overlooked
+
+. . .
+
+::: {.callout-important}
+But that's not all! We also need to measure **success** and **failure**!
+:::
+
+## Measuring Success
+
+- **Mean happiness:** Average well-being
+- **Total happiness:** Utilitarian approach
+- **Median happiness:** Focus on the middle class
+- **Minimum happiness:** Protecting the most vulnerable
+
+. . .
+
+[Question:]{.question} **What could be the problem with these measures?**
+
+## Solution: Random Sampling
+
+- Randomly [select a subset of the population]{.highlight}
+- Gather **diverse perspectives** from the sample
+- **Reduce selection bias** and improve accuracy
+- Better understand **needs** of population
+
+## Selection Bias
+
+[Question:]{.question} **How can randomness promote fairness?**
+
+. . .
+
+- **Randomly** selecting Jury of a trial
+- **Random lottery** for college admissions
+- **Random allocation** of patients in clinical trials
+
+# [Uncertainty]{.flow} {.title}
+
+## Decisions Under Uncertainty
+
+[Question:]{.question} **When should we embrace vs. reduce randomness?**
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+[Embrace When]{.highlight}:
+
+- Exploring new solutions
+- Avoiding bias
+- Breaking deadlocks
+- Testing systems
+:::
+
+::: {.column width="50%"}
+[Reduce When]{.highlight}:
+
+- Safety-critical systems
+- Financial transactions
+- Medical procedures
+- Legal proceedings
+:::
+:::
+
+## Quick Poll
+[Question:]{.question} **Which would you prefer?**
+
+- **100% chance of winning $50**
+- **50% chance of winning $120**
+
+. . .
+
+::: {.callout-tip}
+Answer depends on your **risk aversion**!
+:::
+
+## Randomness and Creativity
+
+- Random exposure to new ideas [sparks creativity]{.highlight}
+- Changing contexts leads to novel solutions
+- Balance between **randomness** and **structure**
+- Balance between **exploration** and **exploitation**
+- **Perfect information** is rare
+
+## Life Lessons
+
+1. **Embrace Uncertainty**
+   - Perfect information is rare
+   - Adapt to changing conditions
+
+2. **Balance Exploration/Exploitation**
+   - Try new things
+   - Use what works
+   - Know when to switch
+
+3. **Accept "Good Enough"**
+   - Perfect is enemy of good
+   - Time is valuable
+   - Consider opportunity costs
+
+[Question:]{.question} **How do you balance these in your own life?**
+
+## The End
+
+::: {.callout-note}
+**That's it for today's lecture!**\
+We've covered the basics of randomness and its applications. In the upcoming tutorials, we'll implement these concepts in Python and explore their practical uses.
+:::
+
+
+
+

@@ -1,0 +1,143 @@
+---
+title: "Tutorial IV.III - Input and Output"
+subtitle: "Programming: Everyday Decision-Making Algorithms"
+
+format:
+    html:
+        theme: [litera, ../styles_html.scss]
+    pdf: 
+        documentclass: report
+    ipynb:
+        code-copy: true
+        code-overflow: wrap
+---
+
+# Introduction
+
+Welcome to this tutorial on working with external files! Imagine you're managing a busy restaurant, and you need to keep track of reservations, orders, and staff schedules across multiple shifts. File Input/Output (I/O) operations are crucial for persisting this data and sharing it between different parts of your restaurant management system.
+
+In this tutorial, we'll learn how to read and write different types of files using Python, focusing on practical scheduling scenarios. These skills are important for any real-world application that needs to store and process data.
+
+# Section 1 - Working with CSV Files
+
+CSV files are perfect for storing structured data like reservation logs or order histories. We'll use the `csv` module, which comes built-in with Python. Here's an example of how the reservation data will be stored at the end:
+
+```
+time,name,party_size,table_number
+18:00,Smith,4,12
+19:00,Johnson,2,7
+19:30,Williams,6,15
+```
+
+Let's understand how to write data to CSV files. The `csv.writer()` creates a writer object that helps us write rows of data in CSV format. Each row is written using the `writerow()` method. For example:
+
+```{python}
+#| eval: false
+import csv
+
+writer = csv.writer(open('testfile.csv', 'w'))
+writer.writerow(['time', 'name', 'party_size', 'table_number'])
+writer.writerow(['18:00', 'Smith', 4, 12])
+writer.writerow(['19:00', 'Johnson', 2, 7])
+writer.writerow(['19:30', 'Williams', 6, 15])
+```
+
+
+## Exercise 1.1 - Saving Reservations
+
+First, let's write the code to save the reservations to a CSV file. We need to:
+
+- Open the file in write mode with newline=''
+- Create a csv.writer object
+- Write the header row: ['time', 'name', 'party_size', 'table_number']
+- Write each reservation as a row after the header
+
+
+```{python}
+#| eval: false
+import csv
+
+def save_reservations(reservations, filename):
+    # YOUR CODE HERE
+
+
+
+# YOUR CODE ABOVE
+reservations = [
+    ("18:00", "Smith", 4, 12),    # Evening reservation for Smith's family
+    ("19:00", "Johnson", 2, 7),   # Couple's dinner reservation
+    ("19:30", "Williams", 6, 15)  # Large party reservation
+]
+
+save_reservations(reservations, "reservations.csv")
+```
+
+## Exercise 2.2 - Reading Reservations
+
+Now, let's write the code to read the reservations we saved to a CSV file. We need to:
+
+- Create an empty list for reservations
+- Open the file in read mode
+- Create a csv.reader object
+- Skip the header row using next()
+- Add each row to the reservations list
+- Return the list of reservations
+
+
+
+```{python}
+#| eval: false
+def read_reservations(filename):
+    # YOUR CODE HERE
+
+
+# The loaded data can be accessed like this:
+# loaded_reservations[0][0]  # First reservation's time
+# loaded_reservations[0][1]  # First reservation's name
+```
+
+# Section 2 - Working with Pandas DataFrames
+
+Pandas provides a more powerful way to handle tabular data. As you might have seen in the previous tutorial, DataFrames are like spreadsheets in Python, with labeled columns and rows. They offer many built-in methods for data analysis and manipulation.
+
+## Exercise 3.1 - Saving Order History
+
+Pandas makes it easy to work with structured data. The DataFrame constructor can take a dictionary where keys become column names and values become the data in those columns.
+
+```python
+import pandas as pd
+
+def save_order_history(orders, filename):
+    # Convert the dictionary to a DataFrame
+    df = pd.DataFrame(orders)
+    # Save to CSV with index=False to exclude row numbers
+    df.to_csv(filename, index=False)
+    return df  # Return the DataFrame for verification
+
+# Example usage with detailed explanation
+orders = {
+    'time': ['12:00', '12:15', '12:30'],
+    'item': ['Pizza', 'Pasta', 'Salad'],
+    'price': [15.99, 12.99, 8.99],
+    'prep_time': [20, 15, 5]  # prep time in minutes
+}
+
+# The resulting DataFrame will look like this:
+#    time    item   price  prep_time
+# 0  12:00  Pizza   15.99        20
+# 1  12:15  Pasta   12.99        15
+# 2  12:30  Salad    8.99         5
+
+# Additional example of reading and analyzing the data
+df = save_order_history(orders, "order_history.csv")
+print(f"Average price: ${df['price'].mean():.2f}")
+print(f"Total prep time: {df['prep_time'].sum()} minutes")
+```
+
+# Conclusion
+
+Congratulations! You've learned how to handle structured CSV data and pandas DataFrames. These skills are important for real-world applications that need to persist data, for example in scheduling and resource management scenarios.
+
+---
+
+{{< include ../include/tutorial_end.qmd >}}

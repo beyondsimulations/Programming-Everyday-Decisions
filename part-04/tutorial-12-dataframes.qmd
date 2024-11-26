@@ -283,6 +283,12 @@ Note, how the index shows the index of the row in the original DataFrame!
 
 :::
 
+If you want to access the index of the row, you can use the `name` attribute to access it. For example, if you want to access the index of the last row, you can use `sorted_tasks.iloc[-1].name`.
+
+```{python}
+print(sorted_tasks.iloc[-1].name)
+```
+
 ## Exercise 3.1 - Apply Earliest Due Date to Mission Tasks
 
 Now it is your turn: Apply the EDD algorithm to the `mission_tasks` DataFrame. Remember, that the EDD algorithm **sorts the tasks by the original deadline** and then loops over the rows, computing the completion time and maximum delay for each task (just like in the example above).
@@ -319,7 +325,7 @@ Compute the sum of the waiting times for all tasks in a variabel called `total_w
 #| code-fold: true
 # Test your answer
 assert spt_schedule.iloc[0]['task'] == 'Communication Setup', "First task should be Communication Setup"
-assert total_waiting_time == 43, "Total waiting time should be 43"
+assert total_waiting_time == 23, "Total waiting time should be 23"
 assert completion_time == 20, "Completion time should be 20"
 print("SPT Schedule created successfully!")
 print(spt_schedule)
