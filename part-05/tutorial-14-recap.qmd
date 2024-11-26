@@ -1,0 +1,21 @@
+---
+title: "Tutorial V.II - Recap with Randomness"
+subtitle: "Programming: Everyday Decision-Making Algorithms"
+
+format:
+    html:
+        theme: [litera, ../styles_html.scss]
+    pdf: 
+        documentclass: report
+    ipynb:
+        code-copy: true
+        code-overflow: wrap
+---
+
+# Introduction
+
+From now on, it is rather difficult to give you tasks that you [cannot solve within minutes by yourself with the help of AI]{.highlight}. Therefore, today's tutorial will be more open-ended than usual. All tasks are designed to be solved together with AI, but you are nonetheless the human in the loop. Thus, your responsiblities are to control the AI and to learn how to use it by doing.
+
+Practicing your coding skills in tandem with AI.
+
+Recap of last tutorials, reading and writing files and plotting!

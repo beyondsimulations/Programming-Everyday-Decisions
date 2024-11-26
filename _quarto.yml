@@ -8,6 +8,7 @@ project:
     - part-02/*.qmd
     - part-03/*.qmd
     - part-04/*.qmd
+    - part-05/*.qmd
 
 website:
   title: "Programming: Everyday Decision-Making Algorithms"
@@ -65,6 +66,16 @@ website:
             href: part-04/tutorial-11-dicts.qmd
           - text: "12 - DataFrames"
             href: part-04/tutorial-12-dataframes.qmd
+      - section: "05 Randomness"
+        contents:
+          - text: "Lecture"
+            href: part-05/lecture-randomness.qmd
+          - text: "13 - LLM"
+            href: part-05/tutorial-13-llm.qmd
+          - text: "14 - Recap"
+            href: part-05/tutorial-14-recap.qmd
+          - text: "15 - Free Tasks"
+            href: part-05/tutorial-15-free.qmd
       - text: "***"
       - text: "FAQs"
         href: general/faq.qmd
