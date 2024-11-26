@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-05/tutorial-15-free.html</loc>
+    <lastmod>2024-11-26T22:47:27.312Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-05/tutorial-presentation.html</loc>
+    <lastmod>2024-11-26T22:53:53.250Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-05/tutorial-13-llm.html</loc>
+    <lastmod>2024-11-26T22:53:53.250Z</lastmod>
+  </url>
+  <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-04/tutorial-12-dataframes.html</loc>
-    <lastmod>2024-11-20T18:04:22.644Z</lastmod>
+    <lastmod>2024-11-21T10:02:28.403Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-04/tutorial-10-recap.html</loc>
@@ -99,5 +111,17 @@
   <url>
     <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-04/tutorial-11-dicts.html</loc>
     <lastmod>2024-11-20T14:30:24.545Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-05/lecture-randomness.html</loc>
+    <lastmod>2024-11-26T22:55:10.291Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-05/lecture-presentation.html</loc>
+    <lastmod>2024-11-26T22:55:10.291Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Programming-Everyday-Decisions/part-05/tutorial-14-recap.html</loc>
+    <lastmod>2024-11-26T22:36:12.991Z</lastmod>
   </url>
 </urlset>

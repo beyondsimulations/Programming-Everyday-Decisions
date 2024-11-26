@@ -1,5 +1,294 @@
 [
   {
+    "objectID": "part-05/tutorial-15-free.html",
+    "href": "part-05/tutorial-15-free.html",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "",
+    "text": "This is the final tutorial of the course. You’ll have the opportunity to work on a project of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Don’t worry, you will see how easy it is to get going with AI!\n\n\n\n\n\n\nDevelopment Environment\n\n\n\nWe recommend developing these projects in standalone .py files rather than notebooks. Use an AI-assisted editor like Cursor to help with implementation.",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-15-free.html#stock-price-random-walk-simulator",
+    "href": "part-05/tutorial-15-free.html#stock-price-random-walk-simulator",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "1. Stock Price Random Walk Simulator",
+    "text": "1. Stock Price Random Walk Simulator\nCreate a program that simulates and visualizes stock price random walks. The program should:\n\nAccept user input for:\n\nInitial stock price\nSimulation timeframe (days)\nDaily price volatility (standard deviation)\n\nGenerate 5 different random walk scenarios\nVisualize the price trajectories on a single plot\n\nKey libraries: numpy, matplotlib",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-15-free.html#pygame-jump-run-game",
+    "href": "part-05/tutorial-15-free.html#pygame-jump-run-game",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "2. Pygame Jump & Run Game",
+    "text": "2. Pygame Jump & Run Game\nDevelop an interactive platformer game using Pygame. Suggested development approach:\n\nStart with a basic game skeleton (player, platform, basic physics)\nIncrementally add features:\n\nPlayer movement and jumping mechanics\nCollision detection\nObstacles and collectibles\nScore tracking\nVisual improvements\n\n\nKey library: pygame",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-15-free.html#interactive-stock-dashboard",
+    "href": "part-05/tutorial-15-free.html#interactive-stock-dashboard",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "3. Interactive Stock Dashboard",
+    "text": "3. Interactive Stock Dashboard\nBuild a web-based dashboard for stock market analysis using Streamlit. Required features:\n\nStock price data visualization using yfinance\nInteractive date range selection\nBasic price statistics\n\nOptional enhancements:\n\nMulti-stock comparison view\nTechnical indicators (Moving averages, RSI, etc.)\nStock selector dropdown\nPrice prediction features\n\nKey libraries: streamlit, yfinance, pandas, plotly\n\n\n\n\n\n\nAI Assistance\n\n\n\nFor each project, start by breaking down the requirements into smaller tasks. Use these as the basis for your AI prompts to generate initial code structure and implementations.\n\n\n\nCongratulations on completing the course! We hope you enjoyed the course and the tutorials and learned a lot!",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#using-ai-to-generate-code",
+    "href": "part-05/tutorial-presentation.html#using-ai-to-generate-code",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Using AI to generate code",
+    "text": "Using AI to generate code\n\nCoding by hand is not the only way to generate code\nMost likely, a lot of you have already used ChatGPT"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#section",
+    "href": "part-05/tutorial-presentation.html#section",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "",
+    "text": "How do\nLarge Language\nModels work?\n\n\nPhoto by Taylor Vick on Unsplash"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#large-language-models-llms",
+    "href": "part-05/tutorial-presentation.html#large-language-models-llms",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Large Language Models (LLMs)",
+    "text": "Large Language Models (LLMs)\n\nThink of them like advanced pattern recognition systems\nThey have “read” massive amounts of text\nBooks, websites, articles, code, and more\nText is broken into tokens, parts of words or punctuation\nBased on patterns, they can generate new text"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#training-llms",
+    "href": "part-05/tutorial-presentation.html#training-llms",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Training LLMs",
+    "text": "Training LLMs\n\nImagine learning a language by reading millions of books\nLearns patterns in how words and ideas connect via tokens\nInterconnected nodes with weights representing patterns\nDuring training, these weights are adjusted\nOnce trained, applying them takes much less ressources"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#pattern-recognition",
+    "href": "part-05/tutorial-presentation.html#pattern-recognition",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Pattern Recognition",
+    "text": "Pattern Recognition\n\nNot like a search engine!\nWhen asked, it looks for relevant patterns it learned\nLike having a huge library in its “memory” to draw from\nIt can find patterns between concepts and your question\nKnows only limited text at once (context window)"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#probability-based-responses",
+    "href": "part-05/tutorial-presentation.html#probability-based-responses",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Probability based responses",
+    "text": "Probability based responses\n\nAfter each token, it predicts “what should come next?”\nLike a advanced word prediction on your phone\nChooses the most likely next token based on training\nUses randomness to generate different responses\nBut can’t actually “think” or “understand” like humans"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#limitations",
+    "href": "part-05/tutorial-presentation.html#limitations",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Limitations",
+    "text": "Limitations\n\nNo true understanding of cause and effect\nSometimes makes mistakes or “hallucinates”\nMostly only knows what it was trained on\nCan reflect biases present in training data\nNo emotional understanding (but can simulate responses!)"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#impact-on-jobs",
+    "href": "part-05/tutorial-presentation.html#impact-on-jobs",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Impact on Jobs",
+    "text": "Impact on Jobs\n\n\nQuestion: What do you think about their impact on jobs?\nQuestion: What are the implications for us?\nQuestion: Can we use them to our advantage?"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#current-choices-for-programmers",
+    "href": "part-05/tutorial-presentation.html#current-choices-for-programmers",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "(Current) Choices for Programmers",
+    "text": "(Current) Choices for Programmers\n\nGithub Copilot: Integrated into VS Code by Microsoft\nCursor: Fork of VS Code with AI assistance built in\nAider: Chat interface for AI to write code in the terminal\n\n\n\n\n\n\n\n\nTip\n\n\nCurrently, Cursor is my favorite one. But this might change in the future, as there is a lot of competition in this space."
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#installing-cursor",
+    "href": "part-05/tutorial-presentation.html#installing-cursor",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Installing Cursor",
+    "text": "Installing Cursor\n\nGo to Cursor\nDownload and install Cursor\nYou will need to create an account\nSome free usage per month, after that you need to pay\nFor us, the free plan should be more than enough"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#using-cursor",
+    "href": "part-05/tutorial-presentation.html#using-cursor",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Using Cursor",
+    "text": "Using Cursor\n\nOpen the folder with your tutorial files\nInstead of notebooks, we will use .py files\nCreate a new .py file\nPress Ctrl + L to open the chat"
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#asking-for-help",
+    "href": "part-05/tutorial-presentation.html#asking-for-help",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Asking for help",
+    "text": "Asking for help\nTask: Paste the following prompt in to the chat:\nCan you please write me a small random number guessing game in python? It should work for one player in the terminal. The player should guess a number between 1-10 and get hints about whether his guess was too large or too small. After 3 tries, end the game if he didn’t succeed with a nice message.\n\nCopy the generated code and paste it into your file."
+  },
+  {
+    "objectID": "part-05/tutorial-presentation.html#more-on-cursor",
+    "href": "part-05/tutorial-presentation.html#more-on-cursor",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "More on Cursor",
+    "text": "More on Cursor\n\nWhile working with Cursor, it will suggest you code changes\nYou can accept or reject them\nThe rest you will learn by doing!\n\n\n\n\n\n\n\n\nNote\n\n\nAnd that’s it for the introduction to AI!\nYou now have the basic knowledge to start working with AI!."
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html",
+    "href": "part-05/tutorial-13-llm.html",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "",
+    "text": "Coding by hand is not the only way to generate code\nMost likely, a lot of you have already used ChatGPT\n\n. . .",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#using-ai-to-generate-code",
+    "href": "part-05/tutorial-13-llm.html#using-ai-to-generate-code",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "",
+    "text": "Coding by hand is not the only way to generate code\nMost likely, a lot of you have already used ChatGPT\n\n. . .",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#section",
+    "href": "part-05/tutorial-13-llm.html#section",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "",
+    "text": "How do\nLarge Language\nModels work?\n\n\nPhoto by Taylor Vick on Unsplash",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#large-language-models-llms",
+    "href": "part-05/tutorial-13-llm.html#large-language-models-llms",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Large Language Models (LLMs)",
+    "text": "Large Language Models (LLMs)\n\nThink of them like advanced pattern recognition systems\nThey have “read” massive amounts of text\nBooks, websites, articles, code, and more\nText is broken into tokens, parts of words or punctuation\nBased on patterns, they can generate new text",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#training-llms",
+    "href": "part-05/tutorial-13-llm.html#training-llms",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Training LLMs",
+    "text": "Training LLMs\n\nImagine learning a language by reading millions of books\nLearns patterns in how words and ideas connect via tokens\nInterconnected nodes with weights representing patterns\nDuring training, these weights are adjusted\nOnce trained, applying them takes much less ressources",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#pattern-recognition",
+    "href": "part-05/tutorial-13-llm.html#pattern-recognition",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Pattern Recognition",
+    "text": "Pattern Recognition\n\nNot like a search engine!\nWhen asked, it looks for relevant patterns it learned\nLike having a huge library in its “memory” to draw from\nIt can find patterns between concepts and your question\nKnows only limited text at once (context window)",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#probability-based-responses",
+    "href": "part-05/tutorial-13-llm.html#probability-based-responses",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Probability based responses",
+    "text": "Probability based responses\n\nAfter each token, it predicts “what should come next?”\nLike a advanced word prediction on your phone\nChooses the most likely next token based on training\nUses randomness to generate different responses\nBut can’t actually “think” or “understand” like humans",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#limitations",
+    "href": "part-05/tutorial-13-llm.html#limitations",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Limitations",
+    "text": "Limitations\n\nNo true understanding of cause and effect\nSometimes makes mistakes or “hallucinates”\nMostly only knows what it was trained on\nCan reflect biases present in training data\nNo emotional understanding (but can simulate responses!)",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#impact-on-jobs",
+    "href": "part-05/tutorial-13-llm.html#impact-on-jobs",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Impact on Jobs",
+    "text": "Impact on Jobs\n\n\nQuestion: What do you think about their impact on jobs?\nQuestion: What are the implications for us?\nQuestion: Can we use them to our advantage?",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#current-choices-for-programmers",
+    "href": "part-05/tutorial-13-llm.html#current-choices-for-programmers",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "(Current) Choices for Programmers",
+    "text": "(Current) Choices for Programmers\n\nGithub Copilot: Integrated into VS Code by Microsoft\nCursor: Fork of VS Code with AI assistance built in\nAider: Chat interface for AI to write code in the terminal\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nCurrently, Cursor is my favorite one. But this might change in the future, as there is a lot of competition in this space.",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#installing-cursor",
+    "href": "part-05/tutorial-13-llm.html#installing-cursor",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Installing Cursor",
+    "text": "Installing Cursor\n\nGo to Cursor\nDownload and install Cursor\nYou will need to create an account\nSome free usage per month, after that you need to pay\nFor us, the free plan should be more than enough",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#using-cursor",
+    "href": "part-05/tutorial-13-llm.html#using-cursor",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Using Cursor",
+    "text": "Using Cursor\n\nOpen the folder with your tutorial files\nInstead of notebooks, we will use .py files\nCreate a new .py file\nPress Ctrl + L to open the chat",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#asking-for-help",
+    "href": "part-05/tutorial-13-llm.html#asking-for-help",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "Asking for help",
+    "text": "Asking for help\nTask: Paste the following prompt in to the chat:\nCan you please write me a small random number guessing game in python? It should work for one player in the terminal. The player should guess a number between 1-10 and get hints about whether his guess was too large or too small. After 3 tries, end the game if he didn’t succeed with a nice message.\n. . .\nCopy the generated code and paste it into your file.",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
+    "objectID": "part-05/tutorial-13-llm.html#more-on-cursor",
+    "href": "part-05/tutorial-13-llm.html#more-on-cursor",
+    "title": "Tutorial V.I - Programming with AI",
+    "section": "More on Cursor",
+    "text": "More on Cursor\n\nWhile working with Cursor, it will suggest you code changes\nYou can accept or reject them\nThe rest you will learn by doing!\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nAnd that’s it for the introduction to AI!\nYou now have the basic knowledge to start working with AI!.",
+    "crumbs": [
+      "05 Randomness",
+      "13 - LLM"
+    ]
+  },
+  {
     "objectID": "part-04/tutorial-12-dataframes.html",
     "href": "part-04/tutorial-12-dataframes.html",
     "title": "Tutorial IV.III - DataFrames",
@@ -279,7 +568,7 @@
     "href": "part-02/tutorial-06-explore-exploit.html",
     "title": "Tutorial II.III - Explore and Exploit",
     "section": "",
-    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $20!\nYour new balance is $120\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nbet = 10 # How much we bet each time\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nprint(f\"You played the slot machine {len(results)} times\")\nprint(f\"Your final balance is ${results[-1]}\")\nprint(f\"Unfortunately, the payout rates are not realistic here...\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is:\n\nThe function random.random() generates a random number between 0 and 1.\nA rate of 2.0 means you get back exactly what you bet (on average)\nOur rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\nprint(f\"You played the slot machine {len(results)} times\")\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 6 for x in plays), \"Number of plays seems unreasonably high given budget\"\nprint(f\"You played the slot machine {plays[0]} times on machine 1\")\nprint(f\"You played the slot machine {plays[1]} times on machine 2\")\nprint(f\"You played the slot machine {plays[2]} times on machine 3\")\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\nprint(f\"The best machine is machine {best_machine}\")\nprint(f\"The worst machine is machine {worst_machine}\")\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
+    "text": "Introduction\nWelcome to the final tutorial of Part II! We’ll tie together everything we’ve learned so far - variables, lists, conditions, and loops - to tackle a classic explore-exploit problem: the one-armed bandit (slot machine). This is a perfect example of balancing exploration (trying different strategies) with exploitation (sticking to what works).\n\n\nSection 1 - Setting Up Our Casino\nFirst, let’s create a simple slot machine simulator using what we learned about variables and lists. In order to do this, we’ll need to import the random module, which we can do using the import statement. Don’t worry about the details of this statement for now - we’ll cover it in more detail in a future tutorial.\n\nimport random\n\n# Initial setup\nmoney = 100 # Starting money\nbet = 10 # How much we bet each time\npayouts = [0, 5, 10, 20, 50] # Different possible wins\n\nprint(\"Possible outcomes:\")\nfor payout in payouts:\n    print(f\"🎰 Win ${payout}\")\n\nPossible outcomes:\n🎰 Win $0\n🎰 Win $5\n🎰 Win $10\n🎰 Win $20\n🎰 Win $50\n\n\nIn this setup, we’re creating a simple slot machine where: - You start with $100 - Each play costs $10 - There are 5 possible payouts: $0 (loss), $5 (small win), $10 (break even), $20 (good win), and $50 (jackpot) - The random.choice() function simulates pulling the lever by randomly selecting one of these payouts\n\n\n\n\n\n\nNote\n\n\n\nIn real slot machines, the probabilities of different payouts aren’t equal. Higher payouts are much less likely to occur than lower ones. Our simplified version gives each payout an equal chance.\n\n\nTo simulate playing the slot machine once, we can start as follows:\n\n# Simulate playing the slot machine once\nwin = random.choice(payouts)\nmoney += win\nprint(f\"You bet ${bet}\")\nprint(f\"You won ${win}!\")\nprint(f\"Your new balance is ${money}\")\n\nYou bet $10\nYou won $50!\nYour new balance is $150\n\n\n\n\n\n\n\n\nTip\n\n\n\n+= is a shorthand for “add and assign”. So money += 10 is equivalent to money = money + 10. This also works for other arithmetic operations, like -=, *=, and /=.\n\n\n\n\nExercise 1.1 - Multiple Attempts\nNow let’s use a loop to play multiple times and track our results. Write a loop that:\n\nPlays the slot machine 10 times\nSubtracts the bet amount each time\nAdds a random payout\nStores the results in a list\n\n\nmoney = 100 # Reset our money\nbet = 10 # How much we bet each time\nresults = [] # List to store how much money we have after each play\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(results) == 10, \"You should have 10 results in your list\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nprint(f\"You played the slot machine {len(results)} times\")\nprint(f\"Your final balance is ${results[-1]}\")\nprint(f\"Unfortunately, the payout rates are not realistic here...\")\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse the append() method to add an element to a list. For example, results.append(money) will add the current value of money to the results list.\n\n\n\n\nExercise 1.2 - Playing with a Budget\nNow let’s simulate playing the slot machine multiple times with a budget. We’ll use a while loop to play until we run out of money. This is more realistic than playing a fixed number of times, as real players need to stop when they’re out of money!\nThe machine_payout_rate represents how generous the machine is:\n\nThe function random.random() generates a random number between 0 and 1.\nA rate of 2.0 means you get back exactly what you bet (on average)\nOur rate of 1.5 means you could win up to 1.5 times your bet but on average you’ll get back 0.75 times your bet\n\n# Compute the payout for the current play\nmachine_payout_rate = 1.5\npayout = random.random() * machine_payout_rate * bet\nUse a while loop to play the slot machine until you run out of money, and store the amount of money you have after each play in the results list. Further, print out the amount of money you have after each play with a formatted string.\n\nimport random\n\nmachine_payout_rate = 1.5 # Payout rate for the machine\nbet = 10 # Bet size\nmoney = 100 # Our starting money\nresults = [] # Store results of each play here\n\n# YOUR CODE BELOW \n\n\n\nCode\n# Check your results\nassert len(results) &gt; 0, \"You should have at least one result\"\nassert all(isinstance(x, (int, float)) for x in results), \"All results should be numbers\"\nassert results[-1] &lt;= bet, \"Should stop playing when money is less than bet amount\"\nassert all(abs(results[i] - results[i-1]) &lt;= bet * machine_payout_rate for i in range(1, len(results))), \"Each play should not change money by more than maximum possible payout\"\nprint(f\"You played the slot machine {len(results)} times\")\n\n\n\n\nSection 2 - Nested Loops\nNow let’s use nested loops to try different slot machines with different payout rates. This is where exploration comes in! Nested loops are a way to repeat a loop multiple times, and we can use them to try different options. It’s essentially a loop inside another loop.\n\n\n\n\n\n\nTip\n\n\n\nNested loops are like a clock: the outer loop is like the hour hand (moves slowly), and the inner loop is like the minute hand (completes a full cycle for each move of the hour hand).\n\n\nFor example, for machine in range(3) will run a loop 3 times. We can use nested loops to try all combinations of two different options.\n\nfor machine in range(3):\n    for payout in range(4):\n        print(f\"Machine Nr. {machine}, Payout Nr. {payout}\")\n\nMachine Nr. 0, Payout Nr. 0\nMachine Nr. 0, Payout Nr. 1\nMachine Nr. 0, Payout Nr. 2\nMachine Nr. 0, Payout Nr. 3\nMachine Nr. 1, Payout Nr. 0\nMachine Nr. 1, Payout Nr. 1\nMachine Nr. 1, Payout Nr. 2\nMachine Nr. 1, Payout Nr. 3\nMachine Nr. 2, Payout Nr. 0\nMachine Nr. 2, Payout Nr. 1\nMachine Nr. 2, Payout Nr. 2\nMachine Nr. 2, Payout Nr. 3\n\n\n\n\nExercise 2.1 - Simulating Multiple Machines\nThe setup is the same as in Exercise 1.2, but we’re now comparing three different machines, each with its own payout rate. Use a while loop for each machine and a for loop to try all machines. As the bank always wins, we’re not interested in the results for each machine, but rather in the number of times we can play each machine before we run out of money.\nStore the number of plays in a list called plays with three elements, one for each machine. The goal is to find out which machine lets us play the longest with our budget. This is a common exploration strategy: try each option several times to understand its characteristics.\n\nimport random\n# Different machines might have different payout rates\nmachine_1_payout_rate = 1.2\nmachine_2_payout_rate = 1.5\nmachine_3_payout_rate = 1.8\n\nbet = 10 # Bet size at each play\nbudget = 100 # Our starting money for each machine!\nplays = [0, 0, 0] # List to store number of plays for each machine\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert len(plays) == 3, \"Should have results for three machines\"\nassert all(isinstance(x, int) and x &gt;= 0 for x in plays), \"Number of plays should be non-negative integers\"\nassert all(x &lt;= budget/bet * 6 for x in plays), \"Number of plays seems unreasonably high given budget\"\nprint(f\"You played the slot machine {plays[0]} times on machine 1\")\nprint(f\"You played the slot machine {plays[1]} times on machine 2\")\nprint(f\"You played the slot machine {plays[2]} times on machine 3\")\n\n\n\n\nExercise 2.2 - Exploring the Machines\nNow let’s find out which machine is the best and which one is the worst by comparing the number of plays for each machine. Store the index of the best machine in best_machine and the index of the worst machine in worst_machine. You can use the max(plays) function to find the maximum number of plays in the plays list and the plays.index(max(plays)) function to find the index of the maximum number of plays.\n\n# YOUR CODE BELOW\n\n\n\nCode\n# Check your results\nassert isinstance(best_machine, int) and 0 &lt;= best_machine &lt;= 2, \"Best machine should be 0, 1, or 2\"\nassert isinstance(worst_machine, int) and 0 &lt;= worst_machine &lt;= 2, \"Worst machine should be 0, 1, or 2\"\nassert best_machine != worst_machine, \"Best and worst machine cannot be the same\"\nprint(f\"The best machine is machine {best_machine}\")\nprint(f\"The worst machine is machine {worst_machine}\")\n\n\n\n\nConclusion\nExcellent work! You’ve successfully combined multiple programming concepts to tackle a real explore-exploit problem:\n\nVariables and types for tracking money and bets\nLists for storing payouts and results\nLoops (including nested loops) for testing different machines\nConditions for finding the best machine\n\nThis is a simplified version of how casinos and gambling companies might analyze their games, though in reality, they use much more sophisticated algorithms! Remember though, that the casino always wins!\n\n\nSolutions\nYou will likely find solutions to most exercises online. However, we strongly encourage you to work on these exercises independently without searching explicitly for the exact answers to the exercises. Understanding someone else’s solution is very different from developing your own. Use the lecture notes and try to solve the exercises on your own. This approach will significantly enhance your learning and problem-solving skills.\nRemember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities. If you encounter difficulties, review the lecture materials, experiment with different approaches, and don’t hesitate to ask for clarification during class discussions.\nLater, you will find the solutions to these exercises online in the associated GitHub repository, but we will also quickly go over them next week. To access the solutions, click on the Github button on the lower right and search for the folder with today’s lecture and tutorial. Alternatively, you can ask ChatGPT or Claude to explain them to you. But please remember, the goal is not just to complete the exercises, but to understand the concepts and improve your programming abilities.\n\nThat’s it for part II! Next week, we’ll learn about functions and how to use them to make our code more efficient and reusable.",
     "crumbs": [
       "02 Explore/Exploit",
       "06 - Exploration"
@@ -831,7 +1120,7 @@
     "href": "general/cheatsheet.html#standard-libraries",
     "title": "Cheatsheet",
     "section": "Standard Libraries",
-    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.5913258624154778",
+    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.9776791627508974",
     "crumbs": [
       "Cheatsheet"
     ]
@@ -4797,5 +5086,749 @@
       "04 Scheduling",
       "11 - Dictionaries"
     ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html",
+    "href": "part-05/lecture-randomness.html",
+    "title": "Lecture V - Randomness",
+    "section": "",
+    "text": "Question: What comes to your mind when you think of randomness?\n. . .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion: What’s the opposite of randomness?\n. . .\n\nDeterminism\nPredictability\nConsistency\n\n. . .\n\nBoredom?\n\n\n\n\nQuestion: How would you test if a pair of dice is fair?\n. . .\n\nSend the dice to a lab to check weight and balance\n\n. . .\n\nRoll the dice many times\nCheck if the outcomes are uniformly distributed\nCompare observed frequencies to expected frequencies\n\n\n\n\n\n\n\n\n\nRandomness is a fundamental aspect of the world\nIt can be used for discovery\nRandomness is used to model uncertainty\nIt is used to explore solutions and avoid bias\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEven in computer science, randomness is not just about generating random numbers!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#randomness",
+    "href": "part-05/lecture-randomness.html#randomness",
+    "title": "Lecture V - Randomness",
+    "section": "",
+    "text": "Question: What comes to your mind when you think of randomness?\n. . .",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#why-randomness-matters",
+    "href": "part-05/lecture-randomness.html#why-randomness-matters",
+    "title": "Lecture V - Randomness",
+    "section": "",
+    "text": "Question: What’s the opposite of randomness?\n. . .\n\nDeterminism\nPredictability\nConsistency\n\n. . .\n\nBoredom?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#discovery-by-randomness",
+    "href": "part-05/lecture-randomness.html#discovery-by-randomness",
+    "title": "Lecture V - Randomness",
+    "section": "",
+    "text": "Question: How would you test if a pair of dice is fair?\n. . .\n\nSend the dice to a lab to check weight and balance\n\n. . .\n\nRoll the dice many times\nCheck if the outcomes are uniformly distributed\nCompare observed frequencies to expected frequencies",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#using-randomness",
+    "href": "part-05/lecture-randomness.html#using-randomness",
+    "title": "Lecture V - Randomness",
+    "section": "",
+    "text": "Randomness is a fundamental aspect of the world\nIt can be used for discovery\nRandomness is used to model uncertainty\nIt is used to explore solutions and avoid bias\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nEven in computer science, randomness is not just about generating random numbers!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#randomness-and-everyday-life",
+    "href": "part-05/lecture-randomness.html#randomness-and-everyday-life",
+    "title": "Lecture V - Randomness",
+    "section": "Randomness and Everyday Life",
+    "text": "Randomness and Everyday Life\nQuestion: Where do you encounter randomness in daily life?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#social-life",
+    "href": "part-05/lecture-randomness.html#social-life",
+    "title": "Lecture V - Randomness",
+    "section": "Social Life",
+    "text": "Social Life\n\n\nDating apps use randomized matching within preferences\nRandom encounters that lead to friendships\nRandom opportunities leading to career changes\nBreaking ties through coin tosses",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#entertainment-industry",
+    "href": "part-05/lecture-randomness.html#entertainment-industry",
+    "title": "Lecture V - Randomness",
+    "section": "Entertainment Industry",
+    "text": "Entertainment Industry\n\n\nPokémon’s “random” encounters are weighted by rarity\nLoot systems: Rare items have controlled drop rates\nChess AI introduces randomness to feel more human-like\nSpotify’s shuffle is deliberately less random to feel natural\nTikTok uses controlled randomization to optimize discovery",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#cryptography-1",
+    "href": "part-05/lecture-randomness.html#cryptography-1",
+    "title": "Lecture V - Randomness",
+    "section": "Cryptography",
+    "text": "Cryptography\n\n\nCoin miners solve cryptographic puzzles using guesses\nPW generators balance randomness and memorability\ncorrect-horse-battery-staple is secure\nTr0ub4dor&3 is less secure despite looking complex\nModern encryption uses random numbers",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#data-science",
+    "href": "part-05/lecture-randomness.html#data-science",
+    "title": "Lecture V - Randomness",
+    "section": "Data Science",
+    "text": "Data Science\n\n\nWeather forecasting uses randomness for uncertainty\nStock algorithms add randomness to avoid patterns\nSelf-driving cars add randomness for natural-feeling\nRandom sampling in research for unbiased results\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nRandomness is everywhere around us!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#randomness-in-computer-science",
+    "href": "part-05/lecture-randomness.html#randomness-in-computer-science",
+    "title": "Lecture V - Randomness",
+    "section": "Randomness in Computer Science",
+    "text": "Randomness in Computer Science\n\nFundamental concept in computer science\nHelps solve “hard” problems efficiently\nOften faster than deterministic approaches\nTrade-off: Optimal vs. “Good Enough” solutions\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nSometimes a quick “good enough” solution is better than waiting for the perfect one.",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#types-of-randomness",
+    "href": "part-05/lecture-randomness.html#types-of-randomness",
+    "title": "Lecture V - Randomness",
+    "section": "Types of Randomness",
+    "text": "Types of Randomness\nQuestion: Difference between true and pseudo-randomness?\n. . .\n\n\nTrue Randomness\n\nPhysical phenomena\nAtmospheric noise\nRadioactive decay\nQuantum effects\n\n\nPseudo-randomness\n\nDeterministic algorithms\nSeed-based generation\nRepeatable sequences\nGood enough for most uses",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#limits-of-computation",
+    "href": "part-05/lecture-randomness.html#limits-of-computation",
+    "title": "Lecture V - Randomness",
+    "section": "Limits of Computation",
+    "text": "Limits of Computation\nQuestion: How many possible combinations exist in a shuffled deck of cards?\n\nimport math\nprint(math.factorial(52))\n\n80658175170943878571660636856403766975289505440883277824000000000000\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nComputing and evaluating all possible combinations is not feasible!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#addressing-computational-limits",
+    "href": "part-05/lecture-randomness.html#addressing-computational-limits",
+    "title": "Lecture V - Randomness",
+    "section": "Addressing Computational Limits",
+    "text": "Addressing Computational Limits\nQuestion: Anybody ever heard of “Monte Carlo methods”?\n. . .\n\nDeveloped in the 1940s for nuclear weapons research\nNuclear fission chain reactions were too complex\nHelped to evaluate the probabilities of different outcomes\nNamed after Monaco’s famous casino\n\n. . .\nQuestion: How could we estimate π?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#estimating-π",
+    "href": "part-05/lecture-randomness.html#estimating-π",
+    "title": "Lecture V - Randomness",
+    "section": "Estimating π",
+    "text": "Estimating π",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#travel-itinerary",
+    "href": "part-05/lecture-randomness.html#travel-itinerary",
+    "title": "Lecture V - Randomness",
+    "section": "Travel Itinerary",
+    "text": "Travel Itinerary\nQuestion: How and in which order would you visit 10 cities by plane with minimal total distance?\n\nimport math\nprint(math.factorial(10))\n\n3628800\n\n\n. . .\nQuestion: What could be a strategy?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#brute-force",
+    "href": "part-05/lecture-randomness.html#brute-force",
+    "title": "Lecture V - Randomness",
+    "section": "Brute Force",
+    "text": "Brute Force\n\nTry every possibility\nTotal possible routes: 10! = 3,628,800\nGuaranteed to find best solution\nIf each check takes 1ms: 1 hour to check all routes\n\n. . .\nQuestion: What could be the problem with this approach?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#time-and-space-requirements",
+    "href": "part-05/lecture-randomness.html#time-and-space-requirements",
+    "title": "Lecture V - Randomness",
+    "section": "Time and Space Requirements",
+    "text": "Time and Space Requirements\n\n\nFor 20 cities: 20! = 2.4 quintillion routes\nWould take 77 billion years at 1ms per check!\nTime complexity grows factorially\nMemory requirements increase with problem size\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nNot feasible for real-world problems!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#greedy-algorithm",
+    "href": "part-05/lecture-randomness.html#greedy-algorithm",
+    "title": "Lecture V - Randomness",
+    "section": "Greedy Algorithm",
+    "text": "Greedy Algorithm\n\nExample: Always picking shortest next flight\nMake locally optimal choices at each step\nNever backtracks or reconsiders past decisions\nFast execution & simple to implement\nCan perform poorly on complex problems",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#hill-climbing",
+    "href": "part-05/lecture-randomness.html#hill-climbing",
+    "title": "Lecture V - Randomness",
+    "section": "Hill Climbing",
+    "text": "Hill Climbing\n\nIteratively improve solution by making small changes\nLike climbing in fog, can only see immediate surroundings\nDon’t know if higher peaks exist elsewhere\nCan get stuck in local optima\nNo guarantee of finding global best optima\n\n. . .\nQuestion: How would you escape a local optimum?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#simulated-annealing",
+    "href": "part-05/lecture-randomness.html#simulated-annealing",
+    "title": "Lecture V - Randomness",
+    "section": "Simulated Annealing",
+    "text": "Simulated Annealing\n\nMake random changes and accept improvements\nSometimes accept worse solutions\nGradually become more selective\n\n. . .\nQuestion: Why accept worse solutions sometimes?\n. . .\n\nRandomness helps to escape local optima\nBalances exploration vs. exploitation",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#simulated-annealing-animation",
+    "href": "part-05/lecture-randomness.html#simulated-annealing-animation",
+    "title": "Lecture V - Randomness",
+    "section": "Simulated Annealing Animation",
+    "text": "Simulated Annealing Animation",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#traveling-salesman",
+    "href": "part-05/lecture-randomness.html#traveling-salesman",
+    "title": "Lecture V - Randomness",
+    "section": "Traveling Salesman",
+    "text": "Traveling Salesman",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#thought-experiment",
+    "href": "part-05/lecture-randomness.html#thought-experiment",
+    "title": "Lecture V - Randomness",
+    "section": "Thought Experiment",
+    "text": "Thought Experiment\nWhat’s more important for a society?\n. . .\n\n\nFreedom\n\nIndividual choice\nPersonal responsibility\nMarket-driven\n\n\nEquality\n\nShared resources\nSocial safety nets\nRegulated systems\n\n\n\n. . .\nQuestion: Any problem with this question?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#veil-of-ignorance",
+    "href": "part-05/lecture-randomness.html#veil-of-ignorance",
+    "title": "Lecture V - Randomness",
+    "section": "Veil of Ignorance",
+    "text": "Veil of Ignorance\nYou might randomly be:\n\nAny gender identity and economic status\nAny health condition and intelligence level\nAny cultural background and religious belief\n\n. . .\nQuestion: If you didn’t know who you’d be born as, what kind of society would you design?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#key-considerations",
+    "href": "part-05/lecture-randomness.html#key-considerations",
+    "title": "Lecture V - Randomness",
+    "section": "Key Considerations",
+    "text": "Key Considerations\n\nIndividual stories: Powerful but potentially misleading\nStatistics: Comprehensive but can miss nuance\nHidden diversity: Important subgroups may be overlooked\nSmall policy changes can have cascading effects\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nBut that’s not all! We also need to measure success and failure!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#measuring-success",
+    "href": "part-05/lecture-randomness.html#measuring-success",
+    "title": "Lecture V - Randomness",
+    "section": "Measuring Success",
+    "text": "Measuring Success\n\nMean happiness: Average well-being\nTotal happiness: Utilitarian approach\nMedian happiness: Focus on the middle class\nMinimum happiness: Protecting the most vulnerable\n\n. . .\nQuestion: What could be the problem with these measures?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#idea-random-sampling",
+    "href": "part-05/lecture-randomness.html#idea-random-sampling",
+    "title": "Lecture V - Randomness",
+    "section": "Idea: Random Sampling",
+    "text": "Idea: Random Sampling\n\nRandomly select a subset of the population\nGather diverse perspectives from the sample\nBetter understand needs of population\nReduce selection bias and improve accuracy\n\n. . .\nQuestion: What is a selection bias?",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#selection-bias",
+    "href": "part-05/lecture-randomness.html#selection-bias",
+    "title": "Lecture V - Randomness",
+    "section": "Selection Bias",
+    "text": "Selection Bias\nDefinition: Selection bias occurs when the sample data you’re analyzing isn’t truly representative of the population you’re trying to study.\n. . .\n\n\n\n\n\n\nFamous Example\n\n\n\nDuring WWII, engineers studied returning planes to determine where to add armor. Initially, they focused on areas with most bullet holes. Abraham Wald pointed out they should instead armor the areas with no bullet holes - those were the critical areas where planes didn’t survive to return!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#promoting-fairness",
+    "href": "part-05/lecture-randomness.html#promoting-fairness",
+    "title": "Lecture V - Randomness",
+    "section": "Promoting Fairness",
+    "text": "Promoting Fairness\nQuestion: How can randomness promote fairness?\n. . .\n\nRandom allocation of patients in clinical trials\nRandom audits for tax compliance\nRandom assignment of cases to judges\nRandom order of candidates on voting ballots",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#quick-poll",
+    "href": "part-05/lecture-randomness.html#quick-poll",
+    "title": "Lecture V - Randomness",
+    "section": "Quick Poll",
+    "text": "Quick Poll\nQuestion: Which would you prefer?\n\n100% chance of winning 50 EUR\n50% chance of winning 120 EUR\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nAnswer depends on your risk aversion!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#decisions-under-uncertainty",
+    "href": "part-05/lecture-randomness.html#decisions-under-uncertainty",
+    "title": "Lecture V - Randomness",
+    "section": "Decisions Under Uncertainty",
+    "text": "Decisions Under Uncertainty\nQuestion: When should we embrace vs. reduce randomness?\n. . .\n\n\nEmbrace When:\n\nExploring new solutions\nAvoiding bias\nBreaking deadlocks\nTesting systems\n\n\nReduce When:\n\nSafety-critical systems\nFinancial transactions\nMedical procedures\nLegal proceedings",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#good-enough-solutions",
+    "href": "part-05/lecture-randomness.html#good-enough-solutions",
+    "title": "Lecture V - Randomness",
+    "section": "“Good Enough” Solutions",
+    "text": "“Good Enough” Solutions\n\nPerfect is enemy of good\n\nRemember Monte Carlo methods: approximations work\nComplete analysis often impossible\nPerfect information is rare\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nMany real-world problems benefit from embracing uncertainty rather than fighting it!",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#opportunity-costs",
+    "href": "part-05/lecture-randomness.html#opportunity-costs",
+    "title": "Lecture V - Randomness",
+    "section": "Opportunity Costs",
+    "text": "Opportunity Costs\n\nConsider opportunity costs\n\nQuick approximations enable faster decisions\nBalance accuracy vs. computation time\nRandom sampling vs. complete enumeration\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nMany problems benefit from fast, good-enough solutions rather than perfect ones.",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#the-end",
+    "href": "part-05/lecture-randomness.html#the-end",
+    "title": "Lecture V - Randomness",
+    "section": "The End",
+    "text": "The End\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for today’s lecture!\nWe’ve covered the basics of randomness and its applications. In the upcoming tutorials, we’ll learn how to use LLMs to generate code with randomness.",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#interesting-literature-to-start",
+    "href": "part-05/lecture-randomness.html#interesting-literature-to-start",
+    "title": "Lecture V - Randomness",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#books-on-programming",
+    "href": "part-05/lecture-randomness.html#books-on-programming",
+    "title": "Lecture V - Randomness",
+    "section": "Books on Programming",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#more-literature",
+    "href": "part-05/lecture-randomness.html#more-literature",
+    "title": "Lecture V - Randomness",
+    "section": "More Literature",
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course.",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-randomness.html#footnotes",
+    "href": "part-05/lecture-randomness.html#footnotes",
+    "title": "Lecture V - Randomness",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
+    "crumbs": [
+      "05 Randomness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#randomness",
+    "href": "part-05/lecture-presentation.html#randomness",
+    "title": "Lecture V - Randomness",
+    "section": "Randomness",
+    "text": "Randomness\nQuestion: What comes to your mind when you think of randomness?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#casino",
+    "href": "part-05/lecture-presentation.html#casino",
+    "title": "Lecture V - Randomness",
+    "section": "Casino",
+    "text": "Casino"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#lottery",
+    "href": "part-05/lecture-presentation.html#lottery",
+    "title": "Lecture V - Randomness",
+    "section": "Lottery",
+    "text": "Lottery"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#shuffling-cards",
+    "href": "part-05/lecture-presentation.html#shuffling-cards",
+    "title": "Lecture V - Randomness",
+    "section": "Shuffling cards",
+    "text": "Shuffling cards"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#algorithms",
+    "href": "part-05/lecture-presentation.html#algorithms",
+    "title": "Lecture V - Randomness",
+    "section": "Algorithms",
+    "text": "Algorithms"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#cryptography",
+    "href": "part-05/lecture-presentation.html#cryptography",
+    "title": "Lecture V - Randomness",
+    "section": "Cryptography",
+    "text": "Cryptography"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#genetic-mutations",
+    "href": "part-05/lecture-presentation.html#genetic-mutations",
+    "title": "Lecture V - Randomness",
+    "section": "Genetic mutations",
+    "text": "Genetic mutations"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#why-randomness-matters",
+    "href": "part-05/lecture-presentation.html#why-randomness-matters",
+    "title": "Lecture V - Randomness",
+    "section": "Why Randomness Matters",
+    "text": "Why Randomness Matters\nQuestion: What’s the opposite of randomness?\n\n\nDeterminism\nPredictability\nConsistency\n\n\n\n\nBoredom?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#discovery-by-randomness",
+    "href": "part-05/lecture-presentation.html#discovery-by-randomness",
+    "title": "Lecture V - Randomness",
+    "section": "Discovery by Randomness",
+    "text": "Discovery by Randomness\nQuestion: How would you test if a pair of dice is fair?\n\n\nSend the dice to a lab to check weight and balance\n\n\n\n\nRoll the dice many times\nCheck if the outcomes are uniformly distributed\nCompare observed frequencies to expected frequencies"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#dice-rolls",
+    "href": "part-05/lecture-presentation.html#dice-rolls",
+    "title": "Lecture V - Randomness",
+    "section": "Dice Rolls",
+    "text": "Dice Rolls"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#using-randomness",
+    "href": "part-05/lecture-presentation.html#using-randomness",
+    "title": "Lecture V - Randomness",
+    "section": "Using Randomness",
+    "text": "Using Randomness\n\nRandomness is a fundamental aspect of the world\nIt can be used for discovery\nRandomness is used to model uncertainty\nIt is used to explore solutions and avoid bias\n\n\n\n\n\n\n\n\nImportant\n\n\nEven in computer science, randomness is not just about generating random numbers!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#randomness-and-everyday-life",
+    "href": "part-05/lecture-presentation.html#randomness-and-everyday-life",
+    "title": "Lecture V - Randomness",
+    "section": "Randomness and Everyday Life",
+    "text": "Randomness and Everyday Life\nQuestion: Where do you encounter randomness in daily life?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#social-life",
+    "href": "part-05/lecture-presentation.html#social-life",
+    "title": "Lecture V - Randomness",
+    "section": "Social Life",
+    "text": "Social Life\n\n\nDating apps use randomized matching within preferences\nRandom encounters that lead to friendships\nRandom opportunities leading to career changes\nBreaking ties through coin tosses"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#entertainment-industry",
+    "href": "part-05/lecture-presentation.html#entertainment-industry",
+    "title": "Lecture V - Randomness",
+    "section": "Entertainment Industry",
+    "text": "Entertainment Industry\n\n\nPokémon’s “random” encounters are weighted by rarity\nLoot systems: Rare items have controlled drop rates\nChess AI introduces randomness to feel more human-like\nSpotify’s shuffle is deliberately less random to feel natural\nTikTok uses controlled randomization to optimize discovery"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#cryptography-1",
+    "href": "part-05/lecture-presentation.html#cryptography-1",
+    "title": "Lecture V - Randomness",
+    "section": "Cryptography",
+    "text": "Cryptography\n\n\nCoin miners solve cryptographic puzzles using guesses\nPW generators balance randomness and memorability\ncorrect-horse-battery-staple is secure\nTr0ub4dor&3 is less secure despite looking complex\nModern encryption uses random numbers"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#data-science",
+    "href": "part-05/lecture-presentation.html#data-science",
+    "title": "Lecture V - Randomness",
+    "section": "Data Science",
+    "text": "Data Science\n\n\nWeather forecasting uses randomness for uncertainty\nStock algorithms add randomness to avoid patterns\nSelf-driving cars add randomness for natural-feeling\nRandom sampling in research for unbiased results\n\n\n\n\n\n\n\n\n\nNote\n\n\nRandomness is everywhere around us!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#randomness-in-computer-science",
+    "href": "part-05/lecture-presentation.html#randomness-in-computer-science",
+    "title": "Lecture V - Randomness",
+    "section": "Randomness in Computer Science",
+    "text": "Randomness in Computer Science\n\nFundamental concept in computer science\nHelps solve “hard” problems efficiently\nOften faster than deterministic approaches\nTrade-off: Optimal vs. “Good Enough” solutions\n\n\n\n\n\n\n\n\nImportant\n\n\nSometimes a quick “good enough” solution is better than waiting for the perfect one."
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#types-of-randomness",
+    "href": "part-05/lecture-presentation.html#types-of-randomness",
+    "title": "Lecture V - Randomness",
+    "section": "Types of Randomness",
+    "text": "Types of Randomness\nQuestion: Difference between true and pseudo-randomness?\n\n\n\nTrue Randomness\n\nPhysical phenomena\nAtmospheric noise\nRadioactive decay\nQuantum effects\n\n\nPseudo-randomness\n\nDeterministic algorithms\nSeed-based generation\nRepeatable sequences\nGood enough for most uses"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#limits-of-computation",
+    "href": "part-05/lecture-presentation.html#limits-of-computation",
+    "title": "Lecture V - Randomness",
+    "section": "Limits of Computation",
+    "text": "Limits of Computation\nQuestion: How many possible combinations exist in a shuffled deck of cards?\n\nimport math\nprint(math.factorial(52))\n\n\n\n80658175170943878571660636856403766975289505440883277824000000000000\n\n\n\n\n\n\n\n\n\nImportant\n\n\nComputing and evaluating all possible combinations is not feasible!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#addressing-computational-limits",
+    "href": "part-05/lecture-presentation.html#addressing-computational-limits",
+    "title": "Lecture V - Randomness",
+    "section": "Addressing Computational Limits",
+    "text": "Addressing Computational Limits\nQuestion: Anybody ever heard of “Monte Carlo methods”?\n\n\nDeveloped in the 1940s for nuclear weapons research\nNuclear fission chain reactions were too complex\nHelped to evaluate the probabilities of different outcomes\nNamed after Monaco’s famous casino\n\n\n\nQuestion: How could we estimate π?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#estimating-π",
+    "href": "part-05/lecture-presentation.html#estimating-π",
+    "title": "Lecture V - Randomness",
+    "section": "Estimating π",
+    "text": "Estimating π"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#travel-itinerary",
+    "href": "part-05/lecture-presentation.html#travel-itinerary",
+    "title": "Lecture V - Randomness",
+    "section": "Travel Itinerary",
+    "text": "Travel Itinerary\nQuestion: How and in which order would you visit 10 cities by plane with minimal total distance?\n\nimport math\nprint(math.factorial(10))\n\n\n\n3628800\n\n\n\nQuestion: What could be a strategy?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#brute-force",
+    "href": "part-05/lecture-presentation.html#brute-force",
+    "title": "Lecture V - Randomness",
+    "section": "Brute Force",
+    "text": "Brute Force\n\nTry every possibility\nTotal possible routes: 10! = 3,628,800\nGuaranteed to find best solution\nIf each check takes 1ms: 1 hour to check all routes\n\n\nQuestion: What could be the problem with this approach?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#time-and-space-requirements",
+    "href": "part-05/lecture-presentation.html#time-and-space-requirements",
+    "title": "Lecture V - Randomness",
+    "section": "Time and Space Requirements",
+    "text": "Time and Space Requirements\n\n\nFor 20 cities: 20! = 2.4 quintillion routes\nWould take 77 billion years at 1ms per check!\nTime complexity grows factorially\nMemory requirements increase with problem size\n\n\n\n\n\n\n\n\n\nImportant\n\n\nNot feasible for real-world problems!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#greedy-algorithm",
+    "href": "part-05/lecture-presentation.html#greedy-algorithm",
+    "title": "Lecture V - Randomness",
+    "section": "Greedy Algorithm",
+    "text": "Greedy Algorithm\n\nExample: Always picking shortest next flight\nMake locally optimal choices at each step\nNever backtracks or reconsiders past decisions\nFast execution & simple to implement\nCan perform poorly on complex problems"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#hill-climbing",
+    "href": "part-05/lecture-presentation.html#hill-climbing",
+    "title": "Lecture V - Randomness",
+    "section": "Hill Climbing",
+    "text": "Hill Climbing\n\nIteratively improve solution by making small changes\nLike climbing in fog, can only see immediate surroundings\nDon’t know if higher peaks exist elsewhere\nCan get stuck in local optima\nNo guarantee of finding global best optima\n\n\nQuestion: How would you escape a local optimum?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#simulated-annealing",
+    "href": "part-05/lecture-presentation.html#simulated-annealing",
+    "title": "Lecture V - Randomness",
+    "section": "Simulated Annealing",
+    "text": "Simulated Annealing\n\nMake random changes and accept improvements\nSometimes accept worse solutions\nGradually become more selective\n\n\nQuestion: Why accept worse solutions sometimes?\n\n\n\nRandomness helps to escape local optima\nBalances exploration vs. exploitation"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#simulated-annealing-animation",
+    "href": "part-05/lecture-presentation.html#simulated-annealing-animation",
+    "title": "Lecture V - Randomness",
+    "section": "Simulated Annealing Animation",
+    "text": "Simulated Annealing Animation"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#traveling-salesman",
+    "href": "part-05/lecture-presentation.html#traveling-salesman",
+    "title": "Lecture V - Randomness",
+    "section": "Traveling Salesman",
+    "text": "Traveling Salesman"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#thought-experiment",
+    "href": "part-05/lecture-presentation.html#thought-experiment",
+    "title": "Lecture V - Randomness",
+    "section": "Thought Experiment",
+    "text": "Thought Experiment\nWhat’s more important for a society?\n\n\n\nFreedom\n\nIndividual choice\nPersonal responsibility\nMarket-driven\n\n\nEquality\n\nShared resources\nSocial safety nets\nRegulated systems\n\n\n\n\nQuestion: Any problem with this question?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#veil-of-ignorance",
+    "href": "part-05/lecture-presentation.html#veil-of-ignorance",
+    "title": "Lecture V - Randomness",
+    "section": "Veil of Ignorance",
+    "text": "Veil of Ignorance\nYou might randomly be:\n\nAny gender identity and economic status\nAny health condition and intelligence level\nAny cultural background and religious belief\n\n\nQuestion: If you didn’t know who you’d be born as, what kind of society would you design?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#key-considerations",
+    "href": "part-05/lecture-presentation.html#key-considerations",
+    "title": "Lecture V - Randomness",
+    "section": "Key Considerations",
+    "text": "Key Considerations\n\nIndividual stories: Powerful but potentially misleading\nStatistics: Comprehensive but can miss nuance\nHidden diversity: Important subgroups may be overlooked\nSmall policy changes can have cascading effects\n\n\n\n\n\n\n\n\nImportant\n\n\nBut that’s not all! We also need to measure success and failure!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#measuring-success",
+    "href": "part-05/lecture-presentation.html#measuring-success",
+    "title": "Lecture V - Randomness",
+    "section": "Measuring Success",
+    "text": "Measuring Success\n\nMean happiness: Average well-being\nTotal happiness: Utilitarian approach\nMedian happiness: Focus on the middle class\nMinimum happiness: Protecting the most vulnerable\n\n\nQuestion: What could be the problem with these measures?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#idea-random-sampling",
+    "href": "part-05/lecture-presentation.html#idea-random-sampling",
+    "title": "Lecture V - Randomness",
+    "section": "Idea: Random Sampling",
+    "text": "Idea: Random Sampling\n\nRandomly select a subset of the population\nGather diverse perspectives from the sample\nBetter understand needs of population\nReduce selection bias and improve accuracy\n\n\nQuestion: What is a selection bias?"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#selection-bias",
+    "href": "part-05/lecture-presentation.html#selection-bias",
+    "title": "Lecture V - Randomness",
+    "section": "Selection Bias",
+    "text": "Selection Bias\nDefinition: Selection bias occurs when the sample data you’re analyzing isn’t truly representative of the population you’re trying to study.\n\n\n\n\n\n\n\nFamous Example\n\n\nDuring WWII, engineers studied returning planes to determine where to add armor. Initially, they focused on areas with most bullet holes. Abraham Wald pointed out they should instead armor the areas with no bullet holes - those were the critical areas where planes didn’t survive to return!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#promoting-fairness",
+    "href": "part-05/lecture-presentation.html#promoting-fairness",
+    "title": "Lecture V - Randomness",
+    "section": "Promoting Fairness",
+    "text": "Promoting Fairness\nQuestion: How can randomness promote fairness?\n\n\nRandom allocation of patients in clinical trials\nRandom audits for tax compliance\nRandom assignment of cases to judges\nRandom order of candidates on voting ballots"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#quick-poll",
+    "href": "part-05/lecture-presentation.html#quick-poll",
+    "title": "Lecture V - Randomness",
+    "section": "Quick Poll",
+    "text": "Quick Poll\nQuestion: Which would you prefer?\n\n100% chance of winning 50 EUR\n50% chance of winning 120 EUR\n\n\n\n\n\n\n\n\nTip\n\n\nAnswer depends on your risk aversion!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#decisions-under-uncertainty",
+    "href": "part-05/lecture-presentation.html#decisions-under-uncertainty",
+    "title": "Lecture V - Randomness",
+    "section": "Decisions Under Uncertainty",
+    "text": "Decisions Under Uncertainty\nQuestion: When should we embrace vs. reduce randomness?\n\n\n\nEmbrace When:\n\nExploring new solutions\nAvoiding bias\nBreaking deadlocks\nTesting systems\n\n\nReduce When:\n\nSafety-critical systems\nFinancial transactions\nMedical procedures\nLegal proceedings"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#good-enough-solutions",
+    "href": "part-05/lecture-presentation.html#good-enough-solutions",
+    "title": "Lecture V - Randomness",
+    "section": "“Good Enough” Solutions",
+    "text": "“Good Enough” Solutions\n\nPerfect is enemy of good\n\nRemember Monte Carlo methods: approximations work\nComplete analysis often impossible\nPerfect information is rare\n\n\n\n\n\n\n\n\n\nTip\n\n\nMany real-world problems benefit from embracing uncertainty rather than fighting it!"
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#opportunity-costs",
+    "href": "part-05/lecture-presentation.html#opportunity-costs",
+    "title": "Lecture V - Randomness",
+    "section": "Opportunity Costs",
+    "text": "Opportunity Costs\n\nConsider opportunity costs\n\nQuick approximations enable faster decisions\nBalance accuracy vs. computation time\nRandom sampling vs. complete enumeration\n\n\n\n\n\n\n\n\n\nTip\n\n\nMany problems benefit from fast, good-enough solutions rather than perfect ones."
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#the-end",
+    "href": "part-05/lecture-presentation.html#the-end",
+    "title": "Lecture V - Randomness",
+    "section": "The End",
+    "text": "The End\n\n\n\n\n\n\nNote\n\n\nThat’s it for today’s lecture!\nWe’ve covered the basics of randomness and its applications. In the upcoming tutorials, we’ll learn how to use LLMs to generate code with randomness."
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#interesting-literature-to-start",
+    "href": "part-05/lecture-presentation.html#interesting-literature-to-start",
+    "title": "Lecture V - Randomness",
+    "section": "Interesting literature to start",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course."
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#books-on-programming",
+    "href": "part-05/lecture-presentation.html#books-on-programming",
+    "title": "Lecture V - Randomness",
+    "section": "Books on Programming",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+  },
+  {
+    "objectID": "part-05/lecture-presentation.html#more-literature",
+    "href": "part-05/lecture-presentation.html#more-literature",
+    "title": "Lecture V - Randomness",
+    "section": "More Literature",
+    "text": "More Literature\nFor more interesting literature, take a look at the literature list of this course."
+  },
+  {
+    "objectID": "part-05/tutorial-14-recap.html",
+    "href": "part-05/tutorial-14-recap.html",
+    "title": "Tutorial V.II - Recap with Randomness",
+    "section": "",
+    "text": "Introduction\nFrom now on, it is rather difficult to give you tasks that you cannot solve within minutes by yourself with the help of AI. Therefore, today’s tutorial will be more open-ended than usual. All tasks are designed to be solved together with AI, but you are nonetheless the human in the loop. Thus, your responsiblities are to control the AI and to learn how to use it by doing.\nPracticing your coding skills in tandem with AI.\nRecap of last tutorials, reading and writing files and plotting!"
   }
 ]
