@@ -17,7 +17,7 @@ format:
         code-copy: true
         code-link: true
         preview-links: auto
-        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-scheduling.qmd)"
+        footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture-randomness.qmd)"
         output-file: lecture-presentation.html
         mermaid:
             theme: neutral
