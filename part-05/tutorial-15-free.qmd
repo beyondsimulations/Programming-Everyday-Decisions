@@ -19,14 +19,14 @@ format:
 
 # Introduction
 
-This is the final tutorial of the course. You'll have the opportunity to work on a project of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Don't worry, you will see how easy it is to get going with AI!
+This is the final tutorial of the course. You'll have the opportunity to work on a task of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Don't worry, you will see how easy it is to get going with AI!
 
 ::: {.callout-tip}
 ## Development Environment
 We recommend developing these projects in standalone `.py` files rather than notebooks. Use an AI-assisted editor like Cursor to help with implementation.
 :::
 
-# Project Options
+# Task Options
 
 ## 1. Stock Price Random Walk Simulator
 
@@ -79,7 +79,4 @@ For each project, start by breaking down the requirements into smaller tasks. Us
 
 ---
 
-*Congratulations on completing the course! We hope you enjoyed the course and the tutorials and learned a lot!*
-
-
-
+*Congratulations on completing the tutorials! We hope you enjoyed the course and the tutorials and learned a lot!*

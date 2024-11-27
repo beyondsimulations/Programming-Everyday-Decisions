@@ -72,6 +72,8 @@ website:
             href: part-05/lecture-randomness.qmd
           - text: "13 - LLM"
             href: part-05/tutorial-13-llm.qmd
+          - text: "14 - Recap"
+            href: part-05/tutorial-14-recap.qmd
           - text: "15 - Free Tasks"
             href: part-05/tutorial-15-free.qmd
       - text: "***"
