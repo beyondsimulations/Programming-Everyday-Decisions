@@ -76,6 +76,10 @@ website:
             href: part-05/tutorial-14-recap.qmd
           - text: "15 - Free Tasks"
             href: part-05/tutorial-15-free.qmd
+      - section: "06 Kindness"
+        contents:
+          - text: "Lecture"
+            href: part-06/lecture-kindness.qmd
       - text: "***"
       - text: "FAQs"
         href: general/faq.qmd
