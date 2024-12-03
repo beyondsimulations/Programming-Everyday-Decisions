@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.30">
 
   <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
-  <title>Programming: Everyday Decision-Making Algorithms – Lecture V - Randomness</title>
+  <title>Programming: Everyday Decision-Making Algorithms – Lecture VI - Computational Kindness</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ef8b507047d30e4aea8aba9c0d035e88.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -390,8 +325,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#8C3048" class="quarto-title-block center">
-  <h1 class="title">Lecture V - Randomness</h1>
-  <p class="subtitle">Programming: Everyday Decision-Making Algorithms</p>
+  <h1 class="title">Lecture VI - Computational Kindness</h1>
+  <p class="subtitle">Programming with Python</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -399,100 +334,43 @@
 Dr.&nbsp;Tobias Vlćek 
 </div>
         <p class="quarto-title-affiliation">
-            Kühne Logistics University Hamburg - Winter 2024
+            Kühne Logistics University Hamburg - Fall 2024
           </p>
     </div>
 </div>
 
 </section>
 <section>
-<section id="understanding-randomness" class="title-slide slide level1 title center">
-<h1><span class="flow">Understanding Randomness</span></h1>
+<section id="computational-kindness" class="title-slide slide level1 title center">
+<h1><span class="flow">Computational Kindness</span></h1>
 
 </section>
-<section id="randomness" class="slide level2">
-<h2>Randomness</h2>
-<p><span class="question">Question:</span> <strong>What comes to your mind when you think of randomness?</strong></p>
-</section>
-<section id="casino" class="slide level2" data-background-image="https://images.unsplash.com/photo-1517232115160-ff93364542dd?q=80&amp;w=3473&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-<h2><span class="invert-font">Casino</span></h2>
-<div class="footer">
-
-</div>
-</section>
-<section id="lottery" class="slide level2" data-background-image="https://images.unsplash.com/photo-1593453917923-c3f751aab514?q=80&amp;w=3536&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-<h2><span class="invert-font">Lottery</span></h2>
-<div class="footer">
-
-</div>
-</section>
-<section id="shuffling-cards" class="slide level2" data-background-image="https://images.unsplash.com/photo-1691213426024-ab6eb6f33d64?q=80&amp;w=3540&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-<h2><span class="invert-font">Shuffling cards</span></h2>
-<div class="footer">
-
-</div>
-</section>
-<section id="algorithms" class="slide level2" data-background-image="https://images.unsplash.com/photo-1717501220725-83f151c447e7?q=80&amp;w=3560&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-<h2><span class="invert-font">Algorithms</span></h2>
-<div class="footer">
-
-</div>
-</section>
-<section id="cryptography" class="slide level2" data-background-image="https://images.unsplash.com/photo-1640161704729-cbe966a08476?q=80&amp;w=3544&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-<h2><span class="invert-font">Cryptography</span></h2>
-<div class="footer">
-
-</div>
-</section>
-<section id="genetic-mutations" class="slide level2" data-background-image="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&amp;w=3552&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-<h2><span class="invert-font">Genetic mutations</span></h2>
-<div class="footer">
-
-</div>
-</section>
-<section id="why-randomness-matters" class="slide level2">
-<h2>Why Randomness Matters</h2>
-<p><span class="question">Question:</span> <strong>What’s the opposite of randomness?</strong></p>
+<section id="computational-kindness-1" class="slide level2" data-background-color="#000000" data-background-image="https://images.unsplash.com/photo-1549925245-f20a1bac6454?q=80&amp;w=2304&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover" data-background-position="center">
+<h2><span class="invert-font">Computational Kindness</span></h2>
 <div class="fragment">
-<ul>
-<li><strong>Determinism</strong></li>
-<li><strong>Predictability</strong></li>
-<li><strong>Consistency</strong></li>
-</ul>
+<p><span class="invert-font"><span class="question">Question:</span> <strong>An idea what that is?</strong></span></p>
 </div>
 <div class="fragment">
+<div class="invert-font">
 <ul>
-<li><span class="highlight">Boredom?</span></li>
+<li>Idea of introducing <span class="highlight">empathy in algorithms</span></li>
+<li><strong>Consider human cognitive load and limitations</strong></li>
+<li>Making choices that <strong>reduce mental burden</strong> for others</li>
+<li>Creating systems that are <strong>easy to understand and interact</strong></li>
 </ul>
 </div>
-</section>
-<section id="discovery-by-randomness" class="slide level2">
-<h2>Discovery by Randomness</h2>
-<p><span class="question">Question:</span> <strong>How would you test if a pair of dice is fair?</strong></p>
-<div class="fragment">
-<ul>
-<li>Send the dice <strong>to a lab</strong> to <span class="highlight">check weight and balance</span></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Roll the dice <strong>many times</strong></li>
-<li>Check if the outcomes are <strong>uniformly distributed</strong></li>
-<li>Compare <strong>observed</strong> frequencies to <strong>expected</strong> frequencies</li>
-</ul>
-</div>
-</section>
-<section id="dice-rolls" class="slide level2">
-<h2>Dice Rolls</h2>
+<div class="footer">
 
-<img data-src="animations/dice_fairness.gif" class="r-stretch"></section>
-<section id="using-randomness" class="slide level2">
-<h2>Using Randomness</h2>
+</div>
+</div>
+</section>
+<section id="scheduling-meetings" class="slide level2">
+<h2>Scheduling Meetings</h2>
 <ul>
-<li>Randomness is a <span class="highlight">fundamental aspect of the world</span></li>
-<li>It can be used for <strong>discovery</strong></li>
-<li>Randomness is used to model <strong>uncertainty</strong></li>
-<li>It is used to <strong>explore</strong> solutions and <strong>avoid bias</strong></li>
+<li><span class="highlight">Propose specific times!</span></li>
+<li>Don’t ask “when are you free?”</li>
+<li><strong>Reduces</strong> cognitive load for others</li>
+<li><strong>Transforms</strong> an open-ended problem</li>
 </ul>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
@@ -504,94 +382,19 @@ Dr.&nbsp;Tobias Vlćek
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Even in computer science, randomness is not just about <strong>generating random numbers</strong>!</p>
+<p><strong>Now a simple yes/no decision!</strong></p>
 </div>
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="randomness-in-the-world" class="title-slide slide level1 title center">
-<h1><span class="flow">Randomness in the World</span></h1>
-
 </section>
-<section id="randomness-and-everyday-life" class="slide level2">
-<h2>Randomness and Everyday Life</h2>
-<p><span class="question">Question:</span> <strong>Where do you encounter randomness in daily life?</strong></p>
-</section>
-<section id="social-life" class="slide level2">
-<h2>Social Life</h2>
-<div>
+<section id="communication" class="slide level2">
+<h2>Communication</h2>
 <ul>
-<li class="fragment">Dating apps use <strong>randomized matching</strong> within preferences</li>
-<li class="fragment"><strong>Random encounters</strong> that lead to friendships</li>
-<li class="fragment"><strong>Random opportunities</strong> leading to career changes</li>
-<li class="fragment"><strong>Breaking ties</strong> through coin tosses</li>
-</ul>
-</div>
-</section>
-<section id="entertainment-industry" class="slide level2">
-<h2>Entertainment Industry</h2>
-<div>
-<ul>
-<li class="fragment">Pokémon’s “random” encounters are <strong>weighted by rarity</strong></li>
-<li class="fragment"><strong>Loot systems:</strong> Rare items have controlled drop rates</li>
-<li class="fragment">Chess AI introduces <strong>randomness</strong> to feel more human-like</li>
-<li class="fragment">Spotify’s shuffle is <strong>deliberately less random</strong> to feel natural</li>
-<li class="fragment">TikTok uses <strong>controlled randomization</strong> to optimize discovery</li>
-</ul>
-</div>
-</section>
-<section id="cryptography-1" class="slide level2">
-<h2>Cryptography</h2>
-<div>
-<ul>
-<li class="fragment">Coin miners solve <strong>cryptographic puzzles</strong> using guesses</li>
-<li class="fragment">PW generators balance <strong>randomness and memorability</strong></li>
-<li class="fragment"><code>correct-horse-battery-staple</code> is secure</li>
-<li class="fragment"><code>Tr0ub4dor&amp;3</code> is less secure despite looking complex</li>
-<li class="fragment"><span class="highlight">Modern encryption</span> uses random numbers</li>
-</ul>
-</div>
-</section>
-<section id="data-science" class="slide level2">
-<h2>Data Science</h2>
-<div>
-<ul>
-<li class="fragment"><strong>Weather forecasting</strong> uses randomness for uncertainty</li>
-<li class="fragment"><strong>Stock algorithms</strong> add randomness to avoid patterns</li>
-<li class="fragment"><strong>Self-driving cars</strong> add randomness <span class="highlight">for natural-feeling</span></li>
-<li class="fragment"><strong>Random sampling</strong> in research for unbiased results</li>
-</ul>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Randomness is <span class="highlight">everywhere</span> around us!</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="randomness-and-computer-science" class="title-slide slide level1 title center">
-<h1><span class="flow">Randomness and Computer Science</span></h1>
-
-</section>
-<section id="randomness-in-computer-science" class="slide level2">
-<h2>Randomness in Computer Science</h2>
-<ul>
-<li><strong>Fundamental concept</strong> in computer science</li>
-<li>Helps solve “hard” problems <strong>efficiently</strong></li>
-<li>Often <strong>faster than deterministic approaches</strong></li>
-<li><span class="highlight">Trade-off:</span> Optimal vs.&nbsp;“Good Enough” solutions</li>
+<li><span class="highlight">Be explicit rather than implicit</span></li>
+<li>Provide <strong>clear</strong> options instead</li>
+<li><strong>Avoid</strong> open-ended questions</li>
+<li>State your <strong>preferences</strong></li>
 </ul>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
@@ -603,437 +406,205 @@ Dr.&nbsp;Tobias Vlćek
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Sometimes a quick “good enough” solution is better than waiting for the perfect one.</p>
+<p><strong>Avoid</strong> deferring → “I’m fine with <span class="highlight">whatever</span>”!</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="types-of-randomness" class="slide level2">
-<h2>Types of Randomness</h2>
-<p><span class="question">Question:</span> <strong>Difference between true and pseudo-randomness?</strong></p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="highlight">True Randomness</span></p>
+<section id="the-cost-of-flexibility" class="slide level2">
+<h2>The Cost of Flexibility</h2>
 <ul>
-<li>Physical phenomena</li>
-<li>Atmospheric noise</li>
-<li>Radioactive decay</li>
-<li>Quantum effects</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><span class="highlight">Pseudo-randomness</span></p>
+<li>“I’m free whenever” seems helpful</li>
+<li>Being too flexible can be <strong>unhelpful</strong></li>
+<li><span class="highlight">But it is not!</span>
 <ul>
-<li>Deterministic algorithms</li>
-<li>Seed-based generation</li>
-<li>Repeatable sequences</li>
-<li>Good enough for most uses</li>
-</ul>
-</div></div>
-</div>
-</section>
-<section id="limits-of-computation" class="slide level2">
-<h2>Limits of Computation</h2>
-<p><span class="question">Question:</span> <strong>How many possible combinations exist in a shuffled deck of cards?</strong></p>
-<div id="509a9d83" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> math</span>
-<span id="cb1-2"><a></a><span class="bu">print</span>(math.factorial(<span class="dv">52</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell fragment" data-execution_count="2">
-<div class="cell-output cell-output-stdout">
-<pre><code>80658175170943878571660636856403766975289505440883277824000000000000</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>Computing and evaluating all possible combinations is not feasible!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="addressing-computational-limits" class="slide level2">
-<h2>Addressing Computational Limits</h2>
-<p><span class="question">Question:</span> <strong>Anybody ever heard of “Monte Carlo methods”?</strong></p>
-<div class="fragment">
-<ul>
-<li>Developed in the <strong>1940s for nuclear weapons research</strong></li>
-<li>Nuclear fission chain reactions <strong>were too complex</strong></li>
-<li>Helped to <span class="highlight">evaluate the probabilities of different outcomes</span></li>
-<li>Named after <strong>Monaco’s famous casino</strong></li>
-</ul>
-</div>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>How could we estimate π?</strong></p>
-</div>
-</section>
-<section id="estimating-π" class="slide level2">
-<h2>Estimating π</h2>
-
-<img data-src="animations/pi.gif" class="r-stretch"></section></section>
-<section>
-<section id="decision-making" class="title-slide slide level1 title center">
-<h1><span class="flow">Decision Making</span></h1>
-
-</section>
-<section id="travel-itinerary" class="slide level2">
-<h2>Travel Itinerary</h2>
-<p><span class="question">Question:</span> <strong>How and in which order would you visit 10 cities by plane with minimal total distance?</strong></p>
-<div id="813417c7" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> math</span>
-<span id="cb3-2"><a></a><span class="bu">print</span>(math.factorial(<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell fragment" data-execution_count="4">
-<div class="cell-output cell-output-stdout">
-<pre><code>3628800</code></pre>
-</div>
-</div>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>What could be a strategy?</strong></p>
-</div>
-</section>
-<section id="brute-force" class="slide level2">
-<h2>Brute Force</h2>
-<ul>
-<li>Try <span class="highlight">every possibility</span></li>
-<li>Total possible routes: 10! = <strong>3,628,800</strong></li>
-<li><strong>Guaranteed</strong> to find best solution</li>
-<li>If each check takes 1ms: <strong>1 hour</strong> to check all routes</li>
-</ul>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>What could be the problem with this approach?</strong></p>
-</div>
-</section>
-<section id="time-and-space-requirements" class="slide level2">
-<h2>Time and Space Requirements</h2>
-<div>
-<ul>
-<li class="fragment">For 20 cities: 20! = <strong>2.4 quintillion</strong> routes</li>
-<li class="fragment">Would take <strong>77 billion years</strong> at 1ms per check!</li>
-<li class="fragment"><strong>Time complexity</strong> grows <span class="highlight">factorially</span></li>
-<li class="fragment"><strong>Memory requirements</strong> increase with problem size</li>
-</ul>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Not feasible for real-world problems!</strong></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="greedy-algorithm" class="slide level2">
-<h2>Greedy Algorithm</h2>
-<ul>
-<li><strong>Example:</strong> Always picking shortest next flight</li>
-<li>Make <strong>locally optimal</strong> choices at each step</li>
-<li><span class="highlight">Never backtracks or reconsiders past decisions</span></li>
-<li>Fast execution &amp; simple to implement</li>
-<li>Can perform <strong>poorly on complex problems</strong></li>
-</ul>
-</section>
-<section id="hill-climbing" class="slide level2">
-<h2>Hill Climbing</h2>
-<ul>
-<li><span class="highlight">Iteratively improve solution</span> by making small changes</li>
-<li>Like <strong>climbing in fog</strong>, can only see immediate surroundings</li>
-<li>Don’t know if <strong>higher peaks</strong> exist elsewhere</li>
-<li>Can get stuck in <strong>local optima</strong></li>
-<li>No guarantee of finding <strong>global best optima</strong></li>
-</ul>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>How would you escape a local optimum?</strong></p>
-</div>
-</section>
-<section id="simulated-annealing" class="slide level2">
-<h2>Simulated Annealing</h2>
-<ul>
-<li>Make random changes and <strong>accept improvements</strong></li>
-<li>Sometimes accept <strong>worse solutions</strong></li>
-<li>Gradually become <strong>more selective</strong></li>
-</ul>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>Why accept worse solutions sometimes?</strong></p>
-</div>
-<div class="fragment">
-<ul>
-<li>Randomness helps to escape <strong>local optima</strong></li>
-<li>Balances <span class="highlight">exploration vs.&nbsp;exploitation</span></li>
-</ul>
-</div>
-</section>
-<section id="simulated-annealing-animation" class="slide level2">
-<h2>Simulated Annealing Animation</h2>
-
-<img data-src="animations/simulated_annealing.gif" class="r-stretch"></section>
-<section id="traveling-salesman" class="slide level2">
-<h2>Traveling Salesman</h2>
-
-<img data-src="animations/tsp_annealing.gif" class="r-stretch"></section></section>
-<section>
-<section id="randomness-and-society" class="title-slide slide level1 title center">
-<h1><span class="flow">Randomness and Society</span></h1>
-
-</section>
-<section id="thought-experiment" class="slide level2">
-<h2>Thought Experiment</h2>
-<p><strong>What’s more important for a society?</strong></p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="highlight">Freedom</span></p>
-<ul>
-<li>Individual choice</li>
-<li>Personal responsibility</li>
-<li>Market-driven</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><span class="highlight">Equality</span></p>
-<ul>
-<li>Shared resources</li>
-<li>Social safety nets</li>
-<li>Regulated systems</li>
-</ul>
-</div></div>
-</div>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>Any problem with this question?</strong></p>
-</div>
-</section>
-<section id="veil-of-ignorance" class="slide level2">
-<h2>Veil of Ignorance</h2>
-<p>You might <span class="highlight">randomly</span> be:</p>
-<ul>
-<li>Any gender identity and economic status</li>
-<li>Any health condition and intelligence level</li>
-<li>Any cultural background and religious belief</li>
-</ul>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>If you didn’t know who you’d be born as, what kind of society would you design?</strong></p>
-</div>
-</section>
-<section id="key-considerations" class="slide level2">
-<h2>Key Considerations</h2>
-<ul>
-<li><strong>Individual stories:</strong> Powerful but potentially misleading</li>
-<li><strong>Statistics:</strong> Comprehensive but can miss nuance</li>
-<li><strong>Hidden diversity:</strong> Important subgroups may be overlooked</li>
-<li><strong>Small policy changes</strong> <span class="highlight">can have cascading effects</span></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>But that’s not all! We also need to measure <strong>success</strong> and <strong>failure</strong>!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="measuring-success" class="slide level2">
-<h2>Measuring Success</h2>
-<ul>
-<li><strong>Mean happiness:</strong> Average well-being</li>
-<li><strong>Total happiness:</strong> Utilitarian approach</li>
-<li><strong>Median happiness:</strong> Focus on the middle class</li>
-<li><strong>Minimum happiness:</strong> Protecting the most vulnerable</li>
-</ul>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>What could be the problem with these measures?</strong></p>
-</div>
-</section>
-<section id="idea-random-sampling" class="slide level2">
-<h2>Idea: Random Sampling</h2>
-<ul>
-<li>Randomly <span class="highlight">select a subset of the population</span></li>
-<li>Gather <strong>diverse perspectives</strong> from the sample</li>
-<li>Better understand <strong>needs</strong> of population</li>
-<li><strong>Reduce selection bias</strong> and improve accuracy</li>
-</ul>
-<div class="fragment">
-<p><span class="question">Question:</span> <strong>What is a selection bias?</strong></p>
-</div>
-</section>
-<section id="selection-bias" class="slide level2">
-<h2>Selection Bias</h2>
-<p><strong>Definition</strong>: Selection bias occurs when the sample data you’re analyzing <span class="highlight">isn’t truly representative of the population</span> you’re trying to study.</p>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Famous Example</strong></p>
-</div>
-<div class="callout-content">
-<p>During WWII, engineers studied returning planes to determine where to add armor. Initially, they focused on areas with most bullet holes. Abraham Wald pointed out they should instead armor the areas with <em>no</em> bullet holes - those were the critical areas where planes didn’t survive to return!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="promoting-fairness" class="slide level2">
-<h2>Promoting Fairness</h2>
-<p><span class="question">Question:</span> <strong>How can randomness promote fairness?</strong></p>
-<div class="fragment">
-<ul>
-<li><strong>Random allocation</strong> of patients in clinical trials</li>
-<li><strong>Random audits</strong> for tax compliance</li>
-<li><strong>Random assignment</strong> of cases to judges</li>
-<li><strong>Random order</strong> of candidates on voting ballots</li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="uncertainty" class="title-slide slide level1 title center">
-<h1><span class="flow">Uncertainty</span></h1>
-
-</section>
-<section id="quick-poll" class="slide level2">
-<h2>Quick Poll</h2>
-<p><span class="question">Question:</span> <strong>Which would you prefer?</strong></p>
-<ul>
-<li><strong>100% chance of winning 50 EUR</strong></li>
-<li><strong>50% chance of winning 120 EUR</strong></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Answer depends on your <strong>risk aversion</strong>!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="decisions-under-uncertainty" class="slide level2">
-<h2>Decisions Under Uncertainty</h2>
-<p><span class="question">Question:</span> <strong>When should we embrace vs.&nbsp;reduce randomness?</strong></p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="highlight">Embrace When</span>:</p>
-<ul>
-<li>Exploring new solutions</li>
-<li>Avoiding bias</li>
-<li>Breaking deadlocks</li>
-<li>Testing systems</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><span class="highlight">Reduce When</span>:</p>
-<ul>
-<li>Safety-critical systems</li>
-<li>Financial transactions</li>
-<li>Medical procedures</li>
-<li>Legal proceedings</li>
-</ul>
-</div></div>
-</div>
-</section></section>
-<section>
-<section id="takeaways" class="title-slide slide level1 title center">
-<h1><span class="flow">Takeaways</span></h1>
-
-</section>
-<section id="good-enough-solutions" class="slide level2">
-<h2>“Good Enough” Solutions</h2>
-<ul>
-<li><strong>Perfect is enemy of good</strong>
-<ul>
-<li>Remember Monte Carlo methods: <strong>approximations work</strong></li>
-<li>Complete analysis often impossible</li>
-<li><span class="highlight">Perfect information is rare</span></li>
+<li>Forces others to <strong>consider all possibilities</strong></li>
+<li><strong>Increases</strong> cognitive load</li>
+<li>Makes decision-making <strong>more complex</strong></li>
 </ul></li>
 </ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Many real-world problems benefit from <strong>embracing uncertainty</strong> rather than fighting it!</p>
-</div>
-</div>
-</div>
+</section>
+<section id="principles" class="slide level2">
+<h2>Principles</h2>
+<ol type="1">
+<li><strong>Reduce Options</strong>: Fewer choices lead to <span class="highlight">better decisions</span></li>
+<li><strong>Be Explicit</strong>: Clear constraints <span class="highlight">help</span> others decide</li>
+<li><strong>Consider Cognitive Load</strong>: Design interactions minimizing <span class="highlight">mental effort</span> for others</li>
+<li><strong>Make Decisions</strong>: <span class="highlight">Taking responsibility</span> can be kind</li>
+</ol>
+</section></section>
+<section>
+<section id="key-concepts" class="title-slide slide level1 center">
+<h1><span class="flow">Key Concepts</span></h1>
+
+</section>
+<section id="topics-from-the-lecture" class="slide level2">
+<h2>Topics from the Lecture</h2>
+<ul>
+<li><strong>Optimal Stopping</strong>: How to decide <span class="highlight">when to stop looking</span> for better options.</li>
+<li><strong>Explore/Exploit Tradeoff</strong>: <span class="highlight">Balancing</span> between trying new things and sticking with known options.</li>
+<li><strong>Caching</strong>: Storing and reusing information by <span class="highlight">sticking to a task</span> to improve performance.</li>
+<li><strong>Scheduling</strong>: Efficiently managing <span class="highlight">tasks and time.</span></li>
+<li><strong>Randomness</strong>: Understanding and working with <span class="highlight">uncertainty.</span></li>
+</ul>
+</section></section>
+<section>
+<section id="how-to-continue" class="title-slide slide level1 title center">
+<h1><span class="flow">How to continue?</span></h1>
+
+</section>
+<section id="how-to-continue-learning" class="slide level2" data-background-color="#000000" data-background-image="https://images.unsplash.com/photo-1547190027-9156686aa2f0?q=80&amp;w=3540&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD" data-background-size="cover" data-background-position="center">
+<h2><span class="invert-font">How to continue learning?</span></h2>
+<div class="invert-font">
+<ul>
+<li>We have covered <strong>a lot of topics</strong></li>
+<li>But there are <strong>many more</strong> to explore!</li>
+</ul>
 </div>
 </section>
-<section id="opportunity-costs" class="slide level2">
-<h2>Opportunity Costs</h2>
+<section id="bayes-rule" class="slide level2">
+<h2>Bayes’ Rule</h2>
 <ul>
-<li><span class="highlight">Consider opportunity costs</span>
-<ul>
-<li>Quick approximations enable faster decisions</li>
-<li>Balance accuracy vs.&nbsp;computation time</li>
-<li>Random sampling vs.&nbsp;complete enumeration</li>
-</ul></li>
+<li>Fundamental theorem in probability theory</li>
+<li>Updates probability of hypothesis based on <span class="highlight">new evidence</span></li>
+<li>Used in <strong>statistics, machine learning, and decision-making</strong></li>
 </ul>
 <div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Many problems benefit from <strong>fast, good-enough solutions</strong> rather than perfect ones.</p>
+<p>Helps make <strong>informed predictions and decisions</strong> under uncertainty in the real world!</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="the-end" class="slide level2">
-<h2>The End</h2>
-<div class="callout callout-note callout-titled callout-style-default">
+<section id="overfitting" class="slide level2">
+<h2>Overfitting</h2>
+<ul>
+<li>Occurs when a model <span class="highlight">learns the training data too well</span></li>
+<li><strong>Captures noise and outliers</strong> rather than pattern</li>
+<li>Results in <strong>poor generalization to new data</strong></li>
+</ul>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
+<p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>That’s it for today’s lecture!</strong><br>
-We’ve covered the basics of randomness and its applications. In the upcoming tutorials, we’ll learn how to use LLMs to generate code with randomness.</p>
+<p>Several ways to counter overfitting, e.g.&nbsp;cross-validation.</p>
 </div>
 </div>
 </div>
+</div>
+</section>
+<section id="game-theory" class="slide level2">
+<h2>Game Theory</h2>
+<ul>
+<li>Strategic interactions among <span class="highlight">rational decision-makers</span></li>
+<li>Analyzes situations with <strong>multiple agents</strong> and their strategies</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Many applications</strong> in economics, politics, and biology!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="networking" class="slide level2">
+<h2>Networking</h2>
+<ul>
+<li>Study of <strong>information exchange</strong> over networks</li>
+<li>Includes <span class="highlight">understanding protocols and data transmission</span></li>
+<li>Optimizes <strong>network resources</strong></li>
+</ul>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Important</strong> in computer networks, the internet and social life!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="relaxation" class="slide level2">
+<h2>Relaxation</h2>
+<ul>
+<li>Simplifies <span class="highlight">complex problems</span> to make them more tractable</li>
+<li>Involves <strong>relaxing certain constraints</strong></li>
+<li>Provides insights or <strong>approximate</strong> solutions</li>
+</ul>
+</section>
+<section id="how-to-continue-programming" class="slide level2">
+<h2>How to continue programming?</h2>
+<ul>
+<li>The best way to continue learning is to <span class="highlight">keep programming in the future</span></li>
+<li>Potentially, you will continue to do so during your studies</li>
+<li>Coding in your Thesis is a another great way to improve</li>
+<li>Try to find a way to apply programming in your work</li>
+<li><strong>There are many interesting topics to explore!</strong></li>
+</ul>
+</section>
+<section id="advent-of-code" class="slide level2">
+<h2>Advent of Code</h2>
+<ul>
+<li><a href="https://adventofcode.com/">Advent of Code</a> is a fun way to keep programming</li>
+<li>Here you can solve programming puzzles during Advent</li>
+<li>It is <strong>completely free</strong> and ad-free and starts each year at 01.12.</li>
+</ul>
+<center>
+<iframe src="https://giphy.com/embed/F1Gh6u8YEG3FctxYWc" width="280" height="280" style="" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+</center>
+</section>
+<section id="thats-it-for-the-lecture-series" class="slide level2">
+<h2>That’s it for the Lecture Series!</h2>
+<ul>
+<li>We now have covered the basics of Python</li>
+<li>I hope you enjoyed the lecture and found it helpful</li>
+<li>If you have questions or feedback, <span class="highlight">please let me know!</span></li>
+<li>I wish you all the best for your studies and your career!</li>
+</ul>
+</section>
+<section id="section" class="slide level2" data-background-color="#000000">
+<h2></h2>
+<center>
+<iframe src="https://giphy.com/embed/YVg3fCdaBpLEc" width="480" height="355" style="" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+</center>
 </section></section>
+<section id="qa" class="title-slide slide level1 center">
+<h1><span class="flow">Q&amp;A</span></h1>
+
+</section>
+
 <section>
 <section id="literature" class="title-slide slide level1 title center">
 <h1><span class="flow">Literature</span></h1>
@@ -1077,7 +648,7 @@ We’ve covered the basics of randomness and its applications. In the upcoming t
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Lecture V - Randomness | Dr.&nbsp;Tobias Vlćek | <a href="../part-05/lecture-randomness.html">Home</a></p>
+<p>Lecture VI - Computational Kindness | Dr.&nbsp;Tobias Vlćek | <a href="lecture-introduction.qmd">Home</a></p>
 </div>
 </div></div>
 
