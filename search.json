@@ -5355,7 +5355,7 @@
     "href": "general/cheatsheet.html#standard-libraries",
     "title": "Cheatsheet",
     "section": "Standard Libraries",
-    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.8430638841542236",
+    "text": "Standard Libraries\n\nDefinition: Libraries that are part of the Python standard library.\nAccess: Import them using import.\n\n\nimport math\nimport random\n\n\nFor long package names, you can use the as keyword to create an alias.\n\n\nimport random as rd\n\n\nTo call a function from an imported package, use the package name as a prefix.\n\n\nrandom_number = rd.random()\nprint(random_number)\n\n0.36957875693782427",
     "crumbs": [
       "Cheatsheet"
     ]
