@@ -4,8 +4,6 @@ subtitle: "Programming with Python"
 author: "Dr. Tobias Vlćek"
 institute: "Kühne Logistics University Hamburg - Fall 2024"
 title-slide-attributes:
-    data-background-image: "https://images.beyondsimulations.com/logo/image_algorithms-to-live-by.png"
-    data-background-opacity: "0.3"
     data-background-color: "#8C3048"
 
 execute:

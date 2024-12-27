@@ -19,6 +19,7 @@ website:
   bread-crumbs: true
   sidebar:
     style: floating
+    logo: https://images.beyondsimulations.com/logo/midjourney-everyday-algorithms.jpeg
     collapse-level: 1 
     search: true
     contents:
@@ -108,6 +109,8 @@ format:
     code-overflow: wrap
     code-block-bg: true
     code-block-border-left: "#D99D55"
+    include-in-header:
+      - general/header.html
 
   pdf:
     documentclass: report
