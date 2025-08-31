@@ -1,15 +1,10 @@
 ---
 title: "Tutorial V.II - Recap with Randomness"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_05_02_recap.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -24,7 +19,7 @@ Optimal stopping is a classic problem in decision theory where you want to selec
 
 ## Exercise 1.1 - The 37% Rule
 
-Let's implement the 37% rule from Optimal Stopping by using random candidates. Your task is to simulate the process of selecting the best candidate out of a list of random candidates. Remember, the 37% rule says that you should reject the first 37% of candidates and then select the next candidate who is better than all previous candidates. 
+Let's implement the 37% rule from Optimal Stopping by using random candidates. Your task is to simulate the process of selecting the best candidate out of a list of random candidates. Remember, the 37% rule says that you should reject the first 37% of candidates and then select the next candidate who is better than all previous candidates.
 
 First, let's import the necessary library:
 
@@ -65,7 +60,7 @@ Remember the explore vs. exploit dilemma? Should you try a new restaurant (explo
 
 ## Exercise 2.1 - Visiting Restaurants
 
-Imagine you're new to a city with 10 restaurants. Each restaurant has a "true" quality rating (unknown to you) between 0 and 5 stars. Each time you visit a restaurant, you get to experience its rating. In total, you will visit restaurants 15 times. 
+Imagine you're new to a city with 10 restaurants. Each restaurant has a "true" quality rating (unknown to you) between 0 and 5 stars. Each time you visit a restaurant, you get to experience its rating. In total, you will visit restaurants 15 times.
 
 Your goal is to create a simulation that computes the average satisfaction over 15 days based on an explore vs. exploit strategy. First, you should try each restaurant once (pure exploration). Then, you should just exploit your favorite restaurant for the remaining visits. Save the average satisfaction in `average_satisfaction` and the index of the best restaurant in `best_restaurant_index`.
 

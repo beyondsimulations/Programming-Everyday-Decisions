@@ -1,18 +1,10 @@
 ---
 title: "Tutorial I.III - Making Decisions"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-
-    pdf:
-        documentclass: report
-
-    ipynb:
-
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_01_03_stopping.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -111,7 +103,7 @@ decision = ""
 # YOUR CODE BELOW
 
 ```
-```{python} 
+```{python}
 #| eval: false
 #| code-fold: true
 # Test your answer
@@ -306,4 +298,3 @@ Remember, just like in apartment hunting, these tools help us make better decisi
 {{< include ../include/tutorial_end.qmd >}}
 
 *That's it for part I! Next week, we'll apply these skills exploration and exploitation!*
-

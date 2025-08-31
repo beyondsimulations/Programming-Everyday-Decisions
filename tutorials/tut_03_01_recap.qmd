@@ -1,15 +1,10 @@
 ---
 title: "Tutorial III.I - Recap with Caching"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_03_01_recap.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -222,10 +217,10 @@ Be careful with the loop. You need to iterate over the list and remove items fro
 
 ```{python}
 browser_history = [
-    ("google.com", 10), 
-    ("youtube.de", 5), 
-    ("amazon.de", 1), 
-    ("netflix.de", 2), 
+    ("google.com", 10),
+    ("youtube.de", 5),
+    ("amazon.de", 1),
+    ("netflix.de", 2),
     ("github.com", 15)
 ]
 # YOUR CODE BELOW

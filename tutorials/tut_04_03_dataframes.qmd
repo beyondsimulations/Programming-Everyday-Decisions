@@ -1,15 +1,10 @@
 ---
 title: "Tutorial IV.III - DataFrames"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_04_03_dataframes.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -83,14 +78,14 @@ def test_mission_tasks(df):
     # Check if all required columns exist
     required_cols = ['task', 'duration', 'deadline']
     assert all(col in df.columns for col in required_cols), "Missing required columns"
-    
+
     # Check if we have the correct number of tasks
     assert len(df) == 4, "Should have exactly 4 tasks"
-    
+
     # Check if all values are of correct type
     assert df['duration'].dtype in ['int32', 'int64'], "Duration should be integers"
     assert df['deadline'].dtype in ['int32', 'int64'], "Deadline should be integers"
-    
+
     # Check if all required tasks are present
     required_tasks = {'Life Support Check', 'Navigation Systems', 'Fuel Loading', 'Communication Setup'}
     assert set(df['task']) == required_tasks, "Missing or incorrect task names"
@@ -249,7 +244,7 @@ print(mission_tasks)
 
 # Section 3 - Looping over DataFrames
 
-Now, we want to apply the EDD algorithm to the `mission_tasks` DataFrame. We can do this sorting the rows by deadline and then looping over the rows, computing the completion time and the maximum delay. 
+Now, we want to apply the EDD algorithm to the `mission_tasks` DataFrame. We can do this sorting the rows by deadline and then looping over the rows, computing the completion time and the maximum delay.
 
 To do this, you can use the `iterrows()` method. The `iterrows()` method returns an iterator yielding index and row as a Series. For each row, you can access the values using the column names as keys. Let's do this step by step on the `tasks` DataFrame for the original deadline.
 

@@ -1,15 +1,10 @@
 ---
 title: "Tutorial III.II - Functions"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_03_02_functions.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -29,7 +24,7 @@ Think of a function like a coffee machine:
 
 # Section 1 - Creating Basic Functions
 
-Functions in Python are like recipes: 
+Functions in Python are like recipes:
 
 - They have a name
 - Might need ingredients (parameters)
@@ -212,7 +207,7 @@ Return a priority score calculated as:
 ```{python}
 # YOUR CODE BELOW
 
-``` 
+```
 ```{python}
 #| eval: false
 #| code-fold: true

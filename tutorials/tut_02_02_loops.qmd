@@ -1,15 +1,10 @@
 ---
 title: "Tutorial II.II - Loops"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_02_02_loops.py
+    icon: hand-thumbs-up
 ---
 # Introduction
 
@@ -180,7 +175,7 @@ while resources > 0:
     print(f"Resources remaining: {resources}")
     resources -= 20  # Each trial phase costs 20 units
     treatments_tested += 1
-    
+
 print(f"Tested {treatments_tested} treatment variations")
 ```
 

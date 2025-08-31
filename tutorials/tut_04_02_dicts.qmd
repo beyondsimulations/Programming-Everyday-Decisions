@@ -1,15 +1,10 @@
 ---
 title: "Tutorial IV.II - Dictionaries"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_04_02_dicts.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -137,7 +132,7 @@ print("Great! You've successfully changed the value of a key in the dictionary."
 
 # Section 2 - Advanced Dictionary Operations
 
-Dictionaries can do more than just store simple information. Let's explore some features. 
+Dictionaries can do more than just store simple information. Let's explore some features.
 
 With the `keys()` method, you can get all the keys of a dictionary as a dictionary view object. You can convert it to a list using the `list()` function.
 

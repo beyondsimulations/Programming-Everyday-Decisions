@@ -1,20 +1,10 @@
 ---
 title: "Tutorial V.III - Free Tasks"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: litera
-        highlight-style: arrow
-        linkcolor: "#a60000"
-        code-copy: true
-        code-link: true
-        toc: true
-        toc-location: right
-        code-overflow: wrap
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_05_03_free.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction

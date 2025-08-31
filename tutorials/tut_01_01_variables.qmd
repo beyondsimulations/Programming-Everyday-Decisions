@@ -1,28 +1,23 @@
 ---
 title: "Tutorial I.I - Variables and Types"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_01_01_variables.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
 
 Welcome to this interactive Python tutorial on variables, types, and algorithmic thinking! We'll explore these concepts through the lens of optimization problems, specifically using the famous "Secretary Problem" as our running example.
 
-The Secretary Problem asks: "If you need to hire the best candidate, and you can only interview candidates one at a time (with no going back), when should you stop and make an offer?" This is a perfect example of optimal stopping and will help us understand how variables and data types play crucial roles in algorithmic thinking. To make the problem more interesting, we will use the Secretary Problem to help us make better dating decisions! 
+The Secretary Problem asks: "If you need to hire the best candidate, and you can only interview candidates one at a time (with no going back), when should you stop and make an offer?" This is a perfect example of optimal stopping and will help us understand how variables and data types play crucial roles in algorithmic thinking. To make the problem more interesting, we will use the Secretary Problem to help us make better dating decisions!
 
 The question is thus: **When should you stop dating and commit to someone?**
 
 Known academically as the "Optimal Stopping Problem" or "The Marriage Problem", it asks: If you want to find the best possible partner, and you can only date one person at a time (no going back to previous dates!), when should you stop dating and propose?
 
-Let's learn how to use Python to help us in order to make better dating decisions! 
+Let's learn how to use Python to help us in order to make better dating decisions!
 
 # 1 - Variables
 
@@ -233,7 +228,7 @@ print(bio) # Print the string which is stored in bio
 
 ## Exercise 4.1 - Profile Message
 
-We have already defined the variables `name` and `minimum_rating`. Now we want to use them in the context of a formatted string. Create a formatted string `profile_message` using the variables `name` and `minimum_rating` that says "Hello, {name}! Nice to meet you. I hope you are at least {minimum_rating}/10 compatible with me!". 
+We have already defined the variables `name` and `minimum_rating`. Now we want to use them in the context of a formatted string. Create a formatted string `profile_message` using the variables `name` and `minimum_rating` that says "Hello, {name}! Nice to meet you. I hope you are at least {minimum_rating}/10 compatible with me!".
 
 ```{python}
 #| eval: false
@@ -250,7 +245,7 @@ print("Your message is send - good luck!")
 
 # Conclusion
 
-Congratulations! You've learned about Python variables and types through the lens of dating optimization! 
+Congratulations! You've learned about Python variables and types through the lens of dating optimization!
 
 Remember:
 

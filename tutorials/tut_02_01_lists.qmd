@@ -1,15 +1,10 @@
 ---
 title: "Tutorial II.I - Lists and Tuples"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_02_01_lists.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -79,7 +74,7 @@ restaurants.pop() # Removes and returns the last item
 print(restaurants)
 
 # Removing a specific item
-restaurants.remove("Pasta Place") 
+restaurants.remove("Pasta Place")
 print(restaurants)
 ```
 

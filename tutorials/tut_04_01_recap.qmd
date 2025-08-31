@@ -1,15 +1,10 @@
 ---
 title: "Tutorial IV.I - Recap"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-
-format:
-    html:
-        theme: [litera, ../styles_html.scss]
-    pdf: 
-        documentclass: report
-    ipynb:
-        code-copy: true
-        code-overflow: wrap
+format-links:
+  - text: Python
+    href: tut_04_01_recap.py
+    icon: hand-thumbs-up
 ---
 
 # Introduction
@@ -61,7 +56,7 @@ print("Great! Your menu lists have been created.")
 
 # Section 2 - Shortest Processing Time
 
-One effective scheduling strategy is to handle the quickest tasks first. This minimizes average waiting time. To find the quickest drink, we can use a inbuilt function in Python, but let's try to do it by ourselves first with a loop. Remember how to loop through a list from the previous lecture? Loops are created using the `for` keyword. The `for` loop is used to iterate over a sequence (like a list) and execute a block of code for each item in the sequence. 
+One effective scheduling strategy is to handle the quickest tasks first. This minimizes average waiting time. To find the quickest drink, we can use a inbuilt function in Python, but let's try to do it by ourselves first with a loop. Remember how to loop through a list from the previous lecture? Loops are created using the `for` keyword. The `for` loop is used to iterate over a sequence (like a list) and execute a block of code for each item in the sequence.
 
 ::: {.callout-note}
 ## Common Mistakes in Loops

@@ -2,32 +2,10 @@
 title: "Tutorial V.I - Programming with AI"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
 author: "Dr. Tobias Vlćek"
-institute: "Kühne Logistics University Hamburg - Winter 2024"
-title-slide-attributes:
-    data-background-color: "#8C3048"
-
 format:
-    revealjs:
-        theme: [default, ../styles.scss]
-        transition: slide
-        transition-speed: fast
-        highlight-style: arrow
-        code-overflow: wrap
-        slide-number: true
-        code-copy: true
-        code-link: true
-        preview-links: auto
-        footer: " {{< meta title >}} | {{< meta author >}} | [Home](tutorial-13-llm.qmd)"
-        output-file: tutorial-presentation.html
-    html:
-        theme: litera
-        highlight-style: arrow
-        linkcolor: "#a60000"
-        code-copy: true
-        code-link: true
-        toc: true
-        toc-location: right
-        code-overflow: wrap
+  revealjs:
+    footer: " {{< meta title >}} | {{< meta author >}} | [Home](tut_05_01_llm.qmd)"
+    output-file: tut_05_01_presentation.html
 ---
 
 # [Using AI]{.flow} {.title}
@@ -51,7 +29,7 @@ format:
 ::: {.r-fit-text .question}
 How do
 
-Large Language 
+Large Language
 
 Models work?
 
@@ -64,8 +42,8 @@ Models work?
 
 ## Large Language Models (LLMs)
 
-- Think of them like [advanced pattern recognition systems]{.highlight} 
-- They have "read" **massive amounts of text** 
+- Think of them like [advanced pattern recognition systems]{.highlight}
+- They have "read" **massive amounts of text**
 - Books, websites, articles, code, and more
 - Text is broken into **tokens**, parts of words or punctuation
 - Based on patterns, they can **generate new text**
