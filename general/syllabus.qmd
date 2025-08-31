@@ -1,14 +1,11 @@
 ---
 title: "Syllabus"
 subtitle: "This years course structure"
-
-html:
-    theme: [litera, ../styles_html.scss]
 ---
 
 # Lectures
 
-In our lectures, we mostly refrain from showing you any code. Instead, we will focus on explaining the concepts and how they can be used to solve problems. The tutorials will then show you step-by-step how to implement the concepts in Python. 
+In our lectures, we mostly refrain from showing you any code. Instead, we will focus on explaining the concepts and how they can be used to solve problems. The tutorials will then show you step-by-step how to implement the concepts in Python.
 
 We were rather ambitious in the design of the course in the course module, thus we will not be able to cover all topics there. However, we have chosen the most important topics from our perspective that will lay a good foundation for interested students to continue learning on their own.
 

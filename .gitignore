@@ -166,7 +166,5 @@ cython_debug/
 /_freeze/
 
 # Solutions
-part-04/solution/
-part-05/solution/
-part-06/solution/
+solutions
 students
