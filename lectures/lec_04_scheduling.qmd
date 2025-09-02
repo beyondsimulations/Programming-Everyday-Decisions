@@ -5,7 +5,7 @@ author: "Dr. Tobias Vlćek"
 institute: "Kühne Logistics University Hamburg - Winter 2024"
 format:
   revealjs:
-    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture_04_scheduling.qmd)"
+    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_04_scheduling.qmd)"
     output-file: lec_04_presentation.html
     html:
       mermaid:

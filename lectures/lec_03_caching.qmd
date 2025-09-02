@@ -4,7 +4,7 @@ subtitle: "Programming: Everyday Decision-Making Algorithms"
 author: "Dr. Nils Roemer"
 format:
   revealjs:
-    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture_03_caching.qmd)"
+    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_03_caching.qmd)"
     output-file: lec_03_presentation.html
 ---
 # Learning Objectives {.title}
@@ -176,32 +176,6 @@ By the end of this lecture, you will be able to:
 
 ## Problem: Access Time
 :::{.incremental}
-::: {style="text-align: center;"}
-```{mermaid}
-%%| echo: false
-flowchart LR
-    subgraph Memory
-    A["Input Data"]
-    end
-
-    subgraph CPU
-    B["Processing Data"]
-    end
-
-    subgraph Memory
-    C["Output Data"]
-    end
-
-    A --> B --> C
-
-    style Memory fill:white,stroke:#01579B,stroke-width:4px
-    style CPU fill:white,stroke:#01579B,stroke-width:4px
-    style Memory fill:white,stroke:#01579B,stroke-width:4px
-    style A fill:white
-    style B fill:white
-    style C fill:white
-```
-:::
 
 **Problem:** No matter how much faster the processor gets, if input data isn't available fast enough or can't be stored quickly enough, the system won't become faster overall.
 

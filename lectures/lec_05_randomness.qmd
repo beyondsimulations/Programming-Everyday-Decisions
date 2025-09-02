@@ -5,7 +5,7 @@ author: "Dr. Tobias Vlćek"
 institute: "Kühne Logistics University Hamburg - Winter 2024"
 format:
   revealjs:
-    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture_05_randomness.qmd)"
+    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_05_randomness.qmd)"
     output-file: lec_05_presentation.html
 ---
 
@@ -161,7 +161,7 @@ anim.save(DIR / '../animations/dice_fairness.gif', writer='pillow')
 plt.close()
 ```
 
-![](animations/dice_fairness.gif)
+![](../animations/dice_fairness.gif)
 
 ## Using Randomness
 
@@ -377,7 +377,7 @@ anim.save(DIR / "../animations/pi.gif", writer="pillow")
 plt.close()
 ```
 
-![](animations/pi.gif)
+![](../animations/pi.gif)
 
 
 # [Decision Making]{.flow} {.title}
@@ -552,7 +552,7 @@ anim.save(DIR / '../animations/simulated_annealing.gif', writer='pillow')
 plt.close()
 ```
 
-![](animations/simulated_annealing.gif)
+![](../animations/simulated_annealing.gif)
 
 ## Traveling Salesman
 
@@ -718,7 +718,7 @@ anim.save(DIR / '../animations/tsp_annealing.gif', writer='pillow')
 plt.close()
 ```
 
-![](animations/tsp_annealing.gif)
+![](../animations/tsp_annealing.gif)
 
 # [Randomness and Society]{.flow} {.title}
 

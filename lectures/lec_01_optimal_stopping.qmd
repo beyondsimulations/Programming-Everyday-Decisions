@@ -4,7 +4,7 @@ subtitle: "Programming: Everyday Decision-Making Algorithms"
 author: "Dr. Tobias Vlćek"
 format:
   revealjs:
-    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lecture_01_optimal_stopping.qmd)"
+    footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_01_optimal_stopping.qmd)"
     output-file: lec_01_presentation.html
 ---
 

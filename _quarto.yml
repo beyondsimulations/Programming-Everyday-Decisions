@@ -1,6 +1,5 @@
 project:
-  type:
-    - website
+  type: website
   post-render:
     - helpers/convert_pypercent.py
     - helpers/convert_qmd_to_md.py
