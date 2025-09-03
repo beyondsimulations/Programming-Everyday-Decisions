@@ -12,14 +12,10 @@ format-links:
 Imagine you're planning a Mars mission. Every task, from equipment checks to crew training, needs careful scheduling. In this tutorial, we'll learn how to use Python's Pandas library to implement scheduling algorithms like Earliest Due Date (EDD) and Shortest Processing Time (SPT).
 
 ::: {.callout-note}
-Before starting, ensure you have the `pandas` library installed. Depending on your operating system and installation method, you might need to use `pip`, `pip3` or `conda` to install it via the command line.
+Before starting, ensure you have the `pandas` library installed.
 
 ```{bash}
-pip install pandas
-```
-
-```{bash}
-pip3 install pandas
+uv install pandas
 ```
 
 ```{bash}

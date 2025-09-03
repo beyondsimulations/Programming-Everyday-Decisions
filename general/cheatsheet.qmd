@@ -452,10 +452,10 @@ print(random_number)
 
 ## Installing Packages
 
-- **Definition**: Install packages using `pip`.
+- **Definition**: Install packages using `uv`.
 
 ```{bash}
-pip install package_name
+uv add package_name
 ```
 
 - If you are using Miniconda, you can use `conda` instead.
