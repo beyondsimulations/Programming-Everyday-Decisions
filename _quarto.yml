@@ -144,3 +144,6 @@ format-links:
     icon: file-pdf
 
 brand: _brand.yml
+
+execute:
+  freeze: true
