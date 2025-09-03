@@ -30,8 +30,8 @@
 #
 # -   A main collection (Python’s standard library)
 # -   Different sections (third-party packages)
-# -   A catalog system (pip package manager)
-# -   Multiple branches (virtual environments)
+# -   A catalog system (a package manager — we use `uv`)
+# -   Multiple branches (virtual environments / project folders)
 #
 # ## In more detail
 #
@@ -54,14 +54,15 @@
 #     -   Machine learning packages (scikit-learn) → Advanced studies
 #         section
 #
-# 3.  **Package Manager (pip)**: Works like the library’s catalog:
+# 3.  **Package Manager (`uv`)**: Works like the library’s catalog:
 #
 #     -   Installing packages → Ordering new books
 #     -   Updating packages → Replacing with newer editions
 #     -   Uninstalling packages → Removing outdated books
 #     -   Dependencies → “You must read Book A before Book B”
 #
-# 4.  **Virtual Environments**: Works like different library branches:
+# 4.  **Project Environments** (managed automatically by `uv`): Like
+#     different library branches:
 #
 #     -   Each branch can have its own collection of books (packages)
 #     -   Different editions of the same book (package versions)
@@ -73,14 +74,15 @@
 #
 # > **Note**
 # >
-# > While we’ll practice some commands here, you’ll typically manage
-# > packages in your terminal or IDE.
+# > We use `uv` in this course for Python version management, virtual
+# > environments, and packages. See the separate guide for more details:
+# > [uv setup](../general/uv.qmd).
 #
 # # Section 1 - Using Standard Libraries
 #
-# Before we start using packages, let’s take a look at Python’s standard
-# libraries. Python comes with a set of **standard libraries that are
-# always available**. You can use these libraries by simply importing
+# Before we start using external packages, let’s take a look at Python’s
+# standard libraries. Python comes with a set of **standard libraries that
+# are always available**. You can use these libraries by simply importing
 # them. For example, the `math` library provides mathematical functions
 # like `sqrt` and `sin` and the `random` library provides functions to
 # generate random numbers. You can import these libraries using the
@@ -163,78 +165,61 @@ assert random_number >= 1 and random_number <= 25
 print(f"Good! You generated a random integer {random_number} between 1 and 25!")
 
 # %% [markdown]
-# # Section 2 - Using a package manager
+# # Section 2 - Using a package manager (`uv`)
 #
 # Just as a library needs a system to track books (checkout system,
-# catalog, etc.), Python uses pip or conda to manage its packages. Think
-# of pip or conda as your library’s management system that:
+# catalog, etc.), Python projects need a tool to manage versions and
+# dependencies. We use `uv` because it:
 #
 # -   Keeps track of what’s available (like searching the catalog)
 # -   Handles “checkouts” (installing packages)
 # -   Manages “returns” (uninstalling packages)
 # -   Ensures you have the right “edition” (version management)
 #
-# > **Miniconda**
-# >
-# > As we have installed Miniconda in the lecture, **we will use conda in
-# > this tutorial**. If you work with a standard Python installation, you
-# > can use pip instead but the commands are slightly different.
+# ## Exercise 2.1 - Check your `uv` installation
 #
-# ## Exercise 2.1 - Check your package manager version
-#
-# Let’s start by checking which version of conda we have installed. We do
-# so by running the following command in our terminal. Make sure, you are
-# not working with python yet in the terminal, as this command is not
-# available in the python shell. To open a new terminal in VS Code, you
-# can press `ctrl + shift + p` and then type
-# `Terminal: Create new terminal`. Then, run the following command:
+# Open a terminal (not the Python REPL) and run:
 #
 # ``` {bash}
-# conda info
+# uv --version
 # ```
 #
-# If you are not using Miniconda, you can use `pip` instead. Here, you can
-# check the version of your package manager by running the following
-# command in the terminal:
+# You should see a version number.
+#
+# Then confirm your Python version (after installing one via `uv` if
+# needed):
 #
 # ``` {bash}
-# pip --version
+# uv run python --version
 # ```
 #
 # # Section 3 - Installing Packages
 #
 # Installing packages is like ordering new books for your library branch.
-# Just as a library might:
+# With `uv` you typically:
 #
-# -   Order books from publishers (pip install from PyPI)
-# -   Get specific editions (version specifications)
-# -   Check for space on shelves (system requirements)
-# -   Ensure books don’t conflict (dependency management)
+# -   Initialize a project once (`uv init`)
+# -   Add dependencies (`uv add packagename`)
+# -   Remove them if not needed (`uv remove packagename`)
+# -   Sync a project copied from elsewhere (`uv sync`)
+# -   Update dependencies (`uv update`)
 #
-# Luckily most of that is handled for you and not that important in this
-# basic introduction to python. Installing packages in Python is
-# straightforward using `conda install packagename` if you are using
-# Miniconda. If you are not using Miniconda, you can use
-# `pip install packagename` instead.
+# Under the hood `uv` creates (and reuses) a virtual environment for the
+# project. Luckily most of that is handled for you and not that important
+# in this basic introduction to Python.
 #
-# ## Exercise 3.1 - Install pandas
+# ## Exercise 3.1 - Add `pandas`
 #
-# Let’s practice by installing pandas, a popular package for data
-# analysis. Execute the following command in your terminal and make sure
-# you are not in the python shell.
+# Inside a `uv`-initialized project directory, run:
 #
 # ``` {bash}
-# conda install pandas
+# uv add pandas
 # ```
 #
-# Or, if you are not using Miniconda, you can use the following command.
+# This: - Resolves dependencies - Adds `pandas` to `pyproject.toml` -
+# Installs it into the project’s virtual environment
 #
-# ``` {bash}
-# pip install pandas
-# ```
-#
-# You can test if the installation was successful by running the following
-# code.
+# You can test if the installation was successful by running:
 
 # %%
 # Test your answer
@@ -245,7 +230,8 @@ except ImportError:
     print("pandas was not installed correctly")
 
 # %% [markdown]
-# # Section 4 - Virtual Environments
+# (If you see an import error, verify you are inside the project folder
+# you initialized with `uv init`.)
 #
 # Virtual environments are like having different library branches. Each
 # branch can have:
@@ -263,34 +249,23 @@ except ImportError:
 # -   You can experiment without affecting the main collection
 #     (development safety)
 #
-# For now, you don’t need to worry about virtual environments. This is
-# more advanced and thus not necessary for this tutorial (or lecture). But
-# it’s good to know that they exist and that you can use them to manage
-# your packages. Still, if you ever want to check them out, you can use
-# the following command to create a new virtual environment with a certain
-# name and Python version.
-#
-# ``` {bash}
-# conda create -n myenv python=3.10
-# ```
-#
-# > **Note**
-# >
-# > You can replace `myenv` with any name you want and `python=3.10` with
-# > the Python version you want.
-#
-# To activate the environment later on, you can use the following command:
-#
-# ``` {bash}
-# conda activate myenv
-# ```
+# For now, you don’t need to worry about virtual environments except for
+# the one we created now. This is more advanced and thus not necessary for
+# this tutorial (or lecture). But it’s good to know that they exist and
+# that you can use them to manage your packages.
 #
 # # Conclusion
 #
-# Congratulations! You’ve learned about Python package management through
-# the lens of library caching. Remember, just like libraries use caching
-# to make popular books more accessible, Python uses package management to
-# make useful code more accessible!
+# Great work! You learned how Python projects organize and access code
+# via:
+#
+# -   The standard library
+# -   Third-party packages
+# -   A modern package & environment manager (`uv`)
+# -   Isolated project environments for reliability
+#
+# Treat each project like its own library branch: well‑labeled,
+# independent, and easy to maintain.
 #
 # # Solutions
 #

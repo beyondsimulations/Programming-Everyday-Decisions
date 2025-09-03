@@ -365,6 +365,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../general/uv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../general/literature.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Literature</span></a>
   </div>
@@ -394,15 +400,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#exercise-1.1---use-the-math-library" id="toc-exercise-1.1---use-the-math-library" class="nav-link" data-scroll-target="#exercise-1.1---use-the-math-library">Exercise 1.1 - Use the math library</a></li>
   <li><a href="#exercise-1.2---use-the-random-library" id="toc-exercise-1.2---use-the-random-library" class="nav-link" data-scroll-target="#exercise-1.2---use-the-random-library">Exercise 1.2 - Use the random library</a></li>
   </ul></li>
-  <li><a href="#section-2---using-a-package-manager" id="toc-section-2---using-a-package-manager" class="nav-link" data-scroll-target="#section-2---using-a-package-manager">Section 2 - Using a package manager</a>
+  <li><a href="#section-2---using-a-package-manager-uv" id="toc-section-2---using-a-package-manager-uv" class="nav-link" data-scroll-target="#section-2---using-a-package-manager-uv">Section 2 - Using a package manager (<code>uv</code>)</a>
   <ul class="collapse">
-  <li><a href="#exercise-2.1---check-your-package-manager-version" id="toc-exercise-2.1---check-your-package-manager-version" class="nav-link" data-scroll-target="#exercise-2.1---check-your-package-manager-version">Exercise 2.1 - Check your package manager version</a></li>
+  <li><a href="#exercise-2.1---check-your-uv-installation" id="toc-exercise-2.1---check-your-uv-installation" class="nav-link" data-scroll-target="#exercise-2.1---check-your-uv-installation">Exercise 2.1 - Check your <code>uv</code> installation</a></li>
   </ul></li>
   <li><a href="#section-3---installing-packages" id="toc-section-3---installing-packages" class="nav-link" data-scroll-target="#section-3---installing-packages">Section 3 - Installing Packages</a>
   <ul class="collapse">
-  <li><a href="#exercise-3.1---install-pandas" id="toc-exercise-3.1---install-pandas" class="nav-link" data-scroll-target="#exercise-3.1---install-pandas">Exercise 3.1 - Install pandas</a></li>
+  <li><a href="#exercise-3.1---add-pandas" id="toc-exercise-3.1---add-pandas" class="nav-link" data-scroll-target="#exercise-3.1---add-pandas">Exercise 3.1 - Add <code>pandas</code></a></li>
   </ul></li>
-  <li><a href="#section-4---virtual-environments" id="toc-section-4---virtual-environments" class="nav-link" data-scroll-target="#section-4---virtual-environments">Section 4 - Virtual Environments</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
   </ul>
@@ -418,10 +423,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -438,8 +448,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>A main collection (Python’s standard library)</li>
 <li>Different sections (third-party packages)</li>
-<li>A catalog system (pip package manager)</li>
-<li>Multiple branches (virtual environments)</li>
+<li>A catalog system (a package manager — we use <code>uv</code>)</li>
+<li>Multiple branches (virtual environments / project folders)</li>
 </ul>
 <section id="in-more-detail" class="level2">
 <h2 class="anchored" data-anchor-id="in-more-detail">In more detail</h2>
@@ -459,14 +469,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Web frameworks (Django, Flask) → Technical manuals</li>
 <li>Machine learning packages (scikit-learn) → Advanced studies section</li>
 </ul></li>
-<li><p><strong>Package Manager (pip)</strong>: Works like the library’s catalog:</p>
+<li><p><strong>Package Manager (<code>uv</code>)</strong>: Works like the library’s catalog:</p>
 <ul>
 <li>Installing packages → Ordering new books</li>
 <li>Updating packages → Replacing with newer editions</li>
 <li>Uninstalling packages → Removing outdated books</li>
 <li>Dependencies → “You must read Book A before Book B”</li>
 </ul></li>
-<li><p><strong>Virtual Environments</strong>: Works like different library branches:</p>
+<li><p><strong>Project Environments</strong> (managed automatically by <code>uv</code>): Like different library branches:</p>
 <ul>
 <li>Each branch can have its own collection of books (packages)</li>
 <li>Different editions of the same book (package versions)</li>
@@ -484,20 +494,20 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>While we’ll practice some commands here, you’ll typically manage packages in your terminal or IDE.</p>
+<p>We use <code>uv</code> in this course for Python version management, virtual environments, and packages. See the separate guide for more details: <a href="../general/uv.html">uv setup</a>.</p>
 </div>
 </div>
 </section>
 </section>
 <section id="section-1---using-standard-libraries" class="level1">
 <h1>Section 1 - Using Standard Libraries</h1>
-<p>Before we start using packages, let’s take a look at Python’s standard libraries. Python comes with a set of <strong>standard libraries that are always available</strong>. You can use these libraries by simply importing them. For example, the <code>math</code> library provides mathematical functions like <code>sqrt</code> and <code>sin</code> and the <code>random</code> library provides functions to generate random numbers. You can import these libraries using the following syntax:</p>
-<div id="d13f395a" class="cell" data-execution_count="1">
+<p>Before we start using external packages, let’s take a look at Python’s standard libraries. Python comes with a set of <strong>standard libraries that are always available</strong>. You can use these libraries by simply importing them. For example, the <code>math</code> library provides mathematical functions like <code>sqrt</code> and <code>sin</code> and the <code>random</code> library provides functions to generate random numbers. You can import these libraries using the following syntax:</p>
+<div id="f58d5206" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>You can then use the functions provided by these libraries by calling them with the library name as a prefix. For example, the following code calculates the square root of 16.</p>
-<div id="fd27655f" class="cell" data-execution_count="2">
+<div id="9e5f52c6" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a_square_root <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The square root of 16 is </span><span class="sc">{</span>a_square_root<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -505,15 +515,15 @@ Note
 </div>
 </div>
 <p>The following code generates a random number between 0 and 1.</p>
-<div id="70f4537f" class="cell" data-execution_count="3">
+<div id="334698c1" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>a_random_number <span class="op">=</span> random.random()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"A random number is </span><span class="sc">{</span>a_random_number<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A random number is 0.8318783500766024!</code></pre>
+<pre><code>A random number is 0.40869986727665886!</code></pre>
 </div>
 </div>
 <p>We can also use the library to choose a random element from a list. For example, the following code chooses a random element from the list <code>['book1', 'book2', 'book3']</code>. Try it out by executing the cell multiple times.</p>
-<div id="a78a43a0" class="cell" data-execution_count="4">
+<div id="43acff5e" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>random_choice <span class="op">=</span> random.choice([<span class="st">'book1'</span>, <span class="st">'book2'</span>, <span class="st">'book3'</span>])</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"We chose </span><span class="sc">{</span>random_choice<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -521,30 +531,30 @@ Note
 </div>
 </div>
 <p>Sometimes, we only need one function from a library. In this case, we can use the <code>from</code> keyword to import only the specific function we need. For example, the following code imports only the <code>randint</code> function from the <code>random</code> library and uses it to generate a random integer between 1 and 10.</p>
-<div id="28f42284" class="cell" data-execution_count="5">
+<div id="2e4f763c" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> randint</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>a_random_integer <span class="op">=</span> randint(<span class="dv">1</span>, <span class="dv">10</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"A random integer between 1 and 10 is </span><span class="sc">{</span>a_random_integer<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A random integer between 1 and 10 is 1!</code></pre>
+<pre><code>A random integer between 1 and 10 is 8!</code></pre>
 </div>
 </div>
 <p>Other times, we might need to work with a library that has a rather long name. In this case, we can use the <code>as</code> keyword to give the library a shorter name. For example, the following code imports the <code>random</code> library and gives it the shorter name <code>rd</code>.</p>
-<div id="36029195" class="cell" data-execution_count="6">
+<div id="79d7a4c3" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random <span class="im">as</span> rd</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>a_random_integer <span class="op">=</span> rd.randint(<span class="dv">1</span>, <span class="dv">100</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Now, a random integer between 1 and 100 is </span><span class="sc">{</span>a_random_integer<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Now, a random integer between 1 and 100 is 38!</code></pre>
+<pre><code>Now, a random integer between 1 and 100 is 31!</code></pre>
 </div>
 </div>
 <section id="exercise-1.1---use-the-math-library" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.1---use-the-math-library">Exercise 1.1 - Use the math library</h2>
 <p>Use the <code>math</code> library to calculate the square root of 256. Call the result <code>square_root</code>.</p>
-<div id="08ef7ce4" class="cell" data-execution_count="7">
+<div id="24a23f5c" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="26f708db" class="cell" data-execution_count="8">
+<div id="b0f4673f" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> square_root <span class="op">==</span> <span class="dv">16</span></span>
@@ -555,7 +565,7 @@ Note
 <section id="exercise-1.2---use-the-random-library" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.2---use-the-random-library">Exercise 1.2 - Use the random library</h2>
 <p>Use the <code>random</code> library to generate a random number between 1 and 25. Call the result <code>random_number</code>.</p>
-<div id="460dd95f" class="cell" data-execution_count="10">
+<div id="42814112" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> random_number <span class="op">&gt;=</span> <span class="dv">1</span> <span class="kw">and</span> random_number <span class="op">&lt;=</span> <span class="dv">25</span></span>
@@ -564,68 +574,53 @@ Note
 </div>
 </section>
 </section>
-<section id="section-2---using-a-package-manager" class="level1">
-<h1>Section 2 - Using a package manager</h1>
-<p>Just as a library needs a system to track books (checkout system, catalog, etc.), Python uses pip or conda to manage its packages. Think of pip or conda as your library’s management system that:</p>
+<section id="section-2---using-a-package-manager-uv" class="level1">
+<h1>Section 2 - Using a package manager (<code>uv</code>)</h1>
+<p>Just as a library needs a system to track books (checkout system, catalog, etc.), Python projects need a tool to manage versions and dependencies. We use <code>uv</code> because it:</p>
 <ul>
 <li>Keeps track of what’s available (like searching the catalog)</li>
 <li>Handles “checkouts” (installing packages)</li>
 <li>Manages “returns” (uninstalling packages)</li>
 <li>Ensures you have the right “edition” (version management)</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Miniconda
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>As we have installed Miniconda in the lecture, <strong>we will use conda in this tutorial</strong>. If you work with a standard Python installation, you can use pip instead but the commands are slightly different.</p>
-</div>
-</div>
-<section id="exercise-2.1---check-your-package-manager-version" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-2.1---check-your-package-manager-version">Exercise 2.1 - Check your package manager version</h2>
-<p>Let’s start by checking which version of conda we have installed. We do so by running the following command in our terminal. Make sure, you are not working with python yet in the terminal, as this command is not available in the python shell. To open a new terminal in VS Code, you can press <code>ctrl + shift + p</code> and then type <code>Terminal: Create new terminal</code>. Then, run the following command:</p>
-<pre class="{bash}"><code>conda info</code></pre>
-<p>If you are not using Miniconda, you can use <code>pip</code> instead. Here, you can check the version of your package manager by running the following command in the terminal:</p>
-<pre class="{bash}"><code>pip --version</code></pre>
+<section id="exercise-2.1---check-your-uv-installation" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.1---check-your-uv-installation">Exercise 2.1 - Check your <code>uv</code> installation</h2>
+<p>Open a terminal (not the Python REPL) and run:</p>
+<pre class="{bash}"><code>uv --version</code></pre>
+<p>You should see a version number.</p>
+<p>Then confirm your Python version (after installing one via <code>uv</code> if needed):</p>
+<pre class="{bash}"><code>uv run python --version</code></pre>
 </section>
 </section>
 <section id="section-3---installing-packages" class="level1">
 <h1>Section 3 - Installing Packages</h1>
-<p>Installing packages is like ordering new books for your library branch. Just as a library might:</p>
+<p>Installing packages is like ordering new books for your library branch. With <code>uv</code> you typically:</p>
 <ul>
-<li>Order books from publishers (pip install from PyPI)</li>
-<li>Get specific editions (version specifications)</li>
-<li>Check for space on shelves (system requirements)</li>
-<li>Ensure books don’t conflict (dependency management)</li>
+<li>Initialize a project once (<code>uv init</code>)</li>
+<li>Add dependencies (<code>uv add packagename</code>)</li>
+<li>Remove them if not needed (<code>uv remove packagename</code>)</li>
+<li>Sync a project copied from elsewhere (<code>uv sync</code>)</li>
+<li>Update dependencies (<code>uv update</code>)</li>
 </ul>
-<p>Luckily most of that is handled for you and not that important in this basic introduction to python. Installing packages in Python is straightforward using <code>conda install packagename</code> if you are using Miniconda. If you are not using Miniconda, you can use <code>pip install packagename</code> instead.</p>
-<section id="exercise-3.1---install-pandas" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-3.1---install-pandas">Exercise 3.1 - Install pandas</h2>
-<p>Let’s practice by installing pandas, a popular package for data analysis. Execute the following command in your terminal and make sure you are not in the python shell.</p>
-<pre class="{bash}"><code>conda install pandas</code></pre>
-<p>Or, if you are not using Miniconda, you can use the following command.</p>
-<pre class="{bash}"><code>pip install pandas</code></pre>
-<p>You can test if the installation was successful by running the following code.</p>
-<div id="079d1256" class="cell" data-execution_count="11">
+<p>Under the hood <code>uv</code> creates (and reuses) a virtual environment for the project. Luckily most of that is handled for you and not that important in this basic introduction to Python.</p>
+<section id="exercise-3.1---add-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3.1---add-pandas">Exercise 3.1 - Add <code>pandas</code></h2>
+<p>Inside a <code>uv</code>-initialized project directory, run:</p>
+<pre class="{bash}"><code>uv add pandas</code></pre>
+<p>This: - Resolves dependencies - Adds <code>pandas</code> to <code>pyproject.toml</code> - Installs it into the project’s virtual environment</p>
+<p>You can test if the installation was successful by running:</p>
+<div id="bfd2cba8" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pandas</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"pandas installed successfully!"</span>)</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">ImportError</span>:</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"pandas was not installed correctly"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pandas</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"pandas installed successfully!"</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">ImportError</span>:</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"pandas was not installed correctly"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-</section>
-</section>
-<section id="section-4---virtual-environments" class="level1">
-<h1>Section 4 - Virtual Environments</h1>
+<p>(If you see an import error, verify you are inside the project folder you initialized with <code>uv init</code>.)</p>
 <p>Virtual environments are like having different library branches. Each branch can have:</p>
 <ul>
 <li>Its own collection of books (packages)</li>
@@ -638,27 +633,19 @@ Note
 <li>Each branch can be optimized for its community (project-specific dependencies)</li>
 <li>You can experiment without affecting the main collection (development safety)</li>
 </ul>
-<p>For now, you don’t need to worry about virtual environments. This is more advanced and thus not necessary for this tutorial (or lecture). But it’s good to know that they exist and that you can use them to manage your packages. Still, if you ever want to check them out, you can use the following command to create a new virtual environment with a certain name and Python version.</p>
-<pre class="{bash}"><code>conda create -n myenv python=3.10</code></pre>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You can replace <code>myenv</code> with any name you want and <code>python=3.10</code> with the Python version you want.</p>
-</div>
-</div>
-<p>To activate the environment later on, you can use the following command:</p>
-<pre class="{bash}"><code>conda activate myenv</code></pre>
+<p>For now, you don’t need to worry about virtual environments except for the one we created now. This is more advanced and thus not necessary for this tutorial (or lecture). But it’s good to know that they exist and that you can use them to manage your packages.</p>
+</section>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>Congratulations! You’ve learned about Python package management through the lens of library caching. Remember, just like libraries use caching to make popular books more accessible, Python uses package management to make useful code more accessible!</p>
+<p>Great work! You learned how Python projects organize and access code via:</p>
+<ul>
+<li>The standard library</li>
+<li>Third-party packages</li>
+<li>A modern package &amp; environment manager (<code>uv</code>)</li>
+<li>Isolated project environments for reliability</li>
+</ul>
+<p>Treat each project like its own library branch: well‑labeled, independent, and easy to maintain.</p>
 </section>
 <section id="solutions" class="level1">
 <h1>Solutions</h1>

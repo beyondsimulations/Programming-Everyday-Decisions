@@ -29,16 +29,9 @@
 # > **Note**
 # >
 # > Before starting, ensure you have the `pandas` library installed.
-# > Depending on your operating system and installation method, you might
-# > need to use `pip`, `pip3` or `conda` to install it via the command
-# > line.
 # >
 # > ``` {bash}
-# > pip install pandas
-# > ```
-# >
-# > ``` {bash}
-# > pip3 install pandas
+# > uv install pandas
 # > ```
 # >
 # > ``` {bash}

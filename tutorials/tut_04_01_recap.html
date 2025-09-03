@@ -365,6 +365,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../general/uv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../general/literature.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Literature</span></a>
   </div>
@@ -417,10 +423,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -450,10 +461,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exercise-1.1---create-menu-lists" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.1---create-menu-lists">Exercise 1.1 - Create Menu Lists</h2>
 <p>Create two lists: 1. <code>drinks</code> containing at least 5 different drink names of your choice 2. <code>prep_times</code> containing the preparation time (in minutes) for each drink in the same order</p>
-<div id="ba3ae013" class="cell" data-execution_count="1">
+<div id="4f1eb131" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="ba115dc6" class="cell" data-execution_count="2">
+<div id="bf255ef5" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -500,10 +511,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>If you want to iterate over the <code>drinks</code> list, you can use the <code>len()</code> function inside of the <code>range()</code> function and use the index to get the corresponding drink</li>
 <li>Return the name of the drink with the shortest preparation time</li>
 </ol>
-<div id="807c54c4" class="cell" data-execution_count="3">
+<div id="8ae7b8ca" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="b811cb50" class="cell" data-execution_count="4">
+<div id="33748c03" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -521,7 +532,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="section-3---order-scheduling" class="level1">
 <h1>Section 3 - Order Scheduling</h1>
 <p>Sometimes we need to track both the order of tasks and their deadlines. We can use lists of lists for this. Remember the format of a list of lists from the previous lecture? It looks like this:</p>
-<div id="08dd4666" class="cell" data-execution_count="5">
+<div id="73af9014" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>[</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Customer1"</span>, <span class="st">"Drink1"</span>],</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Customer2"</span>, <span class="st">"Drink2"</span>],</span>
@@ -558,10 +569,10 @@ Tip
 </ul>
 </div>
 </div>
-<div id="0185e0d3" class="cell" data-execution_count="6">
+<div id="d84c7819" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="fd191c86" class="cell" data-execution_count="7">
+<div id="ebf63148" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -603,7 +614,7 @@ Tip
 </ul>
 </div>
 </div>
-<div id="4858025b" class="cell" data-execution_count="8">
+<div id="2578fa18" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -615,7 +626,7 @@ Tip
 <span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>]</span>
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(find_earliest_deadline(test_orders))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="aa32334c" class="cell" data-execution_count="9">
+<div id="7e2db5ce" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
