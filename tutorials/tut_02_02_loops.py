@@ -10,7 +10,7 @@
 #     display_name: Python 3 (ipykernel)
 #     language: python
 #     name: python3
-#     path: /Users/vlcek/Documents/git-projects/Programming-Everyday-Decisions/.venv/share/jupyter/kernels/python3
+#     path: /Users/vlcek/Documents/git-teaching/Programming-Everyday-Decisions/.venv/share/jupyter/kernels/python3
 # ---
 
 # %% [markdown]

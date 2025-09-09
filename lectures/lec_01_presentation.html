@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-89cddb112380b3222562b561b148d341.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.19">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a6e161b2431e1f94a14e0f5d32135a3c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
   <title>Programming: Everyday Decision-Making Algorithms – Lecture I - Optimal Stopping</title>
@@ -95,7 +95,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-073661835fecda96e0ed3cfe92341d70.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-707dfb535249e6eca862c92c22a86177.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -209,410 +209,6 @@ Dr.&nbsp;Tobias Vlćek
 
 </section>
 <section>
-<section id="about-this-course" class="title-slide slide level1 title center">
-<h1><span class="flow">About this Course</span></h1>
-
-</section>
-<section id="teaching-team" class="slide level2">
-<h2>Teaching Team</h2>
-<div class="quarto-layout-panel" data-layout="[[1,1]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://beyondsimulations.com/wp-content/uploads/2025/09/20250820-Tobias-Vlcek-Original-5-2.png"></p>
-<figcaption><strong>Dr.&nbsp;Tobias Vlcek</strong></figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../images/nils-roemer.jpeg"></p>
-<figcaption><strong>Dr.&nbsp;Nils Roemer</strong></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="about-me" class="slide level2">
-<h2>About me</h2>
-<ul>
-<li class="fragment"><strong>Field:</strong> Optimizing and simulating complex systems</li>
-<li class="fragment"><strong>Languages:</strong> of choice: Julia, Python and Rust</li>
-<li class="fragment"><strong>Interest:</strong> Modelling, Simulations, Machine Learning</li>
-<li class="fragment"><strong>Teaching:</strong> OR, Algorithms, and Programming</li>
-<li class="fragment"><strong>Contact:</strong> <a href="mailto:vlcek@beyondsimulations.com">vlcek@beyondsimulations.com</a></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>We really appreciate active participation and interaction!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="course-outline" class="slide level2">
-<h2>Course Outline</h2>
-<ul>
-<li><strong>I:</strong> Optimal Stopping</li>
-<li><strong>II:</strong> Explore &amp; Exploit</li>
-<li><strong>III:</strong> Caching</li>
-<li><strong>IV:</strong> Scheduling</li>
-<li><strong>V:</strong> Randomness</li>
-<li><strong>VI:</strong> Computational Kindness</li>
-</ul>
-</section>
-<section id="participation" class="slide level2">
-<h2>Participation</h2>
-<ul>
-<li>Try <strong>actively participating</strong> in this course</li>
-<li>You will find it much <span class="highlight">(!)</span> easier and more fun</li>
-<li>Lecture based on the book <span class="highlight">Algorithms to live by</span><sup>1</sup></li>
-<li>Material and slides are hosted online: <a href="https://beyondsimulations.github.io/Programming-Everyday-Decisions/">beyondsimulations.github.io/Programming-Everyday-Decisions</a></li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.</p></li></ol></aside></section>
-<section id="teaching" class="slide level2">
-<h2>Teaching</h2>
-<ul>
-<li><strong>Lecture:</strong> Presentation and discussion of algorithms related to everyday decision-making</li>
-<li><strong>Tutorial:</strong> Step-by-step assignments to be solved and discussed together in groups</li>
-<li><strong>Difficulty:</strong> Strongly depends on your background and programming experience</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>No worries, we will help you out if you have any questions!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="passing-the-course" class="slide level2">
-<h2>Passing the Course</h2>
-<ul>
-<li><strong>Pass/fail course</strong> without exams</li>
-<li><span class="highlight">75% attendance</span> required for passing the course</li>
-<li>Hand in the assignments of at least <strong>two lectures</strong></li>
-<li><strong>Short presentation</strong> and discussion at the end</li>
-<li>You work together in groups of <strong>three students</strong></li>
-</ul>
-</section>
-<section id="handing-in-assignments" class="slide level2">
-<h2>Handing in Assignments</h2>
-<ul>
-<li>Each student group submits <strong>one solution</strong></li>
-<li>Provide us <strong>all</strong> working notebooks of the lecture</li>
-<li>Hand in is due at the <strong>beginning of the next lecture</strong></li>
-<li>At least <strong>50 %</strong> have to be correct to pass</li>
-<li><span class="highlight">You have to pass at least twice</span></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>This is just in order to provide you with working solutions after each deadline.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="learning-python" class="slide level2">
-<h2>Learning Python</h2>
-<p>We will mostly <strong>not cover Python during the lectures!</strong></p>
-<div class="fragment">
-<p><span class="question">Question</span>: Anybody know why?</p>
-</div>
-<div class="fragment">
-<ul>
-<li>In our experience, the best way to learn is by <strong>doing</strong>!</li>
-<li>Here, we will focus on decision-making algorithms</li>
-<li>You will learn Python by <span class="highlight">doing the tutorials</span></li>
-</ul>
-</div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Don’t worry, we will help you out if you have any questions!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="difficulty-of-the-course" class="slide level2">
-<h2>Difficulty of the Course</h2>
-<ul>
-<li>At first it might be <span class="highlight">a little bit overwhelming</span></li>
-<li>Programming is similar to learning a <strong>new language</strong></li>
-<li>First, you have to <strong>get used to it</strong> and learn words</li>
-<li><strong>Later</strong>, you’ll be able to apply it and see results</li>
-<li>Important: <em>Practice, practice, practice!</em></li>
-</ul>
-</section>
-<section id="goals-of-the-course" class="slide level2">
-<h2>Goals of the Course</h2>
-<ul>
-<li>Learn the <span class="highlight">basics of programming</span></li>
-<li>Learn about <strong>algorithmic thinking</strong></li>
-<li>Be able to <strong>apply</strong> methods and concepts</li>
-<li><strong>Solve practical problems</strong> with algorithms</li>
-</ul>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>We are convinced that this course will be quite interesting and <strong>teach you more for your daily life</strong> than most other courses!</p>
-</div>
-</div>
-</div>
-</section>
-<section id="why-python" class="slide level2">
-<h2>Why Python?</h2>
-<ul>
-<li><strong>Origins</strong>: Conceived in late 1980s as a teaching and scripting language</li>
-<li><strong>Simple Syntax</strong>: Python’s syntax is mostly straightforward and very easy to learn</li>
-<li><strong>Versatility</strong>: Used in web development, data analysis, artificial intelligence, and more</li>
-<li><strong>Community Support</strong>: A large community of users worldwide and extensive documentation</li>
-</ul>
-</section>
-<section id="help-from-ai" class="slide level2">
-<h2>Help from AI</h2>
-<ul>
-<li>You are <span class="highlight">allowed to use AI</span> in the course, we use it as well (e.g., Claude, ChatGPT, LLama3 …)</li>
-<li>These <strong>tools are great</strong> for learning Python!</li>
-<li>Can help you a lot <strong>to get started</strong> with programming</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>But you should <em>not</em> simply use them to <em>replace</em> your learning.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="how-to-learn-programming" class="title-slide slide level1 title center">
-<h1><span class="flow">How to learn programming</span></h1>
-
-</section>
-<section id="our-recommendation" class="slide level2">
-<h2>Our Recommendation</h2>
-<ol type="1">
-<li><span class="highlight">Be present</span>: Attend the lecture and solve the tutorials</li>
-<li><span class="highlight">Put in some work</span>: Repeat code and try to understand it</li>
-<li><span class="highlight">Do coding</span>: Run code, play around, modify, and solve</li>
-</ol>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Great resources to start are books and small challenges. You can find a list of book recommendations at the end of the lecture. Small challenges to solve can for example be found on <a href="https://www.codewars.com/">Codewars</a>.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="dont-give-up" class="slide level2">
-<h2>Don’t give up!</h2>
-<ul>
-<li>Programming is <span class="highlight">problem solving</span>, don’t get <strong>frustrated</strong>!</li>
-<li>Expect to <strong>stretch</strong> your comfort zone</li>
-</ul>
-<center>
-<p><br> <iframe src="https://giphy.com/embed/FKsCiEI5pFvIQ" width="480" height="360" style="" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></p>
-<center>
-</center></center></section></section>
-<section>
-<section id="setting-up-python" class="title-slide slide level1 title center">
-<h1><span class="flow">Setting up Python</span></h1>
-
-</section>
-<section id="the-setup" class="slide level2">
-<h2>The Setup</h2>
-<ul>
-<li>We will use <a href="https://jupyter.org/">Jupyter Notebooks</a> for the tutorials</li>
-<li>Allow to <strong>combine code and text</strong> in one document</li>
-<li>We will use <a href="https://code.visualstudio.com/">Visual Studio Code</a> as an IDE</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>IDE = Integrated Development Environment</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="install-python" class="slide level2">
-<h2>Install Python</h2>
-<ul>
-<li>Sources are the <a href="https://www.python.org/downloads/">Python website</a> or <a href="https://www.anaconda.com/">Anaconda</a></li>
-<li>On macOS, Python is often <strong>already installed</strong></li>
-<li>If not, I recommend <a href="https://docs.anaconda.com/miniconda/#quick-command-line-install">Miniconda</a> (via command line)</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>If the installation does not work, <strong>let us know!</strong></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="install-vs-code" class="slide level2">
-<h2>Install VS Code</h2>
-<ul>
-<li>Download and install from the <a href="https://code.visualstudio.com/">website</a></li>
-<li>Built for <strong>Windows, Linux and Mac</strong></li>
-<li>Install the <strong>Python</strong> and <strong>Jupyter</strong> extension</li>
-<li><span class="highlight">Now you are ready to go!</span></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Unsure on how to work with VS Code and notebooks? Take a look at the <a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">tutorial</a> from VS Code and/or ask us! We are happy to help you out!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="python-on-ipads" class="slide level2">
-<h2>Python on iPads</h2>
-<ul>
-<li>You <strong>can run Python scripts</strong> on your iPad</li>
-<li>But it is <span class="highlight">not recommended</span> for the course</li>
-<li>However, you could use <a href="https://apps.apple.com/us/app/juno-python-ide/id1440445498">Juno</a> <strong>if you want to</strong></li>
-<li>It works <strong>locally</strong> on your iPad and can run notebooks</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Caution</strong></p>
-</div>
-<div class="callout-content">
-<p>Not all packages available in Python are available here, thus you might need a computer to solve certain problems. For our course, this should not be a problem.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="your-first-code" class="title-slide slide level1 title center">
-<h1><span class="flow">Your first code</span></h1>
-
-</section>
-<section id="hello-world" class="slide level2">
-<h2>Hello, World!</h2>
-<p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="d42e2cc8" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># This is a comment in Python</span></span>
-<span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell fragment" data-execution_count="1">
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello, World!</code></pre>
-</div>
-</div>
-<div class="fragment">
-<p>Run it with the green ‘run’ button or by pressing <span class="task">F5</span>!</p>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>“Hello world” is a classic example to start with. Often used as a test to check if your computer is working properly and that you have installed the necessary software.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="section" class="slide level2 loud-slide">
-<h2></h2>
-<div class="r-fit-text">
-<p>Any questions</p>
-<p>so far?</p>
-</div>
-</section></section>
-<section>
 <section id="optimal-stopping" class="title-slide slide level1 title center">
 <h1><span class="flow">Optimal Stopping</span></h1>
 
@@ -629,7 +225,7 @@ Dr.&nbsp;Tobias Vlćek
 </ul></li>
 </ul>
 </section>
-<section id="section-1" class="slide level2 loud-slide">
+<section id="section" class="slide level2 loud-slide">
 <h2></h2>
 <div class="r-fit-text">
 <p>Anybody an</p>
@@ -713,7 +309,7 @@ Dr.&nbsp;Tobias Vlćek
 </ol>
 </div>
 </section>
-<section id="section-2" class="slide level2 loud-slide">
+<section id="section-1" class="slide level2 loud-slide">
 <h2></h2>
 <div class="r-fit-text">
 <p>Ideas?</p>
@@ -729,7 +325,7 @@ Dr.&nbsp;Tobias Vlćek
 <li class="fragment">Chance of selecting the best candidate is <strong>37 %</strong><sup>1</sup></li>
 <li class="fragment">Thus, we can fail with <strong>63 %</strong>!</li>
 </ol>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>Large number of candidates! With a small number of candidates, we can do even better.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Large number of candidates! With a small number of candidates, we can do even better.</p></li></ol></aside></section>
 <section id="step-by-step-approximation" class="slide level2">
 <h2>Step-by-step Approximation</h2>
 <ul>
@@ -754,20 +350,20 @@ Dr.&nbsp;Tobias Vlćek
 <li><code>e</code> is the base of the natural logarithm (≈ 2.718)</li>
 <li>This comes from maximizing the probability of success</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</p></li></ol></aside></section>
 <section id="computing-the-number" class="slide level2">
 <h2>Computing the number</h2>
-<div id="75d3d239" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> math</span>
-<span id="cb3-2"><a></a></span>
-<span id="cb3-3"><a></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
-<span id="cb3-4"><a></a><span class="bu">print</span>(<span class="ss">f"Percentage of options to look at: </span><span class="sc">{</span>percentage<span class="sc">:.3f}</span><span class="ss">%"</span>)</span>
-<span id="cb3-5"><a></a></span>
-<span id="cb3-6"><a></a>candidates <span class="op">=</span> <span class="dv">20</span></span>
-<span id="cb3-7"><a></a>lookout_phase <span class="op">=</span> candidates<span class="op">/</span>math.e</span>
-<span id="cb3-8"><a></a><span class="bu">print</span>(<span class="ss">f"Look at first </span><span class="sc">{</span>lookout_phase<span class="sc">:.3f}</span><span class="ss"> candidates"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="d1365db8" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> math</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
+<span id="cb1-4"><a></a><span class="bu">print</span>(<span class="ss">f"Percentage of options to look at: </span><span class="sc">{</span>percentage<span class="sc">:.3f}</span><span class="ss">%"</span>)</span>
+<span id="cb1-5"><a></a></span>
+<span id="cb1-6"><a></a>candidates <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb1-7"><a></a>lookout_phase <span class="op">=</span> candidates<span class="op">/</span>math.e</span>
+<span id="cb1-8"><a></a><span class="bu">print</span>(<span class="ss">f"Look at first </span><span class="sc">{</span>lookout_phase<span class="sc">:.3f}</span><span class="ss"> candidates"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="cell fragment" data-execution_count="2">
+<div class="cell fragment" data-execution_count="1">
 <div class="cell-output cell-output-stdout">
 <pre><code>Percentage of options to look at: 0.368%
 Look at first 7.358 candidates</code></pre>
@@ -792,11 +388,11 @@ Look at first 7.358 candidates</code></pre>
 <section id="geometric-distribution" class="slide level2">
 <h2>Geometric Distribution</h2>
 <p>Let’s visualize the success of a simulation with 20 candidates:</p>
-<div id="6bea3987" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="3">
+<div id="000709a6" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
-<p><img data-src="lec_01_optimal_stopping_files/figure-revealjs/cell-4-output-1.png" width="1118" height="541"></p>
+<p><img data-src="lec_01_optimal_stopping_files/figure-revealjs/cell-3-output-1.png" width="1118" height="541"></p>
 </figure>
 </div>
 </div>
@@ -874,7 +470,7 @@ Look at first 7.358 candidates</code></pre>
 </ul>
 </div>
 </section>
-<section id="section-3" class="slide level2 loud-slide">
+<section id="section-2" class="slide level2 loud-slide">
 <h2></h2>
 <div class="r-fit-text">
 <p>Questions?</p>
@@ -908,7 +504,7 @@ We now have covered a brief introduction into optimal stopping and seen how to s
 <li>Christian, B., &amp; Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.<sup>1</sup></li>
 <li>Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn4"><p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.</p></li></ol></aside></section>
 <section id="books-on-programming" class="slide level2">
 <h2>Books on Programming</h2>
 <ul>
@@ -1201,13 +797,14 @@ We now have covered a brief introduction into optimal stopping and seen how to s
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

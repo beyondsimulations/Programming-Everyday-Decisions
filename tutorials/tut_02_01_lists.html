@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.19">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -72,14 +72,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8ea60c7e76748fcf522ba6e61eae8ab9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-cde9a3e562fdce16a97e1d495d6cbe44.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8ea60c7e76748fcf522ba6e61eae8ab9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46d4eb725d7d2b8695ccd307f5b3c105.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-197188da37a79cb9418c4f38e6d23e8d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46d4eb725d7d2b8695ccd307f5b3c105.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4de6ac40f06ad80003b7583625b7398a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-12a23c7ce0c835c0b7991cf340bbb725.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-4de6ac40f06ad80003b7583625b7398a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-22c5f25fcfc5fd5610dfced435a3b672.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f088ff709e1277e0222aba4cda41ab4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-22c5f25fcfc5fd5610dfced435a3b672.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -171,6 +171,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/lec_00_introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/lec_01_optimal_stopping.html" class="sidebar-item-text sidebar-link">
@@ -468,7 +474,7 @@ Note
 <li>Access restaurants by their position in our list</li>
 </ul>
 <p>Here are some examples:</p>
-<div id="4d2087e3" class="cell" data-execution_count="1">
+<div id="4f50fc59" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a list of restaurant ratings</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ratings <span class="op">=</span> [<span class="fl">4.5</span>, <span class="fl">3.8</span>, <span class="fl">4.2</span>, <span class="fl">4.7</span>, <span class="fl">3.9</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -488,7 +494,7 @@ Note
 <li><code>insert()</code> adds at a specific position</li>
 </ul></li>
 </ol>
-<div id="b840b671" class="cell" data-execution_count="2">
+<div id="518d926e" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding a new restaurant</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>restaurants <span class="op">=</span> [<span class="st">"Pasta Place"</span>, <span class="st">"Sushi Bar"</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>restaurants.append(<span class="st">"Pizza Palace"</span>) <span class="co"># Adds to the end</span></span>
@@ -509,7 +515,7 @@ Note
 <li><code>remove()</code> removes a specific item</li>
 </ul></li>
 </ol>
-<div id="b2b4f091" class="cell" data-execution_count="3">
+<div id="9d77649a" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing the last restaurant</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>restaurants <span class="op">=</span> [<span class="st">"Pasta Place"</span>, <span class="st">"Taco Shop"</span>, <span class="st">"Sushi Bar"</span>, <span class="st">"Pizza Palace"</span>]</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>restaurants.pop() <span class="co"># Removes and returns the last item</span></span>
@@ -531,7 +537,7 @@ Note
 <li><code>[-1]</code> gives you the last item</li>
 </ul></li>
 </ol>
-<div id="cc7299b4" class="cell" data-execution_count="4">
+<div id="6fb5cecb" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>restaurants <span class="op">=</span> [<span class="st">"Pasta Place"</span>, <span class="st">"Sushi Bar"</span>, <span class="st">"Burger Joint"</span>]</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>first_choice <span class="op">=</span> restaurants[<span class="dv">0</span>] <span class="co"># Gets "Pasta Place"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>last_choice <span class="op">=</span> restaurants[<span class="op">-</span><span class="dv">1</span>] <span class="co"># Gets "Burger Joint"</span></span>
@@ -559,10 +565,10 @@ Tip
 <li>Put restaurant names in quotes (they’re strings!)</li>
 <li>Separate items with commas</li>
 </ul>
-<div id="04ef1be1" class="cell" data-execution_count="5">
+<div id="4921858d" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="091254ca" class="cell" data-execution_count="6">
+<div id="8fcffeba" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -576,10 +582,10 @@ Tip
 <section id="exercise-1.2---add-a-new-discovery" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.2---add-a-new-discovery">Exercise 1.2 - Add a New Discovery</h2>
 <p>You’ve discovered a new restaurant called “The Golden Fork”. Add it to your <code>favorite_spots</code> list using the <code>append()</code> method. Think of this as writing a new entry in your restaurant diary!</p>
-<div id="678b18a7" class="cell" data-execution_count="7">
+<div id="212ed837" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="c47dc575" class="cell" data-execution_count="8">
+<div id="21bef27d" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -592,10 +598,10 @@ Tip
 <section id="exercise-1.3---remove-a-restaurant" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.3---remove-a-restaurant">Exercise 1.3 - Remove a Restaurant</h2>
 <p>The last restaurant in your list closed down. Remove it using the <code>pop()</code> method.</p>
-<div id="7cabf7f0" class="cell" data-execution_count="9">
+<div id="d3a5f6d5" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="69d64d46" class="cell" data-execution_count="10">
+<div id="f2577f4e" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -609,7 +615,7 @@ Tip
 <section id="section-2---nested-lists" class="level1">
 <h1>Section 2 - Nested Lists</h1>
 <p>Sometimes we need to store multiple pieces of information about each restaurant. We can use lists inside lists (nested lists) for this! Think of it as a detailed restaurant spreadsheet:</p>
-<div id="2569003a" class="cell" data-execution_count="11">
+<div id="232af0e1" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Restaurant data: [name, rating, times_visited]</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>restaurant_data <span class="op">=</span> [</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>[<span class="st">"Pasta Place"</span>, <span class="fl">4.5</span>, <span class="dv">3</span>], <span class="co"># Each inner list is one restaurant's data</span></span>
@@ -642,7 +648,7 @@ Tip
 <li>Look at each restaurant’s rating (position 1 in each inner list)</li>
 <li>Keep track of the highest rating and its restaurant name</li>
 </ol>
-<div id="6d54c664" class="cell" data-execution_count="12">
+<div id="4cc05ac4" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>restaurant_data <span class="op">=</span> [</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Pasta Place"</span>, <span class="fl">4.5</span>, <span class="dv">3</span>],</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Sushi Bar"</span>, <span class="fl">4.2</span>, <span class="dv">1</span>],</span>
@@ -650,7 +656,7 @@ Tip
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>]</span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="4a48d58d" class="cell" data-execution_count="13">
+<div id="7aaa07c3" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -664,7 +670,7 @@ Tip
 <section id="exercise-2.2---create-a-categorized-restaurant-list" class="level1">
 <h1>Exercise 2.2 - Create a Categorized Restaurant List</h1>
 <p>Create a nested list <code>categorized_restaurants</code> where each inner list contains: 1. Two cuisine categories - here <code>"Italian"</code> and <code>"Japanese"</code> 2. A list of restaurant names with two entries for each category</p>
-<div id="a7ebf26e" class="cell" data-execution_count="14">
+<div id="f64a00a0" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example structure:</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># [</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">#    ["German", ["Brauhaus", "Bierhaus"]],</span></span>
@@ -673,7 +679,7 @@ Tip
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="aab3a674" class="cell" data-execution_count="15">
+<div id="7f8ed431" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -688,7 +694,7 @@ Tip
 <section id="section-3---tuples-for-fixed-data" class="level1">
 <h1>Section 3 - Tuples for Fixed Data</h1>
 <p>While lists are great for data that changes (like your favorite restaurants), sometimes we need to store data that shouldn’t change (like a restaurant’s location or founding date). That’s where tuples come in! Tuples are like lists but immutable (unchangeable). They use parentheses <code>()</code> instead of square brackets <code>[]</code>:</p>
-<div id="17ecc8c4" class="cell" data-execution_count="16">
+<div id="62561577" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Restaurant info that won't change</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>restaurant_info <span class="op">=</span> (<span class="st">"Pasta Place"</span>, <span class="st">"Italian"</span>, <span class="st">"Downtown"</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> restaurant_info[<span class="dv">0</span>]  <span class="co"># Access like lists</span></span>
@@ -719,10 +725,10 @@ Tip
 <section id="exercise-3.1---create-restaurant-profile" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-3.1---create-restaurant-profile">Exercise 3.1 - Create Restaurant Profile</h2>
 <p>Create a tuple <code>restaurant_profile</code> with three elements: restaurant name, cuisine type, and founding year. You can freely choose the values for these elements, just make sure they are of the correct type.</p>
-<div id="2cf3b1a0" class="cell" data-execution_count="17">
+<div id="b1dd4f78" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="3fb5fe63" class="cell" data-execution_count="18">
+<div id="6a8313f5" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -814,13 +820,14 @@ Tip
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
