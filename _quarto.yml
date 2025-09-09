@@ -29,6 +29,8 @@ website:
       - text: "***"
       - section: "01 Optimal Stopping"
         contents:
+          - text: "Introduction"
+            href: lectures/lec_00_introduction.qmd
           - text: "Lecture"
             href: lectures/lec_01_optimal_stopping.qmd
           - text: "01-01 - Variables"

@@ -170,3 +170,5 @@ solutions
 students
 _repo-md
 animations
+
+**/*.quarto_ipynb
