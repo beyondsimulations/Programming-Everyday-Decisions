@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -390,11 +355,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
     </ul>
     </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -420,14 +381,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#setting-up-python" id="toc-setting-up-python" class="nav-link" data-scroll-target="#setting-up-python"><span class="flow">Setting up Python</span></a>
   <ul class="collapse">
-  <li><a href="#the-setup" id="toc-the-setup" class="nav-link" data-scroll-target="#the-setup">The Setup</a></li>
-  <li><a href="#installing-python-with-uv" id="toc-installing-python-with-uv" class="nav-link" data-scroll-target="#installing-python-with-uv">Installing Python with <code>uv</code></a></li>
   <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link" data-scroll-target="#install-vs-code">Install VS Code</a></li>
-  <li><a href="#python-on-ipads" id="toc-python-on-ipads" class="nav-link" data-scroll-target="#python-on-ipads">Python on iPads</a></li>
+  <li><a href="#what-is-an-ide" id="toc-what-is-an-ide" class="nav-link" data-scroll-target="#what-is-an-ide">What is an IDE?</a></li>
+  <li><a href="#installation-of-python-with-uv" id="toc-installation-of-python-with-uv" class="nav-link" data-scroll-target="#installation-of-python-with-uv">Installation of Python with <code>uv</code></a></li>
   </ul></li>
-  <li><a href="#your-first-code" id="toc-your-first-code" class="nav-link" data-scroll-target="#your-first-code"><span class="flow">Your first code</span></a>
+  <li><a href="#using-notebooks-with-uv" id="toc-using-notebooks-with-uv" class="nav-link" data-scroll-target="#using-notebooks-with-uv"><span class="flow">Using Notebooks with uv</span></a>
   <ul class="collapse">
-  <li><a href="#hello-world" id="toc-hello-world" class="nav-link" data-scroll-target="#hello-world">Hello, World!</a></li>
+  <li><a href="#quick-check" id="toc-quick-check" class="nav-link" data-scroll-target="#quick-check">Quick Check</a></li>
+  <li><a href="#using-notebooks" id="toc-using-notebooks" class="nav-link" data-scroll-target="#using-notebooks">Using Notebooks</a></li>
+  <li><a href="#working-with-notebooks" id="toc-working-with-notebooks" class="nav-link" data-scroll-target="#working-with-notebooks">Working with Notebooks</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#the-end" id="toc-the-end" class="nav-link" data-scroll-target="#the-end">The End</a></li>
   </ul></li>
@@ -439,6 +401,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/lectures/lec_00_introduction.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/lectures/lec_00_introduction.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lec_00_introduction.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="lec_00_presentation.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -730,12 +696,13 @@ Tip
 </section>
 <section id="setting-up-python" class="level1 title">
 <h1 class="title"><span class="flow">Setting up Python</span></h1>
-<section id="the-setup" class="level2">
-<h2 class="anchored" data-anchor-id="the-setup">The Setup</h2>
+<section id="install-vs-code" class="level2">
+<h2 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h2>
 <ul>
-<li>We will use <a href="https://jupyter.org/">Jupyter Notebooks</a> for the tutorials</li>
-<li>Allow to <strong>combine code and text</strong> in one document</li>
-<li>We will use <a href="https://code.visualstudio.com/">Visual Studio Code</a> as an IDE</li>
+<li>Download and install from the <a href="https://code.visualstudio.com/">website</a></li>
+<li>Built for <strong>Windows, Linux and Mac</strong></li>
+<li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter</a> extension</li>
+<li><span class="highlight">Now you are ready to go!</span></li>
 </ul>
 <p>. . .</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -748,12 +715,24 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>IDE = Integrated Development Environment</p>
+<p>Unsure on how to work with VS Code and notebooks? Ask us! We are happy to help you out!</p>
 </div>
 </div>
 </section>
-<section id="installing-python-with-uv" class="level2">
-<h2 class="anchored" data-anchor-id="installing-python-with-uv">Installing Python with <code>uv</code></h2>
+<section id="what-is-an-ide" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-an-ide">What is an IDE?</h2>
+<ul>
+<li>Integrated Development Environment <code>=</code> application</li>
+<li>It allows you to write, run and debug code scripts</li>
+<li>Other IDEs include for example:
+<ul>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> from JetBrains</li>
+<li><a href="https://zed.dev/">Zed</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="installation-of-python-with-uv" class="level2">
+<h2 class="anchored" data-anchor-id="installation-of-python-with-uv">Installation of Python with <code>uv</code></h2>
 <ul>
 <li>We will use <code>uv</code> to install and manage Python versions</li>
 <li>It works on Windows, Mac and Linux</li>
@@ -775,13 +754,53 @@ Tip
 </div>
 </div>
 </section>
-<section id="install-vs-code" class="level2">
-<h2 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h2>
+</section>
+<section id="using-notebooks-with-uv" class="level1 title">
+<h1 class="title"><span class="flow">Using Notebooks with uv</span></h1>
+<section id="quick-check" class="level2">
+<h2 class="anchored" data-anchor-id="quick-check">Quick Check</h2>
 <ul>
-<li>Download and install from the <a href="https://code.visualstudio.com/">website</a></li>
-<li>Built for <strong>Windows, Linux and Mac</strong></li>
-<li>Install the <strong>Python</strong> and <strong>Jupyter</strong> extension</li>
-<li><span class="highlight">Now you are ready to go!</span></li>
+<li>Have you installed <code>uv</code> and initialized the project?</li>
+<li>Great! Before we continue, check the following:
+<ul>
+<li>[] You have a folder for the course</li>
+<li>[] You have initialized <code>uv</code> with <code>uv init</code> inside the folder</li>
+<li>[] You can see a file called <code>pyproject.toml</code> in the folder</li>
+</ul>
+. . .</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Something not working yet? Ask us!</p>
+</div>
+</div>
+</section>
+<section id="using-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="using-notebooks">Using Notebooks</h2>
+<ul>
+<li>Now we need to add a kernel to our project</li>
+<li>Run <code>uv add --dev ipykernel</code> from your terminal</li>
+<li>This allows us to use <code>uv</code> Python in notebooks</li>
+<li>Now, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]</li>
+<li>Done? Perfect. Now we can start!</li>
+</ul>
+</section>
+<section id="working-with-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-notebooks">Working with Notebooks</h2>
+<ul>
+<li>Now you can download the files from the website</li>
+<li>Just click on one of the sessions and open it</li>
+<li>Select <code>Python</code> on the right side</li>
+<li>Download and save the files <strong>to your course folder</strong></li>
+<li>Open them and select “Open with Jupyter Notebook”</li>
 </ul>
 <p>. . .</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -794,60 +813,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Unsure on how to work with VS Code and notebooks? Take a look at the <a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">tutorial</a> from VS Code and/or ask us! We are happy to help you out!</p>
-</div>
-</div>
-</section>
-<section id="python-on-ipads" class="level2">
-<h2 class="anchored" data-anchor-id="python-on-ipads">Python on iPads</h2>
-<ul>
-<li>You <strong>can run Python scripts</strong> on your iPad</li>
-<li>But it is <span class="highlight">not recommended</span> for the course</li>
-<li>However, you could use <a href="https://apps.apple.com/us/app/juno-python-ide/id1440445498">Juno</a> <strong>if you want to</strong></li>
-<li>It works <strong>locally</strong> on your iPad and can run notebooks</li>
-</ul>
-<p>. . .</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Not all packages available in Python are available here, thus you might need a computer to solve certain problems. For our course, this should not be a problem.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="your-first-code" class="level1 title">
-<h1 class="title"><span class="flow">Your first code</span></h1>
-<section id="hello-world" class="level2">
-<h2 class="anchored" data-anchor-id="hello-world">Hello, World!</h2>
-<p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="b9e6e29c" class="cell" data-output-location="fragment" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment in Python</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello, World!</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<p>Run it with the green ‘run’ button or by pressing <span class="task">F5</span>!</p>
-<p>. . .</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>“Hello world” is a classic example to start with. Often used as a test to check if your computer is working properly and that you have installed the necessary software.</p>
+<p>That was the hardest part today!</p>
 </div>
 </div>
 </section>
@@ -1348,6 +1314,12 @@ Note
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:vlcek@beyondsimulations.com">
       <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://beyondsimulations.github.io/lectures">
+      <i class="bi bi-skip-backward" role="img">
 </i> 
     </a>
   </li>  

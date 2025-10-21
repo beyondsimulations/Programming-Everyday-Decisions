@@ -28,72 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #24292e;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #24292e; } /* Normal */
-    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
-    code span.an { color: #6a737d; } /* Annotation */
-    code span.at { color: #d73a49; } /* Attribute */
-    code span.bn { color: #005cc5; } /* BaseN */
-    code span.bu { color: #d73a49; } /* BuiltIn */
-    code span.cf { color: #d73a49; } /* ControlFlow */
-    code span.ch { color: #032f62; } /* Char */
-    code span.cn { color: #005cc5; } /* Constant */
-    code span.co { color: #6a737d; } /* Comment */
-    code span.cv { color: #6a737d; } /* CommentVar */
-    code span.do { color: #6a737d; } /* Documentation */
-    code span.dt { color: #d73a49; } /* DataType */
-    code span.dv { color: #005cc5; } /* DecVal */
-    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
-    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
-    code span.fl { color: #005cc5; } /* Float */
-    code span.fu { color: #6f42c1; } /* Function */
-    code span.im { color: #032f62; } /* Import */
-    code span.in { color: #6a737d; } /* Information */
-    code span.kw { color: #d73a49; } /* Keyword */
-    code span.op { color: #24292e; } /* Operator */
-    code span.ot { color: #6f42c1; } /* Other */
-    code span.pp { color: #d73a49; } /* Preprocessor */
-    code span.re { color: #6a737d; } /* RegionMarker */
-    code span.sc { color: #005cc5; } /* SpecialChar */
-    code span.ss { color: #032f62; } /* SpecialString */
-    code span.st { color: #032f62; } /* String */
-    code span.va { color: #e36209; } /* Variable */
-    code span.vs { color: #032f62; } /* VerbatimString */
-    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-707dfb535249e6eca862c92c22a86177.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -475,12 +409,13 @@ Dr.&nbsp;Tobias Vlćek
 <h1><span class="flow">Setting up Python</span></h1>
 
 </section>
-<section id="the-setup" class="slide level2">
-<h2>The Setup</h2>
+<section id="install-vs-code" class="slide level2">
+<h2>Install VS Code</h2>
 <ul>
-<li>We will use <a href="https://jupyter.org/">Jupyter Notebooks</a> for the tutorials</li>
-<li>Allow to <strong>combine code and text</strong> in one document</li>
-<li>We will use <a href="https://code.visualstudio.com/">Visual Studio Code</a> as an IDE</li>
+<li>Download and install from the <a href="https://code.visualstudio.com/">website</a></li>
+<li>Built for <strong>Windows, Linux and Mac</strong></li>
+<li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter</a> extension</li>
+<li><span class="highlight">Now you are ready to go!</span></li>
 </ul>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -492,14 +427,26 @@ Dr.&nbsp;Tobias Vlćek
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>IDE = Integrated Development Environment</p>
+<p>Unsure on how to work with VS Code and notebooks? Ask us! We are happy to help you out!</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="installing-python-with-uv" class="slide level2">
-<h2>Installing Python with <code>uv</code></h2>
+<section id="what-is-an-ide" class="slide level2">
+<h2>What is an IDE?</h2>
+<ul>
+<li>Integrated Development Environment <code>=</code> application</li>
+<li>It allows you to write, run and debug code scripts</li>
+<li>Other IDEs include for example:
+<ul>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> from JetBrains</li>
+<li><a href="https://zed.dev/">Zed</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="installation-of-python-with-uv" class="slide level2">
+<h2>Installation of Python with <code>uv</code></h2>
 <ul>
 <li>We will use <code>uv</code> to install and manage Python versions</li>
 <li>It works on Windows, Mac and Linux</li>
@@ -521,14 +468,56 @@ Dr.&nbsp;Tobias Vlćek
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="using-notebooks-with-uv" class="title-slide slide level1 title center">
+<h1><span class="flow">Using Notebooks with uv</span></h1>
+
 </section>
-<section id="install-vs-code" class="slide level2">
-<h2>Install VS Code</h2>
+<section id="quick-check" class="slide level2">
+<h2>Quick Check</h2>
 <ul>
-<li>Download and install from the <a href="https://code.visualstudio.com/">website</a></li>
-<li>Built for <strong>Windows, Linux and Mac</strong></li>
-<li>Install the <strong>Python</strong> and <strong>Jupyter</strong> extension</li>
-<li><span class="highlight">Now you are ready to go!</span></li>
+<li>Have you installed <code>uv</code> and initialized the project?</li>
+<li>Great! Before we continue, check the following:
+<ul>
+<li>[] You have a folder for the course</li>
+<li>[] You have initialized <code>uv</code> with <code>uv init</code> inside the folder</li>
+<li>[] You can see a file called <code>pyproject.toml</code> in the folder</li>
+</ul>
+. . .</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Something not working yet? Ask us!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="using-notebooks" class="slide level2">
+<h2>Using Notebooks</h2>
+<ul>
+<li>Now we need to add a kernel to our project</li>
+<li>Run <code>uv add --dev ipykernel</code> from your terminal</li>
+<li>This allows us to use <code>uv</code> Python in notebooks</li>
+<li>Now, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]</li>
+<li>Done? Perfect. Now we can start!</li>
+</ul>
+</section>
+<section id="working-with-notebooks" class="slide level2">
+<h2>Working with Notebooks</h2>
+<ul>
+<li>Now you can download the files from the website</li>
+<li>Just click on one of the sessions and open it</li>
+<li>Select <code>Python</code> on the right side</li>
+<li>Download and save the files <strong>to your course folder</strong></li>
+<li>Open them and select “Open with Jupyter Notebook”</li>
 </ul>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -540,67 +529,7 @@ Dr.&nbsp;Tobias Vlćek
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>Unsure on how to work with VS Code and notebooks? Take a look at the <a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">tutorial</a> from VS Code and/or ask us! We are happy to help you out!</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="python-on-ipads" class="slide level2">
-<h2>Python on iPads</h2>
-<ul>
-<li>You <strong>can run Python scripts</strong> on your iPad</li>
-<li>But it is <span class="highlight">not recommended</span> for the course</li>
-<li>However, you could use <a href="https://apps.apple.com/us/app/juno-python-ide/id1440445498">Juno</a> <strong>if you want to</strong></li>
-<li>It works <strong>locally</strong> on your iPad and can run notebooks</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Caution</strong></p>
-</div>
-<div class="callout-content">
-<p>Not all packages available in Python are available here, thus you might need a computer to solve certain problems. For our course, this should not be a problem.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="your-first-code" class="title-slide slide level1 title center">
-<h1><span class="flow">Your first code</span></h1>
-
-</section>
-<section id="hello-world" class="slide level2">
-<h2>Hello, World!</h2>
-<p><span class="task">Task:</span> Create a directory for the course and create a new file called <code>hello_world.py</code> with the following code:</p>
-<div id="b9e6e29c" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># This is a comment in Python</span></span>
-<span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell fragment" data-execution_count="1">
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello, World!</code></pre>
-</div>
-</div>
-<div class="fragment">
-<p>Run it with the green ‘run’ button or by pressing <span class="task">F5</span>!</p>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>“Hello world” is a classic example to start with. Often used as a test to check if your computer is working properly and that you have installed the necessary software.</p>
+<p>That was the hardest part today!</p>
 </div>
 </div>
 </div>
