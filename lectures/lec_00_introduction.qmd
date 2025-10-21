@@ -172,19 +172,29 @@ Great resources to start are books and small challenges. You can find a list of 
 
 # [Setting up Python]{.flow} {.title}
 
-## The Setup
+## Install VS Code
 
-- We will use [Jupyter Notebooks](https://jupyter.org/) for the tutorials
-- Allow to **combine code and text** in one document
-- We will use [Visual Studio Code](https://code.visualstudio.com/) as an IDE
+- Download and install from the [website](https://code.visualstudio.com/)
+- Built for **Windows, Linux and Mac**
+- Install the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extension
+- [Now you are ready to go!]{.highlight}
 
 . . .
 
-:::{.callout-tip}
-IDE = Integrated Development Environment
+::: {.callout-tip}
+Unsure on how to work with VS Code and notebooks?
+Ask us! We are happy to help you out!
 :::
 
-## Installing Python with `uv`
+## What is an IDE?
+
+- Integrated Development Environment `=` application
+- It allows you to write, run and debug code scripts
+- Other IDEs include for example:
+  - [PyCharm](https://www.jetbrains.com/pycharm/) from JetBrains
+  - [Zed](https://zed.dev/)
+
+## Installation of Python with `uv`
 
 - We will use `uv` to install and manage Python versions
 - It works on Windows, Mac and Linux
@@ -197,55 +207,44 @@ IDE = Integrated Development Environment
 If the installation does not work, **let us know!**
 :::
 
-## Install VS Code
+# [Using Notebooks with uv]{.flow} {.title}
 
-- Download and install from the [website](https://code.visualstudio.com/)
-- Built for **Windows, Linux and Mac**
-- Install the **Python** and **Jupyter** extension
-- [Now you are ready to go!]{.highlight}
+## Quick Check
 
-. . .
+- Have you installed `uv` and initialized the project?
+- Great! Before we continue, check the following:
+  - [] You have a folder for the course
+  - [] You have initialized `uv` with `uv init` inside the folder
+  - [] You can see a file called `pyproject.toml` in the folder
 
-::: {.callout-tip}
-Unsure on how to work with VS Code and notebooks? Take a look at the [tutorial](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) from VS Code and/or ask us! We are happy to help you out!
+  . . .
+
+:::{.callout-tip}
+Something not working yet? Ask us!
 :::
 
-## Python on iPads
+## Using Notebooks
 
-- You **can run Python scripts** on your iPad
-- But it is [not recommended]{.highlight} for the course
-- However, you could use [Juno](https://apps.apple.com/us/app/juno-python-ide/id1440445498) **if you want to**
-- It works **locally** on your iPad and can run notebooks
+- Now we need to add a kernel to our project
+- Run `uv add --dev ipykernel` from your terminal
+- This allows us to use `uv` Python in notebooks
+- Now, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]
+- Done? Perfect. Now we can start!
+
+## Working with Notebooks
+
+- Now you can download the files from the website
+- Just click on one of the sessions and open it
+- Select `Python` on the right side
+- Download and save the files **to your course folder**
+- Open them and select “Open with Jupyter Notebook”
 
 . . .
 
-::: {.callout-caution}
-Not all packages available in Python are available here, thus you might need a computer to solve certain problems. For our course, this should not be a problem.
+:::{.callout-tip}
+That was the hardest part today!
 :::
 
-# [Your first code]{.flow} {.title}
-
-## Hello, World!
-
-[Task:]{.task} Create a directory for the course and create a new file called `hello_world.py` with the following code:
-
-```{python}
-#| eval: true
-#| output-location: fragment
-
-# This is a comment in Python
-print("Hello, World!")
-```
-
-. . .
-
-Run it with the green 'run' button or by pressing [F5]{.task}!
-
-. . .
-
-::: {.callout-note}
-"Hello world" is a classic example to start with. Often used as a test to check if your computer is working properly and that you have installed the necessary software.
-:::
 
 ## {.loud-slide}
 ::: {.r-fit-text}

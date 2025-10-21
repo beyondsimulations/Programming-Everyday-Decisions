@@ -101,7 +101,9 @@ website:
         href: https://linkedin.com/in/tobiasvlcek
       - icon: envelope
         href: mailto:vlcek@beyondsimulations.com
-      - icon: lock
+      - icon: skip-backward
+        href: https://beyondsimulations.github.io/lectures
+      - icon: shield-check
         href: general/privacy.qmd
 
 format:
@@ -114,7 +116,7 @@ format:
     highlight-style: github
     code-copy: true
     code-link: true
-    toc-location: right
+    toc-location: left
     code-overflow: wrap
     html-math-method:
       method: mathjax

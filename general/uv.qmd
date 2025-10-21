@@ -1,6 +1,6 @@
 ---
 title: "Installing Python"
-subtitle: "A beginner-friendly guide using uv"
+subtitle: "A small guide using uv"
 ---
 
 ## Why we use `uv` for this course
@@ -18,7 +18,11 @@ WHY it matters: You avoid random breakage when different projects need different
 
 ## Install `uv`
 
-Choose the instructions for your operating system.
+Choose the instructions for your operating system. To these, you need to work in your terminal.
+
+:::{.callout-tip}
+Open the terminal in VS Code by selecting (Terminal → New Terminal).
+:::
 
 ### macOS or Linux (Terminal)
 
@@ -68,9 +72,8 @@ If you get "command not found" or "'uv' is not recognized":
 3. Still broken? Ask for help, no need of guessing the error.
 :::
 
----
 
-## Install (and pin) Python
+## InstallPython
 
 We want everyone on the **same** Python version for consistency. Thus, we’ll use Python 3.12 for the course this year.
 
@@ -92,22 +95,14 @@ Expected output starts with:
 Python 3.12.
 ```
 
-::: callout-note
-Why pin a version? If the latest Python version moves forward mid‑semester, subtle bugs can appear that might break working code (unlikely, but possible). Pinning keeps everyone in the course aligned.
-:::
-
----
 
 ## Create your first project
 
-Pick a folder where you keep course work. If you do not have one, make sure to create one! Open the course folder in your IDE and then run the following from the terminal:
+Pick a folder where you keep course work. **If you do not have one, make sure to create one!** Open the course folder in your IDE and then run the following from the terminal:
 
 ```bash
-uv init my-first-project
-cd my-first-project
+uv init
 ```
-
-The first line creates a new folder named `my-first-project` (you can name it anything). The second line moves you into that folder. Alternatively, you can create the folder manually before, open it in your IDE and run `uv init .` inside it.
 
 `uv init` creates:
 - `main.py` (starter script)
@@ -123,7 +118,7 @@ You do **not** need to edit any of these (except maybe `README.md` for your note
 
 ## Run the starter script
 
-Inside the project folder:
+Inside the project folder **in your terminal**:
 
 ```bash
 uv run python main.py
@@ -152,8 +147,6 @@ if __name__ == "__main__":
 - The line `if __name__ == "__main__":` ensures this only auto-runs when the file is executed directly.
 
 Don’t worry about this yet, we'll gradually build up to it.
-
----
 
 ## Adding packages (later in the course)
 
@@ -193,16 +186,10 @@ uv self update
 
 ## Best practices for this course
 
-- One project folder per session or assignment keeps everything tidy.
+- One folder for the course keeps everything tidy.
 - Never install packages “globally” outside a project.
-- Prefer `uv run python <file>` instead of environment activation.
 - Keep a short personal log in each project’s `README.md` (What did I do? What still confuses me?).
 - Ask early for help, guessing usually takes much more time than asking.
-
-## 10. Where to go next
-
-Explore the official docs later if you’re curious:
-[https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
 
 You can always see available commands:
 
@@ -218,4 +205,4 @@ You can now:
 3. Run a script.
 4. Add/remove/sync packages.
 
-Now, you’re set for the rest of the course.
+Now, you’re set to continue the course.
