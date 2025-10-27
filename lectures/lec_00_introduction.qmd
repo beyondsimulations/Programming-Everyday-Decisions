@@ -229,14 +229,13 @@ Something not working yet? Ask us!
 - Run `uv add --dev ipykernel` from your terminal
 - Now run `uv add jupyter` in the terminal
 - This allows us to use `uv` Python in notebooks
-- Next, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]
 - Done? Perfect. Now we can start!
 
 ## Working with Notebooks
 
 - Now you can download the files from the website
 - Just click on one of the sessions and open it
-- Select `Python` on the right side
+- Select `Jupyter` on the right side
 - Download and save the files **to your course folder**
 - Open them and select “Open with Jupyter Notebook”
 
