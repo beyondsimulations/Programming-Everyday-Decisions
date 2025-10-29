@@ -20,16 +20,6 @@ format:
 
 **Why this matters:** Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we'll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.
 
-## Learning Objectives
-
-By the end of this lecture, you will be able to:
-
-:::{.incremental}
-1. **Apply** core scheduling algorithms (Johnson's Rule, EDD, SPT) to solve real-world problems
-2. **Analyze** trade-offs between different optimization objectives (time, deadlines, priorities)
-3. **Connect** scheduling principles to programming concepts and algorithmic thinking
-:::
-
 ## Today's Agenda
 
 :::{.incremental}
@@ -1071,6 +1061,26 @@ Strategic solutions focus on **long-term** changes to prevent thrashing.
 3. **Dependencies and constraints** add complexity but have algorithmic solutions
 4. **Thrashing prevention** is crucial for maintaining productivity
 5. **These principles** directly translate to programming and system design
+:::
+
+## {.loud-slide}
+::: {.r-fit-text}
+Any questions
+
+so far?
+:::
+
+## After the break — Scheduling
+
+- Programming session in our new notebooks
+- How to translate the idea into code and experiments
+- Different scheduling algorithms applied to problems
+
+. . .
+
+::: {.callout-note}
+**That's it for scheduling!**\
+Let's have a short break and then continue with our fourth Python programming session.
 :::
 
 # [Literature]{.flow} {.title}

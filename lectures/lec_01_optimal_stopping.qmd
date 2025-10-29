@@ -341,12 +341,24 @@ Side note for drivers: An increase in occupancy from 90 to 95% doubles the searc
 5. **This thinking** builds foundation for algorithmic problem-solving
 :::
 
+## {.loud-slide}
+::: {.r-fit-text}
+Any questions
 
-## The End
+so far?
+:::
+
+## After the break — Optimal Stopping
+
+- Gentle introduction to Python Programming
+- We work in our notebooks on basics and optimal stopping
+- How to translate the idea into code and experiments
+
+. . .
 
 ::: {.callout-note}
-**That's it for todays lecture!**\
-We now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!
+**That's it for optimal stopping!**\
+Let's have a short break and then continue with our first Python programming session.
 :::
 
 # [Literature]{.flow} {.title}
