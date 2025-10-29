@@ -403,7 +403,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="flow">Introduction</span></a>
   <ul class="collapse">
-  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1">Introduction</a></li>
+  <li><a href="#todays-topic-scheduling-algorithms" id="toc-todays-topic-scheduling-algorithms" class="nav-link" data-scroll-target="#todays-topic-scheduling-algorithms">Today’s Topic: Scheduling Algorithms</a></li>
+  <li><a href="#todays-agenda" id="toc-todays-agenda" class="nav-link" data-scroll-target="#todays-agenda">Today’s Agenda</a></li>
+  </ul></li>
+  <li><a href="#scheduling-fundamentals" id="toc-scheduling-fundamentals" class="nav-link" data-scroll-target="#scheduling-fundamentals"><span class="flow">Scheduling Fundamentals</span></a>
+  <ul class="collapse">
+  <li><a href="#a-simple-scheduling-problem" id="toc-a-simple-scheduling-problem" class="nav-link" data-scroll-target="#a-simple-scheduling-problem">A Simple Scheduling Problem</a></li>
   <li><a href="#washing-machine-dryer" id="toc-washing-machine-dryer" class="nav-link" data-scroll-target="#washing-machine-dryer">Washing Machine &amp; Dryer</a></li>
   <li><a href="#johnsons-rule" id="toc-johnsons-rule" class="nav-link" data-scroll-target="#johnsons-rule">Johnson’s Rule</a></li>
   <li><a href="#applying-johnsons-rule" id="toc-applying-johnsons-rule" class="nav-link" data-scroll-target="#applying-johnsons-rule">Applying Johnson’s Rule</a></li>
@@ -418,6 +423,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#industrial-revolution" id="toc-industrial-revolution" class="nav-link" data-scroll-target="#industrial-revolution"><span class="invert-font">Industrial Revolution</span></a></li>
   <li><a href="#modern-scheduling-theory" id="toc-modern-scheduling-theory" class="nav-link" data-scroll-target="#modern-scheduling-theory"><span class="invert-font">Modern Scheduling Theory</span></a></li>
+  <li><a href="#professional-applications" id="toc-professional-applications" class="nav-link" data-scroll-target="#professional-applications">Professional Applications</a></li>
   </ul></li>
   <li><a href="#scheduling-tasks" id="toc-scheduling-tasks" class="nav-link" data-scroll-target="#scheduling-tasks"><span class="flow">Scheduling Tasks</span></a>
   <ul class="collapse">
@@ -484,13 +490,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#thrashing-warning-signs" id="toc-thrashing-warning-signs" class="nav-link" data-scroll-target="#thrashing-warning-signs">Thrashing Warning Signs</a></li>
   <li><a href="#preventing-thrashing-strategic" id="toc-preventing-thrashing-strategic" class="nav-link" data-scroll-target="#preventing-thrashing-strategic">Preventing Thrashing Strategic</a></li>
   <li><a href="#preventing-thrashing-tactical" id="toc-preventing-thrashing-tactical" class="nav-link" data-scroll-target="#preventing-thrashing-tactical">Preventing Thrashing Tactical</a></li>
+  </ul></li>
+  <li><a href="#applying-this-knowledge" id="toc-applying-this-knowledge" class="nav-link" data-scroll-target="#applying-this-knowledge"><span class="flow">Applying This Knowledge</span></a>
+  <ul class="collapse">
+  <li><a href="#immediate-applications" id="toc-immediate-applications" class="nav-link" data-scroll-target="#immediate-applications">Immediate Applications</a></li>
   <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
-  <li><a href="#the-end" id="toc-the-end" class="nav-link" data-scroll-target="#the-end">The End</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#after-the-break-scheduling" id="toc-after-the-break-scheduling" class="nav-link" data-scroll-target="#after-the-break-scheduling">After the break — Scheduling</a></li>
   </ul></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature"><span class="flow">Literature</span></a>
   <ul class="collapse">
   <li><a href="#interesting-literature-to-start" id="toc-interesting-literature-to-start" class="nav-link" data-scroll-target="#interesting-literature-to-start">Interesting literature to start</a></li>
   <li><a href="#books-on-programming" id="toc-books-on-programming" class="nav-link" data-scroll-target="#books-on-programming">Books on Programming</a></li>
+  <li><a href="#questions-discussion" id="toc-questions-discussion" class="nav-link" data-scroll-target="#questions-discussion">Questions &amp; Discussion</a></li>
   <li><a href="#more-literature" id="toc-more-literature" class="nav-link" data-scroll-target="#more-literature">More Literature</a></li>
   </ul></li>
   </ul>
@@ -534,8 +546,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1 title">
 <h1 class="title"><span class="flow">Introduction</span></h1>
-<section id="introduction-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-1">Introduction</h2>
+<section id="todays-topic-scheduling-algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="todays-topic-scheduling-algorithms">Today’s Topic: Scheduling Algorithms</h2>
+<p><strong>Topic:</strong> Understanding scheduling problems and algorithmic solutions for optimal task ordering</p>
+<p><strong>Why this matters:</strong> Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we’ll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.</p>
+</section>
+<section id="todays-agenda" class="level2">
+<h2 class="anchored" data-anchor-id="todays-agenda">Today’s Agenda</h2>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Scheduling Fundamentals</strong> - Johnson’s Rule and two-machine problems</li>
+<li><strong>Historical Context</strong> - How scheduling theory developed</li>
+<li><strong>Core Algorithms</strong> - EDD for deadlines, SPT for efficiency</li>
+<li><strong>Advanced Topics</strong> - Dependencies, real-time scheduling, thrashing</li>
+<li><strong>Programming Connections</strong> - How this builds algorithmic problem-solving skills</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="scheduling-fundamentals" class="level1 title">
+<h1 class="title"><span class="flow">Scheduling Fundamentals</span></h1>
+<section id="a-simple-scheduling-problem" class="level2">
+<h2 class="anchored" data-anchor-id="a-simple-scheduling-problem">A Simple Scheduling Problem</h2>
 <p><img src="https://images.beyondsimulations.com/atlb/atlb_schedule-washdry.svg" class="img-fluid"></p>
 </section>
 <section id="washing-machine-dryer" class="level2">
@@ -748,6 +780,21 @@ gantt
 <div class="footer">
 
 </div>
+</section>
+<section id="professional-applications" class="level2">
+<h2 class="anchored" data-anchor-id="professional-applications">Professional Applications</h2>
+<p><strong>Where do we see scheduling in professional practice?</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Project Management:</strong> Task dependencies, resource allocation, critical path</li>
+<li><strong>Software Development:</strong> CPU scheduling, thread management, job queues</li>
+<li><strong>Operations:</strong> Production scheduling, supply chain optimization</li>
+<li><strong>Healthcare:</strong> Patient scheduling, surgery planning, staff allocation</li>
+<li><strong>Transportation:</strong> Route optimization, crew scheduling, maintenance planning</li>
+</ul>
+</div>
+<p>. . .</p>
+<p><strong>Connection to Programming:</strong> These are the same optimization problems that algorithms solve!</p>
 </section>
 </section>
 <section id="scheduling-tasks" class="level1 title">
@@ -1493,22 +1540,49 @@ gantt
 <p>. . .</p>
 <p><span class="question">Question:</span> <strong>What strategies have worked for you?</strong></p>
 </section>
+</section>
+<section id="applying-this-knowledge" class="level1 title">
+<h1 class="title"><span class="flow">Applying This Knowledge</span></h1>
+<section id="immediate-applications" class="level2">
+<h2 class="anchored" data-anchor-id="immediate-applications">Immediate Applications</h2>
+<p><strong>How can you use these algorithms starting today?</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Daily planning:</strong> Use SPT for your to-do list to minimize waiting time</li>
+<li><strong>Project management:</strong> Apply EDD when managing deadlines</li>
+<li><strong>Team coordination:</strong> Use Johnson’s Rule for two-stage processes</li>
+<li><strong>Time blocking:</strong> Prevent thrashing with strategic scheduling</li>
+</ul>
+</div>
+</section>
 <section id="key-takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
-<ol type="1">
-<li>Scheduling is <span class="highlight">crucial for effective time management</span></li>
-<li>Different objectives need different algorithms
-<ul>
-<li><strong>EDD</strong> for deadline management</li>
-<li><strong>SPT</strong> for waiting time reduction</li>
-</ul></li>
-<li>Address <strong>thrashing early</strong></li>
-<li>Define <strong>your</strong> reactivity goals</li>
-<li>Use appropriate algorithms as <strong>foundations</strong></li>
+<p><strong>What we learned today:</strong></p>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Scheduling algorithms</strong> provide optimal solutions to time management problems</li>
+<li><strong>Different objectives</strong> require different algorithms (EDD, SPT, Johnson’s Rule)</li>
+<li><strong>Dependencies and constraints</strong> add complexity but have algorithmic solutions</li>
+<li><strong>Thrashing prevention</strong> is crucial for maintaining productivity</li>
+<li><strong>These principles</strong> directly translate to programming and system design</li>
 </ol>
+</div>
 </section>
-<section id="the-end" class="level2">
-<h2 class="anchored" data-anchor-id="the-end">The End</h2>
+<section id="section" class="level2 loud-slide">
+<h2 class="loud-slide anchored" data-anchor-id="section"></h2>
+<div class="r-fit-text">
+<p>Any questions</p>
+<p>so far?</p>
+</div>
+</section>
+<section id="after-the-break-scheduling" class="level2">
+<h2 class="anchored" data-anchor-id="after-the-break-scheduling">After the break — Scheduling</h2>
+<ul>
+<li>Programming session in our new notebooks</li>
+<li>How to translate the idea into code and experiments</li>
+<li>Different scheduling algorithms applied to problems</li>
+</ul>
+<p>. . .</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1519,8 +1593,8 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>That’s it for todays lecture!</strong><br>
-We now have covered a brief introduction into scheduling. Now, we can start with the tutorials! As we have now a good foundation, we can start to apply some algorithms on data sets in Python.</p>
+<p><strong>That’s it for scheduling!</strong><br>
+Let’s have a short break and then continue with our fourth Python programming session.</p>
 </div>
 </div>
 </section>
@@ -1539,7 +1613,9 @@ We now have covered a brief introduction into scheduling. Now, we can start with
 <li>Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. <a href="https://greenteapress.com/wp/think-python-3rd-edition/">Here</a></li>
 <li>Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.</li>
 </ul>
-<p>. . .</p>
+</section>
+<section id="questions-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="questions-discussion">Questions &amp; Discussion</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

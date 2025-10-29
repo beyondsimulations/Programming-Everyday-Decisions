@@ -3214,7 +3214,7 @@
     "href": "lectures/lec_00_introduction.html",
     "title": "Introduction - Programming",
     "section": "",
-    "text": "Dr. Tobias Vlcek\n\n\n\n\n\n\n\nDr. Nils Roemer\n\n\n\n\n\n\n\n\n\n\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nWe really appreciate active participation and interaction!\n\n\n\n\n\n\nI: Optimal Stopping\nII: Explore & Exploit\nIII: Caching\nIV: Scheduling\nV: Randomness\nVI: Computational Kindness\n\n\n\n\n\nTry actively participating in this course\nYou will find it much (!) easier and more fun\nLecture based on the book Algorithms to live by1\nMaterial and slides are hosted online: beyondsimulations.github.io/Programming-Everyday-Decisions\n\n\n\n\n\nLecture: Presentation and discussion of algorithms related to everyday decision-making\nTutorial: Step-by-step assignments to be solved and discussed together in groups\nDifficulty: Strongly depends on your background and programming experience\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nNo worries, we will help you out if you have any questions!\n\n\n\n\n\n\nPass/fail course without exams\n75% attendance required for passing the course\nHand in the assignments of at least two lectures\nShort presentation and discussion at the end\nYou work together in groups of three students\n\n\n\n\n\nEach student group submits one solution\nProvide us all working notebooks of the lecture\nHand in is due at the beginning of the next lecture\nAt least 50 % have to be correct to pass\nYou have to pass at least twice\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThis is just in order to provide you with working solutions after each deadline.\n\n\n\n\n\nWe will mostly not cover Python during the lectures!\n. . .\nQuestion: Anybody know why?\n. . .\n\nIn our experience, the best way to learn is by doing!\nHere, we will focus on decision-making algorithms\nYou will learn Python by doing the tutorials\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nDon’t worry, we will help you out if you have any questions!\n\n\n\n\n\n\nAt first it might be a little bit overwhelming\nProgramming is similar to learning a new language\nFirst, you have to get used to it and learn words\nLater, you’ll be able to apply it and see results\nImportant: Practice, practice, practice!\n\n\n\n\n\nLearn the basics of programming\nLearn about algorithmic thinking\nBe able to apply methods and concepts\nSolve practical problems with algorithms\n\n\n\n\n\n\n\nTip\n\n\n\nWe are convinced that this course will be quite interesting and teach you more for your daily life than most other courses!\n\n\n\n\n\n\nOrigins: Conceived in late 1980s as a teaching and scripting language\nSimple Syntax: Python’s syntax is mostly straightforward and very easy to learn\nVersatility: Used in web development, data analysis, artificial intelligence, and more\nCommunity Support: A large community of users worldwide and extensive documentation\n\n\n\n\n\nYou are allowed to use AI in the course, we use it as well (e.g., Claude, ChatGPT, LLama3 …)\nThese tools are great for learning Python!\nCan help you a lot to get started with programming\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nBut you should not simply use them to replace your learning.",
+    "text": "Dr. Tobias Vlcek\n\n\n\n\n\n\n\nDr. Nils Roemer\n\n\n\n\n\n\n\n\n\n\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nWe really appreciate active participation and interaction!\n\n\n\n\n\n\nAbout the course, team, and expectations\nHow to learn programming (mindset and resources)\nSetting up Python with uv and VS Code\nUsing notebooks with uv\nQ&A and next steps\n\n\n\n\n\nI: Optimal Stopping\nII: Explore & Exploit\nIII: Caching\nIV: Scheduling\nV: Randomness\nVI: Computational Kindness\n\n\n\n\n\nTry actively participating in this course\nYou will find it much (!) easier and more fun\nLecture based on the book Algorithms to live by1\nMaterial and slides are hosted online: beyondsimulations.github.io/Programming-Everyday-Decisions\n\n\n\n\n\nLecture: Presentation and discussion of algorithms related to everyday decision-making\nTutorial: Step-by-step assignments to be solved and discussed together in groups\nDifficulty: Strongly depends on your background and programming experience\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nNo worries, we will help you out if you have any questions!\n\n\n\n\n\n\nPass/fail course without exams\n75% attendance required for passing the course\nHand in the assignments of at least two lectures\nShort presentation and discussion at the end\nYou work together in groups of three students\n\n\n\n\n\nEach student group submits one solution\nProvide us all working notebooks of the lecture\nHand in is due at the beginning of the next lecture\nAt least 50 % have to be correct to pass\nYou have to pass at least twice\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThis is just in order to provide you with working solutions after each deadline.\n\n\n\n\n\nWe will mostly not cover Python during the lectures!\n. . .\nQuestion: Anybody know why?\n. . .\n\nIn our experience, the best way to learn is by doing!\nHere, we will focus on decision-making algorithms\nYou will learn Python by doing the tutorials\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nDon’t worry, we will help you out if you have any questions!\n\n\n\n\n\n\nAt first it might be a little bit overwhelming\nProgramming is similar to learning a new language\nFirst, you have to get used to it and learn words\nLater, you’ll be able to apply it and see results\nImportant: Practice, practice, practice!\n\n\n\n\n\nLearn the basics of programming\nLearn about algorithmic thinking\nBe able to apply methods and concepts\nSolve practical problems with algorithms\n\n\n\n\n\n\n\nTip\n\n\n\nWe are convinced that this course will be quite interesting and teach you more for your daily life than most other courses!\n\n\n\n\n\n\nOrigins: Conceived in late 1980s as a teaching and scripting language\nSimple Syntax: Python’s syntax is mostly straightforward and very easy to learn\nVersatility: Used in web development, data analysis, artificial intelligence, and more\nCommunity Support: A large community of users worldwide and extensive documentation\n\n\n\n\n\nYou are allowed to use AI in the course, we use it as well (e.g., Claude, ChatGPT, LLama3 …)\nThese tools are great for learning Python!\nCan help you a lot to get started with programming\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nBut you should not simply use them to replace your learning.",
     "crumbs": [
       "01 Optimal Stopping",
       "Introduction"
@@ -3237,6 +3237,17 @@
     "title": "Introduction - Programming",
     "section": "",
     "text": "Field: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nWe really appreciate active participation and interaction!",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_00_introduction.html#agenda",
+    "href": "lectures/lec_00_introduction.html#agenda",
+    "title": "Introduction - Programming",
+    "section": "",
+    "text": "About the course, team, and expectations\nHow to learn programming (mindset and resources)\nSetting up Python with uv and VS Code\nUsing notebooks with uv\nQ&A and next steps",
     "crumbs": [
       "01 Optimal Stopping",
       "Introduction"
@@ -3452,11 +3463,11 @@
     ]
   },
   {
-    "objectID": "lectures/lec_00_introduction.html#the-end",
-    "href": "lectures/lec_00_introduction.html#the-end",
+    "objectID": "lectures/lec_00_introduction.html#after-the-break-optimal-stopping",
+    "href": "lectures/lec_00_introduction.html#after-the-break-optimal-stopping",
     "title": "Introduction - Programming",
-    "section": "The End",
-    "text": "The End\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for our introduction!\nLet’s have a short break and then continue with our first topic.",
+    "section": "After the break — Optimal Stopping",
+    "text": "After the break — Optimal Stopping\n\nThe “Secretary Problem” and the 37% rule\nWhen to stop searching and make a decision\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for our introduction!\nLet’s have a short break and then continue with our first topic.",
     "crumbs": [
       "01 Optimal Stopping",
       "Introduction"
@@ -3519,6 +3530,13 @@
     "title": "Introduction - Programming",
     "section": "About me",
     "text": "About me\n\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n\n\n\n\n\n\nTip\n\n\nWe really appreciate active participation and interaction!"
+  },
+  {
+    "objectID": "lectures/lec_00_presentation.html#agenda",
+    "href": "lectures/lec_00_presentation.html#agenda",
+    "title": "Introduction - Programming",
+    "section": "Agenda",
+    "text": "Agenda\n\nAbout the course, team, and expectations\nHow to learn programming (mindset and resources)\nSetting up Python with uv and VS Code\nUsing notebooks with uv\nQ&A and next steps"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#course-outline",
@@ -3654,11 +3672,11 @@
     "text": "Any questions\nso far?"
   },
   {
-    "objectID": "lectures/lec_00_presentation.html#the-end",
-    "href": "lectures/lec_00_presentation.html#the-end",
+    "objectID": "lectures/lec_00_presentation.html#after-the-break-optimal-stopping",
+    "href": "lectures/lec_00_presentation.html#after-the-break-optimal-stopping",
     "title": "Introduction - Programming",
-    "section": "The End",
-    "text": "The End\n\n\n\n\n\n\nNote\n\n\nThat’s it for our introduction!\nLet’s have a short break and then continue with our first topic."
+    "section": "After the break — Optimal Stopping",
+    "text": "After the break — Optimal Stopping\n\nThe “Secretary Problem” and the 37% rule\nWhen to stop searching and make a decision\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for our introduction!\nLet’s have a short break and then continue with our first topic."
   },
   {
     "objectID": "lectures/lec_00_presentation.html#interesting-literature-to-start",
@@ -4554,7 +4572,40 @@
     "href": "lectures/lec_04_scheduling.html",
     "title": "Lecture IV - Scheduling",
     "section": "",
-    "text": "Let’s solve this simple scheduling problem:\n. . .\nTask  Washing  Drying\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min\n  D    50min   60min\n. . .\nGoal: Minimize total time for washing and drying all loads\n. . .\nQuestion: An idea how to solve this?\n\n\n\nRule: To find the optimal solution:\n\nFind the job with shortest duration:\n\nIf on Machine 1 → Schedule First\nIf on Machine 2 → Schedule Last\nIf equal → Choose randomly\n\nRemove job from list and repeat\n\n\n\n\nTask  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min\n  D    50min   60min\n. . .\nQuestion: What’s the first scheduled task?\n\n\n\nTask  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task C, the dryer is the shortest task.\nIt is on Machine 2 → Schedule Last\n\n. . .\nQuestion: What’s the next task?\n\n\n\nTask  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task B, the washing machine is the shortest task.\nIt is on Machine 1 → Schedule First\n\n. . .\nQuestion: What’s the next task?\n\n\n\nTask  Washing  Drying  Schedule\n  A    40min   60min        2\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task A, the washing machine is the shortest task.\nIt is on Machine 1 → Schedule Second\n\n. . .\nNow, we only have one task left!\n\n\n\nTask  Washing  Drying  Schedule\n  A    40min   60min        2\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min        3\n. . .\nFinal sequence: B A D C\n\n\n\nOptimal Solution: B A D C\n\n\nTotal time: 4 hours 20 minutes\n. . .\nQuestion: Is there a worse solution?\n\n\n\nSuboptimal Solution: C D A B\n\n\nTotal time: 5 hours 10 minutes\n. . .\nQuestion: What’s the difference?",
+    "text": "Topic: Understanding scheduling problems and algorithmic solutions for optimal task ordering\nWhy this matters: Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we’ll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.\n\n\n\n\n\nScheduling Fundamentals - Johnson’s Rule and two-machine problems\nHistorical Context - How scheduling theory developed\nCore Algorithms - EDD for deadlines, SPT for efficiency\nAdvanced Topics - Dependencies, real-time scheduling, thrashing\nProgramming Connections - How this builds algorithmic problem-solving skills",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#todays-topic-scheduling-algorithms",
+    "href": "lectures/lec_04_scheduling.html#todays-topic-scheduling-algorithms",
+    "title": "Lecture IV - Scheduling",
+    "section": "",
+    "text": "Topic: Understanding scheduling problems and algorithmic solutions for optimal task ordering\nWhy this matters: Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we’ll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#todays-agenda",
+    "href": "lectures/lec_04_scheduling.html#todays-agenda",
+    "title": "Lecture IV - Scheduling",
+    "section": "",
+    "text": "Scheduling Fundamentals - Johnson’s Rule and two-machine problems\nHistorical Context - How scheduling theory developed\nCore Algorithms - EDD for deadlines, SPT for efficiency\nAdvanced Topics - Dependencies, real-time scheduling, thrashing\nProgramming Connections - How this builds algorithmic problem-solving skills",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#a-simple-scheduling-problem",
+    "href": "lectures/lec_04_scheduling.html#a-simple-scheduling-problem",
+    "title": "Lecture IV - Scheduling",
+    "section": "A Simple Scheduling Problem",
+    "text": "A Simple Scheduling Problem",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4564,8 +4615,8 @@
     "objectID": "lectures/lec_04_scheduling.html#washing-machine-dryer",
     "href": "lectures/lec_04_scheduling.html#washing-machine-dryer",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Let’s solve this simple scheduling problem:\n. . .\nTask  Washing  Drying\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min\n  D    50min   60min\n. . .\nGoal: Minimize total time for washing and drying all loads\n. . .\nQuestion: An idea how to solve this?",
+    "section": "Washing Machine & Dryer",
+    "text": "Washing Machine & Dryer\nLet’s solve this simple scheduling problem:\n. . .\nTask  Washing  Drying\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min\n  D    50min   60min\n. . .\nGoal: Minimize total time for washing and drying all loads\n. . .\nQuestion: An idea how to solve this?",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4575,8 +4626,8 @@
     "objectID": "lectures/lec_04_scheduling.html#johnsons-rule",
     "href": "lectures/lec_04_scheduling.html#johnsons-rule",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Rule: To find the optimal solution:\n\nFind the job with shortest duration:\n\nIf on Machine 1 → Schedule First\nIf on Machine 2 → Schedule Last\nIf equal → Choose randomly\n\nRemove job from list and repeat",
+    "section": "Johnson’s Rule",
+    "text": "Johnson’s Rule\nRule: To find the optimal solution:\n\nFind the job with shortest duration:\n\nIf on Machine 1 → Schedule First\nIf on Machine 2 → Schedule Last\nIf equal → Choose randomly\n\nRemove job from list and repeat",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4586,8 +4637,8 @@
     "objectID": "lectures/lec_04_scheduling.html#applying-johnsons-rule",
     "href": "lectures/lec_04_scheduling.html#applying-johnsons-rule",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Task  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min\n  D    50min   60min\n. . .\nQuestion: What’s the first scheduled task?",
+    "section": "Applying Johnson’s Rule",
+    "text": "Applying Johnson’s Rule\nTask  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min\n  D    50min   60min\n. . .\nQuestion: What’s the first scheduled task?",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4597,8 +4648,8 @@
     "objectID": "lectures/lec_04_scheduling.html#applying-johnsons-rule-1",
     "href": "lectures/lec_04_scheduling.html#applying-johnsons-rule-1",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Task  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task C, the dryer is the shortest task.\nIt is on Machine 2 → Schedule Last\n\n. . .\nQuestion: What’s the next task?",
+    "section": "Applying Johnson’s Rule",
+    "text": "Applying Johnson’s Rule\nTask  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task C, the dryer is the shortest task.\nIt is on Machine 2 → Schedule Last\n\n. . .\nQuestion: What’s the next task?",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4608,8 +4659,8 @@
     "objectID": "lectures/lec_04_scheduling.html#applying-johnsons-rule-2",
     "href": "lectures/lec_04_scheduling.html#applying-johnsons-rule-2",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Task  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task B, the washing machine is the shortest task.\nIt is on Machine 1 → Schedule First\n\n. . .\nQuestion: What’s the next task?",
+    "section": "Applying Johnson’s Rule",
+    "text": "Applying Johnson’s Rule\nTask  Washing  Drying  Schedule\n  A    40min   60min\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task B, the washing machine is the shortest task.\nIt is on Machine 1 → Schedule First\n\n. . .\nQuestion: What’s the next task?",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4619,8 +4670,8 @@
     "objectID": "lectures/lec_04_scheduling.html#applying-johnsons-rule-3",
     "href": "lectures/lec_04_scheduling.html#applying-johnsons-rule-3",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Task  Washing  Drying  Schedule\n  A    40min   60min        2\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task A, the washing machine is the shortest task.\nIt is on Machine 1 → Schedule Second\n\n. . .\nNow, we only have one task left!",
+    "section": "Applying Johnson’s Rule",
+    "text": "Applying Johnson’s Rule\nTask  Washing  Drying  Schedule\n  A    40min   60min        2\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min\n\nIn Task A, the washing machine is the shortest task.\nIt is on Machine 1 → Schedule Second\n\n. . .\nNow, we only have one task left!",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4630,8 +4681,8 @@
     "objectID": "lectures/lec_04_scheduling.html#applying-johnsons-rule-4",
     "href": "lectures/lec_04_scheduling.html#applying-johnsons-rule-4",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Task  Washing  Drying  Schedule\n  A    40min   60min        2\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min        3\n. . .\nFinal sequence: B A D C",
+    "section": "Applying Johnson’s Rule",
+    "text": "Applying Johnson’s Rule\nTask  Washing  Drying  Schedule\n  A    40min   60min        2\n  B    30min   80min        1\n  C    60min   20min        4\n  D    50min   60min        3\n. . .\nFinal sequence: B A D C",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4641,8 +4692,8 @@
     "objectID": "lectures/lec_04_scheduling.html#optimal-solution",
     "href": "lectures/lec_04_scheduling.html#optimal-solution",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Optimal Solution: B A D C\n\n\nTotal time: 4 hours 20 minutes\n. . .\nQuestion: Is there a worse solution?",
+    "section": "Optimal Solution",
+    "text": "Optimal Solution\nOptimal Solution: B A D C\n\n\nTotal time: 4 hours 20 minutes\n. . .\nQuestion: Is there a worse solution?",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4652,8 +4703,8 @@
     "objectID": "lectures/lec_04_scheduling.html#suboptimal-solution",
     "href": "lectures/lec_04_scheduling.html#suboptimal-solution",
     "title": "Lecture IV - Scheduling",
-    "section": "",
-    "text": "Suboptimal Solution: C D A B\n\n\nTotal time: 5 hours 10 minutes\n. . .\nQuestion: What’s the difference?",
+    "section": "Suboptimal Solution",
+    "text": "Suboptimal Solution\nSuboptimal Solution: C D A B\n\n\nTotal time: 5 hours 10 minutes\n. . .\nQuestion: What’s the difference?",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -4676,6 +4727,17 @@
     "title": "Lecture IV - Scheduling",
     "section": "Modern Scheduling Theory",
     "text": "Modern Scheduling Theory\n. . .\n\n\nRAND Corporation founded (1948)\nSelmer Johnson publishes Johnson’s Rule in 1954\nBeginning of modern scheduling theory\nMany more algorithms and methods developed since",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#professional-applications",
+    "href": "lectures/lec_04_scheduling.html#professional-applications",
+    "title": "Lecture IV - Scheduling",
+    "section": "Professional Applications",
+    "text": "Professional Applications\nWhere do we see scheduling in professional practice?\n\n\nProject Management: Task dependencies, resource allocation, critical path\nSoftware Development: CPU scheduling, thread management, job queues\nOperations: Production scheduling, supply chain optimization\nHealthcare: Patient scheduling, surgery planning, staff allocation\nTransportation: Route optimization, crew scheduling, maintenance planning\n\n\n. . .\nConnection to Programming: These are the same optimization problems that algorithms solve!",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -5177,22 +5239,44 @@
     ]
   },
   {
-    "objectID": "lectures/lec_04_scheduling.html#key-takeaways",
-    "href": "lectures/lec_04_scheduling.html#key-takeaways",
+    "objectID": "lectures/lec_04_scheduling.html#immediate-applications",
+    "href": "lectures/lec_04_scheduling.html#immediate-applications",
     "title": "Lecture IV - Scheduling",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nScheduling is crucial for effective time management\nDifferent objectives need different algorithms\n\nEDD for deadline management\nSPT for waiting time reduction\n\nAddress thrashing early\nDefine your reactivity goals\nUse appropriate algorithms as foundations",
+    "section": "Immediate Applications",
+    "text": "Immediate Applications\nHow can you use these algorithms starting today?\n\n\nDaily planning: Use SPT for your to-do list to minimize waiting time\nProject management: Apply EDD when managing deadlines\nTeam coordination: Use Johnson’s Rule for two-stage processes\nTime blocking: Prevent thrashing with strategic scheduling",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_04_scheduling.html#the-end",
-    "href": "lectures/lec_04_scheduling.html#the-end",
+    "objectID": "lectures/lec_04_scheduling.html#key-takeaways",
+    "href": "lectures/lec_04_scheduling.html#key-takeaways",
     "title": "Lecture IV - Scheduling",
-    "section": "The End",
-    "text": "The End\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for todays lecture!\nWe now have covered a brief introduction into scheduling. Now, we can start with the tutorials! As we have now a good foundation, we can start to apply some algorithms on data sets in Python.",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nWhat we learned today:\n\n\nScheduling algorithms provide optimal solutions to time management problems\nDifferent objectives require different algorithms (EDD, SPT, Johnson’s Rule)\nDependencies and constraints add complexity but have algorithmic solutions\nThrashing prevention is crucial for maintaining productivity\nThese principles directly translate to programming and system design",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#section",
+    "href": "lectures/lec_04_scheduling.html#section",
+    "title": "Lecture IV - Scheduling",
+    "section": "",
+    "text": "Any questions\nso far?",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#after-the-break-scheduling",
+    "href": "lectures/lec_04_scheduling.html#after-the-break-scheduling",
+    "title": "Lecture IV - Scheduling",
+    "section": "After the break — Scheduling",
+    "text": "After the break — Scheduling\n\nProgramming session in our new notebooks\nHow to translate the idea into code and experiments\nDifferent scheduling algorithms applied to problems\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for scheduling!\nLet’s have a short break and then continue with our fourth Python programming session.",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -5214,7 +5298,18 @@
     "href": "lectures/lec_04_scheduling.html#books-on-programming",
     "title": "Lecture IV - Scheduling",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.",
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.",
+    "crumbs": [
+      "04 Scheduling",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_04_scheduling.html#questions-discussion",
+    "href": "lectures/lec_04_scheduling.html#questions-discussion",
+    "title": "Lecture IV - Scheduling",
+    "section": "Questions & Discussion",
+    "text": "Questions & Discussion\n\n\n\n\n\n\nNote\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples.",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -5243,11 +5338,25 @@
     ]
   },
   {
-    "objectID": "lectures/lec_04_presentation.html#introduction-1",
-    "href": "lectures/lec_04_presentation.html#introduction-1",
+    "objectID": "lectures/lec_04_presentation.html#todays-topic-scheduling-algorithms",
+    "href": "lectures/lec_04_presentation.html#todays-topic-scheduling-algorithms",
     "title": "Lecture IV - Scheduling",
-    "section": "Introduction",
-    "text": "Introduction"
+    "section": "Today’s Topic: Scheduling Algorithms",
+    "text": "Today’s Topic: Scheduling Algorithms\nTopic: Understanding scheduling problems and algorithmic solutions for optimal task ordering\nWhy this matters: Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we’ll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic."
+  },
+  {
+    "objectID": "lectures/lec_04_presentation.html#todays-agenda",
+    "href": "lectures/lec_04_presentation.html#todays-agenda",
+    "title": "Lecture IV - Scheduling",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda\n\nScheduling Fundamentals - Johnson’s Rule and two-machine problems\nHistorical Context - How scheduling theory developed\nCore Algorithms - EDD for deadlines, SPT for efficiency\nAdvanced Topics - Dependencies, real-time scheduling, thrashing\nProgramming Connections - How this builds algorithmic problem-solving skills"
+  },
+  {
+    "objectID": "lectures/lec_04_presentation.html#a-simple-scheduling-problem",
+    "href": "lectures/lec_04_presentation.html#a-simple-scheduling-problem",
+    "title": "Lecture IV - Scheduling",
+    "section": "A Simple Scheduling Problem",
+    "text": "A Simple Scheduling Problem"
   },
   {
     "objectID": "lectures/lec_04_presentation.html#washing-machine-dryer",
@@ -5325,6 +5434,13 @@
     "title": "Lecture IV - Scheduling",
     "section": "Modern Scheduling Theory",
     "text": "Modern Scheduling Theory\n\n\n\nRAND Corporation founded (1948)\nSelmer Johnson publishes Johnson’s Rule in 1954\nBeginning of modern scheduling theory\nMany more algorithms and methods developed since"
+  },
+  {
+    "objectID": "lectures/lec_04_presentation.html#professional-applications",
+    "href": "lectures/lec_04_presentation.html#professional-applications",
+    "title": "Lecture IV - Scheduling",
+    "section": "Professional Applications",
+    "text": "Professional Applications\nWhere do we see scheduling in professional practice?\n\nProject Management: Task dependencies, resource allocation, critical path\nSoftware Development: CPU scheduling, thread management, job queues\nOperations: Production scheduling, supply chain optimization\nHealthcare: Patient scheduling, surgery planning, staff allocation\nTransportation: Route optimization, crew scheduling, maintenance planning\n\n\nConnection to Programming: These are the same optimization problems that algorithms solve!"
   },
   {
     "objectID": "lectures/lec_04_presentation.html#task-classification",
@@ -5642,18 +5758,32 @@
     "text": "Preventing Thrashing Tactical\n\nTime blocking\nFocus periods\nTask batching\nPriority freezes\n\n\nQuestion: What strategies have worked for you?"
   },
   {
+    "objectID": "lectures/lec_04_presentation.html#immediate-applications",
+    "href": "lectures/lec_04_presentation.html#immediate-applications",
+    "title": "Lecture IV - Scheduling",
+    "section": "Immediate Applications",
+    "text": "Immediate Applications\nHow can you use these algorithms starting today?\n\nDaily planning: Use SPT for your to-do list to minimize waiting time\nProject management: Apply EDD when managing deadlines\nTeam coordination: Use Johnson’s Rule for two-stage processes\nTime blocking: Prevent thrashing with strategic scheduling"
+  },
+  {
     "objectID": "lectures/lec_04_presentation.html#key-takeaways",
     "href": "lectures/lec_04_presentation.html#key-takeaways",
     "title": "Lecture IV - Scheduling",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nScheduling is crucial for effective time management\nDifferent objectives need different algorithms\n\nEDD for deadline management\nSPT for waiting time reduction\n\nAddress thrashing early\nDefine your reactivity goals\nUse appropriate algorithms as foundations"
+    "text": "Key Takeaways\nWhat we learned today:\n\nScheduling algorithms provide optimal solutions to time management problems\nDifferent objectives require different algorithms (EDD, SPT, Johnson’s Rule)\nDependencies and constraints add complexity but have algorithmic solutions\nThrashing prevention is crucial for maintaining productivity\nThese principles directly translate to programming and system design"
   },
   {
-    "objectID": "lectures/lec_04_presentation.html#the-end",
-    "href": "lectures/lec_04_presentation.html#the-end",
+    "objectID": "lectures/lec_04_presentation.html#section",
+    "href": "lectures/lec_04_presentation.html#section",
     "title": "Lecture IV - Scheduling",
-    "section": "The End",
-    "text": "The End\n\n\n\n\n\n\nNote\n\n\nThat’s it for todays lecture!\nWe now have covered a brief introduction into scheduling. Now, we can start with the tutorials! As we have now a good foundation, we can start to apply some algorithms on data sets in Python."
+    "section": "",
+    "text": "Any questions\nso far?"
+  },
+  {
+    "objectID": "lectures/lec_04_presentation.html#after-the-break-scheduling",
+    "href": "lectures/lec_04_presentation.html#after-the-break-scheduling",
+    "title": "Lecture IV - Scheduling",
+    "section": "After the break — Scheduling",
+    "text": "After the break — Scheduling\n\nProgramming session in our new notebooks\nHow to translate the idea into code and experiments\nDifferent scheduling algorithms applied to problems\n\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for scheduling!\nLet’s have a short break and then continue with our fourth Python programming session."
   },
   {
     "objectID": "lectures/lec_04_presentation.html#interesting-literature-to-start",
@@ -5667,7 +5797,14 @@
     "href": "lectures/lec_04_presentation.html#books-on-programming",
     "title": "Lecture IV - Scheduling",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag."
+  },
+  {
+    "objectID": "lectures/lec_04_presentation.html#questions-discussion",
+    "href": "lectures/lec_04_presentation.html#questions-discussion",
+    "title": "Lecture IV - Scheduling",
+    "section": "Questions & Discussion",
+    "text": "Questions & Discussion\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_04_presentation.html#more-literature",
