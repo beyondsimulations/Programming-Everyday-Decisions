@@ -34,6 +34,14 @@ format:
 We really appreciate active participation and interaction!
 :::
 
+## Agenda
+
+- About the course, team, and expectations
+- How to learn programming (mindset and resources)
+- Setting up Python with uv and VS Code
+- Using notebooks with uv
+- Q&A and next steps
+
 ## Course Outline
 
 - **I:** Optimal Stopping
@@ -253,7 +261,11 @@ Any questions
 so far?
 :::
 
-## The End
+## After the break — Optimal Stopping
+
+- The "Secretary Problem" and the 37% rule
+- When to stop searching and make a decision
+- How to translate the idea into code and experiments
 
 ::: {.callout-note}
 **That's it for our introduction!**\
