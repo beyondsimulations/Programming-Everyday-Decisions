@@ -3423,7 +3423,7 @@
     "href": "lectures/lec_00_introduction.html#using-notebooks",
     "title": "Introduction - Programming",
     "section": "Using Notebooks",
-    "text": "Using Notebooks\n\nNow we need to add a kernel to our project\nRun uv add --dev ipykernel from your terminal\nNow run uv add jupyter in the terminal\nThis allows us to use uv Python in notebooks\nNext, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]\nDone? Perfect. Now we can start!",
+    "text": "Using Notebooks\n\nNow we need to add a kernel to our project\nRun uv add --dev ipykernel from your terminal\nNow run uv add jupyter in the terminal\nThis allows us to use uv Python in notebooks\nDone? Perfect. Now we can start!",
     "crumbs": [
       "01 Optimal Stopping",
       "Introduction"
@@ -3434,7 +3434,7 @@
     "href": "lectures/lec_00_introduction.html#working-with-notebooks",
     "title": "Introduction - Programming",
     "section": "Working with Notebooks",
-    "text": "Working with Notebooks\n\nNow you can download the files from the website\nJust click on one of the sessions and open it\nSelect Python on the right side\nDownload and save the files to your course folder\nOpen them and select “Open with Jupyter Notebook”\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThat was the hardest part today!",
+    "text": "Working with Notebooks\n\nNow you can download the files from the website\nJust click on one of the sessions and open it\nSelect Jupyter on the right side\nDownload and save the files to your course folder\nOpen them and select “Open with Jupyter Notebook”\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nThat was the hardest part today!",
     "crumbs": [
       "01 Optimal Stopping",
       "Introduction"
@@ -3637,14 +3637,14 @@
     "href": "lectures/lec_00_presentation.html#using-notebooks",
     "title": "Introduction - Programming",
     "section": "Using Notebooks",
-    "text": "Using Notebooks\n\nNow we need to add a kernel to our project\nRun uv add --dev ipykernel from your terminal\nNow run uv add jupyter in the terminal\nThis allows us to use uv Python in notebooks\nNext, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]\nDone? Perfect. Now we can start!"
+    "text": "Using Notebooks\n\nNow we need to add a kernel to our project\nRun uv add --dev ipykernel from your terminal\nNow run uv add jupyter in the terminal\nThis allows us to use uv Python in notebooks\nDone? Perfect. Now we can start!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#working-with-notebooks",
     "href": "lectures/lec_00_presentation.html#working-with-notebooks",
     "title": "Introduction - Programming",
     "section": "Working with Notebooks",
-    "text": "Working with Notebooks\n\nNow you can download the files from the website\nJust click on one of the sessions and open it\nSelect Python on the right side\nDownload and save the files to your course folder\nOpen them and select “Open with Jupyter Notebook”\n\n\n\n\n\n\n\n\nTip\n\n\nThat was the hardest part today!"
+    "text": "Working with Notebooks\n\nNow you can download the files from the website\nJust click on one of the sessions and open it\nSelect Jupyter on the right side\nDownload and save the files to your course folder\nOpen them and select “Open with Jupyter Notebook”\n\n\n\n\n\n\n\n\nTip\n\n\nThat was the hardest part today!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#section",
