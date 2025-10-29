@@ -1,10 +1,6 @@
 ---
 title: "Tutorial I.II - Comparison Operators"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_01_02_comparisons.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

@@ -1,10 +1,6 @@
 ---
 title: "Tutorial I.I - Variables and Types"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_01_01_variables.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

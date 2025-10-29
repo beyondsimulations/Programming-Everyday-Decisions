@@ -1,10 +1,6 @@
 ---
 title: "Tutorial III.I - Recap with Caching"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_03_01_recap.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

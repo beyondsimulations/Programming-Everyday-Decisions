@@ -1,10 +1,6 @@
 ---
 title: "Tutorial IV.I - Recap"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_04_01_recap.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

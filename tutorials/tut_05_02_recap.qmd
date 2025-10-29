@@ -1,10 +1,6 @@
 ---
 title: "Tutorial V.II - Recap with Randomness"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_05_02_recap.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction
