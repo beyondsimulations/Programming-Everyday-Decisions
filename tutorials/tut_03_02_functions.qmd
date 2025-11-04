@@ -1,10 +1,6 @@
 ---
 title: "Tutorial III.II - Functions"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_03_02_functions.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

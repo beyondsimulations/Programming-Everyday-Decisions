@@ -1,10 +1,6 @@
 ---
 title: "Tutorial II.I - Lists and Tuples"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_02_01_lists.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

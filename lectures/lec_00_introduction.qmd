@@ -34,6 +34,14 @@ format:
 We really appreciate active participation and interaction!
 :::
 
+## Agenda
+
+- About the course, team, and expectations
+- How to learn programming (mindset and resources)
+- Setting up Python with uv and VS Code
+- Using notebooks with uv
+- Q&A and next steps
+
 ## Course Outline
 
 - **I:** Optimal Stopping
@@ -229,14 +237,13 @@ Something not working yet? Ask us!
 - Run `uv add --dev ipykernel` from your terminal
 - Now run `uv add jupyter` in the terminal
 - This allows us to use `uv` Python in notebooks
-- Next, install the extension (Jupytext for Notebooks)[https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext]
 - Done? Perfect. Now we can start!
 
 ## Working with Notebooks
 
 - Now you can download the files from the website
 - Just click on one of the sessions and open it
-- Select `Python` on the right side
+- Select `Jupyter` on the right side
 - Download and save the files **to your course folder**
 - Open them and select “Open with Jupyter Notebook”
 
@@ -246,7 +253,6 @@ Something not working yet? Ask us!
 That was the hardest part today!
 :::
 
-
 ## {.loud-slide}
 ::: {.r-fit-text}
 Any questions
@@ -254,7 +260,11 @@ Any questions
 so far?
 :::
 
-## The End
+## After the break — Optimal Stopping
+
+- The "Secretary Problem" and the 37% rule
+- When to stop searching and make a decision
+- How to translate the idea into code and experiments
 
 ::: {.callout-note}
 **That's it for our introduction!**\

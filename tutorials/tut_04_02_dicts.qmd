@@ -1,10 +1,6 @@
 ---
 title: "Tutorial IV.II - Dictionaries"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_04_02_dicts.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

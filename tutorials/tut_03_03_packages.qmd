@@ -1,10 +1,6 @@
 ---
 title: "Tutorial III.III - Package Management"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_03_03_packages.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

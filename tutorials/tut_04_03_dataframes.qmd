@@ -1,10 +1,6 @@
 ---
 title: "Tutorial IV.III - DataFrames"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_04_03_dataframes.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

@@ -1,10 +1,6 @@
 ---
 title: "Tutorial I.III - Making Decisions"
 subtitle: "Programming: Everyday Decision-Making Algorithms"
-format-links:
-  - text: Python
-    href: tut_01_03_stopping.py
-    icon: hand-thumbs-up
 ---
 
 # Introduction

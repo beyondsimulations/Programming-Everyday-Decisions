@@ -8,6 +8,33 @@ format:
     output-file: lec_01_presentation.html
 ---
 
+
+## Today's Topic: Optimal Stopping
+
+**Topic:** Understanding optimal stopping problems and the famous "Secretary Problem"
+
+**Why this matters:** Optimal stopping is everywhere in life - from hiring decisions to finding apartments to choosing when to sell stocks. Today we'll learn the mathematical strategy that maximizes your chances of making the best choice.
+
+## Learning Objectives
+
+By the end of this lecture, you will be able to:
+
+:::{.incremental}
+1. **Define** optimal stopping problems and identify them in real-world scenarios
+2. **Apply** the 37% rule (look-and-leap strategy) to make better decisions
+3. **Connect** optimal stopping principles to programming logic and algorithmic thinking
+:::
+
+## Today's Agenda
+
+:::{.incremental}
+1. **What is Optimal Stopping?** - Definition and real-world examples
+2. **The Secretary Problem** - The classic formulation and solution
+3. **The 37% Rule** - Why it works and how to apply it
+4. **Variations & Extensions** - Rejection, time constraints, other scenarios
+5. **Connecting to Programming** - How this builds our algorithmic mindset
+:::
+
 # [Optimal Stopping]{.flow} {.title}
 
 ## What is Optimal Stopping?
@@ -43,11 +70,6 @@ optimal stopping?
 ## [Dating]{.invert-font} {background-image="https://unsplash.com/photos/-XlBjdtRqK8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTV8fGxvdmV8ZW58MHx8fHwxNzI5OTI4NTkxfDA&force=true"}
 ::: footer
 [Photo by <a href="https://unsplash.com/@shelbymary_">Shelby Deeter</a> on Unsplash]{.invert-font}
-:::
-
-## [Searching for a parking spot]{.invert-font} {background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&force=true"}
-::: footer
-[Photo by <a href="https://unsplash.com/@josephtpearson">Joseph Pearson</a> on Unsplash]{.invert-font}
 :::
 
 # ["Secretary Problem"]{.flow} {.title}
@@ -107,18 +129,39 @@ The optimal strategy is to:
 
 [^1]: Large number of candidates! With a small number of candidates, we can do even better.
 
-## Step-by-step Approximation
+## Look-and-Leap Strategy
 
-- With each additional candidate, the chance of getting a new best candidate decreases
-    - 1 candidate: 100%
-    - 2 candidates: 50%
-    - 3 candidates: 33%
-    - 4 candidates: 25%
-    - 5 candidates: 20%
+The mathematically optimal strategy:
+
+:::{.incremental}
+1. **Look** at the [first 37%]{.highlight} of candidates without hiring anyone
+2. **Remember** the best candidate from this observation phase
+3. **Leap:** Hire the next candidate who is **better than the best observed**
+4. **Success rate:** 37% chance of selecting the absolute best candidate
+:::
+
+[^1]: Large number of candidates! With a small number of candidates, we can do even better.
+. . .
+
+This means we fail 63% of the time - but this is the **best we can possibly do**!
+
+
+## Step-by-step Approximation
+Why does the success probability decrease with more candidates?
+
+- 1 candidate: 100% (no choice!)
+- 2 candidates: 50%
+- 3 candidates: 33%
+- 4 candidates: 25%
+- 5 candidates: 20%
 
 . . .
 
-[Question:]{.question} Anybody see a pattern?
+[Question:]{.question} Do you see the pattern?
+
+. . .
+
+**Pattern:** 1/n - as we have more options, each individual option is less likely to be the best.
 
 ## Why 37%?
 
@@ -227,24 +270,40 @@ plt.show()
 - **Formula:** $q^{\frac{1}{1-q}}$ with $q$ being the chance of rejection
 :::
 
+## Mutual Rejection
 
+[Question:]{.question} What if in dating, [the other person can also reject you]{.highlight}?
 
-## The role of time
-
-What if we don't have a fixed number of candidates, but rather a [fixed amount of time]{.highlight}?
-
-. . .
-
-- Imagine we have **one year** to find a new flat
-- We want the [best flat]{.highlight}, but don't know what a good flat is
-
-. . .
-
-[Question:]{.question} How should we behave?
+:::{.incremental}
+- The optimal stopping point **decreases**
+- We need to account for rejection risk
+- With 50% rejection probability: **start accepting at 25%**
+- **Formula:** $q^{\frac{1}{1-q}}$ where $q$ = rejection probability
+:::
 
 . . .
 
-- **Same**, but now we decide when to stop searching!
+**Life lesson:** Higher risk of rejection means we should be less picky!
+
+## Time Constraints
+
+What if we don't have a fixed number of candidates, but a [fixed amount of time]{.highlight}?
+
+. . .
+
+**Example:** One year to find an apartment
+
+. . .
+
+[Question:]{.question} How should we adapt our strategy?
+
+. . .
+
+:::{.incremental}
+- **Same principle applies!** Observe for first 37% of available time
+- But now we also control the **search intensity**
+- This connects to **resource allocation** problems in computer science
+:::
 
 ## Other versions
 
@@ -258,29 +317,48 @@ What if we don't have a fixed number of candidates, but rather a [fixed amount o
 Side note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!
 :::
 
-# [Optimal Solution]{.flow} {.title}
+## Building Your Technical Mindset
 
-## The Gambler's Fallacy
-
-[Question:]{.question} Can you imagine a scenario where it would be unwise to use optimal stopping?
+[Question:]{.question} **How does optimal stopping connect to programming?**
 
 . . .
 
-- Imagine a game with a [50 % chance of winning]{.highlight}
-- If you win, your payoff is a **triple** of your bet
-- If you lose, you have to pay your bet
+:::{.incremental}
+1. **Algorithmic thinking:** Break complex decisions into logical steps
+2. **Trade-off analysis:** Exploration vs. exploitation (fundamental in AI)
+3. **Mathematical optimization:** Using formulas to find best solutions
+:::
+
+## Key Takeaways
+
+**What we learned:**
+
+:::{.incremental}
+1. **Optimal stopping problems** are everywhere in life and business
+2. **The 37% rule** provides a mathematically optimal strategy
+3. **Exploration vs. exploitation** is a fundamental trade-off
+4. **Real-world variations** require adapting the basic strategy
+5. **This thinking** builds foundation for algorithmic problem-solving
+:::
 
 ## {.loud-slide}
 ::: {.r-fit-text}
-Questions?
+Any questions
+
+so far?
 :::
 
+## After the break — Optimal Stopping
 
-## The End
+- Gentle introduction to Python Programming
+- We work in our notebooks on basics and optimal stopping
+- How to translate the idea into code and experiments
+
+. . .
 
 ::: {.callout-note}
-**That's it for todays lecture!**\
-We now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!
+**That's it for optimal stopping!**\
+Let's have a short break and then continue with our first Python programming session.
 :::
 
 # [Literature]{.flow} {.title}
