@@ -1,8 +1,8 @@
 project:
   type: website
-  post-render:
-    - helpers/convert_pypercent.py
-    - helpers/convert_qmd_to_md.py
+ # post-render:
+ #   - helpers/convert_pypercent.py
+ #   - helpers/convert_qmd_to_md.py
   render:
     - 404.qmd
     - index.qmd
