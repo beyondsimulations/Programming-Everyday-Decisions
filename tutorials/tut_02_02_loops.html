@@ -443,17 +443,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Loops are a fundamental concept in programming that allow us to repeat a set of instructions multiple times. They’re essential for tasks that require processing large datasets, iterating through complex sequences, or automating repetitive processes. In the context of clinical trials, loops help us systematically analyze multiple treatments or patient outcomes.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>If a cell is marked with <code>YOUR CODE BELOW</code>, you are expected to write your code in that cell.</p>
+</div>
 </div>
 </div>
 </section>
@@ -592,21 +589,18 @@ Treatment: New Drug C, Efficacy: 92%</code></pre>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Success! Your average calculation is correct."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <ul>
 <li>Add each rate to the total</li>
 <li>Calculate the average by dividing the total by the number of treatments</li>
 <li>Note that <code>len(efficacy_rates)</code> gives you the count of treatments</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -629,22 +623,19 @@ Tip
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Success! You've correctly identified the promising treatments."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <ul>
 <li>Each treatment is represented as a tuple: <code>(name, efficacy_rate)</code></li>
 <li>You need to check if the efficacy rate (second element) is ≥ 80%</li>
 <li>If it meets the criteria, add the treatment name (first element) to <code>promising_treatments</code></li>
 <li>You could use tuple unpacking in your loop for cleaner code</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -689,16 +680,12 @@ Trial 4
 Trial 5</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>While loops are particularly useful when:</p>
 <ul>
 <li>You don’t know how many iterations you’ll need</li>
@@ -707,25 +694,23 @@ Note
 </ul>
 </div>
 </div>
+</div>
 <p>Be careful with while loops! An infinite loop can crash your program:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:  <span class="co"># Dangerous!</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This will never end"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Always ensure:</p>
 <ul>
 <li>The condition will eventually become false</li>
 <li>Resources or counters are properly updated</li>
 <li>You have a way to break out if needed</li>
 </ul>
+</div>
 </div>
 </div>
 <section id="exercise-2.1---breakthrough-treatment" class="level2">
@@ -770,16 +755,12 @@ Warning
 <span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Success! You've managed resources effectively."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <ul>
 <li>Track both resources and efficacy simultaneously</li>
 <li>Stop if either:
@@ -789,6 +770,7 @@ Tip
 </ul></li>
 <li>Remember to deduct costs for each trial</li>
 </ul>
+</div>
 </div>
 </div>
 </section>

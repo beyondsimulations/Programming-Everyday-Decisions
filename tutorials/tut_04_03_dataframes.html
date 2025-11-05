@@ -449,19 +449,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Imagine you’re planning a Mars mission. Every task, from equipment checks to crew training, needs careful scheduling. In this tutorial, we’ll learn how to use Python’s Pandas library to implement scheduling algorithms like Earliest Due Date (EDD) and Shortest Processing Time (SPT).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Before starting, ensure you have the <code>pandas</code> library installed.</p>
 <pre class="{bash}"><code>uv install pandas</code></pre>
 <pre class="{bash}"><code>conda install pandas</code></pre>
+</div>
 </div>
 </div>
 <p>Let’s begin by importing pandas:</p>
@@ -487,17 +484,14 @@ Task 2    Crew Training         3        15
 Task 3   Supply Loading         7         8</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The <code>pd.DataFrame()</code> function is used to create a DataFrame. A DataFrame is a two-dimensional, size-mutable, and heterogeneous tabular data structure with labeled axes (rows and columns). Here, we’ve created a DataFrame with three rows and four columns: <code>task</code>, <code>duration</code>, and <code>deadline</code>.</p>
+</div>
 </div>
 </div>
 <section id="exercise-1.1---create-mission-tasks-dataframe" class="level2">
@@ -648,16 +642,12 @@ Subset of data based on labels:
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data access exercises completed successfully!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Remember:</p>
 <ul>
 <li>Use <code>[]</code> for single or multiple columns</li>
@@ -665,6 +655,7 @@ Tip
 <li>Use <code>loc[]</code> when you want to access by label (using the index labels)</li>
 <li>Slicing works similar to Python lists: <code>0:2</code> means “from 0 up to (but not including) 2”</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -684,17 +675,14 @@ Task 1  Equipment Check         6        10
 Task 2    Crew Training         3        15</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The <code>sort_values()</code> method is used to sort the DataFrame by the <code>deadline</code> column. The <code>tasks</code> in this example is the DataFrame we created in the previous section. If you want to sort a different dataframe, just replace <code>tasks</code> with the name of the dataframe you want to sort. The method returns a new DataFrame with the rows sorted by the <code>deadline</code> column. If you want to sort the DataFrame by a different column, you can pass the name of the column as a string to the <code>by</code> argument. If you want to sort the DataFrame in descending order, you can pass <code>ascending=False</code> to the function.</p>
+</div>
 </div>
 </div>
 <p>If you want to add a new column, you can do so by assigning a new column to the DataFrame. For example, if you want to add a new column called <code>completion_time</code> to the <code>tasks</code> DataFrame, you can do so by assigning a new column to the DataFrame:</p>
@@ -781,17 +769,14 @@ Task 1  Equipment Check         6        10                11
 Task 2    Crew Training         3        15                16</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Note, how the index shows the index of the row in the original DataFrame!</p>
+</div>
 </div>
 </div>
 <p>If you want to access the index of the row, you can use the <code>name</code> attribute to access it. For example, if you want to access the index of the last row, you can use <code>sorted_tasks.iloc[-1].name</code>.</p>

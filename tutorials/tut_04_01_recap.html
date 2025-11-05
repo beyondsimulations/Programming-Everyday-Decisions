@@ -482,7 +482,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="section-2---shortest-processing-time" class="level1">
 <h1>Section 2 - Shortest Processing Time</h1>
 <p>One effective scheduling strategy is to handle the quickest tasks first. This minimizes average waiting time. To find the quickest drink, we can use a inbuilt function in Python, but let’s try to do it by ourselves first with a loop. Remember how to loop through a list from the previous lecture? Loops are created using the <code>for</code> keyword. The <code>for</code> loop is used to iterate over a sequence (like a list) and execute a block of code for each item in the sequence.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -553,21 +553,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>deadline</code> (list): a list of deadlines in minutes as integers</li>
 </ul>
 <p>The function should return a <strong>list of lists</strong> where each inner list contains <code>[customer_name, drink, price, deadline]</code>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <ul>
 <li>Use a for loop to iterate over the <code>customer_names</code> list and append the corresponding values to the <code>orders</code> list</li>
 <li>Remember that <code>len(customer_names)</code> gives you the number of customers</li>
 <li>Use the append method to add a list to the <code>orders</code> list</li>
 </ul>
+</div>
 </div>
 </div>
 <div id="2796a2d4" class="cell" data-execution_count="6">
@@ -597,22 +594,19 @@ Tip
 <section id="exercise-4.1---find-earliest-deadline" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-4.1---find-earliest-deadline">Exercise 4.1 - Find Earliest Deadline</h2>
 <p>Create a function <code>find_earliest_deadline</code> that takes a list of orders (as created in Exercise 3.1) and returns the order (<strong>as a list</strong> and not a list of lists) with the earliest deadline.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <ul>
 <li>Initialize a variable with the lowest found deadline with a high value (e.g., 1000000)</li>
 <li>Initialize a variable with the order that has the lowest deadline (first set it to an empty list)</li>
 <li>Use a for loop to iterate over the <code>orders</code> list</li>
 <li>Inside the loop, compare the deadline of the current order with the lowest found deadline</li>
 </ul>
+</div>
 </div>
 </div>
 <div id="92f0da7d" class="cell" data-execution_count="8">

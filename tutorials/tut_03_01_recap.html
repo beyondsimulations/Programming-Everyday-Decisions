@@ -452,7 +452,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Lists</strong> → Like cache storage (what we remember)</li>
 <li><strong>Loops</strong> → Like cache maintenance (how we update our knowledge)</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -476,7 +476,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>is_favorite <span class="op">=</span> <span class="va">True</span> <span class="co"># Boolean cache</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>num_orders <span class="op">=</span> <span class="dv">3</span> <span class="co"># Integer cache</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-simple callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -535,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>Based on 15 accesses and the last access 25 minutes ago, should we evict? True</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-simple callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -576,7 +576,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="section-3---lists-and-tuples" class="level1">
 <h1>Section 3 - Lists and Tuples</h1>
 <p>Lists work like a cache’s storage system, holding multiple items that we might need later. Tuples are similar, but they are immutable. This means that once a tuple is created, its contents cannot be changed. To measure the size of a list or tuple, we can use the <code>len()</code> function.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-simple callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -610,17 +610,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Current cache: </span><span class="sc">{</span>recent_songs<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>This behavior would <strong>not have been possible with a tuple</strong>, as we cannot change the contents of a tuple once it is created!</p>
+</div>
 </div>
 </div>
 <p>We can also use <strong>lists to store tuples</strong>, which is useful for storing multiple items with different properties. For example, we can store the name and price of items in a shopping cart.</p>
@@ -640,17 +637,14 @@ Tip
 <li>Create tuples for the item details (name and price) and add them to the list</li>
 <li>Ensure that the <strong>name is a string</strong> and the <strong>price is a float</strong></li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>First, create a list. Inside the list, the entries should be tuples of the item name and price.</p>
+</div>
 </div>
 </div>
 <div id="3e649bab" class="cell" data-execution_count="9">
@@ -700,17 +694,14 @@ Cached items after cleanup: [('knife', 12)]</code></pre>
 <li>If the site has been visited <strong>less than 6 times</strong>, remove it from the cache</li>
 <li>Print the browser history after cleanup</li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Be careful with the loop. You need to iterate over the list and remove items from it. If you remove items directly from the list while iterating over it, you won’t get the correct answer, as the list will change size while you iterate over it. Thus, you <strong>first need to create a list of items to keep</strong> and at the end replace the old list with the new one.</p>
+</div>
 </div>
 </div>
 <div id="f83f260f" class="cell" data-execution_count="12">
