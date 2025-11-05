@@ -2186,6 +2186,27 @@
     ]
   },
   {
+    "objectID": "lectures/lec_01_presentation.html#todays-topic-optimal-stopping",
+    "href": "lectures/lec_01_presentation.html#todays-topic-optimal-stopping",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Today’s Topic: Optimal Stopping",
+    "text": "Today’s Topic: Optimal Stopping\nTopic: Understanding optimal stopping problems and the famous “Secretary Problem”\nWhy this matters: Optimal stopping is everywhere in life - from hiring decisions to finding apartments to choosing when to sell stocks. Today we’ll learn the mathematical strategy that maximizes your chances of making the best choice."
+  },
+  {
+    "objectID": "lectures/lec_01_presentation.html#learning-objectives",
+    "href": "lectures/lec_01_presentation.html#learning-objectives",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lecture, you will be able to:\n\nDefine optimal stopping problems and identify them in real-world scenarios\nApply the 37% rule (look-and-leap strategy) to make better decisions\nConnect optimal stopping principles to programming logic and algorithmic thinking"
+  },
+  {
+    "objectID": "lectures/lec_01_presentation.html#todays-agenda",
+    "href": "lectures/lec_01_presentation.html#todays-agenda",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda\n\nWhat is Optimal Stopping? - Definition and real-world examples\nThe Secretary Problem - The classic formulation and solution\nThe 37% Rule - Why it works and how to apply it\nVariations & Extensions - Rejection, time constraints, other scenarios\nConnecting to Programming - How this builds our algorithmic mindset"
+  },
+  {
     "objectID": "lectures/lec_01_presentation.html#what-is-optimal-stopping",
     "href": "lectures/lec_01_presentation.html#what-is-optimal-stopping",
     "title": "Lecture I - Optimal Stopping",
@@ -2221,13 +2242,6 @@
     "text": "Dating\n\nPhoto by Shelby Deeter on Unsplash"
   },
   {
-    "objectID": "lectures/lec_01_presentation.html#searching-for-a-parking-spot",
-    "href": "lectures/lec_01_presentation.html#searching-for-a-parking-spot",
-    "title": "Lecture I - Optimal Stopping",
-    "section": "Searching for a parking spot",
-    "text": "Searching for a parking spot\n\nPhoto by Joseph Pearson on Unsplash"
-  },
-  {
     "objectID": "lectures/lec_01_presentation.html#the-secretary-problem",
     "href": "lectures/lec_01_presentation.html#the-secretary-problem",
     "title": "Lecture I - Optimal Stopping",
@@ -2260,14 +2274,21 @@
     "href": "lectures/lec_01_presentation.html#look-and-leap-strategy",
     "title": "Lecture I - Optimal Stopping",
     "section": "Look-and-Leap Strategy",
-    "text": "Look-and-Leap Strategy\nThe optimal strategy is to:\n\nLook at the first 37 % of options\nRemember the best one seen so far\nChoose the next option that’s better than the best seen\nChance of selecting the best candidate is 37 %1\nThus, we can fail with 63 %!\n\nLarge number of candidates! With a small number of candidates, we can do even better."
+    "text": "Look-and-Leap Strategy\nThe optimal strategy is to:\n\nLook at the first 37 % of options\nRemember the best one seen so far\nChoose the next option that’s better than the best seen\nChance of selecting the best candidate is 37 %1\nThus, we can fail with 63 %!\n\nLarge number of candidates! With a small number of candidates, we can do even better. . . ."
+  },
+  {
+    "objectID": "lectures/lec_01_presentation.html#look-and-leap-strategy-1",
+    "href": "lectures/lec_01_presentation.html#look-and-leap-strategy-1",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Look-and-Leap Strategy",
+    "text": "Look-and-Leap Strategy\nThe mathematically optimal strategy:\n\nLook at the first 37% of candidates without hiring anyone\nRemember the best candidate from this observation phase\nLeap: Hire the next candidate who is better than the best observed\nSuccess rate: 37% chance of selecting the absolute best candidate\n\nThis means we fail 63% of the time - but this is the best we can possibly do!"
   },
   {
     "objectID": "lectures/lec_01_presentation.html#step-by-step-approximation",
     "href": "lectures/lec_01_presentation.html#step-by-step-approximation",
     "title": "Lecture I - Optimal Stopping",
     "section": "Step-by-step Approximation",
-    "text": "Step-by-step Approximation\n\nWith each additional candidate, the chance of getting a new best candidate decreases\n\n1 candidate: 100%\n2 candidates: 50%\n3 candidates: 33%\n4 candidates: 25%\n5 candidates: 20%\n\n\n\nQuestion: Anybody see a pattern?"
+    "text": "Step-by-step Approximation\nWhy does the success probability decrease with more candidates?\n\n1 candidate: 100% (no choice!)\n2 candidates: 50%\n3 candidates: 33%\n4 candidates: 25%\n5 candidates: 20%\n\n\nQuestion: Do you see the pattern?\n\n\nPattern: 1/n - as we have more options, each individual option is less likely to be the best."
   },
   {
     "objectID": "lectures/lec_01_presentation.html#why-37",
@@ -2298,11 +2319,18 @@
     "text": "Rejection\nQuestion: Imagine a dating scenario, where the other person can also reject you. Optimal stopping point?\n\nThe optimal stopping point is now lower\nBecause we can now fail more often\nWith 50 % chance of rejection, we start leaping at 25 %\nFormula: \\(q^{\\frac{1}{1-q}}\\) with \\(q\\) being the chance of rejection"
   },
   {
-    "objectID": "lectures/lec_01_presentation.html#the-role-of-time",
-    "href": "lectures/lec_01_presentation.html#the-role-of-time",
+    "objectID": "lectures/lec_01_presentation.html#mutual-rejection",
+    "href": "lectures/lec_01_presentation.html#mutual-rejection",
     "title": "Lecture I - Optimal Stopping",
-    "section": "The role of time",
-    "text": "The role of time\nWhat if we don’t have a fixed number of candidates, but rather a fixed amount of time?\n\n\nImagine we have one year to find a new flat\nWe want the best flat, but don’t know what a good flat is\n\n\n\nQuestion: How should we behave?\n\n\n\nSame, but now we decide when to stop searching!"
+    "section": "Mutual Rejection",
+    "text": "Mutual Rejection\nQuestion: What if in dating, the other person can also reject you?\n\nThe optimal stopping point decreases\nWe need to account for rejection risk\nWith 50% rejection probability: start accepting at 25%\nFormula: \\(q^{\\frac{1}{1-q}}\\) where \\(q\\) = rejection probability\n\n\nLife lesson: Higher risk of rejection means we should be less picky!"
+  },
+  {
+    "objectID": "lectures/lec_01_presentation.html#time-constraints",
+    "href": "lectures/lec_01_presentation.html#time-constraints",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Time Constraints",
+    "text": "Time Constraints\nWhat if we don’t have a fixed number of candidates, but a fixed amount of time?\n\nExample: One year to find an apartment\n\n\nQuestion: How should we adapt our strategy?\n\n\n\nSame principle applies! Observe for first 37% of available time\nBut now we also control the search intensity\nThis connects to resource allocation problems in computer science"
   },
   {
     "objectID": "lectures/lec_01_presentation.html#other-versions",
@@ -2312,25 +2340,32 @@
     "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) [^2]\n\n\n\n\n\n\n\n\nNote\n\n\nSide note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!"
   },
   {
-    "objectID": "lectures/lec_01_presentation.html#the-gamblers-fallacy",
-    "href": "lectures/lec_01_presentation.html#the-gamblers-fallacy",
+    "objectID": "lectures/lec_01_presentation.html#building-your-technical-mindset",
+    "href": "lectures/lec_01_presentation.html#building-your-technical-mindset",
     "title": "Lecture I - Optimal Stopping",
-    "section": "The Gambler’s Fallacy",
-    "text": "The Gambler’s Fallacy\nQuestion: Can you imagine a scenario where it would be unwise to use optimal stopping?\n\n\nImagine a game with a 50 % chance of winning\nIf you win, your payoff is a triple of your bet\nIf you lose, you have to pay your bet"
+    "section": "Building Your Technical Mindset",
+    "text": "Building Your Technical Mindset\nQuestion: How does optimal stopping connect to programming?\n\n\nAlgorithmic thinking: Break complex decisions into logical steps\nTrade-off analysis: Exploration vs. exploitation (fundamental in AI)\nMathematical optimization: Using formulas to find best solutions"
+  },
+  {
+    "objectID": "lectures/lec_01_presentation.html#key-takeaways",
+    "href": "lectures/lec_01_presentation.html#key-takeaways",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nWhat we learned:\n\nOptimal stopping problems are everywhere in life and business\nThe 37% rule provides a mathematically optimal strategy\nExploration vs. exploitation is a fundamental trade-off\nReal-world variations require adapting the basic strategy\nThis thinking builds foundation for algorithmic problem-solving"
   },
   {
     "objectID": "lectures/lec_01_presentation.html#section-2",
     "href": "lectures/lec_01_presentation.html#section-2",
     "title": "Lecture I - Optimal Stopping",
     "section": "",
-    "text": "Questions?"
+    "text": "Any questions\nso far?"
   },
   {
-    "objectID": "lectures/lec_01_presentation.html#the-end",
-    "href": "lectures/lec_01_presentation.html#the-end",
+    "objectID": "lectures/lec_01_presentation.html#after-the-break-optimal-stopping",
+    "href": "lectures/lec_01_presentation.html#after-the-break-optimal-stopping",
     "title": "Lecture I - Optimal Stopping",
-    "section": "The End",
-    "text": "The End\n\n\n\n\n\n\nNote\n\n\nThat’s it for todays lecture!\nWe now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!"
+    "section": "After the break — Optimal Stopping",
+    "text": "After the break — Optimal Stopping\n\nGentle introduction to Python Programming\nWe work in our notebooks on basics and optimal stopping\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for optimal stopping!\nLet’s have a short break and then continue with our first Python programming session."
   },
   {
     "objectID": "lectures/lec_01_presentation.html#interesting-literature-to-start",
@@ -2358,7 +2393,40 @@
     "href": "lectures/lec_01_optimal_stopping.html",
     "title": "Lecture I - Optimal Stopping",
     "section": "",
-    "text": "Question: Anybody know what optimal stopping is?\n\n\nOptimal stopping is the problem of:\n\nchoosing the best option\nfrom a sequence of options\nwhere the options are revealed one by one\n\n\n\n\n\n\n\nAnybody an\nexample of\noptimal stopping?\n\n\n\n\n\nPhoto by Aditya Ghosh on Unsplash\n\n\n\n\n\nPhoto by Scott Graham on Unsplash\n\n\n\n\n\nPhoto by Shelby Deeter on Unsplash\n\n\n\n\n\nPhoto by Joseph Pearson on Unsplash",
+    "text": "Topic: Understanding optimal stopping problems and the famous “Secretary Problem”\nWhy this matters: Optimal stopping is everywhere in life - from hiring decisions to finding apartments to choosing when to sell stocks. Today we’ll learn the mathematical strategy that maximizes your chances of making the best choice.",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_01_optimal_stopping.html#todays-topic-optimal-stopping",
+    "href": "lectures/lec_01_optimal_stopping.html#todays-topic-optimal-stopping",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "",
+    "text": "Topic: Understanding optimal stopping problems and the famous “Secretary Problem”\nWhy this matters: Optimal stopping is everywhere in life - from hiring decisions to finding apartments to choosing when to sell stocks. Today we’ll learn the mathematical strategy that maximizes your chances of making the best choice.",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_01_optimal_stopping.html#learning-objectives",
+    "href": "lectures/lec_01_optimal_stopping.html#learning-objectives",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lecture, you will be able to:\n\n\nDefine optimal stopping problems and identify them in real-world scenarios\nApply the 37% rule (look-and-leap strategy) to make better decisions\nConnect optimal stopping principles to programming logic and algorithmic thinking",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_01_optimal_stopping.html#todays-agenda",
+    "href": "lectures/lec_01_optimal_stopping.html#todays-agenda",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Today’s Agenda",
+    "text": "Today’s Agenda\n\n\nWhat is Optimal Stopping? - Definition and real-world examples\nThe Secretary Problem - The classic formulation and solution\nThe 37% Rule - Why it works and how to apply it\nVariations & Extensions - Rejection, time constraints, other scenarios\nConnecting to Programming - How this builds our algorithmic mindset",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2368,8 +2436,8 @@
     "objectID": "lectures/lec_01_optimal_stopping.html#what-is-optimal-stopping",
     "href": "lectures/lec_01_optimal_stopping.html#what-is-optimal-stopping",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Question: Anybody know what optimal stopping is?\n\n\nOptimal stopping is the problem of:\n\nchoosing the best option\nfrom a sequence of options\nwhere the options are revealed one by one",
+    "section": "What is Optimal Stopping?",
+    "text": "What is Optimal Stopping?\nQuestion: Anybody know what optimal stopping is?\n\n\nOptimal stopping is the problem of:\n\nchoosing the best option\nfrom a sequence of options\nwhere the options are revealed one by one",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2390,8 +2458,8 @@
     "objectID": "lectures/lec_01_optimal_stopping.html#flat-hunting",
     "href": "lectures/lec_01_optimal_stopping.html#flat-hunting",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Photo by Aditya Ghosh on Unsplash",
+    "section": "Flat Hunting",
+    "text": "Flat Hunting\n\nPhoto by Aditya Ghosh on Unsplash",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2401,8 +2469,8 @@
     "objectID": "lectures/lec_01_optimal_stopping.html#hiring-applicants",
     "href": "lectures/lec_01_optimal_stopping.html#hiring-applicants",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Photo by Scott Graham on Unsplash",
+    "section": "Hiring applicants",
+    "text": "Hiring applicants\n\nPhoto by Scott Graham on Unsplash",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2412,19 +2480,8 @@
     "objectID": "lectures/lec_01_optimal_stopping.html#dating",
     "href": "lectures/lec_01_optimal_stopping.html#dating",
     "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Photo by Shelby Deeter on Unsplash",
-    "crumbs": [
-      "01 Optimal Stopping",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_01_optimal_stopping.html#searching-for-a-parking-spot",
-    "href": "lectures/lec_01_optimal_stopping.html#searching-for-a-parking-spot",
-    "title": "Lecture I - Optimal Stopping",
-    "section": "",
-    "text": "Photo by Joseph Pearson on Unsplash",
+    "section": "Dating",
+    "text": "Dating\n\nPhoto by Shelby Deeter on Unsplash",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2486,11 +2543,22 @@
     ]
   },
   {
+    "objectID": "lectures/lec_01_optimal_stopping.html#look-and-leap-strategy-1",
+    "href": "lectures/lec_01_optimal_stopping.html#look-and-leap-strategy-1",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Look-and-Leap Strategy",
+    "text": "Look-and-Leap Strategy\nThe mathematically optimal strategy:\n\n\nLook at the first 37% of candidates without hiring anyone\nRemember the best candidate from this observation phase\nLeap: Hire the next candidate who is better than the best observed\nSuccess rate: 37% chance of selecting the absolute best candidate\n\n\nThis means we fail 63% of the time - but this is the best we can possibly do!",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
     "objectID": "lectures/lec_01_optimal_stopping.html#step-by-step-approximation",
     "href": "lectures/lec_01_optimal_stopping.html#step-by-step-approximation",
     "title": "Lecture I - Optimal Stopping",
     "section": "Step-by-step Approximation",
-    "text": "Step-by-step Approximation\n\nWith each additional candidate, the chance of getting a new best candidate decreases\n\n1 candidate: 100%\n2 candidates: 50%\n3 candidates: 33%\n4 candidates: 25%\n5 candidates: 20%\n\n\n. . .\nQuestion: Anybody see a pattern?",
+    "text": "Step-by-step Approximation\nWhy does the success probability decrease with more candidates?\n\n1 candidate: 100% (no choice!)\n2 candidates: 50%\n3 candidates: 33%\n4 candidates: 25%\n5 candidates: 20%\n\n. . .\nQuestion: Do you see the pattern?\n. . .\nPattern: 1/n - as we have more options, each individual option is less likely to be the best.",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2541,11 +2609,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_01_optimal_stopping.html#the-role-of-time",
-    "href": "lectures/lec_01_optimal_stopping.html#the-role-of-time",
+    "objectID": "lectures/lec_01_optimal_stopping.html#mutual-rejection",
+    "href": "lectures/lec_01_optimal_stopping.html#mutual-rejection",
     "title": "Lecture I - Optimal Stopping",
-    "section": "The role of time",
-    "text": "The role of time\nWhat if we don’t have a fixed number of candidates, but rather a fixed amount of time?\n. . .\n\nImagine we have one year to find a new flat\nWe want the best flat, but don’t know what a good flat is\n\n. . .\nQuestion: How should we behave?\n. . .\n\nSame, but now we decide when to stop searching!",
+    "section": "Mutual Rejection",
+    "text": "Mutual Rejection\nQuestion: What if in dating, the other person can also reject you?\n\n\nThe optimal stopping point decreases\nWe need to account for rejection risk\nWith 50% rejection probability: start accepting at 25%\nFormula: \\(q^{\\frac{1}{1-q}}\\) where \\(q\\) = rejection probability\n\n\n. . .\nLife lesson: Higher risk of rejection means we should be less picky!",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_01_optimal_stopping.html#time-constraints",
+    "href": "lectures/lec_01_optimal_stopping.html#time-constraints",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Time Constraints",
+    "text": "Time Constraints\nWhat if we don’t have a fixed number of candidates, but a fixed amount of time?\n. . .\nExample: One year to find an apartment\n. . .\nQuestion: How should we adapt our strategy?\n. . .\n\n\nSame principle applies! Observe for first 37% of available time\nBut now we also control the search intensity\nThis connects to resource allocation problems in computer science",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2563,11 +2642,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_01_optimal_stopping.html#the-gamblers-fallacy",
-    "href": "lectures/lec_01_optimal_stopping.html#the-gamblers-fallacy",
+    "objectID": "lectures/lec_01_optimal_stopping.html#building-your-technical-mindset",
+    "href": "lectures/lec_01_optimal_stopping.html#building-your-technical-mindset",
     "title": "Lecture I - Optimal Stopping",
-    "section": "The Gambler’s Fallacy",
-    "text": "The Gambler’s Fallacy\nQuestion: Can you imagine a scenario where it would be unwise to use optimal stopping?\n. . .\n\nImagine a game with a 50 % chance of winning\nIf you win, your payoff is a triple of your bet\nIf you lose, you have to pay your bet",
+    "section": "Building Your Technical Mindset",
+    "text": "Building Your Technical Mindset\nQuestion: How does optimal stopping connect to programming?\n. . .\n\n\nAlgorithmic thinking: Break complex decisions into logical steps\nTrade-off analysis: Exploration vs. exploitation (fundamental in AI)\nMathematical optimization: Using formulas to find best solutions",
+    "crumbs": [
+      "01 Optimal Stopping",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_01_optimal_stopping.html#key-takeaways",
+    "href": "lectures/lec_01_optimal_stopping.html#key-takeaways",
+    "title": "Lecture I - Optimal Stopping",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nWhat we learned:\n\n\nOptimal stopping problems are everywhere in life and business\nThe 37% rule provides a mathematically optimal strategy\nExploration vs. exploitation is a fundamental trade-off\nReal-world variations require adapting the basic strategy\nThis thinking builds foundation for algorithmic problem-solving",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2578,18 +2668,18 @@
     "href": "lectures/lec_01_optimal_stopping.html#section-2",
     "title": "Lecture I - Optimal Stopping",
     "section": "",
-    "text": "Questions?",
+    "text": "Any questions\nso far?",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_01_optimal_stopping.html#the-end",
-    "href": "lectures/lec_01_optimal_stopping.html#the-end",
+    "objectID": "lectures/lec_01_optimal_stopping.html#after-the-break-optimal-stopping",
+    "href": "lectures/lec_01_optimal_stopping.html#after-the-break-optimal-stopping",
     "title": "Lecture I - Optimal Stopping",
-    "section": "The End",
-    "text": "The End\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for todays lecture!\nWe now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!",
+    "section": "After the break — Optimal Stopping",
+    "text": "After the break — Optimal Stopping\n\nGentle introduction to Python Programming\nWe work in our notebooks on basics and optimal stopping\nHow to translate the idea into code and experiments\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nThat’s it for optimal stopping!\nLet’s have a short break and then continue with our first Python programming session.",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -2633,7 +2723,7 @@
     "href": "lectures/lec_01_optimal_stopping.html#footnotes",
     "title": "Lecture I - Optimal Stopping",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nLarge number of candidates! With a small number of candidates, we can do even better.↩︎\nThis is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.↩︎\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
+    "text": "Footnotes\n\n\nLarge number of candidates! With a small number of candidates, we can do even better. . . .↩︎\nThis is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.↩︎\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
     "crumbs": [
       "01 Optimal Stopping",
       "Lecture"
@@ -3704,51 +3794,73 @@
     "href": "lectures/lec_02_explore_exploit.html",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Question: What does “explore” mean?\n\nExplore is the gathering of new information.\n\nQuestion: What does “exploit” mean?\n\nExploit is the utilization of already known information to obtain a known result.\n\nQuestion: what is the relationship between both?\n\nExplore and exploit are opposing alternatives.\n\n\n\n\n\n\n\n\nClinical trials:\n\nExplore: Test new drugs.\nExploit: Use existing drugs.\n\nA/B testing:\n\nExplore: Test new website designs.\nExploit: Use existing website designs.\n\n\n\n\n\n\n\n\nDating:\n\nExplore: Go on a date with someone new.\nExploit: Go on a date with someone you already know.\n\nSocial interactions:\n\nExplore: Meet new people.\nExploit: Spend time with known people.\n\n\n\n\n\n\n\n\nExplore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLife is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nScientists have been working on this for over 50 years.\n\n\n\n\n\n\n\n\n\nExploitation is not always the best strategy.\nEspecially when you have very limited information.\nWhen you stop exploring, you might miss better options.\nImagine you are not able to gather new information and could only choose known alternatives.\n\n\n\n\n\n\n\n\n\n\nExploration is not always the best strategy.\nEspecially when you are limited in using new information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could only eat each meal only once, hear each song only once, talk to each person only once…",
+    "text": "You have 45 minutes for lunch.\nDo you try the new restaurant or go to your reliable favorite?\n\n\n\n\n\n\n\n\nTip🗳️ Quick Poll\n\n\n\nRaise your hand: Who would try the new restaurant?\n\n\n\n\nThis decision happens hundreds of times daily — and there’s optimal math behind it!\n\n\nPhoto by Jillian Amatt on Unsplash\n\n\n\n\n\n\n\n\n\n\nDefinition: Gathering new information\nRisk: Unknown outcomes\nExample: Trying that new sushi place\n\n\n\n\n\n\n\n\nDefinition: Using known information\nRisk: Missing better options\nExample: Your go-to pizza joint\n\n\n\n\n\n\n\n\n\n\n\n\nImportant⚖️ The Fundamental Trade-off\n\n\n\nThese are mutually exclusive choices in any given moment. You can’t have your cake and eat it (too).\n\n\n\n\n\n\n\n\n\nExplore: Test experimental drug on new patients\n\nRisk: Unknown side effects, potential harm\nReward: Breakthrough treatment discovery\n\nExploit: Use proven treatment\n\nRisk: Missing better cures\nReward: Predictable, safe outcomes\n\n\n\n\nExplore: Test new website design\n\nCost: Development time, potential lost conversions\nBenefit: Higher conversion rates, better UX\n\nExploit: Keep current design\n\nCost: Missed optimization opportunities\nBenefit: Stable, known performance\n\n\n\n\nExplore: Meet someone new\n\nRisk: Bad dates, wasted time\nReward: Finding “the one”\n\nExploit: Meet someone you already know\n\nRisk: Settling for “good enough”\nReward: Comfortable, known connection\n\n\n\n\n\n\n\n\n\n\nTry a new coffee shop\nLearn a new skill\n\nWatch a different genre\nTake a new route to work\n\n\n\n\n\n\n\n\nOrder your usual drink\nUse familiar tools\nRewatch favorite shows\nTake the fastest route\n\n\n\n\n\n\n\n\n\n\n\n\nTipThe Million Dollar Question\n\n\n\nWhat is the optimal balance? Scientists have been working on this for over 50 years!\n\n\n\n\n\n\n\n\n\n\nExploitation is not always the best strategy.\nEspecially when you have very limited information.\nWhen you stop exploring, you might miss better options.\nImagine you are not able to gather new information and could only choose known alternatives.\n\n\n\n\n\n\n\n\n\n\nExploration is not always the best strategy.\nEspecially when you are limited in using new information.\nWhen you constantly explore, you might never enjoy the fruits of your exploration.\nImagine you could only eat each meal only once, hear each song only once, talk to each person only once…",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#some-definitions",
-    "href": "lectures/lec_02_explore_exploit.html#some-definitions",
+    "objectID": "lectures/lec_02_explore_exploit.html#section",
+    "href": "lectures/lec_02_explore_exploit.html#section",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Question: What does “explore” mean?\n\nExplore is the gathering of new information.\n\nQuestion: What does “exploit” mean?\n\nExploit is the utilization of already known information to obtain a known result.\n\nQuestion: what is the relationship between both?\n\nExplore and exploit are opposing alternatives.",
+    "text": "You have 45 minutes for lunch.\nDo you try the new restaurant or go to your reliable favorite?\n\n\n\n\n\n\n\n\nTip🗳️ Quick Poll\n\n\n\nRaise your hand: Who would try the new restaurant?\n\n\n\n\nThis decision happens hundreds of times daily — and there’s optimal math behind it!\n\n\nPhoto by Jillian Amatt on Unsplash",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#some-examples-i",
-    "href": "lectures/lec_02_explore_exploit.html#some-examples-i",
+    "objectID": "lectures/lec_02_explore_exploit.html#core-concepts",
+    "href": "lectures/lec_02_explore_exploit.html#core-concepts",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Clinical trials:\n\nExplore: Test new drugs.\nExploit: Use existing drugs.\n\nA/B testing:\n\nExplore: Test new website designs.\nExploit: Use existing website designs.",
+    "text": "Definition: Gathering new information\nRisk: Unknown outcomes\nExample: Trying that new sushi place\n\n\n\n\n\n\n\n\nDefinition: Using known information\nRisk: Missing better options\nExample: Your go-to pizza joint\n\n\n\n\n\n\n\n\n\n\n\n\nImportant⚖️ The Fundamental Trade-off\n\n\n\nThese are mutually exclusive choices in any given moment. You can’t have your cake and eat it (too).",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#some-examples-ii",
-    "href": "lectures/lec_02_explore_exploit.html#some-examples-ii",
+    "objectID": "lectures/lec_02_explore_exploit.html#medical-clinical-trials",
+    "href": "lectures/lec_02_explore_exploit.html#medical-clinical-trials",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Dating:\n\nExplore: Go on a date with someone new.\nExploit: Go on a date with someone you already know.\n\nSocial interactions:\n\nExplore: Meet new people.\nExploit: Spend time with known people.",
+    "text": "Explore: Test experimental drug on new patients\n\nRisk: Unknown side effects, potential harm\nReward: Breakthrough treatment discovery\n\nExploit: Use proven treatment\n\nRisk: Missing better cures\nReward: Predictable, safe outcomes",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#everyday-decision-making",
-    "href": "lectures/lec_02_explore_exploit.html#everyday-decision-making",
+    "objectID": "lectures/lec_02_explore_exploit.html#tech-ab-testing",
+    "href": "lectures/lec_02_explore_exploit.html#tech-ab-testing",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "",
-    "text": "Explore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLife is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nScientists have been working on this for over 50 years.",
+    "text": "Explore: Test new website design\n\nCost: Development time, potential lost conversions\nBenefit: Higher conversion rates, better UX\n\nExploit: Keep current design\n\nCost: Missed optimization opportunities\nBenefit: Stable, known performance",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_02_explore_exploit.html#personal-dating-apps",
+    "href": "lectures/lec_02_explore_exploit.html#personal-dating-apps",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "",
+    "text": "Explore: Meet someone new\n\nRisk: Bad dates, wasted time\nReward: Finding “the one”\n\nExploit: Meet someone you already know\n\nRisk: Settling for “good enough”\nReward: Comfortable, known connection",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_02_explore_exploit.html#the-daily-decision-dilemma",
+    "href": "lectures/lec_02_explore_exploit.html#the-daily-decision-dilemma",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "",
+    "text": "Try a new coffee shop\nLearn a new skill\n\nWatch a different genre\nTake a new route to work\n\n\n\n\n\n\n\n\nOrder your usual drink\nUse familiar tools\nRewatch favorite shows\nTake the fastest route\n\n\n\n\n\n\n\n\n\n\n\n\nTipThe Million Dollar Question\n\n\n\nWhat is the optimal balance? Scientists have been working on this for over 50 years!",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3799,11 +3911,11 @@
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-i",
-    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-i",
+    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-1",
+    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-1",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem I",
-    "text": "The multi-armed bandit problem I\n\n\nA gambler is faced with a room of slot machines (one-armed bandits).\nEach slot machine has a different probability of winning.\nQuestion: What does the scenario have to do with explore vs exploit?",
+    "section": "The Multi-Armed Bandit Problem",
+    "text": "The Multi-Armed Bandit Problem\nImagine: You walk into a casino with 3 slot machines\n\nEach machine has a different (unknown) win rate\nYou have $100 and 20 pulls total\nGoal: Maximize your winnings\n\n\nHow is this related to explore vs. exploit?\n\n\n\nExplore: Try different machines\nExploit: Play the best-performing machine",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3814,18 +3926,29 @@
     "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem II",
-    "text": "The multi-armed bandit problem II\n\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximize his winnings.",
+    "text": "The multi-armed bandit problem II\n\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximize his winnings.\n\n\n\n\nThe Core Question\nHow do you decide which machine to play next?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iii",
-    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iii",
+    "objectID": "lectures/lec_02_explore_exploit.html#interactive-casino-challenge",
+    "href": "lectures/lec_02_explore_exploit.html#interactive-casino-challenge",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem III",
-    "text": "The multi-armed bandit problem III\n\n\nConsider the following scenario:\n\nYou already pulled the lever of two machines.\nMachine A: 15 pulls, 9 wins.\nMachine B: 2 pulls, 1 win.\n\nQuestion: Which machine should you play next?",
+    "section": "Interactive Casino Challenge",
+    "text": "Interactive Casino Challenge\n\nYour Current Situation\nYou’ve been playing for a while. Here’s what you know:\n\n\n\nMachine\nPulls\nWins\nWin Rate\nYour Choice?\n\n\n\n\nA 🎰\n15\n9\n60%\n\n\n\nB 🎰\n2\n1\n50%\n\n\n\nC 🎰\n0\n0\n???\n\n\n\n\n\n\n\n\n\n\n\nTipClass Vote\n\n\n\nRaise your hand for your choice:\n\nMachine A (known performer)\nMachine B (limited data)\n\nMachine C (complete unknown)",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_02_explore_exploit.html#interactive-casino-challenge-follow-up",
+    "href": "lectures/lec_02_explore_exploit.html#interactive-casino-challenge-follow-up",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interactive Casino Challenge Follow-up",
+    "text": "Interactive Casino Challenge Follow-up\n\nYour Current Situation\nYou’ve been playing for a while. Here’s what you know:\n\n\n\nMachine\nPulls\nWins\nWin Rate\nYour Choice?\n\n\n\n\nA 🎰\n15\n9\n60%\n\n\n\nB 🎰\n2\n1\n50%\n\n\n\nC 🎰\n0\n0\n???\n\n\n\n\n\n\n\n\n\n\n\nNoteFollow-up Questions\n\n\n\n\nWhat if you only had 2 pulls left?\nWhat if you had 100 pulls left?\nHow does this change your strategy?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3843,22 +3966,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iv",
-    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iv",
+    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iii",
+    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iii",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem IV",
-    "text": "The multi-armed bandit problem IV\n\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we haven’t discussed yet:",
+    "section": "The multi-armed bandit problem III",
+    "text": "The multi-armed bandit problem III\n\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we haven’t discussed yet:",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-v",
-    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-v",
+    "objectID": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iv",
+    "href": "lectures/lec_02_explore_exploit.html#the-multi-armed-bandit-problem-iv",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem V",
-    "text": "The multi-armed bandit problem V\n\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n\n\n. . .\n\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)",
+    "section": "The multi-armed bandit problem IV",
+    "text": "The multi-armed bandit problem IV\n\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n\n\n. . .\n\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3880,18 +4003,7 @@
     "href": "lectures/lec_02_explore_exploit.html#interval-and-exploration",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Interval and Exploration",
-    "text": "Interval and Exploration\n\nExplore when you have the time to use the resulting knowledge.\n\n. . .\n\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)",
-    "crumbs": [
-      "02 Explore/Exploit",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_02_explore_exploit.html#interval-and-exploitation",
-    "href": "lectures/lec_02_explore_exploit.html#interval-and-exploitation",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Interval and Exploitation",
-    "text": "Interval and Exploitation\n\nExploit when you are ready to cash in.\n\n. . .\n\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)",
+    "text": "Interval and Exploration\nExplore when you have the time to use the resulting knowledge.\n\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3909,6 +4021,17 @@
     ]
   },
   {
+    "objectID": "lectures/lec_02_explore_exploit.html#interval-and-exploitation",
+    "href": "lectures/lec_02_explore_exploit.html#interval-and-exploitation",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interval and Exploitation",
+    "text": "Interval and Exploitation\nExploit when you are ready to cash in.\n\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
     "objectID": "lectures/lec_02_explore_exploit.html#exploitation",
     "href": "lectures/lec_02_explore_exploit.html#exploitation",
     "title": "Lecture II - Explore Vs. Exploit",
@@ -3920,11 +4043,11 @@
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#reverse-engineering",
-    "href": "lectures/lec_02_explore_exploit.html#reverse-engineering",
+    "objectID": "lectures/lec_02_explore_exploit.html#hollywoods-strategy-revealed",
+    "href": "lectures/lec_02_explore_exploit.html#hollywoods-strategy-revealed",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reverse Engineering",
-    "text": "Reverse Engineering\n\n\nDerivation of the interval by observing the strategy\nAmong the the ten highest-grossing movies, how many were sequels?\n\n1981: 2\n1991: 3\n2001: 5\n2011: 8\n\nQuestion: Do you have an explanation for the trend?",
+    "section": "🎬 Hollywood’s Strategy Revealed",
+    "text": "🎬 Hollywood’s Strategy Revealed\n\n\n\n\n\n\n\nNoteSequels in Top 10 Highest-Grossing Movies\n\n\n\n\n\n\nYear\nNumber of Sequels\n\n\n\n\n1981\n2\n\n\n1991\n3\n\n\n2001\n5\n\n\n2011\n8\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip💭 Class Discussion\n\n\n\nWhat do you think:\n\nWhat explains this trend?\nHow does this relate to explore vs. exploit?\nWhat does this suggest about Hollywood’s “time horizon”?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3935,7 +4058,7 @@
     "href": "lectures/lec_02_explore_exploit.html#sequels",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Sequels…",
-    "text": "Sequels…\n\nPhoto by Universal Pictures on Wikipedia",
+    "text": "Sequels…\n\n\n\n\n\n\n\nImportant🎯 The Insight\n\n\n\nStudios are exploiting proven franchises because they think they’re approaching the “end of their interval” (streaming disruption, changing audience preferences).\n\n\n\n\nPhoto by Universal Pictures on Wikipedia",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -3964,22 +4087,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#win-stay-lose-shift1",
-    "href": "lectures/lec_02_explore_exploit.html#win-stay-lose-shift1",
+    "objectID": "lectures/lec_02_explore_exploit.html#win-stay-lose-shift-1",
+    "href": "lectures/lec_02_explore_exploit.html#win-stay-lose-shift-1",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Win-Stay Lose-Shift1",
-    "text": "Win-Stay Lose-Shift1\n\n\nQuestion: What do you think, what the win-stay lose-shift strategy does?\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.",
+    "section": "Win-Stay Lose-Shift",
+    "text": "Win-Stay Lose-Shift\n\n\nQuestion: What do you think, what the win-stay lose-shift strategy does?\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#win-stay-is-a-no-brainer",
-    "href": "lectures/lec_02_explore_exploit.html#win-stay-is-a-no-brainer",
+    "objectID": "lectures/lec_02_explore_exploit.html#win-stay-no-brainer",
+    "href": "lectures/lec_02_explore_exploit.html#win-stay-no-brainer",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Win-Stay is a no brainer",
-    "text": "Win-Stay is a no brainer\n\n\nQuestion: What do you think about win-stay?\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher.",
+    "section": "Win-Stay = No Brainer?",
+    "text": "Win-Stay = No Brainer?\n\n\nQuestion: What do you think about win-stay?\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4023,7 +4146,7 @@
     "href": "lectures/lec_02_explore_exploit.html#the-bellman-approach-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach II",
-    "text": "The Bellman approach II\n\n\nBellman found that the following equation provides the optimal strategy (when the assumptions hold):\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nwhere w is the number of wins and l is the number of loses.",
+    "text": "The Bellman approach II\n\n\nBellman found that the following equation provides the optimal strategy (when the assumptions hold):\n\n\n\\[\\mathbb{E}[⋅] = \\frac{w + 1}{w + l + 2}\\]\n\n\nwhere w is the number of wins and l is the number of loses.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4034,7 +4157,7 @@
     "href": "lectures/lec_02_explore_exploit.html#question-time",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Question time",
-    "text": "Question time\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nQuestion: What is E[B]?\nQuestion: What is E[A]?\nQuestion: What machine shall we play according to the Bellman approach?",
+    "text": "Question time\n\n\n\\[\\mathbb{E}[⋅] = \\frac{w + 1}{w + l + 2}\\]\n\n\nQuestion: What is E[B]?\nQuestion: What is E[A]?\nQuestion: What machine shall we play according to the Bellman approach?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4063,11 +4186,11 @@
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#the-gittins-index-i2",
-    "href": "lectures/lec_02_explore_exploit.html#the-gittins-index-i2",
+    "objectID": "lectures/lec_02_explore_exploit.html#the-gittins-index-i",
+    "href": "lectures/lec_02_explore_exploit.html#the-gittins-index-i",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index I2",
-    "text": "The Gittins Index I2\n\n\nIn the 1970s Unilever asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven different compounds, what is the quickest way to determine which is likely to be effective?\nGittins found an optimal strategy and abstracted the problem to a general level.\nHe found the solution to the multi-armed bandit problem.",
+    "section": "The Gittins Index I",
+    "text": "The Gittins Index I\n\n\nIn the 1970s Unilever asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven different compounds, what is the quickest way to determine which is likely to be effective?\nGittins found an optimal strategy and abstracted the problem to a general level.\nHe found the solution to the multi-armed bandit problem.\nFor more details see Gittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological).",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4078,29 +4201,18 @@
     "href": "lectures/lec_02_explore_exploit.html#the-gittins-index-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index II",
-    "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered3.",
+    "text": "The Gittins Index II\n\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered.\nGittins makes a geometric discounting assumption, but the approach can be extended to other discounting assumptions.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#reality-check-discounting-i",
-    "href": "lectures/lec_02_explore_exploit.html#reality-check-discounting-i",
+    "objectID": "lectures/lec_02_explore_exploit.html#what-is-discounting",
+    "href": "lectures/lec_02_explore_exploit.html#what-is-discounting",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reality check: Discounting I",
-    "text": "Reality check: Discounting I\n\n\nDoes discounting future wins make sense?\nQuestion: Does discounting money wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs.",
-    "crumbs": [
-      "02 Explore/Exploit",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_02_explore_exploit.html#reality-check-discounting-ii",
-    "href": "lectures/lec_02_explore_exploit.html#reality-check-discounting-ii",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reality check: Discounting II",
-    "text": "Reality check: Discounting II\n\n\nDoes discounting future wins make sense?\nQuestion: Does discounting non-monetary wins make sense?\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?",
+    "section": "What is Discounting?",
+    "text": "What is Discounting?\n\n\nDiscounting means that future rewards are valued less than immediate rewards.\nFuture rewards are weighted by a discount factor.\nMonetary context: Easy to justify discounting:\n\nInterest rates: Money today can earn interest.\nOpportunity costs: Immediate use of money has value.\n\nNon-monetary context: Discounting also makes sense:\n\nTime preference: Immediate gratification often preferred.\nExample: Tonight’s dinner vs. the same dinner in a week’s time.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4140,11 +4252,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#the-gittins-index-v",
-    "href": "lectures/lec_02_explore_exploit.html#the-gittins-index-v",
+    "objectID": "lectures/lec_02_explore_exploit.html#the-gittins-index-the-scary-math",
+    "href": "lectures/lec_02_explore_exploit.html#the-gittins-index-the-scary-math",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index V",
-    "text": "The Gittins Index V\n\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\).",
+    "section": "The Gittins Index: The Scary Math",
+    "text": "The Gittins Index: The Scary Math\n\n😱 The Complex Formula\n\\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\n\n\nExtremely complex to calculate by hand\nRequires advanced mathematics (optimization theory)\nCalculation not practical for everyday decisions\n\n\n\n\n\n\n\n\n\nImportant🎯 But Don’t Worry!\n\n\n\nYou don’t need to understand the math - just use the lookup table!",
+    "crumbs": [
+      "02 Explore/Exploit",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_02_explore_exploit.html#the-gittins-index-what-it-actually-means",
+    "href": "lectures/lec_02_explore_exploit.html#the-gittins-index-what-it-actually-means",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Gittins Index: What It Actually Means",
+    "text": "The Gittins Index: What It Actually Means\n\n\nCore idea: “What’s the best possible average reward from this option?”\nHigher Index = Better Choice\nExample: Machine A (9 wins, 6 losses): Index = 0.6300; Machine B (1 win, 1 loss): Index = 0.6346\nMachine B wins due to exploration bonus for less-tested options\nThe Gittins Index automatically balances exploration and exploitation",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4155,7 +4278,7 @@
     "href": "lectures/lec_02_explore_exploit.html#explore-vs-exploit-summary-1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Summary",
-    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6\nExploring comes with an unknown outcome E(B) = ?\nWhat should you do according to decision science?",
+    "text": "Explore vs Exploit: Summary\n\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(exploit) = X\nExploring comes with an unknown outcome E(explore) = ?\nWhat should you do according to decision science?",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4166,7 +4289,7 @@
     "href": "lectures/lec_02_explore_exploit.html#explore-vs-exploit-anecdotally",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Anecdotally",
-    "text": "Explore vs Exploit: Anecdotally\n\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(B).\nIf you have a short interval, you should exploit, choose A.",
+    "text": "Explore vs Exploit: Anecdotally\n\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(explore).\nIf you have a short interval, you should exploit, choose A.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4177,18 +4300,18 @@
     "href": "lectures/lec_02_explore_exploit.html#explore-vs-exploit-mathematically",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Mathematically",
-    "text": "Explore vs Exploit: Mathematically\n\n\nIf E(A) and E(B) are known, choose higher expected value.\nIf E(B) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(B) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy.",
+    "text": "Explore vs Exploit: Mathematically\n\n\nIf E(exploit) and E(explore) are known, choose higher expected value.\nIf E(explore) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(explore) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_explore_exploit.html#explore-vs-exploit-key-takeaways",
-    "href": "lectures/lec_02_explore_exploit.html#explore-vs-exploit-key-takeaways",
+    "objectID": "lectures/lec_02_explore_exploit.html#your-personal-action-plan",
+    "href": "lectures/lec_02_explore_exploit.html#your-personal-action-plan",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Explore vs Exploit: Key Takeaways",
-    "text": "Explore vs Exploit: Key Takeaways\n\n“The grass is always greener on the other side of the fence.”\n\n\n\nThe math tells us why:\nExploration in it self has a value, since trying new things increases our chance of finding the best.\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…",
+    "section": "🎯 Your Personal Action Plan",
+    "text": "🎯 Your Personal Action Plan\n\n\n\n\n\n\nTip2-Minute Self-Assessment\n\n\n\nRate yourself (1-10) on each:\n\nCareer exploration: Trying new skills/roles vs. deepening current expertise\nSocial exploration: Meeting new people vs. investing in current relationships\n\nLearning exploration: New subjects vs. mastering current interests\nLife exploration: New experiences vs. enjoying familiar pleasures\n\n\n\n\n\n\n\n\n\n\nImportantKey Insights to Remember\n\n\n\n\nExploration has inherent value - it increases your chance of finding the best\nTime horizon matters - more time left = more exploration optimal\nAge affects strategy - younger people should explore more\nDon’t stop exploring completely - even experts need some exploration\n\n\n\n\n\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4199,7 +4322,7 @@
     "href": "lectures/lec_02_explore_exploit.html#interesting-literature-to-start",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Interesting literature to start",
-    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.4\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.",
+    "text": "Interesting literature to start\n\nChristian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.1\nFerguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
@@ -4232,39 +4355,60 @@
     "href": "lectures/lec_02_explore_exploit.html#footnotes",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58.↩︎\nGittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological).↩︎\nGittins makes a geometric discounting assumption, but the approach can be extended to other discounting assumptions.↩︎\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
+    "text": "Footnotes\n\n\nThe main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.↩︎",
     "crumbs": [
       "02 Explore/Exploit",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#some-definitions",
-    "href": "lectures/lec_02_presentation.html#some-definitions",
+    "objectID": "lectures/lec_02_presentation.html#section",
+    "href": "lectures/lec_02_presentation.html#section",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Some definitions…",
-    "text": "Some definitions…\n\nQuestion: What does “explore” mean?\n\nExplore is the gathering of new information.\n\nQuestion: What does “exploit” mean?\n\nExploit is the utilization of already known information to obtain a known result.\n\nQuestion: what is the relationship between both?\n\nExplore and exploit are opposing alternatives."
+    "section": "",
+    "text": "You have 45 minutes for lunch.\nDo you try the new restaurant or go to your reliable favorite?\n\n\n\n\n\n\n🗳️ Quick Poll\n\n\nRaise your hand: Who would try the new restaurant?\n\n\n\n\n\n\nThis decision happens hundreds of times daily — and there’s optimal math behind it!\n\n\nPhoto by Jillian Amatt on Unsplash"
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#some-examples-i",
-    "href": "lectures/lec_02_presentation.html#some-examples-i",
+    "objectID": "lectures/lec_02_presentation.html#core-concepts",
+    "href": "lectures/lec_02_presentation.html#core-concepts",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Some examples I",
-    "text": "Some examples I\n\nClinical trials:\n\nExplore: Test new drugs.\nExploit: Use existing drugs.\n\nA/B testing:\n\nExplore: Test new website designs.\nExploit: Use existing website designs."
+    "section": "Core Concepts",
+    "text": "Core Concepts\n\n\n🔍 Explore\n\n\nDefinition: Gathering new information\nRisk: Unknown outcomes\nExample: Trying that new sushi place\n\n\n\n🎯 Exploit\n\n\nDefinition: Using known information\nRisk: Missing better options\nExample: Your go-to pizza joint\n\n\n\n\n\n\n\n\n\n\n⚖️ The Fundamental Trade-off\n\n\nThese are mutually exclusive choices in any given moment. You can’t have your cake and eat it (too)."
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#some-examples-ii",
-    "href": "lectures/lec_02_presentation.html#some-examples-ii",
+    "objectID": "lectures/lec_02_presentation.html#question-do-you-have-any-examples-of-explore-vs-exploit-in-your-life",
+    "href": "lectures/lec_02_presentation.html#question-do-you-have-any-examples-of-explore-vs-exploit-in-your-life",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Some examples II",
-    "text": "Some examples II\n\nDating:\n\nExplore: Go on a date with someone new.\nExploit: Go on a date with someone you already know.\n\nSocial interactions:\n\nExplore: Meet new people.\nExploit: Spend time with known people."
+    "section": "Question: Do you have any examples of explore vs exploit in your life?",
+    "text": "Question: Do you have any examples of explore vs exploit in your life?"
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#everyday-decision-making",
-    "href": "lectures/lec_02_presentation.html#everyday-decision-making",
+    "objectID": "lectures/lec_02_presentation.html#medical-clinical-trials",
+    "href": "lectures/lec_02_presentation.html#medical-clinical-trials",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Everyday decision-making",
-    "text": "Everyday decision-making\n\nExplore: Do we try new things?\nExploit: Do we stick to our favorite ones?\nLife is a trade-off, a balance:\n\nbetween novelty and tradition.\nbetween the latest and the greatest.\nbetween explore and exploit.\n\nQuestion: What is the optimal balance?\nScientists have been working on this for over 50 years."
+    "section": "🏥 Medical: Clinical Trials",
+    "text": "🏥 Medical: Clinical Trials\nExplore: Test experimental drug on new patients\n\nRisk: Unknown side effects, potential harm\nReward: Breakthrough treatment discovery\n\nExploit: Use proven treatment\n\nRisk: Missing better cures\nReward: Predictable, safe outcomes"
+  },
+  {
+    "objectID": "lectures/lec_02_presentation.html#tech-ab-testing",
+    "href": "lectures/lec_02_presentation.html#tech-ab-testing",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "💻 Tech: A/B Testing",
+    "text": "💻 Tech: A/B Testing\nExplore: Test new website design\n\nCost: Development time, potential lost conversions\nBenefit: Higher conversion rates, better UX\n\nExploit: Keep current design\n\nCost: Missed optimization opportunities\nBenefit: Stable, known performance"
+  },
+  {
+    "objectID": "lectures/lec_02_presentation.html#personal-dating-apps",
+    "href": "lectures/lec_02_presentation.html#personal-dating-apps",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "💕 Personal: Dating Apps",
+    "text": "💕 Personal: Dating Apps\nExplore: Meet someone new\n\nRisk: Bad dates, wasted time\nReward: Finding “the one”\n\nExploit: Meet someone you already know\n\nRisk: Settling for “good enough”\nReward: Comfortable, known connection"
+  },
+  {
+    "objectID": "lectures/lec_02_presentation.html#the-daily-decision-dilemma",
+    "href": "lectures/lec_02_presentation.html#the-daily-decision-dilemma",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Daily Decision Dilemma",
+    "text": "The Daily Decision Dilemma\n\n\n\n🔍 Explore Moments\n\nTry a new coffee shop\nLearn a new skill\n\nWatch a different genre\nTake a new route to work\n\n\n\n\n🎯 Exploit Moments\n\nOrder your usual drink\nUse familiar tools\nRewatch favorite shows\nTake the fastest route\n\n\n\n\n\n\n\n\n\n\nThe Million Dollar Question\n\n\nWhat is the optimal balance? Scientists have been working on this for over 50 years!"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#the-problem-with-exploitation",
@@ -4295,25 +4439,32 @@
     "text": "One Armed Bandit\n\nPhoto by Kabir M on Unsplash"
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-i",
-    "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-i",
+    "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-1",
+    "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-1",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem I",
-    "text": "The multi-armed bandit problem I\n\nA gambler is faced with a room of slot machines (one-armed bandits).\nEach slot machine has a different probability of winning.\nQuestion: What does the scenario have to do with explore vs exploit?"
+    "section": "The Multi-Armed Bandit Problem",
+    "text": "The Multi-Armed Bandit Problem\nImagine: You walk into a casino with 3 slot machines\n\nEach machine has a different (unknown) win rate\nYou have $100 and 20 pulls total\nGoal: Maximize your winnings\n\n\nHow is this related to explore vs. exploit?\n\n\n\nExplore: Try different machines\nExploit: Play the best-performing machine"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-ii",
     "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem II",
-    "text": "The multi-armed bandit problem II\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximize his winnings."
+    "text": "The multi-armed bandit problem II\n\nBy playing a slot machine, the gambler can gather information about the probability of winning.\nBut each pull of a lever comes with a certain cost.\nIt’s the aim of the gambler to maximize his winnings.\n\n\nThe Core Question\nHow do you decide which machine to play next?"
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-iii",
-    "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-iii",
+    "objectID": "lectures/lec_02_presentation.html#interactive-casino-challenge",
+    "href": "lectures/lec_02_presentation.html#interactive-casino-challenge",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem III",
-    "text": "The multi-armed bandit problem III\n\nConsider the following scenario:\n\nYou already pulled the lever of two machines.\nMachine A: 15 pulls, 9 wins.\nMachine B: 2 pulls, 1 win.\n\nQuestion: Which machine should you play next?"
+    "section": "Interactive Casino Challenge",
+    "text": "Interactive Casino Challenge\nYour Current Situation\nYou’ve been playing for a while. Here’s what you know:\n\n\n\nMachine\nPulls\nWins\nWin Rate\nYour Choice?\n\n\n\n\nA 🎰\n15\n9\n60%\n\n\n\nB 🎰\n2\n1\n50%\n\n\n\nC 🎰\n0\n0\n???\n\n\n\n\n\n\n\n\n\n\n\nClass Vote\n\n\nRaise your hand for your choice:\n\nMachine A (known performer)\nMachine B (limited data)\n\nMachine C (complete unknown)"
+  },
+  {
+    "objectID": "lectures/lec_02_presentation.html#interactive-casino-challenge-follow-up",
+    "href": "lectures/lec_02_presentation.html#interactive-casino-challenge-follow-up",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interactive Casino Challenge Follow-up",
+    "text": "Interactive Casino Challenge Follow-up\nYour Current Situation\nYou’ve been playing for a while. Here’s what you know:\n\n\n\nMachine\nPulls\nWins\nWin Rate\nYour Choice?\n\n\n\n\nA 🎰\n15\n9\n60%\n\n\n\nB 🎰\n2\n1\n50%\n\n\n\nC 🎰\n0\n0\n???\n\n\n\n\n\n\n\n\n\n\n\nFollow-up Questions\n\n\n\nWhat if you only had 2 pulls left?\nWhat if you had 100 pulls left?\nHow does this change your strategy?"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#expected-value-as-a-decision-criterion",
@@ -4323,18 +4474,18 @@
     "text": "Expected value as a decision criterion\n\nThe expected value of a slot machine is the average number of wins per pull.\nExpected value of machine A = E(A) = 9/15 = 0.6\nExpected value of machine B = E(B) = 1/2 = 0.5\nMachine A has the higher expected value.\nBut 2 and even 15 pulls are not a large number (considering standard deviation)."
   },
   {
+    "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-iii",
+    "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-iii",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The multi-armed bandit problem III",
+    "text": "The multi-armed bandit problem III\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we haven’t discussed yet:"
+  },
+  {
     "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-iv",
     "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-iv",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The multi-armed bandit problem IV",
-    "text": "The multi-armed bandit problem IV\n\nThe multi-armed bandit problem represents a lot of different real-world decisions.\nIt shows us, that there might be a difference between the optimal long-term average performance and the optimal immediate performance.\nWhich lever to pull next depends completely on something we haven’t discussed yet:"
-  },
-  {
-    "objectID": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-v",
-    "href": "lectures/lec_02_presentation.html#the-multi-armed-bandit-problem-v",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The multi-armed bandit problem V",
-    "text": "The multi-armed bandit problem V\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n\n\n\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)"
+    "text": "The multi-armed bandit problem IV\n\nHow long you plan to be in the casino?\nQuestion: Why is this important?\nQuestion: How does this influence our decision on taking machine A or machine B?\n\n\n\n“I’m more likely to try a new restaurant when I move to a city than when I’m leaving it” (Chris Stucchio)"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#the-influence-of-the-interval",
@@ -4348,14 +4499,7 @@
     "href": "lectures/lec_02_presentation.html#interval-and-exploration",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Interval and Exploration",
-    "text": "Interval and Exploration\n\nExplore when you have the time to use the resulting knowledge.\n\n\n\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)"
-  },
-  {
-    "objectID": "lectures/lec_02_presentation.html#interval-and-exploitation",
-    "href": "lectures/lec_02_presentation.html#interval-and-exploitation",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Interval and Exploitation",
-    "text": "Interval and Exploitation\n\nExploit when you are ready to cash in.\n\n\n\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)"
+    "text": "Interval and Exploration\nExplore when you have the time to use the resulting knowledge.\n\n“I moved to Pune, India, and I just […] eat everywhere that didn’t look like it was gonna kill me” (Chris Stucchio)"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#exploration",
@@ -4365,6 +4509,13 @@
     "text": "Exploration\n\nPhoto by Colin Maynard on Unsplash"
   },
   {
+    "objectID": "lectures/lec_02_presentation.html#interval-and-exploitation",
+    "href": "lectures/lec_02_presentation.html#interval-and-exploitation",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "Interval and Exploitation",
+    "text": "Interval and Exploitation\nExploit when you are ready to cash in.\n\n“And as I was leaving the city I went back to all my old favorites, rather than trying out new stuff […]. Even if I find a slightly better place, I’m only going to go there once or twice, so why take the risk?” (Chris Stucchio)"
+  },
+  {
     "objectID": "lectures/lec_02_presentation.html#exploitation",
     "href": "lectures/lec_02_presentation.html#exploitation",
     "title": "Lecture II - Explore Vs. Exploit",
@@ -4372,18 +4523,18 @@
     "text": "Exploitation\n\nPhoto by Cristina Gottardi on Unsplash"
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#reverse-engineering",
-    "href": "lectures/lec_02_presentation.html#reverse-engineering",
+    "objectID": "lectures/lec_02_presentation.html#hollywoods-strategy-revealed",
+    "href": "lectures/lec_02_presentation.html#hollywoods-strategy-revealed",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reverse Engineering",
-    "text": "Reverse Engineering\n\nDerivation of the interval by observing the strategy\nAmong the the ten highest-grossing movies, how many were sequels?\n\n1981: 2\n1991: 3\n2001: 5\n2011: 8\n\nQuestion: Do you have an explanation for the trend?"
+    "section": "🎬 Hollywood’s Strategy Revealed",
+    "text": "🎬 Hollywood’s Strategy Revealed\n\n\n\n\n\n\n\nSequels in Top 10 Highest-Grossing Movies\n\n\n\n\n\nYear\nNumber of Sequels\n\n\n\n\n1981\n2\n\n\n1991\n3\n\n\n2001\n5\n\n\n2011\n8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n💭 Class Discussion\n\n\nWhat do you think:\n\nWhat explains this trend?\nHow does this relate to explore vs. exploit?\nWhat does this suggest about Hollywood’s “time horizon”?"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#sequels",
     "href": "lectures/lec_02_presentation.html#sequels",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Sequels…",
-    "text": "Sequels…\n\nPhoto by Universal Pictures on Wikipedia"
+    "text": "Sequels…\n\n\n\n\n\n\n\n🎯 The Insight\n\n\nStudios are exploiting proven franchises because they think they’re approaching the “end of their interval” (streaming disruption, changing audience preferences).\n\n\n\n\n\nPhoto by Universal Pictures on Wikipedia"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#reverse-engineering-a-possible-explanation",
@@ -4400,18 +4551,18 @@
     "text": "The multi-armed bandit problem VI\n\nWhile the so far provided anecdotes are helping us to understand the explore-exploit trade-off, they are far away from beeing a satisfying “optimal” solution.\nActually, finding an algorithm that tells us exactly how to to handle the trade-off is a very hard problem.\nOn the way there were many interesting approaches…"
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#win-stay-lose-shift1",
-    "href": "lectures/lec_02_presentation.html#win-stay-lose-shift1",
+    "objectID": "lectures/lec_02_presentation.html#win-stay-lose-shift-1",
+    "href": "lectures/lec_02_presentation.html#win-stay-lose-shift-1",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Win-Stay Lose-Shift1",
-    "text": "Win-Stay Lose-Shift1\n\nQuestion: What do you think, what the win-stay lose-shift strategy does?\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\n\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58."
+    "section": "Win-Stay Lose-Shift",
+    "text": "Win-Stay Lose-Shift\n\nQuestion: What do you think, what the win-stay lose-shift strategy does?\nThe win-stay lose-shift strategy is a simple strategy that is often used in multi-armed bandit problems.\nIt is based on the idea that if you have won, you should stay with the same machine.\nIf you have lost, you should switch to a different machine.\nThis strategy is not always the best strategy, but it is simple and proven better than choose an arm at random.\nFor more details see Robbins, H. (1952) ‘Some aspects of the sequential design of experiments’, Bulletin of the American Mathematical Society, 58."
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#win-stay-is-a-no-brainer",
-    "href": "lectures/lec_02_presentation.html#win-stay-is-a-no-brainer",
+    "objectID": "lectures/lec_02_presentation.html#win-stay-no-brainer",
+    "href": "lectures/lec_02_presentation.html#win-stay-no-brainer",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Win-Stay is a no brainer",
-    "text": "Win-Stay is a no brainer\n\nQuestion: What do you think about win-stay?\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher."
+    "section": "Win-Stay = No Brainer?",
+    "text": "Win-Stay = No Brainer?\n\nQuestion: What do you think about win-stay?\nIf you decide to pull an arm and you win, you should pull the same arm again.\nNothing changes, except the attractiveness of the arm you just pulled is higher."
   },
   {
     "objectID": "lectures/lec_02_presentation.html#lose-shift-is-another-story",
@@ -4439,14 +4590,14 @@
     "href": "lectures/lec_02_presentation.html#the-bellman-approach-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Bellman approach II",
-    "text": "The Bellman approach II\n\nBellman found that the following equation provides the optimal strategy (when the assumptions hold):\n\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nwhere w is the number of wins and l is the number of loses."
+    "text": "The Bellman approach II\n\nBellman found that the following equation provides the optimal strategy (when the assumptions hold):\n\n\n\\[\\mathbb{E}[⋅] = \\frac{w + 1}{w + l + 2}\\]\n\n\nwhere w is the number of wins and l is the number of loses."
   },
   {
     "objectID": "lectures/lec_02_presentation.html#question-time",
     "href": "lectures/lec_02_presentation.html#question-time",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Question time",
-    "text": "Question time\n\n\\[\\mathbb{E}[B] = \\frac{w + 1}{w + l + 2}\\]\n\n\nQuestion: What is E[B]?\nQuestion: What is E[A]?\nQuestion: What machine shall we play according to the Bellman approach?"
+    "text": "Question time\n\n\\[\\mathbb{E}[⋅] = \\frac{w + 1}{w + l + 2}\\]\n\n\nQuestion: What is E[B]?\nQuestion: What is E[A]?\nQuestion: What machine shall we play according to the Bellman approach?"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#the-bellman-approach-iii",
@@ -4463,32 +4614,25 @@
     "text": "The Bellman approach IV\n\nThe calculation of the optimal strategy is very extensive when there are many arms and a long interval.\nAnd yet the approach does not help us in many scenarios because we do not know the exact length of the interval (time in the casino).\nAt this point, it looked like the multi-armed bandit problem would remain a problem without a solution."
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#the-gittins-index-i2",
-    "href": "lectures/lec_02_presentation.html#the-gittins-index-i2",
+    "objectID": "lectures/lec_02_presentation.html#the-gittins-index-i",
+    "href": "lectures/lec_02_presentation.html#the-gittins-index-i",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index I1",
-    "text": "The Gittins Index I1\n\nIn the 1970s Unilever asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven different compounds, what is the quickest way to determine which is likely to be effective?\nGittins found an optimal strategy and abstracted the problem to a general level.\nHe found the solution to the multi-armed bandit problem.\n\nGittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological)."
+    "section": "The Gittins Index I",
+    "text": "The Gittins Index I\n\nIn the 1970s Unilever asked a young mathematician, John Gittins, to help optimize their drug trials.\nGiven different compounds, what is the quickest way to determine which is likely to be effective?\nGittins found an optimal strategy and abstracted the problem to a general level.\nHe found the solution to the multi-armed bandit problem.\nFor more details see Gittins, J. (1979) ‘Bandit Processes and Dynamic Allocation Indices’, Journal of the Royal Statistical Society. Series B (Methodological)."
   },
   {
     "objectID": "lectures/lec_02_presentation.html#the-gittins-index-ii",
     "href": "lectures/lec_02_presentation.html#the-gittins-index-ii",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "The Gittins Index II",
-    "text": "The Gittins Index II\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered1.\n\nGittins makes a geometric discounting assumption, but the approach can be extended to other discounting assumptions."
+    "text": "The Gittins Index II\n\nA major problem with the multi-armed banded problem is that previous solutions made very critical assumptions about the underlying interval.\nFor example, that the length of the interval is known at the beginning of the analysis.\nGittins developed a charming solution to this problem. In his approach, future wins (e.g., cash flows) are discounted so that any interval length (including infinity) can be considered.\nGittins makes a geometric discounting assumption, but the approach can be extended to other discounting assumptions."
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#reality-check-discounting-i",
-    "href": "lectures/lec_02_presentation.html#reality-check-discounting-i",
+    "objectID": "lectures/lec_02_presentation.html#what-is-discounting",
+    "href": "lectures/lec_02_presentation.html#what-is-discounting",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reality check: Discounting I",
-    "text": "Reality check: Discounting I\n\nDoes discounting future wins make sense?\nQuestion: Does discounting money wins make sense?\nRegarding monetary wins, it does. For example, due to interest rates and opportunity costs."
-  },
-  {
-    "objectID": "lectures/lec_02_presentation.html#reality-check-discounting-ii",
-    "href": "lectures/lec_02_presentation.html#reality-check-discounting-ii",
-    "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Reality check: Discounting II",
-    "text": "Reality check: Discounting II\n\nDoes discounting future wins make sense?\nQuestion: Does discounting non-monetary wins make sense?\nRegarding non-monetary wins, it is more difficult to justify.\nBut its not counterintuitive.\nWhat is more important to you today, tonight’s dinner, or ceteris paribus the dinner in a week’s time?"
+    "section": "What is Discounting?",
+    "text": "What is Discounting?\n\nDiscounting means that future rewards are valued less than immediate rewards.\nFuture rewards are weighted by a discount factor.\nMonetary context: Easy to justify discounting:\n\nInterest rates: Money today can earn interest.\nOpportunity costs: Immediate use of money has value.\n\nNon-monetary context: Discounting also makes sense:\n\nTime preference: Immediate gratification often preferred.\nExample: Tonight’s dinner vs. the same dinner in a week’s time."
   },
   {
     "objectID": "lectures/lec_02_presentation.html#the-gittins-index-iii",
@@ -4512,39 +4656,46 @@
     "text": "Question: Choose machine A or B according to the Gittins index?\n\nThe index for machine B (0.6346) is higher than for machine A (0.6300).\nThe index shows a clear win-stay pattern.\nThere is a relaxed lose-shift pattern.\nAt the (0,0) point we see the exploration bonus (premium).\nThe index converges to 1/2 for a 50/50 chance game."
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#the-gittins-index-v",
-    "href": "lectures/lec_02_presentation.html#the-gittins-index-v",
+    "objectID": "lectures/lec_02_presentation.html#the-gittins-index-the-scary-math",
+    "href": "lectures/lec_02_presentation.html#the-gittins-index-the-scary-math",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "The Gittins Index V",
-    "text": "The Gittins Index V\n\nThe problem with the Gittins index is that it is very difficult to calculate.\nSee the following equation: \\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\nWhere \\(G_i(s_i, f_i)\\) is the Gittins index for machine \\(i\\), \\(s_i\\) is the number of wins, \\(f_i\\) is the number of losses, \\(\\beta\\) is the discount factor, and \\(r_i^t\\) is the reward for machine \\(i\\) at time \\(t\\)."
+    "section": "The Gittins Index: The Scary Math",
+    "text": "The Gittins Index: The Scary Math\n😱 The Complex Formula\n\\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\n\n\nExtremely complex to calculate by hand\nRequires advanced mathematics (optimization theory)\nCalculation not practical for everyday decisions\n\n\n\n\n\n\n\n\n\n🎯 But Don’t Worry!\n\n\nYou don’t need to understand the math - just use the lookup table!"
+  },
+  {
+    "objectID": "lectures/lec_02_presentation.html#the-gittins-index-what-it-actually-means",
+    "href": "lectures/lec_02_presentation.html#the-gittins-index-what-it-actually-means",
+    "title": "Lecture II - Explore Vs. Exploit",
+    "section": "The Gittins Index: What It Actually Means",
+    "text": "The Gittins Index: What It Actually Means\n\nCore idea: “What’s the best possible average reward from this option?”\nHigher Index = Better Choice\nExample: Machine A (9 wins, 6 losses): Index = 0.6300; Machine B (1 win, 1 loss): Index = 0.6346\nMachine B wins due to exploration bonus for less-tested options\nThe Gittins Index automatically balances exploration and exploitation"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#explore-vs-exploit-summary-1",
     "href": "lectures/lec_02_presentation.html#explore-vs-exploit-summary-1",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Summary",
-    "text": "Explore vs Exploit: Summary\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(A) = 0.6\nExploring comes with an unknown outcome E(B) = ?\nWhat should you do according to decision science?"
+    "text": "Explore vs Exploit: Summary\n\nConsider an explore vs exploit decision situation.\nAs you learned exploiting comes with a known (expected) outcome for example E(exploit) = X\nExploring comes with an unknown outcome E(explore) = ?\nWhat should you do according to decision science?"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#explore-vs-exploit-anecdotally",
     "href": "lectures/lec_02_presentation.html#explore-vs-exploit-anecdotally",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Anecdotally",
-    "text": "Explore vs Exploit: Anecdotally\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(B).\nIf you have a short interval, you should exploit, choose A."
+    "text": "Explore vs Exploit: Anecdotally\n\nIf you have a long interval, you should explore, choose B untill you are sure about E(explore).\nIf you have a short interval, you should exploit, choose A."
   },
   {
     "objectID": "lectures/lec_02_presentation.html#explore-vs-exploit-mathematically",
     "href": "lectures/lec_02_presentation.html#explore-vs-exploit-mathematically",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Explore vs Exploit: Mathematically",
-    "text": "Explore vs Exploit: Mathematically\n\nIf E(A) and E(B) are known, choose higher expected value.\nIf E(B) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(B) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy."
+    "text": "Explore vs Exploit: Mathematically\n\nIf E(exploit) and E(explore) are known, choose higher expected value.\nIf E(explore) is unknown, but you know the length of the interval, the Bellman-approach provides the optimal strategy.\nIf E(explore) is unknown, and you do not know the length of the interval, the Gittins index provides the optimal strategy."
   },
   {
-    "objectID": "lectures/lec_02_presentation.html#explore-vs-exploit-key-takeaways",
-    "href": "lectures/lec_02_presentation.html#explore-vs-exploit-key-takeaways",
+    "objectID": "lectures/lec_02_presentation.html#your-personal-action-plan",
+    "href": "lectures/lec_02_presentation.html#your-personal-action-plan",
     "title": "Lecture II - Explore Vs. Exploit",
-    "section": "Explore vs Exploit: Key Takeaways",
-    "text": "Explore vs Exploit: Key Takeaways\n\n“The grass is always greener on the other side of the fence.”\n\n\nThe math tells us why:\nExploration in it self has a value, since trying new things increases our chance of finding the best.\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…"
+    "section": "🎯 Your Personal Action Plan",
+    "text": "🎯 Your Personal Action Plan\n\n\n\n\n\n\n2-Minute Self-Assessment\n\n\nRate yourself (1-10) on each:\n\nCareer exploration: Trying new skills/roles vs. deepening current expertise\nSocial exploration: Meeting new people vs. investing in current relationships\n\nLearning exploration: New subjects vs. mastering current interests\nLife exploration: New experiences vs. enjoying familiar pleasures\n\n\n\n\n\n\n\n\n\n\n\nKey Insights to Remember\n\n\n\nExploration has inherent value - it increases your chance of finding the best\nTime horizon matters - more time left = more exploration optimal\nAge affects strategy - younger people should explore more\nDon’t stop exploring completely - even experts need some exploration\n\n\n\n\n\n\nYour todays takeaway from the lecture should be: Be sensitive to how much time you have left in the casino and explore, explore, explore…"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#interesting-literature-to-start",

@@ -208,6 +208,30 @@ Dr.&nbsp;Tobias Vlćek
 </div>
 
 </section>
+<section id="todays-topic-optimal-stopping" class="slide level2">
+<h2>Today’s Topic: Optimal Stopping</h2>
+<p><strong>Topic:</strong> Understanding optimal stopping problems and the famous “Secretary Problem”</p>
+<p><strong>Why this matters:</strong> Optimal stopping is everywhere in life - from hiring decisions to finding apartments to choosing when to sell stocks. Today we’ll learn the mathematical strategy that maximizes your chances of making the best choice.</p>
+</section>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
+<p>By the end of this lecture, you will be able to:</p>
+<ol type="1">
+<li class="fragment"><strong>Define</strong> optimal stopping problems and identify them in real-world scenarios</li>
+<li class="fragment"><strong>Apply</strong> the 37% rule (look-and-leap strategy) to make better decisions</li>
+<li class="fragment"><strong>Connect</strong> optimal stopping principles to programming logic and algorithmic thinking</li>
+</ol>
+</section>
+<section id="todays-agenda" class="slide level2">
+<h2>Today’s Agenda</h2>
+<ol type="1">
+<li class="fragment"><strong>What is Optimal Stopping?</strong> - Definition and real-world examples</li>
+<li class="fragment"><strong>The Secretary Problem</strong> - The classic formulation and solution</li>
+<li class="fragment"><strong>The 37% Rule</strong> - Why it works and how to apply it</li>
+<li class="fragment"><strong>Variations &amp; Extensions</strong> - Rejection, time constraints, other scenarios</li>
+<li class="fragment"><strong>Connecting to Programming</strong> - How this builds our algorithmic mindset</li>
+</ol>
+</section>
 <section>
 <section id="optimal-stopping" class="title-slide slide level1 title center">
 <h1><span class="flow">Optimal Stopping</span></h1>
@@ -249,12 +273,6 @@ Dr.&nbsp;Tobias Vlćek
 <h2><span class="invert-font">Dating</span></h2>
 <div class="footer">
 <p><span class="invert-font">Photo by <a href="https://unsplash.com/@shelbymary_">Shelby Deeter</a> on Unsplash</span></p>
-</div>
-</section>
-<section id="searching-for-a-parking-spot" class="slide level2" data-background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&amp;force=true">
-<h2><span class="invert-font">Searching for a parking spot</span></h2>
-<div class="footer">
-<p><span class="invert-font">Photo by <a href="https://unsplash.com/@josephtpearson">Joseph Pearson</a> on Unsplash</span></p>
 </div>
 </section></section>
 <section>
@@ -325,21 +343,33 @@ Dr.&nbsp;Tobias Vlćek
 <li class="fragment">Chance of selecting the best candidate is <strong>37 %</strong><sup>1</sup></li>
 <li class="fragment">Thus, we can fail with <strong>63 %</strong>!</li>
 </ol>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Large number of candidates! With a small number of candidates, we can do even better.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Large number of candidates! With a small number of candidates, we can do even better. . . .</p></li></ol></aside></section>
+<section id="look-and-leap-strategy-1" class="slide level2">
+<h2>Look-and-Leap Strategy</h2>
+<p>The mathematically optimal strategy:</p>
+<ol type="1">
+<li class="fragment"><strong>Look</strong> at the <span class="highlight">first 37%</span> of candidates without hiring anyone</li>
+<li class="fragment"><strong>Remember</strong> the best candidate from this observation phase</li>
+<li class="fragment"><strong>Leap:</strong> Hire the next candidate who is <strong>better than the best observed</strong></li>
+<li class="fragment"><strong>Success rate:</strong> 37% chance of selecting the absolute best candidate</li>
+</ol>
+<p>This means we fail 63% of the time - but this is the <strong>best we can possibly do</strong>!</p>
+</section>
 <section id="step-by-step-approximation" class="slide level2">
 <h2>Step-by-step Approximation</h2>
+<p>Why does the success probability decrease with more candidates?</p>
 <ul>
-<li>With each additional candidate, the chance of getting a new best candidate decreases
-<ul>
-<li>1 candidate: 100%</li>
+<li>1 candidate: 100% (no choice!)</li>
 <li>2 candidates: 50%</li>
 <li>3 candidates: 33%</li>
 <li>4 candidates: 25%</li>
 <li>5 candidates: 20%</li>
-</ul></li>
 </ul>
 <div class="fragment">
-<p><span class="question">Question:</span> Anybody see a pattern?</p>
+<p><span class="question">Question:</span> Do you see the pattern?</p>
+</div>
+<div class="fragment">
+<p><strong>Pattern:</strong> 1/n - as we have more options, each individual option is less likely to be the best.</p>
 </div>
 </section>
 <section id="why-37" class="slide level2">
@@ -353,7 +383,7 @@ Dr.&nbsp;Tobias Vlćek
 <aside><ol class="aside-footnotes"><li id="fn2"><p>This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.</p></li></ol></aside></section>
 <section id="computing-the-number" class="slide level2">
 <h2>Computing the number</h2>
-<div id="78e46828" class="cell" data-execution_count="1">
+<div id="084a8b05" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
@@ -388,11 +418,11 @@ Look at first 7.358 candidates</code></pre>
 <section id="geometric-distribution" class="slide level2">
 <h2>Geometric Distribution</h2>
 <p>Let’s visualize the success of a simulation with 20 candidates:</p>
-<div id="028e45d6" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="2">
+<div id="7797690f" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
-<p><img data-src="lec_01_optimal_stopping_files/figure-revealjs/cell-3-output-1.png" width="1118" height="541"></p>
+<p><img data-src="lec_01_optimal_stopping_files/figure-html/cell-3-output-1.png" width="1118" height="541"></p>
 </figure>
 </div>
 </div>
@@ -413,21 +443,33 @@ Look at first 7.358 candidates</code></pre>
 <li class="fragment"><strong>Formula:</strong> <span class="math inline">\(q^{\frac{1}{1-q}}\)</span> with <span class="math inline">\(q\)</span> being the chance of rejection</li>
 </ul>
 </section>
-<section id="the-role-of-time" class="slide level2">
-<h2>The role of time</h2>
-<p>What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
-<div class="fragment">
+<section id="mutual-rejection" class="slide level2">
+<h2>Mutual Rejection</h2>
+<p><span class="question">Question:</span> What if in dating, <span class="highlight">the other person can also reject you</span>?</p>
 <ul>
-<li>Imagine we have <strong>one year</strong> to find a new flat</li>
-<li>We want the <span class="highlight">best flat</span>, but don’t know what a good flat is</li>
+<li class="fragment">The optimal stopping point <strong>decreases</strong></li>
+<li class="fragment">We need to account for rejection risk</li>
+<li class="fragment">With 50% rejection probability: <strong>start accepting at 25%</strong></li>
+<li class="fragment"><strong>Formula:</strong> <span class="math inline">\(q^{\frac{1}{1-q}}\)</span> where <span class="math inline">\(q\)</span> = rejection probability</li>
 </ul>
+<div class="fragment">
+<p><strong>Life lesson:</strong> Higher risk of rejection means we should be less picky!</p>
+</div>
+</section>
+<section id="time-constraints" class="slide level2">
+<h2>Time Constraints</h2>
+<p>What if we don’t have a fixed number of candidates, but a <span class="highlight">fixed amount of time</span>?</p>
+<div class="fragment">
+<p><strong>Example:</strong> One year to find an apartment</p>
 </div>
 <div class="fragment">
-<p><span class="question">Question:</span> How should we behave?</p>
+<p><span class="question">Question:</span> How should we adapt our strategy?</p>
 </div>
 <div class="fragment">
 <ul>
-<li><strong>Same</strong>, but now we decide when to stop searching!</li>
+<li class="fragment"><strong>Same principle applies!</strong> Observe for first 37% of available time</li>
+<li class="fragment">But now we also control the <strong>search intensity</strong></li>
+<li class="fragment">This connects to <strong>resource allocation</strong> problems in computer science</li>
 </ul>
 </div>
 </section>
@@ -453,31 +495,44 @@ Look at first 7.358 candidates</code></pre>
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="optimal-solution" class="title-slide slide level1 title center">
-<h1><span class="flow">Optimal Solution</span></h1>
-
 </section>
-<section id="the-gamblers-fallacy" class="slide level2">
-<h2>The Gambler’s Fallacy</h2>
-<p><span class="question">Question:</span> Can you imagine a scenario where it would be unwise to use optimal stopping?</p>
+<section id="building-your-technical-mindset" class="slide level2">
+<h2>Building Your Technical Mindset</h2>
+<p><span class="question">Question:</span> <strong>How does optimal stopping connect to programming?</strong></p>
 <div class="fragment">
-<ul>
-<li>Imagine a game with a <span class="highlight">50 % chance of winning</span></li>
-<li>If you win, your payoff is a <strong>triple</strong> of your bet</li>
-<li>If you lose, you have to pay your bet</li>
-</ul>
+<ol type="1">
+<li class="fragment"><strong>Algorithmic thinking:</strong> Break complex decisions into logical steps</li>
+<li class="fragment"><strong>Trade-off analysis:</strong> Exploration vs.&nbsp;exploitation (fundamental in AI)</li>
+<li class="fragment"><strong>Mathematical optimization:</strong> Using formulas to find best solutions</li>
+</ol>
 </div>
+</section>
+<section id="key-takeaways" class="slide level2">
+<h2>Key Takeaways</h2>
+<p><strong>What we learned:</strong></p>
+<ol type="1">
+<li class="fragment"><strong>Optimal stopping problems</strong> are everywhere in life and business</li>
+<li class="fragment"><strong>The 37% rule</strong> provides a mathematically optimal strategy</li>
+<li class="fragment"><strong>Exploration vs.&nbsp;exploitation</strong> is a fundamental trade-off</li>
+<li class="fragment"><strong>Real-world variations</strong> require adapting the basic strategy</li>
+<li class="fragment"><strong>This thinking</strong> builds foundation for algorithmic problem-solving</li>
+</ol>
 </section>
 <section id="section-2" class="slide level2 loud-slide">
 <h2></h2>
 <div class="r-fit-text">
-<p>Questions?</p>
+<p>Any questions</p>
+<p>so far?</p>
 </div>
 </section>
-<section id="the-end" class="slide level2">
-<h2>The End</h2>
+<section id="after-the-break-optimal-stopping" class="slide level2">
+<h2>After the break — Optimal Stopping</h2>
+<ul>
+<li>Gentle introduction to Python Programming</li>
+<li>We work in our notebooks on basics and optimal stopping</li>
+<li>How to translate the idea into code and experiments</li>
+</ul>
+<div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -487,8 +542,9 @@ Look at first 7.358 candidates</code></pre>
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>That’s it for todays lecture!</strong><br>
-We now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!</p>
+<p><strong>That’s it for optimal stopping!</strong><br>
+Let’s have a short break and then continue with our first Python programming session.</p>
+</div>
 </div>
 </div>
 </div>

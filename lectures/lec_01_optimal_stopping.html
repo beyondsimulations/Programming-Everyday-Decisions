@@ -427,14 +427,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#optimal-stopping" id="toc-optimal-stopping" class="nav-link active" data-scroll-target="#optimal-stopping"><span class="flow">Optimal Stopping</span></a>
+  <li><a href="#todays-topic-optimal-stopping" id="toc-todays-topic-optimal-stopping" class="nav-link active" data-scroll-target="#todays-topic-optimal-stopping">Today’s Topic: Optimal Stopping</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#todays-agenda" id="toc-todays-agenda" class="nav-link" data-scroll-target="#todays-agenda">Today’s Agenda</a></li>
+  <li><a href="#optimal-stopping" id="toc-optimal-stopping" class="nav-link" data-scroll-target="#optimal-stopping"><span class="flow">Optimal Stopping</span></a>
   <ul class="collapse">
   <li><a href="#what-is-optimal-stopping" id="toc-what-is-optimal-stopping" class="nav-link" data-scroll-target="#what-is-optimal-stopping">What is Optimal Stopping?</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#flat-hunting" id="toc-flat-hunting" class="nav-link" data-scroll-target="#flat-hunting"><span class="invert-font">Flat Hunting</span></a></li>
   <li><a href="#hiring-applicants" id="toc-hiring-applicants" class="nav-link" data-scroll-target="#hiring-applicants"><span class="invert-font">Hiring applicants</span></a></li>
   <li><a href="#dating" id="toc-dating" class="nav-link" data-scroll-target="#dating"><span class="invert-font">Dating</span></a></li>
-  <li><a href="#searching-for-a-parking-spot" id="toc-searching-for-a-parking-spot" class="nav-link" data-scroll-target="#searching-for-a-parking-spot"><span class="invert-font">Searching for a parking spot</span></a></li>
   </ul></li>
   <li><a href="#secretary-problem" id="toc-secretary-problem" class="nav-link" data-scroll-target="#secretary-problem"><span class="flow">“Secretary Problem”</span></a>
   <ul class="collapse">
@@ -443,6 +445,7 @@ window.Quarto = {
   <li><a href="#ways-to-fail" id="toc-ways-to-fail" class="nav-link" data-scroll-target="#ways-to-fail">Ways to fail</a></li>
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
   <li><a href="#look-and-leap-strategy" id="toc-look-and-leap-strategy" class="nav-link" data-scroll-target="#look-and-leap-strategy">Look-and-Leap Strategy</a></li>
+  <li><a href="#look-and-leap-strategy-1" id="toc-look-and-leap-strategy-1" class="nav-link" data-scroll-target="#look-and-leap-strategy-1">Look-and-Leap Strategy</a></li>
   <li><a href="#step-by-step-approximation" id="toc-step-by-step-approximation" class="nav-link" data-scroll-target="#step-by-step-approximation">Step-by-step Approximation</a></li>
   <li><a href="#why-37" id="toc-why-37" class="nav-link" data-scroll-target="#why-37">Why 37%?</a></li>
   <li><a href="#computing-the-number" id="toc-computing-the-number" class="nav-link" data-scroll-target="#computing-the-number">Computing the number</a></li>
@@ -451,14 +454,13 @@ window.Quarto = {
   <li><a href="#variations" id="toc-variations" class="nav-link" data-scroll-target="#variations"><span class="flow">Variations</span></a>
   <ul class="collapse">
   <li><a href="#rejection" id="toc-rejection" class="nav-link" data-scroll-target="#rejection">Rejection</a></li>
-  <li><a href="#the-role-of-time" id="toc-the-role-of-time" class="nav-link" data-scroll-target="#the-role-of-time">The role of time</a></li>
+  <li><a href="#mutual-rejection" id="toc-mutual-rejection" class="nav-link" data-scroll-target="#mutual-rejection">Mutual Rejection</a></li>
+  <li><a href="#time-constraints" id="toc-time-constraints" class="nav-link" data-scroll-target="#time-constraints">Time Constraints</a></li>
   <li><a href="#other-versions" id="toc-other-versions" class="nav-link" data-scroll-target="#other-versions">Other versions</a></li>
-  </ul></li>
-  <li><a href="#optimal-solution" id="toc-optimal-solution" class="nav-link" data-scroll-target="#optimal-solution"><span class="flow">Optimal Solution</span></a>
-  <ul class="collapse">
-  <li><a href="#the-gamblers-fallacy" id="toc-the-gamblers-fallacy" class="nav-link" data-scroll-target="#the-gamblers-fallacy">The Gambler’s Fallacy</a></li>
+  <li><a href="#building-your-technical-mindset" id="toc-building-your-technical-mindset" class="nav-link" data-scroll-target="#building-your-technical-mindset">Building Your Technical Mindset</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
-  <li><a href="#the-end" id="toc-the-end" class="nav-link" data-scroll-target="#the-end">The End</a></li>
+  <li><a href="#after-the-break-optimal-stopping" id="toc-after-the-break-optimal-stopping" class="nav-link" data-scroll-target="#after-the-break-optimal-stopping">After the break — Optimal Stopping</a></li>
   </ul></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature"><span class="flow">Literature</span></a>
   <ul class="collapse">
@@ -505,6 +507,34 @@ window.Quarto = {
 </header>
 
 
+<section id="todays-topic-optimal-stopping" class="level2">
+<h2 class="anchored" data-anchor-id="todays-topic-optimal-stopping">Today’s Topic: Optimal Stopping</h2>
+<p><strong>Topic:</strong> Understanding optimal stopping problems and the famous “Secretary Problem”</p>
+<p><strong>Why this matters:</strong> Optimal stopping is everywhere in life - from hiring decisions to finding apartments to choosing when to sell stocks. Today we’ll learn the mathematical strategy that maximizes your chances of making the best choice.</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this lecture, you will be able to:</p>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Define</strong> optimal stopping problems and identify them in real-world scenarios</li>
+<li><strong>Apply</strong> the 37% rule (look-and-leap strategy) to make better decisions</li>
+<li><strong>Connect</strong> optimal stopping principles to programming logic and algorithmic thinking</li>
+</ol>
+</div>
+</section>
+<section id="todays-agenda" class="level2">
+<h2 class="anchored" data-anchor-id="todays-agenda">Today’s Agenda</h2>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>What is Optimal Stopping?</strong> - Definition and real-world examples</li>
+<li><strong>The Secretary Problem</strong> - The classic formulation and solution</li>
+<li><strong>The 37% Rule</strong> - Why it works and how to apply it</li>
+<li><strong>Variations &amp; Extensions</strong> - Rejection, time constraints, other scenarios</li>
+<li><strong>Connecting to Programming</strong> - How this builds our algorithmic mindset</li>
+</ol>
+</div>
+</section>
 <section id="optimal-stopping" class="level1 title">
 <h1 class="title"><span class="flow">Optimal Stopping</span></h1>
 <section id="what-is-optimal-stopping" class="level2">
@@ -545,12 +575,6 @@ window.Quarto = {
 <h2 data-background-image="https://unsplash.com/photos/-XlBjdtRqK8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTV8fGxvdmV8ZW58MHx8fHwxNzI5OTI4NTkxfDA&amp;force=true" class="anchored" data-anchor-id="dating"><span class="invert-font">Dating</span></h2>
 <div class="footer">
 <p><span class="invert-font">Photo by <a href="https://unsplash.com/@shelbymary_">Shelby Deeter</a> on Unsplash</span></p>
-</div>
-</section>
-<section id="searching-for-a-parking-spot" class="level2" data-background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&amp;force=true">
-<h2 data-background-image="https://unsplash.com/photos/FRx3dQj6iYg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8cGFya2luZyUyMG5ldyUyMHlvcmt8ZW58MHx8fHwxNzI5OTgyNjg4fDA&amp;force=true" class="anchored" data-anchor-id="searching-for-a-parking-spot"><span class="invert-font">Searching for a parking spot</span></h2>
-<div class="footer">
-<p><span class="invert-font">Photo by <a href="https://unsplash.com/@josephtpearson">Joseph Pearson</a> on Unsplash</span></p>
 </div>
 </section>
 </section>
@@ -621,20 +645,33 @@ Note
 </ol>
 </div>
 </section>
+<section id="look-and-leap-strategy-1" class="level2">
+<h2 class="anchored" data-anchor-id="look-and-leap-strategy-1">Look-and-Leap Strategy</h2>
+<p>The mathematically optimal strategy:</p>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Look</strong> at the <span class="highlight">first 37%</span> of candidates without hiring anyone</li>
+<li><strong>Remember</strong> the best candidate from this observation phase</li>
+<li><strong>Leap:</strong> Hire the next candidate who is <strong>better than the best observed</strong></li>
+<li><strong>Success rate:</strong> 37% chance of selecting the absolute best candidate</li>
+</ol>
+</div>
+<p>This means we fail 63% of the time - but this is the <strong>best we can possibly do</strong>!</p>
+</section>
 <section id="step-by-step-approximation" class="level2">
 <h2 class="anchored" data-anchor-id="step-by-step-approximation">Step-by-step Approximation</h2>
+<p>Why does the success probability decrease with more candidates?</p>
 <ul>
-<li>With each additional candidate, the chance of getting a new best candidate decreases
-<ul>
-<li>1 candidate: 100%</li>
+<li>1 candidate: 100% (no choice!)</li>
 <li>2 candidates: 50%</li>
 <li>3 candidates: 33%</li>
 <li>4 candidates: 25%</li>
 <li>5 candidates: 20%</li>
-</ul></li>
 </ul>
 <p>. . .</p>
-<p><span class="question">Question:</span> Anybody see a pattern?</p>
+<p><span class="question">Question:</span> Do you see the pattern?</p>
+<p>. . .</p>
+<p><strong>Pattern:</strong> 1/n - as we have more options, each individual option is less likely to be the best.</p>
 </section>
 <section id="why-37" class="level2">
 <h2 class="anchored" data-anchor-id="why-37">Why 37%?</h2>
@@ -648,7 +685,7 @@ Note
 </section>
 <section id="computing-the-number" class="level2">
 <h2 class="anchored" data-anchor-id="computing-the-number">Computing the number</h2>
-<div id="78e46828" class="cell" data-output-location="fragment" data-execution_count="1">
+<div id="084a8b05" class="cell" data-output-location="fragment" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>percentage <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>math.e</span>
@@ -680,11 +717,11 @@ Note
 <section id="geometric-distribution" class="level2">
 <h2 class="anchored" data-anchor-id="geometric-distribution">Geometric Distribution</h2>
 <p>Let’s visualize the success of a simulation with 20 candidates:</p>
-<div id="028e45d6" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="2">
+<div id="7797690f" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lec_01_optimal_stopping_files/figure-revealjs/cell-3-output-1.png" width="1118" height="541" class="figure-img"></p>
+<p><img src="lec_01_optimal_stopping_files/figure-html/cell-3-output-1.png" width="1118" height="541" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -705,20 +742,35 @@ Note
 </ul>
 </div>
 </section>
-<section id="the-role-of-time" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-time">The role of time</h2>
-<p>What if we don’t have a fixed number of candidates, but rather a <span class="highlight">fixed amount of time</span>?</p>
-<p>. . .</p>
-<ul>
-<li>Imagine we have <strong>one year</strong> to find a new flat</li>
-<li>We want the <span class="highlight">best flat</span>, but don’t know what a good flat is</li>
+<section id="mutual-rejection" class="level2">
+<h2 class="anchored" data-anchor-id="mutual-rejection">Mutual Rejection</h2>
+<p><span class="question">Question:</span> What if in dating, <span class="highlight">the other person can also reject you</span>?</p>
+<div class="incremental">
+<ul class="incremental">
+<li>The optimal stopping point <strong>decreases</strong></li>
+<li>We need to account for rejection risk</li>
+<li>With 50% rejection probability: <strong>start accepting at 25%</strong></li>
+<li><strong>Formula:</strong> <span class="math inline">\(q^{\frac{1}{1-q}}\)</span> where <span class="math inline">\(q\)</span> = rejection probability</li>
 </ul>
+</div>
 <p>. . .</p>
-<p><span class="question">Question:</span> How should we behave?</p>
+<p><strong>Life lesson:</strong> Higher risk of rejection means we should be less picky!</p>
+</section>
+<section id="time-constraints" class="level2">
+<h2 class="anchored" data-anchor-id="time-constraints">Time Constraints</h2>
+<p>What if we don’t have a fixed number of candidates, but a <span class="highlight">fixed amount of time</span>?</p>
 <p>. . .</p>
-<ul>
-<li><strong>Same</strong>, but now we decide when to stop searching!</li>
+<p><strong>Example:</strong> One year to find an apartment</p>
+<p>. . .</p>
+<p><span class="question">Question:</span> How should we adapt our strategy?</p>
+<p>. . .</p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Same principle applies!</strong> Observe for first 37% of available time</li>
+<li>But now we also control the <strong>search intensity</strong></li>
+<li>This connects to <strong>resource allocation</strong> problems in computer science</li>
 </ul>
+</div>
 </section>
 <section id="other-versions" class="level2">
 <h2 class="anchored" data-anchor-id="other-versions">Other versions</h2>
@@ -742,27 +794,46 @@ Note
 </div>
 </div>
 </section>
-</section>
-<section id="optimal-solution" class="level1 title">
-<h1 class="title"><span class="flow">Optimal Solution</span></h1>
-<section id="the-gamblers-fallacy" class="level2">
-<h2 class="anchored" data-anchor-id="the-gamblers-fallacy">The Gambler’s Fallacy</h2>
-<p><span class="question">Question:</span> Can you imagine a scenario where it would be unwise to use optimal stopping?</p>
+<section id="building-your-technical-mindset" class="level2">
+<h2 class="anchored" data-anchor-id="building-your-technical-mindset">Building Your Technical Mindset</h2>
+<p><span class="question">Question:</span> <strong>How does optimal stopping connect to programming?</strong></p>
 <p>. . .</p>
-<ul>
-<li>Imagine a game with a <span class="highlight">50 % chance of winning</span></li>
-<li>If you win, your payoff is a <strong>triple</strong> of your bet</li>
-<li>If you lose, you have to pay your bet</li>
-</ul>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Algorithmic thinking:</strong> Break complex decisions into logical steps</li>
+<li><strong>Trade-off analysis:</strong> Exploration vs.&nbsp;exploitation (fundamental in AI)</li>
+<li><strong>Mathematical optimization:</strong> Using formulas to find best solutions</li>
+</ol>
+</div>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<p><strong>What we learned:</strong></p>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Optimal stopping problems</strong> are everywhere in life and business</li>
+<li><strong>The 37% rule</strong> provides a mathematically optimal strategy</li>
+<li><strong>Exploration vs.&nbsp;exploitation</strong> is a fundamental trade-off</li>
+<li><strong>Real-world variations</strong> require adapting the basic strategy</li>
+<li><strong>This thinking</strong> builds foundation for algorithmic problem-solving</li>
+</ol>
+</div>
 </section>
 <section id="section-2" class="level2 loud-slide">
 <h2 class="loud-slide anchored" data-anchor-id="section-2"></h2>
 <div class="r-fit-text">
-<p>Questions?</p>
+<p>Any questions</p>
+<p>so far?</p>
 </div>
 </section>
-<section id="the-end" class="level2">
-<h2 class="anchored" data-anchor-id="the-end">The End</h2>
+<section id="after-the-break-optimal-stopping" class="level2">
+<h2 class="anchored" data-anchor-id="after-the-break-optimal-stopping">After the break — Optimal Stopping</h2>
+<ul>
+<li>Gentle introduction to Python Programming</li>
+<li>We work in our notebooks on basics and optimal stopping</li>
+<li>How to translate the idea into code and experiments</li>
+</ul>
+<p>. . .</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -773,8 +844,8 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>That’s it for todays lecture!</strong><br>
-We now have covered a brief introduction into optimal stopping and seen how to set up Python. Now we can start with the tutorials!</p>
+<p><strong>That’s it for optimal stopping!</strong><br>
+Let’s have a short break and then continue with our first Python programming session.</p>
 </div>
 </div>
 </section>
@@ -821,7 +892,7 @@ Note
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Large number of candidates! With a small number of candidates, we can do even better.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Large number of candidates! With a small number of candidates, we can do even better. . . .<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>This is a bit more advanced. We will not go into the details of the math here and focus more on the insights. For more details see Ferguson, T.S. (1989) ‘Who solved the secretary problem?’, Statistical Science, 4(3). doi:10.1214/ss/1177012493.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>The main inspiration for this lecture. Nils and I have read it and discussed it in depth, always wanting to translate it into a course.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
