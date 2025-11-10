@@ -21,20 +21,21 @@ By the end of this lecture, you will be able to:
 :::
 # [Introduction]{.flow} {.title}
 
-## Caching: Making the most of limited resources
+## A Quick Question First
 
 :::{.fragment}
-> In the practical use of our intellect, forgetting is as important a function as remembering.
-> -- [William James]
+[Question:]{.question} **How many of you have a messy desktop right now?**
 :::
 
-:::{.incremental}
-- Today's lecture is on caching.
-- The discussed topics are highly relevant for everything that has to do with computers and data.
-- On top of that, caching is another very important concept for our everyday decision-making.
+:::{.fragment}
+**Raise your hand!**
 :::
 
-## Let's approach the topic using an everyday decision-making situation
+:::{.fragment}
+Today's lecture will explain why that matters more than you think...
+:::
+
+## Let's approach the topic using an everyday decision
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
@@ -42,7 +43,9 @@ By the end of this lecture, you will be able to:
 - It's time to put things in order.
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Closet-1.png)
+::: {style="text-align: center;"}
+![](../images/caching/closet_1.png)
+:::
 :::
 :::
 :::
@@ -58,163 +61,173 @@ By the end of this lecture, you will be able to:
     - Clearing out?
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Closet-2.png)
+::: {style="text-align: center;"}
+![](../images/caching/closet_2.png)
+:::
 :::
 :::
 :::
 
-## Storing
+## Two Approaches to Storage Problems
 
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
-**How to bring order to storage?**
-
-- Subdivide storage
-- Efficient sorting
-- Increase capacity
+- **Better Organization:**
+    - Subdivide storage
+    - Efficient sorting
+- **More Space:**
+    - Increase capacity
+- [Question:]{.question} Which approach is better?
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Closet-2.png)
+::: {style="text-align: center;"}
+![](../images/caching/closet_2.png)
+:::
 :::
 :::
 :::
 
-## Subdivide storage and efficient sorting outcome
+## Even best organization has limits
+
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
-- Time investment can improve storing.
-- That is a difficult trade-off in itself.
-- Nontheless: Each storage has a limited capacity.
+- Organization helps, but takes time.
+- More space helps, but has limits.
+- **Every storage has a finite capacity.**
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Closet-2.png)
+::: {style="text-align: center;"}
+![](../images/caching/closet_2.png)
+:::
 :::
 :::
 :::
 
 ## [Question:]{.question} What do we do, when the storage is full?
 
+:::{.fragment}
 ::: {style="text-align: center;"}
 
 ![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="60%"}
 
 **We could increase the capacity**
 :::
+:::
 
 ## But...
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
-- Increase capacity is costly.
-- There is a trade-off between size and speed.
-- Sooner or later, every storage will fill up if not cleared out.
+- Increasing capacity = costly
+- **Trade-off:** Size vs. Speed
+- Larger = slower to search
+- Sooner or later: Still fills up
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Closet-3.png)
+::: {style="text-align: center;"}
+![](../images/caching/closet_3.png)
+:::
 :::
 :::
 :::
 
-## [Question:]{.question} What types of storages can you imagine that are affected by this?
+## [Question:]{.question} What else faces this problem?
 
 :::{.incremental}
-- Our cupboard
-- Our computer (hard drive, RAM, cache, ...)
-- Our brain?!
+- Cupboards
+- Computers
+- Email inbox
+- Smartphones
+- Warehouses
+- **Our brain?!**
 :::
 
-## [Question:]{.question} What is the impact of a full storage?
+## [Question:]{.question} Impact of full storage?
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
-- Access speed drops significantly
-- Processing time increases
-- Overall performance decreases
+- Access speed drops
+- Processing time up
+- Performance down
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Closet-3.png)
+::: {style="text-align: center;"}
+![](../images/caching/closet_3.png)
+:::
 :::
 :::
 :::
 
 # [Clearing out]{.flow} {.title}
-## Now we see, why clearing out is so important
+## Why Clearing Out Matters
 
 :::{.incremental}
-- And that goes for our cupboard as well as for computers and other storages...
-- But what stays and what goes?
+- True for cupboards, computers, brains...
+- **But what stays and what goes?**
 :::
 
-## [Question:]{.question} What replacement/eviction policies can you imagine?
-
-:::{.incremental}
-- Random Eviction
-- First-In, First-Out (FIFO)
-- Least Recently Used (LRU)
-:::
-
-## Once again, we can learn a lot from the computer sciences.
+## Learning from Computer Science
 
 :::{.fragment}
 **The evolution of computer memory**
 :::
 :::{.incremental}
-- In the 1950s, computer science faced the same question…
-- …and has faced it repeatedly since then.
-- Processors have become faster and faster (Moore's Law).
-- The demands on memory also grew.
+- 1950s: Computer science faced the same problem
+- Processors got faster (Moore's Law)
+- Memory demands grew
+- But memory speed couldn't keep up
+
+:::{.fragment}
+**→ The Memory Wall**
+:::
 :::
 
-## CPU
+## The Bottleneck
 
 :::{.incremental}
-- The processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the "brain" of the system.
-- It executes instructions and performs calculations, to process data and run programs.
+- **Modern CPUs:** Billions of ops/second
+- **Problem:** Data isn't available fast enough
+- [Question:]{.question} What's the point of a fast CPU if it has to wait for slow memory?
+
+:::{.fragment}
+**→ Von Neumann Bottleneck**
 :::
-
-## Problem: Access Time
-:::{.incremental}
-
-**Problem:** No matter how much faster the processor gets, if input data isn't available fast enough or can't be stored quickly enough, the system won't become faster overall.
-
-[Question:]{.question} What is the solution?
 :::
 
 # [Cache]{.flow} {.title}
 
-## Cache
+## Cache: The Solution
+
 :::{.fragment}
-**Hierarchical memory pyramid for efficient data management**
+**A hierarchical memory system**
 :::
 
 :::{.incremental}
-- L1 Cache, directly on CPU, very fast access time.
-- L2 Cache, between L1 and main memory.
-- RAM memory.
-- Mass Storage (hard drive).
-- The whole memory system works like a library.
-- Find an explanation [here](https://www.techtarget.com/searchstorage/definition/cache).
+- **L1 Cache:** Tiny but ultra-fast (64-256 KB)
+- **L2/L3 Cache:** Larger, still fast (MB range)
+- **RAM:** Main workspace (8-32 GB)
+- **Storage:** Huge but slow (256 GB - 2 TB)
+
+:::{.fragment}
+**Like a library...**
+:::
 :::
 
-## Cache - Size and Speed trade-off
-
-::: {style="text-align: center;"}
-![](https://i.imgur.com/suD65Rs.png){width="80%"}
-
-**Registers are 10 million times faster than the hard drive!**
-:::
-
-## Library Principle
+## The Library Principle
 
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
-- Library storage (5 million books, Mass Storage)
-- Subject locations (100K books, RAM)
-- Desk (5 borrowed books, L2)
-- Short-term memory (L1)
+- **Library storage** (5 million books, Mass Storage)
+- **Subject locations** (100K books, RAM)
+- **Your desk** (5 borrowed books, L2)
+- **Short-term memory** (current page, L1)
+
+:::{.fragment}
+**Closer = Faster = Smaller**
+:::
 :::
 ::: {.column width="50%"}
 ![](https://images.beyondsimulations.com/alg/Desk-1.png)
@@ -222,7 +235,27 @@ By the end of this lecture, you will be able to:
 :::
 :::
 
-## Library Principle
+## The Trade-off: Size and Speed
+
+::: {style="text-align: center;"}
+![](https://i.imgur.com/suD65Rs.png){width="50%"}
+
+**Registers are 10 million times faster than the hard drive!**
+
+**Why can't we just make everything as fast as L1 cache?**
+:::
+
+## Why the Trade-off?
+
+:::{.incremental}
+**Why not make everything ultra-fast?**
+
+- **Physical limits:** Larger caches sit further from CPU, signals take longer to travel, and dense fast memory generates extreme heat that must be dissipated
+- **Economic limits:** SRAM costs $50,000/GB vs. HDDs at $0.02/GB
+- **Solution:** Multiple cache levels, each optimized for different needs
+:::
+
+## The nessecity of clearing out
 
 :::{.incremental}
 ::: {layout="[[50,50]]"}
@@ -232,146 +265,141 @@ By the end of this lecture, you will be able to:
 - Therefore, both must be cleared regularly.
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Desk-2.png)
+::: {style="text-align: center;"}
+![](../images/caching/Desk_full.png){width="70%"}
+:::
 :::
 :::
 :::
 
 # [Clearing out Strategies]{.flow} {.title}
 
+
+## [Question:]{.question} Eviction Strategies?
+
+:::{.incremental}
+- Random
+- First-In, First-Out (FIFO)
+- Least Frequently Used (LFU)
+- Least Recently Used (LRU)
+:::
+
 ## How to clear up?
 
 :::{.incremental}
-- Optimal: Clairvoyance
-    - Store everything in the cache that will be needed
-    - Delete everything from the cache that won't be needed
-- [Question:]{.question} What is the problem with this strategy?
-- Optimal strategy not achievable in reality
+- **Optimal: Clairvoyance**
+    - Keep what you'll need
+    - Remove what you won't
+- [Question:]{.question} What's the problem?
+
+:::{.fragment}
+**→ Requires knowledge of the future!**
+:::
 :::
 
-## Realisable strategies?
+## Realistic Strategies
 
 :::{.incremental}
-- Least recently used is the dominant strategy.
+- **Least Recently Used (LRU)** is the dominant strategy.
 - Evicts the least recently accessed item from the cache when space is needed.
 - Leads to much better performance on average than, for example, random eviction.
 - [Question:]{.question} Why do you think least recently used is the better strategy?
 :::
 
+## Why LRU Works: The Principle of Temporal Locality
+
+:::{.incremental}
+- **Temporal Locality:** Recent use → Likely need again soon
+- **Examples:**
+    - Books on your desk
+    - Apps opened today
+    - People texted this morning
+- **Performance:** 80-90% hit rate (vs. 50-60% random)
+
+:::{.fragment}
+**Recent past predicts near future**
+:::
+:::
+
 ## Managerial and personal insights:
 
 :::{.incremental}
-- Let go of things you haven’t used in ages
-- Keep things where they are used
-- Both have been proven to contribute to a significant increase in productivity
+- **Let go of unused things** → LRU principle
+- **Keep things where used** → Spatial locality
+- **Result:** Significant productivity increase
+
+:::{.fragment}
+**Marie Kondo = LRU for physical objects!**
+:::
 :::
 
-## Keeping things where they are used...
+## Spatial Locality
 
+:::{.fragment}
+[Question:]{.question} Can you think of examples where spatial locality is applied in your daily life?
+:::
+
+:::{.fragment}
 ::: {style="text-align: center;"}
+![](https://images.beyondsimulations.com/alg/Bed.png){width="30%"}
 
-![](https://images.beyondsimulations.com/alg/Bed.png){width="40%"}
-
-**Might be optimal, in a mathematical sense**
+**Mathematically optimal**
+:::
 :::
 
 # [Productivity]{.flow} {.title}
-## The strong limitations of caches make them a "security risk".
+
+## Our Brains are Caches
 
 :::{.incremental}
-- Denial-of-Service Attacks (DoS) attacks.
-    - Cache Flooding
-    - Cache Poisoning
-- Overload a system with excessive requests or data.
+- We've learned how computers manage limited cache space
+- **But why does this matter for humans?**
+- Your brain works remarkably similar to a computer cache:
+    - Limited capacity for active information
+    - Fast access to recently used information
+    - Must constantly decide what to keep and what to forget
+:::
+
+## Cache Vulnerabilities
+
+:::{.incremental}
+- **Denial-of-Service (DoS) attacks** exploit cache limitations:
+    - **Cache Flooding:** Overload with excessive requests
+    - **Cache Poisoning:** Insert malicious data to evict important information
+- These attacks overload a system with excessive requests or data.
 - Causing it to slow down or crash.
 - The system is forced to evict important data.
 :::
 
-## [Question:]{.question} Why are the findings about cache so important for humans?
-
-:::{.fragment}
->Your Brain is a Cache, Not a Database -[Joe Chrysler]
-:::
-
-## Our brain has similar weaknesses
-
-:::{.fragment}
-**Productivity and creativity are negatively affected by:**
-:::
+## Productivity Killers
 
 :::{.incremental}
-- Overload (too much)
-- Exhaustion (too long)
-- Context switching (interruption of "flow", 23 minutes to get back on track)
-- Distraction (Cache Flooding)
-- Fake News (Cache Poisoning)
+- **Overload** (too much information, cache capacity exceeded)
+- **Exhaustion** (too long without "cache clearing")
+- **Context switching** (interruption of "flow", ~23 minutes to get back on track)
+- **Distraction** (Cache Flooding: constant notifications, social media)
+- **Misinformation** (Cache Poisoning: fake news, misleading information)
 :::
 
-:::{.fragment}
-**This can lead to burnout.**
-:::
-
-## [Question:]{.question} What do you think should we do about it?
-
-## Stolen Focus: Why You Can’t Pay Attention - Key Insights I
-
-:::{.fragment}
-**Main Idea:**
-:::
+## The Attention Crisis
 
 :::{.incremental}
-- Modern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.
-- The reason for that has much to do with the way our brain works and how we interact with technology.
-:::
-
-## Stolen Focus: Why You Can’t Pay Attention - Key Insights II
+- **Technology & Social Media:** Designed to capture attention (Cache Flooding)
+- **Constant Interruptions:** Notifications = Forced cache evictions
+- **Result:** Reduced creativity, critical thinking, and productivity
 
 :::{.fragment}
-**Key Causes of Attention Loss:**
+[Reflection:]{.question} How many times did you check your phone during this lecture?
 :::
+:::
+
+## The Solution: Manage Your Mental Cache
 
 :::{.incremental}
-- Technology & Social Media: Designed to capture and keep attention, leading to fragmented focus.
-- Constant Interruptions: Notifications and multitasking disrupt deep work and concentration.
-- Environmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function.
-:::
-
-## Stolen Focus: Why You Can’t Pay Attention - Key Insights III
-
-:::{.fragment}
-**Consequences:**
-:::
-
-:::{.incremental}
-- Reduced ability to think critically and creatively.
-- Difficulty sustaining attention on meaningful tasks.
-:::
-
-## Stolen Focus: Why You Can’t Pay Attention - Key Insights IV
-
-:::{.fragment}
-**Solutions Suggested:**
-:::
-
-:::{.incremental}
-- Limit screen time and practice "monotasking."
-- Prioritize sleep, nutrition, and mindful habits.
-:::
-## Stolen Focus: Why You Can’t Pay Attention - Key Insights V
-
-::: {style="text-align: center;"}
-{{< video https://www.youtube.com/watch?v=DqlywBxYELw width="80%" height="400px" >}}
-
-:::{.fragment}
-But even better: read the book!
-:::
-:::
-## Stolen Focus: Why You Can’t Pay Attention - Book
-
-::: {style="text-align: center;"}
-
-![](https://m.media-amazon.com/images/I/71OfQycq2ZL._SL1500_.jpg){width="30%"}
-
+- Limit screen time and practice "monotasking" (Reduce cache thrashing).
+- Prioritize sleep, nutrition, and mindful habits (Maintain cache performance).
+- Create protected time for deep work (Prevent cache flooding).
+- Be selective about what enters your attention (Smart cache management).
 :::
 
 # [Mitigation]{.flow} {.title}
@@ -381,54 +409,69 @@ But even better: read the book!
 - Distraction can hardly be avoided in today’s world but can be mitigated.
 - This is particularly important for managers.
 - This lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.
+- **Want to dive deeper? Read "Stolen Focus" by Johann Hari**
 :::
 
-## Awareness I
-
-:::{.fragment}
-**Train awareness**
-:::
+## Awareness: Three Levels of Attention
 
 :::{.incremental}
-- Spotlight – immediate goals – Focus
-- Starlight – medium-term goals – Wishes
-- Daylight – long-term goals – Values
+- **Spotlight** – Immediate goals – Focus (Your L1 Cache: What are you working on RIGHT NOW?)
+- **Starlight** – Medium-term goals – Wishes (Your L2 Cache: What matters this week/month?)
+- **Daylight** – Long-term goals – Values (Your Storage: What defines your life direction?)
 :::
 
-## Awareness II
-
-:::{.fragment}
-**Prioritization**
-:::
+## Practical Strategies
 
 :::{.incremental}
-- Prioritization
-- Structure (Schedule)
-- Breaks
-- Enable flow (dedicated workspace, manage notifications, clear communication)
-- Meditation & exercise
+- **Prioritization:** What deserves to be in your mental cache?
+- **Structure (Schedule):** Time-boxing prevents cache overflow
+- **Breaks:** Regular "cache clearing" prevents exhaustion
+- **Enable flow:** Dedicated workspace, manage notifications, clear communication
+- **Meditation & exercise:** Maintenance routines for optimal cache performance
+:::
+
+## Cache Hierarchy for Workspace
+
+:::{.incremental}
+- **Hot Cache (On your desk):** Only items for current tasks (today)
+- **Warm Cache (Nearby shelf/drawer):** This week's projects (this week)
+- **Cold Storage (Archive/closet):** Everything else
+
+:::{.fragment}
+**→ The key principle:** If you haven't used it recently, move it away!
+:::
+:::
+
+## Self-Assessment
+
+[Question:]{.question} **Right now:**
+
+:::{.incremental}
+1. How many browser tabs do you have open? ___
+2. How many notifications did you receive in the last hour? ___
+3. How many unread emails in your inbox? ___
+
+:::{.fragment}
+**Do you see any risks of cache flooding?**
+:::
 :::
 
 # [Key Takeaways]{.flow} {.title}
-## Key Takeaways
+
+## Key Takeaways: The Concepts
 
 :::{.incremental}
-- Caching is a universal concept that applies to computers, organizations, and human cognition
-- Efficient cache management requires strategic decisions about what to keep and what to remove
-- LRU (Least Recently Used) is often the most practical replacement strategy
-- Our brain's limitations are similar to computer caches
-- Managing our attention and focus requires understanding these limitations
+- **Caching is universal:** It applies to computers, organizations, and human cognition
+- **The fundamental trade-off:** Fast storage is small, large storage is slow
+- **LRU works because of temporal locality:** Recent past predicts near future
 :::
 
-## Summary Quiz
-
-[Question:]{.question} Take a moment to reflect:
+## Key Takeaways: Your Life
 
 :::{.incremental}
-1. What are the three main types of cache replacement strategies?
-2. How does the library principle relate to computer memory hierarchy?
-3. What are two ways you can apply caching principles to improve your productivity?
-4. How can understanding cache flooding help protect against information overload?
+- **Your brain is a cache:** Limited capacity, vulnerable to flooding and poisoning
+- **Protect your attention:** It's your scarcest and most valuable resource
+- **Apply caching principles to life:** Keep what you use, remove what you don't
 :::
 
 # [Literature]{.flow} {.title}
