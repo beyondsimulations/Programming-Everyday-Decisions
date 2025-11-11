@@ -1444,18 +1444,18 @@
     ]
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#caching-making-the-most-of-limited-resources",
-    "href": "lectures/lec_03_presentation.html#caching-making-the-most-of-limited-resources",
+    "objectID": "lectures/lec_03_presentation.html#a-quick-question-first",
+    "href": "lectures/lec_03_presentation.html#a-quick-question-first",
     "title": "Lecture III - Caching",
-    "section": "Caching: Making the most of limited resources",
-    "text": "Caching: Making the most of limited resources\n\n\nIn the practical use of our intellect, forgetting is as important a function as remembering. – [William James]\n\n\n\nToday’s lecture is on caching.\nThe discussed topics are highly relevant for everything that has to do with computers and data.\nOn top of that, caching is another very important concept for our everyday decision-making."
+    "section": "A Quick Question First",
+    "text": "A Quick Question First\n\nQuestion: How many of you have a messy desktop right now?\n\n\nRaise your hand!\n\n\nToday’s lecture will explain why that matters more than you think…"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
-    "href": "lectures/lec_03_presentation.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
+    "objectID": "lectures/lec_03_presentation.html#lets-approach-the-topic-using-an-everyday-decision",
+    "href": "lectures/lec_03_presentation.html#lets-approach-the-topic-using-an-everyday-decision",
     "title": "Lecture III - Caching",
-    "section": "Let’s approach the topic using an everyday decision-making situation",
-    "text": "Let’s approach the topic using an everyday decision-making situation\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order."
+    "section": "Let’s approach the topic using an everyday decision",
+    "text": "Let’s approach the topic using an everyday decision\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order."
   },
   {
     "objectID": "lectures/lec_03_presentation.html#question-what-could-we-do",
@@ -1465,242 +1465,228 @@
     "text": "Question: What could we do?\n\n\n\n\nBetter organization\nClearing out things we no longer need\nNow we have two problems:\n\nStoring?\nClearing out?"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#storing",
-    "href": "lectures/lec_03_presentation.html#storing",
+    "objectID": "lectures/lec_03_presentation.html#two-approaches-to-storage-problems",
+    "href": "lectures/lec_03_presentation.html#two-approaches-to-storage-problems",
     "title": "Lecture III - Caching",
-    "section": "Storing",
-    "text": "Storing\n\n\n\nHow to bring order to storage?\n\nSubdivide storage\nEfficient sorting\nIncrease capacity"
+    "section": "Two Approaches to Storage Problems",
+    "text": "Two Approaches to Storage Problems\n\n\n\n\nBetter Organization:\n\nSubdivide storage\nEfficient sorting\n\nMore Space:\n\nIncrease capacity\n\nQuestion: Which approach is better?"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#subdivide-storage-and-efficient-sorting-outcome",
-    "href": "lectures/lec_03_presentation.html#subdivide-storage-and-efficient-sorting-outcome",
+    "objectID": "lectures/lec_03_presentation.html#even-best-organization-has-limits",
+    "href": "lectures/lec_03_presentation.html#even-best-organization-has-limits",
     "title": "Lecture III - Caching",
-    "section": "Subdivide storage and efficient sorting outcome",
-    "text": "Subdivide storage and efficient sorting outcome\n\n\n\n\nTime investment can improve storing.\nThat is a difficult trade-off in itself.\nNontheless: Each storage has a limited capacity."
+    "section": "Even best organization has limits",
+    "text": "Even best organization has limits\n\n\n\n\nOrganization helps, but takes time.\nMore space helps, but has limits.\nEvery storage has a finite capacity."
   },
   {
     "objectID": "lectures/lec_03_presentation.html#question-what-do-we-do-when-the-storage-is-full",
     "href": "lectures/lec_03_presentation.html#question-what-do-we-do-when-the-storage-is-full",
     "title": "Lecture III - Caching",
     "section": "Question: What do we do, when the storage is full?",
-    "text": "Question: What do we do, when the storage is full?\n\n\nWe could increase the capacity"
+    "text": "Question: What do we do, when the storage is full?\n\n\n\nWe could increase the capacity"
   },
   {
     "objectID": "lectures/lec_03_presentation.html#but",
     "href": "lectures/lec_03_presentation.html#but",
     "title": "Lecture III - Caching",
     "section": "But…",
-    "text": "But…\n\n\n\n\nIncrease capacity is costly.\nThere is a trade-off between size and speed.\nSooner or later, every storage will fill up if not cleared out."
+    "text": "But…\n\n\n\n\nIncreasing capacity = costly\nTrade-off: Size vs. Speed\nLarger = slower to search\nSooner or later: Still fills up"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
-    "href": "lectures/lec_03_presentation.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
+    "objectID": "lectures/lec_03_presentation.html#question-what-else-faces-this-problem",
+    "href": "lectures/lec_03_presentation.html#question-what-else-faces-this-problem",
     "title": "Lecture III - Caching",
-    "section": "Question: What types of storages can you imagine that are affected by this?",
-    "text": "Question: What types of storages can you imagine that are affected by this?\n\nOur cupboard\nOur computer (hard drive, RAM, cache, …)\nOur brain?!"
+    "section": "Question: What else faces this problem?",
+    "text": "Question: What else faces this problem?\n\nCupboards\nComputers\nEmail inbox\nSmartphones\nWarehouses\nOur brain?!"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#question-what-is-the-impact-of-a-full-storage",
-    "href": "lectures/lec_03_presentation.html#question-what-is-the-impact-of-a-full-storage",
+    "objectID": "lectures/lec_03_presentation.html#question-impact-of-full-storage",
+    "href": "lectures/lec_03_presentation.html#question-impact-of-full-storage",
     "title": "Lecture III - Caching",
-    "section": "Question: What is the impact of a full storage?",
-    "text": "Question: What is the impact of a full storage?\n\n\n\n\nAccess speed drops significantly\nProcessing time increases\nOverall performance decreases"
+    "section": "Question: Impact of full storage?",
+    "text": "Question: Impact of full storage?\n\n\n\n\nAccess speed drops\nProcessing time up\nPerformance down"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#now-we-see-why-clearing-out-is-so-important",
-    "href": "lectures/lec_03_presentation.html#now-we-see-why-clearing-out-is-so-important",
+    "objectID": "lectures/lec_03_presentation.html#why-clearing-out-matters",
+    "href": "lectures/lec_03_presentation.html#why-clearing-out-matters",
     "title": "Lecture III - Caching",
-    "section": "Now we see, why clearing out is so important",
-    "text": "Now we see, why clearing out is so important\n\nAnd that goes for our cupboard as well as for computers and other storages…\nBut what stays and what goes?"
+    "section": "Why Clearing Out Matters",
+    "text": "Why Clearing Out Matters\n\nTrue for cupboards, computers, brains…\nBut what stays and what goes?"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#question-what-replacementeviction-policies-can-you-imagine",
-    "href": "lectures/lec_03_presentation.html#question-what-replacementeviction-policies-can-you-imagine",
+    "objectID": "lectures/lec_03_presentation.html#learning-from-computer-science",
+    "href": "lectures/lec_03_presentation.html#learning-from-computer-science",
     "title": "Lecture III - Caching",
-    "section": "Question: What replacement/eviction policies can you imagine?",
-    "text": "Question: What replacement/eviction policies can you imagine?\n\nRandom Eviction\nFirst-In, First-Out (FIFO)\nLeast Recently Used (LRU)"
+    "section": "Learning from Computer Science",
+    "text": "Learning from Computer Science\n\nThe evolution of computer memory\n\n\n1950s: Computer science faced the same problem\nProcessors got faster (Moore’s Law)\nMemory demands grew\nBut memory speed couldn’t keep up\n\n\n→ The Memory Wall"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
-    "href": "lectures/lec_03_presentation.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
+    "objectID": "lectures/lec_03_presentation.html#the-bottleneck",
+    "href": "lectures/lec_03_presentation.html#the-bottleneck",
     "title": "Lecture III - Caching",
-    "section": "Once again, we can learn a lot from the computer sciences.",
-    "text": "Once again, we can learn a lot from the computer sciences.\n\nThe evolution of computer memory\n\n\nIn the 1950s, computer science faced the same question…\n…and has faced it repeatedly since then.\nProcessors have become faster and faster (Moore’s Law).\nThe demands on memory also grew."
+    "section": "The Bottleneck",
+    "text": "The Bottleneck\n\nModern CPUs: Billions of ops/second\nProblem: Data isn’t available fast enough\nQuestion: What’s the point of a fast CPU if it has to wait for slow memory?\n\n\n→ Von Neumann Bottleneck"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#cpu",
-    "href": "lectures/lec_03_presentation.html#cpu",
+    "objectID": "lectures/lec_03_presentation.html#cache-the-solution",
+    "href": "lectures/lec_03_presentation.html#cache-the-solution",
     "title": "Lecture III - Caching",
-    "section": "CPU",
-    "text": "CPU\n\nThe processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the “brain” of the system.\nIt executes instructions and performs calculations, to process data and run programs."
+    "section": "Cache: The Solution",
+    "text": "Cache: The Solution\n\nA hierarchical memory system\n\n\nL1 Cache: Tiny but ultra-fast (64-256 KB)\nL2/L3 Cache: Larger, still fast (MB range)\nRAM: Main workspace (8-32 GB)\nStorage: Huge but slow (256 GB - 2 TB)\n\n\nLike a library…"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#problem-access-time",
-    "href": "lectures/lec_03_presentation.html#problem-access-time",
+    "objectID": "lectures/lec_03_presentation.html#the-library-principle",
+    "href": "lectures/lec_03_presentation.html#the-library-principle",
     "title": "Lecture III - Caching",
-    "section": "Problem: Access Time",
-    "text": "Problem: Access Time\nProblem: No matter how much faster the processor gets, if input data isn’t available fast enough or can’t be stored quickly enough, the system won’t become faster overall.\nQuestion: What is the solution?"
+    "section": "The Library Principle",
+    "text": "The Library Principle\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nYour desk (5 borrowed books, L2)\nShort-term memory (current page, L1)\n\n\nCloser = Faster = Smaller"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#cache-1",
-    "href": "lectures/lec_03_presentation.html#cache-1",
+    "objectID": "lectures/lec_03_presentation.html#the-trade-off-size-and-speed",
+    "href": "lectures/lec_03_presentation.html#the-trade-off-size-and-speed",
     "title": "Lecture III - Caching",
-    "section": "Cache",
-    "text": "Cache\n\nHierarchical memory pyramid for efficient data management\n\n\nL1 Cache, directly on CPU, very fast access time.\nL2 Cache, between L1 and main memory.\nRAM memory.\nMass Storage (hard drive).\nThe whole memory system works like a library.\nFind an explanation here."
+    "section": "The Trade-off: Size and Speed",
+    "text": "The Trade-off: Size and Speed\n\n\nRegisters are 10 million times faster than the hard drive!\nWhy can’t we just make everything as fast as L1 cache?"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#cache---size-and-speed-trade-off",
-    "href": "lectures/lec_03_presentation.html#cache---size-and-speed-trade-off",
+    "objectID": "lectures/lec_03_presentation.html#why-the-trade-off",
+    "href": "lectures/lec_03_presentation.html#why-the-trade-off",
     "title": "Lecture III - Caching",
-    "section": "Cache - Size and Speed trade-off",
-    "text": "Cache - Size and Speed trade-off\n\n\nRegisters are 10 million times faster than the hard drive!"
+    "section": "Why the Trade-off?",
+    "text": "Why the Trade-off?\nWhy not make everything ultra-fast?\n\nPhysical limits: Larger caches sit further from CPU, signals take longer to travel, and dense fast memory generates extreme heat that must be dissipated\nEconomic limits: SRAM costs $50,000/GB vs. HDDs at $0.02/GB\nSolution: Multiple cache levels, each optimized for different needs"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#library-principle",
-    "href": "lectures/lec_03_presentation.html#library-principle",
+    "objectID": "lectures/lec_03_presentation.html#the-nessecity-of-clearing-out",
+    "href": "lectures/lec_03_presentation.html#the-nessecity-of-clearing-out",
     "title": "Lecture III - Caching",
-    "section": "Library Principle",
-    "text": "Library Principle\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nDesk (5 borrowed books, L2)\nShort-term memory (L1)"
+    "section": "The nessecity of clearing out",
+    "text": "The nessecity of clearing out\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly."
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#library-principle-1",
-    "href": "lectures/lec_03_presentation.html#library-principle-1",
+    "objectID": "lectures/lec_03_presentation.html#question-eviction-strategies",
+    "href": "lectures/lec_03_presentation.html#question-eviction-strategies",
     "title": "Lecture III - Caching",
-    "section": "Library Principle",
-    "text": "Library Principle\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly."
+    "section": "Question: Eviction Strategies?",
+    "text": "Question: Eviction Strategies?\n\nRandom\nFirst-In, First-Out (FIFO)\nLeast Frequently Used (LFU)\nLeast Recently Used (LRU)"
   },
   {
     "objectID": "lectures/lec_03_presentation.html#how-to-clear-up",
     "href": "lectures/lec_03_presentation.html#how-to-clear-up",
     "title": "Lecture III - Caching",
     "section": "How to clear up?",
-    "text": "How to clear up?\n\nOptimal: Clairvoyance\n\nStore everything in the cache that will be needed\nDelete everything from the cache that won’t be needed\n\nQuestion: What is the problem with this strategy?\nOptimal strategy not achievable in reality"
+    "text": "How to clear up?\n\nOptimal: Clairvoyance\n\nKeep what you’ll need\nRemove what you won’t\n\nQuestion: What’s the problem?\n\n\n→ Requires knowledge of the future!"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#realisable-strategies",
-    "href": "lectures/lec_03_presentation.html#realisable-strategies",
+    "objectID": "lectures/lec_03_presentation.html#realistic-strategies",
+    "href": "lectures/lec_03_presentation.html#realistic-strategies",
     "title": "Lecture III - Caching",
-    "section": "Realisable strategies?",
-    "text": "Realisable strategies?\n\nLeast recently used is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?"
+    "section": "Realistic Strategies",
+    "text": "Realistic Strategies\n\nLeast Recently Used (LRU) is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?"
+  },
+  {
+    "objectID": "lectures/lec_03_presentation.html#why-lru-works-the-principle-of-temporal-locality",
+    "href": "lectures/lec_03_presentation.html#why-lru-works-the-principle-of-temporal-locality",
+    "title": "Lecture III - Caching",
+    "section": "Why LRU Works: The Principle of Temporal Locality",
+    "text": "Why LRU Works: The Principle of Temporal Locality\n\nTemporal Locality: Recent use → Likely need again soon\nExamples:\n\nBooks on your desk\nApps opened today\nPeople texted this morning\n\nPerformance: 80-90% hit rate (vs. 50-60% random)\n\n\nRecent past predicts near future"
   },
   {
     "objectID": "lectures/lec_03_presentation.html#managerial-and-personal-insights",
     "href": "lectures/lec_03_presentation.html#managerial-and-personal-insights",
     "title": "Lecture III - Caching",
     "section": "Managerial and personal insights:",
-    "text": "Managerial and personal insights:\n\nLet go of things you haven’t used in ages\nKeep things where they are used\nBoth have been proven to contribute to a significant increase in productivity"
+    "text": "Managerial and personal insights:\n\nLet go of unused things → LRU principle\nKeep things where used → Spatial locality\nResult: Significant productivity increase\n\n\nMarie Kondo = LRU for physical objects!"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#keeping-things-where-they-are-used",
-    "href": "lectures/lec_03_presentation.html#keeping-things-where-they-are-used",
+    "objectID": "lectures/lec_03_presentation.html#spatial-locality",
+    "href": "lectures/lec_03_presentation.html#spatial-locality",
     "title": "Lecture III - Caching",
-    "section": "Keeping things where they are used…",
-    "text": "Keeping things where they are used…\n\n\nMight be optimal, in a mathematical sense"
+    "section": "Spatial Locality",
+    "text": "Spatial Locality\n\nQuestion: Can you think of examples where spatial locality is applied in your daily life?\n\n\n\n\nMathematically optimal"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
-    "href": "lectures/lec_03_presentation.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
+    "objectID": "lectures/lec_03_presentation.html#our-brains-are-caches",
+    "href": "lectures/lec_03_presentation.html#our-brains-are-caches",
     "title": "Lecture III - Caching",
-    "section": "The strong limitations of caches make them a “security risk”.",
-    "text": "The strong limitations of caches make them a “security risk”.\n\nDenial-of-Service Attacks (DoS) attacks.\n\nCache Flooding\nCache Poisoning\n\nOverload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data."
+    "section": "Our Brains are Caches",
+    "text": "Our Brains are Caches\n\nWe’ve learned how computers manage limited cache space\nBut why does this matter for humans?\nYour brain works remarkably similar to a computer cache:\n\nLimited capacity for active information\nFast access to recently used information\nMust constantly decide what to keep and what to forget"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#question-why-are-the-findings-about-cache-so-important-for-humans",
-    "href": "lectures/lec_03_presentation.html#question-why-are-the-findings-about-cache-so-important-for-humans",
+    "objectID": "lectures/lec_03_presentation.html#cache-vulnerabilities",
+    "href": "lectures/lec_03_presentation.html#cache-vulnerabilities",
     "title": "Lecture III - Caching",
-    "section": "Question: Why are the findings about cache so important for humans?",
-    "text": "Question: Why are the findings about cache so important for humans?\n\n\nYour Brain is a Cache, Not a Database -[Joe Chrysler]"
+    "section": "Cache Vulnerabilities",
+    "text": "Cache Vulnerabilities\n\nDenial-of-Service (DoS) attacks exploit cache limitations:\n\nCache Flooding: Overload with excessive requests\nCache Poisoning: Insert malicious data to evict important information\n\nThese attacks overload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data."
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#our-brain-has-similar-weaknesses",
-    "href": "lectures/lec_03_presentation.html#our-brain-has-similar-weaknesses",
+    "objectID": "lectures/lec_03_presentation.html#productivity-killers",
+    "href": "lectures/lec_03_presentation.html#productivity-killers",
     "title": "Lecture III - Caching",
-    "section": "Our brain has similar weaknesses",
-    "text": "Our brain has similar weaknesses\n\nProductivity and creativity are negatively affected by:\n\n\nOverload (too much)\nExhaustion (too long)\nContext switching (interruption of “flow”, 23 minutes to get back on track)\nDistraction (Cache Flooding)\nFake News (Cache Poisoning)\n\n\nThis can lead to burnout."
+    "section": "Productivity Killers",
+    "text": "Productivity Killers\n\nOverload (too much information, cache capacity exceeded)\nExhaustion (too long without “cache clearing”)\nContext switching (interruption of “flow”, ~23 minutes to get back on track)\nDistraction (Cache Flooding: constant notifications, social media)\nMisinformation (Cache Poisoning: fake news, misleading information)"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#question-what-do-you-think-should-we-do-about-it",
-    "href": "lectures/lec_03_presentation.html#question-what-do-you-think-should-we-do-about-it",
+    "objectID": "lectures/lec_03_presentation.html#the-attention-crisis",
+    "href": "lectures/lec_03_presentation.html#the-attention-crisis",
     "title": "Lecture III - Caching",
-    "section": "Question: What do you think should we do about it?",
-    "text": "Question: What do you think should we do about it?"
+    "section": "The Attention Crisis",
+    "text": "The Attention Crisis\n\nTechnology & Social Media: Designed to capture attention (Cache Flooding)\nConstant Interruptions: Notifications = Forced cache evictions\nResult: Reduced creativity, critical thinking, and productivity\n\n\nReflection: How many times did you check your phone during this lecture?"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
-    "href": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
+    "objectID": "lectures/lec_03_presentation.html#the-solution-manage-your-mental-cache",
+    "href": "lectures/lec_03_presentation.html#the-solution-manage-your-mental-cache",
     "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I\n\nMain Idea:\n\n\nModern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.\nThe reason for that has much to do with the way our brain works and how we interact with technology."
-  },
-  {
-    "objectID": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
-    "href": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II\n\nKey Causes of Attention Loss:\n\n\nTechnology & Social Media: Designed to capture and keep attention, leading to fragmented focus.\nConstant Interruptions: Notifications and multitasking disrupt deep work and concentration.\nEnvironmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function."
-  },
-  {
-    "objectID": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
-    "href": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III\n\nConsequences:\n\n\nReduced ability to think critically and creatively.\nDifficulty sustaining attention on meaningful tasks."
-  },
-  {
-    "objectID": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
-    "href": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV\n\nSolutions Suggested:\n\n\nLimit screen time and practice “monotasking.”\nPrioritize sleep, nutrition, and mindful habits."
-  },
-  {
-    "objectID": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
-    "href": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V\n\n\n\nBut even better: read the book!"
-  },
-  {
-    "objectID": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---book",
-    "href": "lectures/lec_03_presentation.html#stolen-focus-why-you-cant-pay-attention---book",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Book",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Book"
+    "section": "The Solution: Manage Your Mental Cache",
+    "text": "The Solution: Manage Your Mental Cache\n\nLimit screen time and practice “monotasking” (Reduce cache thrashing).\nPrioritize sleep, nutrition, and mindful habits (Maintain cache performance).\nCreate protected time for deep work (Prevent cache flooding).\nBe selective about what enters your attention (Smart cache management)."
   },
   {
     "objectID": "lectures/lec_03_presentation.html#mitigation-1",
     "href": "lectures/lec_03_presentation.html#mitigation-1",
     "title": "Lecture III - Caching",
     "section": "Mitigation",
-    "text": "Mitigation\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently."
+    "text": "Mitigation\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.\nWant to dive deeper? Read “Stolen Focus” by Johann Hari"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#awareness-i",
-    "href": "lectures/lec_03_presentation.html#awareness-i",
+    "objectID": "lectures/lec_03_presentation.html#awareness-three-levels-of-attention",
+    "href": "lectures/lec_03_presentation.html#awareness-three-levels-of-attention",
     "title": "Lecture III - Caching",
-    "section": "Awareness I",
-    "text": "Awareness I\n\nTrain awareness\n\n\nSpotlight – immediate goals – Focus\nStarlight – medium-term goals – Wishes\nDaylight – long-term goals – Values"
+    "section": "Awareness: Three Levels of Attention",
+    "text": "Awareness: Three Levels of Attention\n\nSpotlight – Immediate goals – Focus (Your L1 Cache: What are you working on RIGHT NOW?)\nStarlight – Medium-term goals – Wishes (Your L2 Cache: What matters this week/month?)\nDaylight – Long-term goals – Values (Your Storage: What defines your life direction?)"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#awareness-ii",
-    "href": "lectures/lec_03_presentation.html#awareness-ii",
+    "objectID": "lectures/lec_03_presentation.html#practical-strategies",
+    "href": "lectures/lec_03_presentation.html#practical-strategies",
     "title": "Lecture III - Caching",
-    "section": "Awareness II",
-    "text": "Awareness II\n\nPrioritization\n\n\nPrioritization\nStructure (Schedule)\nBreaks\nEnable flow (dedicated workspace, manage notifications, clear communication)\nMeditation & exercise"
+    "section": "Practical Strategies",
+    "text": "Practical Strategies\n\nPrioritization: What deserves to be in your mental cache?\nStructure (Schedule): Time-boxing prevents cache overflow\nBreaks: Regular “cache clearing” prevents exhaustion\nEnable flow: Dedicated workspace, manage notifications, clear communication\nMeditation & exercise: Maintenance routines for optimal cache performance"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#key-takeaways-1",
-    "href": "lectures/lec_03_presentation.html#key-takeaways-1",
+    "objectID": "lectures/lec_03_presentation.html#cache-hierarchy-for-workspace",
+    "href": "lectures/lec_03_presentation.html#cache-hierarchy-for-workspace",
     "title": "Lecture III - Caching",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nCaching is a universal concept that applies to computers, organizations, and human cognition\nEfficient cache management requires strategic decisions about what to keep and what to remove\nLRU (Least Recently Used) is often the most practical replacement strategy\nOur brain’s limitations are similar to computer caches\nManaging our attention and focus requires understanding these limitations"
+    "section": "Cache Hierarchy for Workspace",
+    "text": "Cache Hierarchy for Workspace\n\nHot Cache (On your desk): Only items for current tasks (today)\nWarm Cache (Nearby shelf/drawer): This week’s projects (this week)\nCold Storage (Archive/closet): Everything else\n\n\n→ The key principle: If you haven’t used it recently, move it away!"
   },
   {
-    "objectID": "lectures/lec_03_presentation.html#summary-quiz",
-    "href": "lectures/lec_03_presentation.html#summary-quiz",
+    "objectID": "lectures/lec_03_presentation.html#self-assessment",
+    "href": "lectures/lec_03_presentation.html#self-assessment",
     "title": "Lecture III - Caching",
-    "section": "Summary Quiz",
-    "text": "Summary Quiz\nQuestion: Take a moment to reflect:\n\nWhat are the three main types of cache replacement strategies?\nHow does the library principle relate to computer memory hierarchy?\nWhat are two ways you can apply caching principles to improve your productivity?\nHow can understanding cache flooding help protect against information overload?"
+    "section": "Self-Assessment",
+    "text": "Self-Assessment\nQuestion: Right now:\n\nHow many browser tabs do you have open? ___\nHow many notifications did you receive in the last hour? ___\nHow many unread emails in your inbox? ___\n\n\nDo you see any risks of cache flooding?"
+  },
+  {
+    "objectID": "lectures/lec_03_presentation.html#key-takeaways-the-concepts",
+    "href": "lectures/lec_03_presentation.html#key-takeaways-the-concepts",
+    "title": "Lecture III - Caching",
+    "section": "Key Takeaways: The Concepts",
+    "text": "Key Takeaways: The Concepts\n\nCaching is universal: It applies to computers, organizations, and human cognition\nThe fundamental trade-off: Fast storage is small, large storage is slow\nLRU works because of temporal locality: Recent past predicts near future"
+  },
+  {
+    "objectID": "lectures/lec_03_presentation.html#key-takeaways-your-life",
+    "href": "lectures/lec_03_presentation.html#key-takeaways-your-life",
+    "title": "Lecture III - Caching",
+    "section": "Key Takeaways: Your Life",
+    "text": "Key Takeaways: Your Life\n\nYour brain is a cache: Limited capacity, vulnerable to flooding and poisoning\nProtect your attention: It’s your scarcest and most valuable resource\nApply caching principles to life: Keep what you use, remove what you don’t"
   },
   {
     "objectID": "lectures/lec_03_presentation.html#interesting-literature-to-start",
@@ -1735,22 +1721,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#caching-making-the-most-of-limited-resources",
-    "href": "lectures/lec_03_caching.html#caching-making-the-most-of-limited-resources",
+    "objectID": "lectures/lec_03_caching.html#a-quick-question-first",
+    "href": "lectures/lec_03_caching.html#a-quick-question-first",
     "title": "Lecture III - Caching",
-    "section": "Caching: Making the most of limited resources",
-    "text": "Caching: Making the most of limited resources\n\n\nIn the practical use of our intellect, forgetting is as important a function as remembering. – [William James]\n\n\n\n\nToday’s lecture is on caching.\nThe discussed topics are highly relevant for everything that has to do with computers and data.\nOn top of that, caching is another very important concept for our everyday decision-making.",
+    "section": "A Quick Question First",
+    "text": "A Quick Question First\n\nQuestion: How many of you have a messy desktop right now?\n\n\nRaise your hand!\n\n\nToday’s lecture will explain why that matters more than you think…",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
-    "href": "lectures/lec_03_caching.html#lets-approach-the-topic-using-an-everyday-decision-making-situation",
+    "objectID": "lectures/lec_03_caching.html#lets-approach-the-topic-using-an-everyday-decision",
+    "href": "lectures/lec_03_caching.html#lets-approach-the-topic-using-an-everyday-decision",
     "title": "Lecture III - Caching",
-    "section": "Let’s approach the topic using an everyday decision-making situation",
-    "text": "Let’s approach the topic using an everyday decision-making situation\n\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order.",
+    "section": "Let’s approach the topic using an everyday decision",
+    "text": "Let’s approach the topic using an everyday decision\n\n\n\n\n\nWe have a problem: Our cupboard.\nIt’s time to put things in order.",
     "crumbs": [
       "03 Caching",
       "Lecture"
@@ -1768,22 +1754,22 @@
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#storing",
-    "href": "lectures/lec_03_caching.html#storing",
+    "objectID": "lectures/lec_03_caching.html#two-approaches-to-storage-problems",
+    "href": "lectures/lec_03_caching.html#two-approaches-to-storage-problems",
     "title": "Lecture III - Caching",
-    "section": "Storing",
-    "text": "Storing\n\n\n\n\nHow to bring order to storage?\n\nSubdivide storage\nEfficient sorting\nIncrease capacity",
+    "section": "Two Approaches to Storage Problems",
+    "text": "Two Approaches to Storage Problems\n\n\n\n\n\nBetter Organization:\n\nSubdivide storage\nEfficient sorting\n\nMore Space:\n\nIncrease capacity\n\nQuestion: Which approach is better?",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#subdivide-storage-and-efficient-sorting-outcome",
-    "href": "lectures/lec_03_caching.html#subdivide-storage-and-efficient-sorting-outcome",
+    "objectID": "lectures/lec_03_caching.html#even-best-organization-has-limits",
+    "href": "lectures/lec_03_caching.html#even-best-organization-has-limits",
     "title": "Lecture III - Caching",
-    "section": "Subdivide storage and efficient sorting outcome",
-    "text": "Subdivide storage and efficient sorting outcome\n\n\n\n\n\nTime investment can improve storing.\nThat is a difficult trade-off in itself.\nNontheless: Each storage has a limited capacity.",
+    "section": "Even best organization has limits",
+    "text": "Even best organization has limits\n\n\n\n\n\nOrganization helps, but takes time.\nMore space helps, but has limits.\nEvery storage has a finite capacity.",
     "crumbs": [
       "03 Caching",
       "Lecture"
@@ -1794,7 +1780,7 @@
     "href": "lectures/lec_03_caching.html#question-what-do-we-do-when-the-storage-is-full",
     "title": "Lecture III - Caching",
     "section": "Question: What do we do, when the storage is full?",
-    "text": "Question: What do we do, when the storage is full?\n\n\nWe could increase the capacity",
+    "text": "Question: What do we do, when the storage is full?\n\n\n\nWe could increase the capacity",
     "crumbs": [
       "03 Caching",
       "Lecture"
@@ -1805,128 +1791,128 @@
     "href": "lectures/lec_03_caching.html#but",
     "title": "Lecture III - Caching",
     "section": "But…",
-    "text": "But…\n\n\n\n\n\nIncrease capacity is costly.\nThere is a trade-off between size and speed.\nSooner or later, every storage will fill up if not cleared out.",
+    "text": "But…\n\n\n\n\n\nIncreasing capacity = costly\nTrade-off: Size vs. Speed\nLarger = slower to search\nSooner or later: Still fills up",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
-    "href": "lectures/lec_03_caching.html#question-what-types-of-storages-can-you-imagine-that-are-affected-by-this",
+    "objectID": "lectures/lec_03_caching.html#question-what-else-faces-this-problem",
+    "href": "lectures/lec_03_caching.html#question-what-else-faces-this-problem",
     "title": "Lecture III - Caching",
-    "section": "Question: What types of storages can you imagine that are affected by this?",
-    "text": "Question: What types of storages can you imagine that are affected by this?\n\n\nOur cupboard\nOur computer (hard drive, RAM, cache, …)\nOur brain?!",
+    "section": "Question: What else faces this problem?",
+    "text": "Question: What else faces this problem?\n\n\nCupboards\nComputers\nEmail inbox\nSmartphones\nWarehouses\nOur brain?!",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#question-what-is-the-impact-of-a-full-storage",
-    "href": "lectures/lec_03_caching.html#question-what-is-the-impact-of-a-full-storage",
+    "objectID": "lectures/lec_03_caching.html#question-impact-of-full-storage",
+    "href": "lectures/lec_03_caching.html#question-impact-of-full-storage",
     "title": "Lecture III - Caching",
-    "section": "Question: What is the impact of a full storage?",
-    "text": "Question: What is the impact of a full storage?\n\n\n\n\n\nAccess speed drops significantly\nProcessing time increases\nOverall performance decreases",
+    "section": "Question: Impact of full storage?",
+    "text": "Question: Impact of full storage?\n\n\n\n\n\nAccess speed drops\nProcessing time up\nPerformance down",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#now-we-see-why-clearing-out-is-so-important",
-    "href": "lectures/lec_03_caching.html#now-we-see-why-clearing-out-is-so-important",
+    "objectID": "lectures/lec_03_caching.html#why-clearing-out-matters",
+    "href": "lectures/lec_03_caching.html#why-clearing-out-matters",
     "title": "Lecture III - Caching",
-    "section": "Now we see, why clearing out is so important",
-    "text": "Now we see, why clearing out is so important\n\n\nAnd that goes for our cupboard as well as for computers and other storages…\nBut what stays and what goes?",
+    "section": "Why Clearing Out Matters",
+    "text": "Why Clearing Out Matters\n\n\nTrue for cupboards, computers, brains…\nBut what stays and what goes?",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#question-what-replacementeviction-policies-can-you-imagine",
-    "href": "lectures/lec_03_caching.html#question-what-replacementeviction-policies-can-you-imagine",
+    "objectID": "lectures/lec_03_caching.html#learning-from-computer-science",
+    "href": "lectures/lec_03_caching.html#learning-from-computer-science",
     "title": "Lecture III - Caching",
-    "section": "Question: What replacement/eviction policies can you imagine?",
-    "text": "Question: What replacement/eviction policies can you imagine?\n\n\nRandom Eviction\nFirst-In, First-Out (FIFO)\nLeast Recently Used (LRU)",
+    "section": "Learning from Computer Science",
+    "text": "Learning from Computer Science\n\nThe evolution of computer memory\n\n\n\n1950s: Computer science faced the same problem\nProcessors got faster (Moore’s Law)\nMemory demands grew\nBut memory speed couldn’t keep up\n\n\n→ The Memory Wall",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
-    "href": "lectures/lec_03_caching.html#once-again-we-can-learn-a-lot-from-the-computer-sciences.",
+    "objectID": "lectures/lec_03_caching.html#the-bottleneck",
+    "href": "lectures/lec_03_caching.html#the-bottleneck",
     "title": "Lecture III - Caching",
-    "section": "Once again, we can learn a lot from the computer sciences.",
-    "text": "Once again, we can learn a lot from the computer sciences.\n\nThe evolution of computer memory\n\n\n\nIn the 1950s, computer science faced the same question…\n…and has faced it repeatedly since then.\nProcessors have become faster and faster (Moore’s Law).\nThe demands on memory also grew.",
+    "section": "The Bottleneck",
+    "text": "The Bottleneck\n\n\nModern CPUs: Billions of ops/second\nProblem: Data isn’t available fast enough\nQuestion: What’s the point of a fast CPU if it has to wait for slow memory?\n\n\n→ Von Neumann Bottleneck",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#cpu",
-    "href": "lectures/lec_03_caching.html#cpu",
+    "objectID": "lectures/lec_03_caching.html#cache-the-solution",
+    "href": "lectures/lec_03_caching.html#cache-the-solution",
     "title": "Lecture III - Caching",
-    "section": "CPU",
-    "text": "CPU\n\n\nThe processor (CPU, Central Processing Unit) is central to a computer and is often referred to as the “brain” of the system.\nIt executes instructions and performs calculations, to process data and run programs.",
+    "section": "Cache: The Solution",
+    "text": "Cache: The Solution\n\nA hierarchical memory system\n\n\n\nL1 Cache: Tiny but ultra-fast (64-256 KB)\nL2/L3 Cache: Larger, still fast (MB range)\nRAM: Main workspace (8-32 GB)\nStorage: Huge but slow (256 GB - 2 TB)\n\n\nLike a library…",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#problem-access-time",
-    "href": "lectures/lec_03_caching.html#problem-access-time",
+    "objectID": "lectures/lec_03_caching.html#the-library-principle",
+    "href": "lectures/lec_03_caching.html#the-library-principle",
     "title": "Lecture III - Caching",
-    "section": "Problem: Access Time",
-    "text": "Problem: Access Time\n\nProblem: No matter how much faster the processor gets, if input data isn’t available fast enough or can’t be stored quickly enough, the system won’t become faster overall.\nQuestion: What is the solution?",
+    "section": "The Library Principle",
+    "text": "The Library Principle\n\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nYour desk (5 borrowed books, L2)\nShort-term memory (current page, L1)\n\n\nCloser = Faster = Smaller",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#cache-1",
-    "href": "lectures/lec_03_caching.html#cache-1",
+    "objectID": "lectures/lec_03_caching.html#the-trade-off-size-and-speed",
+    "href": "lectures/lec_03_caching.html#the-trade-off-size-and-speed",
     "title": "Lecture III - Caching",
-    "section": "Cache",
-    "text": "Cache\n\nHierarchical memory pyramid for efficient data management\n\n\n\nL1 Cache, directly on CPU, very fast access time.\nL2 Cache, between L1 and main memory.\nRAM memory.\nMass Storage (hard drive).\nThe whole memory system works like a library.\nFind an explanation here.",
+    "section": "The Trade-off: Size and Speed",
+    "text": "The Trade-off: Size and Speed\n\n\nRegisters are 10 million times faster than the hard drive!\nWhy can’t we just make everything as fast as L1 cache?",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#cache---size-and-speed-trade-off",
-    "href": "lectures/lec_03_caching.html#cache---size-and-speed-trade-off",
+    "objectID": "lectures/lec_03_caching.html#why-the-trade-off",
+    "href": "lectures/lec_03_caching.html#why-the-trade-off",
     "title": "Lecture III - Caching",
-    "section": "Cache - Size and Speed trade-off",
-    "text": "Cache - Size and Speed trade-off\n\n\nRegisters are 10 million times faster than the hard drive!",
+    "section": "Why the Trade-off?",
+    "text": "Why the Trade-off?\n\nWhy not make everything ultra-fast?\n\nPhysical limits: Larger caches sit further from CPU, signals take longer to travel, and dense fast memory generates extreme heat that must be dissipated\nEconomic limits: SRAM costs $50,000/GB vs. HDDs at $0.02/GB\nSolution: Multiple cache levels, each optimized for different needs",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#library-principle",
-    "href": "lectures/lec_03_caching.html#library-principle",
+    "objectID": "lectures/lec_03_caching.html#the-nessecity-of-clearing-out",
+    "href": "lectures/lec_03_caching.html#the-nessecity-of-clearing-out",
     "title": "Lecture III - Caching",
-    "section": "Library Principle",
-    "text": "Library Principle\n\n\n\n\n\nLibrary storage (5 million books, Mass Storage)\nSubject locations (100K books, RAM)\nDesk (5 borrowed books, L2)\nShort-term memory (L1)",
+    "section": "The nessecity of clearing out",
+    "text": "The nessecity of clearing out\n\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly.",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#library-principle-1",
-    "href": "lectures/lec_03_caching.html#library-principle-1",
+    "objectID": "lectures/lec_03_caching.html#question-eviction-strategies",
+    "href": "lectures/lec_03_caching.html#question-eviction-strategies",
     "title": "Lecture III - Caching",
-    "section": "Library Principle",
-    "text": "Library Principle\n\n\n\n\n\nL1 and L2 cache only contain most necessary data.\nThe same should apply to your desk.\nTherefore, both must be cleared regularly.",
+    "section": "Question: Eviction Strategies?",
+    "text": "Question: Eviction Strategies?\n\n\nRandom\nFirst-In, First-Out (FIFO)\nLeast Frequently Used (LFU)\nLeast Recently Used (LRU)",
     "crumbs": [
       "03 Caching",
       "Lecture"
@@ -1937,18 +1923,29 @@
     "href": "lectures/lec_03_caching.html#how-to-clear-up",
     "title": "Lecture III - Caching",
     "section": "How to clear up?",
-    "text": "How to clear up?\n\n\nOptimal: Clairvoyance\n\nStore everything in the cache that will be needed\nDelete everything from the cache that won’t be needed\n\nQuestion: What is the problem with this strategy?\nOptimal strategy not achievable in reality",
+    "text": "How to clear up?\n\n\nOptimal: Clairvoyance\n\nKeep what you’ll need\nRemove what you won’t\n\nQuestion: What’s the problem?\n\n\n→ Requires knowledge of the future!",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#realisable-strategies",
-    "href": "lectures/lec_03_caching.html#realisable-strategies",
+    "objectID": "lectures/lec_03_caching.html#realistic-strategies",
+    "href": "lectures/lec_03_caching.html#realistic-strategies",
     "title": "Lecture III - Caching",
-    "section": "Realisable strategies?",
-    "text": "Realisable strategies?\n\n\nLeast recently used is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?",
+    "section": "Realistic Strategies",
+    "text": "Realistic Strategies\n\n\nLeast Recently Used (LRU) is the dominant strategy.\nEvicts the least recently accessed item from the cache when space is needed.\nLeads to much better performance on average than, for example, random eviction.\nQuestion: Why do you think least recently used is the better strategy?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_03_caching.html#why-lru-works-the-principle-of-temporal-locality",
+    "href": "lectures/lec_03_caching.html#why-lru-works-the-principle-of-temporal-locality",
+    "title": "Lecture III - Caching",
+    "section": "Why LRU Works: The Principle of Temporal Locality",
+    "text": "Why LRU Works: The Principle of Temporal Locality\n\n\nTemporal Locality: Recent use → Likely need again soon\nExamples:\n\nBooks on your desk\nApps opened today\nPeople texted this morning\n\nPerformance: 80-90% hit rate (vs. 50-60% random)\n\n\nRecent past predicts near future",
     "crumbs": [
       "03 Caching",
       "Lecture"
@@ -1959,128 +1956,73 @@
     "href": "lectures/lec_03_caching.html#managerial-and-personal-insights",
     "title": "Lecture III - Caching",
     "section": "Managerial and personal insights:",
-    "text": "Managerial and personal insights:\n\n\nLet go of things you haven’t used in ages\nKeep things where they are used\nBoth have been proven to contribute to a significant increase in productivity",
+    "text": "Managerial and personal insights:\n\n\nLet go of unused things → LRU principle\nKeep things where used → Spatial locality\nResult: Significant productivity increase\n\n\nMarie Kondo = LRU for physical objects!",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#keeping-things-where-they-are-used",
-    "href": "lectures/lec_03_caching.html#keeping-things-where-they-are-used",
+    "objectID": "lectures/lec_03_caching.html#spatial-locality",
+    "href": "lectures/lec_03_caching.html#spatial-locality",
     "title": "Lecture III - Caching",
-    "section": "Keeping things where they are used…",
-    "text": "Keeping things where they are used…\n\n\nMight be optimal, in a mathematical sense",
+    "section": "Spatial Locality",
+    "text": "Spatial Locality\n\nQuestion: Can you think of examples where spatial locality is applied in your daily life?\n\n\n\n\nMathematically optimal",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
-    "href": "lectures/lec_03_caching.html#the-strong-limitations-of-caches-make-them-a-security-risk.",
+    "objectID": "lectures/lec_03_caching.html#our-brains-are-caches",
+    "href": "lectures/lec_03_caching.html#our-brains-are-caches",
     "title": "Lecture III - Caching",
-    "section": "The strong limitations of caches make them a “security risk”.",
-    "text": "The strong limitations of caches make them a “security risk”.\n\n\nDenial-of-Service Attacks (DoS) attacks.\n\nCache Flooding\nCache Poisoning\n\nOverload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data.",
+    "section": "Our Brains are Caches",
+    "text": "Our Brains are Caches\n\n\nWe’ve learned how computers manage limited cache space\nBut why does this matter for humans?\nYour brain works remarkably similar to a computer cache:\n\nLimited capacity for active information\nFast access to recently used information\nMust constantly decide what to keep and what to forget",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#question-why-are-the-findings-about-cache-so-important-for-humans",
-    "href": "lectures/lec_03_caching.html#question-why-are-the-findings-about-cache-so-important-for-humans",
+    "objectID": "lectures/lec_03_caching.html#cache-vulnerabilities",
+    "href": "lectures/lec_03_caching.html#cache-vulnerabilities",
     "title": "Lecture III - Caching",
-    "section": "Question: Why are the findings about cache so important for humans?",
-    "text": "Question: Why are the findings about cache so important for humans?\n\n\nYour Brain is a Cache, Not a Database -[Joe Chrysler]",
+    "section": "Cache Vulnerabilities",
+    "text": "Cache Vulnerabilities\n\n\nDenial-of-Service (DoS) attacks exploit cache limitations:\n\nCache Flooding: Overload with excessive requests\nCache Poisoning: Insert malicious data to evict important information\n\nThese attacks overload a system with excessive requests or data.\nCausing it to slow down or crash.\nThe system is forced to evict important data.",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#our-brain-has-similar-weaknesses",
-    "href": "lectures/lec_03_caching.html#our-brain-has-similar-weaknesses",
+    "objectID": "lectures/lec_03_caching.html#productivity-killers",
+    "href": "lectures/lec_03_caching.html#productivity-killers",
     "title": "Lecture III - Caching",
-    "section": "Our brain has similar weaknesses",
-    "text": "Our brain has similar weaknesses\n\nProductivity and creativity are negatively affected by:\n\n\n\nOverload (too much)\nExhaustion (too long)\nContext switching (interruption of “flow”, 23 minutes to get back on track)\nDistraction (Cache Flooding)\nFake News (Cache Poisoning)\n\n\n\nThis can lead to burnout.",
+    "section": "Productivity Killers",
+    "text": "Productivity Killers\n\n\nOverload (too much information, cache capacity exceeded)\nExhaustion (too long without “cache clearing”)\nContext switching (interruption of “flow”, ~23 minutes to get back on track)\nDistraction (Cache Flooding: constant notifications, social media)\nMisinformation (Cache Poisoning: fake news, misleading information)",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#question-what-do-you-think-should-we-do-about-it",
-    "href": "lectures/lec_03_caching.html#question-what-do-you-think-should-we-do-about-it",
+    "objectID": "lectures/lec_03_caching.html#the-attention-crisis",
+    "href": "lectures/lec_03_caching.html#the-attention-crisis",
     "title": "Lecture III - Caching",
-    "section": "Question: What do you think should we do about it?",
-    "text": "Question: What do you think should we do about it?",
+    "section": "The Attention Crisis",
+    "text": "The Attention Crisis\n\n\nTechnology & Social Media: Designed to capture attention (Cache Flooding)\nConstant Interruptions: Notifications = Forced cache evictions\nResult: Reduced creativity, critical thinking, and productivity\n\n\nReflection: How many times did you check your phone during this lecture?",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
-    "href": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-i",
+    "objectID": "lectures/lec_03_caching.html#the-solution-manage-your-mental-cache",
+    "href": "lectures/lec_03_caching.html#the-solution-manage-your-mental-cache",
     "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights I\n\nMain Idea:\n\n\n\nModern life is eroding our ability to concentrate and engage deeply, with societal factors affecting personal focus.\nThe reason for that has much to do with the way our brain works and how we interact with technology.",
-    "crumbs": [
-      "03 Caching",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
-    "href": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-ii",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights II\n\nKey Causes of Attention Loss:\n\n\n\nTechnology & Social Media: Designed to capture and keep attention, leading to fragmented focus.\nConstant Interruptions: Notifications and multitasking disrupt deep work and concentration.\nEnvironmental & Lifestyle Factors: Poor sleep, stress, and diet impact cognitive function.",
-    "crumbs": [
-      "03 Caching",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
-    "href": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iii",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights III\n\nConsequences:\n\n\n\nReduced ability to think critically and creatively.\nDifficulty sustaining attention on meaningful tasks.",
-    "crumbs": [
-      "03 Caching",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
-    "href": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-iv",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights IV\n\nSolutions Suggested:\n\n\n\nLimit screen time and practice “monotasking.”\nPrioritize sleep, nutrition, and mindful habits.",
-    "crumbs": [
-      "03 Caching",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
-    "href": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---key-insights-v",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Key Insights V\n\n\n\nBut even better: read the book!",
-    "crumbs": [
-      "03 Caching",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---book",
-    "href": "lectures/lec_03_caching.html#stolen-focus-why-you-cant-pay-attention---book",
-    "title": "Lecture III - Caching",
-    "section": "Stolen Focus: Why You Can’t Pay Attention - Book",
-    "text": "Stolen Focus: Why You Can’t Pay Attention - Book",
+    "section": "The Solution: Manage Your Mental Cache",
+    "text": "The Solution: Manage Your Mental Cache\n\n\nLimit screen time and practice “monotasking” (Reduce cache thrashing).\nPrioritize sleep, nutrition, and mindful habits (Maintain cache performance).\nCreate protected time for deep work (Prevent cache flooding).\nBe selective about what enters your attention (Smart cache management).",
     "crumbs": [
       "03 Caching",
       "Lecture"
@@ -2091,51 +2033,73 @@
     "href": "lectures/lec_03_caching.html#mitigation-1",
     "title": "Lecture III - Caching",
     "section": "Mitigation",
-    "text": "Mitigation\n\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.",
+    "text": "Mitigation\n\n\nDistraction can hardly be avoided in today’s world but can be mitigated.\nThis is particularly important for managers.\nThis lecture is designed to raise your awareness of what you can do to keep your brain working efficiently.\nWant to dive deeper? Read “Stolen Focus” by Johann Hari",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#awareness-i",
-    "href": "lectures/lec_03_caching.html#awareness-i",
+    "objectID": "lectures/lec_03_caching.html#awareness-three-levels-of-attention",
+    "href": "lectures/lec_03_caching.html#awareness-three-levels-of-attention",
     "title": "Lecture III - Caching",
-    "section": "Awareness I",
-    "text": "Awareness I\n\nTrain awareness\n\n\n\nSpotlight – immediate goals – Focus\nStarlight – medium-term goals – Wishes\nDaylight – long-term goals – Values",
+    "section": "Awareness: Three Levels of Attention",
+    "text": "Awareness: Three Levels of Attention\n\n\nSpotlight – Immediate goals – Focus (Your L1 Cache: What are you working on RIGHT NOW?)\nStarlight – Medium-term goals – Wishes (Your L2 Cache: What matters this week/month?)\nDaylight – Long-term goals – Values (Your Storage: What defines your life direction?)",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#awareness-ii",
-    "href": "lectures/lec_03_caching.html#awareness-ii",
+    "objectID": "lectures/lec_03_caching.html#practical-strategies",
+    "href": "lectures/lec_03_caching.html#practical-strategies",
     "title": "Lecture III - Caching",
-    "section": "Awareness II",
-    "text": "Awareness II\n\nPrioritization\n\n\n\nPrioritization\nStructure (Schedule)\nBreaks\nEnable flow (dedicated workspace, manage notifications, clear communication)\nMeditation & exercise",
+    "section": "Practical Strategies",
+    "text": "Practical Strategies\n\n\nPrioritization: What deserves to be in your mental cache?\nStructure (Schedule): Time-boxing prevents cache overflow\nBreaks: Regular “cache clearing” prevents exhaustion\nEnable flow: Dedicated workspace, manage notifications, clear communication\nMeditation & exercise: Maintenance routines for optimal cache performance",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#key-takeaways-1",
-    "href": "lectures/lec_03_caching.html#key-takeaways-1",
+    "objectID": "lectures/lec_03_caching.html#cache-hierarchy-for-workspace",
+    "href": "lectures/lec_03_caching.html#cache-hierarchy-for-workspace",
     "title": "Lecture III - Caching",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\n\nCaching is a universal concept that applies to computers, organizations, and human cognition\nEfficient cache management requires strategic decisions about what to keep and what to remove\nLRU (Least Recently Used) is often the most practical replacement strategy\nOur brain’s limitations are similar to computer caches\nManaging our attention and focus requires understanding these limitations",
+    "section": "Cache Hierarchy for Workspace",
+    "text": "Cache Hierarchy for Workspace\n\n\nHot Cache (On your desk): Only items for current tasks (today)\nWarm Cache (Nearby shelf/drawer): This week’s projects (this week)\nCold Storage (Archive/closet): Everything else\n\n\n→ The key principle: If you haven’t used it recently, move it away!",
     "crumbs": [
       "03 Caching",
       "Lecture"
     ]
   },
   {
-    "objectID": "lectures/lec_03_caching.html#summary-quiz",
-    "href": "lectures/lec_03_caching.html#summary-quiz",
+    "objectID": "lectures/lec_03_caching.html#self-assessment",
+    "href": "lectures/lec_03_caching.html#self-assessment",
     "title": "Lecture III - Caching",
-    "section": "Summary Quiz",
-    "text": "Summary Quiz\nQuestion: Take a moment to reflect:\n\n\nWhat are the three main types of cache replacement strategies?\nHow does the library principle relate to computer memory hierarchy?\nWhat are two ways you can apply caching principles to improve your productivity?\nHow can understanding cache flooding help protect against information overload?",
+    "section": "Self-Assessment",
+    "text": "Self-Assessment\nQuestion: Right now:\n\n\nHow many browser tabs do you have open? ___\nHow many notifications did you receive in the last hour? ___\nHow many unread emails in your inbox? ___\n\n\nDo you see any risks of cache flooding?",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_03_caching.html#key-takeaways-the-concepts",
+    "href": "lectures/lec_03_caching.html#key-takeaways-the-concepts",
+    "title": "Lecture III - Caching",
+    "section": "Key Takeaways: The Concepts",
+    "text": "Key Takeaways: The Concepts\n\n\nCaching is universal: It applies to computers, organizations, and human cognition\nThe fundamental trade-off: Fast storage is small, large storage is slow\nLRU works because of temporal locality: Recent past predicts near future",
+    "crumbs": [
+      "03 Caching",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_03_caching.html#key-takeaways-your-life",
+    "href": "lectures/lec_03_caching.html#key-takeaways-your-life",
+    "title": "Lecture III - Caching",
+    "section": "Key Takeaways: Your Life",
+    "text": "Key Takeaways: Your Life\n\n\nYour brain is a cache: Limited capacity, vulnerable to flooding and poisoning\nProtect your attention: It’s your scarcest and most valuable resource\nApply caching principles to life: Keep what you use, remove what you don’t",
     "crumbs": [
       "03 Caching",
       "Lecture"
