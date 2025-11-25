@@ -15,6 +15,8 @@ format:
 
 **Topic:** Understanding how randomness powers algorithms and decision-making in computer science and everyday life
 
+. . .
+
 **Why this matters:** Randomness isn't just about gambling. It's a powerful tool that makes computers faster, cryptography secure, and helps us solve problems. Today we'll learn how embracing uncertainty can lead to better solutions.
 
 ## Today's Agenda
@@ -318,7 +320,7 @@ Computing and evaluating all possible combinations is not feasible!
 :::
 
 
-## Addressing Computational Limits
+## Computational Limits
 
 [Question:]{.question} **Anybody ever heard of "Monte Carlo methods"?**
 
@@ -476,7 +478,7 @@ print(math.factorial(10))
 
 [Question:]{.question} **How would you escape a local optimum?**
 
-## Simulated Annealing
+## Simulated Annealing (SA)
 
 - Make random changes and **accept improvements**
 - Sometimes accept **worse solutions**
@@ -491,7 +493,7 @@ print(math.factorial(10))
 - Randomness helps to escape **local optima**
 - Balances [exploration vs. exploitation]{.highlight}
 
-## Simulated Annealing Animation
+## SA Animation
 
 ```{python}
 #| echo: false
