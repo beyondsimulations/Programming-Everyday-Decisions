@@ -506,7 +506,7 @@ random_number = rd.random()
 print(random_number)
 ```
 
-    0.6486910260860373
+    0.5563283979376201
 
 ## Installing Packages
 

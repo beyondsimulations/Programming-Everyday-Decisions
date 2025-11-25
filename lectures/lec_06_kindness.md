@@ -16,7 +16,7 @@ format:
 
 . . .
 
-<span class="invert-font"><span class="question">Question:</span> **An idea what that is?**</span>
+<span class="invert-font"><span class="highlight">Question:</span> **An idea what that is?**</span>
 
 . . .
 
@@ -137,7 +137,7 @@ format:
 -   Involves **relaxing certain constraints**
 -   Provides insights or **approximate** solutions
 
-## How to continue programming?
+## Continue programming?
 
 -   The best way to continue learning is to <span class="highlight">keep programming in the future</span>
 -   Potentially, you will continue to do so during your studies

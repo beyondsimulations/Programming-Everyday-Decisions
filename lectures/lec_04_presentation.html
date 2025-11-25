@@ -219,7 +219,9 @@ Dr.&nbsp;Tobias Vlćek
 <section id="todays-topic-scheduling-algorithms" class="slide level2">
 <h2>Today’s Topic: Scheduling Algorithms</h2>
 <p><strong>Topic:</strong> Understanding scheduling problems and algorithmic solutions for optimal task ordering</p>
-<p><strong>Why this matters:</strong> Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we’ll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.</p>
+<div class="fragment">
+<p><strong>Why this matters:</strong> Every day you make scheduling decisions, from organizing your to-do list to managing projects. Today we’ll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.</p>
+</div>
 </section>
 <section id="todays-agenda" class="slide level2">
 <h2>Today’s Agenda</h2>
@@ -443,7 +445,7 @@ gantt
 </div>
 <div class="fragment">
 <div class="invert-font">
-<p><span class="question">Question:</span> <strong>Who knows what a Gantt Chart is?</strong></p>
+<p><span class="highlight">Question:</span> <strong>Who knows what a Gantt Chart is?</strong></p>
 </div>
 <div class="footer">
 
@@ -470,11 +472,11 @@ gantt
 <h2>Professional Applications</h2>
 <p><strong>Where do we see scheduling in professional practice?</strong></p>
 <ul>
-<li class="fragment"><strong>Project Management:</strong> Task dependencies, resource allocation, critical path</li>
-<li class="fragment"><strong>Software Development:</strong> CPU scheduling, thread management, job queues</li>
-<li class="fragment"><strong>Operations:</strong> Production scheduling, supply chain optimization</li>
-<li class="fragment"><strong>Healthcare:</strong> Patient scheduling, surgery planning, staff allocation</li>
-<li class="fragment"><strong>Transportation:</strong> Route optimization, crew scheduling, maintenance planning</li>
+<li class="fragment"><strong>Project Management:</strong> Task dependencies, resource allocation</li>
+<li class="fragment"><strong>Software Development:</strong> CPU, thread management, job queues</li>
+<li class="fragment"><strong>Operations:</strong> Production, supply chain optimization</li>
+<li class="fragment"><strong>Healthcare:</strong> Patients, surgery planning, staff allocation</li>
+<li class="fragment"><strong>Transportation:</strong> Routes, crews, maintenance</li>
 </ul>
 <div class="fragment">
 <p><strong>Connection to Programming:</strong> These are the same optimization problems that algorithms solve!</p>
@@ -820,7 +822,7 @@ gantt
 <span id="cb17-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">2.0</span></span>
 <span id="cb17-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">70</span>       <span class="fl">1.4</span></span>
 <span id="cb17-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">130</span>      <span class="fl">4.3</span>           <span class="dv">4</span></span>
-<span id="cb17-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span>           <span class="dv">5</span></span>
+<span id="cb17-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span></span>
 <span id="cb17-8" class="hljs-ln-code"><a></a>  G    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">100</span>      <span class="fl">5.0</span>           <span class="dv">3</span></span>
 <span id="cb17-9" class="hljs-ln-code"><a></a>  H    <span class="dv">70</span><span class="er">min</span>    €<span class="dv">110</span>      <span class="fl">1.6</span></span>
 <span id="cb17-10" class="hljs-ln-code"><a></a>  I    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">90</span>       <span class="fl">1.8</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -831,7 +833,7 @@ gantt
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb18-1" class="hljs-ln-code"><a></a>Task  Duration  Revenue  Revenue<span class="op">/</span>Min  Schedule</span>
 <span id="cb18-2" class="hljs-ln-code"><a></a>  A    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">240</span>     <span class="fl">12.0</span>           <span class="dv">1</span></span>
 <span id="cb18-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">200</span>      <span class="fl">6.7</span>           <span class="dv">2</span></span>
-<span id="cb18-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">2.0</span>           <span class="dv">6</span></span>
+<span id="cb18-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">2.0</span></span>
 <span id="cb18-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">70</span>       <span class="fl">1.4</span></span>
 <span id="cb18-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">130</span>      <span class="fl">4.3</span>           <span class="dv">4</span></span>
 <span id="cb18-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span>           <span class="dv">5</span></span>
@@ -851,7 +853,7 @@ gantt
 <span id="cb19-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span>           <span class="dv">5</span></span>
 <span id="cb19-8" class="hljs-ln-code"><a></a>  G    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">100</span>      <span class="fl">5.0</span>           <span class="dv">3</span></span>
 <span id="cb19-9" class="hljs-ln-code"><a></a>  H    <span class="dv">70</span><span class="er">min</span>    €<span class="dv">110</span>      <span class="fl">1.6</span></span>
-<span id="cb19-10" class="hljs-ln-code"><a></a>  I    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">90</span>       <span class="fl">1.8</span>           <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb19-10" class="hljs-ln-code"><a></a>  I    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">90</span>       <span class="fl">1.8</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="gainrevenue-per-minute-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Gain/Revenue Per Minute</h2>
@@ -864,7 +866,7 @@ gantt
 <span id="cb20-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">130</span>      <span class="fl">4.3</span>           <span class="dv">4</span></span>
 <span id="cb20-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span>           <span class="dv">5</span></span>
 <span id="cb20-8" class="hljs-ln-code"><a></a>  G    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">100</span>      <span class="fl">5.0</span>           <span class="dv">3</span></span>
-<span id="cb20-9" class="hljs-ln-code"><a></a>  H    <span class="dv">70</span><span class="er">min</span>    €<span class="dv">110</span>      <span class="fl">1.6</span>           <span class="dv">8</span></span>
+<span id="cb20-9" class="hljs-ln-code"><a></a>  H    <span class="dv">70</span><span class="er">min</span>    €<span class="dv">110</span>      <span class="fl">1.6</span></span>
 <span id="cb20-10" class="hljs-ln-code"><a></a>  I    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">90</span>       <span class="fl">1.8</span>           <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="gainrevenue-per-minute-8" class="slide level2" data-auto-animate="true">
@@ -874,12 +876,26 @@ gantt
 <span id="cb21-2" class="hljs-ln-code"><a></a>  A    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">240</span>     <span class="fl">12.0</span>           <span class="dv">1</span></span>
 <span id="cb21-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">200</span>      <span class="fl">6.7</span>           <span class="dv">2</span></span>
 <span id="cb21-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">2.0</span>           <span class="dv">6</span></span>
-<span id="cb21-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">70</span>       <span class="fl">1.4</span>           <span class="dv">9</span></span>
+<span id="cb21-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">70</span>       <span class="fl">1.4</span></span>
 <span id="cb21-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">130</span>      <span class="fl">4.3</span>           <span class="dv">4</span></span>
 <span id="cb21-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span>           <span class="dv">5</span></span>
 <span id="cb21-8" class="hljs-ln-code"><a></a>  G    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">100</span>      <span class="fl">5.0</span>           <span class="dv">3</span></span>
 <span id="cb21-9" class="hljs-ln-code"><a></a>  H    <span class="dv">70</span><span class="er">min</span>    €<span class="dv">110</span>      <span class="fl">1.6</span>           <span class="dv">8</span></span>
 <span id="cb21-10" class="hljs-ln-code"><a></a>  I    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">90</span>       <span class="fl">1.8</span>           <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="gainrevenue-per-minute-9" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Gain/Revenue Per Minute</h2>
+<p><span class="task">Rule:</span> Schedule by revenue per minute (descending)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb22-1" class="hljs-ln-code"><a></a>Task  Duration  Revenue  Revenue<span class="op">/</span>Min  Schedule</span>
+<span id="cb22-2" class="hljs-ln-code"><a></a>  A    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">240</span>     <span class="fl">12.0</span>           <span class="dv">1</span></span>
+<span id="cb22-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">200</span>      <span class="fl">6.7</span>           <span class="dv">2</span></span>
+<span id="cb22-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">2.0</span>           <span class="dv">6</span></span>
+<span id="cb22-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">70</span>       <span class="fl">1.4</span>           <span class="dv">9</span></span>
+<span id="cb22-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    €<span class="dv">130</span>      <span class="fl">4.3</span>           <span class="dv">4</span></span>
+<span id="cb22-7" class="hljs-ln-code"><a></a>  F    <span class="dv">40</span><span class="er">min</span>    €<span class="dv">120</span>      <span class="fl">3.0</span>           <span class="dv">5</span></span>
+<span id="cb22-8" class="hljs-ln-code"><a></a>  G    <span class="dv">20</span><span class="er">min</span>    €<span class="dv">100</span>      <span class="fl">5.0</span>           <span class="dv">3</span></span>
+<span id="cb22-9" class="hljs-ln-code"><a></a>  H    <span class="dv">70</span><span class="er">min</span>    €<span class="dv">110</span>      <span class="fl">1.6</span>           <span class="dv">8</span></span>
+<span id="cb22-10" class="hljs-ln-code"><a></a>  I    <span class="dv">50</span><span class="er">min</span>    €<span class="dv">90</span>       <span class="fl">1.8</span>           <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -906,12 +922,12 @@ gantt
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Setup:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a></a>Task  Duration  Priority</span>
-<span id="cb22-2"><a></a>  A    <span class="dv">20</span><span class="er">min</span>     <span class="dv">3</span></span>
-<span id="cb22-3"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">1</span></span>
-<span id="cb22-4"><a></a>  C    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
-<span id="cb22-5"><a></a>  D    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
-<span id="cb22-6"><a></a>  E    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a>Task  Duration  Priority</span>
+<span id="cb23-2"><a></a>  A    <span class="dv">20</span><span class="er">min</span>     <span class="dv">3</span></span>
+<span id="cb23-3"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">1</span></span>
+<span id="cb23-4"><a></a>  C    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
+<span id="cb23-5"><a></a>  D    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
+<span id="cb23-6"><a></a>  E    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><img data-src="https://images.beyondsimulations.com/atlb/atlb_schedule-inheritance.svg"></p>
 <p><span class="fragment"><strong>Challenge:</strong> High-priority tasks depend on low-priority tasks.</span></p>
 </div><div class="column" style="width:50%;">
@@ -928,12 +944,12 @@ gantt
 <li class="fragment">This ensures the <strong>critical path completion</strong></li>
 </ul>
 <div class="fragment">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a>Task  Duration  Priority</span>
-<span id="cb23-2"><a></a>  A    <span class="dv">20</span><span class="er">min</span>     <span class="dv">3</span></span>
-<span id="cb23-3"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">3</span></span>
-<span id="cb23-4"><a></a>  C    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
-<span id="cb23-5"><a></a>  D    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
-<span id="cb23-6"><a></a>  E    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a>Task  Duration  Priority</span>
+<span id="cb24-2"><a></a>  A    <span class="dv">20</span><span class="er">min</span>     <span class="dv">3</span></span>
+<span id="cb24-3"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">3</span></span>
+<span id="cb24-4"><a></a>  C    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
+<span id="cb24-5"><a></a>  D    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span>
+<span id="cb24-6"><a></a>  E    <span class="dv">30</span><span class="er">min</span>     <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="edd-and-dependencies" class="slide level2">
@@ -946,12 +962,12 @@ gantt
 </ul>
 </div>
 <div class="fragment">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a>Task  Duration  Deadline  Predecessor</span>
-<span id="cb24-2"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb24-3"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
-<span id="cb24-4"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A</span>
-<span id="cb24-5"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb24-6"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a>Task  Duration  Deadline  Predecessor</span>
+<span id="cb25-2"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
+<span id="cb25-3"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
+<span id="cb25-4"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A</span>
+<span id="cb25-5"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
+<span id="cb25-6"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><span class="question">Question:</span> <strong>Any ideas how to solve this?</strong></p>
 </div>
 </section>
@@ -967,60 +983,60 @@ gantt
 </section>
 <section id="lawlers-applied" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb25-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
-<span id="cb25-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb25-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
-<span id="cb25-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A</span>
-<span id="cb25-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb25-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb26-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
+<span id="cb26-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
+<span id="cb26-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
+<span id="cb26-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A</span>
+<span id="cb26-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
+<span id="cb26-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <p><span class="question">Question:</span> <strong>What’s the schedule?</strong></p>
 </div>
 </section>
 <section id="lawlers-applied-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb26-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
-<span id="cb26-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb26-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
-<span id="cb26-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A</span>
-<span id="cb26-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb26-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C             <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="lawlers-applied-2" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb27-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
 <span id="cb27-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
 <span id="cb27-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
-<span id="cb27-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A             <span class="dv">4</span></span>
+<span id="cb27-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A</span>
 <span id="cb27-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
 <span id="cb27-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C             <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="lawlers-applied-3" class="slide level2" data-auto-animate="true">
+<section id="lawlers-applied-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb28-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
 <span id="cb28-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
-<span id="cb28-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D             <span class="dv">3</span></span>
+<span id="cb28-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D</span>
 <span id="cb28-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A             <span class="dv">4</span></span>
 <span id="cb28-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
 <span id="cb28-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C             <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="lawlers-applied-4" class="slide level2" data-auto-animate="true">
+<section id="lawlers-applied-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb29-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
 <span id="cb29-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
 <span id="cb29-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D             <span class="dv">3</span></span>
 <span id="cb29-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A             <span class="dv">4</span></span>
-<span id="cb29-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span>          <span class="dv">2</span></span>
+<span id="cb29-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span></span>
 <span id="cb29-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C             <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="lawlers-applied-5" class="slide level2" data-auto-animate="true">
+<section id="lawlers-applied-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb30-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
-<span id="cb30-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span>          <span class="dv">1</span></span>
+<span id="cb30-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span></span>
 <span id="cb30-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D             <span class="dv">3</span></span>
 <span id="cb30-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A             <span class="dv">4</span></span>
 <span id="cb30-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span>          <span class="dv">2</span></span>
 <span id="cb30-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C             <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="lawlers-applied-5" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Lawler’s Applied</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb31-1" class="hljs-ln-code"><a></a>Task  Duration  Deadline  Predecessor Schedule</span>
+<span id="cb31-2" class="hljs-ln-code"><a></a>  A    <span class="dv">40</span><span class="er">min</span>    <span class="dv">110</span><span class="er">min</span>    <span class="va">None</span>          <span class="dv">1</span></span>
+<span id="cb31-3" class="hljs-ln-code"><a></a>  B    <span class="dv">30</span><span class="er">min</span>     <span class="dv">90</span><span class="er">min</span>    D             <span class="dv">3</span></span>
+<span id="cb31-4" class="hljs-ln-code"><a></a>  C    <span class="dv">60</span><span class="er">min</span>    <span class="dv">150</span><span class="er">min</span>    A             <span class="dv">4</span></span>
+<span id="cb31-5" class="hljs-ln-code"><a></a>  D    <span class="dv">50</span><span class="er">min</span>     <span class="dv">70</span><span class="er">min</span>    <span class="va">None</span>          <span class="dv">2</span></span>
+<span id="cb31-6" class="hljs-ln-code"><a></a>  E    <span class="dv">30</span><span class="er">min</span>    <span class="dv">210</span><span class="er">min</span>    C             <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -1106,14 +1122,14 @@ gantt
 <section id="real-time-edd" class="slide level2">
 <h2>Real-time EDD</h2>
 <p>8:00-12:00 Schedule:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a></a>Task           Duration  Deadline</span>
-<span id="cb31-2"><a></a>Email A        <span class="dv">20</span><span class="er">min</span>     <span class="dv">9</span>:<span class="dv">00</span></span>
-<span id="cb31-3"><a></a>Create PPT     <span class="dv">60</span><span class="er">min</span>    <span class="dv">10</span>:<span class="dv">50</span></span>
-<span id="cb31-4"><a></a>Investor call  <span class="dv">10</span><span class="er">min</span>     <span class="dv">9</span>:<span class="dv">00</span></span>
-<span id="cb31-5"><a></a>Email B        <span class="dv">30</span><span class="er">min</span>    <span class="dv">10</span>:<span class="dv">20</span></span>
-<span id="cb31-6"><a></a>Liquidity      <span class="dv">40</span><span class="er">min</span>    <span class="dv">11</span>:<span class="dv">00</span></span>
-<span id="cb31-7"><a></a>Email C        <span class="dv">20</span><span class="er">min</span>    <span class="dv">11</span>:<span class="dv">20</span></span>
-<span id="cb31-8"><a></a>Email D        <span class="dv">40</span><span class="er">min</span>    <span class="dv">10</span>:<span class="dv">00</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a></a>Task           Duration  Deadline</span>
+<span id="cb32-2"><a></a>Email A        <span class="dv">20</span><span class="er">min</span>     <span class="dv">9</span>:<span class="dv">00</span></span>
+<span id="cb32-3"><a></a>Create PPT     <span class="dv">60</span><span class="er">min</span>    <span class="dv">10</span>:<span class="dv">50</span></span>
+<span id="cb32-4"><a></a>Investor call  <span class="dv">10</span><span class="er">min</span>     <span class="dv">9</span>:<span class="dv">00</span></span>
+<span id="cb32-5"><a></a>Email B        <span class="dv">30</span><span class="er">min</span>    <span class="dv">10</span>:<span class="dv">20</span></span>
+<span id="cb32-6"><a></a>Liquidity      <span class="dv">40</span><span class="er">min</span>    <span class="dv">11</span>:<span class="dv">00</span></span>
+<span id="cb32-7"><a></a>Email C        <span class="dv">20</span><span class="er">min</span>    <span class="dv">11</span>:<span class="dv">20</span></span>
+<span id="cb32-8"><a></a>Email D        <span class="dv">40</span><span class="er">min</span>    <span class="dv">10</span>:<span class="dv">00</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <p><span class="question">Question:</span> <strong>Any ideas how to start with under the objective of the earliest due date?</strong></p>
 </div>
@@ -1288,9 +1304,9 @@ gantt
 <p><strong>What we learned today:</strong></p>
 <ol type="1">
 <li class="fragment"><strong>Scheduling algorithms</strong> provide optimal solutions to time management problems</li>
-<li class="fragment"><strong>Different objectives</strong> require different algorithms (EDD, SPT, Johnson’s Rule)</li>
+<li class="fragment"><strong>Different objectives</strong> require different algorithms</li>
 <li class="fragment"><strong>Dependencies and constraints</strong> add complexity but have algorithmic solutions</li>
-<li class="fragment"><strong>Thrashing prevention</strong> is crucial for maintaining productivity</li>
+<li class="fragment"><strong>Thrashing prevention</strong> is crucial for productivity</li>
 <li class="fragment"><strong>These principles</strong> directly translate to programming and system design</li>
 </ol>
 </section>

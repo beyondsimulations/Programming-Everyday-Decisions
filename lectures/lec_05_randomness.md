@@ -10,6 +10,23 @@ format:
 ---
 
 
+# <span class="flow">Welcome!</span>
+
+## Today's Topic: Randomness & Probabilistic Algorithms
+
+**Topic:** Understanding how randomness powers algorithms and decision-making in computer science and everyday life
+
+. . .
+
+**Why this matters:** Randomness isn't just about gambling. It's a powerful tool that makes computers faster, cryptography secure, and helps us solve problems. Today we'll learn how embracing uncertainty can lead to better solutions.
+
+## Today's Agenda
+
+1.  **Understanding Randomness** - From casinos to algorithms
+2.  **Randomness in Daily Life** - Where we encounter it without realizing
+3.  **Computer Science Applications** - Monte Carlo, simulated annealing, cryptography
+4.  **Decision Making** - Using randomness to solve hard problems
+
 # <span class="flow">Understanding Randomness</span>
 
 ## Randomness
@@ -36,9 +53,9 @@ format:
 
 . . .
 
--   **Determinism**
--   **Predictability**
--   **Consistency**
+-   **Determinism** - same input, same output
+-   **Predictability** - knowing the outcome in advance
+-   **Consistency** - reliable patterns
 
 . . .
 
@@ -64,18 +81,23 @@ format:
 
 ## Using Randomness
 
--   Randomness is a <span class="highlight">fundamental aspect of the world</span>
--   It can be used for **discovery**
--   Randomness is used to model **uncertainty**
--   It is used to **explore** solutions and **avoid bias**
+Randomness is a <span class="highlight">fundamental aspect of the world</span>
+
+. . .
+
+-   **Testing:** Generate random inputs to find bugs
+-   **Optimization:** Escape local optima in complex problems
+-   **Simulation:** Model complex systems with uncertainty
+-   **Security:** Make systems unpredictable to attackers
+-   **Fairness:** Eliminate bias in selection processes
 
 . . .
 
 > **Important**
 >
-> Even in computer science, randomness is not just about **generating random numbers**!
+> Randomness is not just about **generating random numbers**!
 
-# <span class="flow">Randomness in the World</span>
+# <span class="flow">Randomness in Daily Life</span>
 
 ## Randomness and Everyday Life
 
@@ -83,33 +105,35 @@ format:
 
 ## Social Life
 
--   Dating apps use **randomized matching** within preferences
+-   **Dating apps:** Randomized matching within preferences
 -   **Random encounters** that lead to friendships
--   **Random opportunities** leading to career changes
+-   **Career opportunities** from unexpected connections
 -   **Breaking ties** through coin tosses
+-   **Netflix recommendations:** Controlled randomness for discovery
 
 ## Entertainment Industry
 
--   Pokémon's "random" encounters are **weighted by rarity**
+-   **Pokémon:** "Random" encounters weighted by rarity
 -   **Loot systems:** Rare items have controlled drop rates
--   Chess AI introduces **randomness** to feel more human-like
--   Spotify's shuffle is **deliberately less random** to feel natural
--   TikTok uses **controlled randomization** to optimize discovery
+-   **Chess AI:** Introduces randomness to feel more human-like
+-   **Spotify shuffle:** Deliberately less random to feel natural
+-   **TikTok:** Controlled randomization for content discovery
 
-## Cryptography
+## Cryptography & Security
 
--   Coin miners solve **cryptographic puzzles** using guesses
--   PW generators balance **randomness and memorability**
--   `correct-horse-battery-staple` is secure
--   `Tr0ub4dor&3` is less secure despite looking complex
--   <span class="highlight">Modern encryption</span> uses random numbers
+-   **Cryptocurrency mining:** Solving cryptographic puzzles through guessing
+-   **Password generators:** Balance randomness and memorability
+-   **`correct-horse-battery-staple`** is more secure than **`Tr0ub4dor&3`**
+-   **Modern encryption** relies on random number generation
+-   **Two-factor authentication** uses random codes
 
-## Data Science
+## Data Science & Research
 
--   **Weather forecasting** uses randomness for uncertainty
--   **Stock algorithms** add randomness to avoid patterns
--   **Self-driving cars** add randomness <span class="highlight">for natural-feeling</span>
--   **Random sampling** in research for unbiased results
+-   **Weather forecasting:** Uses randomness to model uncertainty
+-   **Stock algorithms:** Add randomness to avoid predictable patterns
+-   **Self-driving cars:** Random elements for natural-feeling behavior
+-   **Random sampling:** Ensures unbiased research results
+-   **A/B testing:** Random assignment to treatment groups
 
 . . .
 
@@ -119,18 +143,20 @@ format:
 
 # <span class="flow">Randomness and Computer Science</span>
 
-## Randomness in Computer Science
+## Randomness in Algorithms
 
--   **Fundamental concept** in computer science
--   Helps solve "hard" problems **efficiently**
--   Often **faster than deterministic approaches**
--   <span class="highlight">Trade-off:</span> Optimal vs. "Good Enough" solutions
+**Why do computer scientists love randomness?**
+
+-   **Efficiency:** Often faster than deterministic approaches
+-   **Simplicity:** Can solve complex problems with simple code
+-   **Robustness:** Avoids worst-case scenarios
+-   **Approximation:** "Good enough" solutions in reasonable time
 
 . . .
 
 > **Important**
 >
-> Sometimes a quick "good enough" solution is better than waiting for the perfect one.
+> **Key Trade-off:** Perfect vs. "Good Enough" solutions
 
 ## Types of Randomness
 
@@ -169,7 +195,7 @@ print(math.factorial(52))
 >
 > Computing and evaluating all possible combinations is not feasible!
 
-## Addressing Computational Limits
+## Computational Limits
 
 <span class="question">Question:</span> **Anybody ever heard of "Monte Carlo methods"?**
 
@@ -249,7 +275,7 @@ print(math.factorial(10))
 
 <span class="question">Question:</span> **How would you escape a local optimum?**
 
-## Simulated Annealing
+## Simulated Annealing (SA)
 
 -   Make random changes and **accept improvements**
 -   Sometimes accept **worse solutions**
@@ -264,7 +290,7 @@ print(math.factorial(10))
 -   Randomness helps to escape **local optima**
 -   Balances <span class="highlight">exploration vs. exploitation</span>
 
-## Simulated Annealing Animation
+## SA Animation
 
 ![](../animations/simulated_annealing.gif)
 
@@ -427,7 +453,19 @@ You might <span class="highlight">randomly</span> be:
 >
 > Many problems benefit from **fast, good-enough solutions** rather than perfect ones.
 
-## The End
+## 
+
+Any questions
+
+so far?
+
+## After the break --- Randomness
+
+-   Programming session in our new notebooks
+-   How to translate the idea into code and experiments
+-   Different scheduling algorithms applied to problems
+
+. . .
 
 > **Note**
 >

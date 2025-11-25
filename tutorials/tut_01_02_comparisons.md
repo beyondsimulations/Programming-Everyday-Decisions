@@ -81,7 +81,7 @@ print(f"Is new score better? {compare_scores}")
 
 ## Exercise 1.2 - Compare Skills
 
-Check if a candidate's skill matches what we need. Compare if the following two variables are different and store the result in `compare_skills`.
+Check if a candidate's skill matches what we need. Compare if the following two variables are equal to each other and store the result in `compare_skills`.
 
 ``` python
 candidate_skill = "Finance"

@@ -209,6 +209,27 @@ Dr.&nbsp;Tobias Vlćek
 
 </section>
 <section>
+<section id="welcome" class="title-slide slide level1 title center">
+<h1><span class="flow">Welcome!</span></h1>
+
+</section>
+<section id="todays-topic-randomness-probabilistic-algorithms" class="slide level2">
+<h2>Today’s Topic: Randomness &amp; Probabilistic Algorithms</h2>
+<p><strong>Topic:</strong> Understanding how randomness powers algorithms and decision-making in computer science and everyday life</p>
+<div class="fragment">
+<p><strong>Why this matters:</strong> Randomness isn’t just about gambling. It’s a powerful tool that makes computers faster, cryptography secure, and helps us solve problems. Today we’ll learn how embracing uncertainty can lead to better solutions.</p>
+</div>
+</section>
+<section id="todays-agenda" class="slide level2">
+<h2>Today’s Agenda</h2>
+<ol type="1">
+<li class="fragment"><strong>Understanding Randomness</strong> - From casinos to algorithms</li>
+<li class="fragment"><strong>Randomness in Daily Life</strong> - Where we encounter it without realizing</li>
+<li class="fragment"><strong>Computer Science Applications</strong> - Monte Carlo, simulated annealing, cryptography</li>
+<li class="fragment"><strong>Decision Making</strong> - Using randomness to solve hard problems</li>
+</ol>
+</section></section>
+<section>
 <section id="understanding-randomness" class="title-slide slide level1 title center">
 <h1><span class="flow">Understanding Randomness</span></h1>
 
@@ -258,9 +279,9 @@ Dr.&nbsp;Tobias Vlćek
 <p><span class="question">Question:</span> <strong>What’s the opposite of randomness?</strong></p>
 <div class="fragment">
 <ul>
-<li><strong>Determinism</strong></li>
-<li><strong>Predictability</strong></li>
-<li><strong>Consistency</strong></li>
+<li class="fragment"><strong>Determinism</strong> - same input, same output</li>
+<li class="fragment"><strong>Predictability</strong> - knowing the outcome in advance</li>
+<li class="fragment"><strong>Consistency</strong> - reliable patterns</li>
 </ul>
 </div>
 <div class="fragment">
@@ -291,12 +312,16 @@ Dr.&nbsp;Tobias Vlćek
 <img data-src="../animations/dice_fairness.gif" class="r-stretch"></section>
 <section id="using-randomness" class="slide level2">
 <h2>Using Randomness</h2>
+<p>Randomness is a <span class="highlight">fundamental aspect of the world</span></p>
+<div class="fragment">
 <ul>
-<li>Randomness is a <span class="highlight">fundamental aspect of the world</span></li>
-<li>It can be used for <strong>discovery</strong></li>
-<li>Randomness is used to model <strong>uncertainty</strong></li>
-<li>It is used to <strong>explore</strong> solutions and <strong>avoid bias</strong></li>
+<li class="fragment"><strong>Testing:</strong> Generate random inputs to find bugs</li>
+<li class="fragment"><strong>Optimization:</strong> Escape local optima in complex problems</li>
+<li class="fragment"><strong>Simulation:</strong> Model complex systems with uncertainty</li>
+<li class="fragment"><strong>Security:</strong> Make systems unpredictable to attackers</li>
+<li class="fragment"><strong>Fairness:</strong> Eliminate bias in selection processes</li>
 </ul>
+</div>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
@@ -307,15 +332,15 @@ Dr.&nbsp;Tobias Vlćek
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Even in computer science, randomness is not just about <strong>generating random numbers</strong>!</p>
+<p>Randomness is not just about <strong>generating random numbers</strong>!</p>
 </div>
 </div>
 </div>
 </div>
 </section></section>
 <section>
-<section id="randomness-in-the-world" class="title-slide slide level1 title center">
-<h1><span class="flow">Randomness in the World</span></h1>
+<section id="randomness-in-daily-life" class="title-slide slide level1 title center">
+<h1><span class="flow">Randomness in Daily Life</span></h1>
 
 </section>
 <section id="randomness-and-everyday-life" class="slide level2">
@@ -325,39 +350,41 @@ Dr.&nbsp;Tobias Vlćek
 <section id="social-life" class="slide level2">
 <h2>Social Life</h2>
 <ul>
-<li class="fragment">Dating apps use <strong>randomized matching</strong> within preferences</li>
+<li class="fragment"><strong>Dating apps:</strong> Randomized matching within preferences</li>
 <li class="fragment"><strong>Random encounters</strong> that lead to friendships</li>
-<li class="fragment"><strong>Random opportunities</strong> leading to career changes</li>
+<li class="fragment"><strong>Career opportunities</strong> from unexpected connections</li>
 <li class="fragment"><strong>Breaking ties</strong> through coin tosses</li>
+<li class="fragment"><strong>Netflix recommendations:</strong> Controlled randomness for discovery</li>
 </ul>
 </section>
 <section id="entertainment-industry" class="slide level2">
 <h2>Entertainment Industry</h2>
 <ul>
-<li class="fragment">Pokémon’s “random” encounters are <strong>weighted by rarity</strong></li>
+<li class="fragment"><strong>Pokémon:</strong> “Random” encounters weighted by rarity</li>
 <li class="fragment"><strong>Loot systems:</strong> Rare items have controlled drop rates</li>
-<li class="fragment">Chess AI introduces <strong>randomness</strong> to feel more human-like</li>
-<li class="fragment">Spotify’s shuffle is <strong>deliberately less random</strong> to feel natural</li>
-<li class="fragment">TikTok uses <strong>controlled randomization</strong> to optimize discovery</li>
+<li class="fragment"><strong>Chess AI:</strong> Introduces randomness to feel more human-like</li>
+<li class="fragment"><strong>Spotify shuffle:</strong> Deliberately less random to feel natural</li>
+<li class="fragment"><strong>TikTok:</strong> Controlled randomization for content discovery</li>
 </ul>
 </section>
-<section id="cryptography-1" class="slide level2">
-<h2>Cryptography</h2>
+<section id="cryptography-security" class="slide level2">
+<h2>Cryptography &amp; Security</h2>
 <ul>
-<li class="fragment">Coin miners solve <strong>cryptographic puzzles</strong> using guesses</li>
-<li class="fragment">PW generators balance <strong>randomness and memorability</strong></li>
-<li class="fragment"><code>correct-horse-battery-staple</code> is secure</li>
-<li class="fragment"><code>Tr0ub4dor&amp;3</code> is less secure despite looking complex</li>
-<li class="fragment"><span class="highlight">Modern encryption</span> uses random numbers</li>
+<li class="fragment"><strong>Cryptocurrency mining:</strong> Solving cryptographic puzzles through guessing</li>
+<li class="fragment"><strong>Password generators:</strong> Balance randomness and memorability</li>
+<li class="fragment"><strong><code>correct-horse-battery-staple</code></strong> is more secure than <strong><code>Tr0ub4dor&amp;3</code></strong></li>
+<li class="fragment"><strong>Modern encryption</strong> relies on random number generation</li>
+<li class="fragment"><strong>Two-factor authentication</strong> uses random codes</li>
 </ul>
 </section>
-<section id="data-science" class="slide level2">
-<h2>Data Science</h2>
+<section id="data-science-research" class="slide level2">
+<h2>Data Science &amp; Research</h2>
 <ul>
-<li class="fragment"><strong>Weather forecasting</strong> uses randomness for uncertainty</li>
-<li class="fragment"><strong>Stock algorithms</strong> add randomness to avoid patterns</li>
-<li class="fragment"><strong>Self-driving cars</strong> add randomness <span class="highlight">for natural-feeling</span></li>
-<li class="fragment"><strong>Random sampling</strong> in research for unbiased results</li>
+<li class="fragment"><strong>Weather forecasting:</strong> Uses randomness to model uncertainty</li>
+<li class="fragment"><strong>Stock algorithms:</strong> Add randomness to avoid predictable patterns</li>
+<li class="fragment"><strong>Self-driving cars:</strong> Random elements for natural-feeling behavior</li>
+<li class="fragment"><strong>Random sampling:</strong> Ensures unbiased research results</li>
+<li class="fragment"><strong>A/B testing:</strong> Random assignment to treatment groups</li>
 </ul>
 <div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
@@ -380,13 +407,14 @@ Dr.&nbsp;Tobias Vlćek
 <h1><span class="flow">Randomness and Computer Science</span></h1>
 
 </section>
-<section id="randomness-in-computer-science" class="slide level2">
-<h2>Randomness in Computer Science</h2>
+<section id="randomness-in-algorithms" class="slide level2">
+<h2>Randomness in Algorithms</h2>
+<p><strong>Why do computer scientists love randomness?</strong></p>
 <ul>
-<li><strong>Fundamental concept</strong> in computer science</li>
-<li>Helps solve “hard” problems <strong>efficiently</strong></li>
-<li>Often <strong>faster than deterministic approaches</strong></li>
-<li><span class="highlight">Trade-off:</span> Optimal vs.&nbsp;“Good Enough” solutions</li>
+<li class="fragment"><strong>Efficiency:</strong> Often faster than deterministic approaches</li>
+<li class="fragment"><strong>Simplicity:</strong> Can solve complex problems with simple code</li>
+<li class="fragment"><strong>Robustness:</strong> Avoids worst-case scenarios</li>
+<li class="fragment"><strong>Approximation:</strong> “Good enough” solutions in reasonable time</li>
 </ul>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
@@ -398,7 +426,7 @@ Dr.&nbsp;Tobias Vlćek
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Sometimes a quick “good enough” solution is better than waiting for the perfect one.</p>
+<p><strong>Key Trade-off:</strong> Perfect vs.&nbsp;“Good Enough” solutions</p>
 </div>
 </div>
 </div>
@@ -431,7 +459,7 @@ Dr.&nbsp;Tobias Vlćek
 <section id="limits-of-computation" class="slide level2">
 <h2>Limits of Computation</h2>
 <p><span class="question">Question:</span> <strong>How many possible combinations exist in a shuffled deck of cards?</strong></p>
-<div id="0954acd6" class="cell" data-execution_count="2">
+<div id="5ca5b2ed" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a></a><span class="bu">print</span>(math.factorial(<span class="dv">52</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -456,8 +484,8 @@ Dr.&nbsp;Tobias Vlćek
 </div>
 </div>
 </section>
-<section id="addressing-computational-limits" class="slide level2">
-<h2>Addressing Computational Limits</h2>
+<section id="computational-limits" class="slide level2">
+<h2>Computational Limits</h2>
 <p><span class="question">Question:</span> <strong>Anybody ever heard of “Monte Carlo methods”?</strong></p>
 <div class="fragment">
 <ul>
@@ -483,7 +511,7 @@ Dr.&nbsp;Tobias Vlćek
 <section id="travel-itinerary" class="slide level2">
 <h2>Travel Itinerary</h2>
 <p><span class="question">Question:</span> <strong>How and in which order would you visit 10 cities by plane with minimal total distance?</strong></p>
-<div id="8b2a6cf3" class="cell" data-execution_count="4">
+<div id="7ad395c3" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> math</span>
 <span id="cb3-2"><a></a><span class="bu">print</span>(math.factorial(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -555,8 +583,8 @@ Dr.&nbsp;Tobias Vlćek
 <p><span class="question">Question:</span> <strong>How would you escape a local optimum?</strong></p>
 </div>
 </section>
-<section id="simulated-annealing" class="slide level2">
-<h2>Simulated Annealing</h2>
+<section id="simulated-annealing-sa" class="slide level2">
+<h2>Simulated Annealing (SA)</h2>
 <ul>
 <li>Make random changes and <strong>accept improvements</strong></li>
 <li>Sometimes accept <strong>worse solutions</strong></li>
@@ -572,8 +600,8 @@ Dr.&nbsp;Tobias Vlćek
 </ul>
 </div>
 </section>
-<section id="simulated-annealing-animation" class="slide level2">
-<h2>Simulated Annealing Animation</h2>
+<section id="sa-animation" class="slide level2">
+<h2>SA Animation</h2>
 
 <img data-src="../animations/simulated_annealing.gif" class="r-stretch"></section>
 <section id="traveling-salesman" class="slide level2">
@@ -810,8 +838,21 @@ Dr.&nbsp;Tobias Vlćek
 </div>
 </div>
 </section>
-<section id="the-end" class="slide level2">
-<h2>The End</h2>
+<section id="section" class="slide level2 loud-slide">
+<h2></h2>
+<div class="r-fit-text">
+<p>Any questions</p>
+<p>so far?</p>
+</div>
+</section>
+<section id="after-the-break-randomness" class="slide level2">
+<h2>After the break — Randomness</h2>
+<ul>
+<li>Programming session in our new notebooks</li>
+<li>How to translate the idea into code and experiments</li>
+<li>Different scheduling algorithms applied to problems</li>
+</ul>
+<div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -823,6 +864,7 @@ Dr.&nbsp;Tobias Vlćek
 <div class="callout-content">
 <p><strong>That’s it for today’s lecture!</strong><br>
 We’ve covered the basics of randomness and its applications. In the upcoming tutorials, we’ll learn how to use LLMs to generate code with randomness.</p>
+</div>
 </div>
 </div>
 </div>

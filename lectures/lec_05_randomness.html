@@ -398,7 +398,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#understanding-randomness" id="toc-understanding-randomness" class="nav-link active" data-scroll-target="#understanding-randomness"><span class="flow">Understanding Randomness</span></a>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome"><span class="flow">Welcome!</span></a>
+  <ul class="collapse">
+  <li><a href="#todays-topic-randomness-probabilistic-algorithms" id="toc-todays-topic-randomness-probabilistic-algorithms" class="nav-link" data-scroll-target="#todays-topic-randomness-probabilistic-algorithms">Today’s Topic: Randomness &amp; Probabilistic Algorithms</a></li>
+  <li><a href="#todays-agenda" id="toc-todays-agenda" class="nav-link" data-scroll-target="#todays-agenda">Today’s Agenda</a></li>
+  </ul></li>
+  <li><a href="#understanding-randomness" id="toc-understanding-randomness" class="nav-link" data-scroll-target="#understanding-randomness"><span class="flow">Understanding Randomness</span></a>
   <ul class="collapse">
   <li><a href="#randomness" id="toc-randomness" class="nav-link" data-scroll-target="#randomness">Randomness</a></li>
   <li><a href="#casino" id="toc-casino" class="nav-link" data-scroll-target="#casino"><span class="invert-font">Casino</span></a></li>
@@ -412,20 +417,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#dice-rolls" id="toc-dice-rolls" class="nav-link" data-scroll-target="#dice-rolls">Dice Rolls</a></li>
   <li><a href="#using-randomness" id="toc-using-randomness" class="nav-link" data-scroll-target="#using-randomness">Using Randomness</a></li>
   </ul></li>
-  <li><a href="#randomness-in-the-world" id="toc-randomness-in-the-world" class="nav-link" data-scroll-target="#randomness-in-the-world"><span class="flow">Randomness in the World</span></a>
+  <li><a href="#randomness-in-daily-life" id="toc-randomness-in-daily-life" class="nav-link" data-scroll-target="#randomness-in-daily-life"><span class="flow">Randomness in Daily Life</span></a>
   <ul class="collapse">
   <li><a href="#randomness-and-everyday-life" id="toc-randomness-and-everyday-life" class="nav-link" data-scroll-target="#randomness-and-everyday-life">Randomness and Everyday Life</a></li>
   <li><a href="#social-life" id="toc-social-life" class="nav-link" data-scroll-target="#social-life">Social Life</a></li>
   <li><a href="#entertainment-industry" id="toc-entertainment-industry" class="nav-link" data-scroll-target="#entertainment-industry">Entertainment Industry</a></li>
-  <li><a href="#cryptography-1" id="toc-cryptography-1" class="nav-link" data-scroll-target="#cryptography-1">Cryptography</a></li>
-  <li><a href="#data-science" id="toc-data-science" class="nav-link" data-scroll-target="#data-science">Data Science</a></li>
+  <li><a href="#cryptography-security" id="toc-cryptography-security" class="nav-link" data-scroll-target="#cryptography-security">Cryptography &amp; Security</a></li>
+  <li><a href="#data-science-research" id="toc-data-science-research" class="nav-link" data-scroll-target="#data-science-research">Data Science &amp; Research</a></li>
   </ul></li>
   <li><a href="#randomness-and-computer-science" id="toc-randomness-and-computer-science" class="nav-link" data-scroll-target="#randomness-and-computer-science"><span class="flow">Randomness and Computer Science</span></a>
   <ul class="collapse">
-  <li><a href="#randomness-in-computer-science" id="toc-randomness-in-computer-science" class="nav-link" data-scroll-target="#randomness-in-computer-science">Randomness in Computer Science</a></li>
+  <li><a href="#randomness-in-algorithms" id="toc-randomness-in-algorithms" class="nav-link" data-scroll-target="#randomness-in-algorithms">Randomness in Algorithms</a></li>
   <li><a href="#types-of-randomness" id="toc-types-of-randomness" class="nav-link" data-scroll-target="#types-of-randomness">Types of Randomness</a></li>
   <li><a href="#limits-of-computation" id="toc-limits-of-computation" class="nav-link" data-scroll-target="#limits-of-computation">Limits of Computation</a></li>
-  <li><a href="#addressing-computational-limits" id="toc-addressing-computational-limits" class="nav-link" data-scroll-target="#addressing-computational-limits">Addressing Computational Limits</a></li>
+  <li><a href="#computational-limits" id="toc-computational-limits" class="nav-link" data-scroll-target="#computational-limits">Computational Limits</a></li>
   <li><a href="#estimating-π" id="toc-estimating-π" class="nav-link" data-scroll-target="#estimating-π">Estimating π</a></li>
   </ul></li>
   <li><a href="#decision-making" id="toc-decision-making" class="nav-link" data-scroll-target="#decision-making"><span class="flow">Decision Making</span></a>
@@ -435,8 +440,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#time-and-space-requirements" id="toc-time-and-space-requirements" class="nav-link" data-scroll-target="#time-and-space-requirements">Time and Space Requirements</a></li>
   <li><a href="#greedy-algorithm" id="toc-greedy-algorithm" class="nav-link" data-scroll-target="#greedy-algorithm">Greedy Algorithm</a></li>
   <li><a href="#hill-climbing" id="toc-hill-climbing" class="nav-link" data-scroll-target="#hill-climbing">Hill Climbing</a></li>
-  <li><a href="#simulated-annealing" id="toc-simulated-annealing" class="nav-link" data-scroll-target="#simulated-annealing">Simulated Annealing</a></li>
-  <li><a href="#simulated-annealing-animation" id="toc-simulated-annealing-animation" class="nav-link" data-scroll-target="#simulated-annealing-animation">Simulated Annealing Animation</a></li>
+  <li><a href="#simulated-annealing-sa" id="toc-simulated-annealing-sa" class="nav-link" data-scroll-target="#simulated-annealing-sa">Simulated Annealing (SA)</a></li>
+  <li><a href="#sa-animation" id="toc-sa-animation" class="nav-link" data-scroll-target="#sa-animation">SA Animation</a></li>
   <li><a href="#traveling-salesman" id="toc-traveling-salesman" class="nav-link" data-scroll-target="#traveling-salesman">Traveling Salesman</a></li>
   </ul></li>
   <li><a href="#randomness-and-society" id="toc-randomness-and-society" class="nav-link" data-scroll-target="#randomness-and-society"><span class="flow">Randomness and Society</span></a>
@@ -458,7 +463,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#good-enough-solutions" id="toc-good-enough-solutions" class="nav-link" data-scroll-target="#good-enough-solutions">“Good Enough” Solutions</a></li>
   <li><a href="#opportunity-costs" id="toc-opportunity-costs" class="nav-link" data-scroll-target="#opportunity-costs">Opportunity Costs</a></li>
-  <li><a href="#the-end" id="toc-the-end" class="nav-link" data-scroll-target="#the-end">The End</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#after-the-break-randomness" id="toc-after-the-break-randomness" class="nav-link" data-scroll-target="#after-the-break-randomness">After the break — Randomness</a></li>
   </ul></li>
   <li><a href="#literature" id="toc-literature" class="nav-link" data-scroll-target="#literature"><span class="flow">Literature</span></a>
   <ul class="collapse">
@@ -505,6 +511,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="welcome" class="level1 title">
+<h1 class="title"><span class="flow">Welcome!</span></h1>
+<section id="todays-topic-randomness-probabilistic-algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="todays-topic-randomness-probabilistic-algorithms">Today’s Topic: Randomness &amp; Probabilistic Algorithms</h2>
+<p><strong>Topic:</strong> Understanding how randomness powers algorithms and decision-making in computer science and everyday life</p>
+<p>. . .</p>
+<p><strong>Why this matters:</strong> Randomness isn’t just about gambling. It’s a powerful tool that makes computers faster, cryptography secure, and helps us solve problems. Today we’ll learn how embracing uncertainty can lead to better solutions.</p>
+</section>
+<section id="todays-agenda" class="level2">
+<h2 class="anchored" data-anchor-id="todays-agenda">Today’s Agenda</h2>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><strong>Understanding Randomness</strong> - From casinos to algorithms</li>
+<li><strong>Randomness in Daily Life</strong> - Where we encounter it without realizing</li>
+<li><strong>Computer Science Applications</strong> - Monte Carlo, simulated annealing, cryptography</li>
+<li><strong>Decision Making</strong> - Using randomness to solve hard problems</li>
+</ol>
+</div>
+</section>
+</section>
 <section id="understanding-randomness" class="level1 title">
 <h1 class="title"><span class="flow">Understanding Randomness</span></h1>
 <section id="randomness" class="level2">
@@ -552,11 +578,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="why-randomness-matters">Why Randomness Matters</h2>
 <p><span class="question">Question:</span> <strong>What’s the opposite of randomness?</strong></p>
 <p>. . .</p>
-<ul>
-<li><strong>Determinism</strong></li>
-<li><strong>Predictability</strong></li>
-<li><strong>Consistency</strong></li>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Determinism</strong> - same input, same output</li>
+<li><strong>Predictability</strong> - knowing the outcome in advance</li>
+<li><strong>Consistency</strong> - reliable patterns</li>
 </ul>
+</div>
 <p>. . .</p>
 <ul>
 <li><span class="highlight">Boredom?</span></li>
@@ -582,12 +610,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="using-randomness" class="level2">
 <h2 class="anchored" data-anchor-id="using-randomness">Using Randomness</h2>
-<ul>
-<li>Randomness is a <span class="highlight">fundamental aspect of the world</span></li>
-<li>It can be used for <strong>discovery</strong></li>
-<li>Randomness is used to model <strong>uncertainty</strong></li>
-<li>It is used to <strong>explore</strong> solutions and <strong>avoid bias</strong></li>
+<p>Randomness is a <span class="highlight">fundamental aspect of the world</span></p>
+<p>. . .</p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Testing:</strong> Generate random inputs to find bugs</li>
+<li><strong>Optimization:</strong> Escape local optima in complex problems</li>
+<li><strong>Simulation:</strong> Model complex systems with uncertainty</li>
+<li><strong>Security:</strong> Make systems unpredictable to attackers</li>
+<li><strong>Fairness:</strong> Eliminate bias in selection processes</li>
 </ul>
+</div>
 <p>. . .</p>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
@@ -595,14 +628,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Even in computer science, randomness is not just about <strong>generating random numbers</strong>!</p>
+<p>Randomness is not just about <strong>generating random numbers</strong>!</p>
 </div>
 </div>
 </div>
 </section>
 </section>
-<section id="randomness-in-the-world" class="level1 title">
-<h1 class="title"><span class="flow">Randomness in the World</span></h1>
+<section id="randomness-in-daily-life" class="level1 title">
+<h1 class="title"><span class="flow">Randomness in Daily Life</span></h1>
 <section id="randomness-and-everyday-life" class="level2">
 <h2 class="anchored" data-anchor-id="randomness-and-everyday-life">Randomness and Everyday Life</h2>
 <p><span class="question">Question:</span> <strong>Where do you encounter randomness in daily life?</strong></p>
@@ -611,10 +644,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="social-life">Social Life</h2>
 <div class="incremental">
 <ul class="incremental">
-<li>Dating apps use <strong>randomized matching</strong> within preferences</li>
+<li><strong>Dating apps:</strong> Randomized matching within preferences</li>
 <li><strong>Random encounters</strong> that lead to friendships</li>
-<li><strong>Random opportunities</strong> leading to career changes</li>
+<li><strong>Career opportunities</strong> from unexpected connections</li>
 <li><strong>Breaking ties</strong> through coin tosses</li>
+<li><strong>Netflix recommendations:</strong> Controlled randomness for discovery</li>
 </ul>
 </div>
 </section>
@@ -622,34 +656,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="entertainment-industry">Entertainment Industry</h2>
 <div class="incremental">
 <ul class="incremental">
-<li>Pokémon’s “random” encounters are <strong>weighted by rarity</strong></li>
+<li><strong>Pokémon:</strong> “Random” encounters weighted by rarity</li>
 <li><strong>Loot systems:</strong> Rare items have controlled drop rates</li>
-<li>Chess AI introduces <strong>randomness</strong> to feel more human-like</li>
-<li>Spotify’s shuffle is <strong>deliberately less random</strong> to feel natural</li>
-<li>TikTok uses <strong>controlled randomization</strong> to optimize discovery</li>
+<li><strong>Chess AI:</strong> Introduces randomness to feel more human-like</li>
+<li><strong>Spotify shuffle:</strong> Deliberately less random to feel natural</li>
+<li><strong>TikTok:</strong> Controlled randomization for content discovery</li>
 </ul>
 </div>
 </section>
-<section id="cryptography-1" class="level2">
-<h2 class="anchored" data-anchor-id="cryptography-1">Cryptography</h2>
+<section id="cryptography-security" class="level2">
+<h2 class="anchored" data-anchor-id="cryptography-security">Cryptography &amp; Security</h2>
 <div class="incremental">
 <ul class="incremental">
-<li>Coin miners solve <strong>cryptographic puzzles</strong> using guesses</li>
-<li>PW generators balance <strong>randomness and memorability</strong></li>
-<li><code>correct-horse-battery-staple</code> is secure</li>
-<li><code>Tr0ub4dor&amp;3</code> is less secure despite looking complex</li>
-<li><span class="highlight">Modern encryption</span> uses random numbers</li>
+<li><strong>Cryptocurrency mining:</strong> Solving cryptographic puzzles through guessing</li>
+<li><strong>Password generators:</strong> Balance randomness and memorability</li>
+<li><strong><code>correct-horse-battery-staple</code></strong> is more secure than <strong><code>Tr0ub4dor&amp;3</code></strong></li>
+<li><strong>Modern encryption</strong> relies on random number generation</li>
+<li><strong>Two-factor authentication</strong> uses random codes</li>
 </ul>
 </div>
 </section>
-<section id="data-science" class="level2">
-<h2 class="anchored" data-anchor-id="data-science">Data Science</h2>
+<section id="data-science-research" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-research">Data Science &amp; Research</h2>
 <div class="incremental">
 <ul class="incremental">
-<li><strong>Weather forecasting</strong> uses randomness for uncertainty</li>
-<li><strong>Stock algorithms</strong> add randomness to avoid patterns</li>
-<li><strong>Self-driving cars</strong> add randomness <span class="highlight">for natural-feeling</span></li>
-<li><strong>Random sampling</strong> in research for unbiased results</li>
+<li><strong>Weather forecasting:</strong> Uses randomness to model uncertainty</li>
+<li><strong>Stock algorithms:</strong> Add randomness to avoid predictable patterns</li>
+<li><strong>Self-driving cars:</strong> Random elements for natural-feeling behavior</li>
+<li><strong>Random sampling:</strong> Ensures unbiased research results</li>
+<li><strong>A/B testing:</strong> Random assignment to treatment groups</li>
 </ul>
 </div>
 <p>. . .</p>
@@ -667,14 +702,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="randomness-and-computer-science" class="level1 title">
 <h1 class="title"><span class="flow">Randomness and Computer Science</span></h1>
-<section id="randomness-in-computer-science" class="level2">
-<h2 class="anchored" data-anchor-id="randomness-in-computer-science">Randomness in Computer Science</h2>
-<ul>
-<li><strong>Fundamental concept</strong> in computer science</li>
-<li>Helps solve “hard” problems <strong>efficiently</strong></li>
-<li>Often <strong>faster than deterministic approaches</strong></li>
-<li><span class="highlight">Trade-off:</span> Optimal vs.&nbsp;“Good Enough” solutions</li>
+<section id="randomness-in-algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="randomness-in-algorithms">Randomness in Algorithms</h2>
+<p><strong>Why do computer scientists love randomness?</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Efficiency:</strong> Often faster than deterministic approaches</li>
+<li><strong>Simplicity:</strong> Can solve complex problems with simple code</li>
+<li><strong>Robustness:</strong> Avoids worst-case scenarios</li>
+<li><strong>Approximation:</strong> “Good enough” solutions in reasonable time</li>
 </ul>
+</div>
 <p>. . .</p>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
@@ -682,7 +720,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Sometimes a quick “good enough” solution is better than waiting for the perfect one.</p>
+<p><strong>Key Trade-off:</strong> Perfect vs.&nbsp;“Good Enough” solutions</p>
 </div>
 </div>
 </div>
@@ -714,7 +752,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="limits-of-computation" class="level2">
 <h2 class="anchored" data-anchor-id="limits-of-computation">Limits of Computation</h2>
 <p><span class="question">Question:</span> <strong>How many possible combinations exist in a shuffled deck of cards?</strong></p>
-<div id="0954acd6" class="cell" data-output-location="fragment" data-execution_count="2">
+<div id="5ca5b2ed" class="cell" data-output-location="fragment" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.factorial(<span class="dv">52</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -733,8 +771,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="addressing-computational-limits" class="level2">
-<h2 class="anchored" data-anchor-id="addressing-computational-limits">Addressing Computational Limits</h2>
+<section id="computational-limits" class="level2">
+<h2 class="anchored" data-anchor-id="computational-limits">Computational Limits</h2>
 <p><span class="question">Question:</span> <strong>Anybody ever heard of “Monte Carlo methods”?</strong></p>
 <p>. . .</p>
 <ul>
@@ -756,7 +794,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="travel-itinerary" class="level2">
 <h2 class="anchored" data-anchor-id="travel-itinerary">Travel Itinerary</h2>
 <p><span class="question">Question:</span> <strong>How and in which order would you visit 10 cities by plane with minimal total distance?</strong></p>
-<div id="8b2a6cf3" class="cell" data-output-location="fragment" data-execution_count="4">
+<div id="7ad395c3" class="cell" data-output-location="fragment" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.factorial(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -821,8 +859,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>. . .</p>
 <p><span class="question">Question:</span> <strong>How would you escape a local optimum?</strong></p>
 </section>
-<section id="simulated-annealing" class="level2">
-<h2 class="anchored" data-anchor-id="simulated-annealing">Simulated Annealing</h2>
+<section id="simulated-annealing-sa" class="level2">
+<h2 class="anchored" data-anchor-id="simulated-annealing-sa">Simulated Annealing (SA)</h2>
 <ul>
 <li>Make random changes and <strong>accept improvements</strong></li>
 <li>Sometimes accept <strong>worse solutions</strong></li>
@@ -836,8 +874,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Balances <span class="highlight">exploration vs.&nbsp;exploitation</span></li>
 </ul>
 </section>
-<section id="simulated-annealing-animation" class="level2">
-<h2 class="anchored" data-anchor-id="simulated-annealing-animation">Simulated Annealing Animation</h2>
+<section id="sa-animation" class="level2">
+<h2 class="anchored" data-anchor-id="sa-animation">SA Animation</h2>
 <p><img src="../animations/simulated_annealing.gif" class="img-fluid"></p>
 </section>
 <section id="traveling-salesman" class="level2">
@@ -1046,8 +1084,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="the-end" class="level2">
-<h2 class="anchored" data-anchor-id="the-end">The End</h2>
+<section id="section" class="level2 loud-slide">
+<h2 class="loud-slide anchored" data-anchor-id="section"></h2>
+<div class="r-fit-text">
+<p>Any questions</p>
+<p>so far?</p>
+</div>
+</section>
+<section id="after-the-break-randomness" class="level2">
+<h2 class="anchored" data-anchor-id="after-the-break-randomness">After the break — Randomness</h2>
+<ul>
+<li>Programming session in our new notebooks</li>
+<li>How to translate the idea into code and experiments</li>
+<li>Different scheduling algorithms applied to problems</li>
+</ul>
+<p>. . .</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">

@@ -500,12 +500,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="section-1---using-standard-libraries" class="level1">
 <h1>Section 1 - Using Standard Libraries</h1>
 <p>Before we start using external packages, let’s take a look at Python’s standard libraries. Python comes with a set of <strong>standard libraries that are always available</strong>. You can use these libraries by simply importing them. For example, the <code>math</code> library provides mathematical functions like <code>sqrt</code> and <code>sin</code> and the <code>random</code> library provides functions to generate random numbers. You can import these libraries using the following syntax:</p>
-<div id="b1a3433a" class="cell" data-execution_count="1">
+<div id="962df09f" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>You can then use the functions provided by these libraries by calling them with the library name as a prefix. For example, the following code calculates the square root of 16.</p>
-<div id="9eb49d62" class="cell" data-execution_count="2">
+<div id="77541ae7" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a_square_root <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The square root of 16 is </span><span class="sc">{</span>a_square_root<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -513,15 +513,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>The following code generates a random number between 0 and 1.</p>
-<div id="98e3d50b" class="cell" data-execution_count="3">
+<div id="9071e68f" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>a_random_number <span class="op">=</span> random.random()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"A random number is </span><span class="sc">{</span>a_random_number<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A random number is 0.9629174563877635!</code></pre>
+<pre><code>A random number is 0.5320431636775149!</code></pre>
 </div>
 </div>
 <p>We can also use the library to choose a random element from a list. For example, the following code chooses a random element from the list <code>['book1', 'book2', 'book3']</code>. Try it out by executing the cell multiple times.</p>
-<div id="7760acf5" class="cell" data-execution_count="4">
+<div id="cd97a464" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>random_choice <span class="op">=</span> random.choice([<span class="st">'book1'</span>, <span class="st">'book2'</span>, <span class="st">'book3'</span>])</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"We chose </span><span class="sc">{</span>random_choice<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -529,30 +529,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Sometimes, we only need one function from a library. In this case, we can use the <code>from</code> keyword to import only the specific function we need. For example, the following code imports only the <code>randint</code> function from the <code>random</code> library and uses it to generate a random integer between 1 and 10.</p>
-<div id="cb0b86a3" class="cell" data-execution_count="5">
+<div id="e06ce4bc" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> randint</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>a_random_integer <span class="op">=</span> randint(<span class="dv">1</span>, <span class="dv">10</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"A random integer between 1 and 10 is </span><span class="sc">{</span>a_random_integer<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>A random integer between 1 and 10 is 9!</code></pre>
+<pre><code>A random integer between 1 and 10 is 3!</code></pre>
 </div>
 </div>
 <p>Other times, we might need to work with a library that has a rather long name. In this case, we can use the <code>as</code> keyword to give the library a shorter name. For example, the following code imports the <code>random</code> library and gives it the shorter name <code>rd</code>.</p>
-<div id="a8a5b45c" class="cell" data-execution_count="6">
+<div id="4344d067" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random <span class="im">as</span> rd</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>a_random_integer <span class="op">=</span> rd.randint(<span class="dv">1</span>, <span class="dv">100</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Now, a random integer between 1 and 100 is </span><span class="sc">{</span>a_random_integer<span class="sc">}</span><span class="ss">!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Now, a random integer between 1 and 100 is 48!</code></pre>
+<pre><code>Now, a random integer between 1 and 100 is 29!</code></pre>
 </div>
 </div>
 <section id="exercise-1.1---use-the-math-library" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.1---use-the-math-library">Exercise 1.1 - Use the math library</h2>
 <p>Use the <code>math</code> library to calculate the square root of 256. Call the result <code>square_root</code>.</p>
-<div id="29622211" class="cell" data-execution_count="7">
+<div id="e1ab5afa" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="18cae14f" class="cell" data-execution_count="8">
+<div id="6646595b" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> square_root <span class="op">==</span> <span class="dv">16</span></span>
@@ -563,7 +563,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exercise-1.2---use-the-random-library" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1.2---use-the-random-library">Exercise 1.2 - Use the random library</h2>
 <p>Use the <code>random</code> library to generate a random number between 1 and 25. Call the result <code>random_number</code>.</p>
-<div id="708b8ae1" class="cell" data-execution_count="10">
+<div id="8f6c3711" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> random_number <span class="op">&gt;=</span> <span class="dv">1</span> <span class="kw">and</span> random_number <span class="op">&lt;=</span> <span class="dv">25</span></span>
@@ -607,7 +607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre class="{bash}"><code>uv add pandas</code></pre>
 <p>This: - Resolves dependencies - Adds <code>pandas</code> to <code>pyproject.toml</code> - Installs it into the project’s virtual environment</p>
 <p>You can test if the installation was successful by running:</p>
-<div id="eea7496e" class="cell" data-execution_count="11">
+<div id="20ca07e5" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>

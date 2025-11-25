@@ -23,7 +23,9 @@ format:
 
 **Topic:** Understanding scheduling problems and algorithmic solutions for optimal task ordering
 
-**Why this matters:** Every day you make scheduling decisions - from organizing your to-do list to managing projects. Today we'll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.
+. . .
+
+**Why this matters:** Every day you make scheduling decisions, from organizing your to-do list to managing projects. Today we'll learn the mathematical algorithms that can optimize these decisions and see how they connect to programming logic.
 
 ## Today's Agenda
 
@@ -258,7 +260,7 @@ gantt
 
 . . .
 
-<span class="question">Question:</span> **Who knows what a Gantt Chart is?**
+<span class="highlight">Question:</span> **Who knows what a Gantt Chart is?**
 
 ## <span class="invert-font">Modern Scheduling Theory</span>
 
@@ -273,11 +275,11 @@ gantt
 
 **Where do we see scheduling in professional practice?**
 
--   **Project Management:** Task dependencies, resource allocation, critical path
--   **Software Development:** CPU scheduling, thread management, job queues
--   **Operations:** Production scheduling, supply chain optimization
--   **Healthcare:** Patient scheduling, surgery planning, staff allocation
--   **Transportation:** Route optimization, crew scheduling, maintenance planning
+-   **Project Management:** Task dependencies, resource allocation
+-   **Software Development:** CPU, thread management, job queues
+-   **Operations:** Production, supply chain optimization
+-   **Healthcare:** Patients, surgery planning, staff allocation
+-   **Transportation:** Routes, crews, maintenance
 
 . . .
 
@@ -620,6 +622,23 @@ Task  Duration  Revenue  Revenue/Min  Schedule
   C    60min    €120      2.0
   D    50min    €70       1.4
   E    30min    €130      4.3
+  F    40min    €120      3.0
+  G    20min    €100      5.0           3
+  H    70min    €110      1.6
+  I    50min    €90       1.8
+```
+
+## Gain/Revenue Per Minute
+
+<span class="task">Rule:</span> Schedule by revenue per minute (descending)
+
+``` python
+Task  Duration  Revenue  Revenue/Min  Schedule
+  A    20min    €240     12.0           1
+  B    30min    €200      6.7           2
+  C    60min    €120      2.0
+  D    50min    €70       1.4
+  E    30min    €130      4.3           4
   F    40min    €120      3.0
   G    20min    €100      5.0           3
   H    70min    €110      1.6
@@ -1049,9 +1068,9 @@ Email D        40min    10:00
 **What we learned today:**
 
 1.  **Scheduling algorithms** provide optimal solutions to time management problems
-2.  **Different objectives** require different algorithms (EDD, SPT, Johnson's Rule)
+2.  **Different objectives** require different algorithms
 3.  **Dependencies and constraints** add complexity but have algorithmic solutions
-4.  **Thrashing prevention** is crucial for maintaining productivity
+4.  **Thrashing prevention** is crucial for productivity
 5.  **These principles** directly translate to programming and system design
 
 ## 

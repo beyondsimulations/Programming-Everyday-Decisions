@@ -77,7 +77,7 @@ a_random_number = random.random()
 print(f"A random number is {a_random_number}!")
 ```
 
-    A random number is 0.17251514361261755!
+    A random number is 0.7011055432419385!
 
 We can also use the library to choose a random element from a list. For example, the following code chooses a random element from the list `['book1', 'book2', 'book3']`. Try it out by executing the cell multiple times.
 
@@ -86,7 +86,7 @@ random_choice = random.choice(['book1', 'book2', 'book3'])
 print(f"We chose {random_choice}!")
 ```
 
-    We chose book1!
+    We chose book3!
 
 Sometimes, we only need one function from a library. In this case, we can use the `from` keyword to import only the specific function we need. For example, the following code imports only the `randint` function from the `random` library and uses it to generate a random integer between 1 and 10.
 
@@ -96,7 +96,7 @@ a_random_integer = randint(1, 10)
 print(f"A random integer between 1 and 10 is {a_random_integer}!")
 ```
 
-    A random integer between 1 and 10 is 7!
+    A random integer between 1 and 10 is 10!
 
 Other times, we might need to work with a library that has a rather long name. In this case, we can use the `as` keyword to give the library a shorter name. For example, the following code imports the `random` library and gives it the shorter name `rd`.
 
@@ -106,7 +106,7 @@ a_random_integer = rd.randint(1, 100)
 print(f"Now, a random integer between 1 and 100 is {a_random_integer}!")
 ```
 
-    Now, a random integer between 1 and 100 is 31!
+    Now, a random integer between 1 and 100 is 63!
 
 ## Exercise 1.1 - Use the math library
 

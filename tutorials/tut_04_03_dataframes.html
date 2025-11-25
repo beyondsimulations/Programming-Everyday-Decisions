@@ -462,14 +462,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Let’s begin by importing pandas:</p>
-<div id="87a73124" class="cell" data-execution_count="1">
+<div id="8e766ee9" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="section-1---creating-task-dataframes" class="level1">
 <h1>Section 1 - Creating Task DataFrames</h1>
 <p>In mission planning, we need to track various tasks with their durations and deadlines. Let’s create a DataFrame to manage these tasks from a dictionary and a list of index labels:</p>
-<div id="149a9d03" class="cell" data-execution_count="2">
+<div id="f423a061" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tasks <span class="op">=</span> pd.DataFrame({</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'task'</span>: [<span class="st">'Equipment Check'</span>, <span class="st">'Crew Training'</span>, <span class="st">'Supply Loading'</span>],</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'duration'</span>: [<span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">7</span>],  <span class="co"># hours</span></span>
@@ -504,10 +504,10 @@ Task 3   Supply Loading         7         8</code></pre>
 <li>Communication Setup: 3 hours, deadline 6</li>
 </ul>
 <p>Make sure, that the hours and deadlines are integers. And create the DataFrame with the index labels <code>Task 1</code>, <code>Task 2</code>, <code>Task 3</code>, <code>Task 4</code>.</p>
-<div id="fec66234" class="cell" data-execution_count="3">
+<div id="0209a41b" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="5dba2d44" class="cell" data-execution_count="4">
+<div id="5d7979e9" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -545,7 +545,7 @@ Task 3   Supply Loading         7         8</code></pre>
 <li>Using square bracket notation <code>[]</code></li>
 <li>Using dot notation <code>.</code></li>
 </ol>
-<div id="29907a4e" class="cell" data-execution_count="5">
+<div id="0d9ab0aa" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Access a single column (returns a Series)</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>durations <span class="op">=</span> tasks[<span class="st">'duration'</span>]</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Durations:</span><span class="ch">\n</span><span class="st">"</span>, durations)</span>
@@ -585,7 +585,7 @@ Name: deadline, dtype: int64</code></pre>
 <li><code>iloc[]</code> for integer-based indexing</li>
 <li><code>loc[]</code> for label-based indexing</li>
 </ol>
-<div id="71f7ba89" class="cell" data-execution_count="6">
+<div id="31781395" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get first row using iloc (integer location)</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>first_row <span class="op">=</span> tasks.iloc[<span class="dv">0</span>]</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First row:</span><span class="ch">\n</span><span class="st">"</span>, first_row)</span>
@@ -629,10 +629,10 @@ Subset of data based on labels:
 <li>Get the first two tasks with all columns as <code>first_two</code></li>
 <li>Create a subset containing only the ‘task’ and ‘deadline’ columns as <code>task_deadline_subset</code></li>
 </ol>
-<div id="b2659948" class="cell" data-execution_count="7">
+<div id="9a79031c" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="0a5f90cd" class="cell" data-execution_count="8">
+<div id="abcb82b5" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -663,7 +663,7 @@ Subset of data based on labels:
 <section id="section-3---sorting-dataframes-for-edd-and-spt" class="level1">
 <h1>Section 3 - Sorting DataFrames for EDD and SPT</h1>
 <p>The EDD algorithm minimizes maximum lateness by scheduling tasks in order of their deadlines. This is crucial for mission-critical tasks where delays could be catastrophic.</p>
-<div id="0ec395c4" class="cell" data-execution_count="9">
+<div id="aeba64a2" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sorted_tasks <span class="op">=</span> tasks.sort_values(<span class="st">'deadline'</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Tasks sorted by EDD:"</span>)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sorted_tasks)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -686,7 +686,7 @@ Task 2    Crew Training         3        15</code></pre>
 </div>
 </div>
 <p>If you want to add a new column, you can do so by assigning a new column to the DataFrame. For example, if you want to add a new column called <code>completion_time</code> to the <code>tasks</code> DataFrame, you can do so by assigning a new column to the DataFrame:</p>
-<div id="e5322d4f" class="cell" data-execution_count="10">
+<div id="1ac3b9a3" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>tasks[<span class="st">'delayed_deadline'</span>] <span class="op">=</span> tasks[<span class="st">'deadline'</span>] <span class="op">+</span> <span class="dv">1</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tasks)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -700,10 +700,10 @@ Task 3   Supply Loading         7         8                 9</code></pre>
 <section id="exercise-2.1---apply-edd-to-mission-tasks" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2.1---apply-edd-to-mission-tasks">Exercise 2.1 - Apply EDD to Mission Tasks</h2>
 <p>Sort your <code>mission_tasks</code> using the EDD algorithm (sort by deadline).</p>
-<div id="48f06184" class="cell" data-execution_count="11">
+<div id="f9fe560f" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="58b46a75" class="cell" data-execution_count="12">
+<div id="a847ab51" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -716,10 +716,10 @@ Task 3   Supply Loading         7         8                 9</code></pre>
 <section id="exercise-2.2---calculate-new-deadline" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2.2---calculate-new-deadline">Exercise 2.2 - Calculate New Deadline</h2>
 <p>Unfortuantely, the mission has been delayed as some tasks are rather complex. Add a new column to the <code>mission_tasks</code> DataFrame called <code>new_deadline</code>. The new deadline is the old deadline plus the duration of the task.</p>
-<div id="1d90c702" class="cell" data-execution_count="13">
+<div id="eb9a59aa" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="71582634" class="cell" data-execution_count="14">
+<div id="5b8efb32" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -735,7 +735,7 @@ Task 3   Supply Loading         7         8                 9</code></pre>
 <h1>Section 3 - Looping over DataFrames</h1>
 <p>Now, we want to apply the EDD algorithm to the <code>mission_tasks</code> DataFrame. We can do this sorting the rows by deadline and then looping over the rows, computing the completion time and the maximum delay.</p>
 <p>To do this, you can use the <code>iterrows()</code> method. The <code>iterrows()</code> method returns an iterator yielding index and row as a Series. For each row, you can access the values using the column names as keys. Let’s do this step by step on the <code>tasks</code> DataFrame for the original deadline.</p>
-<div id="d80bd236" class="cell" data-execution_count="15">
+<div id="e90a6858" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort by deadline</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>sorted_tasks <span class="op">=</span> tasks.sort_values(<span class="st">'deadline'</span>)</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -780,7 +780,7 @@ Task 2    Crew Training         3        15                16</code></pre>
 </div>
 </div>
 <p>If you want to access the index of the row, you can use the <code>name</code> attribute to access it. For example, if you want to access the index of the last row, you can use <code>sorted_tasks.iloc[-1].name</code>.</p>
-<div id="141575bb" class="cell" data-execution_count="16">
+<div id="e2c5b48b" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sorted_tasks.iloc[<span class="op">-</span><span class="dv">1</span>].name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Task 2</code></pre>
@@ -789,10 +789,10 @@ Task 2    Crew Training         3        15                16</code></pre>
 <section id="exercise-3.1---apply-earliest-due-date-to-mission-tasks" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-3.1---apply-earliest-due-date-to-mission-tasks">Exercise 3.1 - Apply Earliest Due Date to Mission Tasks</h2>
 <p>Now it is your turn: Apply the EDD algorithm to the <code>mission_tasks</code> DataFrame. Remember, that the EDD algorithm <strong>sorts the tasks by the original deadline</strong> and then loops over the rows, computing the completion time and maximum delay for each task (just like in the example above).</p>
-<div id="e1810bc7" class="cell" data-execution_count="17">
+<div id="3e64b0ed" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="5966bcbb" class="cell" data-execution_count="18">
+<div id="ae3c12f2" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
@@ -808,10 +808,10 @@ Task 2    Crew Training         3        15                16</code></pre>
 <h2 class="anchored" data-anchor-id="exercise-3.2---apply-shortest-processing-time-to-mission-tasks">Exercise 3.2 - Apply Shortest Processing Time to Mission Tasks</h2>
 <p>Now, apply the SPT algorithm to the <code>mission_tasks</code> DataFrame. Remember, that the SPT algorithm <strong>sorts the tasks by duration</strong> and then loops over the rows, computing the completion time and total waiting time for all tasks.</p>
 <p>Compute the sum of the waiting times for all tasks in a variabel called <code>total_waiting_time</code> and compute the completion time of the last task in a variable called <code>completion_time</code>.</p>
-<div id="a1132986" class="cell" data-execution_count="19">
+<div id="9b6c0033" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE BELOW</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="c74f6033" class="cell" data-execution_count="20">
+<div id="58f09af3" class="cell" data-execution_count="20">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test your answer</span></span>
