@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -363,12 +398,19 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#task-options" id="toc-task-options" class="nav-link" data-scroll-target="#task-options">Task Options</a>
+  <li><a href="#pygame-games" id="toc-pygame-games" class="nav-link" data-scroll-target="#pygame-games">Pygame Games</a>
   <ul class="collapse">
-  <li><a href="#stock-price-random-walk-simulator" id="toc-stock-price-random-walk-simulator" class="nav-link" data-scroll-target="#stock-price-random-walk-simulator">1. Stock Price Random Walk Simulator</a></li>
-  <li><a href="#pygame-jump-run-game" id="toc-pygame-jump-run-game" class="nav-link" data-scroll-target="#pygame-jump-run-game">2. Pygame Jump &amp; Run Game</a></li>
-  <li><a href="#interactive-stock-dashboard" id="toc-interactive-stock-dashboard" class="nav-link" data-scroll-target="#interactive-stock-dashboard">3. Interactive Stock Dashboard</a></li>
+  <li><a href="#jump-run-platformer" id="toc-jump-run-platformer" class="nav-link" data-scroll-target="#jump-run-platformer">1. Jump &amp; Run Platformer</a></li>
+  <li><a href="#snake-game" id="toc-snake-game" class="nav-link" data-scroll-target="#snake-game">2. Snake Game</a></li>
+  <li><a href="#flappy-bird-clone" id="toc-flappy-bird-clone" class="nav-link" data-scroll-target="#flappy-bird-clone">3. Flappy Bird Clone</a></li>
+  <li><a href="#space-invaders" id="toc-space-invaders" class="nav-link" data-scroll-target="#space-invaders">4. Space Invaders</a></li>
+  <li><a href="#tic-tac-toe-with-ai" id="toc-tic-tac-toe-with-ai" class="nav-link" data-scroll-target="#tic-tac-toe-with-ai">5. Tic-Tac-Toe with AI</a></li>
+  <li><a href="#receipt-scanner-ocr" id="toc-receipt-scanner-ocr" class="nav-link" data-scroll-target="#receipt-scanner-ocr">6. Receipt Scanner (OCR)</a></li>
+  <li><a href="#interactive-stock-dashboard" id="toc-interactive-stock-dashboard" class="nav-link" data-scroll-target="#interactive-stock-dashboard">7. Interactive Stock Dashboard</a></li>
+  <li><a href="#grade-calculator-dashboard" id="toc-grade-calculator-dashboard" class="nav-link" data-scroll-target="#grade-calculator-dashboard">8. Grade Calculator Dashboard</a></li>
+  <li><a href="#your-own-idea" id="toc-your-own-idea" class="nav-link" data-scroll-target="#your-own-idea">9. Your Own Idea!</a></li>
   </ul></li>
+  <li><a href="#getting-started-tips" id="toc-getting-started-tips" class="nav-link" data-scroll-target="#getting-started-tips">Getting Started Tips</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/edit/main/tutorials/tut_05_03_free.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/blob/main/tutorials/tut_05_03_free.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Programming-Everyday-Decisions/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="tut_05_03_free.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="tut_05_03_free.ipynb" download="tut_05_03_free.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
@@ -397,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>This is the final tutorial of the course. You’ll have the opportunity to work on a task of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Don’t worry, you will see how easy it is to get going with AI!</p>
+<p>This is the final tutorial of the course. You’ll have the opportunity to work on a project of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Choose one of the projects below based on your interests! In the last session, you will then briefly demo your project in order to pass the course. We only expect prototypes here and it is perfectly fine if things still have bugs or are not fully functional. We just expect you to put some time 2-3 hours outside of class in your project in order to pass. Make it as good as you can!</p>
 <div class="callout callout-style-simple callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -408,59 +450,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>We recommend developing these projects in standalone <code>.py</code> files rather than notebooks. Use an AI-assisted editor like Cursor to help with implementation.</p>
+<p>We recommend developing these projects in standalone <code>.py</code> files rather than notebooks. Use an AI-assisted editor like VS Code to help with implementation.</p>
 </div>
 </div>
-</section>
-<section id="task-options" class="level1">
-<h1>Task Options</h1>
-<section id="stock-price-random-walk-simulator" class="level2">
-<h2 class="anchored" data-anchor-id="stock-price-random-walk-simulator">1. Stock Price Random Walk Simulator</h2>
-<p>Create a program that simulates and visualizes stock price random walks. The program should:</p>
-<ul>
-<li>Accept user input for:
-<ul>
-<li>Initial stock price</li>
-<li>Simulation timeframe (days)</li>
-<li>Daily price volatility (standard deviation)</li>
-</ul></li>
-<li>Generate 5 different random walk scenarios</li>
-<li>Visualize the price trajectories on a single plot</li>
-</ul>
-<p><strong>Key libraries</strong>: <code>numpy</code>, <code>matplotlib</code></p>
-</section>
-<section id="pygame-jump-run-game" class="level2">
-<h2 class="anchored" data-anchor-id="pygame-jump-run-game">2. Pygame Jump &amp; Run Game</h2>
-<p>Develop an interactive platformer game using Pygame. Suggested development approach:</p>
-<ol type="1">
-<li>Start with a basic game skeleton (player, platform, basic physics)</li>
-<li>Incrementally add features:
-<ul>
-<li>Player movement and jumping mechanics</li>
-<li>Collision detection</li>
-<li>Obstacles and collectibles</li>
-<li>Score tracking</li>
-<li>Visual improvements</li>
-</ul></li>
-</ol>
-<p><strong>Key library</strong>: <code>pygame</code></p>
-</section>
-<section id="interactive-stock-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-stock-dashboard">3. Interactive Stock Dashboard</h2>
-<p>Build a web-based dashboard for stock market analysis using Streamlit. Required features:</p>
-<ol type="1">
-<li>Stock price data visualization using <code>yfinance</code></li>
-<li>Interactive date range selection</li>
-<li>Basic price statistics</li>
-</ol>
-<p><strong>Optional enhancements:</strong></p>
-<ul>
-<li>Multi-stock comparison view</li>
-<li>Technical indicators (Moving averages, RSI, etc.)</li>
-<li>Stock selector dropdown</li>
-<li>Price prediction features</li>
-</ul>
-<p><strong>Key libraries</strong>: <code>streamlit</code>, <code>yfinance</code>, <code>pandas</code>, <code>plotly</code></p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -471,14 +463,151 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For each project, start by breaking down the requirements into smaller tasks. Use these as the basis for your AI prompts to generate initial code structure and implementations.</p>
+<p>For each project, start by breaking down the requirements into smaller tasks. Use these as the basis for your AI prompts to generate initial code structure and implementations. Don’t try to build everything at once - iterate!</p>
 </div>
 </div>
-<hr>
-<p><em>Congratulations on completing the tutorials! We hope you enjoyed the course and the tutorials and learned a lot!</em></p>
-
-
 </section>
+<section id="pygame-games" class="level1">
+<h1>Pygame Games</h1>
+<p>These projects use the <code>pygame</code> library to create interactive graphical games.</p>
+<section id="jump-run-platformer" class="level2">
+<h2 class="anchored" data-anchor-id="jump-run-platformer">1. Jump &amp; Run Platformer</h2>
+<p>Create a side-scrolling platformer game where the player jumps between platforms, avoids obstacles, and collects items.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Player character with left/right movement and jumping</li>
+<li>Gravity and collision detection with platforms</li>
+<li>Obstacles that end the game on contact</li>
+<li>Collectible items that increase score</li>
+<li>Score display and game over screen</li>
+</ul>
+<p><strong>Key library:</strong> <code>pygame</code></p>
+</section>
+<section id="snake-game" class="level2">
+<h2 class="anchored" data-anchor-id="snake-game">2. Snake Game</h2>
+<p>Build the classic Snake game where the snake grows longer each time it eats food.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Snake that moves in four directions (arrow keys)</li>
+<li>Food that appears at random positions</li>
+<li>Snake grows when eating food</li>
+<li>Game over when hitting walls or itself</li>
+<li>Score tracking based on snake length</li>
+</ul>
+<p><strong>Key library:</strong> <code>pygame</code></p>
+</section>
+<section id="flappy-bird-clone" class="level2">
+<h2 class="anchored" data-anchor-id="flappy-bird-clone">3. Flappy Bird Clone</h2>
+<p>Create a game where a bird flies through gaps in pipes by tapping/clicking to stay airborne.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Bird that falls due to gravity</li>
+<li>Click/spacebar to make the bird “flap” upward</li>
+<li>Pipes that scroll from right to left with gaps</li>
+<li>Collision detection with pipes and ground</li>
+<li>High score tracking</li>
+</ul>
+<p><strong>Key library:</strong> <code>pygame</code></p>
+</section>
+<section id="space-invaders" class="level2">
+<h2 class="anchored" data-anchor-id="space-invaders">4. Space Invaders</h2>
+<p>Build a classic arcade shooter where you defend against descending alien invaders.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Player ship that moves left/right at the bottom</li>
+<li>Shooting projectiles upward</li>
+<li>Rows of aliens that move and descend</li>
+<li>Aliens shooting back at the player</li>
+<li>Multiple waves with increasing difficulty</li>
+</ul>
+<p><strong>Key library:</strong> <code>pygame</code></p>
+</section>
+<section id="tic-tac-toe-with-ai" class="level2">
+<h2 class="anchored" data-anchor-id="tic-tac-toe-with-ai">5. Tic-Tac-Toe with AI</h2>
+<p>Build a Tic-Tac-Toe game where you play against an unbeatable AI opponent.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>3x3 game board displayed in terminal</li>
+<li>Player makes moves by entering positions (1-9)</li>
+<li>AI opponent using minimax algorithm</li>
+<li>Win/lose/draw detection</li>
+<li>Option to play again</li>
+</ul>
+<p><strong>Key library:</strong> Built-in Python only (no external libraries needed)</p>
+</section>
+<section id="receipt-scanner-ocr" class="level2">
+<h2 class="anchored" data-anchor-id="receipt-scanner-ocr">6. Receipt Scanner (OCR)</h2>
+<p>Build a tool that extracts text from receipt images and organizes the data.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Load an image file (photo of a receipt)</li>
+<li>Use OCR to extract text from the image</li>
+<li>Parse extracted text for key info (total, date, store name)</li>
+<li>Display results and export to CSV</li>
+<li>Handle multiple receipts</li>
+</ul>
+<p><strong>Key libraries:</strong> <code>pytesseract</code>, <code>Pillow</code>, <code>pandas</code></p>
+<p><strong>Note:</strong> You’ll need to install Tesseract OCR on your system separately.</p>
+</section>
+<section id="interactive-stock-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-stock-dashboard">7. Interactive Stock Dashboard</h2>
+<p>Build a web dashboard for exploring stock market data.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Input field to enter stock ticker symbols</li>
+<li>Fetch historical price data using yfinance</li>
+<li>Interactive price chart with date range selection</li>
+<li>Basic statistics (high, low, average, % change)</li>
+<li>Compare multiple stocks on one chart</li>
+</ul>
+<p><strong>Key libraries:</strong> <code>streamlit</code>, <code>yfinance</code>, <code>plotly</code></p>
+<p><strong>Run with:</strong> <code>uv run streamlit run your_app.py</code></p>
+</section>
+<section id="grade-calculator-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="grade-calculator-dashboard">8. Grade Calculator Dashboard</h2>
+<p>Build a dashboard to track your grades and calculate your average grade.</p>
+<p><strong>Features to implement:</strong></p>
+<ul>
+<li>Input courses with names and credit hours</li>
+<li>Add assignments with grades and weights per course</li>
+<li>Calculate current grade for each course</li>
+<li>Visualize grade distribution with charts</li>
+<li>“What-if” calculator: what grade do I need on the final?</li>
+</ul>
+<p><strong>Key libraries:</strong> <code>streamlit</code>, <code>pandas</code>, <code>plotly</code></p>
+<p><strong>Run with:</strong> <code>uv run streamlit run your_app.py</code></p>
+</section>
+<section id="your-own-idea" class="level2">
+<h2 class="anchored" data-anchor-id="your-own-idea">9. Your Own Idea!</h2>
+<p><strong>Come up with an idea of your own!</strong></p>
+</section>
+</section>
+<section id="getting-started-tips" class="level1">
+<h1>Getting Started Tips</h1>
+<ol type="1">
+<li><strong>Pick one project</strong> that interests you most</li>
+<li><strong>Break it down</strong> into small, manageable pieces</li>
+<li><strong>Start simple</strong> - get the basic version working first</li>
+<li><strong>Use AI</strong> to help with specific parts</li>
+<li><strong>Iterate</strong> - add features one at a time</li>
+</ol>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Installing Libraries
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember to install required libraries using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add pygame  <span class="co"># or any other library</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<p><em>Congratulations on completing the tutorials! We hope you enjoyed the course so far and learned a lot!</em></p>
+
+
 </section>
 
 </main> <!-- /main -->

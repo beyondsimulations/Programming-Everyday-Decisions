@@ -4,29 +4,73 @@
     "href": "tutorials/tut_05_03_free.html",
     "title": "Tutorial V.III - Free Tasks",
     "section": "",
-    "text": "This is the final tutorial of the course. You’ll have the opportunity to work on a task of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Don’t worry, you will see how easy it is to get going with AI!\n\n\n\n\n\n\nTipDevelopment Environment\n\n\n\nWe recommend developing these projects in standalone .py files rather than notebooks. Use an AI-assisted editor like Cursor to help with implementation.",
+    "text": "This is the final tutorial of the course. You’ll have the opportunity to work on a project of your choice, implementing it with the tools learned throughout this course and leveraging AI assistance. Choose one of the projects below based on your interests! In the last session, you will then briefly demo your project in order to pass the course. We only expect prototypes here and it is perfectly fine if things still have bugs or are not fully functional. We just expect you to put some time 2-3 hours outside of class in your project in order to pass. Make it as good as you can!\n\n\n\n\n\n\nTipDevelopment Environment\n\n\n\nWe recommend developing these projects in standalone .py files rather than notebooks. Use an AI-assisted editor like VS Code to help with implementation.\n\n\n\n\n\n\n\n\nNoteAI Assistance\n\n\n\nFor each project, start by breaking down the requirements into smaller tasks. Use these as the basis for your AI prompts to generate initial code structure and implementations. Don’t try to build everything at once - iterate!",
     "crumbs": [
       "05 Randomness",
       "15 - Free Tasks"
     ]
   },
   {
-    "objectID": "tutorials/tut_05_03_free.html#stock-price-random-walk-simulator",
-    "href": "tutorials/tut_05_03_free.html#stock-price-random-walk-simulator",
+    "objectID": "tutorials/tut_05_03_free.html#jump-run-platformer",
+    "href": "tutorials/tut_05_03_free.html#jump-run-platformer",
     "title": "Tutorial V.III - Free Tasks",
-    "section": "1. Stock Price Random Walk Simulator",
-    "text": "1. Stock Price Random Walk Simulator\nCreate a program that simulates and visualizes stock price random walks. The program should:\n\nAccept user input for:\n\nInitial stock price\nSimulation timeframe (days)\nDaily price volatility (standard deviation)\n\nGenerate 5 different random walk scenarios\nVisualize the price trajectories on a single plot\n\nKey libraries: numpy, matplotlib",
+    "section": "1. Jump & Run Platformer",
+    "text": "1. Jump & Run Platformer\nCreate a side-scrolling platformer game where the player jumps between platforms, avoids obstacles, and collects items.\nFeatures to implement:\n\nPlayer character with left/right movement and jumping\nGravity and collision detection with platforms\nObstacles that end the game on contact\nCollectible items that increase score\nScore display and game over screen\n\nKey library: pygame",
     "crumbs": [
       "05 Randomness",
       "15 - Free Tasks"
     ]
   },
   {
-    "objectID": "tutorials/tut_05_03_free.html#pygame-jump-run-game",
-    "href": "tutorials/tut_05_03_free.html#pygame-jump-run-game",
+    "objectID": "tutorials/tut_05_03_free.html#snake-game",
+    "href": "tutorials/tut_05_03_free.html#snake-game",
     "title": "Tutorial V.III - Free Tasks",
-    "section": "2. Pygame Jump & Run Game",
-    "text": "2. Pygame Jump & Run Game\nDevelop an interactive platformer game using Pygame. Suggested development approach:\n\nStart with a basic game skeleton (player, platform, basic physics)\nIncrementally add features:\n\nPlayer movement and jumping mechanics\nCollision detection\nObstacles and collectibles\nScore tracking\nVisual improvements\n\n\nKey library: pygame",
+    "section": "2. Snake Game",
+    "text": "2. Snake Game\nBuild the classic Snake game where the snake grows longer each time it eats food.\nFeatures to implement:\n\nSnake that moves in four directions (arrow keys)\nFood that appears at random positions\nSnake grows when eating food\nGame over when hitting walls or itself\nScore tracking based on snake length\n\nKey library: pygame",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "tutorials/tut_05_03_free.html#flappy-bird-clone",
+    "href": "tutorials/tut_05_03_free.html#flappy-bird-clone",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "3. Flappy Bird Clone",
+    "text": "3. Flappy Bird Clone\nCreate a game where a bird flies through gaps in pipes by tapping/clicking to stay airborne.\nFeatures to implement:\n\nBird that falls due to gravity\nClick/spacebar to make the bird “flap” upward\nPipes that scroll from right to left with gaps\nCollision detection with pipes and ground\nHigh score tracking\n\nKey library: pygame",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "tutorials/tut_05_03_free.html#space-invaders",
+    "href": "tutorials/tut_05_03_free.html#space-invaders",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "4. Space Invaders",
+    "text": "4. Space Invaders\nBuild a classic arcade shooter where you defend against descending alien invaders.\nFeatures to implement:\n\nPlayer ship that moves left/right at the bottom\nShooting projectiles upward\nRows of aliens that move and descend\nAliens shooting back at the player\nMultiple waves with increasing difficulty\n\nKey library: pygame",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "tutorials/tut_05_03_free.html#tic-tac-toe-with-ai",
+    "href": "tutorials/tut_05_03_free.html#tic-tac-toe-with-ai",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "5. Tic-Tac-Toe with AI",
+    "text": "5. Tic-Tac-Toe with AI\nBuild a Tic-Tac-Toe game where you play against an unbeatable AI opponent.\nFeatures to implement:\n\n3x3 game board displayed in terminal\nPlayer makes moves by entering positions (1-9)\nAI opponent using minimax algorithm\nWin/lose/draw detection\nOption to play again\n\nKey library: Built-in Python only (no external libraries needed)",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "tutorials/tut_05_03_free.html#receipt-scanner-ocr",
+    "href": "tutorials/tut_05_03_free.html#receipt-scanner-ocr",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "6. Receipt Scanner (OCR)",
+    "text": "6. Receipt Scanner (OCR)\nBuild a tool that extracts text from receipt images and organizes the data.\nFeatures to implement:\n\nLoad an image file (photo of a receipt)\nUse OCR to extract text from the image\nParse extracted text for key info (total, date, store name)\nDisplay results and export to CSV\nHandle multiple receipts\n\nKey libraries: pytesseract, Pillow, pandas\nNote: You’ll need to install Tesseract OCR on your system separately.",
     "crumbs": [
       "05 Randomness",
       "15 - Free Tasks"
@@ -36,8 +80,30 @@
     "objectID": "tutorials/tut_05_03_free.html#interactive-stock-dashboard",
     "href": "tutorials/tut_05_03_free.html#interactive-stock-dashboard",
     "title": "Tutorial V.III - Free Tasks",
-    "section": "3. Interactive Stock Dashboard",
-    "text": "3. Interactive Stock Dashboard\nBuild a web-based dashboard for stock market analysis using Streamlit. Required features:\n\nStock price data visualization using yfinance\nInteractive date range selection\nBasic price statistics\n\nOptional enhancements:\n\nMulti-stock comparison view\nTechnical indicators (Moving averages, RSI, etc.)\nStock selector dropdown\nPrice prediction features\n\nKey libraries: streamlit, yfinance, pandas, plotly\n\n\n\n\n\n\nNoteAI Assistance\n\n\n\nFor each project, start by breaking down the requirements into smaller tasks. Use these as the basis for your AI prompts to generate initial code structure and implementations.\n\n\n\nCongratulations on completing the tutorials! We hope you enjoyed the course and the tutorials and learned a lot!",
+    "section": "7. Interactive Stock Dashboard",
+    "text": "7. Interactive Stock Dashboard\nBuild a web dashboard for exploring stock market data.\nFeatures to implement:\n\nInput field to enter stock ticker symbols\nFetch historical price data using yfinance\nInteractive price chart with date range selection\nBasic statistics (high, low, average, % change)\nCompare multiple stocks on one chart\n\nKey libraries: streamlit, yfinance, plotly\nRun with: uv run streamlit run your_app.py",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "tutorials/tut_05_03_free.html#grade-calculator-dashboard",
+    "href": "tutorials/tut_05_03_free.html#grade-calculator-dashboard",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "8. Grade Calculator Dashboard",
+    "text": "8. Grade Calculator Dashboard\nBuild a dashboard to track your grades and calculate your average grade.\nFeatures to implement:\n\nInput courses with names and credit hours\nAdd assignments with grades and weights per course\nCalculate current grade for each course\nVisualize grade distribution with charts\n“What-if” calculator: what grade do I need on the final?\n\nKey libraries: streamlit, pandas, plotly\nRun with: uv run streamlit run your_app.py",
+    "crumbs": [
+      "05 Randomness",
+      "15 - Free Tasks"
+    ]
+  },
+  {
+    "objectID": "tutorials/tut_05_03_free.html#your-own-idea",
+    "href": "tutorials/tut_05_03_free.html#your-own-idea",
+    "title": "Tutorial V.III - Free Tasks",
+    "section": "9. Your Own Idea!",
+    "text": "9. Your Own Idea!\nCome up with an idea of your own!",
     "crumbs": [
       "05 Randomness",
       "15 - Free Tasks"
@@ -487,14 +553,14 @@
     "href": "lectures/tut_05_01_presentation.html#training-llms",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Training LLMs",
-    "text": "Training LLMs\n\nImagine learning a language by reading millions of books\nLearns patterns in how words and ideas connect via tokens\nInterconnected nodes with weights representing patterns\nDuring training, these weights are adjusted\nOnce trained, applying them takes much less ressources\n\n\n\n\n\n\n\n\nTip\n\n\nUsing a trained model is called inference."
+    "text": "Training LLMs\n\nImagine learning a language by reading millions of books\nLearns patterns in how words and ideas connect via tokens\nInterconnected nodes with weights representing patterns\nDuring training, these weights are adjusted\nOnce trained, applying them takes much less ressources\n\n\n\n\n\n\n\n\nUsing a trained model is called inference."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#pattern-recognition",
     "href": "lectures/tut_05_01_presentation.html#pattern-recognition",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Pattern Recognition",
-    "text": "Pattern Recognition\n\nNot like a search engine!\nWhen asked, it looks for relevant patterns it learned\nLike having a huge library in its “memory” to draw from\nIt can find patterns between concepts and your question\nKnows only limited text at once (context window)\n\n\n\n\n\n\n\n\nWarning\n\n\nManaging context windows is crucial!"
+    "text": "Pattern Recognition\n\nNot like a search engine!\nWhen asked, it looks for relevant patterns it learned\nLike having a huge library in its “memory” to draw from\nIt can find patterns between concepts and your question\nKnows only limited text at once (context window)\n\n\n\n\n\n\n\n\nManaging context windows is crucial!"
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#probability-based-responses",
@@ -515,7 +581,7 @@
     "href": "lectures/tut_05_01_presentation.html#impact-on-jobs",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Impact on Jobs",
-    "text": "Impact on Jobs\n\nQuestion: What do you think about their impact on jobs?\nQuestion: What are the implications for us?\nQuestion: Can we use them to our advantage?\n\n\n\n\n\n\n\n\nWarning\n\n\nIf you use free models, be aware that your prompts are going to be used by the providers and are not private. But for learning and experimenting, this should be no issue."
+    "text": "Impact on Jobs\n\nQuestion: What do you think about their impact on jobs?\nQuestion: What are the implications for us?\nQuestion: Can we use them to our advantage?\n\n\n\n\n\n\n\n\nIf you use free models, be aware that your prompts are going to be used by the providers and are not private. But for learning and experimenting, this should be no issue."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#a-great-overview-by-3blue1brown",
@@ -529,7 +595,7 @@
     "href": "lectures/tut_05_01_presentation.html#what-is-github-copilot",
     "title": "Tutorial V.I - Programming with AI",
     "section": "What is GitHub Copilot?",
-    "text": "What is GitHub Copilot?\nGitHub Copilot is an AI pair programmer that helps you write code faster and with less effort.\n\nThink of it as:\n\nAn autocomplete for entire lines or blocks of code\nA coding assistant that understands context\nA learning tool that shows you coding patterns\n\n\n\n\n\n\n\n\n\nNote\n\n\nCopilot uses AI trained on billions of lines of public code to suggest completions.\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThere are alternative like Zed or Cursor, but you can use Copilot for free as student."
+    "text": "What is GitHub Copilot?\nGitHub Copilot is an AI pair programmer that helps you write code faster and with less effort.\n\nThink of it as:\n\nAn autocomplete for entire lines or blocks of code\nA coding assistant that understands context\nA learning tool that shows you coding patterns\n\n\n\n\n\n\n\n\n\nCopilot uses AI trained on billions of lines of public code to suggest completions.\n\n\n\n\n\n\n\n\n\n\n\nThere are alternative like Zed or Cursor, but you can use Copilot for free as student."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#used-autocomplete-before",
@@ -543,7 +609,7 @@
     "href": "lectures/tut_05_01_presentation.html#why-use-copilot",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Why Use Copilot?",
-    "text": "Why Use Copilot?\nBenefits you while learning and working with Python:\n\nFaster coding: Less time typing boilerplate code\nLearn patterns: See how experienced programmers code\nUnderstand syntax: Get correct syntax without memorizing\nStay in flow: Focus on logic, not syntax errors\n\n\n\n\n\n\n\n\nTip\n\n\nEspecially helpful when you know WHAT you want to do but forget HOW to do it."
+    "text": "Why Use Copilot?\nBenefits you while learning and working with Python:\n\nFaster coding: Less time typing boilerplate code\nLearn patterns: See how experienced programmers code\nUnderstand syntax: Get correct syntax without memorizing\nStay in flow: Focus on logic, not syntax errors\n\n\n\n\n\n\n\n\nEspecially helpful when you know WHAT you want to do but forget HOW to do it."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#when-should-you-use-copilot",
@@ -564,28 +630,28 @@
     "href": "lectures/tut_05_01_presentation.html#accept-without-reading",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Accept without reading?",
-    "text": "Accept without reading?\n\nCopilot might suggest code that:\n\nWorks but uses concepts you haven’t learned yet\nContains subtle bugs or edge cases\nDoesn’t match your specific requirements\nUses inefficient approaches\nIntroduce dangerous code in your project\n\n\n\n\n\n\n\n\n\nWarning\n\n\nDangerous code can lead to security vulnerabilities, data loss, or other issues. In the context of this lecture it should be no issue, but in companies it can be one!"
+    "text": "Accept without reading?\n\nCopilot might suggest code that:\n\nWorks but uses concepts you haven’t learned yet\nContains subtle bugs or edge cases\nDoesn’t match your specific requirements\nUses inefficient approaches\nIntroduce dangerous code in your project\n\n\n\n\n\n\n\n\n\nDangerous code can lead to security vulnerabilities, data loss, or other issues. In the context of this lecture it should be no issue, but in companies it can be one!"
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#my-take-just-be-careful-ok",
     "href": "lectures/tut_05_01_presentation.html#my-take-just-be-careful-ok",
     "title": "Tutorial V.I - Programming with AI",
     "section": "My take: Just be careful, ok?",
-    "text": "My take: Just be careful, ok?\nYour code, your responsibility:\n\nRead the suggestion carefully\nUnderstand what it does\nTest it with examples\nModify if needed\n\n\n\n\n\n\n\n\nWarning\n\n\nDon’t accept code blindly, especially later if things are more complicated."
+    "text": "My take: Just be careful, ok?\nYour code, your responsibility:\n\nRead the suggestion carefully\nUnderstand what it does\nTest it with examples\nModify if needed\n\n\n\n\n\n\n\n\nDon’t accept code blindly, especially later if things are more complicated."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#get-free-access",
     "href": "lectures/tut_05_01_presentation.html#get-free-access",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Get Free Access",
-    "text": "Get Free Access\nGitHub Student Developer Pack gives you free Copilot access!\n\n\nGo to education.github.com/pack\nSign up with your university email\nVerify your student status\nWait for approval (usually 1-2 days)\nLogin into your account in VS Code\n\n\n\n\n\n\n\n\n\nNote\n\n\nYou’ll need a GitHub account. Create one at github.com if you don’t have one."
+    "text": "Get Free Access\nGitHub Student Developer Pack gives you free Copilot access!\n\n\nGo to education.github.com/pack\nSign up with your university email\nVerify your student status\nWait for approval (usually 1-2 days)\nLogin into your account in VS Code\n\n\n\n\n\n\n\n\n\nYou’ll need a GitHub account. Create one at github.com if you don’t have one."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#verifying-copilot-is-working",
     "href": "lectures/tut_05_01_presentation.html#verifying-copilot-is-working",
     "title": "Tutorial V.I - Programming with AI",
     "section": "Verifying Copilot is Working",
-    "text": "Verifying Copilot is Working\n\nCreate a new Python file (.py) and type something\nWait 1-2 seconds\n\n\nIf working, you’ll see:\n\nGray “ghost text” suggesting code\nPress Tab to accept\nPress Esc to reject\n\n\n\n\n\n\n\n\n\nTip\n\n\nTry to get copilot running on your own until next session."
+    "text": "Verifying Copilot is Working\n\nCreate a new Python file (.py) and type something\nWait 1-2 seconds\n\n\nIf working, you’ll see:\n\nGray “ghost text” suggesting code\nPress Tab to accept\nPress Esc to reject\n\n\n\n\n\n\n\n\n\nTry to get copilot running on your own until next session."
   },
   {
     "objectID": "lectures/tut_05_01_presentation.html#key-takeaways",
@@ -914,7 +980,7 @@
     "href": "lectures/lec_05_presentation.html#using-randomness",
     "title": "Lecture V - Randomness",
     "section": "Using Randomness",
-    "text": "Using Randomness\nRandomness is a fundamental aspect of the world\n\n\nTesting: Generate random inputs to find bugs\nOptimization: Escape local optima in complex problems\nSimulation: Model complex systems with uncertainty\nSecurity: Make systems unpredictable to attackers\nFairness: Eliminate bias in selection processes\n\n\n\n\n\n\n\n\n\nImportant\n\n\nRandomness is not just about generating random numbers!"
+    "text": "Using Randomness\nRandomness is a fundamental aspect of the world\n\n\nTesting: Generate random inputs to find bugs\nOptimization: Escape local optima in complex problems\nSimulation: Model complex systems with uncertainty\nSecurity: Make systems unpredictable to attackers\nFairness: Eliminate bias in selection processes\n\n\n\n\n\n\n\n\n\nRandomness is not just about generating random numbers!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#randomness-and-everyday-life",
@@ -949,14 +1015,14 @@
     "href": "lectures/lec_05_presentation.html#data-science-research",
     "title": "Lecture V - Randomness",
     "section": "Data Science & Research",
-    "text": "Data Science & Research\n\nWeather forecasting: Uses randomness to model uncertainty\nStock algorithms: Add randomness to avoid predictable patterns\nSelf-driving cars: Random elements for natural-feeling behavior\nRandom sampling: Ensures unbiased research results\nA/B testing: Random assignment to treatment groups\n\n\n\n\n\n\n\n\nNote\n\n\nRandomness is everywhere around us!"
+    "text": "Data Science & Research\n\nWeather forecasting: Uses randomness to model uncertainty\nStock algorithms: Add randomness to avoid predictable patterns\nSelf-driving cars: Random elements for natural-feeling behavior\nRandom sampling: Ensures unbiased research results\nA/B testing: Random assignment to treatment groups\n\n\n\n\n\n\n\n\nRandomness is everywhere around us!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#randomness-in-algorithms",
     "href": "lectures/lec_05_presentation.html#randomness-in-algorithms",
     "title": "Lecture V - Randomness",
     "section": "Randomness in Algorithms",
-    "text": "Randomness in Algorithms\nWhy do computer scientists love randomness?\n\nEfficiency: Often faster than deterministic approaches\nSimplicity: Can solve complex problems with simple code\nRobustness: Avoids worst-case scenarios\nApproximation: “Good enough” solutions in reasonable time\n\n\n\n\n\n\n\n\nImportant\n\n\nKey Trade-off: Perfect vs. “Good Enough” solutions"
+    "text": "Randomness in Algorithms\nWhy do computer scientists love randomness?\n\nEfficiency: Often faster than deterministic approaches\nSimplicity: Can solve complex problems with simple code\nRobustness: Avoids worst-case scenarios\nApproximation: “Good enough” solutions in reasonable time\n\n\n\n\n\n\n\n\nKey Trade-off: Perfect vs. “Good Enough” solutions"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#types-of-randomness",
@@ -970,7 +1036,7 @@
     "href": "lectures/lec_05_presentation.html#limits-of-computation",
     "title": "Lecture V - Randomness",
     "section": "Limits of Computation",
-    "text": "Limits of Computation\nQuestion: How many possible combinations exist in a shuffled deck of cards?\n\nimport math\nprint(math.factorial(52))\n\n\n\n80658175170943878571660636856403766975289505440883277824000000000000\n\n\n\n\n\n\n\n\n\nImportant\n\n\nComputing and evaluating all possible combinations is not feasible!"
+    "text": "Limits of Computation\nQuestion: How many possible combinations exist in a shuffled deck of cards?\n\nimport math\nprint(math.factorial(52))\n\n\n\n80658175170943878571660636856403766975289505440883277824000000000000\n\n\n\n\n\n\n\n\n\nComputing and evaluating all possible combinations is not feasible!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#computational-limits",
@@ -1005,7 +1071,7 @@
     "href": "lectures/lec_05_presentation.html#time-and-space-requirements",
     "title": "Lecture V - Randomness",
     "section": "Time and Space Requirements",
-    "text": "Time and Space Requirements\n\nFor 20 cities: 20! = 2.4 quintillion routes\nWould take 77 billion years at 1ms per check!\nTime complexity grows factorially\nMemory requirements increase with problem size\n\n\n\n\n\n\n\n\nImportant\n\n\nNot feasible for real-world problems!"
+    "text": "Time and Space Requirements\n\nFor 20 cities: 20! = 2.4 quintillion routes\nWould take 77 billion years at 1ms per check!\nTime complexity grows factorially\nMemory requirements increase with problem size\n\n\n\n\n\n\n\n\nNot feasible for real-world problems!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#greedy-algorithm",
@@ -1061,7 +1127,7 @@
     "href": "lectures/lec_05_presentation.html#key-considerations",
     "title": "Lecture V - Randomness",
     "section": "Key Considerations",
-    "text": "Key Considerations\n\nIndividual stories: Powerful but potentially misleading\nStatistics: Comprehensive but can miss nuance\nHidden diversity: Important subgroups may be overlooked\nSmall policy changes can have cascading effects\n\n\n\n\n\n\n\n\nImportant\n\n\nBut that’s not all! We also need to measure success and failure!"
+    "text": "Key Considerations\n\nIndividual stories: Powerful but potentially misleading\nStatistics: Comprehensive but can miss nuance\nHidden diversity: Important subgroups may be overlooked\nSmall policy changes can have cascading effects\n\n\n\n\n\n\n\n\nBut that’s not all! We also need to measure success and failure!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#measuring-success",
@@ -1096,7 +1162,7 @@
     "href": "lectures/lec_05_presentation.html#quick-poll",
     "title": "Lecture V - Randomness",
     "section": "Quick Poll",
-    "text": "Quick Poll\nQuestion: Which would you prefer?\n\n100% chance of winning 50 EUR\n50% chance of winning 120 EUR\n\n\n\n\n\n\n\n\nTip\n\n\nAnswer depends on your risk aversion!"
+    "text": "Quick Poll\nQuestion: Which would you prefer?\n\n100% chance of winning 50 EUR\n50% chance of winning 120 EUR\n\n\n\n\n\n\n\n\nAnswer depends on your risk aversion!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#decisions-under-uncertainty",
@@ -1110,14 +1176,14 @@
     "href": "lectures/lec_05_presentation.html#good-enough-solutions",
     "title": "Lecture V - Randomness",
     "section": "“Good Enough” Solutions",
-    "text": "“Good Enough” Solutions\n\nPerfect is enemy of good\n\nRemember Monte Carlo methods: approximations work\nComplete analysis often impossible\nPerfect information is rare\n\n\n\n\n\n\n\n\n\nTip\n\n\nMany real-world problems benefit from embracing uncertainty rather than fighting it!"
+    "text": "“Good Enough” Solutions\n\nPerfect is enemy of good\n\nRemember Monte Carlo methods: approximations work\nComplete analysis often impossible\nPerfect information is rare\n\n\n\n\n\n\n\n\n\nMany real-world problems benefit from embracing uncertainty rather than fighting it!"
   },
   {
     "objectID": "lectures/lec_05_presentation.html#opportunity-costs",
     "href": "lectures/lec_05_presentation.html#opportunity-costs",
     "title": "Lecture V - Randomness",
     "section": "Opportunity Costs",
-    "text": "Opportunity Costs\n\nConsider opportunity costs\n\nQuick approximations enable faster decisions\nBalance accuracy vs. computation time\nRandom sampling vs. complete enumeration\n\n\n\n\n\n\n\n\n\nTip\n\n\nMany problems benefit from fast, good-enough solutions rather than perfect ones."
+    "text": "Opportunity Costs\n\nConsider opportunity costs\n\nQuick approximations enable faster decisions\nBalance accuracy vs. computation time\nRandom sampling vs. complete enumeration\n\n\n\n\n\n\n\n\n\nMany problems benefit from fast, good-enough solutions rather than perfect ones."
   },
   {
     "objectID": "lectures/lec_05_presentation.html#section",
@@ -1131,7 +1197,7 @@
     "href": "lectures/lec_05_presentation.html#after-the-break-randomness",
     "title": "Lecture V - Randomness",
     "section": "After the break — Randomness",
-    "text": "After the break — Randomness\n\nProgramming session in our new notebooks\nHow to translate the idea into code and experiments\nDifferent scheduling algorithms applied to problems\n\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for today’s lecture!\nWe’ve covered the basics of randomness and its applications. In the upcoming tutorials, we’ll learn how to use LLMs to generate code with randomness."
+    "text": "After the break — Randomness\n\nProgramming session in our new notebooks\nHow to translate the idea into code and experiments\nDifferent scheduling algorithms applied to problems\n\n\n\n\n\n\n\n\nThat’s it for today’s lecture!\nWe’ve covered the basics of randomness and its applications. In the upcoming tutorials, we’ll learn how to use LLMs to generate code with randomness."
   },
   {
     "objectID": "lectures/lec_05_presentation.html#interesting-literature-to-start",
@@ -1145,7 +1211,7 @@
     "href": "lectures/lec_05_presentation.html#books-on-programming",
     "title": "Lecture V - Randomness",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_05_presentation.html#more-literature",
@@ -1950,7 +2016,7 @@
     "href": "lectures/lec_03_presentation.html#books-on-programming",
     "title": "Lecture III - Caching",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_03_presentation.html#more-literature",
@@ -2460,7 +2526,7 @@
     "href": "lectures/lec_01_presentation.html#the-secretary-problem",
     "title": "Lecture I - Optimal Stopping",
     "section": "The Secretary Problem",
-    "text": "The Secretary Problem\n\nImagine you’re hiring a secretary\nYou must interview candidates one by one\nNow, you must decide: hire or continue searching\nOnce you reject a candidate, you cannot go back\nHow to maximize chance of selecting the best candidate?\n\n\n\n\n\n\n\n\nNote\n\n\nThe name is a bit misleading, as the problem is not about hiring a secretary, but about finding the best candidate. It comes from the 1960s and thus a little outdated."
+    "text": "The Secretary Problem\n\nImagine you’re hiring a secretary\nYou must interview candidates one by one\nNow, you must decide: hire or continue searching\nOnce you reject a candidate, you cannot go back\nHow to maximize chance of selecting the best candidate?\n\n\n\n\n\n\n\n\nThe name is a bit misleading, as the problem is not about hiring a secretary, but about finding the best candidate. It comes from the 1960s and thus a little outdated."
   },
   {
     "objectID": "lectures/lec_01_presentation.html#basic-setup",
@@ -2516,7 +2582,7 @@
     "href": "lectures/lec_01_presentation.html#computing-the-number",
     "title": "Lecture I - Optimal Stopping",
     "section": "Computing the number",
-    "text": "Computing the number\n\nimport math\n\npercentage = 1/math.e\nprint(f\"Percentage of options to look at: {percentage:.3f}%\")\n\ncandidates = 20\nlookout_phase = candidates/math.e\nprint(f\"Look at first {lookout_phase:.3f} candidates\")\n\n\n\nPercentage of options to look at: 0.368%\nLook at first 7.358 candidates\n\n\n\n\n\n\n\n\n\nNote\n\n\nNo worries if you don’t understand the code! We are essentialy just using the formula to calculate the percentage of candidates to look at."
+    "text": "Computing the number\n\nimport math\n\npercentage = 1/math.e\nprint(f\"Percentage of options to look at: {percentage:.3f}%\")\n\ncandidates = 20\nlookout_phase = candidates/math.e\nprint(f\"Look at first {lookout_phase:.3f} candidates\")\n\n\n\nPercentage of options to look at: 0.368%\nLook at first 7.358 candidates\n\n\n\n\n\n\n\n\n\nNo worries if you don’t understand the code! We are essentialy just using the formula to calculate the percentage of candidates to look at."
   },
   {
     "objectID": "lectures/lec_01_presentation.html#geometric-distribution",
@@ -2551,7 +2617,7 @@
     "href": "lectures/lec_01_presentation.html#other-versions",
     "title": "Lecture I - Optimal Stopping",
     "section": "Other versions",
-    "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) [^2]\n\n\n\n\n\n\n\n\nNote\n\n\nSide note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!"
+    "text": "Other versions\n\nSelling a house for the best price (“Threshold Rule”)\nStealing with a success probability (“Burglar’s Problem”)\nFinding a parking spot (“Parking Lot Problem”) [^2]\n\n\n\n\n\n\n\n\nSide note for drivers: An increase in occupancy from 90 to 95% doubles the search time for all drivers!"
   },
   {
     "objectID": "lectures/lec_01_presentation.html#building-your-technical-mindset",
@@ -2579,7 +2645,7 @@
     "href": "lectures/lec_01_presentation.html#after-the-break-optimal-stopping",
     "title": "Lecture I - Optimal Stopping",
     "section": "After the break — Optimal Stopping",
-    "text": "After the break — Optimal Stopping\n\nGentle introduction to Python Programming\nWe work in our notebooks on basics and optimal stopping\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for optimal stopping!\nLet’s have a short break and then continue with our first Python programming session."
+    "text": "After the break — Optimal Stopping\n\nGentle introduction to Python Programming\nWe work in our notebooks on basics and optimal stopping\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\n\nThat’s it for optimal stopping!\nLet’s have a short break and then continue with our first Python programming session."
   },
   {
     "objectID": "lectures/lec_01_presentation.html#interesting-literature-to-start",
@@ -2593,7 +2659,7 @@
     "href": "lectures/lec_01_presentation.html#books-on-programming",
     "title": "Lecture I - Optimal Stopping",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_01_presentation.html#more-literature",
@@ -3833,7 +3899,7 @@
     "href": "lectures/lec_00_presentation.html#about-me",
     "title": "Introduction - Programming",
     "section": "About me",
-    "text": "About me\n\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n\n\n\n\n\n\nTip\n\n\nWe really appreciate active participation and interaction!"
+    "text": "About me\n\nField: Optimizing and simulating complex systems\nLanguages: of choice: Julia, Python and Rust\nInterest: Modelling, Simulations, Machine Learning\nTeaching: OR, Algorithms, and Programming\nContact: vlcek@beyondsimulations.com\n\n\n\n\n\n\n\n\nWe really appreciate active participation and interaction!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#agenda",
@@ -3861,7 +3927,7 @@
     "href": "lectures/lec_00_presentation.html#teaching",
     "title": "Introduction - Programming",
     "section": "Teaching",
-    "text": "Teaching\n\nLecture: Presentation and discussion of algorithms related to everyday decision-making\nTutorial: Step-by-step assignments to be solved and discussed together in groups\nDifficulty: Strongly depends on your background and programming experience\n\n\n\n\n\n\n\n\nTip\n\n\nNo worries, we will help you out if you have any questions!"
+    "text": "Teaching\n\nLecture: Presentation and discussion of algorithms related to everyday decision-making\nTutorial: Step-by-step assignments to be solved and discussed together in groups\nDifficulty: Strongly depends on your background and programming experience\n\n\n\n\n\n\n\n\nNo worries, we will help you out if you have any questions!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#passing-the-course",
@@ -3875,14 +3941,14 @@
     "href": "lectures/lec_00_presentation.html#handing-in-assignments",
     "title": "Introduction - Programming",
     "section": "Handing in Assignments",
-    "text": "Handing in Assignments\n\nEach student group submits one solution\nProvide us all working notebooks of the lecture\nHand in is due at the beginning of the next lecture\nAt least 50 % have to be correct to pass\nYou have to pass at least twice\n\n\n\n\n\n\n\n\nTip\n\n\nThis is just in order to provide you with working solutions after each deadline."
+    "text": "Handing in Assignments\n\nEach student group submits one solution\nProvide us all working notebooks of the lecture\nHand in is due at the beginning of the next lecture\nAt least 50 % have to be correct to pass\nYou have to pass at least twice\n\n\n\n\n\n\n\n\nThis is just in order to provide you with working solutions after each deadline."
   },
   {
     "objectID": "lectures/lec_00_presentation.html#learning-python",
     "href": "lectures/lec_00_presentation.html#learning-python",
     "title": "Introduction - Programming",
     "section": "Learning Python",
-    "text": "Learning Python\nWe will mostly not cover Python during the lectures!\n\nQuestion: Anybody know why?\n\n\n\nIn our experience, the best way to learn is by doing!\nHere, we will focus on decision-making algorithms\nYou will learn Python by doing the tutorials\n\n\n\n\n\n\n\n\n\nTip\n\n\nDon’t worry, we will help you out if you have any questions!"
+    "text": "Learning Python\nWe will mostly not cover Python during the lectures!\n\nQuestion: Anybody know why?\n\n\n\nIn our experience, the best way to learn is by doing!\nHere, we will focus on decision-making algorithms\nYou will learn Python by doing the tutorials\n\n\n\n\n\n\n\n\n\nDon’t worry, we will help you out if you have any questions!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#difficulty-of-the-course",
@@ -3896,7 +3962,7 @@
     "href": "lectures/lec_00_presentation.html#goals-of-the-course",
     "title": "Introduction - Programming",
     "section": "Goals of the Course",
-    "text": "Goals of the Course\n\nLearn the basics of programming\nLearn about algorithmic thinking\nBe able to apply methods and concepts\nSolve practical problems with algorithms\n\n\n\n\n\n\n\nTip\n\n\nWe are convinced that this course will be quite interesting and teach you more for your daily life than most other courses!"
+    "text": "Goals of the Course\n\nLearn the basics of programming\nLearn about algorithmic thinking\nBe able to apply methods and concepts\nSolve practical problems with algorithms\n\n\n\n\n\n\n\nWe are convinced that this course will be quite interesting and teach you more for your daily life than most other courses!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#why-python",
@@ -3910,14 +3976,14 @@
     "href": "lectures/lec_00_presentation.html#help-from-ai",
     "title": "Introduction - Programming",
     "section": "Help from AI",
-    "text": "Help from AI\n\nYou are allowed to use AI in the course, we use it as well (e.g., Claude, ChatGPT, LLama3 …)\nThese tools are great for learning Python!\nCan help you a lot to get started with programming\n\n\n\n\n\n\n\n\nWarning\n\n\nBut you should not simply use them to replace your learning."
+    "text": "Help from AI\n\nYou are allowed to use AI in the course, we use it as well (e.g., Claude, ChatGPT, LLama3 …)\nThese tools are great for learning Python!\nCan help you a lot to get started with programming\n\n\n\n\n\n\n\n\nBut you should not simply use them to replace your learning."
   },
   {
     "objectID": "lectures/lec_00_presentation.html#our-recommendation",
     "href": "lectures/lec_00_presentation.html#our-recommendation",
     "title": "Introduction - Programming",
     "section": "Our Recommendation",
-    "text": "Our Recommendation\n\nBe present: Attend the lecture and solve the tutorials\nPut in some work: Repeat code and try to understand it\nDo coding: Run code, play around, modify, and solve\n\n\n\n\n\n\n\n\nTip\n\n\nGreat resources to start are books and small challenges. You can find a list of book recommendations at the end of the lecture. Small challenges to solve can for example be found on Codewars."
+    "text": "Our Recommendation\n\nBe present: Attend the lecture and solve the tutorials\nPut in some work: Repeat code and try to understand it\nDo coding: Run code, play around, modify, and solve\n\n\n\n\n\n\n\n\nGreat resources to start are books and small challenges. You can find a list of book recommendations at the end of the lecture. Small challenges to solve can for example be found on Codewars."
   },
   {
     "objectID": "lectures/lec_00_presentation.html#dont-give-up",
@@ -3931,7 +3997,7 @@
     "href": "lectures/lec_00_presentation.html#install-vs-code",
     "title": "Introduction - Programming",
     "section": "Install VS Code",
-    "text": "Install VS Code\n\nDownload and install from the website\nBuilt for Windows, Linux and Mac\nInstall the Python and Jupyter extension\nNow you are ready to go!\n\n\n\n\n\n\n\n\nTip\n\n\nUnsure on how to work with VS Code and notebooks? Ask us! We are happy to help you out!"
+    "text": "Install VS Code\n\nDownload and install from the website\nBuilt for Windows, Linux and Mac\nInstall the Python and Jupyter extension\nNow you are ready to go!\n\n\n\n\n\n\n\n\nUnsure on how to work with VS Code and notebooks? Ask us! We are happy to help you out!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#what-is-an-ide",
@@ -3945,14 +4011,14 @@
     "href": "lectures/lec_00_presentation.html#installation-of-python-with-uv",
     "title": "Introduction - Programming",
     "section": "Installation of Python with uv",
-    "text": "Installation of Python with uv\n\nWe will use uv to install and manage Python versions\nIt works on Windows, Mac and Linux\nIt helps us to manage packages and virtual environments\nNow, we all go here and install uv and Python\n\n\n\n\n\n\n\n\nTip\n\n\nIf the installation does not work, let us know!"
+    "text": "Installation of Python with uv\n\nWe will use uv to install and manage Python versions\nIt works on Windows, Mac and Linux\nIt helps us to manage packages and virtual environments\nNow, we all go here and install uv and Python\n\n\n\n\n\n\n\n\nIf the installation does not work, let us know!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#quick-check",
     "href": "lectures/lec_00_presentation.html#quick-check",
     "title": "Introduction - Programming",
     "section": "Quick Check",
-    "text": "Quick Check\n\nHave you installed uv and initialized the project?\nGreat! Before we continue, check the following:\n\n[] You have a folder for the course\n[] You have initialized uv with uv init inside the folder\n[] You can see a file called pyproject.toml in the folder\n\n. . .\n\n\n\n\n\n\n\nTip\n\n\nSomething not working yet? Ask us!"
+    "text": "Quick Check\n\nHave you installed uv and initialized the project?\nGreat! Before we continue, check the following:\n\n[] You have a folder for the course\n[] You have initialized uv with uv init inside the folder\n[] You can see a file called pyproject.toml in the folder\n\n. . .\n\n\n\n\n\n\n\nSomething not working yet? Ask us!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#using-notebooks",
@@ -3966,7 +4032,7 @@
     "href": "lectures/lec_00_presentation.html#working-with-notebooks",
     "title": "Introduction - Programming",
     "section": "Working with Notebooks",
-    "text": "Working with Notebooks\n\nNow you can download the files from the website\nJust click on one of the sessions and open it\nSelect Jupyter on the right side\nDownload and save the files to your course folder\nOpen them and select “Open with Jupyter Notebook”\n\n\n\n\n\n\n\n\nTip\n\n\nThat was the hardest part today!"
+    "text": "Working with Notebooks\n\nNow you can download the files from the website\nJust click on one of the sessions and open it\nSelect Jupyter on the right side\nDownload and save the files to your course folder\nOpen them and select “Open with Jupyter Notebook”\n\n\n\n\n\n\n\n\nThat was the hardest part today!"
   },
   {
     "objectID": "lectures/lec_00_presentation.html#section",
@@ -3980,7 +4046,7 @@
     "href": "lectures/lec_00_presentation.html#after-the-break-optimal-stopping",
     "title": "Introduction - Programming",
     "section": "After the break — Optimal Stopping",
-    "text": "After the break — Optimal Stopping\n\nThe “Secretary Problem” and the 37% rule\nWhen to stop searching and make a decision\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for our introduction!\nLet’s have a short break and then continue with our first topic."
+    "text": "After the break — Optimal Stopping\n\nThe “Secretary Problem” and the 37% rule\nWhen to stop searching and make a decision\nHow to translate the idea into code and experiments\n\n\n\n\n\n\n\nThat’s it for our introduction!\nLet’s have a short break and then continue with our first topic."
   },
   {
     "objectID": "lectures/lec_00_presentation.html#interesting-literature-to-start",
@@ -3994,7 +4060,7 @@
     "href": "lectures/lec_00_presentation.html#books-on-programming",
     "title": "Introduction - Programming",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_00_presentation.html#more-literature",
@@ -4885,7 +4951,7 @@
     "href": "lectures/lec_02_presentation.html#gittins-index-the-scary-math",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Gittins Index: The Scary Math",
-    "text": "Gittins Index: The Scary Math\n😱 The Complex Formula\n\\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\n\n\nExtremely complex to calculate by hand\nRequires advanced mathematics (optimization theory)\nCalculation not practical for everyday decisions\n\n\n\n\n\n\n\n\n\nImportant\n\n\nYou don’t need to understand the math - just use the lookup table!"
+    "text": "Gittins Index: The Scary Math\n😱 The Complex Formula\n\\[G_i(s_i, f_i) := \\sup_{\\tau \\geq 1} \\frac{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t \\cdot r_i^t \\middle| s_i, f_i\\right]}{\\mathbb{E}\\left[\\sum_{t=0}^{\\tau-1} \\beta^t\\right]}\\]\n\n\nExtremely complex to calculate by hand\nRequires advanced mathematics (optimization theory)\nCalculation not practical for everyday decisions\n\n\n\n\n\n\n\n\n\nYou don’t need to understand the math - just use the lookup table!"
   },
   {
     "objectID": "lectures/lec_02_presentation.html#what-it-actually-means",
@@ -4941,7 +5007,7 @@
     "href": "lectures/lec_02_presentation.html#books-on-programming",
     "title": "Lecture II - Explore Vs. Exploit",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_02_presentation.html#more-literature",
@@ -6184,7 +6250,7 @@
     "href": "lectures/lec_04_presentation.html#after-the-break-scheduling",
     "title": "Lecture IV - Scheduling",
     "section": "After the break — Scheduling",
-    "text": "After the break — Scheduling\n\nProgramming session in our new notebooks\nHow to translate the idea into code and experiments\nDifferent scheduling algorithms applied to problems\n\n\n\n\n\n\n\n\nNote\n\n\nThat’s it for scheduling!\nLet’s have a short break and then continue with our fourth Python programming session."
+    "text": "After the break — Scheduling\n\nProgramming session in our new notebooks\nHow to translate the idea into code and experiments\nDifferent scheduling algorithms applied to problems\n\n\n\n\n\n\n\n\nThat’s it for scheduling!\nLet’s have a short break and then continue with our fourth Python programming session."
   },
   {
     "objectID": "lectures/lec_04_presentation.html#interesting-literature-to-start",
@@ -6205,7 +6271,7 @@
     "href": "lectures/lec_04_presentation.html#questions-discussion",
     "title": "Lecture IV - Scheduling",
     "section": "Questions & Discussion",
-    "text": "Questions & Discussion\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Questions & Discussion\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_04_presentation.html#more-literature",
@@ -6446,14 +6512,14 @@
     "href": "lectures/lec_06_presentation.html#scheduling-meetings",
     "title": "Lecture VI - Computational Kindness",
     "section": "Scheduling Meetings",
-    "text": "Scheduling Meetings\n\nPropose specific times!\nDon’t ask “when are you free?”\nReduces cognitive load for others\nTransforms an open-ended problem\n\n\n\n\n\n\n\n\nImportant\n\n\nNow a simple yes/no decision!"
+    "text": "Scheduling Meetings\n\nPropose specific times!\nDon’t ask “when are you free?”\nReduces cognitive load for others\nTransforms an open-ended problem\n\n\n\n\n\n\n\n\nNow a simple yes/no decision!"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#communication",
     "href": "lectures/lec_06_presentation.html#communication",
     "title": "Lecture VI - Computational Kindness",
     "section": "Communication",
-    "text": "Communication\n\nBe explicit rather than implicit\nProvide clear options instead\nAvoid open-ended questions\nState your preferences\n\n\n\n\n\n\n\n\nImportant\n\n\nAvoid deferring → “I’m fine with whatever”!"
+    "text": "Communication\n\nBe explicit rather than implicit\nProvide clear options instead\nAvoid open-ended questions\nState your preferences\n\n\n\n\n\n\n\n\nAvoid deferring → “I’m fine with whatever”!"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#the-cost-of-flexibility",
@@ -6488,28 +6554,28 @@
     "href": "lectures/lec_06_presentation.html#bayes-rule",
     "title": "Lecture VI - Computational Kindness",
     "section": "Bayes’ Rule",
-    "text": "Bayes’ Rule\n\nFundamental theorem in probability theory\nUpdates probability of hypothesis based on new evidence\nUsed in statistics, machine learning, and decision-making\n\n\n\n\n\n\n\n\nImportant\n\n\nHelps make informed predictions and decisions under uncertainty in the real world!"
+    "text": "Bayes’ Rule\n\nFundamental theorem in probability theory\nUpdates probability of hypothesis based on new evidence\nUsed in statistics, machine learning, and decision-making\n\n\n\n\n\n\n\n\nHelps make informed predictions and decisions under uncertainty in the real world!"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#overfitting",
     "href": "lectures/lec_06_presentation.html#overfitting",
     "title": "Lecture VI - Computational Kindness",
     "section": "Overfitting",
-    "text": "Overfitting\n\nOccurs when a model learns the training data too well\nCaptures noise and outliers rather than pattern\nResults in poor generalization to new data\n\n\n\n\n\n\n\n\nImportant\n\n\nSeveral ways to counter overfitting, e.g. cross-validation."
+    "text": "Overfitting\n\nOccurs when a model learns the training data too well\nCaptures noise and outliers rather than pattern\nResults in poor generalization to new data\n\n\n\n\n\n\n\n\nSeveral ways to counter overfitting, e.g. cross-validation."
   },
   {
     "objectID": "lectures/lec_06_presentation.html#game-theory",
     "href": "lectures/lec_06_presentation.html#game-theory",
     "title": "Lecture VI - Computational Kindness",
     "section": "Game Theory",
-    "text": "Game Theory\n\nStrategic interactions among rational decision-makers\nAnalyzes situations with multiple agents and their strategies\n\n\n\n\n\n\n\n\nImportant\n\n\nMany applications in economics, politics, and biology!"
+    "text": "Game Theory\n\nStrategic interactions among rational decision-makers\nAnalyzes situations with multiple agents and their strategies\n\n\n\n\n\n\n\n\nMany applications in economics, politics, and biology!"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#networking",
     "href": "lectures/lec_06_presentation.html#networking",
     "title": "Lecture VI - Computational Kindness",
     "section": "Networking",
-    "text": "Networking\n\nStudy of information exchange over networks\nIncludes understanding protocols and data transmission\nOptimizes network resources\n\n\n\n\n\n\n\n\nImportant\n\n\nImportant in computer networks, the internet and social life!"
+    "text": "Networking\n\nStudy of information exchange over networks\nIncludes understanding protocols and data transmission\nOptimizes network resources\n\n\n\n\n\n\n\n\nImportant in computer networks, the internet and social life!"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#relaxation",
@@ -6551,7 +6617,7 @@
     "href": "lectures/lec_06_presentation.html#books-on-programming",
     "title": "Lecture VI - Computational Kindness",
     "section": "Books on Programming",
-    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nNote\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
+    "text": "Books on Programming\n\nDowney, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O’Reilly. Here\nElter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.\n\n\n\n\n\n\n\n\nThink Python is a great book to start with. It’s available online for free. Schrödinger Programmiert Python is a great alternative for German students, as it is a very playful introduction to programming with lots of examples."
   },
   {
     "objectID": "lectures/lec_06_presentation.html#more-literature",
