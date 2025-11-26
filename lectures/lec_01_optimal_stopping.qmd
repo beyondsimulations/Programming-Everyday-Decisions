@@ -140,7 +140,6 @@ The mathematically optimal strategy:
 4. **Success rate:** 37% chance of selecting the absolute best candidate
 :::
 
-[^1]: Large number of candidates! With a small number of candidates, we can do even better.
 . . .
 
 This means we fail 63% of the time - but this is the **best we can possibly do**!
@@ -309,7 +308,7 @@ What if we don't have a fixed number of candidates, but a [fixed amount of time]
 
 - Selling a house for the **best price** ("Threshold Rule")
 - Stealing with a **success probability** ("Burglar's Problem")
-- **Finding** a parking spot ("Parking Lot Problem") [^2]
+- **Finding** a parking spot ("Parking Lot Problem")
 
 . . .
 
