@@ -1,8 +1,8 @@
 project:
   type: website
- # post-render:
-    #  - helpers/convert_pypercent.py
- #   - helpers/convert_qmd_to_md.py
+  # post-render:
+  #  - helpers/convert_pypercent.py
+  #   - helpers/convert_qmd_to_md.py
   render:
     - 404.qmd
     - index.qmd
@@ -114,11 +114,11 @@ format:
       - brand
     toc: true
     highlight-style: github
+    callout-appearance: simple
     code-copy: true
     code-link: true
     toc-location: right
     code-overflow: wrap
-    callout-appearance: simple
     html-math-method:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"

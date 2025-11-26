@@ -35,7 +35,7 @@ The course is not graded and can only be passed/failed. The evaluation of the co
 
 1. **Attendence**: Students are expected to attend at least 75% of the lectures.
 2. **Assignments**: Students will have to hand in the assignments from 2 out of the 5 tutorials in this course. All are due by the end of the quarter, but earlier submissions of the assignments are highly encouraged. At least 50% of the solutions of the assignment must be correct.
-3. **Presentation**: Students will give a short presentation in groups of up to 3 students on their main findings and the application of the learned concepts of the course in the last lecture which are then discussed with the rest of the class.
+3. **Presentation**: Students will give a short presentation in groups of up to 3 students on an implemented prototype of a programm in the last lecture which are then discussed in class.
 
 You can find more information on the course contents in the [syllabus](general/syllabus.qmd).
 

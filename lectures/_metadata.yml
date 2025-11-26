@@ -9,6 +9,7 @@ format:
       - ../styles.scss
       - brand
     transition: slide
+    callout-appearance: simple
     transition-speed: fast
     highlight-style: github
     slide-number: true
