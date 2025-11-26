@@ -851,8 +851,8 @@ Task  Duration  Deadline  Predecessor Schedule
 
 ``` python
 Task  Duration  Deadline  Predecessor Schedule
-  A    40min    110min    None
-  B    30min     90min    D             3
+  A    40min    110min    None          3
+  B    30min     90min    D
   C    60min    150min    A             4
   D    50min     70min    None
   E    30min    210min    C             5
@@ -862,10 +862,10 @@ Task  Duration  Deadline  Predecessor Schedule
 
 ``` python
 Task  Duration  Deadline  Predecessor Schedule
-  A    40min    110min    None
-  B    30min     90min    D             3
+  A    40min    110min    None          3
+  B    30min     90min    D             2
   C    60min    150min    A             4
-  D    50min     70min    None          2
+  D    50min     70min    None
   E    30min    210min    C             5
 ```
 
@@ -873,10 +873,10 @@ Task  Duration  Deadline  Predecessor Schedule
 
 ``` python
 Task  Duration  Deadline  Predecessor Schedule
-  A    40min    110min    None          1
-  B    30min     90min    D             3
+  A    40min    110min    None          3
+  B    30min     90min    D             2
   C    60min    150min    A             4
-  D    50min     70min    None          2
+  D    50min     70min    None          1
   E    30min    210min    C             5
 ```
 

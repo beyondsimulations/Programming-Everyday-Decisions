@@ -5450,7 +5450,7 @@
     "href": "lectures/lec_04_scheduling.html#lawlers-applied-3",
     "title": "Lecture IV - Scheduling",
     "section": "Lawler’s Applied",
-    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None\n  B    30min     90min    D             3\n  C    60min    150min    A             4\n  D    50min     70min    None\n  E    30min    210min    C             5",
+    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          3\n  B    30min     90min    D\n  C    60min    150min    A             4\n  D    50min     70min    None\n  E    30min    210min    C             5",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -5461,7 +5461,7 @@
     "href": "lectures/lec_04_scheduling.html#lawlers-applied-4",
     "title": "Lecture IV - Scheduling",
     "section": "Lawler’s Applied",
-    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None\n  B    30min     90min    D             3\n  C    60min    150min    A             4\n  D    50min     70min    None          2\n  E    30min    210min    C             5",
+    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          3\n  B    30min     90min    D             2\n  C    60min    150min    A             4\n  D    50min     70min    None\n  E    30min    210min    C             5",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -5472,7 +5472,7 @@
     "href": "lectures/lec_04_scheduling.html#lawlers-applied-5",
     "title": "Lecture IV - Scheduling",
     "section": "Lawler’s Applied",
-    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          1\n  B    30min     90min    D             3\n  C    60min    150min    A             4\n  D    50min     70min    None          2\n  E    30min    210min    C             5\n. . .\n\n\n\n\n\n\nTipSuccessor Tasks\n\n\n\nNote, how all tasks become tasks without successors at some point.",
+    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          3\n  B    30min     90min    D             2\n  C    60min    150min    A             4\n  D    50min     70min    None          1\n  E    30min    210min    C             5\n. . .\n\n\n\n\n\n\nTipSuccessor Tasks\n\n\n\nNote, how all tasks become tasks without successors at some point.",
     "crumbs": [
       "04 Scheduling",
       "Lecture"
@@ -6044,21 +6044,21 @@
     "href": "lectures/lec_04_presentation.html#lawlers-applied-3",
     "title": "Lecture IV - Scheduling",
     "section": "Lawler’s Applied",
-    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None\n  B    30min     90min    D             3\n  C    60min    150min    A             4\n  D    50min     70min    None\n  E    30min    210min    C             5"
+    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          3\n  B    30min     90min    D\n  C    60min    150min    A             4\n  D    50min     70min    None\n  E    30min    210min    C             5"
   },
   {
     "objectID": "lectures/lec_04_presentation.html#lawlers-applied-4",
     "href": "lectures/lec_04_presentation.html#lawlers-applied-4",
     "title": "Lecture IV - Scheduling",
     "section": "Lawler’s Applied",
-    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None\n  B    30min     90min    D             3\n  C    60min    150min    A             4\n  D    50min     70min    None          2\n  E    30min    210min    C             5"
+    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          3\n  B    30min     90min    D             2\n  C    60min    150min    A             4\n  D    50min     70min    None\n  E    30min    210min    C             5"
   },
   {
     "objectID": "lectures/lec_04_presentation.html#lawlers-applied-5",
     "href": "lectures/lec_04_presentation.html#lawlers-applied-5",
     "title": "Lecture IV - Scheduling",
     "section": "Lawler’s Applied",
-    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          1\n  B    30min     90min    D             3\n  C    60min    150min    A             4\n  D    50min     70min    None          2\n  E    30min    210min    C             5\n\n\n\n\n\n\n\nSuccessor Tasks\n\n\nNote, how all tasks become tasks without successors at some point."
+    "text": "Lawler’s Applied\nTask  Duration  Deadline  Predecessor Schedule\n  A    40min    110min    None          3\n  B    30min     90min    D             2\n  C    60min    150min    A             4\n  D    50min     70min    None          1\n  E    30min    210min    C             5\n\n\n\n\n\n\n\nSuccessor Tasks\n\n\nNote, how all tasks become tasks without successors at some point."
   },
   {
     "objectID": "lectures/lec_04_presentation.html#lawlers-solution",
