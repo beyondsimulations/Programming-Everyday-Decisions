@@ -6285,62 +6285,7 @@
     "href": "lectures/lec_06_kindness.html",
     "title": "Lecture VI - Computational Kindness",
     "section": "",
-    "text": ". . .\nQuestion: An idea what that is?\n. . .\n\n\nIdea of introducing empathy in algorithms\nConsider human cognitive load and limitations\nMaking choices that reduce mental burden for others\nCreating systems that are easy to understand and interact\n\n\n\n\n\n\n\n\n\nPropose specific times!\nDon’t ask “when are you free?”\nReduces cognitive load for others\nTransforms an open-ended problem\n\n. . .\n\n\n\n\n\n\nNow a simple yes/no decision!\n\n\n\n\n\n\n\nBe explicit rather than implicit\nProvide clear options instead\nAvoid open-ended questions\nState your preferences\n\n. . .\n\n\n\n\n\n\nAvoid deferring → “I’m fine with whatever”!\n\n\n\n\n\n\n\n“I’m free whenever” seems helpful\nBeing too flexible can be unhelpful\nBut it is not!\n\nForces others to consider all possibilities\nIncreases cognitive load\nMakes decision-making more complex\n\n\n\n\n\n\nReduce Options: Fewer choices lead to better decisions\nBe Explicit: Clear constraints help others decide\nConsider Cognitive Load: Design interactions minimizing mental effort for others\nMake Decisions: Taking responsibility can be kind",
-    "crumbs": [
-      "06 Kindness",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_06_kindness.html#computational-kindness-1",
-    "href": "lectures/lec_06_kindness.html#computational-kindness-1",
-    "title": "Lecture VI - Computational Kindness",
-    "section": "",
-    "text": ". . .\nQuestion: An idea what that is?\n. . .\n\n\nIdea of introducing empathy in algorithms\nConsider human cognitive load and limitations\nMaking choices that reduce mental burden for others\nCreating systems that are easy to understand and interact",
-    "crumbs": [
-      "06 Kindness",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_06_kindness.html#scheduling-meetings",
-    "href": "lectures/lec_06_kindness.html#scheduling-meetings",
-    "title": "Lecture VI - Computational Kindness",
-    "section": "",
-    "text": "Propose specific times!\nDon’t ask “when are you free?”\nReduces cognitive load for others\nTransforms an open-ended problem\n\n. . .\n\n\n\n\n\n\nNow a simple yes/no decision!",
-    "crumbs": [
-      "06 Kindness",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_06_kindness.html#communication",
-    "href": "lectures/lec_06_kindness.html#communication",
-    "title": "Lecture VI - Computational Kindness",
-    "section": "",
-    "text": "Be explicit rather than implicit\nProvide clear options instead\nAvoid open-ended questions\nState your preferences\n\n. . .\n\n\n\n\n\n\nAvoid deferring → “I’m fine with whatever”!",
-    "crumbs": [
-      "06 Kindness",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_06_kindness.html#the-cost-of-flexibility",
-    "href": "lectures/lec_06_kindness.html#the-cost-of-flexibility",
-    "title": "Lecture VI - Computational Kindness",
-    "section": "",
-    "text": "“I’m free whenever” seems helpful\nBeing too flexible can be unhelpful\nBut it is not!\n\nForces others to consider all possibilities\nIncreases cognitive load\nMakes decision-making more complex",
-    "crumbs": [
-      "06 Kindness",
-      "Lecture"
-    ]
-  },
-  {
-    "objectID": "lectures/lec_06_kindness.html#principles",
-    "href": "lectures/lec_06_kindness.html#principles",
-    "title": "Lecture VI - Computational Kindness",
-    "section": "",
-    "text": "Reduce Options: Fewer choices lead to better decisions\nBe Explicit: Clear constraints help others decide\nConsider Cognitive Load: Design interactions minimizing mental effort for others\nMake Decisions: Taking responsibility can be kind",
+    "text": "Optimal Stopping: How to decide when to stop looking for better options.\nExplore/Exploit Tradeoff: Balancing between trying new things and sticking with known options.\nCaching: Storing and reusing information by sticking to a task to improve performance.\nScheduling: Efficiently managing tasks and time.\nRandomness: Understanding and working with uncertainty.",
     "crumbs": [
       "06 Kindness",
       "Lecture"
@@ -6350,8 +6295,74 @@
     "objectID": "lectures/lec_06_kindness.html#topics-from-the-lecture",
     "href": "lectures/lec_06_kindness.html#topics-from-the-lecture",
     "title": "Lecture VI - Computational Kindness",
-    "section": "Topics from the Lecture",
-    "text": "Topics from the Lecture\n\nOptimal Stopping: How to decide when to stop looking for better options.\nExplore/Exploit Tradeoff: Balancing between trying new things and sticking with known options.\nCaching: Storing and reusing information by sticking to a task to improve performance.\nScheduling: Efficiently managing tasks and time.\nRandomness: Understanding and working with uncertainty.",
+    "section": "",
+    "text": "Optimal Stopping: How to decide when to stop looking for better options.\nExplore/Exploit Tradeoff: Balancing between trying new things and sticking with known options.\nCaching: Storing and reusing information by sticking to a task to improve performance.\nScheduling: Efficiently managing tasks and time.\nRandomness: Understanding and working with uncertainty.",
+    "crumbs": [
+      "06 Kindness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_06_kindness.html#computational-kindness-1",
+    "href": "lectures/lec_06_kindness.html#computational-kindness-1",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "Computational Kindness",
+    "text": "Computational Kindness\n. . .\nQuestion: An idea what that is?\n. . .\n\n\nIdea of introducing empathy in algorithms\nConsider human cognitive load and limitations\nMaking choices that reduce mental burden for others\nCreating systems that are easy to understand and interact",
+    "crumbs": [
+      "06 Kindness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_06_kindness.html#scheduling-meetings",
+    "href": "lectures/lec_06_kindness.html#scheduling-meetings",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "Scheduling Meetings",
+    "text": "Scheduling Meetings\n\nPropose specific times!\nDon’t ask “when are you free?”\nReduces cognitive load for others\nTransforms an open-ended problem\n\n. . .\n\n\n\n\n\n\nNow a simple yes/no decision!",
+    "crumbs": [
+      "06 Kindness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_06_kindness.html#communication",
+    "href": "lectures/lec_06_kindness.html#communication",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "Communication",
+    "text": "Communication\n\nBe explicit rather than implicit\nProvide clear options instead\nAvoid open-ended questions\nState your preferences\n\n. . .\n\n\n\n\n\n\nAvoid deferring → “I’m fine with whatever”!",
+    "crumbs": [
+      "06 Kindness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_06_kindness.html#the-cost-of-flexibility",
+    "href": "lectures/lec_06_kindness.html#the-cost-of-flexibility",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "The Cost of Flexibility",
+    "text": "The Cost of Flexibility\n\n“I’m free whenever” seems helpful\nBut it is not!\n\n. . .\n\nForces others to consider all possibilities\nIncreases cognitive load\nMakes decision-making more complex",
+    "crumbs": [
+      "06 Kindness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_06_kindness.html#principles",
+    "href": "lectures/lec_06_kindness.html#principles",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "Principles",
+    "text": "Principles\n\nReduce Options: Fewer choices lead to better decisions\nBe Explicit: Clear constraints help others decide\nConsider Cognitive Load: Design interactions minimizing mental effort for others\nMake Decisions: Taking responsibility can be kind",
+    "crumbs": [
+      "06 Kindness",
+      "Lecture"
+    ]
+  },
+  {
+    "objectID": "lectures/lec_06_kindness.html#reflection",
+    "href": "lectures/lec_06_kindness.html#reflection",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "Reflection",
+    "text": "Reflection\nThink about it: How could you apply computational kindness in these scenarios?\n\nPlanning a group dinner with friends\nAsking your professor for thesis feedback\nCoordinating a team project at work",
     "crumbs": [
       "06 Kindness",
       "Lecture"
@@ -6428,7 +6439,7 @@
     "href": "lectures/lec_06_kindness.html#continue-programming",
     "title": "Lecture VI - Computational Kindness",
     "section": "Continue programming?",
-    "text": "Continue programming?\n\nThe best way to continue learning is to keep programming in the future\nPotentially, you will continue to do so during your studies\nCoding in your Thesis is a another great way to improve\nTry to find a way to apply programming in your work\nThere are many interesting topics to explore!",
+    "text": "Continue programming?\n\nThe best way to continue learning is to keep programming in the future\nPotentially, you will continue to do so during your studies\nCoding in your Thesis is another great way to improve\nTry to find a way to apply programming in your work\nThere are many interesting topics to explore!",
     "crumbs": [
       "06 Kindness",
       "Lecture"
@@ -6501,6 +6512,13 @@
     ]
   },
   {
+    "objectID": "lectures/lec_06_presentation.html#topics-from-the-lecture",
+    "href": "lectures/lec_06_presentation.html#topics-from-the-lecture",
+    "title": "Lecture VI - Computational Kindness",
+    "section": "Topics from the Lecture",
+    "text": "Topics from the Lecture\n\nOptimal Stopping: How to decide when to stop looking for better options.\nExplore/Exploit Tradeoff: Balancing between trying new things and sticking with known options.\nCaching: Storing and reusing information by sticking to a task to improve performance.\nScheduling: Efficiently managing tasks and time.\nRandomness: Understanding and working with uncertainty."
+  },
+  {
     "objectID": "lectures/lec_06_presentation.html#computational-kindness-1",
     "href": "lectures/lec_06_presentation.html#computational-kindness-1",
     "title": "Lecture VI - Computational Kindness",
@@ -6526,7 +6544,7 @@
     "href": "lectures/lec_06_presentation.html#the-cost-of-flexibility",
     "title": "Lecture VI - Computational Kindness",
     "section": "The Cost of Flexibility",
-    "text": "The Cost of Flexibility\n\n“I’m free whenever” seems helpful\nBeing too flexible can be unhelpful\nBut it is not!\n\nForces others to consider all possibilities\nIncreases cognitive load\nMakes decision-making more complex"
+    "text": "The Cost of Flexibility\n\n“I’m free whenever” seems helpful\nBut it is not!\n\n\n\nForces others to consider all possibilities\nIncreases cognitive load\nMakes decision-making more complex"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#principles",
@@ -6536,11 +6554,11 @@
     "text": "Principles\n\nReduce Options: Fewer choices lead to better decisions\nBe Explicit: Clear constraints help others decide\nConsider Cognitive Load: Design interactions minimizing mental effort for others\nMake Decisions: Taking responsibility can be kind"
   },
   {
-    "objectID": "lectures/lec_06_presentation.html#topics-from-the-lecture",
-    "href": "lectures/lec_06_presentation.html#topics-from-the-lecture",
+    "objectID": "lectures/lec_06_presentation.html#reflection",
+    "href": "lectures/lec_06_presentation.html#reflection",
     "title": "Lecture VI - Computational Kindness",
-    "section": "Topics from the Lecture",
-    "text": "Topics from the Lecture\n\nOptimal Stopping: How to decide when to stop looking for better options.\nExplore/Exploit Tradeoff: Balancing between trying new things and sticking with known options.\nCaching: Storing and reusing information by sticking to a task to improve performance.\nScheduling: Efficiently managing tasks and time.\nRandomness: Understanding and working with uncertainty."
+    "section": "Reflection",
+    "text": "Reflection\nThink about it: How could you apply computational kindness in these scenarios?\n\nPlanning a group dinner with friends\nAsking your professor for thesis feedback\nCoordinating a team project at work"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#how-to-continue-learning",
@@ -6589,7 +6607,7 @@
     "href": "lectures/lec_06_presentation.html#continue-programming",
     "title": "Lecture VI - Computational Kindness",
     "section": "Continue programming?",
-    "text": "Continue programming?\n\nThe best way to continue learning is to keep programming in the future\nPotentially, you will continue to do so during your studies\nCoding in your Thesis is a another great way to improve\nTry to find a way to apply programming in your work\nThere are many interesting topics to explore!"
+    "text": "Continue programming?\n\nThe best way to continue learning is to keep programming in the future\nPotentially, you will continue to do so during your studies\nCoding in your Thesis is another great way to improve\nTry to find a way to apply programming in your work\nThere are many interesting topics to explore!"
   },
   {
     "objectID": "lectures/lec_06_presentation.html#advent-of-code",

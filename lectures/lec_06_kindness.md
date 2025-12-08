@@ -10,6 +10,16 @@ format:
 ---
 
 
+# <span class="flow">Key Concepts</span>
+
+## Topics from the Lecture
+
+-   **Optimal Stopping**: How to decide <span class="highlight">when to stop looking</span> for better options.
+-   **Explore/Exploit Tradeoff**: <span class="highlight">Balancing</span> between trying new things and sticking with known options.
+-   **Caching**: Storing and reusing information by <span class="highlight">sticking to a task</span> to improve performance.
+-   **Scheduling**: Efficiently managing <span class="highlight">tasks and time.</span>
+-   **Randomness**: Understanding and working with <span class="highlight">uncertainty</span>.
+
 # <span class="flow">Computational Kindness</span>
 
 ## <span class="invert-font">Computational Kindness</span>
@@ -53,12 +63,14 @@ format:
 
 ## The Cost of Flexibility
 
--   "I'm free whenever" seems helpful
--   Being too flexible can be **unhelpful**
+-   "I'm free whenever" <span class="highlight">seems helpful</span>
 -   <span class="highlight">But it is not!</span>
-    -   Forces others to **consider all possibilities**
-    -   **Increases** cognitive load
-    -   Makes decision-making **more complex**
+
+. . .
+
+-   Forces others to **consider all possibilities**
+-   **Increases** cognitive load
+-   Makes decision-making **more complex**
 
 ## Principles
 
@@ -67,15 +79,13 @@ format:
 3.  **Consider Cognitive Load**: Design interactions minimizing <span class="highlight">mental effort</span> for others
 4.  **Make Decisions**: <span class="highlight">Taking responsibility</span> can be kind
 
-# <span class="flow">Key Concepts</span>
+## Reflection
 
-## Topics from the Lecture
+<span class="highlight">Think about it:</span> **How could you apply computational kindness in these scenarios?**
 
--   **Optimal Stopping**: How to decide <span class="highlight">when to stop looking</span> for better options.
--   **Explore/Exploit Tradeoff**: <span class="highlight">Balancing</span> between trying new things and sticking with known options.
--   **Caching**: Storing and reusing information by <span class="highlight">sticking to a task</span> to improve performance.
--   **Scheduling**: Efficiently managing <span class="highlight">tasks and time.</span>
--   **Randomness**: Understanding and working with <span class="highlight">uncertainty.</span>
+-   Planning a **group dinner** with friends
+-   Asking your professor for **thesis feedback**
+-   Coordinating a **team project** at work
 
 # <span class="flow">How to continue?</span>
 
@@ -141,7 +151,7 @@ format:
 
 -   The best way to continue learning is to <span class="highlight">keep programming in the future</span>
 -   Potentially, you will continue to do so during your studies
--   Coding in your Thesis is a another great way to improve
+-   Coding in your Thesis is another great way to improve
 -   Try to find a way to apply programming in your work
 -   **There are many interesting topics to explore!**
 
