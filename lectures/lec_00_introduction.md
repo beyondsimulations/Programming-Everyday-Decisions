@@ -22,7 +22,7 @@ format:
 <tr>
 <td style="text-align: left;"><div width="50.0%" data-layout-align="left">
 <figure>
-<img src="https://beyondsimulations.com/wp-content/uploads/2025/09/20250820-Tobias-Vlcek-Original-5-2.png" alt="Dr. Tobias Vlcek" />
+<img src="../images/tobias-vlcek.jpg" alt="Dr. Tobias Vlcek" />
 <figcaption aria-hidden="true"><strong>Dr. Tobias Vlcek</strong></figcaption>
 </figure>
 </div></td>
