@@ -12,15 +12,15 @@ html:
 
 ## Variables
 
--   **Definition**: Containers for storing information.
--   **Example**: `x = 10`
+- **Definition**: Containers for storing information.
+- **Example**: `x = 10`
 
 ## Data Types
 
--   **Integers (int)**: Whole numbers (e.g., count of dates).
--   **Floats (float)**: Decimal numbers (e.g., compatibility score).
--   **Booleans (bool)**: True/False values (e.g., availability).
--   **Strings (str)**: Text values (e.g., names).
+- **Integers (int)**: Whole numbers (e.g., count of dates).
+- **Floats (float)**: Decimal numbers (e.g., compatibility score).
+- **Booleans (bool)**: True/False values (e.g., availability).
+- **Strings (str)**: Text values (e.g., names).
 
 ``` python
   name = "Alexander"  # String variable
@@ -30,17 +30,17 @@ html:
 
 ## Type Conversion
 
--   **Checking**: Use `type()` to check the type of a variable.
--   **Conversion**:
-    -   `int()`: Converts to integer.
-    -   `float()`: Converts to float.
-    -   `str()`: Converts to string.
-    -   `bool()`: Converts to boolean.
+- **Checking**: Use `type()` to check the type of a variable.
+- **Conversion**:
+  - `int()`: Converts to integer.
+  - `float()`: Converts to float.
+  - `str()`: Converts to string.
+  - `bool()`: Converts to boolean.
 
 ## String Formatting
 
--   **Concatenation**: Combine strings using `+`.
--   **Formatting**: Use `f"..."` for formatted strings.
+- **Concatenation**: Combine strings using `+`.
+- **Formatting**: Use `f"..."` for formatted strings.
 
 ``` python
 name = "Alexander"
@@ -74,14 +74,14 @@ print(f"Hello, {name}!")
 
 ## if Statements
 
--   **Structure**:
+- **Structure**:
 
 ``` python
 if condition:
     # code to execute if condition is True
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 flat_rating = 8
@@ -93,7 +93,7 @@ if flat_rating >= 7:
 
 ## if-else Statements
 
--   **Structure**:
+- **Structure**:
 
 ``` python
 if condition:
@@ -102,7 +102,7 @@ else:
     # code to execute if condition is False
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 flat_rating = 4
@@ -116,7 +116,7 @@ else:
 
 ## if-elif-else Statements
 
--   **Structure**:
+- **Structure**:
 
 ``` python
 if condition:
@@ -127,7 +127,7 @@ else:
     # code to execute if condition is False
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 flat_rating = 8
@@ -143,9 +143,9 @@ else:
 
 ## Complex Conditions
 
--   **Nested if Statements**: Use if statements inside other if statements.
--   **Logical Operators**: Combine conditions using `and`, `or`, `not`.
--   **Structure**:
+- **Nested if Statements**: Use if statements inside other if statements.
+- **Logical Operators**: Combine conditions using `and`, `or`, `not`.
+- **Structure**:
 
 ``` python
 if (condition1) and (condition2):
@@ -156,7 +156,7 @@ else:
     # code if none of the conditions are True
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 flat_rating = 9
@@ -171,8 +171,8 @@ if (flat_rating >= 9) and (price < 1000):
 
 # Lists
 
--   **Definition**: Ordered, mutable collections of items.
--   **Creation**: Use square brackets `[]`.
+- **Definition**: Ordered, mutable collections of items.
+- **Creation**: Use square brackets `[]`.
 
 ``` python
 ratings = [4.5, 3.8, 4.2]
@@ -181,7 +181,7 @@ restaurants = ["Magic Place", "Sushi Bar", "Coffee Shop"]
 
 ## Accessing Elements
 
--   **Indexing**: Use `[index]` to access elements.
+- **Indexing**: Use `[index]` to access elements.
 
 ``` python
 print(restaurants[0])  # Access the first element
@@ -189,7 +189,7 @@ print(restaurants[0])  # Access the first element
 
     Magic Place
 
--   **Negative Indexing**: Use `[-1]` to access the last element.
+- **Negative Indexing**: Use `[-1]` to access the last element.
 
 ``` python
 print(restaurants[-1])  # Access the last element
@@ -197,7 +197,7 @@ print(restaurants[-1])  # Access the last element
 
     Coffee Shop
 
--   **Slicing**: Use `[start:end]` to access a range of elements.
+- **Slicing**: Use `[start:end]` to access a range of elements.
 
 ``` python
 print(restaurants[0:2])  # Access the first two elements
@@ -207,13 +207,13 @@ print(restaurants[0:2])  # Access the first two elements
 
 ## Adding Elements
 
--   **Appending**: Use `append()` to add an element to the end of the list.
+- **Appending**: Use `append()` to add an element to the end of the list.
 
 ``` python
 restaurants.append("Pasta Place")
 ```
 
--   **Inserting**: Use `insert()` to add an element at a specific index.
+- **Inserting**: Use `insert()` to add an element at a specific index.
 
 ``` python
 restaurants.insert(0, "Pasta Magic")
@@ -221,13 +221,13 @@ restaurants.insert(0, "Pasta Magic")
 
 ## Removing Elements
 
--   **Removing**: Use `remove()` to remove an element by value.
+- **Removing**: Use `remove()` to remove an element by value.
 
 ``` python
 restaurants.remove("Pasta Place")
 ```
 
--   **Removing by Index**: Use `pop()` to remove an element by index.
+- **Removing by Index**: Use `pop()` to remove an element by index.
 
 ``` python
 restaurants.pop(0)
@@ -237,8 +237,8 @@ restaurants.pop(0)
 
 ## Nested Lists
 
--   **Definition**: Lists containing other lists or tuples.
--   **Accessing**: Use nested indexing.
+- **Definition**: Lists containing other lists or tuples.
+- **Accessing**: Use nested indexing.
 
 ``` python
 restaurant_data = [
@@ -252,11 +252,11 @@ print(restaurants[0][1])  # Access the second element of the first list
 
 ## Tuples
 
--   **Definition**: Ordered, immutable collections of items.
--   **Creation**: Use parentheses `()`.
--   **Immutability**: Once created, cannot be changed.
--   **Memory Efficiency**: Use less memory than lists.
--   **Use Cases**: Ideal for fixed data (e.g., restaurant location).
+- **Definition**: Ordered, immutable collections of items.
+- **Creation**: Use parentheses `()`.
+- **Immutability**: Once created, cannot be changed.
+- **Memory Efficiency**: Use less memory than lists.
+- **Use Cases**: Ideal for fixed data (e.g., restaurant location).
 
 ``` python
 ratings = (4.5, 3.8, 4.2)
@@ -267,15 +267,15 @@ restaurant_info = ("Pasta Place", "Italian", 2020)
 
 ## for Loops
 
--   **Definition**: Iterate over a sequence of items.
--   **Structure**:
+- **Definition**: Iterate over a sequence of items.
+- **Structure**:
 
 ``` python
 for item in sequence:
     # code to execute for each item
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 treatments = ["Standard Drug", "New Drug A", "New Drug B"]
@@ -289,14 +289,14 @@ for treatment in treatments:
 
 ## Range in for Loops
 
--   **Definition**: Generate a sequence of numbers.
--   **Structure**:
+- **Definition**: Generate a sequence of numbers.
+- **Structure**:
 
 ``` python
 range(start, stop, step)
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 for phase in range(5):  # 0 to 4
@@ -329,8 +329,8 @@ for phase in range(1, 5, 2):  # 1 to 4, step 2
 
 ## break and continue
 
--   **break**: Exit the loop.
--   **continue**: Skip the current iteration and continue with the next.
+- **break**: Exit the loop.
+- **continue**: Skip the current iteration and continue with the next.
 
 ``` python
 efficacy_scores = [45, 60, 75, 85, 90]
@@ -344,9 +344,9 @@ for score in efficacy_scores:
 
 ## Tuple unpacking
 
--   **Definition**: Assign elements of a tuple to variables.
--   **Structure**:
--   **Example**:
+- **Definition**: Assign elements of a tuple to variables.
+- **Structure**:
+- **Example**:
 
 ``` python
 restaurant_info = ("Pasta Place", "Italian", 2020)
@@ -362,15 +362,15 @@ print(year)
 
 ## while Loops
 
--   **Definition**: Execute code repeatedly as long as a condition is true.
--   **Structure**:
+- **Definition**: Execute code repeatedly as long as a condition is true.
+- **Structure**:
 
 ``` python
 while condition:
     # code to execute while condition is True
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 phase = 1
@@ -389,8 +389,8 @@ while phase <= 5:
 
 ## Basic Function
 
--   **Definition**: Use the `def` keyword.
--   **Structure**:
+- **Definition**: Use the `def` keyword.
+- **Structure**:
 
 ``` python
 def function_name(parameters):
@@ -398,7 +398,7 @@ def function_name(parameters):
     return value  # Optional
 ```
 
--   **Example**:
+- **Example**:
 
 ``` python
 def greet_visitor(name):
@@ -411,8 +411,8 @@ greet_visitor("Student")
 
 ## Return Value
 
--   **Definition**: The value returned by a function.
--   **Example**:
+- **Definition**: The value returned by a function.
+- **Example**:
 
 ``` python
 def multiply_by_two(number):
@@ -424,12 +424,12 @@ print(result)
 
     10
 
--   **Note**: If a function does not return a value, it implicitly returns `None`.
+- **Note**: If a function does not return a value, it implicitly returns `None`.
 
 ## Default Parameters
 
--   **Definition**: Provide default values for function parameters.
--   **Structure**:
+- **Definition**: Provide default values for function parameters.
+- **Structure**:
 
 ``` python
 def greet_visitor(name="People"):
@@ -441,8 +441,8 @@ print(greet_visitor("Tobias")) # Calls the function with a custom parameter
 
 ## Multiple Parameters
 
--   **Definition**: Functions can have multiple parameters.
--   **Structure**:
+- **Definition**: Functions can have multiple parameters.
+- **Structure**:
 
 ``` python
 def greet_visitor(name, age):
@@ -453,19 +453,19 @@ print(greet_visitor("Tobias", 30))
 
 # String Methods
 
--   **Definition**: Methods are functions that are called on strings.
--   **Structure**:
+- **Definition**: Methods are functions that are called on strings.
+- **Structure**:
 
 ``` python
 string.method()
 ```
 
--   **Common String Methods**:
-    -   `.strip()` - Removes whitespace from start and end
-    -   `.title()` - Capitalizes first letter of each word
-    -   `.lower()` - Converts to lowercase
-    -   `.upper()` - Converts to uppercase
--   **Example**:
+- **Common String Methods**:
+  - `.strip()` - Removes whitespace from start and end
+  - `.title()` - Capitalizes first letter of each word
+  - `.lower()` - Converts to lowercase
+  - `.upper()` - Converts to uppercase
+- **Example**:
 
 ``` python
 title = "the hitchhikers guide"
@@ -485,21 +485,21 @@ print(title.strip())
 
 ## Standard Libraries
 
--   **Definition**: Libraries that are part of the Python standard library.
--   **Access**: Import them using `import`.
+- **Definition**: Libraries that are part of the Python standard library.
+- **Access**: Import them using `import`.
 
 ``` python
 import math
 import random
 ```
 
--   For long package names, you can use the `as` keyword to create an alias.
+- For long package names, you can use the `as` keyword to create an alias.
 
 ``` python
 import random as rd
 ```
 
--   To call a function from an imported package, use the package name as a prefix.
+- To call a function from an imported package, use the package name as a prefix.
 
 ``` python
 random_number = rd.random()
@@ -510,13 +510,13 @@ print(random_number)
 
 ## Installing Packages
 
--   **Definition**: Install packages using `uv`.
+- **Definition**: Install packages using `uv`.
 
 ``` {bash}
 uv add package_name
 ```
 
--   If you are using Miniconda, you can use `conda` instead.
+- If you are using Miniconda, you can use `conda` instead.
 
 ``` {bash}
 conda install package_name

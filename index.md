@@ -19,10 +19,10 @@ Our broad goal is to equip students with the ability to get to grips with algori
 
 Upon completion of the course, students will:
 
--   understand fundamental algorithms and their applications to everyday problems
--   develop the ability to model real-world scenarios using algorithmic thinking
--   implement simple algorithms in python to solve practical problems
--   analyze the efficiency and effectiveness of different algorithms in various contexts
+- understand fundamental algorithms and their applications to everyday problems
+- develop the ability to model real-world scenarios using algorithmic thinking
+- implement simple algorithms in python to solve practical problems
+- analyze the efficiency and effectiveness of different algorithms in various contexts
 
 Please note that this course is **specifically designed for business students**. That is, it is **not required to have any advanced knowledge or experience in programming** to attend this course. The teaching format will make it possible to account for different levels of programming skills such that every student can take the most out of the course.
 
@@ -43,10 +43,10 @@ You can find more information on the course contents in the [syllabus](general/s
 
 # How to see the slides
 
--   This course is based on [Quarto](https://quarto.org/)
--   It uses [revealjs](https://revealjs.com/) to render the slides
--   You find the slides for each lecture in the corresponding lecture
--   To see the slides, click on `RevealJS` in the top right corner
+- This course is based on [Quarto](https://quarto.org/)
+- It uses [revealjs](https://revealjs.com/) to render the slides
+- You find the slides for each lecture in the corresponding lecture
+- To see the slides, click on `RevealJS` in the top right corner
 
 ## AI Policy
 

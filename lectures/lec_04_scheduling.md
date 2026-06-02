@@ -68,9 +68,9 @@ Task  Washing  Drying
 <span class="task">Rule:</span> To find the <span class="highlight">optimal solution</span>:
 
 1.  Find the job with **shortest duration**:
-    -   If on **Machine 1** → Schedule First
-    -   If on **Machine 2** → Schedule Last
-    -   If **equal** → Choose randomly
+    - If on **Machine 1** → Schedule First
+    - If on **Machine 2** → Schedule Last
+    - If **equal** → Choose randomly
 2.  Remove job from list and **repeat**
 
 ## Applying Johnson's Rule
@@ -97,8 +97,8 @@ Task  Washing  Drying  Schedule
   D    50min   60min
 ```
 
--   **In Task C**, the dryer is the **shortest** task.
--   It is on **Machine 2** → **Schedule Last**
+- **In Task C**, the dryer is the **shortest** task.
+- It is on **Machine 2** → **Schedule Last**
 
 . . .
 
@@ -114,8 +114,8 @@ Task  Washing  Drying  Schedule
   D    50min   60min
 ```
 
--   **In Task B**, the washing machine is the **shortest** task.
--   It is on **Machine 1** → **Schedule First**
+- **In Task B**, the washing machine is the **shortest** task.
+- It is on **Machine 1** → **Schedule First**
 
 . . .
 
@@ -131,8 +131,8 @@ Task  Washing  Drying  Schedule
   D    50min   60min
 ```
 
--   **In Task A**, the washing machine is the **shortest** task.
--   It is on **Machine 1** → **Schedule Second**
+- **In Task A**, the washing machine is the **shortest** task.
+- It is on **Machine 1** → **Schedule Second**
 
 . . .
 
@@ -253,10 +253,10 @@ gantt
 
 . . .
 
--   First systematic visualization by Frederick Taylor
--   Henry Gantt develops the Gantt Chart around 1910
--   Key tool during Industrial Revolution
--   But no scheduling theory yet!
+- First systematic visualization by Frederick Taylor
+- Henry Gantt develops the Gantt Chart around 1910
+- Key tool during Industrial Revolution
+- But no scheduling theory yet!
 
 . . .
 
@@ -266,20 +266,20 @@ gantt
 
 . . .
 
--   RAND Corporation founded (1948)
--   Selmer Johnson publishes Johnson's Rule in 1954
--   Beginning of modern scheduling theory
--   Many more algorithms and methods developed since
+- RAND Corporation founded (1948)
+- Selmer Johnson publishes Johnson's Rule in 1954
+- Beginning of modern scheduling theory
+- Many more algorithms and methods developed since
 
 ## Professional Applications
 
 **Where do we see scheduling in professional practice?**
 
--   **Project Management:** Task dependencies, resource allocation
--   **Software Development:** CPU, thread management, job queues
--   **Operations:** Production, supply chain optimization
--   **Healthcare:** Patients, surgery planning, staff allocation
--   **Transportation:** Routes, crews, maintenance
+- **Project Management:** Task dependencies, resource allocation
+- **Software Development:** CPU, thread management, job queues
+- **Operations:** Production, supply chain optimization
+- **Healthcare:** Patients, surgery planning, staff allocation
+- **Transportation:** Routes, crews, maintenance
 
 . . .
 
@@ -536,8 +536,8 @@ Task  Duration  Schedule
 
 ## Weighted SPT
 
--   <span class="highlight">Change:</span> Tasks with **additional priorities**
--   Priorities could be, e.g., revenue if we are consultants.
+- <span class="highlight">Change:</span> Tasks with **additional priorities**
+- Priorities could be, e.g., revenue if we are consultants.
 
 ``` python
 Task  Duration  Revenue
@@ -764,9 +764,9 @@ High-priority tasks depend on low-priority tasks.</span>
 
 <span class="question">Question:</span> **How to handle with shortest processing time?**
 
--   <span class="task">Rule:</span> Tasks inherit priority from their dependents.
--   A gets the highest priority from B
--   This ensures the **critical path completion**
+- <span class="task">Rule:</span> Tasks inherit priority from their dependents.
+- A gets the highest priority from B
+- This ensures the **critical path completion**
 
 . . .
 
@@ -785,8 +785,8 @@ Task  Duration  Priority
 
 . . .
 
--   Sort the tasks by deadline, schedule equal tasks randomly
--   Things get more complex when we add dependencies
+- Sort the tasks by deadline, schedule equal tasks randomly
+- Things get more complex when we add dependencies
 
 . . .
 
@@ -902,10 +902,10 @@ Task  Duration  Deadline  Predecessor Schedule
 
 ## SPT with Predecessors
 
--   No solution in **polynomial time**
--   <span class="highlight">NP-hard problem</span> (no efficient algorithm)
--   True for **most scheduling problems!**
--   We can use **heuristics**, though
+- No solution in **polynomial time**
+- <span class="highlight">NP-hard problem</span> (no efficient algorithm)
+- True for **most scheduling problems!**
+- We can use **heuristics**, though
 
 . . .
 
@@ -915,10 +915,10 @@ Task  Duration  Deadline  Predecessor Schedule
 
 ## Interruptions
 
--   In reality, we **cannot predict the future**
--   We need to react to **new tasks** as they happen
--   If we have a **deadline**, we might need to meet it
--   Let's look at this for the <span class="highlight">earliest due date objective</span>
+- In reality, we **cannot predict the future**
+- We need to react to **new tasks** as they happen
+- If we have a **deadline**, we might need to meet it
+- Let's look at this for the <span class="highlight">earliest due date objective</span>
 
 . . .
 
@@ -949,9 +949,9 @@ Email D        40min    10:00
 
 <span class="task">Rule:</span>
 
--   Always schedule the task with the **earliest deadline**
--   If a new task with an earlier deadline comes in, **re-schedule**
--   Otherwise, stick to the original schedule.
+- Always schedule the task with the **earliest deadline**
+- If a new task with an earlier deadline comes in, **re-schedule**
+- Otherwise, stick to the original schedule.
 
 . . .
 
@@ -981,9 +981,9 @@ Email D        40min    10:00
 
 <span class="task">Rule:</span>
 
--   Always schedule the task with the **shortest duration**
--   If a new task with a shorter duration comes in, **re-schedule**
--   Otherwise, stick to the original schedule.
+- Always schedule the task with the **shortest duration**
+- If a new task with a shorter duration comes in, **re-schedule**
+- Otherwise, stick to the original schedule.
 
 . . .
 
@@ -1009,9 +1009,9 @@ Email D        40min    10:00
 
 ## What is Thrashing?
 
--   Excessive **context switching**
--   Organization <span class="highlight">overhead exceeds productivity</span>
--   Maximum activity, minimum output
+- Excessive **context switching**
+- Organization <span class="highlight">overhead exceeds productivity</span>
+- Maximum activity, minimum output
 
 . . .
 
@@ -1019,10 +1019,10 @@ Email D        40min    10:00
 
 ## Thrashing Warning Signs
 
--   Constant **task switching**
--   **Nothing** getting completed
--   Increasing **stress levels**
--   Declining **quality**
+- Constant **task switching**
+- **Nothing** getting completed
+- Increasing **stress levels**
+- Declining **quality**
 
 . . .
 
@@ -1058,10 +1058,10 @@ Email D        40min    10:00
 
 **How can you use these algorithms starting today?**
 
--   **Daily planning:** Use SPT for your to-do list to minimize waiting time
--   **Project management:** Apply EDD when managing deadlines
--   **Team coordination:** Use Johnson's Rule for two-stage processes
--   **Time blocking:** Prevent thrashing with strategic scheduling
+- **Daily planning:** Use SPT for your to-do list to minimize waiting time
+- **Project management:** Apply EDD when managing deadlines
+- **Team coordination:** Use Johnson's Rule for two-stage processes
+- **Time blocking:** Prevent thrashing with strategic scheduling
 
 ## Key Takeaways
 
@@ -1081,9 +1081,9 @@ so far?
 
 ## After the break --- Scheduling
 
--   Programming session in our new notebooks
--   How to translate the idea into code and experiments
--   Different scheduling algorithms applied to problems
+- Programming session in our new notebooks
+- How to translate the idea into code and experiments
+- Different scheduling algorithms applied to problems
 
 . . .
 
@@ -1096,12 +1096,12 @@ so far?
 
 ## Interesting literature to start
 
--   Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^1]
+- Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^1]
 
 ## Books on Programming
 
--   Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O'Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
--   Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
+- Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O'Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
+- Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
 
 ## Questions & Discussion
 

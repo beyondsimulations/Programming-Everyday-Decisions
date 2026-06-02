@@ -34,9 +34,9 @@ The structure is:
 >
 > Think of `if` statements like everyday decisions:
 >
-> -   IF it's within budget, view it
-> -   IF the flat is good, apply for it
-> -   IF it has enough rooms, add it to the shortlist
+> - IF it's within budget, view it
+> - IF the flat is good, apply for it
+> - IF it has enough rooms, add it to the shortlist
 >
 > Computer `if` statements work exactly the same way! They check a condition and then do something based on that check.
 
@@ -86,9 +86,9 @@ The structure is:
 >
 > Think of `if-else` like complete either/or decisions:
 >
-> -   IF it's within budget, schedule viewing, ELSE skip it
-> -   IF the location is good, consider it, ELSE keep searching
-> -   IF all criteria are met, apply now, ELSE continue looking
+> - IF it's within budget, schedule viewing, ELSE skip it
+> - IF the location is good, consider it, ELSE keep searching
+> - IF all criteria are met, apply now, ELSE continue looking
 >
 > The `else` statement is our backup plan!
 
@@ -143,18 +143,18 @@ else:
 
 The structure adds:
 
--   Multiple `elif` conditions between `if` and `else`
--   Each condition is checked in order
--   The first True condition runs its code
+- Multiple `elif` conditions between `if` and `else`
+- Each condition is checked in order
+- The first True condition runs its code
 
 > **Tip**
 >
 > Think of `elif` like multiple-choice decisions:
 >
-> -   IF it's perfect → apply immediately
-> -   ELIF it's good → schedule second viewing
-> -   ELIF it's okay → keep as backup
-> -   ELSE → continue searching
+> - IF it's perfect → apply immediately
+> - ELIF it's good → schedule second viewing
+> - ELIF it's okay → keep as backup
+> - ELSE → continue searching
 >
 > It's like a flowchart where only one path can be taken!
 
@@ -171,10 +171,10 @@ The structure adds:
 
 Create a variable `flat_category` that is:
 
--   "Luxury" if rating is 9 or 10
--   "Premium" if rating is 7 or 8
--   "Standard" if rating is 5 or 6
--   "Basic" for anything lower
+- "Luxury" if rating is 9 or 10
+- "Premium" if rating is 7 or 8
+- "Standard" if rating is 5 or 6
+- "Basic" for anything lower
 
 ``` python
 flat_rating = 8
@@ -216,16 +216,16 @@ else:
 >
 > Tips for Complex Conditions:
 >
-> -   Use parentheses to make your logic clear
-> -   Break very complex conditions into smaller parts
-> -   Test edge cases to make sure your logic works
+> - Use parentheses to make your logic clear
+> - Break very complex conditions into smaller parts
+> - Test edge cases to make sure your logic works
 
 ## Exercise 4.1 - Real World Flat Hunting
 
 Create a variable `should_apply` that is True if:
 
--   The flat rating is at least 8, OR
--   The flat rating is at least 6 AND we've been searching for 3 weeks or more
+- The flat rating is at least 8, OR
+- The flat rating is at least 6 AND we've been searching for 3 weeks or more
 
 ``` python
 flat_rating = 6
@@ -272,8 +272,8 @@ else:
 
 Adjust the code below to change the variable `make_application` to True if:
 
--   We've seen at least 37% of available flats (use 15 total flats), AND
--   The current flat is better than the best we've seen so far
+- We've seen at least 37% of available flats (use 15 total flats), AND
+- The current flat is better than the best we've seen so far
 
 ``` python
 flats_seen = 6  # We've seen 6 flats
@@ -299,11 +299,11 @@ print(f"Should we apply for this flat? {make_application}")
 
 Great work! You've learned how to make decisions in Python using:
 
--   Simple if statements
--   if-else statements
--   elif for multiple conditions
--   Complex decisions with and/or
--   Applying these to real-world stopping problems
+- Simple if statements
+- if-else statements
+- elif for multiple conditions
+- Complex decisions with and/or
+- Applying these to real-world stopping problems
 
 Remember, just like in apartment hunting, these tools help us make better decisions in any situation where we need to decide whether to take what we have or keep looking for something better!
 

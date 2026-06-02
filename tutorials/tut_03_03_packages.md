@@ -10,10 +10,10 @@ Welcome to this guided tutorial on understanding packages and package management
 
 Think of Python as your local library's main building. Just like a library has:
 
--   A main collection (Python's standard library)
--   Different sections (third-party packages)
--   A catalog system (a package manager --- we use `uv`)
--   Multiple branches (virtual environments / project folders)
+- A main collection (Python's standard library)
+- Different sections (third-party packages)
+- A catalog system (a package manager --- we use `uv`)
+- Multiple branches (virtual environments / project folders)
 
 ## In more detail
 
@@ -21,30 +21,30 @@ Let's break this down:
 
 1.  **Standard Library**: Like the core collection every library branch has:
 
-    -   Python comes with essential tools built-in
-    -   Data structures (lists, dictionaries, etc.)
-    -   Mathematical functions (sin, cos, sqrt, etc.)
-    -   Random numbers (random, choice, etc.)
+    - Python comes with essential tools built-in
+    - Data structures (lists, dictionaries, etc.)
+    - Mathematical functions (sin, cos, sqrt, etc.)
+    - Random numbers (random, choice, etc.)
 
 2.  **Third-Party Packages**: Similar to specialized sections in a library:
 
-    -   Data analysis packages (pandas, numpy) → Research section
-    -   Visualization packages (matplotlib, seaborn) → Art books
-    -   Web frameworks (Django, Flask) → Technical manuals
-    -   Machine learning packages (scikit-learn) → Advanced studies section
+    - Data analysis packages (pandas, numpy) → Research section
+    - Visualization packages (matplotlib, seaborn) → Art books
+    - Web frameworks (Django, Flask) → Technical manuals
+    - Machine learning packages (scikit-learn) → Advanced studies section
 
 3.  **Package Manager (`uv`)**: Works like the library's catalog:
 
-    -   Installing packages → Ordering new books
-    -   Updating packages → Replacing with newer editions
-    -   Uninstalling packages → Removing outdated books
-    -   Dependencies → "You must read Book A before Book B"
+    - Installing packages → Ordering new books
+    - Updating packages → Replacing with newer editions
+    - Uninstalling packages → Removing outdated books
+    - Dependencies → "You must read Book A before Book B"
 
 4.  **Project Environments** (managed automatically by `uv`): Like different library branches:
 
-    -   Each branch can have its own collection of books (packages)
-    -   Different editions of the same book (package versions)
-    -   Specialized sections for different purposes (project-specific dependencies)
+    - Each branch can have its own collection of books (packages)
+    - Different editions of the same book (package versions)
+    - Specialized sections for different purposes (project-specific dependencies)
 
 **The best part? Most Python packages are free to use, thanks to the open-source community!**
 
@@ -144,10 +144,10 @@ print(f"Good! You generated a random integer {random_number} between 1 and 25!")
 
 Just as a library needs a system to track books (checkout system, catalog, etc.), Python projects need a tool to manage versions and dependencies. We use `uv` because it:
 
--   Keeps track of what's available (like searching the catalog)
--   Handles "checkouts" (installing packages)
--   Manages "returns" (uninstalling packages)
--   Ensures you have the right "edition" (version management)
+- Keeps track of what's available (like searching the catalog)
+- Handles "checkouts" (installing packages)
+- Manages "returns" (uninstalling packages)
+- Ensures you have the right "edition" (version management)
 
 ## Exercise 2.1 - Check your `uv` installation
 
@@ -169,11 +169,11 @@ uv run python --version
 
 Installing packages is like ordering new books for your library branch. With `uv` you typically:
 
--   Initialize a project once (`uv init`)
--   Add dependencies (`uv add packagename`)
--   Remove them if not needed (`uv remove packagename`)
--   Sync a project copied from elsewhere (`uv sync`)
--   Update dependencies (`uv update`)
+- Initialize a project once (`uv init`)
+- Add dependencies (`uv add packagename`)
+- Remove them if not needed (`uv remove packagename`)
+- Sync a project copied from elsewhere (`uv sync`)
+- Update dependencies (`uv update`)
 
 Under the hood `uv` creates (and reuses) a virtual environment for the project. Luckily most of that is handled for you and not that important in this basic introduction to Python.
 
@@ -210,15 +210,15 @@ except ImportError:
 
 Virtual environments are like having different library branches. Each branch can have:
 
--   Its own collection of books (packages)
--   Different editions of the same book (package versions)
--   Specialized sections for different purposes (project-specific dependencies)
+- Its own collection of books (packages)
+- Different editions of the same book (package versions)
+- Specialized sections for different purposes (project-specific dependencies)
 
 This separation ensures that:
 
--   Changes in one branch don't affect others (project isolation)
--   Each branch can be optimized for its community (project-specific dependencies)
--   You can experiment without affecting the main collection (development safety)
+- Changes in one branch don't affect others (project isolation)
+- Each branch can be optimized for its community (project-specific dependencies)
+- You can experiment without affecting the main collection (development safety)
 
 For now, you don't need to worry about virtual environments except for the one we created now. This is more advanced and thus not necessary for this tutorial (or lecture). But it's good to know that they exist and that you can use them to manage your packages.
 
@@ -226,10 +226,10 @@ For now, you don't need to worry about virtual environments except for the one w
 
 Great work! You learned how Python projects organize and access code via:
 
--   The standard library
--   Third-party packages
--   A modern package & environment manager (`uv`)
--   Isolated project environments for reliability
+- The standard library
+- Third-party packages
+- A modern package & environment manager (`uv`)
+- Isolated project environments for reliability
 
 Treat each project like its own library branch: well‑labeled, independent, and easy to maintain.
 

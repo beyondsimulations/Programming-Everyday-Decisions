@@ -10,10 +10,10 @@ To get you started again on the topics of the last lecture, we'll go through a r
 
 Imagine you're managing "The Python Café". Every day, you face these challenges:
 
--   Managing multiple baristas' schedules
--   Prioritizing customer orders
--   Balancing preparation times with deadlines
--   Handling rush hour efficiently
+- Managing multiple baristas' schedules
+- Prioritizing customer orders
+- Balancing preparation times with deadlines
+- Handling rush hour efficiently
 
 # Section 1 - Task Lists and Times
 
@@ -58,11 +58,11 @@ One effective scheduling strategy is to handle the quickest tasks first. This mi
 
 > **Common Mistakes in Loops**
 >
-> -   **Variable Initialization**: Ensure you have initialized the variable that will store the shortest time correctly.
-> -   **Comparison**: Use the `<` operator to compare the times.
-> -   **Indentation**: Make sure the code inside the loop is properly indented.
-> -   **Return Statement**: Make sure to return the correct value from the function.
-> -   **Colon**: Don't forget the colon `:` at the end of the `for` statement.
+> - **Variable Initialization**: Ensure you have initialized the variable that will store the shortest time correctly.
+> - **Comparison**: Use the `<` operator to compare the times.
+> - **Indentation**: Make sure the code inside the loop is properly indented.
+> - **Return Statement**: Make sure to return the correct value from the function.
+> - **Colon**: Don't forget the colon `:` at the end of the `for` statement.
 
 ## Exercise 2.1 - Find Quickest Drink
 
@@ -115,18 +115,18 @@ These lists can also store information based on different variable types. For ex
 
 Create a function `create_order_list` that takes four parameters:
 
--   `customer_names` (list): a list of customer names as strings
--   `ordered_drinks` (list): a list of drinks as strings
--   `prices` (list): a list of prices as floats
--   `deadline` (list): a list of deadlines in minutes as integers
+- `customer_names` (list): a list of customer names as strings
+- `ordered_drinks` (list): a list of drinks as strings
+- `prices` (list): a list of prices as floats
+- `deadline` (list): a list of deadlines in minutes as integers
 
 The function should return a **list of lists** where each inner list contains `[customer_name, drink, price, deadline]`.
 
 > **Tip**
 >
-> -   Use a for loop to iterate over the `customer_names` list and append the corresponding values to the `orders` list
-> -   Remember that `len(customer_names)` gives you the number of customers
-> -   Use the append method to add a list to the `orders` list
+> - Use a for loop to iterate over the `customer_names` list and append the corresponding values to the `orders` list
+> - Remember that `len(customer_names)` gives you the number of customers
+> - Use the append method to add a list to the `orders` list
 
 ``` python
 # YOUR CODE BELOW
@@ -161,10 +161,10 @@ Create a function `find_earliest_deadline` that takes a list of orders (as creat
 
 > **Tip**
 >
-> -   Initialize a variable with the lowest found deadline with a high value (e.g., 1000000)
-> -   Initialize a variable with the order that has the lowest deadline (first set it to an empty list)
-> -   Use a for loop to iterate over the `orders` list
-> -   Inside the loop, compare the deadline of the current order with the lowest found deadline
+> - Initialize a variable with the lowest found deadline with a high value (e.g., 1000000)
+> - Initialize a variable with the order that has the lowest deadline (first set it to an empty list)
+> - Use a for loop to iterate over the `orders` list
+> - Inside the loop, compare the deadline of the current order with the lowest found deadline
 
 ``` python
 # YOUR CODE BELOW
@@ -195,9 +195,9 @@ print("Great job! Your function works correctly.")
 
 Excellent work! You've learned how to apply various scheduling algorithms using Python's basic data structures. Remember:
 
--   Lists can store related information in parallel
--   Functions help organize and reuse code
--   Finding the shortest processing time or the earliest deadline helps optimize task order
+- Lists can store related information in parallel
+- Functions help organize and reuse code
+- Finding the shortest processing time or the earliest deadline helps optimize task order
 
 These concepts apply not just to coffee shops, but to any situation where you need to schedule tasks efficiently!
 

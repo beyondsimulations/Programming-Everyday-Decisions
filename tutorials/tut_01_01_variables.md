@@ -42,9 +42,9 @@ print("We have defined a some variables based on tonight's date.")
 >
 > Notice how we use meaningful variable names that describe what they contain:
 >
-> -   `date_name` is better than just `name`
-> -   `red_flags` is clearer than just `flags`
-> -   `butterflies_felt` clearly indicates a yes/no feeling
+> - `date_name` is better than just `name`
+> - `red_flags` is clearer than just `flags`
+> - `butterflies_felt` clearly indicates a yes/no feeling
 
 ## Exercise 1.1 - First Date Setup
 
@@ -88,18 +88,18 @@ print(f"We have defined a string variable for our tonight's date. Now, we are lo
 
 Just like dating involves different types of information, Python has different types for different kinds of data:
 
--   Integers (`int`): Counting things (number of dates, red flags)
--   Floats (`float`): Ratings and scores (compatibility score)
--   Booleans (`bool`): Yes/no information (are they single?)
--   Strings (`str`): Text (names, favorite food)
+- Integers (`int`): Counting things (number of dates, red flags)
+- Floats (`float`): Ratings and scores (compatibility score)
+- Booleans (`bool`): Yes/no information (are they single?)
+- Strings (`str`): Text (names, favorite food)
 
 > **Important**
 >
 > Why do types matter? Because:
 >
-> -   They determine what operations we can perform (you can't divide names!)
-> -   They affect how much memory the computer needs
-> -   They help prevent errors in our code
+> - They determine what operations we can perform (you can't divide names!)
+> - They affect how much memory the computer needs
+> - They help prevent errors in our code
 
 ``` python
 dates_gone_on = 7  # int: keeping count
@@ -157,20 +157,20 @@ print("Clean slate, although likely not true! We have defined the variable `past
 
 Python provides several functions to convert between different types:
 
--   `int()`: Converts to integer
-    -   `int("37")` → `37`
-    -   `int(37.8)` → `37` (truncates decimal)
--   `float()`: Converts to float
-    -   `float("37.5")` → `37.5`
-    -   `float(37)` → `37.0`
--   `str()`: Converts to string
-    -   `str(37)` → `"37"`
-    -   `str(37.5)` → `"37.5"`
--   `bool()`: Converts to boolean
-    -   `bool(1)` → `True`
-    -   `bool(0)` → `False`
-    -   `bool("")` → `False`
-    -   `bool("hello")` → `True`
+- `int()`: Converts to integer
+  - `int("37")` → `37`
+  - `int(37.8)` → `37` (truncates decimal)
+- `float()`: Converts to float
+  - `float("37.5")` → `37.5`
+  - `float(37)` → `37.0`
+- `str()`: Converts to string
+  - `str(37)` → `"37"`
+  - `str(37.5)` → `"37.5"`
+- `bool()`: Converts to boolean
+  - `bool(1)` → `True`
+  - `bool(0)` → `False`
+  - `bool("")` → `False`
+  - `bool("hello")` → `True`
 
 In optimal stopping for dating, the math says you should date and reject the first 37% of your dating pool, then commit to the next person who's better than everyone you've met before! Let's track this:
 
@@ -206,9 +206,9 @@ print(f"After person {stopping_point}, we'll get serious about finding the best 
 >
 > When converting strings to numbers:
 >
-> -   Make sure the string contains only numeric characters
-> -   Use `int()` for whole numbers
-> -   Use `float()` if you need decimal points
+> - Make sure the string contains only numeric characters
+> - Use `int()` for whole numbers
+> - Use `float()` if you need decimal points
 
 # 4 - String Formatting
 
@@ -259,10 +259,10 @@ Congratulations! You've learned about Python variables and types through the len
 
 Remember:
 
--   Variables help track your dating journey
--   Different types handle different kinds of dating data
--   The 37% rule suggests when to get serious
--   String formatting helps create the perfect dating profile
+- Variables help track your dating journey
+- Different types handle different kinds of dating data
+- The 37% rule suggests when to get serious
+- String formatting helps create the perfect dating profile
 
 Dating tip: While this mathematical approach is a good starting point, remember that love isn't always logical! We haven't considered the emotional aspects of dating yet or the fact that we might not be the best partner for each other.
 

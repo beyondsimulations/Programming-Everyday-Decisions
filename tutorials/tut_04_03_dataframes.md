@@ -53,10 +53,10 @@ print(tasks)
 
 Create a DataFrame named `mission_tasks` with critical Mars mission preparation tasks. Include columns for `task` (a string), `duration` (in hours), and `deadline` (hours from now) with the following data:
 
--   Life Support Check: 4 hours, deadline 12
--   Navigation Systems: 7 hours, deadline 16
--   Fuel Loading: 6 hours, deadline 8
--   Communication Setup: 3 hours, deadline 6
+- Life Support Check: 4 hours, deadline 12
+- Navigation Systems: 7 hours, deadline 16
+- Fuel Loading: 6 hours, deadline 8
+- Communication Setup: 3 hours, deadline 6
 
 Make sure, that the hours and deadlines are integers. And create the DataFrame with the index labels `Task 1`, `Task 2`, `Task 3`, `Task 4`.
 
@@ -207,10 +207,10 @@ print("Data access exercises completed successfully!")
 >
 > Remember:
 >
-> -   Use `[]` for single or multiple columns
-> -   Use `iloc[]` when you want to access by position
-> -   Use `loc[]` when you want to access by label (using the index labels)
-> -   Slicing works similar to Python lists: `0:2` means "from 0 up to (but not including) 2"
+> - Use `[]` for single or multiple columns
+> - Use `iloc[]` when you want to access by position
+> - Use `loc[]` when you want to access by label (using the index labels)
+> - Slicing works similar to Python lists: `0:2` means "from 0 up to (but not including) 2"
 
 # Section 3 - Sorting DataFrames for EDD and SPT
 

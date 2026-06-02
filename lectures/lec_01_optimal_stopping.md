@@ -37,10 +37,10 @@ By the end of this lecture, you will be able to:
 
 <span class="question">Question:</span> Anybody know what optimal stopping is?
 
--   <span class="highlight">Optimal stopping</span> is the problem of:
-    -   choosing the **best option**
-    -   from a **sequence of options**
-    -   where the options are revealed **one by one**
+- <span class="highlight">Optimal stopping</span> is the problem of:
+  - choosing the **best option**
+  - from a **sequence of options**
+  - where the options are revealed **one by one**
 
 ## 
 
@@ -66,11 +66,11 @@ optimal stopping?
 
 ## The Secretary Problem
 
--   Imagine you're **hiring a secretary**
--   You must interview candidates **one by one**
--   Now, you must decide: **hire or continue searching**
--   Once you reject a candidate, **you cannot go back**
--   How to <span class="highlight">maximize chance of selecting the best candidate?</span>
+- Imagine you're **hiring a secretary**
+- You must interview candidates **one by one**
+- Now, you must decide: **hire or continue searching**
+- Once you reject a candidate, **you cannot go back**
+- How to <span class="highlight">maximize chance of selecting the best candidate?</span>
 
 . . .
 
@@ -80,10 +80,10 @@ optimal stopping?
 
 ## Basic Setup
 
--   We have `n` candidates
--   We interview them **one by one**
--   We must decide to **hire or continue searching**
--   <span class="highlight">Ordinal ranking</span> of candidates
+- We have `n` candidates
+- We interview them **one by one**
+- We must decide to **hire or continue searching**
+- <span class="highlight">Ordinal ranking</span> of candidates
 
 . . .
 
@@ -127,11 +127,11 @@ This means we fail 63% of the time - but this is the **best we can possibly do**
 
 Why does the success probability decrease with more candidates?
 
--   1 candidate: 100% (no choice!)
--   2 candidates: 50%
--   3 candidates: 33%
--   4 candidates: 25%
--   5 candidates: 20%
+- 1 candidate: 100% (no choice!)
+- 2 candidates: 50%
+- 3 candidates: 33%
+- 4 candidates: 25%
+- 5 candidates: 20%
 
 . . .
 
@@ -143,10 +143,10 @@ Why does the success probability decrease with more candidates?
 
 ## Why 37%?
 
--   This is based on the **geometric distribution**
--   The <span class="highlight">optimal stopping point</span> is at `n/e`[^2]
--   `e` is the base of the natural logarithm (≈ 2.718)
--   This comes from maximizing the probability of success
+- This is based on the **geometric distribution**
+- The <span class="highlight">optimal stopping point</span> is at `n/e`[^2]
+- `e` is the base of the natural logarithm (≈ 2.718)
+- This comes from maximizing the probability of success
 
 . . .
 
@@ -184,19 +184,19 @@ Let's visualize the success of a simulation with 20 candidates:
 
 <span class="question">Question:</span> Imagine a dating scenario, <span class="highlight">where the other person can also reject you</span>. **Optimal stopping point?**
 
--   The optimal stopping point is now **lower**
--   Because we can now **fail more often**
--   With 50 % chance of rejection, we **start leaping at 25 %**
--   **Formula:** $q^{\frac{1}{1-q}}$ with $q$ being the chance of rejection
+- The optimal stopping point is now **lower**
+- Because we can now **fail more often**
+- With 50 % chance of rejection, we **start leaping at 25 %**
+- **Formula:** $q^{\frac{1}{1-q}}$ with $q$ being the chance of rejection
 
 ## Mutual Rejection
 
 <span class="question">Question:</span> What if in dating, <span class="highlight">the other person can also reject you</span>?
 
--   The optimal stopping point **decreases**
--   We need to account for rejection risk
--   With 50% rejection probability: **start accepting at 25%**
--   **Formula:** $q^{\frac{1}{1-q}}$ where $q$ = rejection probability
+- The optimal stopping point **decreases**
+- We need to account for rejection risk
+- With 50% rejection probability: **start accepting at 25%**
+- **Formula:** $q^{\frac{1}{1-q}}$ where $q$ = rejection probability
 
 . . .
 
@@ -216,15 +216,15 @@ What if we don't have a fixed number of candidates, but a <span class="highlight
 
 . . .
 
--   **Same principle applies!** Observe for first 37% of available time
--   But now we also control the **search intensity**
--   This connects to **resource allocation** problems in computer science
+- **Same principle applies!** Observe for first 37% of available time
+- But now we also control the **search intensity**
+- This connects to **resource allocation** problems in computer science
 
 ## Other versions
 
--   Selling a house for the **best price** ("Threshold Rule")
--   Stealing with a **success probability** ("Burglar's Problem")
--   **Finding** a parking spot ("Parking Lot Problem") \[^2\]
+- Selling a house for the **best price** ("Threshold Rule")
+- Stealing with a **success probability** ("Burglar's Problem")
+- **Finding** a parking spot ("Parking Lot Problem") \[^2\]
 
 . . .
 
@@ -260,9 +260,9 @@ so far?
 
 ## After the break --- Optimal Stopping
 
--   Gentle introduction to Python Programming
--   We work in our notebooks on basics and optimal stopping
--   How to translate the idea into code and experiments
+- Gentle introduction to Python Programming
+- We work in our notebooks on basics and optimal stopping
+- How to translate the idea into code and experiments
 
 . . .
 
@@ -275,13 +275,13 @@ so far?
 
 ## Interesting literature to start
 
--   Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^3]
--   Ferguson, T.S. (1989) 'Who solved the secretary problem?', Statistical Science, 4(3). doi:10.1214/ss/1177012493.
+- Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^3]
+- Ferguson, T.S. (1989) 'Who solved the secretary problem?', Statistical Science, 4(3). doi:10.1214/ss/1177012493.
 
 ## Books on Programming
 
--   Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O'Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
--   Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
+- Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O'Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
+- Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
 
 . . .
 

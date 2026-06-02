@@ -53,13 +53,13 @@ format:
 
 . . .
 
--   **Determinism** - same input, same output
--   **Predictability** - knowing the outcome in advance
--   **Consistency** - reliable patterns
+- **Determinism** - same input, same output
+- **Predictability** - knowing the outcome in advance
+- **Consistency** - reliable patterns
 
 . . .
 
--   <span class="highlight">Boredom?</span>
+- <span class="highlight">Boredom?</span>
 
 ## Discovery by Randomness
 
@@ -67,13 +67,13 @@ format:
 
 . . .
 
--   Send the dice **to a lab** to <span class="highlight">check weight and balance</span>
+- Send the dice **to a lab** to <span class="highlight">check weight and balance</span>
 
 . . .
 
--   Roll the dice **many times**
--   Check if the outcomes are **uniformly distributed**
--   Compare **observed** frequencies to **expected** frequencies
+- Roll the dice **many times**
+- Check if the outcomes are **uniformly distributed**
+- Compare **observed** frequencies to **expected** frequencies
 
 ## Dice Rolls
 
@@ -85,11 +85,11 @@ Randomness is a <span class="highlight">fundamental aspect of the world</span>
 
 . . .
 
--   **Testing:** Generate random inputs to find bugs
--   **Optimization:** Escape local optima in complex problems
--   **Simulation:** Model complex systems with uncertainty
--   **Security:** Make systems unpredictable to attackers
--   **Fairness:** Eliminate bias in selection processes
+- **Testing:** Generate random inputs to find bugs
+- **Optimization:** Escape local optima in complex problems
+- **Simulation:** Model complex systems with uncertainty
+- **Security:** Make systems unpredictable to attackers
+- **Fairness:** Eliminate bias in selection processes
 
 . . .
 
@@ -105,35 +105,35 @@ Randomness is a <span class="highlight">fundamental aspect of the world</span>
 
 ## Social Life
 
--   **Dating apps:** Randomized matching within preferences
--   **Random encounters** that lead to friendships
--   **Career opportunities** from unexpected connections
--   **Breaking ties** through coin tosses
--   **Netflix recommendations:** Controlled randomness for discovery
+- **Dating apps:** Randomized matching within preferences
+- **Random encounters** that lead to friendships
+- **Career opportunities** from unexpected connections
+- **Breaking ties** through coin tosses
+- **Netflix recommendations:** Controlled randomness for discovery
 
 ## Entertainment Industry
 
--   **Pokémon:** "Random" encounters weighted by rarity
--   **Loot systems:** Rare items have controlled drop rates
--   **Chess AI:** Introduces randomness to feel more human-like
--   **Spotify shuffle:** Deliberately less random to feel natural
--   **TikTok:** Controlled randomization for content discovery
+- **Pokémon:** "Random" encounters weighted by rarity
+- **Loot systems:** Rare items have controlled drop rates
+- **Chess AI:** Introduces randomness to feel more human-like
+- **Spotify shuffle:** Deliberately less random to feel natural
+- **TikTok:** Controlled randomization for content discovery
 
 ## Cryptography & Security
 
--   **Cryptocurrency mining:** Solving cryptographic puzzles through guessing
--   **Password generators:** Balance randomness and memorability
--   **`correct-horse-battery-staple`** is more secure than **`Tr0ub4dor&3`**
--   **Modern encryption** relies on random number generation
--   **Two-factor authentication** uses random codes
+- **Cryptocurrency mining:** Solving cryptographic puzzles through guessing
+- **Password generators:** Balance randomness and memorability
+- **`correct-horse-battery-staple`** is more secure than **`Tr0ub4dor&3`**
+- **Modern encryption** relies on random number generation
+- **Two-factor authentication** uses random codes
 
 ## Data Science & Research
 
--   **Weather forecasting:** Uses randomness to model uncertainty
--   **Stock algorithms:** Add randomness to avoid predictable patterns
--   **Self-driving cars:** Random elements for natural-feeling behavior
--   **Random sampling:** Ensures unbiased research results
--   **A/B testing:** Random assignment to treatment groups
+- **Weather forecasting:** Uses randomness to model uncertainty
+- **Stock algorithms:** Add randomness to avoid predictable patterns
+- **Self-driving cars:** Random elements for natural-feeling behavior
+- **Random sampling:** Ensures unbiased research results
+- **A/B testing:** Random assignment to treatment groups
 
 . . .
 
@@ -147,10 +147,10 @@ Randomness is a <span class="highlight">fundamental aspect of the world</span>
 
 **Why do computer scientists love randomness?**
 
--   **Efficiency:** Often faster than deterministic approaches
--   **Simplicity:** Can solve complex problems with simple code
--   **Robustness:** Avoids worst-case scenarios
--   **Approximation:** "Good enough" solutions in reasonable time
+- **Efficiency:** Often faster than deterministic approaches
+- **Simplicity:** Can solve complex problems with simple code
+- **Robustness:** Avoids worst-case scenarios
+- **Approximation:** "Good enough" solutions in reasonable time
 
 . . .
 
@@ -166,17 +166,17 @@ Randomness is a <span class="highlight">fundamental aspect of the world</span>
 
 <span class="highlight">True Randomness</span>
 
--   Physical phenomena
--   Atmospheric noise
--   Radioactive decay
--   Quantum effects
+- Physical phenomena
+- Atmospheric noise
+- Radioactive decay
+- Quantum effects
 
 <span class="highlight">Pseudo-randomness</span>
 
--   Deterministic algorithms
--   Seed-based generation
--   Repeatable sequences
--   Good enough for most uses
+- Deterministic algorithms
+- Seed-based generation
+- Repeatable sequences
+- Good enough for most uses
 
 ## Limits of Computation
 
@@ -201,10 +201,10 @@ print(math.factorial(52))
 
 . . .
 
--   Developed in the **1940s for nuclear weapons research**
--   Nuclear fission chain reactions **were too complex**
--   Helped to <span class="highlight">evaluate the probabilities of different outcomes</span>
--   Named after **Monaco's famous casino**
+- Developed in the **1940s for nuclear weapons research**
+- Nuclear fission chain reactions **were too complex**
+- Helped to <span class="highlight">evaluate the probabilities of different outcomes</span>
+- Named after **Monaco's famous casino**
 
 . . .
 
@@ -233,10 +233,10 @@ print(math.factorial(10))
 
 ## Brute Force
 
--   Try <span class="highlight">every possibility</span>
--   Total possible routes: 10! = **3,628,800**
--   **Guaranteed** to find best solution
--   If each check takes 1ms: **1 hour** to check all routes
+- Try <span class="highlight">every possibility</span>
+- Total possible routes: 10! = **3,628,800**
+- **Guaranteed** to find best solution
+- If each check takes 1ms: **1 hour** to check all routes
 
 . . .
 
@@ -244,10 +244,10 @@ print(math.factorial(10))
 
 ## Time and Space Requirements
 
--   For 20 cities: 20! = **2.4 quintillion** routes
--   Would take **77 billion years** at 1ms per check!
--   **Time complexity** grows <span class="highlight">factorially</span>
--   **Memory requirements** increase with problem size
+- For 20 cities: 20! = **2.4 quintillion** routes
+- Would take **77 billion years** at 1ms per check!
+- **Time complexity** grows <span class="highlight">factorially</span>
+- **Memory requirements** increase with problem size
 
 . . .
 
@@ -257,19 +257,19 @@ print(math.factorial(10))
 
 ## Greedy Algorithm
 
--   **Example:** Always picking shortest next flight
--   Make **locally optimal** choices at each step
--   <span class="highlight">Never backtracks or reconsiders past decisions</span>
--   Fast execution & simple to implement
--   Can perform **poorly on complex problems**
+- **Example:** Always picking shortest next flight
+- Make **locally optimal** choices at each step
+- <span class="highlight">Never backtracks or reconsiders past decisions</span>
+- Fast execution & simple to implement
+- Can perform **poorly on complex problems**
 
 ## Hill Climbing
 
--   <span class="highlight">Iteratively improve solution</span> by making small changes
--   Like **climbing in fog**, can only see immediate surroundings
--   Don't know if **higher peaks** exist elsewhere
--   Can get stuck in **local optima**
--   No guarantee of finding **global best optima**
+- <span class="highlight">Iteratively improve solution</span> by making small changes
+- Like **climbing in fog**, can only see immediate surroundings
+- Don't know if **higher peaks** exist elsewhere
+- Can get stuck in **local optima**
+- No guarantee of finding **global best optima**
 
 . . .
 
@@ -277,9 +277,9 @@ print(math.factorial(10))
 
 ## Simulated Annealing (SA)
 
--   Make random changes and **accept improvements**
--   Sometimes accept **worse solutions**
--   Gradually become **more selective**
+- Make random changes and **accept improvements**
+- Sometimes accept **worse solutions**
+- Gradually become **more selective**
 
 . . .
 
@@ -287,8 +287,8 @@ print(math.factorial(10))
 
 . . .
 
--   Randomness helps to escape **local optima**
--   Balances <span class="highlight">exploration vs. exploitation</span>
+- Randomness helps to escape **local optima**
+- Balances <span class="highlight">exploration vs. exploitation</span>
 
 ## SA Animation
 
@@ -308,15 +308,15 @@ print(math.factorial(10))
 
 <span class="highlight">Freedom</span>
 
--   Individual choice
--   Personal responsibility
--   Market-driven
+- Individual choice
+- Personal responsibility
+- Market-driven
 
 <span class="highlight">Equality</span>
 
--   Shared resources
--   Social safety nets
--   Regulated systems
+- Shared resources
+- Social safety nets
+- Regulated systems
 
 . . .
 
@@ -326,9 +326,9 @@ print(math.factorial(10))
 
 You might <span class="highlight">randomly</span> be:
 
--   Any gender identity and economic status
--   Any health condition and intelligence level
--   Any cultural background and religious belief
+- Any gender identity and economic status
+- Any health condition and intelligence level
+- Any cultural background and religious belief
 
 . . .
 
@@ -336,10 +336,10 @@ You might <span class="highlight">randomly</span> be:
 
 ## Key Considerations
 
--   **Individual stories:** Powerful but potentially misleading
--   **Statistics:** Comprehensive but can miss nuance
--   **Hidden diversity:** Important subgroups may be overlooked
--   **Small policy changes** <span class="highlight">can have cascading effects</span>
+- **Individual stories:** Powerful but potentially misleading
+- **Statistics:** Comprehensive but can miss nuance
+- **Hidden diversity:** Important subgroups may be overlooked
+- **Small policy changes** <span class="highlight">can have cascading effects</span>
 
 . . .
 
@@ -349,10 +349,10 @@ You might <span class="highlight">randomly</span> be:
 
 ## Measuring Success
 
--   **Mean happiness:** Average well-being
--   **Total happiness:** Utilitarian approach
--   **Median happiness:** Focus on the middle class
--   **Minimum happiness:** Protecting the most vulnerable
+- **Mean happiness:** Average well-being
+- **Total happiness:** Utilitarian approach
+- **Median happiness:** Focus on the middle class
+- **Minimum happiness:** Protecting the most vulnerable
 
 . . .
 
@@ -360,10 +360,10 @@ You might <span class="highlight">randomly</span> be:
 
 ## Idea: Random Sampling
 
--   Randomly <span class="highlight">select a subset of the population</span>
--   Gather **diverse perspectives** from the sample
--   Better understand **needs** of population
--   **Reduce selection bias** and improve accuracy
+- Randomly <span class="highlight">select a subset of the population</span>
+- Gather **diverse perspectives** from the sample
+- Better understand **needs** of population
+- **Reduce selection bias** and improve accuracy
 
 . . .
 
@@ -385,10 +385,10 @@ You might <span class="highlight">randomly</span> be:
 
 . . .
 
--   **Random allocation** of patients in clinical trials
--   **Random audits** for tax compliance
--   **Random assignment** of cases to judges
--   **Random order** of candidates on voting ballots
+- **Random allocation** of patients in clinical trials
+- **Random audits** for tax compliance
+- **Random assignment** of cases to judges
+- **Random order** of candidates on voting ballots
 
 # <span class="flow">Uncertainty</span>
 
@@ -396,8 +396,8 @@ You might <span class="highlight">randomly</span> be:
 
 <span class="question">Question:</span> **Which would you prefer?**
 
--   **100% chance of winning 50 EUR**
--   **50% chance of winning 120 EUR**
+- **100% chance of winning 50 EUR**
+- **50% chance of winning 120 EUR**
 
 . . .
 
@@ -413,26 +413,26 @@ You might <span class="highlight">randomly</span> be:
 
 <span class="highlight">Embrace When</span>:
 
--   Exploring new solutions
--   Avoiding bias
--   Breaking deadlocks
--   Testing systems
+- Exploring new solutions
+- Avoiding bias
+- Breaking deadlocks
+- Testing systems
 
 <span class="highlight">Reduce When</span>:
 
--   Safety-critical systems
--   Financial transactions
--   Medical procedures
--   Legal proceedings
+- Safety-critical systems
+- Financial transactions
+- Medical procedures
+- Legal proceedings
 
 # <span class="flow">Takeaways</span>
 
 ## "Good Enough" Solutions
 
--   **Perfect is enemy of good**
-    -   Remember Monte Carlo methods: **approximations work**
-    -   Complete analysis often impossible
-    -   <span class="highlight">Perfect information is rare</span>
+- **Perfect is enemy of good**
+  - Remember Monte Carlo methods: **approximations work**
+  - Complete analysis often impossible
+  - <span class="highlight">Perfect information is rare</span>
 
 . . .
 
@@ -442,10 +442,10 @@ You might <span class="highlight">randomly</span> be:
 
 ## Opportunity Costs
 
--   <span class="highlight">Consider opportunity costs</span>
-    -   Quick approximations enable faster decisions
-    -   Balance accuracy vs. computation time
-    -   Random sampling vs. complete enumeration
+- <span class="highlight">Consider opportunity costs</span>
+  - Quick approximations enable faster decisions
+  - Balance accuracy vs. computation time
+  - Random sampling vs. complete enumeration
 
 . . .
 
@@ -461,9 +461,9 @@ so far?
 
 ## After the break --- Randomness
 
--   Programming session in our new notebooks
--   How to translate the idea into code and experiments
--   Different scheduling algorithms applied to problems
+- Programming session in our new notebooks
+- How to translate the idea into code and experiments
+- Different scheduling algorithms applied to problems
 
 . . .
 
@@ -476,12 +476,12 @@ so far?
 
 ## Interesting literature to start
 
--   Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^1]
+- Christian, B., & Griffiths, T. (2016). Algorithms to live by: the computer science of human decisions. First international edition. New York, Henry Holt and Company.[^1]
 
 ## Books on Programming
 
--   Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O'Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
--   Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
+- Downey, A. B. (2024). Think Python: How to think like a computer scientist (Third edition). O'Reilly. [Here](https://greenteapress.com/wp/think-python-3rd-edition/)
+- Elter, S. (2021). Schrödinger programmiert Python: Das etwas andere Fachbuch (1. Auflage). Rheinwerk Verlag.
 
 . . .
 

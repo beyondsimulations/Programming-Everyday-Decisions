@@ -10,10 +10,10 @@ Throughout our previous tutorials, we've explored fundamental programming concep
 
 The concepts we've learned map directly to caching principles:
 
--   **Variables** → Like cache entries (storing specific pieces of information)
--   **Comparisons** → Like cache eviction policies (what we keep/remove)
--   **Lists** → Like cache storage (what we remember)
--   **Loops** → Like cache maintenance (how we update our knowledge)
+- **Variables** → Like cache entries (storing specific pieces of information)
+- **Comparisons** → Like cache eviction policies (what we keep/remove)
+- **Lists** → Like cache storage (what we remember)
+- **Loops** → Like cache maintenance (how we update our knowledge)
 
 > **What is Caching?**
 >
@@ -33,10 +33,10 @@ num_orders = 3 # Integer cache
 
 > **Cache Types in Real Life**
 >
-> -   **Strings**: Names, orders, preferences
-> -   **Floats**: Prices, ratings, temperatures
-> -   **Booleans**: Membership status, availability
-> -   **Integers**: Visit counts, inventory levels
+> - **Strings**: Names, orders, preferences
+> - **Floats**: Prices, ratings, temperatures
+> - **Booleans**: Membership status, availability
+> - **Integers**: Visit counts, inventory levels
 
 ## Exercise 1.1: Create a simple cache system for your favorite restaurant orders
 

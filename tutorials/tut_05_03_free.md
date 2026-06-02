@@ -26,11 +26,11 @@ Create a side-scrolling platformer game where the player jumps between platforms
 
 **Features to implement:**
 
--   Player character with left/right movement and jumping
--   Gravity and collision detection with platforms
--   Obstacles that end the game on contact
--   Collectible items that increase score
--   Score display and game over screen
+- Player character with left/right movement and jumping
+- Gravity and collision detection with platforms
+- Obstacles that end the game on contact
+- Collectible items that increase score
+- Score display and game over screen
 
 **Key library:** `pygame`
 
@@ -40,11 +40,11 @@ Build the classic Snake game where the snake grows longer each time it eats food
 
 **Features to implement:**
 
--   Snake that moves in four directions (arrow keys)
--   Food that appears at random positions
--   Snake grows when eating food
--   Game over when hitting walls or itself
--   Score tracking based on snake length
+- Snake that moves in four directions (arrow keys)
+- Food that appears at random positions
+- Snake grows when eating food
+- Game over when hitting walls or itself
+- Score tracking based on snake length
 
 **Key library:** `pygame`
 
@@ -54,11 +54,11 @@ Create a game where a bird flies through gaps in pipes by tapping/clicking to st
 
 **Features to implement:**
 
--   Bird that falls due to gravity
--   Click/spacebar to make the bird "flap" upward
--   Pipes that scroll from right to left with gaps
--   Collision detection with pipes and ground
--   High score tracking
+- Bird that falls due to gravity
+- Click/spacebar to make the bird "flap" upward
+- Pipes that scroll from right to left with gaps
+- Collision detection with pipes and ground
+- High score tracking
 
 **Key library:** `pygame`
 
@@ -68,11 +68,11 @@ Build a classic arcade shooter where you defend against descending alien invader
 
 **Features to implement:**
 
--   Player ship that moves left/right at the bottom
--   Shooting projectiles upward
--   Rows of aliens that move and descend
--   Aliens shooting back at the player
--   Multiple waves with increasing difficulty
+- Player ship that moves left/right at the bottom
+- Shooting projectiles upward
+- Rows of aliens that move and descend
+- Aliens shooting back at the player
+- Multiple waves with increasing difficulty
 
 **Key library:** `pygame`
 
@@ -82,11 +82,11 @@ Build a Tic-Tac-Toe game where you play against an unbeatable AI opponent.
 
 **Features to implement:**
 
--   3x3 game board displayed in terminal
--   Player makes moves by entering positions (1-9)
--   AI opponent using minimax algorithm
--   Win/lose/draw detection
--   Option to play again
+- 3x3 game board displayed in terminal
+- Player makes moves by entering positions (1-9)
+- AI opponent using minimax algorithm
+- Win/lose/draw detection
+- Option to play again
 
 **Key library:** Built-in Python only (no external libraries needed)
 
@@ -96,11 +96,11 @@ Build a tool that extracts text from receipt images and organizes the data.
 
 **Features to implement:**
 
--   Load an image file (photo of a receipt)
--   Use OCR to extract text from the image
--   Parse extracted text for key info (total, date, store name)
--   Display results and export to CSV
--   Handle multiple receipts
+- Load an image file (photo of a receipt)
+- Use OCR to extract text from the image
+- Parse extracted text for key info (total, date, store name)
+- Display results and export to CSV
+- Handle multiple receipts
 
 **Key libraries:** `pytesseract`, `Pillow`, `pandas`
 
@@ -112,11 +112,11 @@ Build a web dashboard for exploring stock market data.
 
 **Features to implement:**
 
--   Input field to enter stock ticker symbols
--   Fetch historical price data using yfinance
--   Interactive price chart with date range selection
--   Basic statistics (high, low, average, % change)
--   Compare multiple stocks on one chart
+- Input field to enter stock ticker symbols
+- Fetch historical price data using yfinance
+- Interactive price chart with date range selection
+- Basic statistics (high, low, average, % change)
+- Compare multiple stocks on one chart
 
 **Key libraries:** `streamlit`, `yfinance`, `plotly`
 
@@ -128,11 +128,11 @@ Build a dashboard to track your grades and calculate your average grade.
 
 **Features to implement:**
 
--   Input courses with names and credit hours
--   Add assignments with grades and weights per course
--   Calculate current grade for each course
--   Visualize grade distribution with charts
--   "What-if" calculator: what grade do I need on the final?
+- Input courses with names and credit hours
+- Add assignments with grades and weights per course
+- Calculate current grade for each course
+- Visualize grade distribution with charts
+- "What-if" calculator: what grade do I need on the final?
 
 **Key libraries:** `streamlit`, `pandas`, `plotly`
 

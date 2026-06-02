@@ -14,9 +14,9 @@ Imagine you're helping a company make hiring decisions. You need to look at diff
 
 When looking at job candidates, we often ask questions like:
 
--   Does the candidate have enough experience?
--   Is their salary request within our budget?
--   Did they score well on the test?
+- Does the candidate have enough experience?
+- Is their salary request within our budget?
+- Did they score well on the test?
 
 These questions all require yes/no (`True/False`) answers, which is exactly what comparison operators give us in Python. Each comparison will result in either `True` or `False`.
 
@@ -125,15 +125,15 @@ print("Good job! You correctly identified that the current candidate is better t
 
 Often, we need to check multiple things at once. For example, a good candidate should:
 
--   Have enough experience
--   Be within our budget
--   Pass the test
+- Have enough experience
+- Be within our budget
+- Pass the test
 
 Python gives us three ways to combine comparisons:
 
--   `and`: Both conditions must be true
--   `or`: At least one condition must be true
--   `not`: Makes true become false and false become true
+- `and`: Both conditions must be true
+- `or`: At least one condition must be true
+- `not`: Makes true become false and false become true
 
 Let's see some examples:
 
@@ -175,13 +175,13 @@ print(f"Is candidate qualified? {is_qualified}")
 
 We have a candidate with:
 
--   4 years of experience
--   Test score of 90
+- 4 years of experience
+- Test score of 90
 
 Check if they meet BOTH requirements:
 
--   More than 3 years experience
--   Test score above 85
+- More than 3 years experience
+- Test score above 85
 
 Store the result in `meets_requirements`.
 
@@ -206,8 +206,8 @@ print("Good job! You correctly identified that the candidate meets both requirem
 
 A candidate is acceptable if they EITHER:
 
--   Have a PhD
--   OR have a high test score (above 95)
+- Have a PhD
+- OR have a high test score (above 95)
 
 Store the result in `is_qualified`
 
@@ -265,10 +265,10 @@ Look at the following candidate's information and decide if we should hire them:
 
 Requirements:
 
--   At least 5 years experience
--   Test score above 85
--   Salary request at most 90000
--   Must have a degree
+- At least 5 years experience
+- Test score above 85
+- Salary request at most 90000
+- Must have a degree
 
 Create a single boolean expression that checks ALL requirements and store the result in `final_decision`.
 
@@ -296,9 +296,9 @@ print("Good job! You correctly identified that the candidate does not meet all r
 
 We have:
 
--   Seen 18 out of 40 candidates
--   Current candidate score: 90
--   Best score so far: 85
+- Seen 18 out of 40 candidates
+- Current candidate score: 90
+- Best score so far: 85
 
 Check if we should hire this candidate (we should hire if we've seen at least 37% of candidates AND this candidate is better than the best so far).
 
@@ -328,9 +328,9 @@ print("Good job! You correctly identified that we should hire this candidate")
 
 Great job! You now know how to:
 
--   Compare values using Python's comparison operators
--   Combine comparisons using logical operators
--   Make decisions based on multiple criteria
+- Compare values using Python's comparison operators
+- Combine comparisons using logical operators
+- Make decisions based on multiple criteria
 
 These skills are useful not just for hiring decisions, but for any situation where you need to make choices based on multiple conditions, especially in the context of optimal stopping problems!
 

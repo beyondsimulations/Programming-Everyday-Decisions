@@ -137,9 +137,9 @@ if __name__ == "__main__":
     main()
 ```
 
--   `def main():` defines a function (a reusable block of code).
--   `print(...)` shows text in the terminal.
--   The line `if __name__ == "__main__":` ensures this only auto-runs when the file is executed directly.
+- `def main():` defines a function (a reusable block of code).
+- `print(...)` shows text in the terminal.
+- The line `if __name__ == "__main__":` ensures this only auto-runs when the file is executed directly.
 
 Don't worry about this yet, we'll gradually build up to it.
 
@@ -181,10 +181,10 @@ uv self update
 
 ## Best practices for this course
 
--   One folder for the course keeps everything tidy.
--   Never install packages "globally" outside a project.
--   Keep a short personal log in each project's `README.md` (What did I do? What still confuses me?).
--   Ask early for help, guessing usually takes much more time than asking.
+- One folder for the course keeps everything tidy.
+- Never install packages "globally" outside a project.
+- Keep a short personal log in each project's `README.md` (What did I do? What still confuses me?).
+- Ask early for help, guessing usually takes much more time than asking.
 
 You can always see available commands:
 

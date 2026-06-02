@@ -12,11 +12,11 @@ Welcome to this tutorial on dictionaries in Python! In the realm of personal tas
 
 Think of it this way:
 
--   A dictionary consists of a collection of key-value pairs
--   Each key-value pair has a unique key (like for example the task name)
--   And an associated value (like for example the task's priority level)
--   Keys are unique, but values can be repeated
--   Dictionaries can grow and shrink as needed
+- A dictionary consists of a collection of key-value pairs
+- Each key-value pair has a unique key (like for example the task name)
+- And an associated value (like for example the task's priority level)
+- Keys are unique, but values can be repeated
+- Dictionaries can grow and shrink as needed
 
 Let's see some examples:
 
@@ -218,9 +218,9 @@ print("Great! You've successfully removed a task from the dictionary.")
 
 Great! You've just navigated through the basics of dictionaries in Python. Dictionaries are powerful data structures that allow for efficient data organization and retrieval. Remember:
 
--   Dictionaries can store information using key-value pairs
--   Accessing them using keys is efficient and easier as accessing them using indices
--   Loops can iterate over dictionaries to perform operations on each key-value pair
+- Dictionaries can store information using key-value pairs
+- Accessing them using keys is efficient and easier as accessing them using indices
+- Loops can iterate over dictionaries to perform operations on each key-value pair
 
 # Solutions
 

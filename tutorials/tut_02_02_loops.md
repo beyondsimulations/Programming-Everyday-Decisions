@@ -37,9 +37,9 @@ for treatment in treatments:
 
 When you need to iterate a specific number of times, the `range()` function is invaluable. It generates a sequence of numbers. It can take up to three arguments:
 
--   `start`: The starting number (inclusive)
--   `stop`: The ending number (exclusive)
--   `step`: The difference between each number in the sequence
+- `start`: The starting number (inclusive)
+- `stop`: The ending number (exclusive)
+- `step`: The difference between each number in the sequence
 
 ``` python
 # Visual representation of range
@@ -80,8 +80,8 @@ for dose in range(100, 501, 100):  # 100 to 500 in steps of 100
 
 ## Break and Continue Statements
 
--   `break`: Immediately exits the loop
--   `continue`: Skips to the next iteration
+- `break`: Immediately exits the loop
+- `continue`: Skips to the next iteration
 
 ``` python
 efficacy_scores = [65, 85, 45, 82, 58]
@@ -161,9 +161,9 @@ print("Success! Your average calculation is correct.")
 
 > **Tip**
 >
-> -   Add each rate to the total
-> -   Calculate the average by dividing the total by the number of treatments
-> -   Note that `len(efficacy_rates)` gives you the count of treatments
+> - Add each rate to the total
+> - Calculate the average by dividing the total by the number of treatments
+> - Note that `len(efficacy_rates)` gives you the count of treatments
 
 ## Exercise 1.3 - Find Promising Treatments
 
@@ -191,10 +191,10 @@ print("Success! You've correctly identified the promising treatments.")
 
 > **Tip**
 >
-> -   Each treatment is represented as a tuple: `(name, efficacy_rate)`
-> -   You need to check if the efficacy rate (second element) is ≥ 80%
-> -   If it meets the criteria, add the treatment name (first element) to `promising_treatments`
-> -   You could use tuple unpacking in your loop for cleaner code
+> - Each treatment is represented as a tuple: `(name, efficacy_rate)`
+> - You need to check if the efficacy rate (second element) is ≥ 80%
+> - If it meets the criteria, add the treatment name (first element) to `promising_treatments`
+> - You could use tuple unpacking in your loop for cleaner code
 
 # Section 2 - While Loops
 
@@ -242,9 +242,9 @@ while True:
 >
 > While loops are particularly useful when:
 >
-> -   You don't know how many iterations you'll need
-> -   You're looking for a specific outcome
-> -   You need to stop based on resource constraints
+> - You don't know how many iterations you'll need
+> - You're looking for a specific outcome
+> - You need to stop based on resource constraints
 
 Be careful with while loops! An infinite loop can crash your program:
 
@@ -257,9 +257,9 @@ while True:  # Dangerous!
 >
 > Always ensure:
 >
-> -   The condition will eventually become false
-> -   Resources or counters are properly updated
-> -   You have a way to break out if needed
+> - The condition will eventually become false
+> - Resources or counters are properly updated
+> - You have a way to break out if needed
 
 ## Exercise 2.1 - Breakthrough Treatment
 
@@ -314,24 +314,24 @@ print("Success! You've managed resources effectively.")
 
 > **Tip**
 >
-> -   Track both resources and efficacy simultaneously
-> -   Stop if either:
->     -   Resources fall below cost_per_trial
->     -   A breakthrough treatment (≥ 90% efficacy) is found
-> -   Remember to deduct costs for each trial
+> - Track both resources and efficacy simultaneously
+> - Stop if either:
+>   - Resources fall below cost_per_trial
+>   - A breakthrough treatment (≥ 90% efficacy) is found
+> - Remember to deduct costs for each trial
 
 # Conclusion
 
 Excellent work! You've learned about two powerful loop structures in Python through the lens of clinical trials and treatment exploration:
 
--   `for` loops help us:
-    -   Process data systematically
-    -   Analyze outcomes efficiently
-    -   Work with structured data like treatment efficacy rates
--   `while` loops are perfect for:
-    -   Resource-constrained scenarios
-    -   Finding certain outcomes
-    -   Situations with unknown iteration counts
+- `for` loops help us:
+  - Process data systematically
+  - Analyze outcomes efficiently
+  - Work with structured data like treatment efficacy rates
+- `while` loops are perfect for:
+  - Resource-constrained scenarios
+  - Finding certain outcomes
+  - Situations with unknown iteration counts
 
 In the context of clinical trials:
 - `for` loops are like reviewing a predetermined set of patient data

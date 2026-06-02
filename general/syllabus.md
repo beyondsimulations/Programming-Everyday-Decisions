@@ -12,39 +12,39 @@ We were rather ambitious in the design of the course in the course module, thus 
 
 **Welcome and Optimal Stopping (I)**
 
--   Overview of the course and its objectives
--   Introduction to algorithmic thinking
--   Optimal Stopping
--   Programming: First Steps in Python
+- Overview of the course and its objectives
+- Introduction to algorithmic thinking
+- Optimal Stopping
+- Programming: First Steps in Python
 
 **Explore & Exploit (II)**
 
--   Multi-armed Bandit Problem
--   Balancing exploration and exploitation
--   Programming: Simulating the Multi-armed Bandit Problem
+- Multi-armed Bandit Problem
+- Balancing exploration and exploitation
+- Programming: Simulating the Multi-armed Bandit Problem
 
 **Caching (III)**
 
--   Principles of caching and memory management
--   Least Recently Used (LRU) and other caching strategies
--   Programming: Implementing an LRU cache
+- Principles of caching and memory management
+- Least Recently Used (LRU) and other caching strategies
+- Programming: Implementing an LRU cache
 
 **Scheduling (IV)**
 
--   Task scheduling algorithms
--   Trade-offs between efficiency and fairness
--   Programming: Implementing scheduling algorithms
+- Task scheduling algorithms
+- Trade-offs between efficiency and fairness
+- Programming: Implementing scheduling algorithms
 
 **Randomness (V)**
 
--   Role of randomness in algorithms
--   Monte Carlo methods and their applications
--   Programming: Monte Carlo simulation
+- Role of randomness in algorithms
+- Monte Carlo methods and their applications
+- Programming: Monte Carlo simulation
 
 **Computational Kindness (VI)**
 
--   Algorithms for social good
--   Ethical considerations in algorithm design
--   Quick review of key concepts
--   Brief student presentations
--   Open discussion and Q&A
+- Algorithms for social good
+- Ethical considerations in algorithm design
+- Quick review of key concepts
+- Brief student presentations
+- Open discussion and Q&A

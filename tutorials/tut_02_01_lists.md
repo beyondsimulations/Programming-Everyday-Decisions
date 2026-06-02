@@ -8,8 +8,8 @@ subtitle: 'Programming: Everyday Decision-Making Algorithms'
 
 When deciding where to eat, we often face a dilemma: should we go to our favorite restaurant (exploit) or try somewhere new (explore)? This is a perfect example of the explore-exploit trade-off! To help us analyze this problem, we need to learn about lists and tuples in Python.
 
--   Lists are like our dining history - we can add new restaurants and remove ones we don't like
--   Tuples are like a restaurant's fixed menu - once set, it doesn't change
+- Lists are like our dining history - we can add new restaurants and remove ones we don't like
+- Tuples are like a restaurant's fixed menu - once set, it doesn't change
 
 Let's learn these concepts by helping a food critic make better restaurant decisions!
 
@@ -21,9 +21,9 @@ Let's learn these concepts by helping a food critic make better restaurant decis
 
 Lists in Python are ordered collections of items that can be modified. Think of them as a restaurant review notebook where each page can be added, removed, or edited. Lists are created using square brackets `[]` and can contain any type of data (numbers, strings, even other lists!). They are fundamental data structures in Python that help us organize and manage collections of data. They're particularly useful for our restaurant decision-making scenario as they allow us to:
 
--   Track multiple restaurants in a single variable
--   Modify our preferences over time
--   Access restaurants by their position in our list
+- Track multiple restaurants in a single variable
+- Modify our preferences over time
+- Access restaurants by their position in our list
 
 Here are some examples:
 
@@ -43,8 +43,8 @@ mixed_data = ["Pasta Place", 4.5, True]
 Lists are flexible. Here are the most common operations:
 
 1.  **Adding items** (like discovering a new restaurant):
-    -   `append()` adds to the end
-    -   `insert()` adds at a specific position
+    - `append()` adds to the end
+    - `insert()` adds at a specific position
 
 ``` python
 # Adding a new restaurant
@@ -61,8 +61,8 @@ print(restaurants) # ["Pasta Place", "Taco Shop", "Sushi Bar", "Pizza Palace"]
     ['Pasta Place', 'Taco Shop', 'Sushi Bar', 'Pizza Palace']
 
 1.  **Removing items** (like removing a restaurant you don't like):
-    -   `pop()` removes the last item
-    -   `remove()` removes a specific item
+    - `pop()` removes the last item
+    - `remove()` removes a specific item
 
 ``` python
 # Removing the last restaurant
@@ -79,9 +79,9 @@ print(restaurants)
     ['Taco Shop', 'Sushi Bar']
 
 1.  **Accessing items** (like looking up a restaurant by position):
-    -   `[0]` gives you the first item
-    -   `[1:3]` gives you items second and third
-    -   `[-1]` gives you the last item
+    - `[0]` gives you the first item
+    - `[1:3]` gives you items second and third
+    - `[-1]` gives you the last item
 
 ``` python
 restaurants = ["Pasta Place", "Sushi Bar", "Burger Joint"]
@@ -98,9 +98,9 @@ some_choices = restaurants[0:2] # Gets ["Pasta Place", "Sushi Bar"]
 
 reate a list `favorite_spots` with your top three favorite restaurants. Remember to:
 
--   Use square brackets `[]`
--   Put restaurant names in quotes (they're strings!)
--   Separate items with commas
+- Use square brackets `[]`
+- Put restaurant names in quotes (they're strings!)
+- Separate items with commas
 
 ``` python
 # YOUR CODE BELOW
@@ -288,15 +288,15 @@ print("Restaurant profile:", restaurant_profile)
 
 Great work! You've learned about lists and tuples in Python through the lens of restaurant decision-making. These tools are essential for:
 
--   Tracking your favorite restaurants (lists)
--   Managing ratings and visits (nested lists)
--   Storing fixed restaurant information (tuples)
+- Tracking your favorite restaurants (lists)
+- Managing ratings and visits (nested lists)
+- Storing fixed restaurant information (tuples)
 
 In the context of the explore-exploit trade-off:
 
--   Lists could help us track our exploration (new restaurants we try)
--   Nested lists could help us make informed decisions (by storing ratings and visit counts)
--   Tuples could help us remember important fixed information about each place
+- Lists could help us track our exploration (new restaurants we try)
+- Nested lists could help us make informed decisions (by storing ratings and visit counts)
+- Tuples could help us remember important fixed information about each place
 
 # Solutions
 

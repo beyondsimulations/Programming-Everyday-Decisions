@@ -14,18 +14,18 @@ This tutorial will teach you about functions using a **library management system
 >
 > Think of a function like a coffee machine:
 >
-> -   Input (parameters) → Coffee beans, water, settings
-> -   Process → Internal brewing steps
-> -   Output (return value) → Your finished coffee
+> - Input (parameters) → Coffee beans, water, settings
+> - Process → Internal brewing steps
+> - Output (return value) → Your finished coffee
 
 # Section 1 - Creating Basic Functions
 
 Functions in Python are like recipes:
 
--   They have a name
--   Might need ingredients (parameters)
--   Follow steps (code)
--   Usually produce something (return value)
+- They have a name
+- Might need ingredients (parameters)
+- Follow steps (code)
+- Usually produce something (return value)
 
 Let's start with a simple function:
 
@@ -64,9 +64,9 @@ def function_name(parameter1, parameter2):  # ← Function signature
 
 > **Common Function Errors**
 >
-> -   `IndentationError`: Check your function's indentation
-> -   `NameError`: Make sure the function is defined before calling it
-> -   `TypeError`: Verify you're passing the correct number of arguments
+> - `IndentationError`: Check your function's indentation
+> - `NameError`: Make sure the function is defined before calling it
+> - `TypeError`: Verify you're passing the correct number of arguments
 
 ## Exercise 1.1 - Create a Book Information Function
 
@@ -76,9 +76,9 @@ Create a function called `get_book_info` that takes three parameters: `title`, `
 >
 > Common mistakes to avoid:
 >
-> -   Don't forget the spaces in the formatting
-> -   Remember to use f-strings for easy string formatting
-> -   Make sure to include the parentheses around the year
+> - Don't forget the spaces in the formatting
+> - Remember to use f-strings for easy string formatting
+> - Make sure to include the parentheses around the year
 
 ``` python
 # If you call the function like this:
@@ -152,15 +152,15 @@ print("Excellent! Your popular book function works correctly!")
 
 Many libraries have borrowing policies that depend on multiple factors. Let's implement a realistic borrowing policy function that a library might use. Create a function called `can_borrow_book` that takes three parameters:
 
--   `is_member`: boolean indicating if the person is a library member
--   `books_borrowed`: number of books currently borrowed
--   `has_overdue`: boolean indicating if they have overdue books
+- `is_member`: boolean indicating if the person is a library member
+- `books_borrowed`: number of books currently borrowed
+- `has_overdue`: boolean indicating if they have overdue books
 
 The function should return `True` only if:
 
--   They are a member AND
--   They have borrowed less than 3 books AND
--   They have no overdue books
+- They are a member AND
+- They have borrowed less than 3 books AND
+- They have no overdue books
 
 ``` python
 # YOUR CODE BELOW
@@ -201,14 +201,14 @@ print(f"The fine for 5 days overdue with a custom rate is {calculate_fine(5, 1.0
 
 Create a function called `calculate_cache_priority` that helps decide if a book should be kept in the easily accessible section. It should take:
 
--   `times_borrowed`: How many times the book was borrowed
--   `days_since_last_borrow`: Days since last borrowed
--   `is_reference`: Whether it's a reference book **(default: False)**
+- `times_borrowed`: How many times the book was borrowed
+- `days_since_last_borrow`: Days since last borrowed
+- `is_reference`: Whether it's a reference book **(default: False)**
 
 Return a priority score calculated as:
 
--   For regular books: `times_borrowed / (days_since_last_borrow + 1)`
--   For reference books: `2 * (times_borrowed / (days_since_last_borrow + 1))`
+- For regular books: `times_borrowed / (days_since_last_borrow + 1)`
+- For reference books: `2 * (times_borrowed / (days_since_last_borrow + 1))`
 
 ``` python
 # YOUR CODE BELOW
@@ -256,8 +256,8 @@ print("Books after sorting:", books)
 >
 > The main difference:
 >
-> -   Functions are called directly: `function_name(arguments)`
-> -   Methods are called on objects: `object.method_name(arguments)`
+> - Functions are called directly: `function_name(arguments)`
+> - Methods are called on objects: `object.method_name(arguments)`
 
 ## Exercise 4.1 - Working with String Methods and Functions
 
@@ -269,10 +269,10 @@ Create a function called `format_book_title` that takes a book title as input an
 
 > **Common String Methods**
 >
-> -   `.strip()` - Removes whitespace from start and end
-> -   `.title()` - Capitalizes first letter of each word
-> -   `.lower()` - Converts to lowercase
-> -   `.upper()` - Converts to uppercase
+> - `.strip()` - Removes whitespace from start and end
+> - `.title()` - Capitalizes first letter of each word
+> - `.lower()` - Converts to lowercase
+> - `.upper()` - Converts to uppercase
 
 ``` python
 # YOUR CODE BELOW
@@ -294,17 +294,17 @@ print("Excellent! Your title formatting function works correctly!")
 
 Excellent work! You've learned how to create and use functions in Python through the lens of library management. You now know how to:
 
--   Create basic functions with parameters
--   Use functions with decision-making logic
--   Work with default parameters
--   Return values from functions
+- Create basic functions with parameters
+- Use functions with decision-making logic
+- Work with default parameters
+- Return values from functions
 
 Remember:
 
--   Functions help us organize and reuse code
--   They make our code more readable and maintainable
--   They can take inputs (parameters) and produce outputs (return values)
--   They can have default values for parameters
+- Functions help us organize and reuse code
+- They make our code more readable and maintainable
+- They can take inputs (parameters) and produce outputs (return values)
+- They can have default values for parameters
 
 In a real library system, functions like these would be part of a larger caching system that helps optimize book retrieval times and improve user experience!
 

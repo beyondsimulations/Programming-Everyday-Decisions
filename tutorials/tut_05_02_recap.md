@@ -127,10 +127,10 @@ Let's create a task scheduler that handles tasks with different due dates. The s
 
 Your task is to create a function `schedule_tasks(tasks)` that:
 
--   Sorts tasks by due date
--   Creates a schedule with start and end times for each task
--   Returns the complete schedule as an pandas DataFrame
--   Keep the same column names as in the dictionary
+- Sorts tasks by due date
+- Creates a schedule with start and end times for each task
+- Returns the complete schedule as an pandas DataFrame
+- Keep the same column names as in the dictionary
 
 ``` python
 # Pre-generated tasks (don't modify this!)
@@ -239,11 +239,11 @@ print(r"All tests passed, you have successfully implemented the route planner!")
 
 We've explored how randomness affects decision-making through:
 
--   Explore vs. Exploit trade-offs
--   Optimal stopping with random elements
--   Caching a random subset of data
--   Scheduling tasks with due dates
--   Finding the cheapest route for a travel problem
+- Explore vs. Exploit trade-offs
+- Optimal stopping with random elements
+- Caching a random subset of data
+- Scheduling tasks with due dates
+- Finding the cheapest route for a travel problem
 
 Remember that randomness isn't always bad - sometimes it's the best strategy we have!
 
