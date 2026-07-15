@@ -20,11 +20,11 @@
     <path d="M66 68 L74 68"></path>
   </g>
   <circle cx="70" cy="60" r="2.8" fill="#e4b169" opacity="1.00"></circle>
-  <g stroke="#52717a" stroke-width="2.88">
+  <g stroke="#9E2B2B" stroke-width="2.88">
     <path d="M57 34 L57 56"></path>
     <path d="M53 34 L61 34"></path>
     <path d="M53 56 L61 56"></path>
   </g>
-  <circle cx="57" cy="45" r="4.4" fill="#52717a"></circle>
+  <circle cx="57" cy="45" r="4.4" fill="#9E2B2B"></circle>
   </g>
 </svg>
