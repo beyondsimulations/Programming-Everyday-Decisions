@@ -10,11 +10,15 @@ format:
     html:
       mermaid:
           theme: neutral
+format-links:
+  - text: Slides (PDF)
+    href: lec_04_presentation.pdf
+    icon: file-earmark-slides
 ---
 
 # [Introduction]{.flow} {.title}
 
-## Today's Topic: Scheduling Algorithms
+## Today's Topic: Scheduling
 
 **Topic:** Understanding scheduling problems and algorithmic solutions for optimal task ordering
 
@@ -32,7 +36,7 @@ format:
 5. **Programming Connections** - How this builds algorithmic problem-solving skills
 :::
 
-# [Scheduling Fundamentals]{.flow} {.title}
+# [Fundamentals]{.flow} {.title}
 
 ## A Simple Scheduling Problem
 
@@ -896,7 +900,7 @@ Predecessor tasks are tasks that must be completed before the current task can s
 
 [Question:]{.question} **What's the maximum delay?**
 
-# [Difficulty of Scheduling]{.flow} {.title}
+# [Scheduling Difficulty]{.flow} {.title}
 
 ## SPT with Predecessors
 
@@ -1057,7 +1061,7 @@ Strategic solutions focus on **long-term** changes to prevent thrashing.
 
 [Question:]{.question} **What strategies have worked for you?**
 
-# [Applying This Knowledge]{.flow} {.title}
+# [Apply This Knowledge]{.flow} {.title}
 
 ## Immediate Applications
 

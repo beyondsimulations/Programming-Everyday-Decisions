@@ -9,14 +9,17 @@ This is a Quarto-based educational website for the course "Programming: Everyday
 ## Build Commands
 
 ```bash
-# Render the entire website
-quarto render
+# Render the entire website (the slide PDF hook needs uv)
+uv run quarto render
+
+# Publish that build and keep gh-pages at one commit; a bare `quarto publish` re-renders outside uv and fails
+bash ../Lecture-Foundations/scripts/publish-gh-pages.sh
 
 # Preview with live reload
-quarto preview
+uv run quarto preview
 
 # Render a single file
-quarto render lectures/lec_01_optimal_stopping.qmd
+uv run quarto render lectures/lec_01_optimal_stopping.qmd
 
 # Check Quarto installation (may need QUARTO_CHROMIUM set for PDF export)
 QUARTO_CHROMIUM=/Applications/Brave\ Browser.app/Contents/MacOS/Brave quarto check
@@ -57,7 +60,10 @@ Key dependencies: jupyter, jupytext, matplotlib, numpy, pandas
 - Lectures use RevealJS format with custom CSS classes (`.flow`, `.highlight`, `.question`, `.incremental`)
 - Tutorials include executable Python code cells
 - The `execute: freeze: true` setting caches code execution results
+- With `freeze: true` a full render does not pick up edits to a file that has code cells, not even to its text: render that file on its own first (`uv run quarto render path/to/file.qmd`), then the site
+- The diagrams in lecture 4 need a browser of their own: if a render hangs there, set `QUARTO_CHROMIUM` to a Chromium binary (Playwright's works)
 - Output formats: HTML (primary), Hugo-MD, and Typst (PDF)
+- Two post-render hooks from `../Lecture-Foundations/scripts/` (`split_refs_post.py`, then `create_pdf.py`) print each rendered deck to `lec_XX_presentation.pdf` next to it, linked per lecture via `format-links` ("Slides (PDF)"). The slide PDF hook needs the sibling checkout `../Lecture-Foundations`, `uv run playwright install chromium` once per machine, and rendering through `uv run`. A deck that cannot be printed fails the render on purpose, as its page already links the PDF.
 
 ## Shared foundations
 

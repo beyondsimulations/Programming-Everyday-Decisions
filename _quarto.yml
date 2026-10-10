@@ -3,6 +3,9 @@ project:
   # post-render:
   #  - helpers/convert_pypercent.py
   #   - helpers/convert_qmd_to_md.py
+  post-render:
+    - ../Lecture-Foundations/scripts/split_refs_post.py
+    - ../Lecture-Foundations/scripts/create_pdf.py
   render:
     - 404.qmd
     - index.qmd

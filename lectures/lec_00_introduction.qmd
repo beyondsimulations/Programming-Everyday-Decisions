@@ -6,13 +6,17 @@ format:
   revealjs:
     footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_00_introduction.qmd)"
     output-file: lec_00_presentation.html
+format-links:
+  - text: Slides (PDF)
+    href: lec_00_presentation.pdf
+    icon: file-earmark-slides
 ---
 
 # [About this Course]{.flow} {.title}
 
 ## Teaching Team
 
-::: {layout="[[1,1]]"}
+::: {layout="[[-6,38,-12,38,-6]]"}
 ![**Dr. Tobias Vlcek**](../images/tobias-vlcek.jpg)
 
 ![**Dr. Nils Roemer**](../images/nils-roemer.jpeg)
@@ -152,7 +156,7 @@ We are convinced that this course will be quite interesting and **teach you more
 But you should *not* simply use them to *replace* your learning.
 :::
 
-# [How to learn programming]{.flow} {.title}
+# [Learning to program]{.flow} {.title}
 
 ## Our Recommendation
 
@@ -174,7 +178,7 @@ Great resources to start are books and small challenges. You can find a list of 
 <center>
 
 <br>
-<iframe src="https://giphy.com/embed/FKsCiEI5pFvIQ" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/FKsCiEI5pFvIQ" width="448" height="336" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 <center>
 
@@ -215,7 +219,7 @@ Ask us! We are happy to help you out!
 If the installation does not work, **let us know!**
 :::
 
-# [Using Notebooks with uv]{.flow} {.title}
+# [Notebooks with uv]{.flow} {.title}
 
 ## Quick Check
 

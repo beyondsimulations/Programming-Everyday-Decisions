@@ -6,6 +6,10 @@ format:
   revealjs:
     footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_01_optimal_stopping.qmd)"
     output-file: lec_01_presentation.html
+format-links:
+  - text: Slides (PDF)
+    href: lec_01_presentation.pdf
+    icon: file-earmark-slides
 ---
 
 
@@ -57,17 +61,17 @@ example of
 optimal stopping?
 :::
 
-## [Flat Hunting]{.invert-font} {background-image="https://unsplash.com/photos/CAuxRJhSLC0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDZ8fGhhbWJ1cmd8ZW58MHx8fHwxNzI5OTgyMjg3fDA&force=true"}
+## [Flat Hunting]{.invert-font} {background-image="https://images.unsplash.com/photo-1610041919517-5e1e6a55b5df?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400"}
 ::: footer
 [Photo by <a href="https://unsplash.com/@jiren_091">Aditya Ghosh</a> on Unsplash]{.invert-font}
 :::
 
-## [Hiring applicants]{.invert-font} {background-image="https://unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3wxMjA3fDB8MXxhbGx8NHx8fHx8fHx8MTcyOTk3MzA0OXw&force=true"}
+## [Hiring applicants]{.invert-font} {background-image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400"}
 ::: footer
 [Photo by <a href="https://unsplash.com/@homajob">Scott Graham</a> on Unsplash]{.invert-font}
 :::
 
-## [Dating]{.invert-font} {background-image="https://unsplash.com/photos/-XlBjdtRqK8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTV8fGxvdmV8ZW58MHx8fHwxNzI5OTI4NTkxfDA&force=true"}
+## [Dating]{.invert-font} {background-image="https://images.unsplash.com/photo-1484876632310-ddb3b48133cc?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400"}
 ::: footer
 [Photo by <a href="https://unsplash.com/@shelbymary_">Shelby Deeter</a> on Unsplash]{.invert-font}
 :::
@@ -205,6 +209,7 @@ Let's visualize the success of a simulation with 20 candidates:
 #| echo: false
 #| fig-width: 7
 #| fig-height: 4
+#| layout: "[[-8,84,-8]]"
 import numpy as np
 import matplotlib.pyplot as plt
 

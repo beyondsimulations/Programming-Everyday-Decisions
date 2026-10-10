@@ -7,11 +7,15 @@ format:
   revealjs:
     footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_05_randomness.qmd)"
     output-file: lec_05_presentation.html
+format-links:
+  - text: Slides (PDF)
+    href: lec_05_presentation.pdf
+    icon: file-earmark-slides
 ---
 
 # [Welcome!]{.flow} {.title}
 
-## Today's Topic: Randomness & Probabilistic Algorithms
+## Today's Topic: Randomness
 
 **Topic:** Understanding how randomness powers algorithms and decision-making in computer science and everyday life
 
@@ -28,7 +32,7 @@ format:
 4. **Decision Making** - Using randomness to solve hard problems
 :::
 
-# [Understanding Randomness]{.flow} {.title}
+# [Randomness]{.flow} {.title}
 
 ## Randomness
 
@@ -204,7 +208,7 @@ Randomness is a [fundamental aspect of the world]{.highlight}
 Randomness is not just about **generating random numbers**!
 :::
 
-# [Randomness in Daily Life]{.flow} {.title}
+# [Daily Life]{.flow} {.title}
 
 ## Randomness and Everyday Life
 
@@ -256,7 +260,7 @@ Randomness is not just about **generating random numbers**!
 Randomness is [everywhere]{.highlight} around us!
 :::
 
-# [Randomness and Computer Science]{.flow} {.title}
+# [Computer Science]{.flow} {.title}
 
 ## Randomness in Algorithms
 
@@ -754,7 +758,7 @@ plt.close()
 
 ![](../animations/tsp_annealing.gif)
 
-# [Randomness and Society]{.flow} {.title}
+# [Society]{.flow} {.title}
 
 ## Thought Experiment
 

@@ -6,6 +6,10 @@ format:
   revealjs:
     footer: " {{< meta title >}} | {{< meta author >}} | [Home](lec_03_caching.qmd)"
     output-file: lec_03_presentation.html
+format-links:
+  - text: Slides (PDF)
+    href: lec_03_presentation.pdf
+    icon: file-earmark-slides
 ---
 # Learning Objectives {.title}
 
@@ -35,7 +39,7 @@ By the end of this lecture, you will be able to:
 Today's lecture will explain why that matters more than you think...
 :::
 
-## Let's approach the topic using an everyday decision
+## Starting with an everyday decision
 :::{.incremental}
 ::: {layout="[[50,50]]"}
 ::: {.column width="50%"}
@@ -68,7 +72,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 :::
 
-## Two Approaches to Storage Problems
+## Two Approaches to Storage
 
 :::{.incremental}
 ::: {layout="[[50,50]]"}
@@ -105,12 +109,12 @@ Today's lecture will explain why that matters more than you think...
 :::
 :::
 
-## [Question:]{.question} What do we do, when the storage is full?
+## [Question:]{.question} What if storage is full?
 
 :::{.fragment}
 ::: {style="text-align: center;"}
 
-![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="60%"}
+![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="50%"}
 
 **We could increase the capacity**
 :::
@@ -133,7 +137,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 :::
 
-## [Question:]{.question} What else faces this problem?
+## [Question:]{.question} What else faces this?
 
 :::{.incremental}
 - Cupboards
@@ -306,7 +310,7 @@ Today's lecture will explain why that matters more than you think...
 - [Question:]{.question} Why do you think least recently used is the better strategy?
 :::
 
-## Why LRU Works: The Principle of Temporal Locality
+## Why LRU Works: Temporal Locality
 
 :::{.incremental}
 - **Temporal Locality:** Recent use → Likely need again soon
@@ -393,7 +397,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 :::
 
-## The Solution: Manage Your Mental Cache
+## Manage Your Mental Cache
 
 :::{.incremental}
 - Limit screen time and practice "monotasking" (Reduce cache thrashing).
@@ -412,7 +416,7 @@ Today's lecture will explain why that matters more than you think...
 - **Want to dive deeper? Read "Stolen Focus" by Johann Hari**
 :::
 
-## Awareness: Three Levels of Attention
+## Awareness: Levels of Attention
 
 :::{.incremental}
 - **Spotlight** – Immediate goals – Focus (Your L1 Cache: What are you working on RIGHT NOW?)

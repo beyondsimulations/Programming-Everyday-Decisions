@@ -11,11 +11,7 @@ Imagine you're planning a Mars mission. Every task, from equipment checks to cre
 Before starting, ensure you have the `pandas` library installed.
 
 ```{bash}
-uv install pandas
-```
-
-```{bash}
-conda install pandas
+uv add pandas
 ```
 :::
 
