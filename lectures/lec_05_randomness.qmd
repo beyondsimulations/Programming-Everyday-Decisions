@@ -40,27 +40,27 @@ format-links:
 
 . . .
 
-## [Casino]{.invert-font} {background-image="https://images.unsplash.com/photo-1517232115160-ff93364542dd?q=80&w=3473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Casino]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-05-casino.jpg"}
 ::: footer
 :::
 
-## [Lottery]{.invert-font} {background-image="https://images.unsplash.com/photo-1593453917923-c3f751aab514?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Lottery]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-05-lottery.jpg"}
 ::: footer
 :::
 
-## [Shuffling cards]{.invert-font} {background-image="https://images.unsplash.com/photo-1691213426024-ab6eb6f33d64?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Shuffling cards]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-05-shuffling-cards.jpg"}
 ::: footer
 :::
 
-## [Algorithms]{.invert-font} {background-image="https://images.unsplash.com/photo-1717501220725-83f151c447e7?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Algorithms]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-05-algorithms.jpg"}
 ::: footer
 :::
 
-## [Cryptography]{.invert-font} {background-image="https://images.unsplash.com/photo-1640161704729-cbe966a08476?q=80&w=3544&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Cryptography]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-05-cryptography.jpg"}
 ::: footer
 :::
 
-## [Genetic mutations]{.invert-font} {background-image="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Genetic mutations]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-05-genetic-mutations.jpg"}
 ::: footer
 :::
 
@@ -186,7 +186,7 @@ anim.save(DIR / '../animations/dice_fairness.gif', writer='pillow')
 plt.close()
 ```
 
-![](../animations/dice_fairness.gif)
+![](../animations/dice_fairness.gif){fig-alt="A fair and a loaded die are rolled about 200 times in this animation: the left panel traces every single roll, the right panel the observed frequencies, which settle near one sixth per face for the fair die, while the loaded die shows a six about half the time."}
 
 ## Using Randomness
 
@@ -415,7 +415,7 @@ anim.save(DIR / "../animations/pi.gif", writer="pillow")
 plt.close()
 ```
 
-![](../animations/pi.gif)
+![](../animations/pi.gif){fig-alt="Animated Monte Carlo estimate of pi: random points fill a square, drawn blue inside the inscribed circle and red outside. The estimate, four times the share of points inside the circle, swings widely at first and then settles close to the dashed line at pi."}
 
 
 # [Decision Making]{.flow} {.title}
@@ -590,7 +590,7 @@ anim.save(DIR / '../animations/simulated_annealing.gif', writer='pillow')
 plt.close()
 ```
 
-![](../animations/simulated_annealing.gif)
+![](../animations/simulated_annealing.gif){fig-alt="Animated simulated annealing on a hill-shaped objective with its peak at 5: the red point jumps across the whole search space and at first also accepts clearly worse positions, while the temperature curve below falls steadily and the search grows more selective."}
 
 ## Traveling Salesman
 
@@ -756,7 +756,7 @@ anim.save(DIR / '../animations/tsp_annealing.gif', writer='pillow')
 plt.close()
 ```
 
-![](../animations/tsp_annealing.gif)
+![](../animations/tsp_annealing.gif){fig-alt="Animated simulated annealing on a round trip through ten world cities: the route on the map is redrawn whenever two cities swap places, the temperature curve falls steadily, and the best distance found drops in steps as shorter tours turn up."}
 
 # [Society]{.flow} {.title}
 

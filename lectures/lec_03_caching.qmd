@@ -48,7 +48,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/closet_1.png)
+![](../images/caching/closet_1.png){fig-alt="Shelf unit with empty upper shelves and a heap of clothes spilling out of the bottom compartment: plenty of storage, but no order."}
 :::
 :::
 :::
@@ -66,7 +66,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/closet_2.png)
+![](../images/caching/closet_2.png){fig-alt="Open cupboard with clothes neatly folded and sorted into many small compartments, the tidy counterpart to the heap from before."}
 :::
 :::
 :::
@@ -86,7 +86,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/closet_2.png)
+![](../images/caching/closet_2.png){fig-alt="Cupboard subdivided into many small compartments, each holding a neat stack of folded clothes: better organization within the same space."}
 :::
 :::
 :::
@@ -103,7 +103,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/closet_2.png)
+![](../images/caching/closet_2.png){fig-alt="Neatly organized cupboard in which every compartment is already filled with folded clothes: even a tidy storage has no room left at some point."}
 :::
 :::
 :::
@@ -114,7 +114,7 @@ Today's lecture will explain why that matters more than you think...
 :::{.fragment}
 ::: {style="text-align: center;"}
 
-![](https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width="50%"}
+![](https://images.beyondsimulations.com/atlb/atlb_photo-03-question-what-if-storage-is.jpg){width="50%" fig-alt="Large, still empty walk-in wardrobe with long rows of shelves, drawers and clothes rails: far more capacity than a single cupboard."}
 
 **We could increase the capacity**
 :::
@@ -131,7 +131,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/closet_3.png)
+![](../images/caching/closet_3.png){fig-alt="Walk-in wardrobe with every shelf and rail full and clothes and shoes piled on the floor: the larger storage has filled up as well."}
 :::
 :::
 :::
@@ -158,7 +158,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/closet_3.png)
+![](../images/caching/closet_3.png){fig-alt="Overfull walk-in wardrobe with packed shelves and heaps of clothes and shoes covering the floor, where finding a single item means a long search."}
 :::
 :::
 :::
@@ -234,7 +234,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 :::
 ::: {.column width="50%"}
-![](https://images.beyondsimulations.com/alg/Desk-1.png)
+![](https://images.beyondsimulations.com/alg/Desk-1.png){fig-alt="Tidy desk with an open laptop and a small stack of books within reach: only the few things needed right now are kept closest, like data in a fast cache."}
 :::
 :::
 :::
@@ -242,7 +242,7 @@ Today's lecture will explain why that matters more than you think...
 ## The Trade-off: Size and Speed
 
 ::: {style="text-align: center;"}
-![](https://i.imgur.com/suD65Rs.png){width="50%"}
+![](https://i.imgur.com/suD65Rs.png){width="50%" fig-alt="Memory hierarchy as a pyramid: registers at the tip hold about 1 KB and respond in 0.3 ns, followed by L1 to L4 cache, main memory and SSD down to the disk drive at the base with several terabytes but about 3 ms access time. Each level down is bigger, each level up is faster."}
 
 **Registers are 10 million times faster than the hard drive!**
 
@@ -270,7 +270,7 @@ Today's lecture will explain why that matters more than you think...
 :::
 ::: {.column width="50%"}
 ::: {style="text-align: center;"}
-![](../images/caching/Desk_full.png){width="70%"}
+![](../images/caching/Desk_full.png){width="70%" fig-alt="Desk buried under towering stacks of books that surround the laptop and cover the floor: a workspace that was never cleared out."}
 :::
 :::
 :::
@@ -345,7 +345,7 @@ Today's lecture will explain why that matters more than you think...
 
 :::{.fragment}
 ::: {style="text-align: center;"}
-![](https://images.beyondsimulations.com/alg/Bed.png){width="30%"}
+![](https://images.beyondsimulations.com/alg/Bed.png){width="30%" fig-alt="Bedroom with worn clothes left on the bed and on the floor right beside it: things kept exactly where they are used."}
 
 **Mathematically optimal**
 :::

@@ -17,7 +17,7 @@ format-links:
 ## Teaching Team
 
 ::: {layout="[[-6,38,-12,38,-6]]"}
-![**Dr. Tobias Vlcek**](../images/tobias-vlcek.jpg)
+![**Dr. Tobias Vlćek**](../images/tobias-vlcek.jpg)
 
 ![**Dr. Nils Roemer**](../images/nils-roemer.jpeg)
 :::
@@ -229,7 +229,7 @@ If the installation does not work, **let us know!**
   - [] You have initialized `uv` with `uv init` inside the folder
   - [] You can see a file called `pyproject.toml` in the folder
 
-  . . .
+. . .
 
 :::{.callout-tip}
 Something not working yet? Ask us!

@@ -1,7 +1,6 @@
 institute: "Kühne Logistics University Hamburg - Winter 2025"
 format:
   html: default
-  hugo-md: default
   typst: default
   revealjs:
     # One stage for every course: 16:9 (Lecture-Foundations, research/slide-sizes.md).

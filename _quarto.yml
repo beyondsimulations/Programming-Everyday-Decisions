@@ -2,7 +2,6 @@ project:
   type: website
   # post-render:
   #  - helpers/convert_pypercent.py
-  #   - helpers/convert_qmd_to_md.py
   post-render:
     - ../Lecture-Foundations/scripts/split_refs_post.py
     - ../Lecture-Foundations/scripts/create_pdf.py
@@ -98,20 +97,26 @@ website:
       - text: "Cheatsheet"
         href: general/cheatsheet.qmd
   page-footer:
-    center: "Programming: Everyday Decision-Making Algorithms</br>Tobias Vlćek and Nils Roemer</br>CC BY-NC-SA 4.0"
+    center: "Programming: Everyday Decision-Making Algorithms</br>Dr. Tobias Vlćek and Dr. Nils Roemer</br>CC BY-NC-SA 4.0"
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Applied-Optimization
+        aria-label: GitHub repository
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
+        aria-label: LinkedIn
       - icon: envelope
         href: mailto:vlcek@beyondsimulations.com
+        aria-label: Email
       - icon: skip-backward
         href: https://tobiasvlcek.com/lectures/
+        aria-label: All lectures
       - icon: shield-check
         href: general/privacy.qmd
+        aria-label: Privacy policy
       - icon: file-text
         href: general/imprint.qmd
+        aria-label: Imprint
 
 format:
   html:
@@ -145,9 +150,13 @@ format:
           });
         </script>
 
-  hugo-md: default
 
   typst:
+    template-partials:
+      - helpers/typst-show.typ
+    logo:
+      path: images/course-logo.svg
+      alt: "Programming: Everyday Decision-Making Algorithms"
     papersize: a4
 
 format-links:
@@ -160,3 +169,7 @@ brand: _brand.yml
 
 execute:
   freeze: true
+
+filters:
+  - helpers/typst-classes.lua
+  - helpers/page-pauses.lua

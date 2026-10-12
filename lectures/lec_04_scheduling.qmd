@@ -40,7 +40,7 @@ format-links:
 
 ## A Simple Scheduling Problem
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-washdry.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-washdry.svg){fig-alt="Four laundry loads that each go through the washing machine first and the dryer second, with a different pair of durations per load, for example 30 minutes of washing followed by 80 minutes of drying."}
 
 ## Washing Machine & Dryer
 
@@ -52,7 +52,7 @@ Let's solve this simple scheduling problem:
 Task  Washing  Drying
   A    40min   60min
   B    30min   80min
-  C    60min   20min
+  C    60min   30min
   D    50min   60min
 ```
 . . .
@@ -80,7 +80,7 @@ Task  Washing  Drying
 Task  Washing  Drying  Schedule
   A    40min   60min
   B    30min   80min
-  C    60min   20min
+  C    60min   30min
   D    50min   60min
 ```
 
@@ -94,7 +94,7 @@ Task  Washing  Drying  Schedule
 Task  Washing  Drying  Schedule
   A    40min   60min
   B    30min   80min
-  C    60min   20min        4
+  C    60min   30min        4
   D    50min   60min
 ```
 
@@ -111,7 +111,7 @@ Task  Washing  Drying  Schedule
 Task  Washing  Drying  Schedule
   A    40min   60min
   B    30min   80min        1
-  C    60min   20min        4
+  C    60min   30min        4
   D    50min   60min
 ```
 
@@ -128,7 +128,7 @@ Task  Washing  Drying  Schedule
 Task  Washing  Drying  Schedule
   A    40min   60min        2
   B    30min   80min        1
-  C    60min   20min        4
+  C    60min   30min        4
   D    50min   60min
 ```
 
@@ -145,7 +145,7 @@ Task  Washing  Drying  Schedule
 Task  Washing  Drying  Schedule
   A    40min   60min        2
   B    30min   80min        1
-  C    60min   20min        4
+  C    60min   30min        4
   D    50min   60min        3
 ```
 
@@ -157,7 +157,7 @@ Task  Washing  Drying  Schedule
 
 **Optimal Solution: [B A D C]{.highlight}**
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-johnson-optimal.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-johnson-optimal.svg){fig-alt="Gantt chart for the order B, A, D, C: the washer runs without a gap, the dryer starts after 30 minutes and then never stands idle, and the last load is dry after 260 minutes."}
 
 <!--
 ```{mermaid}
@@ -178,7 +178,7 @@ gantt
         Dry B : 00:30, 80m
         Dry A : 60m
         Dry D : 60m
-        Dry C : 20m
+        Dry C : 30m
 ```
 -->
 **Total time:** 4 hours 20 minutes
@@ -190,7 +190,7 @@ gantt
 ## Suboptimal Solution
 **Suboptimal Solution: [C D A B]{.highlight}**
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-johnson-suboptimal.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-johnson-suboptimal.svg){fig-alt="Gantt chart for the order C, D, A, B: the dryer stands idle for the first 60 minutes and again before load D, and the long drying of B comes last, so the laundry is only finished after 310 minutes."}
 
 <!--
 ```{mermaid}
@@ -223,7 +223,7 @@ gantt
 
 # [History]{.flow} {.title}
 
-## [Industrial Revolution]{.invert-font} {background-image="https://images.unsplash.com/photo-1627807451414-0912da0b8aee?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Industrial Revolution]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-04-industrial-revolution.jpg"}
 
 . . .
 
@@ -240,7 +240,7 @@ gantt
 
 ::: {.invert-font}
 
-[Question:]{.highlight} **Who knows what a Gantt Chart is?**
+[Question:]{.question} Who knows what a Gantt Chart is?
 
 :::
 
@@ -249,7 +249,7 @@ gantt
 
 
 
-## [Modern Scheduling Theory]{.invert-font} {background-image="https://images.unsplash.com/photo-1508759191076-7d83edf34fb5?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+## [Modern Scheduling Theory]{.invert-font} {background-image="https://images.beyondsimulations.com/atlb/atlb_photo-04-modern-scheduling-theory.jpg"}
 
 . . .
 
@@ -314,7 +314,7 @@ mindmap
 
 ## Single Machine Scheduling
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-human.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-human.svg){fig-alt="A single person instead of two machines, with four tasks waiting: A takes 40 minutes, B 30, C 60 and D 50. Every task now needs only this one resource."}
 
 [Question:]{.question} **What is different from before?**
 
@@ -389,7 +389,7 @@ Task  Duration  Deadline
 
 ## EDD Schedule
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-edd.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-edd.svg){fig-alt="Gantt chart of the EDD order D, B, A, C, E with a red mark at each deadline: D, B and E finish on time, A ends at 120 minutes against a deadline of 110 and C at 180 against 150."}
 
 <!--
 ```{mermaid}
@@ -427,7 +427,7 @@ gantt
 
 ::: {.column width="50%"}
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-human.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-human.svg){fig-alt="A single person as the only machine, with tasks A to D listed by processing time alone: 40, 30, 60 and 50 minutes."}
 
 :::
 
@@ -483,7 +483,7 @@ Task  Duration  Schedule
 
 **Optimal sequence:**
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-1.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-1.svg){fig-alt="Gantt chart of the SPT order B, E, A, D, C, shortest task first: B starts at minute 0, E at 30, A at 60, D at 100 and C at 150, and all five tasks are done after 210 minutes."}
 
 <!--
 ```{mermaid}
@@ -510,7 +510,7 @@ gantt
 
 [Total waiting time:]{.highlight} 340 minutes
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-2.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-2.svg){fig-alt="The SPT schedule again, now with the cells before each bar shaded dark as waiting time: B starts at once, E waits 30 minutes, A 60, D 100 and C 150, which is 340 minutes in total."}
 
 . . .
 
@@ -738,7 +738,7 @@ Task  Duration  Priority
   E    30min     2
 ```
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-inheritance.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-inheritance.svg){fig-alt="Task A (20 minutes) with an arrow pointing to task B (30 minutes): B can only start once A is finished."}
 
 [**Challenge:**
 High-priority tasks depend on low-priority tasks.]{.fragment}
@@ -749,7 +749,7 @@ High-priority tasks depend on low-priority tasks.]{.fragment}
 
 [[Risk:]{.highlight} Priority inversion can lead to significant delays!]{.fragment}
 
-[![](https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=90%}]{.fragment .center}
+[![](https://images.beyondsimulations.com/atlb/atlb_photo-04-priority-inversion.jpg){width=90% fig-alt="The planet Mars seen from space, a nod to the Mars Pathfinder mission, whose lander kept resetting itself in 1997 because of a priority inversion."}]{.fragment .center}
 :::
 
 ::::
@@ -770,8 +770,8 @@ High-priority tasks depend on low-priority tasks.]{.fragment}
 
 ```python
 Task  Duration  Priority
-  A    20min     3
-  B    30min     3
+  A    20min     1
+  B    30min     1
   C    30min     2
   D    30min     2
   E    30min     2
@@ -889,7 +889,7 @@ Note, how all tasks become tasks without successors at some point.
 
 ## Lawler's Solution
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-edd-inheritance.svg)
+![](../images/scheduling/lawler-solution.svg){fig-alt="Gantt chart of the order D, B, A, C, E with a red mark at each deadline and each task's predecessor shaded grey in its row. D, B and E finish on time, A ends at 120 minutes against a deadline of 110 and C at 180 against 150."}
 
 :::{.callout-note}
 ## Predecessor Tasks
@@ -965,7 +965,7 @@ If a new task has the same deadline as the current task, you can choose either. 
 
 ## EDD Solution for Real-time
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-edd-breaks.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-edd-breaks.svg){fig-alt="Gantt chart of the morning from 8:00 to 12:00 with tasks arriving between 8:00 and 9:20 and a red mark at each deadline. The task with the earliest deadline always runs, so the PPT task is split into three pieces. Liquidity ends at 11:20 against a deadline of 11:00 and Email C at 11:40 against 11:20; all other tasks finish on time."}
 
 . . .
 
@@ -1000,7 +1000,7 @@ If a new task has the same duration as the current task, you can choose either. 
 
 ## SPT Solution for Real-time {auto-animate=true}
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-breaks.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-breaks.svg){fig-alt="Gantt chart of the morning from 8:00 to 12:00 when the shortest task always goes first: short arrivals such as the investor call and Email C jump the queue, while the 60-minute PPT task starts at 8:20, is set aside after ten minutes and is only finished at 11:40."}
 
 . . .
 
@@ -1008,7 +1008,7 @@ If a new task has the same duration as the current task, you can choose either. 
 
 ## SPT Solution for Real-time {auto-animate=true}
 
-![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-breaks-wait.svg)
+![](https://images.beyondsimulations.com/atlb/atlb_schedule-spt-breaks-wait.svg){fig-alt="The same real-time SPT schedule with waiting time shaded dark: the PPT task waits 160 minutes in total, Email D 50, Liquidity 30 and Email B 20, which adds up to 260 minutes."}
 
 [Total waiting time:]{.highlight} 260 minutes
 

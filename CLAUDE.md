@@ -50,10 +50,9 @@ Key dependencies: jupyter, jupytext, matplotlib, numpy, pandas
 - `_quarto.yml` - Main Quarto configuration (website structure, theme, output formats)
 - `_brand.yml` - Brand/styling configuration
 - `styles.scss` - Custom SCSS styles
-- `helpers/` - Conversion scripts (qmd to md, pypercent format)
+- `helpers/` - Conversion scripts (pypercent format)
 - `include/` - Reusable Quarto includes (e.g., tutorial_end.qmd)
 - `_site/` - Generated output (do not edit)
-- `_repo-md/` - Markdown versions of content
 
 ## Content Authoring
 
@@ -62,7 +61,7 @@ Key dependencies: jupyter, jupytext, matplotlib, numpy, pandas
 - The `execute: freeze: true` setting caches code execution results
 - With `freeze: true` a full render does not pick up edits to a file that has code cells, not even to its text: render that file on its own first (`uv run quarto render path/to/file.qmd`), then the site
 - The diagrams in lecture 4 need a browser of their own: if a render hangs there, set `QUARTO_CHROMIUM` to a Chromium binary (Playwright's works)
-- Output formats: HTML (primary), Hugo-MD, and Typst (PDF)
+- Output formats: HTML (primary) and Typst (PDF)
 - Two post-render hooks from `../Lecture-Foundations/scripts/` (`split_refs_post.py`, then `create_pdf.py`) print each rendered deck to `lec_XX_presentation.pdf` next to it, linked per lecture via `format-links` ("Slides (PDF)"). The slide PDF hook needs the sibling checkout `../Lecture-Foundations`, `uv run playwright install chromium` once per machine, and rendering through `uv run`. A deck that cannot be printed fails the render on purpose, as its page already links the PDF.
 
 ## Shared foundations
