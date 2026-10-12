@@ -100,7 +100,7 @@ website:
     center: "Programming: Everyday Decision-Making Algorithms</br>Dr. Tobias Vlćek and Dr. Nils Roemer</br>CC BY-NC-SA 4.0"
     left:
       - icon: github
-        href: https://github.com/beyondsimulations/Applied-Optimization
+        href: https://github.com/beyondsimulations/Programming-Everyday-Decisions
         aria-label: GitHub repository
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
@@ -114,7 +114,7 @@ website:
       - icon: shield-check
         href: general/privacy.qmd
         aria-label: Privacy policy
-      - icon: file-text
+      - icon: info-circle
         href: general/imprint.qmd
         aria-label: Imprint
 
