@@ -17,7 +17,7 @@ format-links:
 ## Teaching Team
 
 ::: {layout="[[-6,38,-12,38,-6]]"}
-![**Dr. Tobias Vlćek**](../images/tobias-vlcek.jpg)
+![**Dr. Tobias Vlćek**](../images/tobias.png)
 
 ![**Dr. Nils Roemer**](../images/nils-roemer.jpeg)
 :::

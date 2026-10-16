@@ -171,3 +171,6 @@ students
 animations
 
 **/*.quarto_ipynb
+lectures/lec_01_optimal_stopping_files/figure-markdown_strict/*
+lectures/lec_01_optimal_stopping_files/figure-revealjs/*
+lectures/lec_04_scheduling_files/figure-typst/*
