@@ -15,7 +15,7 @@ format:
     transition: slide
     callout-appearance: simple
     transition-speed: fast
-    highlight-style: github
+    syntax-highlighting: ../_paper-and-ink-light.theme
     slide-number: true
     code-copy: true
     code-link: true

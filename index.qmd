@@ -3,8 +3,6 @@ title: "Programming: Everyday Decision-Making Algorithms"
 subtitle: "Kühne Logistics University - Winter 2025"
 author: "Dr. Tobias Vlćek and Dr. Nils Roemer"
 
-html:
-    theme: [litera, styles_html.scss]
 ---
 
 # Course Description
