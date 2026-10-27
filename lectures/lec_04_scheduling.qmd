@@ -889,7 +889,7 @@ Note, how all tasks become tasks without successors at some point.
 
 ## Lawler's Solution
 
-![](../images/scheduling/lawler-solution.svg){fig-alt="Gantt chart of the order D, B, A, C, E with a red mark at each deadline and each task's predecessor shaded grey in its row. D, B and E finish on time, A ends at 120 minutes against a deadline of 110 and C at 180 against 150."}
+![](../images/scheduling/lawler-solution.svg){.light-card fig-alt="Gantt chart of the order D, B, A, C, E with a red mark at each deadline and each task's predecessor shaded grey in its row. D, B and E finish on time, A ends at 120 minutes against a deadline of 110 and C at 180 against 150."}
 
 :::{.callout-note}
 ## Predecessor Tasks
